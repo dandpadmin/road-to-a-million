@@ -32,15 +32,20 @@ async function main() {
   const chargeList = charges ? (charges.results || charges) : [];
 
   if (chargeList.length) {
-    const sample = chargeList[chargeList.length - 1];
-    console.log('charge record fields:', Object.keys(sample).join(', '));
-    console.log('network-ish values:', JSON.stringify({
-      is_supercharger: sample.is_supercharger,
-      is_fast_charger: sample.is_fast_charger,
-      fast_charger_brand: sample.fast_charger_brand,
-      location: sample.location,
-      site_name: sample.site_name,
-    }));
+    const coarse = (s) => String(s || '')
+      .split(',').map((x) => x.trim()).slice(1).join(', ')
+      .replace(/\s+[A-Za-z]\d[A-Za-z]\s*\d[A-Za-z]\d/, '');
+    const ts = (v) => new Date(Number(v) * 1000).toISOString().slice(0, 16);
+    const recent = [...chargeList]
+      .sort((a, b) => Number(a.started_at) - Number(b.started_at))
+      .slice(-6);
+    console.log('recent charge sessions (oldest first):');
+    for (const c of recent) {
+      console.log('  ', ts(c.started_at),
+        'sc=' + c.is_supercharger, 'fast=' + c.is_fast_charger,
+        'kWh=' + c.energy_added, '|', coarse(c.location));
+    }
+    console.log('total charge records:', chargeList.length);
   }
 
   const snapshot = shape({
