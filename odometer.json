@@ -1,5 +1,5 @@
 {
-  "odometer": 1157,
+  "odometer": 1159,
   "goal": 1000000,
   "day": 1,
   "province": "Withheld — live test mode",
@@ -32,7 +32,7 @@
   "log": [
     {
       "day": "Day 1",
-      "date": "Sep 1",
+      "date": "Sep 2",
       "province": "Withheld — live test mode",
       "km": "348",
       "note": ""
