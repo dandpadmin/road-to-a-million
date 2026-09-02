@@ -12,13 +12,13 @@
  * A total compromise of the website yields a stale JSON file — there is no
  * credential there to steal and no path from the browser to the car.
  *
- * Belt and braces, both configured outside this repo:
- *   1. At tesla.com → account → third-party apps, grant Tessie vehicle DATA
- *      scopes only and withhold the command scopes. Tessie then cannot send a
- *      command regardless of what any token says.
- *   2. Do not install Tessie's Tesla Virtual Key on the car. 2021+ vehicles
- *      require signed commands; without the key paired, commands are rejected
- *      by the car itself. (This also disables Tessie's in-app remote controls.)
+ * Belt and braces, configured outside this repo:
+ *   Do not install Tessie's Tesla Virtual Key on the car. 2021+ vehicles
+ *   require signed commands; without the key paired, commands are rejected by
+ *   the car itself. (This also disables Tessie's in-app remote controls.)
+ *   Note: Tessie usually does NOT appear under tesla.com → third-party apps,
+ *   because it connects via the fleet integration — there is no scope toggle
+ *   there to rely on, which is why the Virtual Key is the real control.
  *
  * DRIVER SAFETY — the feed is embargoed.
  * Everything published is held back EMBARGO_HOURS (24) and rounded to town, so
@@ -28,14 +28,15 @@
  * route is itself a position. Do not "fix" that by using state.odometer
  * directly.
  *
- * Field names below follow developer.tessie.com — confirm them against the live
- * docs before shipping; they were not verified against a real account.
+ * Field names below follow developer.tessie.com and are confirmed against a
+ * live account: timestamps arrive as Unix SECONDS and the /state odometer is
+ * nested and in miles. See toDate() and odometerKm().
  */
 
 const ENDPOINT = '/odometer.json';
 const REFRESH_MS = 15 * 60 * 1000;
 const EMBARGO_HOURS = 24; // driver safety — never lower this
-const DEPARTURE = '2026-06-01'; // set to the real day 1
+const DEPARTURE = '2026-09-02'; // day 1 — Ron departed the morning of Sept 2, 2026
 const GOAL = 1000000;
 
 /* --- the scheduled job ----------------------------------------------------
@@ -57,22 +58,71 @@ const GOAL = 1000000;
  * bug cannot turn the route into a general Tessie passthrough.
  * ------------------------------------------------------------------------ */
 
-const dayIndex = (iso) => Math.floor((new Date(iso) - new Date(DEPARTURE)) / 864e5) + 1;
+const TZ = 'America/Winnipeg';
+const MI_TO_KM = 1.609344;
 const km = (n) => Math.round(n || 0);
 
-/* "654 Main Street, Morris, MB" → "Morris, MB". Drops the street line so the
-   published position is a town, not an address. */
+/* Tessie sends timestamps as Unix SECONDS, not ISO strings. Everything that
+   touches a date goes through here — a raw `new Date(d.started_at)` yields
+   1970 and every derived label reads NaN. */
+function toDate(v) {
+  if (v === null || v === undefined || v === '') return null;
+  if (typeof v === 'number' || /^\d+$/.test(String(v))) {
+    const n = Number(v);
+    return new Date(n < 1e12 ? n * 1000 : n);
+  }
+  const d = new Date(v);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+/* Local calendar day, not UTC — a 9pm drive belongs to that evening. */
+function dayKey(v) {
+  const d = toDate(v);
+  return d ? d.toLocaleDateString('en-CA', { timeZone: TZ }) : null;
+}
+
+function dayIndex(v) {
+  const d = toDate(v);
+  if (!d) return null;
+  return Math.floor((d - new Date(DEPARTURE)) / 864e5) + 1;
+}
+
+/* Tessie mirrors Tesla's payload, where the odometer is nested and in MILES.
+   Prefer an explicitly-km field if one appears; otherwise convert. */
+function odometerKm(state) {
+  const s = state || {};
+  const v = s.vehicle_state || {};
+  const candidates = [
+    [s.odometer_km, 'km'], [v.odometer_km, 'km'],
+    [s.odometer, 'mi'], [v.odometer, 'mi'],
+  ];
+  for (const [val, unit] of candidates) {
+    if (typeof val === 'number' && val > 0) return unit === 'km' ? val : val * MI_TO_KM;
+  }
+  return 0;
+}
+
+/* "1240 18th St, Brandon, Manitoba R7A 7S1, Canada" → "Brandon, Manitoba".
+   Drops the street line, the country, and the postal code — a postal code is a
+   few blocks, which defeats the point of rounding to a town. */
 function town(loc) {
   if (!loc) return '—';
-  const parts = String(loc).split(',').map((s) => s.trim()).filter(Boolean);
-  return (parts.length > 1 ? parts.slice(1) : parts).join(', ');
+  let parts = String(loc).split(',').map((s) => s.trim()).filter(Boolean);
+  parts = parts.filter((p) => !/^(canada|usa|u\.s\.a\.|united states|mexico)$/i.test(p));
+  if (parts.length > 2 || /^\d/.test(parts[0] || '')) parts = parts.slice(1);
+  parts = parts.map((p) => p
+    .replace(/\s+[A-Za-z]\d[A-Za-z]\s*\d[A-Za-z]\d$/, '')
+    .replace(/\s+\d{5}(-\d{4})?$/, '')
+    .trim());
+  return parts.filter(Boolean).join(', ') || '—';
 }
 
 /* Tessie returns one record per drive; the dashboard wants one per day. */
 function byDay(drives) {
   const acc = new Map();
   for (const d of drives) {
-    const key = String(d.started_at).slice(0, 10);
+    const key = dayKey(d.started_at);
+    if (!key) continue;
     const row = acc.get(key) || { date: key, km: 0, drives: 0, energy: 0, autopilot: 0, ending: null };
     row.km += d.odometer_distance || 0;
     row.energy += d.energy_used || 0;
@@ -91,15 +141,18 @@ const isSupercharger = (c) =>
    only — anything inside the embargo window is held with the drives. */
 function chargeCounts(charges, cutoff) {
   const out = { day: 0, daySc: 0, dayOther: 0, life: 0, lifeSc: 0, lifeOther: 0, lastDay: null };
-  const published = (charges || []).filter((c) => new Date(c.started_at) <= cutoff);
+  const published = (charges || []).filter((c) => {
+    const d = toDate(c.started_at);
+    return d && d <= cutoff;
+  });
   for (const c of published) {
     out.life += 1;
     if (isSupercharger(c)) out.lifeSc += 1; else out.lifeOther += 1;
   }
   const last = published[published.length - 1];
-  const day = last && String(last.started_at).slice(0, 10);
+  const day = last && dayKey(last.started_at);
   out.lastDay = day || null;
-  for (const c of published.filter((c) => String(c.started_at).slice(0, 10) === day)) {
+  for (const c of published.filter((c) => dayKey(c.started_at) === day)) {
     out.day += 1;
     if (isSupercharger(c)) out.daySc += 1; else out.dayOther += 1;
   }
@@ -112,14 +165,15 @@ export function shape({ state, drives, charges }) {
 
   /* Split at the embargo line. Held drives are never published — they are kept
      only to walk the live odometer back to where it stood at the cutoff. */
-  const published = all.filter((d) => new Date(d.ended_at || d.started_at) <= cutoff);
-  const held = all.filter((d) => new Date(d.ended_at || d.started_at) > cutoff);
+  const at = (d) => toDate(d.ended_at || d.started_at);
+  const published = all.filter((d) => { const t = at(d); return t && t <= cutoff; });
+  const held = all.filter((d) => { const t = at(d); return t && t > cutoff; });
   const heldKm = held.reduce((s, d) => s + (d.odometer_distance || 0), 0);
 
   const days = byDay(published);
   const recent = days.slice(-8);
   const last = days[days.length - 1] || { date: DEPARTURE, km: 0, ending: null };
-  const odometer = km((state?.odometer || 0) - heldKm);
+  const odometer = km(odometerKm(state) - heldKm);
   const driving = days.filter((d) => d.km > 0);
   const ch = chargeCounts(charges, cutoff);
 
@@ -152,7 +206,7 @@ export function shape({ state, drives, charges }) {
     days: recent.map((d) => ({ label: 'D ' + dayIndex(d.date), km: km(d.km) })),
     log: days.slice(-5).reverse().map((d) => ({
       day: 'Day ' + dayIndex(d.date),
-      date: new Date(d.date).toLocaleDateString('en-CA', { day: 'numeric', month: 'short' }),
+      date: toDate(d.date).toLocaleDateString('en-CA', { day: 'numeric', month: 'short', timeZone: TZ }),
       province: town(d.ending).split(',').pop().trim(),
       km: km(d.km).toLocaleString('en-CA'),
       note: '', // written by hand — Tessie has no field for what broke

@@ -36,6 +36,8 @@ async function main() {
   });
 
   await writeFile(OUT, JSON.stringify(snapshot, null, 2));
+  if (!snapshot.odometer) console.warn('WARNING: odometer read as 0 — check the /state payload shape');
+  if (snapshot.day === null) console.warn('WARNING: day index null — DEPARTURE in tessie.js is not a valid date');
   console.log(`wrote ${OUT} — odometer ${snapshot.odometer} km, as at ${snapshot.asOf}`);
 }
 

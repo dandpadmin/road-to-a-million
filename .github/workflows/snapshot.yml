@@ -17,6 +17,7 @@ jobs:
         env:
           TESSIE_TOKEN: ${{ secrets.TESSIE_TOKEN }}
           TESSIE_VIN: ${{ secrets.TESSIE_VIN }}
+          EMBARGO_HOURS: ${{ vars.EMBARGO_HOURS }}
           OUT: odometer.json
         run: node job/fetch-snapshot.mjs
       - name: Commit if changed
