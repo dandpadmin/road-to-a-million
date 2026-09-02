@@ -1,0 +1,96 @@
+{
+  "odometer": 0,
+  "goal": 1000000,
+  "day": null,
+  "province": "Canada",
+  "route": "Brandon, Manitoba R7A 7S1, Canada",
+  "today": 224,
+  "best": 224,
+  "avgPerDay": 9,
+  "chargeSessions": 1,
+  "chargeSupercharger": 0,
+  "chargeOther": 1,
+  "chargeLifetime": 13,
+  "chargeLifetimeSupercharger": 0,
+  "chargeLifetimeOther": 13,
+  "dayMap": {
+    "label": "Latest day · Day NaN",
+    "corridor": "Brandon, Manitoba R7A 7S1, Canada",
+    "km": 224,
+    "path": [],
+    "stops": []
+  },
+  "asOf": "1788351225",
+  "embargoHours": 24,
+  "days": [
+    {
+      "label": "D NaN",
+      "km": 1
+    },
+    {
+      "label": "D NaN",
+      "km": 0
+    },
+    {
+      "label": "D NaN",
+      "km": 0
+    },
+    {
+      "label": "D NaN",
+      "km": 1
+    },
+    {
+      "label": "D NaN",
+      "km": 0
+    },
+    {
+      "label": "D NaN",
+      "km": 0
+    },
+    {
+      "label": "D NaN",
+      "km": 1
+    },
+    {
+      "label": "D NaN",
+      "km": 224
+    }
+  ],
+  "log": [
+    {
+      "day": "Day NaN",
+      "date": "Invalid Date",
+      "province": "Canada",
+      "km": "224",
+      "note": ""
+    },
+    {
+      "day": "Day NaN",
+      "date": "Invalid Date",
+      "province": "Canada",
+      "km": "1",
+      "note": ""
+    },
+    {
+      "day": "Day NaN",
+      "date": "Invalid Date",
+      "province": "Canada",
+      "km": "0",
+      "note": ""
+    },
+    {
+      "day": "Day NaN",
+      "date": "Invalid Date",
+      "province": "Canada",
+      "km": "0",
+      "note": ""
+    },
+    {
+      "day": "Day NaN",
+      "date": "Invalid Date",
+      "province": "Canada",
+      "km": "1",
+      "note": ""
+    }
+  ]
+}
