@@ -1,95 +1,40 @@
 {
-  "odometer": 785,
+  "odometer": 1141,
   "goal": 1000000,
-  "day": -1,
-  "province": "Manitoba",
-  "route": "Winkler, Manitoba",
-  "today": 1,
-  "best": 262,
-  "avgPerDay": 64,
-  "chargeSessions": 3,
+  "day": 1,
+  "province": "Withheld — live test mode",
+  "route": "Withheld — live test mode",
+  "today": 348,
+  "best": 348,
+  "avgPerDay": 348,
+  "chargeSessions": 1,
   "chargeSupercharger": 0,
-  "chargeOther": 3,
-  "chargeLifetime": 8,
+  "chargeOther": 1,
+  "chargeLifetime": 13,
   "chargeLifetimeSupercharger": 0,
-  "chargeLifetimeOther": 8,
+  "chargeLifetimeOther": 13,
   "dayMap": {
-    "label": "Latest day · Day -1",
-    "corridor": "Winkler, Manitoba",
-    "km": 1,
+    "label": "Latest day · Day 1",
+    "corridor": "Withheld — live test mode",
+    "km": 348,
     "path": [],
     "stops": []
   },
-  "asOf": "2026-08-31",
-  "embargoHours": 24,
+  "asOf": "2026-09-02",
+  "embargoHours": 0,
+  "liveTest": true,
   "days": [
     {
-      "label": "D -15",
-      "km": 30
-    },
-    {
-      "label": "D -14",
-      "km": 12
-    },
-    {
-      "label": "D -13",
-      "km": 0
-    },
-    {
-      "label": "D -12",
-      "km": 6
-    },
-    {
-      "label": "D -11",
-      "km": 0
-    },
-    {
-      "label": "D -5",
-      "km": 38
-    },
-    {
-      "label": "D -4",
-      "km": 262
-    },
-    {
-      "label": "D -1",
-      "km": 1
+      "label": "D 1",
+      "km": 348
     }
   ],
   "log": [
     {
-      "day": "Day -1",
-      "date": "Aug 30",
-      "province": "Manitoba",
-      "km": "1",
-      "note": ""
-    },
-    {
-      "day": "Day -4",
-      "date": "Aug 27",
-      "province": "Manitoba",
-      "km": "262",
-      "note": ""
-    },
-    {
-      "day": "Day -5",
-      "date": "Aug 26",
-      "province": "Manitoba",
-      "km": "38",
-      "note": ""
-    },
-    {
-      "day": "Day -11",
-      "date": "Aug 20",
-      "province": "Manitoba",
-      "km": "0",
-      "note": ""
-    },
-    {
-      "day": "Day -12",
-      "date": "Aug 19",
-      "province": "Manitoba",
-      "km": "6",
+      "day": "Day 1",
+      "date": "Sep 1",
+      "province": "Withheld — live test mode",
+      "km": "348",
       "note": ""
     }
   ]
