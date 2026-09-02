@@ -29,10 +29,24 @@ async function main() {
     get(`charges?${q}&limit=2000`).catch((e) => { console.warn('charges unavailable:', e.message); return null; }),
   ]);
 
+  const chargeList = charges ? (charges.results || charges) : [];
+
+  if (chargeList.length) {
+    const sample = chargeList[chargeList.length - 1];
+    console.log('charge record fields:', Object.keys(sample).join(', '));
+    console.log('network-ish values:', JSON.stringify({
+      is_supercharger: sample.is_supercharger,
+      is_fast_charger: sample.is_fast_charger,
+      fast_charger_brand: sample.fast_charger_brand,
+      location: sample.location,
+      site_name: sample.site_name,
+    }));
+  }
+
   const snapshot = shape({
     state,
     drives: drives.results || drives,
-    charges: charges ? (charges.results || charges) : [],
+    charges: chargeList,
   });
 
   await writeFile(OUT, JSON.stringify(snapshot, null, 2));

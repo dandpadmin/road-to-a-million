@@ -155,8 +155,21 @@ function byDay(drives) {
   return [...acc.values()].sort((a, b) => a.date.localeCompare(b.date));
 }
 
-const isSupercharger = (c) =>
-  /supercharg/i.test(String(c?.location || c?.site_name || c?.charger_type || ''));
+/* Tessie flags Tesla-network sessions with a boolean; the text fields are a
+   fallback for records that predate it or come from a different shape. */
+function isSupercharger(c) {
+  if (!c) return false;
+  for (const key of ['is_supercharger', 'supercharger', 'is_tesla_charger']) {
+    if (typeof c[key] === 'boolean') return c[key];
+  }
+  const text = [
+    c.location, c.site_name, c.site, c.charger_type, c.network,
+    c.address, c.name, c.fast_charger_brand, c.conn_charge_cable,
+  ].filter(Boolean).join(' ');
+  if (/supercharg|tesla/i.test(text)) return true;
+  if (c.is_fast_charger === true && /tesla|tpc/i.test(text)) return true;
+  return false;
+}
 
 /* Charge sessions, split Tesla-network vs everything else. Published sessions
    only — anything inside the embargo window is held with the drives. */
