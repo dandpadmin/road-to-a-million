@@ -35,7 +35,22 @@
 
 const ENDPOINT = '/odometer.json';
 const REFRESH_MS = 15 * 60 * 1000;
-const EMBARGO_HOURS = 24; // driver safety — never lower this
+
+/* TESTING OVERRIDE. Set the EMBARGO_HOURS env var on the snapshot job to see
+ * live numbers while wiring things up. Anything below 24 flips LIVE_TEST on,
+ * which BLANKS every location field — live km is harmless, a live position is
+ * not. Unset the variable to return to the 24-hour default before the
+ * dashboard is public. The web tier never reads this; only the job does. */
+const ENV = (typeof process !== 'undefined' && process.env) || {};
+/* An unset GitHub Actions variable arrives as '', and Number('') is 0 — which
+   would silently disable the embargo. Anything unparseable falls back to 24. */
+const RAW_EMBARGO = ENV.EMBARGO_HOURS;
+const PARSED_EMBARGO = RAW_EMBARGO === undefined || String(RAW_EMBARGO).trim() === ''
+  ? 24 : Number(RAW_EMBARGO);
+const EMBARGO_HOURS = Number.isFinite(PARSED_EMBARGO) ? Math.max(0, PARSED_EMBARGO) : 24;
+const LIVE_TEST = EMBARGO_HOURS < 24;
+const WITHHELD = LIVE_TEST ? 'Withheld — live test mode' : null;
+
 const DEPARTURE = '2026-09-02'; // day 1 — Ron departed the morning of Sept 2, 2026
 const GOAL = 1000000;
 
@@ -139,8 +154,8 @@ const isSupercharger = (c) =>
 
 /* Charge sessions, split Tesla-network vs everything else. Published sessions
    only — anything inside the embargo window is held with the drives. */
-function chargeCounts(charges, cutoff) {
-  const out = { day: 0, daySc: 0, dayOther: 0, life: 0, lifeSc: 0, lifeOther: 0, lastDay: null };
+function chargeCounts(charges, cutoff, targetDay) {
+  const out = { day: 0, daySc: 0, dayOther: 0, life: 0, lifeSc: 0, lifeOther: 0, lastDay: targetDay || null };
   const published = (charges || []).filter((c) => {
     const d = toDate(c.started_at);
     return d && d <= cutoff;
@@ -149,10 +164,8 @@ function chargeCounts(charges, cutoff) {
     out.life += 1;
     if (isSupercharger(c)) out.lifeSc += 1; else out.lifeOther += 1;
   }
-  const last = published[published.length - 1];
-  const day = last && dayKey(last.started_at);
-  out.lastDay = day || null;
-  for (const c of published.filter((c) => dayKey(c.started_at) === day)) {
+  if (!targetDay) return out;
+  for (const c of published.filter((c) => dayKey(c.started_at) === targetDay)) {
     out.day += 1;
     if (isSupercharger(c)) out.daySc += 1; else out.dayOther += 1;
   }
@@ -171,20 +184,32 @@ export function shape({ state, drives, charges }) {
   const heldKm = held.reduce((s, d) => s + (d.odometer_distance || 0), 0);
 
   const days = byDay(published);
-  const recent = days.slice(-8);
-  const last = days[days.length - 1] || { date: DEPARTURE, km: 0, ending: null };
+
+  /* The dashboard is about the challenge, not the car's whole history. Days
+     before departure are dropped — otherwise they render as "Day -15". The
+     lifetime odometer stays lifetime; only the daily figures are trip-scoped. */
+  const trip = days.filter((d) => (dayIndex(d.date) || 0) >= 1);
+  const recent = trip.slice(-8);
+  const last = trip[trip.length - 1] || null;
+  const dayNo = last ? dayIndex(last.date) : 0;
+
+  /* Position comes from the last published drive whatever its date, so the
+     location box isn't blank before day 1 closes. Still town-rounded and still
+     behind the embargo. */
+  const position = days[days.length - 1] || { date: null, ending: null };
+
   const odometer = km(odometerKm(state) - heldKm);
-  const driving = days.filter((d) => d.km > 0);
-  const ch = chargeCounts(charges, cutoff);
+  const driving = trip.filter((d) => d.km > 0);
+  const ch = chargeCounts(charges, cutoff, last ? last.date : null);
 
   return {
     odometer,
     goal: GOAL,
-    day: dayIndex(last.date),
-    province: town(last.ending).split(',').pop().trim() || '—',
-    route: town(last.ending),
-    today: km(last.km),
-    best: km(Math.max(0, ...days.map((d) => d.km))),
+    day: dayNo,
+    province: WITHHELD || (town(position.ending).split(',').pop().trim() || '—'),
+    route: WITHHELD || town(position.ending),
+    today: km(last ? last.km : 0),
+    best: km(Math.max(0, ...trip.map((d) => d.km))),
     avgPerDay: driving.length ? km(driving.reduce((s, d) => s + d.km, 0) / driving.length) : 0,
     chargeSessions: ch.day,
     chargeSupercharger: ch.daySc,
@@ -195,19 +220,20 @@ export function shape({ state, drives, charges }) {
     /* The map needs plotted points; the shaping job has no projection, so the
        card keeps its placeholder corridor until a real one is supplied. */
     dayMap: {
-      label: 'Latest day · Day ' + dayIndex(last.date),
-      corridor: town(last.ending),
-      km: km(last.km),
+      label: last ? 'Latest day · Day ' + dayNo : 'Awaiting day 1',
+      corridor: WITHHELD || town(position.ending),
+      km: km(last ? last.km : 0),
       path: [],
       stops: [],
     },
-    asOf: last.date,
+    asOf: (last && last.date) || position.date || dayKey(cutoff),
     embargoHours: EMBARGO_HOURS,
+    liveTest: LIVE_TEST || undefined,
     days: recent.map((d) => ({ label: 'D ' + dayIndex(d.date), km: km(d.km) })),
-    log: days.slice(-5).reverse().map((d) => ({
+    log: trip.slice(-5).reverse().map((d) => ({
       day: 'Day ' + dayIndex(d.date),
       date: toDate(d.date).toLocaleDateString('en-CA', { day: 'numeric', month: 'short', timeZone: TZ }),
-      province: town(d.ending).split(',').pop().trim(),
+      province: WITHHELD || town(d.ending).split(',').pop().trim(),
       km: km(d.km).toLocaleString('en-CA'),
       note: '', // written by hand — Tessie has no field for what broke
     })),
