@@ -1,95 +1,95 @@
 {
-  "odometer": 0,
+  "odometer": 785,
   "goal": 1000000,
-  "day": null,
-  "province": "Canada",
-  "route": "Brandon, Manitoba R7A 7S1, Canada",
-  "today": 224,
-  "best": 224,
-  "avgPerDay": 9,
-  "chargeSessions": 1,
+  "day": -1,
+  "province": "Manitoba",
+  "route": "Winkler, Manitoba",
+  "today": 1,
+  "best": 262,
+  "avgPerDay": 64,
+  "chargeSessions": 3,
   "chargeSupercharger": 0,
-  "chargeOther": 1,
-  "chargeLifetime": 13,
+  "chargeOther": 3,
+  "chargeLifetime": 8,
   "chargeLifetimeSupercharger": 0,
-  "chargeLifetimeOther": 13,
+  "chargeLifetimeOther": 8,
   "dayMap": {
-    "label": "Latest day · Day NaN",
-    "corridor": "Brandon, Manitoba R7A 7S1, Canada",
-    "km": 224,
+    "label": "Latest day · Day -1",
+    "corridor": "Winkler, Manitoba",
+    "km": 1,
     "path": [],
     "stops": []
   },
-  "asOf": "1788351225",
+  "asOf": "2026-08-31",
   "embargoHours": 24,
   "days": [
     {
-      "label": "D NaN",
+      "label": "D -15",
+      "km": 30
+    },
+    {
+      "label": "D -14",
+      "km": 12
+    },
+    {
+      "label": "D -13",
+      "km": 0
+    },
+    {
+      "label": "D -12",
+      "km": 6
+    },
+    {
+      "label": "D -11",
+      "km": 0
+    },
+    {
+      "label": "D -5",
+      "km": 38
+    },
+    {
+      "label": "D -4",
+      "km": 262
+    },
+    {
+      "label": "D -1",
       "km": 1
-    },
-    {
-      "label": "D NaN",
-      "km": 0
-    },
-    {
-      "label": "D NaN",
-      "km": 0
-    },
-    {
-      "label": "D NaN",
-      "km": 1
-    },
-    {
-      "label": "D NaN",
-      "km": 0
-    },
-    {
-      "label": "D NaN",
-      "km": 0
-    },
-    {
-      "label": "D NaN",
-      "km": 1
-    },
-    {
-      "label": "D NaN",
-      "km": 224
     }
   ],
   "log": [
     {
-      "day": "Day NaN",
-      "date": "Invalid Date",
-      "province": "Canada",
-      "km": "224",
-      "note": ""
-    },
-    {
-      "day": "Day NaN",
-      "date": "Invalid Date",
-      "province": "Canada",
+      "day": "Day -1",
+      "date": "Aug 30",
+      "province": "Manitoba",
       "km": "1",
       "note": ""
     },
     {
-      "day": "Day NaN",
-      "date": "Invalid Date",
-      "province": "Canada",
+      "day": "Day -4",
+      "date": "Aug 27",
+      "province": "Manitoba",
+      "km": "262",
+      "note": ""
+    },
+    {
+      "day": "Day -5",
+      "date": "Aug 26",
+      "province": "Manitoba",
+      "km": "38",
+      "note": ""
+    },
+    {
+      "day": "Day -11",
+      "date": "Aug 20",
+      "province": "Manitoba",
       "km": "0",
       "note": ""
     },
     {
-      "day": "Day NaN",
-      "date": "Invalid Date",
-      "province": "Canada",
-      "km": "0",
-      "note": ""
-    },
-    {
-      "day": "Day NaN",
-      "date": "Invalid Date",
-      "province": "Canada",
-      "km": "1",
+      "day": "Day -12",
+      "date": "Aug 19",
+      "province": "Manitoba",
+      "km": "6",
       "note": ""
     }
   ]
