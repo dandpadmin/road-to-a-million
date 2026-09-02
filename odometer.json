@@ -1,5 +1,5 @@
 {
-  "odometer": 1180,
+  "odometer": 1192,
   "goal": 1000000,
   "day": 1,
   "province": "Withheld — live test mode",
@@ -8,11 +8,11 @@
   "best": 348,
   "avgPerDay": 348,
   "chargeSessions": 1,
-  "chargeSupercharger": 0,
-  "chargeOther": 1,
+  "chargeSupercharger": 1,
+  "chargeOther": 0,
   "chargeLifetime": 13,
-  "chargeLifetimeSupercharger": 0,
-  "chargeLifetimeOther": 13,
+  "chargeLifetimeSupercharger": 2,
+  "chargeLifetimeOther": 11,
   "dayMap": {
     "label": "Latest day · Day 1",
     "corridor": "Withheld — live test mode",
