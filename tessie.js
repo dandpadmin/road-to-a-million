@@ -242,6 +242,10 @@ export function shape({ state, drives, charges }) {
       label: last ? 'Latest day · Day ' + dayNo : 'Awaiting day 1',
       corridor: WITHHELD || town(position.ending),
       km: km(last ? last.km : 0),
+      chargeStops: ch.day,
+      note: LIVE_TEST
+        ? 'Live test · location withheld'
+        : 'Town level · delayed ' + EMBARGO_HOURS + 'h',
       path: [],
       stops: [],
     },
