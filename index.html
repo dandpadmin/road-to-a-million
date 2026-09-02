@@ -1,0 +1,126 @@
+<!-- @dsCard group="Odometer" viewport="1280x860" name="Odometer dashboard" subtitle="Distance to a million, latest-day route, daily log and charge" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>RTAM — Odometer</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}</style></head>
+<body>
+<div id="root"></div>
+<script src="data.js"></script>
+<script type="text/babel" src="Panels.jsx"></script>
+<script type="text/babel">
+const { Badge, Wordmark, Eyebrow, Plate, StatReadout, ProgressRule, Chip, SpecColumns, DpLockup } = window.RoadToAMillionDesignSystem_6606d4;
+const { DayMap } = window;
+const { useState } = React;
+const D = window.RTAM_DATA;
+const A = '../../assets/';
+
+function App() {
+  const [range, setRange] = useState('8 days');
+  const pct = (D.odometer / D.goal) * 100;
+  const remaining = D.goal - D.odometer;
+  const daysLeft = Math.round(remaining / D.avgPerDay);
+
+  return (
+    <div style={{ minHeight: '100vh' }}>
+      <div style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <Badge size={28} src={A + 'badge-art.svg'} showType={false} />
+          <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase' }}>Road To A Million</span>
+        </div>
+        <div style={{ flex: 1 }}></div>
+        <span style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: '#00B4D9' }}>● Delayed 24H · through Day 411</span>
+      </div>
+
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>
+
+        <div style={{ display: 'grid', gap: 26 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 32, flexWrap: 'wrap' }}>
+            <div style={{ display: 'grid', gap: 14 }}>
+              <Eyebrow tone="cyan" size={13} track={0.22}>Day {D.day} · {D.province}</Eyebrow>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 18 }}>
+                <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 86, lineHeight: .95, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.odometer.toLocaleString()}</span>
+                <span style={{ fontSize: 22, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51' }}>km</span>
+              </div>
+              <div style={{ fontSize: 13, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.55)' }}>{D.route}</div>
+            </div>
+            <div style={{ display: 'grid', gap: 10, justifyItems: 'end', textAlign: 'right' }}>
+              <Eyebrow tone="bronze" size={10}>Remaining</Eyebrow>
+              <div style={{ fontSize: 34, fontWeight: 600, fontVariantNumeric: 'tabular-nums', color: '#F6F0E3' }}>{remaining.toLocaleString()} <span style={{ fontSize: 14, letterSpacing: '.18em', color: '#A47D51' }}>KM</span></div>
+              <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>≈ {daysLeft} days at current pace</div>
+            </div>
+          </div>
+          <div style={{ display: 'grid', gap: 10 }}>
+            <ProgressRule percent={pct} height={5} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>
+              <span>{pct.toFixed(1)}% complete</span><span style={{ color: '#A47D51' }}>1,000,000 km goal</span>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap', padding: '0 0 24px', borderBottom: '1px solid rgba(246,240,227,.18)' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
+            <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 56, lineHeight: 1, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.chargeLifetime.toLocaleString()}</span>
+            <span style={{ fontSize: 15, fontWeight: 500, lineHeight: 1.3, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51', paddingBottom: 4 }}>Charge sessions<br />so far</span>
+          </div>
+          <div style={{ display: 'grid', gap: 6, justifyItems: 'end', textAlign: 'right', paddingBottom: 4 }}>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{D.chargeLifetimeSupercharger.toLocaleString()} Tesla Supercharger</span>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{D.chargeLifetimeOther.toLocaleString()} other networks</span>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 24 }}>
+          <Metric label="Latest day" value={D.today.toLocaleString()} unit="KM" sub={'Best ' + D.best.toLocaleString() + ' km — Day 406'} />
+          <Metric label="Daily average" value={D.avgPerDay.toLocaleString()} unit="KM" sub={'Across ' + D.day + ' days'} />
+          <SplitMetric label="Latest day charge sessions" a={{ value: D.chargeSupercharger, label: 'Tesla Supercharger' }} b={{ value: D.chargeOther, label: 'Other networks' }} />
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 32, alignItems: 'start' }}>
+          <DayMap map={D.dayMap} />
+          <Plate tone="ghost" pad={26} style={{ gap: 16 }}>
+            <Eyebrow tone="bronze" size={10}>Agreement</Eyebrow>
+            <p style={{ margin: 0, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.62)' }}>The run ends at the earliest of: the odometer reaching 1,000,000 km; the battery failing past reasonable operation; or the vehicle being declared a total loss.</p>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Chip>Started 2 Sep 2026</Chip><Chip>2026 Model 3</Chip></div>
+          </Plate>
+        </div>
+
+        <div style={{ display: 'grid', gap: 32 }}>
+          <div style={{ display: 'grid', gap: 20 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 20 }}>
+              <Eyebrow tone="bronze" size={11} track={0.24}>Distance per day</Eyebrow>
+              <div style={{ display: 'flex', gap: 8 }}>
+                {['8 days', '30 days'].map(r => (
+                  <button key={r} onClick={() => setRange(r)} style={{ padding: '8px 14px', cursor: 'pointer', borderRadius: 0, background: range === r ? '#00B4D9' : 'transparent', color: range === r ? '#1C242C' : 'rgba(246,240,227,.6)', border: '1px solid ' + (range === r ? '#00B4D9' : 'rgba(246,240,227,.22)'), fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>{r}</button>
+                ))}
+              </div>
+            </div>
+            <DistanceBars days={range === '8 days' ? D.days : D.days.concat(D.days, D.days, D.days.slice(0, 6))} />
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gap: 8 }}>
+          <Eyebrow tone="bronze" size={11} track={0.24}>Daily log</Eyebrow>
+          <div style={{ borderTop: '1px solid rgba(246,240,227,.18)', marginTop: 12 }}>
+            {D.log.map((r, i) => <LogRow key={i} {...r} />)}
+          </div>
+        </div>
+
+        <SpecColumns items={[
+          { label: 'Figures', body: 'Every number is mono with tabular figures. Counters must not jitter as they tick.' },
+          { label: 'One accent', body: 'Cyan marks the headline value and the latest day\u2019s bar. Nothing else on the page is cyan.' },
+          { label: 'Source', body: 'Tessie, held back 24 hours and rounded to town. Never a live position.' },
+        ]} />
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap', paddingTop: 36, borderTop: '1px solid rgba(246,240,227,.18)' }}>
+          <DpLockup badgeSize={58} badgeSrc={A + 'badge-art.svg'} wordmarkSrc={A + 'dp-wordmark.svg'} />
+          <div style={{ fontSize: 11, lineHeight: 1.9, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.45)', textAlign: 'right' }}>Figures are illustrative<br />Live feed not yet connected</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body></html>

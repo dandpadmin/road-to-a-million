@@ -1,0 +1,30 @@
+# Copy to .github/workflows/snapshot.yml in the repository.
+# This is the timer: every 15 minutes it runs the helper and commits odometer.json.
+name: Odometer snapshot
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Pull and shape the feed
+        env:
+          TESSIE_TOKEN: ${{ secrets.TESSIE_TOKEN }}
+          TESSIE_VIN: ${{ secrets.TESSIE_VIN }}
+          OUT: ui_kits/odometer/odometer.json
+        run: node ui_kits/odometer/job/fetch-snapshot.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "odometer-bot"
+          git config user.email "odometer-bot@users.noreply.github.com"
+          git add ui_kits/odometer/odometer.json
+          git diff --staged --quiet || git commit -m "odometer snapshot"
+          git push
