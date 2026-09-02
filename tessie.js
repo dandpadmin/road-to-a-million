@@ -96,6 +96,12 @@ function dayKey(v) {
   return d ? d.toLocaleDateString('en-CA', { timeZone: TZ }) : null;
 }
 
+function fmtDayKey(key) {
+  const [y, m, d] = String(key).split('-').map(Number);
+  if (!y || !m || !d) return '-';
+  return new Date(y, m - 1, d).toLocaleDateString('en-CA', { day: 'numeric', month: 'short' });
+}
+
 function dayIndex(v) {
   const d = toDate(v);
   if (!d) return null;
@@ -232,7 +238,7 @@ export function shape({ state, drives, charges }) {
     days: recent.map((d) => ({ label: 'D ' + dayIndex(d.date), km: km(d.km) })),
     log: trip.slice(-5).reverse().map((d) => ({
       day: 'Day ' + dayIndex(d.date),
-      date: toDate(d.date).toLocaleDateString('en-CA', { day: 'numeric', month: 'short', timeZone: TZ }),
+      date: fmtDayKey(d.date),
       province: WITHHELD || town(d.ending).split(',').pop().trim(),
       km: km(d.km).toLocaleString('en-CA'),
       note: '', // written by hand — Tessie has no field for what broke
