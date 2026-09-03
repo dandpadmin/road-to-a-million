@@ -1,12 +1,12 @@
 {
-  "odometer": 2027,
+  "odometer": 2126,
   "goal": 1000000,
   "day": 1,
   "province": "Withheld — live test mode",
   "route": "Withheld — live test mode",
-  "today": 1054,
-  "best": 1054,
-  "avgPerDay": 1054,
+  "today": 1333,
+  "best": 1333,
+  "avgPerDay": 1333,
   "chargeSessions": 5,
   "chargeSupercharger": 5,
   "chargeOther": 0,
@@ -16,7 +16,7 @@
   "dayMap": {
     "label": "Latest day · Day 1",
     "corridor": "Withheld — live test mode",
-    "km": 1054,
+    "km": 1333,
     "chargeStops": 5,
     "note": "Live test · location withheld",
     "path": [],
@@ -28,7 +28,7 @@
   "days": [
     {
       "label": "D 1",
-      "km": 1054
+      "km": 1333
     }
   ],
   "log": [
@@ -36,7 +36,7 @@
       "day": "Day 1",
       "date": "Sep 2",
       "province": "Withheld — live test mode",
-      "km": "1,054",
+      "km": "1,333",
       "note": ""
     }
   ]
