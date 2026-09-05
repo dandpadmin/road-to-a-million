@@ -4,20 +4,20 @@
   "day": 3,
   "province": "Withheld — live test mode",
   "route": "Withheld — live test mode",
-  "today": 1116,
+  "today": 1117,
   "best": 1333,
   "avgPerDay": 968,
-  "chargeSessions": 5,
+  "chargeSessions": 6,
   "chargeSupercharger": 4,
-  "chargeOther": 1,
-  "chargeLifetime": 25,
+  "chargeOther": 2,
+  "chargeLifetime": 26,
   "chargeLifetimeSupercharger": 13,
-  "chargeLifetimeOther": 12,
+  "chargeLifetimeOther": 13,
   "dayMap": {
     "label": "Latest day · Day 3",
     "corridor": "Withheld — live test mode",
-    "km": 1116,
-    "chargeStops": 5,
+    "km": 1117,
+    "chargeStops": 6,
     "note": "Live test · location withheld",
     "path": [],
     "stops": []
@@ -36,7 +36,7 @@
     },
     {
       "label": "D 3",
-      "km": 1116
+      "km": 1117
     }
   ],
   "log": [
@@ -44,7 +44,7 @@
       "day": "Day 3",
       "date": "Sep 4",
       "province": "Withheld — live test mode",
-      "km": "1,116",
+      "km": "1,117",
       "note": ""
     },
     {
