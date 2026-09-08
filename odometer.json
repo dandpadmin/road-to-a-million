@@ -17,7 +17,7 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 67,
+    "km": 74,
     "from": "Dawson, Yukon",
     "to": "Yukon",
     "corridor": "Yukon",
@@ -25,37 +25,45 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.78,
-        0.92
+        0.88,
+        0.83
       ],
       [
-        0.8309,
-        0.92
+        0.92,
+        0.83
       ],
       [
-        0.78,
-        0.92
+        0.88,
+        0.83
       ],
       [
-        0.1691,
-        0.08
+        0.4,
+        0.17
+      ],
+      [
+        0.08,
+        0.17
+      ],
+      [
+        0.16,
+        0.17
       ]
     ],
     "stops": [
       {
-        "x": 0.78,
-        "y": 0.92,
+        "x": 0.88,
+        "y": 0.83,
         "town": "Dawson, Yukon",
         "kind": "start"
       },
       {
-        "x": 0.1691,
-        "y": 0.08,
+        "x": 0.16,
+        "y": 0.17,
         "town": "Yukon",
         "kind": "end"
       }
     ],
-    "kmPerPx": 0.0661,
+    "kmPerPx": 0.0841,
     "plotted": true
   },
   "dayMaps": [
@@ -502,7 +510,7 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 67,
+      "km": 74,
       "from": "Dawson, Yukon",
       "to": "Yukon",
       "corridor": "Yukon",
@@ -510,48 +518,62 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.78,
-          0.92
+          0.88,
+          0.83
         ],
         [
-          0.8309,
-          0.92
+          0.92,
+          0.83
         ],
         [
-          0.78,
-          0.92
+          0.88,
+          0.83
         ],
         [
-          0.1691,
-          0.08
+          0.4,
+          0.17
+        ],
+        [
+          0.08,
+          0.17
+        ],
+        [
+          0.16,
+          0.17
         ]
       ],
       "stops": [
         {
-          "x": 0.78,
-          "y": 0.92,
+          "x": 0.88,
+          "y": 0.83,
           "town": "Dawson, Yukon",
           "kind": "start"
         },
         {
-          "x": 0.1691,
-          "y": 0.08,
+          "x": 0.16,
+          "y": 0.17,
           "town": "Yukon",
           "kind": "end"
         }
       ],
-      "kmPerPx": 0.0661,
+      "kmPerPx": 0.0841,
       "plotted": true
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-08T19:13:08.349Z",
+  "updatedAt": "2026-09-08T19:29:16.622Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 10,
+          "wh": 335,
+          "km": 7,
+          "prov": "Yukon"
+        },
         {
           "t": 10.3,
           "wh": 259,
@@ -919,7 +941,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 148,
+      "median": 149,
       "best": 88,
       "worst": 491,
       "provinces": [
