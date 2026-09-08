@@ -1,0 +1,139 @@
+@import url("https://use.typekit.net/uuo0kkn.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+/* ---- tokens/fonts.css ---- */
+/* Etna X Condensed Bold + Etna Bold — Adobe Fonts (Mark Simonson), kit uuo0kkn.
+   VERIFIED: the kit serves both families to this host (etna-x-condensed 700 loads
+   live). No binary is shipped — the only copies in the source were 1 kB
+   PDF-embedded subsets, unusable as webfonts.
+   Typekit only serves to domains whitelisted in Adobe Fonts > Web Projects.
+   Add every host (staging, production, preview sandboxes) to kit uuo0kkn or
+   the display face silently falls back to Arial Narrow. */
+
+
+/* IBM Plex Mono — free, Google Fonts. Vendors and creators can always match it. */
+
+/* ---- tokens/colors.css ---- */
+:root {
+  /* base palette — the only four colours in the system */
+  --rtam-midnight: #1C242C;
+  --rtam-bone: #F6F0E3;
+  --rtam-bronze: #A47D51;
+  --rtam-cyan: #00B4D9;
+
+  /* transparencies of Bone, for use on Midnight */
+  --bone-78: rgba(246, 240, 227, 0.78);
+  --bone-66: rgba(246, 240, 227, 0.66);
+  --bone-50: rgba(246, 240, 227, 0.50);
+  --bone-22: rgba(246, 240, 227, 0.22);
+  --bone-14: rgba(246, 240, 227, 0.14);
+
+  /* transparencies of Midnight, for use on Bone */
+  --midnight-70: rgba(28, 36, 44, 0.70);
+  --midnight-55: rgba(28, 36, 44, 0.55);
+  --midnight-16: rgba(28, 36, 44, 0.16);
+  --midnight-12: rgba(28, 36, 44, 0.12);
+
+  /* semantic aliases */
+  --surface-base: var(--rtam-midnight);
+  --surface-inverse: var(--rtam-bone);
+  --surface-accent: var(--rtam-cyan);
+  --text-primary: var(--rtam-bone);
+  --text-secondary: var(--bone-66);
+  --text-muted: var(--bone-50);
+  --text-accent: var(--rtam-cyan);
+  --text-frame: var(--rtam-bronze);
+  --text-on-inverse: var(--rtam-midnight);
+  --border-hairline: var(--bone-14);
+  --border-strong: var(--bone-22);
+  --scrim-plate: rgba(28, 36, 44, 0.90);
+
+  /* usage ratio, documented in the guide: 60 / 25 / 10 / 5 */
+  --ratio-base: 60; /* @kind other */
+  --ratio-inverse: 25; /* @kind other */
+  --ratio-frame: 10; /* @kind other */
+  --ratio-accent: 5; /* @kind other */
+}
+
+/* ---- tokens/typography.css ---- */
+:root {
+  /* families — Etna via Adobe Fonts kit uuo0kkn, IBM Plex Mono via Google Fonts */
+  --font-display: "etna-x-condensed", "Arial Narrow", sans-serif;
+  --font-display-wide: "etna", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  /* display scale — always uppercase, never positively tracked */
+  --text-display-xl: 128px;
+  --text-display-l: 88px;
+  --text-display-m: 64px;
+  --text-headline: 40px;
+  --leading-display: 0.88;
+  --leading-headline: 0.94;
+  --track-display: -0.01em;
+
+  /* mono scale — labels, data, body */
+  --text-stat: 40px;
+  --text-body: 17px;
+  --text-eyebrow: 13px;
+  --text-label: 11px;
+  --text-caption: 11px;
+  --leading-body: 1.7;
+  --leading-tight: 1.2;
+
+  /* tracking */
+  --track-eyebrow: 0.22em;
+  --track-label: 0.18em;
+  --track-wide: 0.34em;
+
+  /* weights */
+  --weight-display: 700;
+  --weight-semibold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+
+  --numeric-data: tabular-nums; /* @kind other */
+}
+
+/* ---- tokens/spacing.css ---- */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 22px;
+  --space-6: 26px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 56px;
+  --space-10: 64px;
+  --space-11: 96px;
+  --space-12: 110px;
+
+  --gutter: var(--space-8);
+  --section-y: var(--space-12);
+  --card-pad: var(--space-7);
+  --max-width: 1180px;
+  --grid-gap: var(--space-6);
+}
+
+/* ---- tokens/effects.css ---- */
+:root {
+  /* the system has no rounding and no shadows — flat plates, hairline rules */
+  --radius: 0;
+  --rule-hairline: 1px solid var(--border-hairline); /* @kind other */
+  --rule-strong: 1px solid var(--border-strong); /* @kind other */
+  --shadow: none;
+
+  /* motion — vehicles start slowly, hold, then leave */
+  --ease-enter: cubic-bezier(0.22, 0.9, 0.24, 1); /* @kind other */
+  --ease-draw: cubic-bezier(0.3, 0.85, 0.2, 1); /* @kind other */
+  --ease-data: linear; /* @kind other */
+  --dur-in: 600ms; /* @kind other */
+  --dur-out: 400ms; /* @kind other */
+  --dur-hold: 2000ms; /* @kind other */
+
+  /* badge application minimums */
+  --badge-min-digital: 150px; /* @kind spacing */
+  --badge-min-print: 38mm; /* @kind spacing */
+  --badge-clearspace: 0.25; /* @kind other */
+}
