@@ -64,6 +64,13 @@ const LIVE_KM = EMBARGO_HOURS < 24;
 
 const DEPARTURE = '2026-09-02'; // day 1 — Ron departed the morning of Sept 2, 2026
 const GOAL = 1000000;
+/* How many days get a plotted route. Every plotted day costs ~500 bytes in
+   odometer.json, so this is a rolling window rather than the whole trip —
+   at 1,000 days the file would otherwise pass half a megabyte. Older days
+   keep their log row and their distance, they just stop being clickable. */
+const MAP_DAYS = 30;
+/* How many days the log lists. */
+const LOG_DAYS = 10;
 
 /* --- the scheduled job ----------------------------------------------------
  * Runs somewhere private on a timer. Never in the web tier.
@@ -151,17 +158,21 @@ function town(loc) {
   return parts.filter(Boolean).join(', ') || '—';
 }
 
-/* Tessie returns one record per drive; the dashboard wants one per day. */
+/* Tessie returns one record per drive; the dashboard wants one per day.
+   Sorted before folding so `starting` is genuinely the day's first departure
+   and `ending` its last arrival — the records do not arrive in order. */
 function byDay(drives) {
   const acc = new Map();
-  for (const d of drives) {
+  const ordered = [...(drives || [])].sort((a, b) => (toDate(a.started_at) || 0) - (toDate(b.started_at) || 0));
+  for (const d of ordered) {
     const key = dayKey(d.started_at);
     if (!key) continue;
-    const row = acc.get(key) || { date: key, km: 0, drives: 0, energy: 0, autopilot: 0, ending: null };
+    const row = acc.get(key) || { date: key, km: 0, drives: 0, energy: 0, autopilot: 0, starting: null, ending: null };
     row.km += d.odometer_distance || 0;
     row.energy += d.energy_used || 0;
     row.autopilot += d.autopilot_distance || 0;
     row.drives += 1;
+    if (row.starting === null) row.starting = d.starting_location || null;
     row.ending = d.ending_location || row.ending;
     acc.set(key, row);
   }
@@ -220,13 +231,23 @@ function coords(o, prefix) {
   return [snap(lat), snap(lon)];
 }
 
+/* The viewBox DayMap draws into. Projection needs these to keep one scale on
+   both axes, so they live here and must match Panels.jsx. */
+const VB_W = 720, VB_H = 300, PAD = 0.08, DEG_KM = 111.0;
+
 /* Project one day's drives into the normalised 0–1 points DayMap plots.
-   Independent lat/lon normalisation with a span floor — the floor stops a
-   90km day from being magnified into a fake continental sweep. Callers must
-   pass only location-embargoed drives — this function does not police the
-   clock, it just draws what it is handed. */
+
+   EQUAL SCALE ON BOTH AXES. An earlier version normalised lat and lon
+   independently, which made every day fill the frame regardless of length —
+   fine for a single latest-day panel, wrong the moment days can be compared.
+   One px-per-degree factor is used for both axes and reported back as
+   kmPerPx, so the panel can draw an honest scale bar and a 90km day reads as
+   visibly smaller than a 1,300km one.
+
+   Callers must pass only location-embargoed drives — this function does not
+   police the clock, it just draws what it is handed. */
 function projectDay(drives, charges, targetDay) {
-  const empty = { path: [], stops: [] };
+  const empty = { path: [], stops: [], kmPerPx: 0 };
   if (!targetDay) return empty;
 
   const dayDrives = (drives || [])
@@ -246,23 +267,31 @@ function projectDay(drives, charges, targetDay) {
   if (pts.length < 2) return empty;
 
   const lats = pts.map((p) => p.ll[0]);
-  const lons = pts.map((p) => p.ll[1]);
-  const minLat = Math.min(...lats), maxLat = Math.max(...lats);
-  const minLon = Math.min(...lons), maxLon = Math.max(...lons);
-  const FLOOR = 0.5;
-  const spanLat = Math.max(maxLat - minLat, FLOOR);
-  const spanLon = Math.max(maxLon - minLon, FLOOR);
-  const midLat = (minLat + maxLat) / 2, midLon = (minLon + maxLon) / 2;
-  const PAD = 0.08, SCALE = 1 - PAD * 2;
-  /* y inverted — north is up. */
-  const nx = (lon) => PAD + ((lon - midLon) / spanLon + 0.5) * SCALE;
-  const ny = (lat) => PAD + (0.5 - (lat - midLat) / spanLat) * SCALE;
-  const at = (p) => [Number(nx(p.ll[1]).toFixed(4)), Number(ny(p.ll[0]).toFixed(4))];
+  const midLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+  /* Equirectangular: squeeze longitude by cos(lat) so a degree east covers the
+     same ground as a degree north at this latitude. y inverted — north is up. */
+  const kx = Math.cos((midLat * Math.PI) / 180);
+  const mu = (ll) => [ll[1] * kx, -ll[0]];
+  const units = pts.map((p) => mu(p.ll));
+  const xs = units.map((m) => m[0]), ys = units.map((m) => m[1]);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  /* Floor matches the 5km snap grid — below it the points are one cell and
+     there is nothing real left to magnify. */
+  const FLOOR = GRID;
+  const boxW = Math.max(maxX - minX, FLOOR), boxH = Math.max(maxY - minY, FLOOR);
+  const midX = (minX + maxX) / 2, midY = (minY + maxY) / 2;
+  /* One factor, both axes: px per degree, whichever axis is tighter. */
+  const k = Math.min((VB_W * (1 - PAD * 2)) / boxW, (VB_H * (1 - PAD * 2)) / boxH);
+  const at = (m) => [
+    Number((0.5 + ((m[0] - midX) * k) / VB_W).toFixed(4)),
+    Number((0.5 + ((m[1] - midY) * k) / VB_H).toFixed(4)),
+  ];
 
-  const path = pts.map(at);
+  const path = units.map(at);
   const stops = [];
   const push = (p, kind) => {
-    const [x, y] = at(p);
+    const [x, y] = at(mu(p.ll));
     stops.push({ x, y, town: p.town || '—', kind });
   };
   push(pts[0], 'start');
@@ -280,7 +309,18 @@ function projectDay(drives, charges, targetDay) {
   }
 
   push(pts[pts.length - 1], 'end');
-  return { path, stops };
+
+  /* A charge that happened where the day started or ended lands on the same
+     coordinates as the start/end marker and renders as a dot stacked on a dot.
+     Keep one marker per point, preferring start/end — the charge is still
+     counted in chargeStops, which is read off the records, not these pins. */
+  const seen = new Map();
+  for (const s of stops) {
+    const key = s.x + ',' + s.y;
+    const prev = seen.get(key);
+    if (!prev || (prev.kind === 'charge' && s.kind !== 'charge')) seen.set(key, s);
+  }
+  return { path, stops: [...seen.values()], kmPerPx: Number((DEG_KM / k).toFixed(4)) };
 }
 
 export function shape({ state, drives, charges }) {
@@ -301,33 +341,56 @@ export function shape({ state, drives, charges }) {
 
   const days = byDay(published);
   const locDays = byDay(locPublished);
-  /* Which day keys may show a town at all. A day appears here as soon as some
-     of it clears the location window; the ending_location it carries is drawn
-     from those cleared drives, so it is never fresher than the window. */
-  const placeOf = new Map(locDays.map((d) => [d.date, d.ending]));
+  /* Which day keys may show a place at all, and the whole row so the log can
+     name both ends of the day. A day appears here as soon as some of it clears
+     the location window; the locations it carries are drawn from those cleared
+     drives, so they are never fresher than the window. */
+  const placeOf = new Map(locDays.map((d) => [d.date, d]));
 
   /* The dashboard is about the challenge, not the car's whole history. Days
      before departure are dropped — otherwise they render as "Day -15". The
      lifetime odometer stays lifetime; only the daily figures are trip-scoped. */
   const trip = days.filter((d) => (dayIndex(d.date) || 0) >= 1);
-  const recent = trip.slice(-8);
+  const recent = trip.slice(-30);
   const last = trip[trip.length - 1] || null;
   const dayNo = last ? dayIndex(last.date) : 0;
 
   /* Position comes from the last location-embargoed drive whatever its date, so
      the location box isn't blank before day 1 closes. Town-rounded, and at
      least LOCATION_EMBARGO_HOURS old by construction. */
-  const position = locDays[locDays.length - 1] || { date: null, ending: null };
+  const position = locDays[locDays.length - 1] || { date: null, starting: null, ending: null };
   const locTrip = locDays.filter((d) => (dayIndex(d.date) || 0) >= 1);
   const mapDay = locTrip[locTrip.length - 1] || null;
 
   const odometer = km(odometerKm(state) - heldKm);
   const driving = trip.filter((d) => d.km > 0);
   const ch = chargeCounts(charges, cutoff, last ? last.date : null);
-  /* Charge STOPS are plotted, so the map is built off the location clock and
-     the location-side drives — never off `last`, which may be today. */
-  const geo = projectDay(locPublished, charges, mapDay ? mapDay.date : null);
-  const mapCh = chargeCounts(charges, locCutoff, mapDay ? mapDay.date : null);
+  /* Charge STOPS are plotted, so the maps are built off the location clock and
+     the location-side drives — never off `last`, which may be today. One entry
+     per day in the rolling window, oldest first, so the page can let the reader
+     click back through the trip. */
+  const dayMaps = locTrip.slice(-MAP_DAYS).map((d) => {
+    const g = projectDay(locPublished, charges, d.date);
+    return {
+      key: d.date,
+      day: dayIndex(d.date),
+      label: 'Day ' + dayIndex(d.date) + ' \u00b7 ' + fmtDayKey(d.date),
+      km: km(d.km),
+      from: town(d.starting),
+      to: town(d.ending),
+      corridor: town(d.ending),
+      /* Counted from the charge records, not the plotted markers — a session
+         without coordinates still counts but never gets a pin. */
+      chargeStops: chargeCounts(charges, locCutoff, d.date).day,
+      note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
+      path: g.path,
+      stops: g.stops,
+      /* km per viewBox pixel — what the panel's scale bar is drawn from. */
+      kmPerPx: g.kmPerPx,
+      plotted: g.path.length > 1 || undefined,
+    };
+  });
+  const plottedKeys = new Set(dayMaps.filter((m) => m.plotted).map((m) => m.key));
 
   return {
     odometer,
@@ -347,19 +410,21 @@ export function shape({ state, drives, charges }) {
     /* Plotted from the location-embargoed drives, snapped to a 5km grid. Its
        label reports the day it actually shows, which under live km is a day
        behind the odometer above it — say so on the page rather than letting the
-       two read as the same day. */
-    dayMap: {
-      label: mapDay ? 'Day ' + dayIndex(mapDay.date) + ' · ' + fmtDayKey(mapDay.date) : 'Awaiting day 1',
+       two read as the same day. `dayMap` is the newest plotted day; `dayMaps`
+       carries the rolling window the log rows select from. */
+    dayMap: dayMaps[dayMaps.length - 1] || {
+      label: 'Awaiting day 1',
       corridor: town(position.ending),
-      km: km(mapDay ? mapDay.km : 0),
-      /* Counted from the charge records, not the plotted markers — a session
-         without coordinates still counts but never gets a pin. */
-      chargeStops: mapCh.day,
+      from: '\u2014',
+      to: '\u2014',
+      km: 0,
+      chargeStops: 0,
       note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
-      path: geo.path,
-      stops: geo.stops,
-      plotted: geo.path.length > 1 || undefined,
+      path: [],
+      stops: [],
+      kmPerPx: 0,
     },
+    dayMaps,
     asOf: (last && last.date) || position.date || dayKey(cutoff),
     /* Wall-clock time the job ran. asOf is the day the DATA covers, which only
        moves once a day — this is the only field that proves the feed is alive. */
@@ -367,14 +432,26 @@ export function shape({ state, drives, charges }) {
     embargoHours: EMBARGO_HOURS,
     locationEmbargoHours: LOCATION_EMBARGO_HOURS,
     liveKm: LIVE_KM || undefined,
-    days: recent.map((d) => ({ label: 'D ' + dayIndex(d.date), km: km(d.km) })),
-    log: trip.slice(-5).reverse().map((d) => ({
-      day: 'Day ' + dayIndex(d.date),
-      date: fmtDayKey(d.date),
-      province: placeOf.has(d.date) ? town(placeOf.get(d.date)).split(',').pop().trim() : '—',
-      km: km(d.km).toLocaleString('en-CA'),
-      note: '', // written by hand — Tessie has no field for what broke
-    })),
+    /* Last 30 days of distance. The page slices this to 8 or shows all 30 — it
+       is one honest series either way, not a short one repeated to look long. */
+    days: recent.map((d) => ({ key: d.date, label: 'D ' + dayIndex(d.date), km: km(d.km) })),
+    log: trip.slice(-LOG_DAYS).reverse().map((d) => {
+      const place = placeOf.get(d.date) || null;
+      return {
+        key: d.date,
+        day: 'Day ' + dayIndex(d.date),
+        date: fmtDayKey(d.date),
+        province: place ? town(place.ending).split(',').pop().trim() : '—',
+        /* Both ends of the day, town level. Held on the location clock like
+           everything else, so today's row reads "—" until it clears. */
+        from: place ? town(place.starting) : '—',
+        to: place ? town(place.ending) : '—',
+        /* Whether this row has a route to show when clicked. */
+        plotted: plottedKeys.has(d.date) || undefined,
+        km: km(d.km).toLocaleString('en-CA'),
+        note: '', // written by hand — Tessie has no field for what broke
+      };
+    }),
   };
 }
 
