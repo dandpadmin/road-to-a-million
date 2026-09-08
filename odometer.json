@@ -1,5 +1,5 @@
 {
-  "odometer": 6332,
+  "odometer": 6356,
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
@@ -17,7 +17,7 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 74,
+    "km": 77,
     "from": "Dawson, Yukon",
     "to": "Yukon",
     "corridor": "Yukon",
@@ -47,6 +47,14 @@
       [
         0.16,
         0.17
+      ],
+      [
+        0.72,
+        0.61
+      ],
+      [
+        0.76,
+        0.61
       ]
     ],
     "stops": [
@@ -57,8 +65,8 @@
         "kind": "start"
       },
       {
-        "x": 0.16,
-        "y": 0.17,
+        "x": 0.76,
+        "y": 0.61,
         "town": "Yukon",
         "kind": "end"
       }
@@ -510,7 +518,7 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 74,
+      "km": 77,
       "from": "Dawson, Yukon",
       "to": "Yukon",
       "corridor": "Yukon",
@@ -540,6 +548,14 @@
         [
           0.16,
           0.17
+        ],
+        [
+          0.72,
+          0.61
+        ],
+        [
+          0.76,
+          0.61
         ]
       ],
       "stops": [
@@ -550,8 +566,8 @@
           "kind": "start"
         },
         {
-          "x": 0.16,
-          "y": 0.17,
+          "x": 0.76,
+          "y": 0.61,
           "town": "Yukon",
           "kind": "end"
         }
@@ -561,7 +577,7 @@
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-08T19:55:31.603Z",
+  "updatedAt": "2026-09-08T20:14:15.819Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
