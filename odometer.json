@@ -1,5 +1,5 @@
 {
-  "odometer": 5971,
+  "odometer": 5985,
   "goal": 1000000,
   "day": 6,
   "province": "Yukon",
@@ -7,16 +7,16 @@
   "today": 449,
   "best": 1333,
   "avgPerDay": 849,
-  "chargeSessions": 2,
+  "chargeSessions": 3,
   "chargeSupercharger": 0,
-  "chargeOther": 2,
-  "chargeLifetime": 38,
+  "chargeOther": 3,
+  "chargeLifetime": 39,
   "chargeLifetimeSupercharger": 13,
-  "chargeLifetimeOther": 25,
+  "chargeLifetimeOther": 26,
   "dayMap": {
     "label": "Day 5 · Sep 6",
     "corridor": "Whitehorse, Yukon",
-    "km": 555,
+    "km": 556,
     "chargeStops": 4,
     "note": "Town level · delayed 24h",
     "path": [
@@ -90,7 +90,7 @@
     "plotted": true
   },
   "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T02:42:17.121Z",
+  "updatedAt": "2026-09-08T02:54:58.902Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
