@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
-  "route": "Yukon",
+  "route": "Mayo, Yukon",
   "today": 428,
   "best": 1333,
   "avgPerDay": 813,
@@ -17,77 +17,81 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 253,
+    "km": 272,
     "from": "Dawson, Yukon",
-    "to": "Yukon",
-    "corridor": "Yukon",
-    "chargeStops": 1,
+    "to": "Mayo, Yukon",
+    "corridor": "Mayo, Yukon",
+    "chargeStops": 2,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3456,
-        0.248
+        0.331,
+        0.2375
       ],
       [
-        0.3559,
-        0.248
+        0.3406,
+        0.2375
       ],
       [
-        0.3456,
-        0.248
+        0.331,
+        0.2375
       ],
       [
-        0.2221,
+        0.2151,
         0.08
       ],
       [
-        0.1398,
+        0.1378,
         0.08
       ],
       [
-        0.1603,
+        0.1571,
         0.08
       ],
       [
-        0.3044,
-        0.192
+        0.2924,
+        0.185
       ],
       [
-        0.3147,
-        0.192
+        0.302,
+        0.185
       ],
       [
-        0.325,
-        0.192
+        0.3117,
+        0.185
       ],
       [
-        0.3456,
-        0.248
+        0.331,
+        0.2375
       ],
       [
-        0.3662,
-        0.248
+        0.3503,
+        0.2375
       ],
       [
-        0.8602,
+        0.8139,
+        0.8675
+      ],
+      [
+        0.8622,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3456,
-        "y": 0.248,
+        "x": 0.331,
+        "y": 0.2375,
         "town": "Dawson, Yukon",
         "kind": "start"
       },
       {
-        "x": 0.8602,
+        "x": 0.8622,
         "y": 0.92,
-        "town": "Yukon",
+        "town": "Mayo, Yukon",
         "kind": "end"
       }
     ],
-    "kmPerPx": 0.3304,
+    "kmPerPx": 0.3524,
     "plotted": true
   },
   "dayMaps": [
@@ -534,88 +538,98 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 253,
+      "km": 272,
       "from": "Dawson, Yukon",
-      "to": "Yukon",
-      "corridor": "Yukon",
-      "chargeStops": 1,
+      "to": "Mayo, Yukon",
+      "corridor": "Mayo, Yukon",
+      "chargeStops": 2,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3456,
-          0.248
+          0.331,
+          0.2375
         ],
         [
-          0.3559,
-          0.248
+          0.3406,
+          0.2375
         ],
         [
-          0.3456,
-          0.248
+          0.331,
+          0.2375
         ],
         [
-          0.2221,
+          0.2151,
           0.08
         ],
         [
-          0.1398,
+          0.1378,
           0.08
         ],
         [
-          0.1603,
+          0.1571,
           0.08
         ],
         [
-          0.3044,
-          0.192
+          0.2924,
+          0.185
         ],
         [
-          0.3147,
-          0.192
+          0.302,
+          0.185
         ],
         [
-          0.325,
-          0.192
+          0.3117,
+          0.185
         ],
         [
-          0.3456,
-          0.248
+          0.331,
+          0.2375
         ],
         [
-          0.3662,
-          0.248
+          0.3503,
+          0.2375
         ],
         [
-          0.8602,
+          0.8139,
+          0.8675
+        ],
+        [
+          0.8622,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.3456,
-          "y": 0.248,
+          "x": 0.331,
+          "y": 0.2375,
           "town": "Dawson, Yukon",
           "kind": "start"
         },
         {
-          "x": 0.8602,
+          "x": 0.8622,
           "y": 0.92,
-          "town": "Yukon",
+          "town": "Mayo, Yukon",
           "kind": "end"
         }
       ],
-      "kmPerPx": 0.3304,
+      "kmPerPx": 0.3524,
       "plotted": true
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-08T23:27:45.433Z",
+  "updatedAt": "2026-09-08T23:41:59.793Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 17,
+          "wh": 116,
+          "km": 18,
+          "prov": "Yukon"
+        },
         {
           "t": 16.6,
           "wh": 181,
@@ -1001,7 +1015,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 149,
+      "median": 148,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1100,7 +1114,7 @@
       "date": "Sep 7",
       "province": "Yukon",
       "from": "Dawson, Yukon",
-      "to": "Yukon",
+      "to": "Mayo, Yukon",
       "plotted": true,
       "km": "618",
       "note": ""
