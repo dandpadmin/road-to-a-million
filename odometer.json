@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
-  "route": "Yukon",
+  "route": "Dawson, Yukon",
   "today": 158,
   "best": 1333,
   "avgPerDay": 774,
@@ -17,10 +17,10 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 77,
+    "km": 90,
     "from": "Dawson, Yukon",
-    "to": "Yukon",
-    "corridor": "Yukon",
+    "to": "Dawson, Yukon",
+    "corridor": "Dawson, Yukon",
     "chargeStops": 0,
     "note": "Town level · delayed 24h",
     "path": [
@@ -55,6 +55,14 @@
       [
         0.76,
         0.61
+      ],
+      [
+        0.8,
+        0.61
+      ],
+      [
+        0.88,
+        0.83
       ]
     ],
     "stops": [
@@ -63,12 +71,6 @@
         "y": 0.83,
         "town": "Dawson, Yukon",
         "kind": "start"
-      },
-      {
-        "x": 0.76,
-        "y": 0.61,
-        "town": "Yukon",
-        "kind": "end"
       }
     ],
     "kmPerPx": 0.0841,
@@ -518,10 +520,10 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 77,
+      "km": 90,
       "from": "Dawson, Yukon",
-      "to": "Yukon",
-      "corridor": "Yukon",
+      "to": "Dawson, Yukon",
+      "corridor": "Dawson, Yukon",
       "chargeStops": 0,
       "note": "Town level · delayed 24h",
       "path": [
@@ -556,6 +558,14 @@
         [
           0.76,
           0.61
+        ],
+        [
+          0.8,
+          0.61
+        ],
+        [
+          0.88,
+          0.83
         ]
       ],
       "stops": [
@@ -564,12 +574,6 @@
           "y": 0.83,
           "town": "Dawson, Yukon",
           "kind": "start"
-        },
-        {
-          "x": 0.76,
-          "y": 0.61,
-          "town": "Yukon",
-          "kind": "end"
         }
       ],
       "kmPerPx": 0.0841,
@@ -577,7 +581,7 @@
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-08T20:31:44.028Z",
+  "updatedAt": "2026-09-08T20:53:56.920Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1056,7 +1060,7 @@
       "date": "Sep 7",
       "province": "Yukon",
       "from": "Dawson, Yukon",
-      "to": "Yukon",
+      "to": "Dawson, Yukon",
       "plotted": true,
       "km": "618",
       "note": ""
