@@ -524,7 +524,7 @@
     }
   ],
   "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T04:56:24.959Z",
+  "updatedAt": "2026-09-08T04:58:50.556Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -905,7 +905,10 @@
       "used": 940,
       "added": 990,
       "overhead": 5,
-      "whPerKm": 156
+      "whPerKm": 156,
+      "kmPerKwh": 6.4,
+      "packKwh": 63,
+      "rangeEst": 403
     },
     "cost": {
       "total": 161.77,
