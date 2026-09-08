@@ -17,11 +17,11 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 90,
+    "km": 91,
     "from": "Dawson, Yukon",
     "to": "Dawson, Yukon",
     "corridor": "Dawson, Yukon",
-    "chargeStops": 0,
+    "chargeStops": 1,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -520,11 +520,11 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 90,
+      "km": 91,
       "from": "Dawson, Yukon",
       "to": "Dawson, Yukon",
       "corridor": "Dawson, Yukon",
-      "chargeStops": 0,
+      "chargeStops": 1,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -581,7 +581,7 @@
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-08T20:53:56.920Z",
+  "updatedAt": "2026-09-08T21:12:30.676Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
