@@ -4,7 +4,7 @@
   "day": 6,
   "province": "Yukon",
   "route": "Dawson, Yukon",
-  "today": 617,
+  "today": 618,
   "best": 1333,
   "avgPerDay": 877,
   "chargeSessions": 3,
@@ -524,7 +524,7 @@
     }
   ],
   "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T04:47:31.367Z",
+  "updatedAt": "2026-09-08T04:55:04.756Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -957,7 +957,7 @@
     {
       "key": "2026-09-07",
       "label": "D 6",
-      "km": 617
+      "km": 618
     }
   ],
   "log": [
@@ -968,7 +968,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "617",
+      "km": "618",
       "note": ""
     },
     {
