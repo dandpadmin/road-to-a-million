@@ -146,6 +146,12 @@ function odometerKm(state) {
 /* "1240 18th St, Brandon, Manitoba R7A 7S1, Canada" → "Brandon, Manitoba".
    Drops the street line, the country, and the postal code — a postal code is a
    few blocks, which defeats the point of rounding to a town. */
+/* Reverse geocoding on a remote stretch often returns the road rather than a
+   settlement — "Alaska Highway Frontage Road, British Columbia". A road name is
+   not a town and reads as noise on the map, so it is dropped in favour of
+   whatever comes after it. */
+const ROADISH = /\b(highway|hwy|freeway|expressway|frontage|road|rd|route|rte|street|ave|avenue|drive|lane|boulevard|blvd|trail|parkway|pkwy|access|service)\b/i;
+
 function town(loc) {
   if (!loc) return '—';
   let parts = String(loc).split(',').map((s) => s.trim()).filter(Boolean);
@@ -155,6 +161,7 @@ function town(loc) {
     .replace(/\s+[A-Za-z]\d[A-Za-z]\s*\d[A-Za-z]\d$/, '')
     .replace(/\s+\d{5}(-\d{4})?$/, '')
     .trim());
+  while (parts.length > 1 && ROADISH.test(parts[0])) parts = parts.slice(1);
   return parts.filter(Boolean).join(', ') || '—';
 }
 
@@ -289,12 +296,26 @@ function projectDay(drives, charges, targetDay) {
   ];
 
   const path = units.map(at);
+
+  /* One marker per place. Start and end are placed first so they always win;
+     a charge in a town already on the map is counted in chargeStops but does
+     not earn a second pin — three "FORT NELSON" labels stacked on each other
+     is what this prevents. Coordinates are checked too, since two towns can
+     snap into the same 5km cell. */
   const stops = [];
-  const push = (p, kind) => {
+  const coordSeen = new Set(), townSeen = new Set();
+  const add = (p, kind) => {
     const [x, y] = at(mu(p.ll));
+    const ck = x + ',' + y;
+    const tk = String(p.town || '').trim().toLowerCase();
+    if (coordSeen.has(ck)) return;
+    if (tk && tk !== '—' && townSeen.has(tk)) return;
+    coordSeen.add(ck);
+    if (tk && tk !== '—') townSeen.add(tk);
     stops.push({ x, y, town: p.town || '—', kind });
   };
-  push(pts[0], 'start');
+  add(pts[0], 'start');
+  add(pts[pts.length - 1], 'end');
 
   /* Charge stops for the day, snapped and matched to the nearest path point so
      a marker always sits on the drawn line. */
@@ -305,25 +326,150 @@ function projectDay(drives, charges, targetDay) {
       const dist = Math.hypot(p.ll[0] - ll[0], p.ll[1] - ll[1]);
       return !best || dist < best.dist ? { p, dist } : best;
     }, null);
-    if (near && near.dist < 0.6) push({ ll: near.p.ll, town: town(c.location) || near.p.town }, 'charge');
+    if (near && near.dist < 0.6) add({ ll: near.p.ll, town: town(c.location) || near.p.town }, 'charge');
   }
 
-  push(pts[pts.length - 1], 'end');
-
-  /* A charge that happened where the day started or ended lands on the same
-     coordinates as the start/end marker and renders as a dot stacked on a dot.
-     Keep one marker per point, preferring start/end — the charge is still
-     counted in chargeStops, which is read off the records, not these pins. */
-  const seen = new Map();
-  for (const s of stops) {
-    const key = s.x + ',' + s.y;
-    const prev = seen.get(key);
-    if (!prev || (prev.kind === 'charge' && s.kind !== 'charge')) seen.set(key, s);
-  }
-  return { path, stops: [...seen.values()], kmPerPx: Number((DEG_KM / k).toFixed(4)) };
+  return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)) };
 }
 
-export function shape({ state, drives, charges }) {
+/* Tessie mirrors Tesla's field names, which have drifted across firmware and
+   are not identical between the drives and charges payloads. Every optional
+   figure is read through this rather than a single hard-coded key, so a
+   renamed field degrades to "no data" instead of NaN on the page. */
+function pick(obj, keys) {
+  for (const k of keys) {
+    const v = obj && obj[k];
+    if (typeof v === 'number' && Number.isFinite(v)) return v;
+  }
+  return null;
+}
+
+const F_OUTSIDE_TEMP = ['average_outside_temperature', 'outside_temp', 'outside_temperature', 'avg_outside_temp'];
+const F_ENERGY_USED = ['energy_used', 'energy_used_kwh', 'kwh_used'];
+const F_ENERGY_ADDED = ['energy_added', 'charge_energy_added', 'energy_added_kwh'];
+const F_COST = ['cost', 'total_cost', 'charge_cost'];
+const F_SOC_END = ['ending_battery', 'end_battery_level', 'battery_level_end', 'ending_battery_level'];
+const F_POWER = ['max_charger_power', 'charger_power', 'peak_power_kw'];
+
+/* Everything the nerd section reads. Built from the payloads already fetched
+   for the odometer \u2014 no extra Tessie calls except battery health, which the
+   job passes in. Anything naming a place is built from locPublished, so the
+   province colouring on the scatter is 24h behind like every other location. */
+function nerdBlock({ published, locPublished, charges, health, history }) {
+  const chargeList = charges || [];
+
+  /* Efficiency. One dot per drive: outside temperature against Wh/km, coloured
+     by province. Short hops are dropped \u2014 under 5km the figure is dominated by
+     start-up draw and says nothing about the drive. */
+  const points = [];
+  for (const d of locPublished) {
+    const km2 = d.odometer_distance || 0;
+    const kwh = pick(d, F_ENERGY_USED);
+    const t = pick(d, F_OUTSIDE_TEMP);
+    if (km2 < 5 || kwh === null || kwh <= 0 || t === null) continue;
+    points.push({
+      t: Number(t.toFixed(1)),
+      wh: Math.round((kwh * 1000) / km2),
+      km: km(km2),
+      prov: town(d.ending_location).split(',').pop().trim() || '\u2014',
+    });
+  }
+  /* Newest last, capped \u2014 the whole trip's drives would eventually dominate
+     the file, and the pattern is legible long before then. */
+  const scatter = points.slice(-600);
+  const whVals = scatter.map((p) => p.wh).sort((a, b) => a - b);
+  const median = whVals.length ? whVals[Math.floor(whVals.length / 2)] : 0;
+
+  /* Autopilot and energy totals run on the distance clock \u2014 no place in them. */
+  let apKm = 0, totalKm = 0, usedKwh = 0;
+  for (const d of published) {
+    totalKm += d.odometer_distance || 0;
+    apKm += d.autopilot_distance || 0;
+    const e = pick(d, F_ENERGY_USED);
+    if (e !== null && e > 0) usedKwh += e;
+  }
+
+  let addedKwh = 0, cost = 0, costSc = 0, costOther = 0, costed = 0;
+  const curve = new Map(); // state of charge bucket -> [kW samples]
+  for (const c of chargeList) {
+    const a = pick(c, F_ENERGY_ADDED);
+    if (a !== null && a > 0) addedKwh += a;
+    const money = pick(c, F_COST);
+    if (money !== null && money > 0) {
+      cost += money; costed += 1;
+      if (isSupercharger(c)) costSc += money; else costOther += money;
+    }
+    /* Aggregate charge curve. A session summary gives one peak-power reading at
+       one state of charge, so a single session is a dot, not a curve \u2014 pooled
+       across every session the shape of the taper appears. Bucketed in 5% steps. */
+    const soc = pick(c, F_SOC_END);
+    const kw = pick(c, F_POWER);
+    if (soc !== null && kw !== null && kw > 0) {
+      const b = Math.round(soc / 5) * 5;
+      if (!curve.has(b)) curve.set(b, []);
+      curve.get(b).push(kw);
+    }
+  }
+  const curvePoints = [...curve.entries()]
+    .map(([soc, vals]) => ({ soc, kw: Math.round(vals.reduce((s, v) => s + v, 0) / vals.length), n: vals.length }))
+    .sort((a, b) => a.soc - b.soc);
+
+  return {
+    efficiency: {
+      points: scatter,
+      median,
+      best: whVals.length ? whVals[0] : 0,
+      worst: whVals.length ? whVals[whVals.length - 1] : 0,
+      /* Distinct provinces present, so the legend is built from the data. */
+      provinces: [...new Set(scatter.map((p) => p.prov))].filter((p) => p && p !== '\u2014'),
+    },
+    autopilot: {
+      km: km(apKm),
+      pct: totalKm > 0 ? Number(((apKm / totalKm) * 100).toFixed(1)) : 0,
+    },
+    energy: {
+      used: Math.round(usedKwh),
+      added: Math.round(addedKwh),
+      /* Charging losses and preconditioning \u2014 added is always the larger. */
+      overhead: addedKwh > 0 && usedKwh > 0 ? Number((((addedKwh - usedKwh) / addedKwh) * 100).toFixed(1)) : null,
+      whPerKm: totalKm > 0 && usedKwh > 0 ? Math.round((usedKwh * 1000) / totalKm) : 0,
+    },
+    cost: {
+      total: Number(cost.toFixed(2)),
+      supercharger: Number(costSc.toFixed(2)),
+      other: Number(costOther.toFixed(2)),
+      perKm: totalKm > 0 && cost > 0 ? Number((cost / totalKm).toFixed(3)) : 0,
+      /* How many sessions actually carried a price \u2014 free chargers and missing
+         invoices both show as no cost, and the average lies without this. */
+      sessions: costed,
+      currency: 'CAD',
+    },
+    chargeCurve: {
+      points: curvePoints,
+      sessions: chargeList.length,
+      note: 'Peak power per session, pooled by state of charge',
+    },
+    battery: (() => {
+      /* Tessie wraps some endpoints in `results` and the health payload's key
+         names vary; normalise here so the panel has no guessing to do. */
+      const hb = health && (health.results || health);
+      if (!hb || typeof hb !== 'object') return null;
+      const healthPct = pick(hb, ['battery_health', 'health', 'health_percent', 'state_of_health']);
+      const rangeNow = pick(hb, ['max_range', 'current_max_range', 'rated_range']);
+      const rangeOriginal = pick(hb, ['original_max_range', 'original_range', 'as_new_max_range']);
+      const degradation = pick(hb, ['degradation', 'degradation_percent']);
+      const derived = healthPct !== null ? healthPct
+        : degradation !== null ? 100 - degradation
+        : rangeNow && rangeOriginal ? Number(((rangeNow / rangeOriginal) * 100).toFixed(1))
+        : null;
+      if (derived === null && rangeNow === null) return null;
+      return { healthPct: derived, rangeNow, rangeOriginal };
+    })(),
+    firmware: (history && history.firmware) || [],
+  };
+}
+
+export function shape({ state, drives, charges, health, history }) {
   const all = drives || [];
   const now = Date.now();
   const cutoff = now - EMBARGO_HOURS * 36e5;
@@ -432,6 +578,7 @@ export function shape({ state, drives, charges }) {
     embargoHours: EMBARGO_HOURS,
     locationEmbargoHours: LOCATION_EMBARGO_HOURS,
     liveKm: LIVE_KM || undefined,
+    nerd: nerdBlock({ published, locPublished, charges, health, history }),
     /* Last 30 days of distance. The page slices this to 8 or shows all 30 — it
        is one honest series either way, not a short one repeated to look long. */
     days: recent.map((d) => ({ key: d.date, label: 'D ' + dayIndex(d.date), km: km(d.km) })),

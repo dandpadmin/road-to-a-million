@@ -73,22 +73,66 @@ function LogRow({ day, date, province, from, to, km, note, plotted, active, onSe
 /* A day's route, town level and at least 24h old — never a live position.
 
    Each day is framed to fill the panel, so the scale changes from day to day:
-   a 90km morning and a 1,300km haul both fill the box. The scale bar is the
-   correction — it is drawn in the same coordinate space as the route, from the
-   kmPerPx the job reports, so it stretches with the map and stays honest.
-   Nice round distances only; the bar picks the largest that fits. */
+   a 90km morning and a 1,300km haul both fill the box. The scale bar below the
+   map is the correction — its width is a real fraction of the frame, taken from
+   the kmPerPx the job reports. Nice round distances only; the bar picks the
+   largest that fits. */
 const SCALE_STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 150, 200, 250, 500, 750, 1000, 1500];
+
+/* Monospace at 11px with 1.4px tracking. Used to measure a label before it is
+   placed — close enough to reserve the right box. */
+const CHAR_W = 7.0;
+
+/* Labels are laid out, not just drawn. Each one tries a ring of positions
+   around its marker and takes the first that clears the frame, every marker,
+   and every label already placed. Anything with nowhere to go is dropped
+   rather than stacked — an unreadable pile of names is worse than a missing
+   one, and the Daily log carries the full list anyway. Start and end are
+   placed first so they are never the ones dropped. */
+function layoutLabels(stops, W, H) {
+  const rank = { start: 0, end: 1, charge: 2 };
+  const ordered = [...stops].map((s, i) => ({ s, i })).sort((a, b) => (rank[a.s.kind] ?? 3) - (rank[b.s.kind] ?? 3) || a.i - b.i);
+  /* Markers are obstacles too — a label must not sit on a dot. */
+  const taken = stops.map((s) => ({ x1: s.x * W - 11, x2: s.x * W + 11, y1: s.y * H - 11, y2: s.y * H + 11 }));
+  const hits = (a, b) => !(a.x2 < b.x1 || b.x2 < a.x1 || a.y2 < b.y1 || b.y2 < a.y1);
+  const out = [];
+  for (const { s } of ordered) {
+    const text = townOnly(s.town).toUpperCase();
+    if (!text || text === '—') continue;
+    const w = text.length * CHAR_W;
+    const cx = s.x * W, cy = s.y * H;
+    const cands = [
+      { dx: 0, dy: -16, a: 'middle' }, { dx: 0, dy: 24, a: 'middle' },
+      { dx: 13, dy: 4, a: 'start' }, { dx: -13, dy: 4, a: 'end' },
+      { dx: 13, dy: -13, a: 'start' }, { dx: -13, dy: -13, a: 'end' },
+      { dx: 13, dy: 20, a: 'start' }, { dx: -13, dy: 20, a: 'end' },
+      { dx: 0, dy: -30, a: 'middle' }, { dx: 0, dy: 38, a: 'middle' },
+    ];
+    for (const c of cands) {
+      const tx = cx + c.dx, ty = cy + c.dy;
+      const x1 = c.a === 'middle' ? tx - w / 2 : c.a === 'start' ? tx : tx - w;
+      const box = { x1, x2: x1 + w, y1: ty - 10, y2: ty + 4 };
+      if (box.x1 < 4 || box.x2 > W - 4 || box.y1 < 2 || box.y2 > H - 4) continue;
+      if (taken.some((t) => hits(t, box))) continue;
+      taken.push(box);
+      out.push({ text, tx, ty, anchor: c.a });
+      break;
+    }
+  }
+  return out;
+}
 
 function DayMap({ map }) {
   const W = 720, H = 300;
   const pts = (map.path || []).map(([x, y]) => [x * W, y * H]);
   const plotted = pts.length > 1;
   const line = pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+  const stops = map.stops || [];
+  const labels = layoutLabels(stops, W, H);
   const kmPerPx = map.kmPerPx || 0;
   let barKm = 0;
-  if (kmPerPx > 0) { for (const n of SCALE_STEPS) { if (n / kmPerPx <= 200) barKm = n; } if (!barKm) barKm = SCALE_STEPS[0]; }
-  const barPx = barKm ? barKm / kmPerPx : 0;
-  const barY = H - 26;
+  if (kmPerPx > 0) { for (const n of SCALE_STEPS) { if (n / kmPerPx <= W * 0.34) barKm = n; } if (!barKm) barKm = SCALE_STEPS[0]; }
+  const barPct = barKm ? (barKm / kmPerPx / W) * 100 : 0;
   return (
     <Plate tone="ghost" pad={26} style={{ gap: 18 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
@@ -102,31 +146,69 @@ function DayMap({ map }) {
           <defs><pattern id="rtam-grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" fill="none" stroke="rgba(246,240,227,.07)" strokeWidth="1" /></pattern></defs>
           <rect width={W} height={H} fill="url(#rtam-grid)" />
           <polyline points={line} fill="none" stroke="#00B4D9" strokeWidth="2.5" />
-          {(map.stops || []).map((s, i) => (
-            <g key={i}>
+          {stops.map((s, i) => (
+            <g key={'m' + i}>
+              {s.kind === 'end' && <circle cx={s.x * W} cy={s.y * H} r={10} fill="none" stroke="rgba(246,240,227,.55)" strokeWidth="1.5" />}
               <circle cx={s.x * W} cy={s.y * H} r={s.kind === 'charge' ? 4 : 6} fill={s.kind === 'charge' ? '#1C242C' : '#00B4D9'} stroke="#00B4D9" strokeWidth="2" />
-              <text x={s.x * W} y={s.y * H - 16} textAnchor={s.x > 0.85 ? 'end' : s.x < 0.12 ? 'start' : 'middle'} fill="rgba(246,240,227,.7)" style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '1.6px', textTransform: 'uppercase' }}>{s.town.toUpperCase()}</text>
             </g>
           ))}
-          {barPx > 0 && (
-            <g>
-              <line x1={18} y1={barY} x2={18 + barPx} y2={barY} stroke="rgba(246,240,227,.55)" strokeWidth="1.5" />
-              <line x1={18} y1={barY - 5} x2={18} y2={barY + 5} stroke="rgba(246,240,227,.55)" strokeWidth="1.5" />
-              <line x1={18 + barPx} y1={barY - 5} x2={18 + barPx} y2={barY + 5} stroke="rgba(246,240,227,.55)" strokeWidth="1.5" />
-              <text x={18} y={barY - 11} fill="rgba(246,240,227,.55)" style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '1.6px' }}>{barKm.toLocaleString()} KM</text>
-            </g>
-          )}
+          {/* Stroke-then-fill puts a ground-coloured halo behind the type so a
+              label crossing the route stays readable. */}
+          {labels.map((l, i) => (
+            <text key={'l' + i} x={l.tx} y={l.ty} textAnchor={l.anchor} fill="rgba(246,240,227,.82)" stroke="#1C242C" strokeWidth="4" strokeLinejoin="round" style={{ paintOrder: 'stroke', fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '1.4px' }}>{l.text}</text>
+          ))}
         </svg>
         {!plotted && <span style={{ position: 'absolute', left: 12, bottom: 10, fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(246,240,227,.35)' }}>Awaiting the first closed day</span>}
       </div>
-      <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>
-        <span>{routeLabel(map.from, map.to, map.corridor)}</span>
-        <span style={{ color: '#F6F0E3' }}>{map.km.toLocaleString()} km</span>
-        <span>{(map.chargeStops ?? (map.stops || []).filter(s => s.kind === 'charge').length).toLocaleString()} charge stops</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap', fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>
+        {barPct > 0 && (
+          <div style={{ flex: '0 0 auto', width: barPct + '%', display: 'flex', alignItems: 'center' }}>
+            <span style={{ width: 1, height: 9, background: 'rgba(246,240,227,.45)' }}></span>
+            <span style={{ flex: 1, height: 1, background: 'rgba(246,240,227,.45)' }}></span>
+            <span style={{ width: 1, height: 9, background: 'rgba(246,240,227,.45)' }}></span>
+          </div>
+        )}
+        {barPct > 0 && <span style={{ whiteSpace: 'nowrap' }}>{barKm.toLocaleString()} km</span>}
+        <div style={{ flex: '1 1 auto' }}></div>
+        <span style={{ color: '#F6F0E3', whiteSpace: 'nowrap' }}>{map.km.toLocaleString()} km</span>
+        <span style={{ whiteSpace: 'nowrap' }}>{(map.chargeStops ?? stops.filter(s => s.kind === 'charge').length).toLocaleString()} charge stops</span>
       </div>
     </Plate>
   );
 }
+/* The condensed day list that sits beside the map and drives it. Same rows as
+   LogRow but stacked two-line so the whole window fits the map's height — the
+   selection is useless if you have to scroll away from the map to use it. */
+function DayList({ rows, activeKey, onSelect, onLatest, following }) {
+  return (
+    <div style={{ border: '1px solid rgba(246,240,227,.18)', display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)', maxHeight: 466 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, padding: '16px 18px', borderBottom: '1px solid rgba(246,240,227,.18)' }}>
+        <Eyebrow tone="bronze" size={10} track={0.24}>Daily log</Eyebrow>
+        {following
+          ? <span style={{ fontSize: 9, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Select a day</span>
+          : <button onClick={onLatest} style={{ padding: '5px 10px', cursor: 'pointer', borderRadius: 0, background: 'transparent', color: '#00B4D9', border: '1px solid rgba(0,180,217,.5)', fontFamily: 'inherit', fontSize: 9, letterSpacing: '.16em', textTransform: 'uppercase' }}>Latest</button>}
+      </div>
+      <div style={{ overflowY: 'auto' }}>
+        {rows.map((r, i) => {
+          const clickable = !!(r.plotted && onSelect);
+          const active = !!(r.key && r.key === activeKey);
+          return (
+            <div key={r.key || i}
+              onClick={clickable ? () => onSelect(r.key) : undefined}
+              title={clickable ? 'Show this day on the map' : 'No route yet for this day'}
+              style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) auto', gap: '5px 12px', padding: '13px 18px', borderBottom: '1px solid rgba(246,240,227,.10)', cursor: clickable ? 'pointer' : 'default', opacity: clickable ? 1 : 0.55, background: active ? 'rgba(0,180,217,.10)' : 'transparent', boxShadow: active ? 'inset 2px 0 0 #00B4D9' : 'none' }}>
+              <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '.16em', textTransform: 'uppercase', color: '#00B4D9' }}>{r.day} · <span style={{ color: 'rgba(246,240,227,.45)' }}>{r.date}</span></div>
+              <div style={{ fontSize: 12, fontWeight: 600, fontVariantNumeric: 'tabular-nums', textAlign: 'right', color: '#F6F0E3' }}>{r.km} <span style={{ color: '#A47D51', fontSize: 9, letterSpacing: '.16em' }}>KM</span></div>
+              <div style={{ gridColumn: '1 / -1', fontSize: 11, lineHeight: 1.5, letterSpacing: '.1em', textTransform: 'uppercase', color: active ? 'rgba(246,240,227,.85)' : 'rgba(246,240,227,.55)' }}>{routeLabel(r.from, r.to, r.province)}</div>
+              {r.note && <div style={{ gridColumn: '1 / -1', fontSize: 11, lineHeight: 1.55, color: 'rgba(246,240,227,.45)' }}>{r.note}</div>}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 /* Two readouts in one Plate — same footprint as Metric, split by a hairline. */
 function SplitMetric({ label, a, b, sub }) {
   return (
@@ -171,4 +253,4 @@ function PostGrid({ posts, count = 6 }) {
   );
 }
 
-Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayMap, PostGrid });
+Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayList, DayMap, PostGrid });

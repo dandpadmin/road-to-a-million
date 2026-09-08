@@ -38,6 +38,23 @@ const RTAM_DAY_MAPS = [
 ];
 RTAM_DAY_MAPS.forEach((m) => { m.plotted = true; });
 
+/* Illustrative nerd figures. Deterministic so the preview does not reshuffle
+   on every reload — consumption rises as temperature falls, which is the shape
+   the real data should show. */
+const RTAM_PROVS = ['British Columbia', 'Alberta', 'Saskatchewan', 'Manitoba', 'Yukon'];
+const RTAM_POINTS = (() => {
+  const out = [];
+  let seed = 7;
+  const rnd = () => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed / 2147483648; };
+  for (let i = 0; i < 190; i += 1) {
+    const t = Number((-24 + rnd() * 52).toFixed(1));
+    const wh = Math.round(152 + (18 - t) * 1.9 + (rnd() - 0.5) * 34);
+    out.push({ t, wh, km: Math.round(40 + rnd() * 420), prov: RTAM_PROVS[Math.floor(rnd() * RTAM_PROVS.length)] });
+  }
+  return out;
+})();
+const RTAM_WH = RTAM_POINTS.map((p) => p.wh).sort((a, b) => a - b);
+
 window.RTAM_DATA = {
   odometer: 418203,
   goal: 1000000,
@@ -54,6 +71,33 @@ window.RTAM_DATA = {
   chargeLifetimeSupercharger: 902,
   chargeLifetimeOther: 246,
   locationEmbargoHours: 24,
+  nerd: {
+    efficiency: {
+      points: RTAM_POINTS,
+      median: RTAM_WH[Math.floor(RTAM_WH.length / 2)],
+      best: RTAM_WH[0],
+      worst: RTAM_WH[RTAM_WH.length - 1],
+      provinces: RTAM_PROVS,
+    },
+    autopilot: { km: 289640, pct: 69.3 },
+    energy: { used: 62451, added: 70118, overhead: 10.9, whPerKm: 149 },
+    cost: { total: 8214.55, supercharger: 6402.1, other: 1812.45, perKm: 0.02, sessions: 1102, currency: 'CAD' },
+    chargeCurve: {
+      points: [
+        { soc: 10, kw: 244, n: 31 }, { soc: 20, kw: 238, n: 74 }, { soc: 30, kw: 205, n: 96 },
+        { soc: 40, kw: 171, n: 88 }, { soc: 50, kw: 140, n: 71 }, { soc: 60, kw: 112, n: 63 },
+        { soc: 70, kw: 86, n: 52 }, { soc: 80, kw: 61, n: 44 }, { soc: 90, kw: 38, n: 19 },
+      ],
+      sessions: 1148,
+      note: 'Peak power per session, pooled by state of charge',
+    },
+    battery: { healthPct: 91.4, rangeNow: 458, rangeOriginal: 501 },
+    firmware: [
+      { version: '2026.20.5', since: '2026-06-14' },
+      { version: '2026.26.2', since: '2026-07-29' },
+      { version: '2026.32.1', since: '2026-09-03' },
+    ],
+  },
   dayMaps: RTAM_DAY_MAPS,
   dayMap: RTAM_DAY_MAPS[RTAM_DAY_MAPS.length - 1],
   days: [

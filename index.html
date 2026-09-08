@@ -1,22 +1,26 @@
 <!-- @dsCard group="Odometer" viewport="1280x860" name="Odometer dashboard" subtitle="Distance to a million, latest-day route, daily log and charge" -->
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>RTAM — Odometer</title>
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="./styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script src="../../_ds_bundle.js"></script>
+<script src="./_ds_bundle.js"></script>
 <style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}</style></head>
 <body>
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#1C242C"/><text x="50" y="46" text-anchor="middle" fill="#00B4D9" font-family="monospace" font-size="15" font-weight="700" letter-spacing="1">1M</text><text x="50" y="62" text-anchor="middle" fill="#A47D51" font-family="monospace" font-size="7" letter-spacing="1.5">KM</text></svg></template>
 <div id="root"></div>
 <script src="data.js"></script>
 <script type="text/babel" src="Panels.jsx"></script>
+<script type="text/babel" src="Nerd.jsx"></script>
 <script type="text/babel">
 const { Badge, Wordmark, Eyebrow, Plate, StatReadout, ProgressRule, Chip, SpecColumns, DpLockup } = window.RoadToAMillionDesignSystem_6606d4;
-const { DayMap } = window;
+const { DayMap, DayList, EfficiencyScatter, ChargeCurve, NerdStat, FirmwareLog } = window;
+/* Charging spend is real money and the call on publishing it is still open.
+   Flip to true when it is decided — nothing else needs to change. */
+const SHOW_COST = false;
 const { useState, useEffect } = React;
 const FALLBACK = window.RTAM_DATA;
-const A = '../../assets/';
+const A = './assets/';
 
 /* Where the live snapshot comes from. First hit wins: a file sitting next to
    this page when deployed, otherwise the copy the GitHub Action commits. The
@@ -64,6 +68,7 @@ function App() {
   const shownMap = (selected && maps.find(m => m.key === selected)) || D.dayMap;
   const shownKey = shownMap ? shownMap.key : null;
   const barDays = range === '8 days' ? (D.days || []).slice(-8) : (D.days || []);
+  const N = D.nerd || null;
   const pct = (D.odometer / D.goal) * 100;
   const stamp = D.updatedAt ? new Date(D.updatedAt).toLocaleTimeString('en-CA', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Winnipeg' }) : null;
   const remaining = D.goal - D.odometer;
@@ -123,13 +128,9 @@ function App() {
           <SplitMetric label="Latest day charge sessions" a={{ value: D.chargeSupercharger, label: 'Tesla Supercharger' }} b={{ value: D.chargeOther, label: 'Other networks' }} />
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 32, alignItems: 'start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '320px minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
+          <DayList rows={D.log || []} activeKey={shownKey} onSelect={setSelected} onLatest={() => setSelected(null)} following={!selected} />
           <DayMap map={shownMap} />
-          <Plate tone="ghost" pad={26} style={{ gap: 16 }}>
-            <Eyebrow tone="bronze" size={10}>Agreement</Eyebrow>
-            <p style={{ margin: 0, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.62)' }}>The run ends at the earliest of: the odometer reaching 1,000,000 km; the battery failing past reasonable operation; or the vehicle being declared a total loss.</p>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Chip>Started 2 Sep 2026</Chip><Chip>2026 Model 3</Chip></div>
-          </Plate>
         </div>
 
         <div style={{ display: 'grid', gap: 32 }}>
@@ -146,18 +147,6 @@ function App() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gap: 8 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-            <Eyebrow tone="bronze" size={11} track={0.24}>Daily log</Eyebrow>
-            {selected
-              ? <button onClick={() => setSelected(null)} style={{ padding: '6px 12px', cursor: 'pointer', borderRadius: 0, background: 'transparent', color: '#00B4D9', border: '1px solid rgba(0,180,217,.5)', fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>Back to latest</button>
-              : <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Select a day to map it</span>}
-          </div>
-          <div style={{ borderTop: '1px solid rgba(246,240,227,.18)', marginTop: 12 }}>
-            {D.log.map((r, i) => <LogRow key={r.key || i} {...r} active={!!r.key && r.key === shownKey} onSelect={() => setSelected(r.key)} />)}
-          </div>
-        </div>
-
         <div style={{ display: 'grid', gap: 20 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
             <Eyebrow tone="bronze" size={11} track={0.24}>From the road</Eyebrow>
@@ -165,6 +154,52 @@ function App() {
           </div>
           <PostGrid posts={posts} count={6} />
         </div>
+
+        {N && (
+          <div style={{ display: 'grid', gap: 34, paddingTop: 40, borderTop: '1px solid rgba(246,240,227,.18)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
+              <Eyebrow tone="cyan" size={12} track={0.24}>The numbers behind it</Eyebrow>
+              <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Derived from the same feed · no extra polling</span>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 20 }}>
+              <NerdStat label="Lifetime consumption" value={(N.energy.whPerKm || 0).toLocaleString()} unit="WH/KM" sub={'Median drive ' + (N.efficiency.median || 0) + ' Wh/km'} />
+              <NerdStat label="Energy used" value={(N.energy.used || 0).toLocaleString()} unit="KWH" sub={'Best drive ' + (N.efficiency.best || 0) + ' Wh/km'} />
+              <NerdStat label="Energy added" value={(N.energy.added || 0).toLocaleString()} unit="KWH" sub={N.energy.overhead !== null ? N.energy.overhead + '% lost to charging and conditioning' : 'Charging overhead pending'} />
+              <NerdStat label="Autopilot share" value={(N.autopilot.pct || 0).toLocaleString()} unit="%" sub={(N.autopilot.km || 0).toLocaleString() + ' km of the total'} />
+              {N.battery && <NerdStat label="Battery health" value={N.battery.healthPct !== null ? N.battery.healthPct.toLocaleString() : '—'} unit="%" sub={N.battery.rangeNow ? Math.round(N.battery.rangeNow).toLocaleString() + ' km at full charge' : 'Weekly reading'} />}
+              {SHOW_COST && N.cost.total > 0 && <NerdStat label="Charging spend" value={'$' + N.cost.total.toLocaleString()} unit={N.cost.currency} sub={'$' + N.cost.perKm + ' per km · ' + N.cost.sessions + ' priced sessions'} />}
+            </div>
+
+            <div style={{ display: 'grid', gap: 18 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
+                <Eyebrow tone="bronze" size={11} track={0.24}>Consumption against outside temperature</Eyebrow>
+                <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Wh/km against °C · one dot per drive · coloured by province</span>
+              </div>
+              <EfficiencyScatter data={N.efficiency} />
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.6fr) minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
+              <div style={{ display: 'grid', gap: 18 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 16, flexWrap: 'wrap' }}>
+                  <Eyebrow tone="bronze" size={11} track={0.24}>Charge curve · kW</Eyebrow>
+                  <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>{N.chargeCurve.note}</span>
+                </div>
+                <ChargeCurve data={N.chargeCurve} />
+              </div>
+              <div style={{ display: 'grid', gap: 18 }}>
+                <Eyebrow tone="bronze" size={11} track={0.24}>Firmware</Eyebrow>
+                <FirmwareLog versions={N.firmware} />
+              </div>
+            </div>
+          </div>
+        )}
+
+        <Plate tone="ghost" pad={26} style={{ gap: 16 }}>
+          <Eyebrow tone="bronze" size={10}>Agreement</Eyebrow>
+          <p style={{ margin: 0, maxWidth: 720, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.62)' }}>The run ends at the earliest of: the odometer reaching 1,000,000 km; the battery failing past reasonable operation; or the vehicle being declared a total loss.</p>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Chip>Started 2 Sep 2026</Chip><Chip>2026 Model 3</Chip></div>
+        </Plate>
 
         <SpecColumns items={[
           { label: 'Figures', body: 'Every number is mono with tabular figures. Counters must not jitter as they tick.' },
