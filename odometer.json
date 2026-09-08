@@ -1,12 +1,12 @@
 {
-  "odometer": 6139,
+  "odometer": 6140,
   "goal": 1000000,
   "day": 6,
   "province": "Yukon",
   "route": "Dawson, Yukon",
   "today": 617,
   "best": 1333,
-  "avgPerDay": 876,
+  "avgPerDay": 877,
   "chargeSessions": 3,
   "chargeSupercharger": 0,
   "chargeOther": 3,
@@ -139,6 +139,12 @@
           "kind": "start"
         },
         {
+          "x": 0.08,
+          "y": 0.3342,
+          "town": "Calgary, Alberta",
+          "kind": "end"
+        },
+        {
           "x": 0.2574,
           "y": 0.5098,
           "town": "Medicine Hat, Alberta",
@@ -167,12 +173,6 @@
           "y": 0.539,
           "town": "Brandon, Manitoba",
           "kind": "charge"
-        },
-        {
-          "x": 0.08,
-          "y": 0.3342,
-          "town": "Calgary, Alberta",
-          "kind": "end"
         }
       ],
       "kmPerPx": 1.8974,
@@ -258,18 +258,6 @@
           "y": 0.71,
           "town": "Strathmore, Alberta",
           "kind": "charge"
-        },
-        {
-          "x": 0.2533,
-          "y": 0.64,
-          "town": "Calgary, Alberta",
-          "kind": "charge"
-        },
-        {
-          "x": 0.2898,
-          "y": 0.85,
-          "town": "Calgary, Alberta",
-          "kind": "charge"
         }
       ],
       "kmPerPx": 0.2643,
@@ -281,8 +269,8 @@
       "label": "Day 3 · Sep 4",
       "km": 1117,
       "from": "Calgary, Alberta",
-      "to": "Alaska Highway Frontage Road, British Columbia",
-      "corridor": "Alaska Highway Frontage Road, British Columbia",
+      "to": "British Columbia",
+      "corridor": "British Columbia",
       "chargeStops": 6,
       "note": "Town level · delayed 24h",
       "path": [
@@ -329,7 +317,7 @@
         {
           "x": 0.3544,
           "y": 0.08,
-          "town": "Alaska Highway Frontage Road, British Columbia",
+          "town": "British Columbia",
           "kind": "end"
         },
         {
@@ -371,7 +359,7 @@
       "day": 4,
       "label": "Day 4 · Sep 5",
       "km": 1182,
-      "from": "Alaska Highway Frontage Road, British Columbia",
+      "from": "British Columbia",
       "to": "Whitehorse, Yukon",
       "corridor": "Whitehorse, Yukon",
       "chargeStops": 6,
@@ -434,18 +422,18 @@
         {
           "x": 0.811,
           "y": 0.92,
-          "town": "Alaska Highway Frontage Road, British Columbia",
+          "town": "British Columbia",
           "kind": "start"
+        },
+        {
+          "x": 0.189,
+          "y": 0.08,
+          "town": "Whitehorse, Yukon",
+          "kind": "end"
         },
         {
           "x": 0.2757,
           "y": 0.126,
-          "town": "Teslin, Yukon",
-          "kind": "charge"
-        },
-        {
-          "x": 0.3055,
-          "y": 0.2066,
           "town": "Teslin, Yukon",
           "kind": "charge"
         },
@@ -460,24 +448,6 @@
           "y": 0.3677,
           "town": "Fort Nelson, British Columbia",
           "kind": "charge"
-        },
-        {
-          "x": 0.6747,
-          "y": 0.5058,
-          "town": "Fort Nelson, British Columbia",
-          "kind": "charge"
-        },
-        {
-          "x": 0.8011,
-          "y": 0.5173,
-          "town": "Fort Nelson, British Columbia",
-          "kind": "charge"
-        },
-        {
-          "x": 0.189,
-          "y": 0.08,
-          "town": "Whitehorse, Yukon",
-          "kind": "end"
         }
       ],
       "kmPerPx": 1.6077,
@@ -554,10 +524,410 @@
     }
   ],
   "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T04:34:23.105Z",
+  "updatedAt": "2026-09-08T04:45:29.933Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
+  "nerd": {
+    "efficiency": {
+      "points": [
+        {
+          "t": 19.5,
+          "wh": 104,
+          "km": 8,
+          "prov": "Yukon"
+        },
+        {
+          "t": 18.3,
+          "wh": 153,
+          "km": 184,
+          "prov": "Yukon"
+        },
+        {
+          "t": 18.2,
+          "wh": 149,
+          "km": 69,
+          "prov": "Yukon"
+        },
+        {
+          "t": 15.5,
+          "wh": 163,
+          "km": 109,
+          "prov": "Yukon"
+        },
+        {
+          "t": 14.3,
+          "wh": 151,
+          "km": 177,
+          "prov": "Yukon"
+        },
+        {
+          "t": 12.1,
+          "wh": 143,
+          "km": 129,
+          "prov": "Yukon"
+        },
+        {
+          "t": 15.2,
+          "wh": 170,
+          "km": 51,
+          "prov": "Yukon"
+        },
+        {
+          "t": 19.4,
+          "wh": 139,
+          "km": 106,
+          "prov": "Yukon"
+        },
+        {
+          "t": 21.6,
+          "wh": 157,
+          "km": 156,
+          "prov": "Yukon"
+        },
+        {
+          "t": 22.5,
+          "wh": 147,
+          "km": 10,
+          "prov": "Yukon"
+        },
+        {
+          "t": 22.4,
+          "wh": 172,
+          "km": 194,
+          "prov": "Yukon"
+        },
+        {
+          "t": 17.7,
+          "wh": 128,
+          "km": 117,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 14.8,
+          "wh": 88,
+          "km": 38,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 13.1,
+          "wh": 179,
+          "km": 149,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 3.9,
+          "wh": 152,
+          "km": 230,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 15.1,
+          "wh": 155,
+          "km": 226,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 17.5,
+          "wh": 125,
+          "km": 40,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.2,
+          "wh": 148,
+          "km": 89,
+          "prov": "Alberta"
+        },
+        {
+          "t": 10.8,
+          "wh": 169,
+          "km": 114,
+          "prov": "Alberta"
+        },
+        {
+          "t": 10.3,
+          "wh": 193,
+          "km": 170,
+          "prov": "Alberta"
+        },
+        {
+          "t": 14,
+          "wh": 152,
+          "km": 308,
+          "prov": "Alberta"
+        },
+        {
+          "t": 10.6,
+          "wh": 153,
+          "km": 166,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18.5,
+          "wh": 135,
+          "km": 5,
+          "prov": "Alberta"
+        },
+        {
+          "t": 17.7,
+          "wh": 144,
+          "km": 60,
+          "prov": "Alberta"
+        },
+        {
+          "t": 17.5,
+          "wh": 171,
+          "km": 91,
+          "prov": "Alberta"
+        },
+        {
+          "t": 21,
+          "wh": 109,
+          "km": 7,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18,
+          "wh": 103,
+          "km": 139,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18.7,
+          "wh": 200,
+          "km": 18,
+          "prov": "Alberta"
+        },
+        {
+          "t": 16.3,
+          "wh": 144,
+          "km": 87,
+          "prov": "Alberta"
+        },
+        {
+          "t": 15.4,
+          "wh": 120,
+          "km": 10,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18.7,
+          "wh": 119,
+          "km": 7,
+          "prov": "Alberta"
+        },
+        {
+          "t": 17.4,
+          "wh": 114,
+          "km": 13,
+          "prov": "Alberta"
+        },
+        {
+          "t": 15.9,
+          "wh": 220,
+          "km": 9,
+          "prov": "Alberta"
+        },
+        {
+          "t": 22,
+          "wh": 159,
+          "km": 279,
+          "prov": "Alberta"
+        },
+        {
+          "t": 29.2,
+          "wh": 165,
+          "km": 48,
+          "prov": "Alberta"
+        },
+        {
+          "t": 30.5,
+          "wh": 179,
+          "km": 172,
+          "prov": "Alberta"
+        },
+        {
+          "t": 30.3,
+          "wh": 160,
+          "km": 247,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 24.6,
+          "wh": 148,
+          "km": 170,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 20.9,
+          "wh": 164,
+          "km": 68,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 19.3,
+          "wh": 160,
+          "km": 124,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 14.5,
+          "wh": 161,
+          "km": 224,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 22.4,
+          "wh": 160,
+          "km": 61,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19,
+          "wh": 145,
+          "km": 71,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 12.9,
+          "wh": 140,
+          "km": 119,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 13.9,
+          "wh": 119,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 24.8,
+          "wh": 122,
+          "km": 15,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 23.4,
+          "wh": 153,
+          "km": 12,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 12.4,
+          "wh": 141,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 17.8,
+          "wh": 119,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 26.7,
+          "wh": 202,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.9,
+          "wh": 168,
+          "km": 37,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 18.7,
+          "wh": 143,
+          "km": 37,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.6,
+          "wh": 103,
+          "km": 27,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 18.2,
+          "wh": 121,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 25.2,
+          "wh": 148,
+          "km": 36,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 26.6,
+          "wh": 144,
+          "km": 36,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 16.8,
+          "wh": 130,
+          "km": 7,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 16,
+          "wh": 138,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 23.9,
+          "wh": 138,
+          "km": 118,
+          "prov": "Manitoba"
+        }
+      ],
+      "median": 148,
+      "best": 88,
+      "worst": 220,
+      "provinces": [
+        "Yukon",
+        "British Columbia",
+        "Alberta",
+        "Saskatchewan",
+        "Manitoba"
+      ]
+    },
+    "autopilot": {
+      "km": 5099,
+      "pct": 84.5
+    },
+    "energy": {
+      "used": 940,
+      "added": 990,
+      "overhead": 5,
+      "whPerKm": 156
+    },
+    "cost": {
+      "total": 161.77,
+      "supercharger": 161.77,
+      "other": 0,
+      "perKm": 0.027,
+      "sessions": 13,
+      "currency": "CAD"
+    },
+    "chargeCurve": {
+      "points": [],
+      "sessions": 39,
+      "note": "Peak power per session, pooled by state of charge"
+    },
+    "battery": null,
+    "firmware": [
+      {
+        "version": "2026.26.6.5",
+        "since": "2026-09-08"
+      }
+    ]
+  },
   "days": [
     {
       "key": "2026-09-02",
@@ -617,7 +987,7 @@
       "day": "Day 4",
       "date": "Sep 5",
       "province": "Yukon",
-      "from": "Alaska Highway Frontage Road, British Columbia",
+      "from": "British Columbia",
       "to": "Whitehorse, Yukon",
       "plotted": true,
       "km": "1,182",
@@ -629,7 +999,7 @@
       "date": "Sep 4",
       "province": "British Columbia",
       "from": "Calgary, Alberta",
-      "to": "Alaska Highway Frontage Road, British Columbia",
+      "to": "British Columbia",
       "plotted": true,
       "km": "1,117",
       "note": ""
