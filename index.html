@@ -7,6 +7,10 @@
 <script src="./_ds_bundle.js"></script>
 <style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}
 @media (max-width:860px){
+.rtam-topbar{flex-direction:column!important;align-items:flex-start!important;gap:5px!important;padding:11px 18px 12px!important}
+.rtam-topbar-gap{display:none!important}
+.rtam-topbar-status{font-size:9px!important;letter-spacing:.14em!important;line-height:1.6}
+.rtam-hero-right{justify-items:start!important;text-align:left!important}
 .rtam-page{padding:36px 18px 64px!important;gap:34px!important}
 .rtam-mapgrid{grid-template-columns:minmax(0,1fr)!important;gap:22px!important}
 .rtam-nerdgrid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
@@ -87,13 +91,13 @@ function App() {
 
   return (
     <div style={{ minHeight: '100vh' }}>
-      <div style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
+      <div className="rtam-topbar" style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <Badge size={28} src={A + 'badge-art.svg'} showType={false} />
-          <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase' }}>Road To A Million</span>
+          <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>Road To A Million</span>
         </div>
-        <div style={{ flex: 1 }}></div>
-        <span style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: D.liveKm ? '#E8B33A' : '#00B4D9' }}>● {D.liveKm ? 'Live km · map delayed ' + (D.locationEmbargoHours ?? 24) + 'H' : 'Delayed ' + (D.embargoHours ?? 24) + 'H'} · through Day {D.day}{stamp ? ' · updated ' + stamp : ''}</span>
+        <div className="rtam-topbar-gap" style={{ flex: 1 }}></div>
+        <span className="rtam-topbar-status" style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: D.liveKm ? '#E8B33A' : '#00B4D9' }}>● {D.liveKm ? 'Live km · map delayed ' + (D.locationEmbargoHours ?? 24) + 'H' : 'Delayed ' + (D.embargoHours ?? 24) + 'H'} · through Day {D.day}{stamp ? ' · updated ' + stamp : ''}</span>
       </div>
 
       <div className="rtam-page" style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>
@@ -108,7 +112,7 @@ function App() {
               </div>
               <div style={{ fontSize: 13, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.55)' }}>{D.route}</div>
             </div>
-            <div style={{ display: 'grid', gap: 10, justifyItems: 'end', textAlign: 'right' }}>
+            <div className="rtam-hero-right" style={{ display: 'grid', gap: 10, justifyItems: 'end', textAlign: 'right' }}>
               <Eyebrow tone="bronze" size={10}>Remaining</Eyebrow>
               <div style={{ fontSize: 34, fontWeight: 600, fontVariantNumeric: 'tabular-nums', color: '#F6F0E3' }}>{remaining.toLocaleString()} <span style={{ fontSize: 14, letterSpacing: '.18em', color: '#A47D51' }}>KM</span></div>
               <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{daysLeft === null ? 'Pace not established yet' : '≈ ' + daysLeft.toLocaleString() + ' days at current pace'}</div>
@@ -219,7 +223,7 @@ function App() {
         ]} />
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap', paddingTop: 36, borderTop: '1px solid rgba(246,240,227,.18)' }}>
-          <DpLockup badgeSize={58} badgeSrc={A + 'badge-art.svg'} wordmarkSrc={A + 'dp-wordmark.svg'} />
+          <DpLockup badgeSize={76} badgeSrc={A + 'badge-art.svg'} wordmarkSrc={A + 'dp-wordmark.svg'} />
         </div>
       </div>
     </div>

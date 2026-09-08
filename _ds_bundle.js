@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"RoadToAMillionDesignSystem_6606d4","components":[{"name":"Badge","sourcePath":"components/brand/Badge.jsx"},{"name":"DpLockup","sourcePath":"components/brand/DpLockup.jsx"},{"name":"Wordmark","sourcePath":"components/brand/Wordmark.jsx"},{"name":"Callout","sourcePath":"components/core/Callout.jsx"},{"name":"Chip","sourcePath":"components/core/Chip.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow.jsx"},{"name":"Plate","sourcePath":"components/core/Plate.jsx"},{"name":"SpecColumns","sourcePath":"components/core/SpecColumns.jsx"},{"name":"ProgressRule","sourcePath":"components/data/ProgressRule.jsx"},{"name":"StatReadout","sourcePath":"components/data/StatReadout.jsx"},{"name":"LowerThird","sourcePath":"components/media/LowerThird.jsx"},{"name":"Scrim","sourcePath":"components/media/Scrim.jsx"}],"sourceHashes":{"components/brand/Badge.jsx":"1ba6cbb1d35b","components/brand/DpLockup.jsx":"2a3b6ce67496","components/brand/Wordmark.jsx":"ebdf2cc93589","components/core/Callout.jsx":"36d37135dd97","components/core/Chip.jsx":"712864c9fb2b","components/core/Eyebrow.jsx":"f1dc8e4296a4","components/core/Plate.jsx":"fd2622c1cede","components/core/SpecColumns.jsx":"f078bba5f46c","components/data/ProgressRule.jsx":"db0eee9abdc2","components/data/StatReadout.jsx":"2affc951fa38","components/media/LowerThird.jsx":"ed2b347b321c","components/media/Scrim.jsx":"8b6b33d7c8c3","ui_kits/brand-guide/Sections.jsx":"137b1a5e44fe","ui_kits/broadcast/Beats.jsx":"233c5543a57b","ui_kits/broadcast/Frame.jsx":"8c0943f8c306","ui_kits/odometer/Panels.jsx":"a43aefe6182c","ui_kits/odometer/data.js":"b85c71bc619c","ui_kits/odometer/job/fetch-instagram.mjs":"81cb841f0394","ui_kits/odometer/job/fetch-snapshot.mjs":"5129301b8b14","ui_kits/odometer/tessie.js":"76495e2a350a","ui_kits/social/Frames.jsx":"e4455e4122b3","ui_kits/thumbnail/Controls.jsx":"561caaca8566","ui_kits/thumbnail/Ridge.jsx":"a0b651a33e18","ui_kits/thumbnail/Thumbnail.jsx":"e8bca77ff747"},"inlinedExternals":[],"unexposedExports":[{"name":"load","sourcePath":"ui_kits/odometer/tessie.js"},{"name":"mount","sourcePath":"ui_kits/odometer/tessie.js"},{"name":"shape","sourcePath":"ui_kits/odometer/tessie.js"}]} */
+/* @ds-bundle: {"format":4,"namespace":"RoadToAMillionDesignSystem_6606d4","components":[{"name":"Badge","sourcePath":"components/brand/Badge.jsx"},{"name":"DpLockup","sourcePath":"components/brand/DpLockup.jsx"},{"name":"Wordmark","sourcePath":"components/brand/Wordmark.jsx"},{"name":"Callout","sourcePath":"components/core/Callout.jsx"},{"name":"Chip","sourcePath":"components/core/Chip.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow.jsx"},{"name":"Plate","sourcePath":"components/core/Plate.jsx"},{"name":"SpecColumns","sourcePath":"components/core/SpecColumns.jsx"},{"name":"ProgressRule","sourcePath":"components/data/ProgressRule.jsx"},{"name":"StatReadout","sourcePath":"components/data/StatReadout.jsx"},{"name":"LowerThird","sourcePath":"components/media/LowerThird.jsx"},{"name":"Scrim","sourcePath":"components/media/Scrim.jsx"}],"sourceHashes":{"components/brand/Badge.jsx":"1ba6cbb1d35b","components/brand/DpLockup.jsx":"c9ba099fa21b","components/brand/Wordmark.jsx":"ebdf2cc93589","components/core/Callout.jsx":"36d37135dd97","components/core/Chip.jsx":"712864c9fb2b","components/core/Eyebrow.jsx":"f1dc8e4296a4","components/core/Plate.jsx":"fd2622c1cede","components/core/SpecColumns.jsx":"f078bba5f46c","components/data/ProgressRule.jsx":"db0eee9abdc2","components/data/StatReadout.jsx":"2affc951fa38","components/media/LowerThird.jsx":"ed2b347b321c","components/media/Scrim.jsx":"8b6b33d7c8c3","ui_kits/brand-guide/Sections.jsx":"137b1a5e44fe","ui_kits/broadcast/Beats.jsx":"233c5543a57b","ui_kits/broadcast/Frame.jsx":"8c0943f8c306","ui_kits/odometer/Nerd.jsx":"7c2516baa1da","ui_kits/odometer/Panels.jsx":"b1218a7d3228","ui_kits/odometer/data.js":"dc2dd43c01cf","ui_kits/odometer/job/fetch-instagram.mjs":"e26584c1db0f","ui_kits/odometer/job/fetch-snapshot.mjs":"5a07fca34a24","ui_kits/odometer/tessie.js":"feadf9785773","ui_kits/social/Frames.jsx":"e4455e4122b3","ui_kits/thumbnail/Controls.jsx":"561caaca8566","ui_kits/thumbnail/Ridge.jsx":"a0b651a33e18","ui_kits/thumbnail/Thumbnail.jsx":"e8bca77ff747"},"inlinedExternals":[],"unexposedExports":[{"name":"load","sourcePath":"ui_kits/odometer/tessie.js"},{"name":"mount","sourcePath":"ui_kits/odometer/tessie.js"},{"name":"shape","sourcePath":"ui_kits/odometer/tessie.js"}]} */
 
 (() => {
 
@@ -121,7 +121,9 @@ function DpLockup({
   }), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'grid',
-      gap: '7px'
+      gap: '7px',
+      justifyItems: 'center',
+      textAlign: 'center'
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -871,6 +873,370 @@ Object.assign(window, {
 });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/broadcast/Frame.jsx", error: String((e && e.message) || e) }); }
 
+// ui_kits/odometer/Nerd.jsx
+try { (() => {
+const {
+  Eyebrow,
+  Plate,
+  StatReadout,
+  Chip
+} = window.RoadToAMillionDesignSystem_6606d4;
+
+/* The nerd section. Everything here is derived from payloads the odometer job
+   already fetches, so none of it costs an extra Tessie call — except battery
+   health, which is one soft request that fails quietly.
+
+   Categorical colour. The brand runs cyan / bronze / bone and nothing else, so
+   a province palette has to come from somewhere: these are the three brand
+   colours plus four oklch neighbours picked to sit at the same lightness and
+   chroma, rather than four arbitrary hues. */
+const PROV_COLORS = ['#00B4D9', '#A47D51', '#F6F0E3', 'oklch(0.74 0.11 175)', 'oklch(0.70 0.10 300)', 'oklch(0.79 0.12 75)', 'oklch(0.69 0.12 20)'];
+const provColor = (list, p) => PROV_COLORS[Math.max(0, list.indexOf(p)) % PROV_COLORS.length];
+const AXIS = 'rgba(246,240,227,.28)';
+const AXIS_TEXT = 'rgba(246,240,227,.5)';
+
+/* Round a range outward to sensible tick values so the axis reads in whole
+   numbers rather than whatever the extremes happen to be. */
+function niceScale(min, max, steps) {
+  if (!Number.isFinite(min) || !Number.isFinite(max) || min === max) return {
+    lo: 0,
+    hi: 1,
+    ticks: [0, 1]
+  };
+  const raw = (max - min) / steps;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw) || mag * 10;
+  const lo = Math.floor(min / step) * step;
+  const hi = Math.ceil(max / step) * step;
+  const ticks = [];
+  for (let v = lo; v <= hi + step / 2; v += step) ticks.push(Number(v.toFixed(6)));
+  return {
+    lo,
+    hi,
+    ticks
+  };
+}
+
+/* Every drive as a dot: outside temperature against consumption. This is the
+   graph the audience will argue about, so it gets the space and real axes. */
+function EfficiencyScatter({
+  data
+}) {
+  const pts = data && data.points || [];
+  const provinces = data && data.provinces || [];
+  const W = 720,
+    H = 340,
+    L = 58,
+    R = 14,
+    T = 16,
+    B = 42;
+  if (!pts.length) {
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        border: '1px dashed rgba(246,240,227,.22)',
+        padding: 40,
+        textAlign: 'center',
+        fontSize: 11,
+        letterSpacing: '.18em',
+        textTransform: 'uppercase',
+        color: 'rgba(246,240,227,.35)'
+      }
+    }, "Awaiting drives with temperature data");
+  }
+  const xs = niceScale(Math.min(...pts.map(p => p.t)), Math.max(...pts.map(p => p.t)), 6);
+  const ys = niceScale(Math.min(...pts.map(p => p.wh)), Math.max(...pts.map(p => p.wh)), 5);
+  const px = t => L + (t - xs.lo) / (xs.hi - xs.lo) * (W - L - R);
+  const py = w => H - B - (w - ys.lo) / (ys.hi - ys.lo) * (H - T - B);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: '1px solid rgba(246,240,227,.18)'
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    viewBox: '0 0 ' + W + ' ' + H,
+    preserveAspectRatio: "none",
+    style: {
+      display: 'block',
+      width: '100%',
+      height: 'auto',
+      aspectRatio: W + ' / ' + H
+    }
+  }, ys.ticks.map((v, i) => /*#__PURE__*/React.createElement("g", {
+    key: 'y' + i
+  }, /*#__PURE__*/React.createElement("line", {
+    x1: L,
+    y1: py(v),
+    x2: W - R,
+    y2: py(v),
+    stroke: "rgba(246,240,227,.08)",
+    strokeWidth: "1"
+  }), /*#__PURE__*/React.createElement("text", {
+    x: L - 10,
+    y: py(v) + 4,
+    textAnchor: "end",
+    fill: AXIS_TEXT,
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '1px'
+    }
+  }, v))), xs.ticks.map((v, i) => /*#__PURE__*/React.createElement("text", {
+    key: 'x' + i,
+    x: px(v),
+    y: H - B + 20,
+    textAnchor: "middle",
+    fill: AXIS_TEXT,
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '1px'
+    }
+  }, v, "\xB0")), /*#__PURE__*/React.createElement("line", {
+    x1: L,
+    y1: H - B,
+    x2: W - R,
+    y2: H - B,
+    stroke: AXIS,
+    strokeWidth: "1"
+  }), /*#__PURE__*/React.createElement("line", {
+    x1: L,
+    y1: T,
+    x2: L,
+    y2: H - B,
+    stroke: AXIS,
+    strokeWidth: "1"
+  }), xs.lo < 0 && xs.hi > 0 && /*#__PURE__*/React.createElement("line", {
+    x1: px(0),
+    y1: T,
+    x2: px(0),
+    y2: H - B,
+    stroke: "rgba(246,240,227,.22)",
+    strokeDasharray: "3 4",
+    strokeWidth: "1"
+  }), pts.map((p, i) => /*#__PURE__*/React.createElement("circle", {
+    key: i,
+    cx: px(p.t),
+    cy: py(p.wh),
+    r: 3,
+    fill: provColor(provinces, p.prov),
+    fillOpacity: "0.75"
+  }, /*#__PURE__*/React.createElement("title", null, p.prov, " \xB7 ", p.t, "\xB0C \xB7 ", p.wh, " Wh/km \xB7 ", p.km, " km"))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 18,
+      flexWrap: 'wrap',
+      alignItems: 'center',
+      fontSize: 10,
+      letterSpacing: '.16em',
+      textTransform: 'uppercase',
+      color: AXIS_TEXT
+    }
+  }, provinces.map(p => /*#__PURE__*/React.createElement("span", {
+    key: p,
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 7
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 9,
+      height: 9,
+      background: provColor(provinces, p),
+      display: 'inline-block'
+    }
+  }), p)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginLeft: 'auto',
+      color: 'rgba(246,240,227,.35)'
+    }
+  }, "Outside temperature \xB0C \xB7 ", pts.length, " drives")));
+}
+
+/* Peak power against state of charge, pooled across sessions. A single session
+   summary is one reading, so this only becomes a curve over weeks — the sample
+   count per bucket is shown rather than implied. */
+function ChargeCurve({
+  data
+}) {
+  const pts = data && data.points || [];
+  const W = 520,
+    H = 230,
+    L = 46,
+    R = 12,
+    T = 18,
+    B = 40;
+  if (pts.length < 2) {
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        border: '1px dashed rgba(246,240,227,.22)',
+        padding: 34,
+        textAlign: 'center',
+        fontSize: 11,
+        letterSpacing: '.18em',
+        textTransform: 'uppercase',
+        color: 'rgba(246,240,227,.35)'
+      }
+    }, "Curve fills in as sessions accumulate \u2014 ", pts.length, " of the 2 points needed");
+  }
+  const maxKw = Math.max(...pts.map(p => p.kw));
+  const ys = niceScale(0, maxKw, 4);
+  const px = soc => L + soc / 100 * (W - L - R);
+  const py = kw => H - B - (kw - ys.lo) / (ys.hi - ys.lo) * (H - T - B);
+  const line = pts.map(p => px(p.soc).toFixed(1) + ',' + py(p.kw).toFixed(1)).join(' ');
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: '1px solid rgba(246,240,227,.18)'
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    viewBox: '0 0 ' + W + ' ' + H,
+    preserveAspectRatio: "none",
+    style: {
+      display: 'block',
+      width: '100%',
+      height: 'auto',
+      aspectRatio: W + ' / ' + H
+    }
+  }, ys.ticks.map((v, i) => /*#__PURE__*/React.createElement("g", {
+    key: i
+  }, /*#__PURE__*/React.createElement("line", {
+    x1: L,
+    y1: py(v),
+    x2: W - R,
+    y2: py(v),
+    stroke: "rgba(246,240,227,.08)",
+    strokeWidth: "1"
+  }), /*#__PURE__*/React.createElement("text", {
+    x: L - 10,
+    y: py(v) + 4,
+    textAnchor: "end",
+    fill: AXIS_TEXT,
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '1px'
+    }
+  }, v))), [0, 25, 50, 75, 100].map(v => /*#__PURE__*/React.createElement("text", {
+    key: v,
+    x: px(v),
+    y: H - B + 20,
+    textAnchor: "middle",
+    fill: AXIS_TEXT,
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 10,
+      letterSpacing: '1px'
+    }
+  }, v, "%")), /*#__PURE__*/React.createElement("line", {
+    x1: L,
+    y1: H - B,
+    x2: W - R,
+    y2: H - B,
+    stroke: AXIS,
+    strokeWidth: "1"
+  }), /*#__PURE__*/React.createElement("polyline", {
+    points: line,
+    fill: "none",
+    stroke: "#00B4D9",
+    strokeWidth: "2.5"
+  }), pts.map((p, i) => /*#__PURE__*/React.createElement("circle", {
+    key: i,
+    cx: px(p.soc),
+    cy: py(p.kw),
+    r: 4,
+    fill: "#1C242C",
+    stroke: "#00B4D9",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("title", null, p.soc, "% \xB7 ", p.kw, " kW \xB7 ", p.n, " session", p.n === 1 ? '' : 's')))));
+}
+function NerdStat({
+  label,
+  value,
+  unit,
+  sub
+}) {
+  return /*#__PURE__*/React.createElement(Plate, {
+    tone: "ghost",
+    pad: 22,
+    style: {
+      gap: 12,
+      alignContent: 'start'
+    }
+  }, /*#__PURE__*/React.createElement(Eyebrow, {
+    tone: "bronze",
+    size: 10,
+    track: 0.22
+  }, label), /*#__PURE__*/React.createElement(StatReadout, {
+    value: value,
+    unit: unit || '',
+    size: 34
+  }), sub && /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      letterSpacing: '.16em',
+      textTransform: 'uppercase',
+      color: 'rgba(246,240,227,.5)'
+    }
+  }, sub));
+}
+
+/* Firmware is the one thing Tessie reports only as "now" — the job records a
+   line each time it changes, so this list starts empty and grows. */
+function FirmwareLog({
+  versions
+}) {
+  const list = (versions || []).slice().reverse();
+  if (!list.length) {
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 11,
+        letterSpacing: '.16em',
+        textTransform: 'uppercase',
+        color: 'rgba(246,240,227,.35)'
+      }
+    }, "Recording from today \u2014 no changes seen yet");
+  }
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gap: 0
+    }
+  }, list.map((v, i) => /*#__PURE__*/React.createElement("div", {
+    key: v.version + i,
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      gap: 16,
+      padding: '11px 0',
+      borderBottom: '1px solid rgba(246,240,227,.10)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontVariantNumeric: 'tabular-nums',
+      color: i === 0 ? '#F6F0E3' : 'rgba(246,240,227,.6)'
+    }
+  }, v.version), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      letterSpacing: '.16em',
+      textTransform: 'uppercase',
+      color: 'rgba(246,240,227,.45)'
+    }
+  }, i === 0 ? 'Current · from ' : 'From ', v.since))));
+}
+Object.assign(window, {
+  EfficiencyScatter,
+  ChargeCurve,
+  NerdStat,
+  FirmwareLog
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/odometer/Nerd.jsx", error: String((e && e.message) || e) }); }
+
 // ui_kits/odometer/Panels.jsx
 try { (() => {
 const {
@@ -916,9 +1282,12 @@ function Metric({
 }
 
 /* Sparkline of the last N days' distance. One hairline baseline, cyan bars,
-   bronze label on the peak. No axes — the numbers carry the detail. */
+   bronze label on the peak. No axes — the numbers carry the detail.
+   Bars are selectable when the day has a route to show. */
 function DistanceBars({
-  days
+  days,
+  activeKey,
+  onSelect
 }) {
   const max = Math.max(...days.map(d => d.km));
   return /*#__PURE__*/React.createElement("div", {
@@ -934,15 +1303,21 @@ function DistanceBars({
       height: 96,
       borderBottom: '1px solid rgba(246,240,227,.18)'
     }
-  }, days.map((d, i) => /*#__PURE__*/React.createElement("div", {
-    key: i,
-    title: d.label + ' · ' + d.km + ' km',
-    style: {
-      flex: 1,
-      height: Math.max(3, Math.round(d.km / max * 96)) + 'px',
-      background: i === days.length - 1 ? '#00B4D9' : 'rgba(246,240,227,.28)'
-    }
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, days.map((d, i) => {
+    const selectable = !!(onSelect && d.key);
+    const active = !!(d.key && d.key === activeKey);
+    return /*#__PURE__*/React.createElement("div", {
+      key: i,
+      title: d.label + ' · ' + d.km + ' km',
+      onClick: selectable ? () => onSelect(d.key) : undefined,
+      style: {
+        flex: 1,
+        height: Math.max(3, Math.round(d.km / max * 96)) + 'px',
+        cursor: selectable ? 'pointer' : 'default',
+        background: active ? '#00B4D9' : i === days.length - 1 ? 'rgba(0,180,217,.5)' : 'rgba(246,240,227,.28)'
+      }
+    });
+  })), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -958,22 +1333,51 @@ function DistanceBars({
   }, "peak ", max.toLocaleString(), " km"), /*#__PURE__*/React.createElement("span", null, days[days.length - 1].label)));
 }
 
-/* The daily log — what the driver posts at the end of each day. */
+/* "Whitehorse, Yukon" → "Whitehorse". The province is repeated on both ends of
+   a day far more often than not, so it is hoisted out rather than printed twice. */
+const townOnly = s => String(s || '—').split(',')[0].trim();
+const provinceOf = s => {
+  const p = String(s || '').split(',');
+  return p.length > 1 ? p[p.length - 1].trim() : '';
+};
+function routeLabel(from, to, fallback) {
+  if (!from || !to || from === '—' || to === '—') return fallback || '—';
+  const pf = provinceOf(from),
+    pt = provinceOf(to);
+  if (pf && pf === pt) return townOnly(from) + ' → ' + townOnly(to) + ' · ' + pt;
+  return from + ' → ' + to;
+}
+
+/* The daily log — one row per day, town to town. Rows with a plotted route are
+   selectable and drive the map above; rows still inside the location embargo
+   read "—" and stay inert. */
 function LogRow({
   day,
   date,
   province,
+  from,
+  to,
   km,
-  note
+  note,
+  plotted,
+  active,
+  onSelect
 }) {
+  const clickable = !!(plotted && onSelect);
   return /*#__PURE__*/React.createElement("div", {
+    onClick: clickable ? onSelect : undefined,
+    title: clickable ? 'Show this day on the map' : undefined,
     style: {
       display: 'grid',
       gridTemplateColumns: '90px 120px 1fr 110px',
       gap: 20,
-      padding: '18px 0',
+      padding: '18px 14px',
+      margin: '0 -14px',
       borderBottom: '1px solid rgba(246,240,227,.12)',
-      alignItems: 'baseline'
+      alignItems: 'baseline',
+      cursor: clickable ? 'pointer' : 'default',
+      background: active ? 'rgba(0,180,217,.10)' : 'transparent',
+      boxShadow: active ? 'inset 2px 0 0 #00B4D9' : 'none'
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1000,9 +1404,9 @@ function LogRow({
       fontSize: 13,
       letterSpacing: '.14em',
       textTransform: 'uppercase',
-      color: 'rgba(246,240,227,.78)'
+      color: active ? '#F6F0E3' : 'rgba(246,240,227,.78)'
     }
-  }, province), note && /*#__PURE__*/React.createElement("div", {
+  }, routeLabel(from, to, province)), note && /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: 13,
       lineHeight: 1.6,
@@ -1024,8 +1428,118 @@ function LogRow({
     }
   }, "KM")));
 }
-/* Latest day's route. Placeholder graphic until the Tessie drive path is wired.
-   Town-level markers only, held back 24h — never a live position. */
+
+/* A day's route, town level and at least 24h old — never a live position.
+
+   Each day is framed to fill the panel, so the scale changes from day to day:
+   a 90km morning and a 1,300km haul both fill the box. The scale bar below the
+   map is the correction — its width is a real fraction of the frame, taken from
+   the kmPerPx the job reports. Nice round distances only; the bar picks the
+   largest that fits. */
+const SCALE_STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 150, 200, 250, 500, 750, 1000, 1500];
+
+/* Monospace at 11px with 1.4px tracking. Used to measure a label before it is
+   placed — close enough to reserve the right box. */
+const CHAR_W = 7.0;
+
+/* Labels are laid out, not just drawn. Each one tries a ring of positions
+   around its marker and takes the first that clears the frame, every marker,
+   and every label already placed. Anything with nowhere to go is dropped
+   rather than stacked — an unreadable pile of names is worse than a missing
+   one, and the Daily log carries the full list anyway. Start and end are
+   placed first so they are never the ones dropped. */
+function layoutLabels(stops, W, H) {
+  const rank = {
+    start: 0,
+    end: 1,
+    charge: 2
+  };
+  const ordered = [...stops].map((s, i) => ({
+    s,
+    i
+  })).sort((a, b) => (rank[a.s.kind] ?? 3) - (rank[b.s.kind] ?? 3) || a.i - b.i);
+  /* Markers are obstacles too — a label must not sit on a dot. */
+  const taken = stops.map(s => ({
+    x1: s.x * W - 11,
+    x2: s.x * W + 11,
+    y1: s.y * H - 11,
+    y2: s.y * H + 11
+  }));
+  const hits = (a, b) => !(a.x2 < b.x1 || b.x2 < a.x1 || a.y2 < b.y1 || b.y2 < a.y1);
+  const out = [];
+  for (const {
+    s
+  } of ordered) {
+    const text = townOnly(s.town).toUpperCase();
+    if (!text || text === '—') continue;
+    const w = text.length * CHAR_W;
+    const cx = s.x * W,
+      cy = s.y * H;
+    const cands = [{
+      dx: 0,
+      dy: -16,
+      a: 'middle'
+    }, {
+      dx: 0,
+      dy: 24,
+      a: 'middle'
+    }, {
+      dx: 13,
+      dy: 4,
+      a: 'start'
+    }, {
+      dx: -13,
+      dy: 4,
+      a: 'end'
+    }, {
+      dx: 13,
+      dy: -13,
+      a: 'start'
+    }, {
+      dx: -13,
+      dy: -13,
+      a: 'end'
+    }, {
+      dx: 13,
+      dy: 20,
+      a: 'start'
+    }, {
+      dx: -13,
+      dy: 20,
+      a: 'end'
+    }, {
+      dx: 0,
+      dy: -30,
+      a: 'middle'
+    }, {
+      dx: 0,
+      dy: 38,
+      a: 'middle'
+    }];
+    for (const c of cands) {
+      const tx = cx + c.dx,
+        ty = cy + c.dy;
+      const x1 = c.a === 'middle' ? tx - w / 2 : c.a === 'start' ? tx : tx - w;
+      const box = {
+        x1,
+        x2: x1 + w,
+        y1: ty - 10,
+        y2: ty + 4
+      };
+      if (box.x1 < 4 || box.x2 > W - 4 || box.y1 < 2 || box.y2 > H - 4) continue;
+      if (taken.some(t => hits(t, box))) continue;
+      taken.push(box);
+      out.push({
+        text,
+        tx,
+        ty,
+        anchor: c.a
+      });
+      break;
+    }
+  }
+  return out;
+}
 function DayMap({
   map
 }) {
@@ -1034,6 +1548,17 @@ function DayMap({
   const pts = (map.path || []).map(([x, y]) => [x * W, y * H]);
   const plotted = pts.length > 1;
   const line = pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+  const stops = map.stops || [];
+  const labels = layoutLabels(stops, W, H);
+  const kmPerPx = map.kmPerPx || 0;
+  let barKm = 0;
+  if (kmPerPx > 0) {
+    for (const n of SCALE_STEPS) {
+      if (n / kmPerPx <= W * 0.34) barKm = n;
+    }
+    if (!barKm) barKm = SCALE_STEPS[0];
+  }
+  const barPct = barKm ? barKm / kmPerPx / W * 100 : 0;
   return /*#__PURE__*/React.createElement(Plate, {
     tone: "ghost",
     pad: 26,
@@ -1070,7 +1595,8 @@ function DayMap({
     style: {
       display: 'block',
       width: '100%',
-      height: 300
+      height: 'auto',
+      aspectRatio: W + ' / ' + H
     }
   }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("pattern", {
     id: "rtam-grid",
@@ -1091,27 +1617,38 @@ function DayMap({
     fill: "none",
     stroke: "#00B4D9",
     strokeWidth: "2.5"
-  }), (map.stops || []).map((s, i) => /*#__PURE__*/React.createElement("g", {
-    key: i
-  }, /*#__PURE__*/React.createElement("circle", {
+  }), stops.map((s, i) => /*#__PURE__*/React.createElement("g", {
+    key: 'm' + i
+  }, s.kind === 'end' && /*#__PURE__*/React.createElement("circle", {
+    cx: s.x * W,
+    cy: s.y * H,
+    r: 10,
+    fill: "none",
+    stroke: "rgba(246,240,227,.55)",
+    strokeWidth: "1.5"
+  }), /*#__PURE__*/React.createElement("circle", {
     cx: s.x * W,
     cy: s.y * H,
     r: s.kind === 'charge' ? 4 : 6,
     fill: s.kind === 'charge' ? '#1C242C' : '#00B4D9',
     stroke: "#00B4D9",
     strokeWidth: "2"
-  }), /*#__PURE__*/React.createElement("text", {
-    x: s.x * W,
-    y: s.y * H - 16,
-    textAnchor: s.x > 0.85 ? 'end' : s.x < 0.12 ? 'start' : 'middle',
-    fill: "rgba(246,240,227,.7)",
+  }))), labels.map((l, i) => /*#__PURE__*/React.createElement("text", {
+    key: 'l' + i,
+    x: l.tx,
+    y: l.ty,
+    textAnchor: l.anchor,
+    fill: "rgba(246,240,227,.82)",
+    stroke: "#1C242C",
+    strokeWidth: "4",
+    strokeLinejoin: "round",
     style: {
+      paintOrder: 'stroke',
       fontFamily: 'var(--font-mono)',
       fontSize: 11,
-      letterSpacing: '1.6px',
-      textTransform: 'uppercase'
+      letterSpacing: '1.4px'
     }
-  }, s.town.toUpperCase())))), !plotted && /*#__PURE__*/React.createElement("span", {
+  }, l.text))), !plotted && /*#__PURE__*/React.createElement("span", {
     style: {
       position: 'absolute',
       left: 12,
@@ -1124,19 +1661,180 @@ function DayMap({
   }, "Awaiting the first closed day")), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
-      gap: 28,
+      alignItems: 'center',
+      gap: 24,
       flexWrap: 'wrap',
       fontSize: 11,
       letterSpacing: '.16em',
       textTransform: 'uppercase',
       color: 'rgba(246,240,227,.5)'
     }
-  }, /*#__PURE__*/React.createElement("span", null, map.corridor), /*#__PURE__*/React.createElement("span", {
+  }, barPct > 0 && /*#__PURE__*/React.createElement("div", {
     style: {
-      color: '#F6F0E3'
+      flex: '0 0 auto',
+      width: barPct + '%',
+      display: 'flex',
+      alignItems: 'center'
     }
-  }, map.km.toLocaleString(), " km"), /*#__PURE__*/React.createElement("span", null, (map.chargeStops ?? map.stops.filter(s => s.kind === 'charge').length).toLocaleString(), " charge stops")));
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 1,
+      height: 9,
+      background: 'rgba(246,240,227,.45)'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flex: 1,
+      height: 1,
+      background: 'rgba(246,240,227,.45)'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 1,
+      height: 9,
+      background: 'rgba(246,240,227,.45)'
+    }
+  })), barPct > 0 && /*#__PURE__*/React.createElement("span", {
+    style: {
+      whiteSpace: 'nowrap'
+    }
+  }, barKm.toLocaleString(), " km"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: '1 1 auto'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: '#F6F0E3',
+      whiteSpace: 'nowrap'
+    }
+  }, map.km.toLocaleString(), " km"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      whiteSpace: 'nowrap'
+    }
+  }, (map.chargeStops ?? stops.filter(s => s.kind === 'charge').length).toLocaleString(), " charge stops")));
 }
+/* The condensed day list that sits beside the map and drives it. Same rows as
+   LogRow but stacked two-line so the whole window fits the map's height — the
+   selection is useless if you have to scroll away from the map to use it. */
+function DayList({
+  rows,
+  activeKey,
+  onSelect,
+  onLatest,
+  following
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "rtam-daylist",
+    style: {
+      border: '1px solid rgba(246,240,227,.18)',
+      display: 'grid',
+      gridTemplateRows: 'auto minmax(0,1fr)',
+      maxHeight: 466
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      gap: 12,
+      padding: '16px 18px',
+      borderBottom: '1px solid rgba(246,240,227,.18)'
+    }
+  }, /*#__PURE__*/React.createElement(Eyebrow, {
+    tone: "bronze",
+    size: 10,
+    track: 0.24
+  }, "Daily log"), following ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 9,
+      letterSpacing: '.18em',
+      textTransform: 'uppercase',
+      color: 'rgba(246,240,227,.4)'
+    }
+  }, "Select a day") : /*#__PURE__*/React.createElement("button", {
+    onClick: onLatest,
+    style: {
+      padding: '5px 10px',
+      cursor: 'pointer',
+      borderRadius: 0,
+      background: 'transparent',
+      color: '#00B4D9',
+      border: '1px solid rgba(0,180,217,.5)',
+      fontFamily: 'inherit',
+      fontSize: 9,
+      letterSpacing: '.16em',
+      textTransform: 'uppercase'
+    }
+  }, "Latest")), /*#__PURE__*/React.createElement("div", {
+    className: "rtam-daylist-rows",
+    style: {
+      overflowY: 'auto'
+    }
+  }, rows.map((r, i) => {
+    const clickable = !!(r.plotted && onSelect);
+    const active = !!(r.key && r.key === activeKey);
+    return /*#__PURE__*/React.createElement("div", {
+      key: r.key || i,
+      className: "rtam-daylist-row",
+      onClick: clickable ? () => onSelect(r.key) : undefined,
+      title: clickable ? 'Show this day on the map' : 'No route yet for this day',
+      style: {
+        display: 'grid',
+        gridTemplateColumns: 'minmax(0,1fr) auto',
+        gap: '5px 12px',
+        padding: '13px 18px',
+        borderBottom: '1px solid rgba(246,240,227,.10)',
+        cursor: clickable ? 'pointer' : 'default',
+        opacity: clickable ? 1 : 0.55,
+        background: active ? 'rgba(0,180,217,.10)' : 'transparent',
+        boxShadow: active ? 'inset 2px 0 0 #00B4D9' : 'none'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 10,
+        fontWeight: 600,
+        letterSpacing: '.16em',
+        textTransform: 'uppercase',
+        color: '#00B4D9'
+      }
+    }, r.day, " \xB7 ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: 'rgba(246,240,227,.45)'
+      }
+    }, r.date)), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        fontWeight: 600,
+        fontVariantNumeric: 'tabular-nums',
+        textAlign: 'right',
+        color: '#F6F0E3'
+      }
+    }, r.km, " ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: '#A47D51',
+        fontSize: 9,
+        letterSpacing: '.16em'
+      }
+    }, "KM")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        gridColumn: '1 / -1',
+        fontSize: 11,
+        lineHeight: 1.5,
+        letterSpacing: '.1em',
+        textTransform: 'uppercase',
+        color: active ? 'rgba(246,240,227,.85)' : 'rgba(246,240,227,.55)'
+      }
+    }, routeLabel(r.from, r.to, r.province)), r.note && /*#__PURE__*/React.createElement("div", {
+      style: {
+        gridColumn: '1 / -1',
+        fontSize: 11,
+        lineHeight: 1.55,
+        color: 'rgba(246,240,227,.45)'
+      }
+    }, r.note));
+  })));
+}
+
 /* Two readouts in one Plate — same footprint as Metric, split by a hairline. */
 function SplitMetric({
   label,
@@ -1281,6 +1979,7 @@ Object.assign(window, {
   SplitMetric,
   DistanceBars,
   LogRow,
+  DayList,
   DayMap,
   PostGrid
 });
@@ -1288,13 +1987,132 @@ Object.assign(window, {
 
 // ui_kits/odometer/data.js
 try { (() => {
-/* Illustrative figures. The real feed is the driver's daily data screenshots. */
+/* Illustrative figures — the shape the job writes, so the page renders complete
+   before the live feed arrives. Real data replaces this at runtime. */
+const RTAM_DAY_MAPS = [{
+  key: '2026-10-16',
+  day: 410,
+  label: 'Day 410 · 16 Oct',
+  km: 1082,
+  from: 'Redding, California',
+  to: 'Susanville, California',
+  corridor: 'Susanville, California',
+  chargeStops: 2,
+  note: 'Town level · delayed 24h',
+  kmPerPx: 1.24,
+  path: [[0.1, 0.44], [0.3, 0.4], [0.52, 0.47], [0.74, 0.52], [0.9, 0.58]],
+  stops: [{
+    x: 0.1,
+    y: 0.44,
+    town: 'Redding',
+    kind: 'start'
+  }, {
+    x: 0.52,
+    y: 0.47,
+    town: 'Red Bluff',
+    kind: 'charge'
+  }, {
+    x: 0.9,
+    y: 0.58,
+    town: 'Susanville',
+    kind: 'end'
+  }]
+}, {
+  key: '2026-10-17',
+  day: 411,
+  label: 'Day 411 · 17 Oct',
+  km: 806,
+  from: 'Susanville, California',
+  to: 'Fallon, Nevada',
+  corridor: 'Fallon, Nevada',
+  chargeStops: 1,
+  note: 'Town level · delayed 24h',
+  kmPerPx: 0.96,
+  path: [[0.14, 0.3], [0.36, 0.4], [0.58, 0.52], [0.82, 0.66]],
+  stops: [{
+    x: 0.14,
+    y: 0.3,
+    town: 'Susanville',
+    kind: 'start'
+  }, {
+    x: 0.58,
+    y: 0.52,
+    town: 'Reno',
+    kind: 'charge'
+  }, {
+    x: 0.82,
+    y: 0.66,
+    town: 'Fallon',
+    kind: 'end'
+  }]
+}, {
+  key: '2026-10-18',
+  day: 412,
+  label: 'Day 412 · 18 Oct',
+  km: 742,
+  from: 'Fallon, Nevada',
+  to: 'Ely, Nevada',
+  corridor: 'Ely, Nevada',
+  chargeStops: 2,
+  note: 'Town level · delayed 24h',
+  kmPerPx: 0.79,
+  path: [[0.06, 0.62], [0.15, 0.58], [0.27, 0.55], [0.38, 0.6], [0.5, 0.52], [0.62, 0.5], [0.72, 0.44], [0.83, 0.42], [0.94, 0.36]],
+  stops: [{
+    x: 0.06,
+    y: 0.62,
+    town: 'Fallon',
+    kind: 'start'
+  }, {
+    x: 0.38,
+    y: 0.6,
+    town: 'Austin',
+    kind: 'charge'
+  }, {
+    x: 0.72,
+    y: 0.44,
+    town: 'Eureka',
+    kind: 'charge'
+  }, {
+    x: 0.94,
+    y: 0.36,
+    town: 'Ely',
+    kind: 'end'
+  }]
+}];
+RTAM_DAY_MAPS.forEach(m => {
+  m.plotted = true;
+});
+
+/* Illustrative nerd figures. Deterministic so the preview does not reshuffle
+   on every reload — consumption rises as temperature falls, which is the shape
+   the real data should show. */
+const RTAM_PROVS = ['British Columbia', 'Alberta', 'Saskatchewan', 'Manitoba', 'Yukon'];
+const RTAM_POINTS = (() => {
+  const out = [];
+  let seed = 7;
+  const rnd = () => {
+    seed = (seed * 1103515245 + 12345) % 2147483648;
+    return seed / 2147483648;
+  };
+  for (let i = 0; i < 190; i += 1) {
+    const t = Number((-24 + rnd() * 52).toFixed(1));
+    const wh = Math.round(152 + (18 - t) * 1.9 + (rnd() - 0.5) * 34);
+    out.push({
+      t,
+      wh,
+      km: Math.round(40 + rnd() * 420),
+      prov: RTAM_PROVS[Math.floor(rnd() * RTAM_PROVS.length)]
+    });
+  }
+  return out;
+})();
+const RTAM_WH = RTAM_POINTS.map(p => p.wh).sort((a, b) => a - b);
 window.RTAM_DATA = {
   odometer: 418203,
   goal: 1000000,
   day: 412,
   province: 'Nevada',
-  route: 'US-50 East · Fallon to Ely',
+  route: 'Ely, Nevada',
   today: 742,
   best: 1104,
   avgPerDay: 1015,
@@ -1304,88 +2122,174 @@ window.RTAM_DATA = {
   chargeLifetime: 1148,
   chargeLifetimeSupercharger: 902,
   chargeLifetimeOther: 246,
-  batteryHealth: 91,
-  dayMap: {
-    label: 'Latest day · Day 412',
-    corridor: 'US-50 East · Nevada',
-    km: 742,
-    /* Town-level only, held back 24h. Normalised 0–1 points, west to east. */
-    path: [[0.06, 0.62], [0.15, 0.58], [0.27, 0.55], [0.38, 0.6], [0.5, 0.52], [0.62, 0.5], [0.72, 0.44], [0.83, 0.42], [0.94, 0.36]],
-    stops: [{
-      x: 0.06,
-      y: 0.62,
-      town: 'Fallon',
-      kind: 'start'
+  locationEmbargoHours: 24,
+  nerd: {
+    efficiency: {
+      points: RTAM_POINTS,
+      median: RTAM_WH[Math.floor(RTAM_WH.length / 2)],
+      best: RTAM_WH[0],
+      worst: RTAM_WH[RTAM_WH.length - 1],
+      provinces: RTAM_PROVS
+    },
+    autopilot: {
+      km: 289640,
+      pct: 69.3
+    },
+    energy: {
+      used: 62451,
+      added: 70118,
+      overhead: 10.9,
+      whPerKm: 149,
+      kmPerKwh: 6.7,
+      packKwh: 75,
+      rangeEst: 503
+    },
+    cost: {
+      total: 8214.55,
+      supercharger: 6402.1,
+      other: 1812.45,
+      perKm: 0.02,
+      sessions: 1102,
+      currency: 'CAD'
+    },
+    chargeCurve: {
+      points: [{
+        soc: 10,
+        kw: 244,
+        n: 31
+      }, {
+        soc: 20,
+        kw: 238,
+        n: 74
+      }, {
+        soc: 30,
+        kw: 205,
+        n: 96
+      }, {
+        soc: 40,
+        kw: 171,
+        n: 88
+      }, {
+        soc: 50,
+        kw: 140,
+        n: 71
+      }, {
+        soc: 60,
+        kw: 112,
+        n: 63
+      }, {
+        soc: 70,
+        kw: 86,
+        n: 52
+      }, {
+        soc: 80,
+        kw: 61,
+        n: 44
+      }, {
+        soc: 90,
+        kw: 38,
+        n: 19
+      }],
+      sessions: 1148,
+      note: 'Peak power per session, pooled by state of charge'
+    },
+    battery: {
+      healthPct: 91.4,
+      rangeNow: 458,
+      rangeOriginal: 501
+    },
+    firmware: [{
+      version: '2026.20.5',
+      since: '2026-06-14'
     }, {
-      x: 0.38,
-      y: 0.6,
-      town: 'Austin',
-      kind: 'charge'
+      version: '2026.26.2',
+      since: '2026-07-29'
     }, {
-      x: 0.72,
-      y: 0.44,
-      town: 'Eureka',
-      kind: 'charge'
-    }, {
-      x: 0.94,
-      y: 0.36,
-      town: 'Ely',
-      kind: 'end'
+      version: '2026.32.1',
+      since: '2026-09-03'
     }]
   },
+  dayMaps: RTAM_DAY_MAPS,
+  dayMap: RTAM_DAY_MAPS[RTAM_DAY_MAPS.length - 1],
   days: [{
+    key: '2026-10-11',
     label: 'D 405',
     km: 880
   }, {
+    key: '2026-10-12',
     label: 'D 406',
     km: 1104
   }, {
+    key: '2026-10-13',
     label: 'D 407',
     km: 640
   }, {
+    key: '2026-10-14',
     label: 'D 408',
     km: 0
   }, {
+    key: '2026-10-15',
     label: 'D 409',
     km: 955
   }, {
+    key: '2026-10-16',
     label: 'D 410',
     km: 1082
   }, {
+    key: '2026-10-17',
     label: 'D 411',
     km: 806
   }, {
+    key: '2026-10-18',
     label: 'D 412',
     km: 742
   }],
   log: [{
+    key: '2026-10-18',
     day: 'Day 412',
     date: '18 Oct',
     province: 'Nevada',
+    from: 'Fallon, Nevada',
+    to: 'Ely, Nevada',
+    plotted: true,
     km: '742',
     note: 'US-50 East. Third charge stop at Austin took 41 minutes — the only one on the route.'
   }, {
+    key: '2026-10-17',
     day: 'Day 411',
     date: '17 Oct',
     province: 'Nevada',
+    from: 'Susanville, California',
+    to: 'Fallon, Nevada',
+    plotted: true,
     km: '806',
     note: 'Crossed from California at Stateline.'
   }, {
+    key: '2026-10-16',
     day: 'Day 410',
     date: '16 Oct',
     province: 'California',
+    from: 'Redding, California',
+    to: 'Susanville, California',
+    plotted: true,
     km: '1,082',
     note: ''
   }, {
+    key: '2026-10-15',
     day: 'Day 409',
     date: '15 Oct',
     province: 'California',
+    from: 'Eureka, California',
+    to: 'Redding, California',
     km: '955',
     note: 'Front tyres swapped at 415,000 km. Fourth set.'
   }, {
+    key: '2026-10-14',
     day: 'Day 408',
     date: '14 Oct',
     province: 'Oregon',
+    from: 'Coos Bay, Oregon',
+    to: 'Coos Bay, Oregon',
     km: '0',
     note: 'Off the road — rear motor inspection.'
   }]
@@ -1400,10 +2304,12 @@ try { (() => {
  * IG_USER_ID from the environment. Requires a Business or Creator account
  * connected to a Meta app — personal accounts have no API.
  *
- * The token is a long-lived user token and expires after 60 days. This job
- * refreshes it on every run (Instagram extends it as long as it is used at
- * least once in the window), but if it ever lapses past 60 days it has to be
- * regenerated by hand. See SETUP.md.
+ * The token is a long-lived user token and expires 60 days after it is issued.
+ * Nothing here renews it: a GitHub Action cannot write back to its own secrets
+ * without a PAT, so a refreshed token would have nowhere to go. Put a reminder
+ * in the calendar for day 50 and regenerate it by hand. If it does lapse, this
+ * step fails on its own (continue-on-error) and the odometer keeps running.
+ * See SETUP.md.
  *
  * Local test:  IG_TOKEN=… IG_USER_ID=… node job/fetch-instagram.mjs
  */
@@ -1461,12 +2367,17 @@ try { (() => {
  * Reads TESSIE_TOKEN + TESSIE_VIN from the environment, calls Tessie, and
  * writes the embargoed, town-rounded snapshot to odometer.json.
  *
+ * Also maintains history.json — the small set of facts Tessie reports only as
+ * "now" and never retroactively. Today that is the firmware version. The file
+ * is committed alongside odometer.json and grows by a line every few weeks.
+ *
  * Local test:  TESSIE_TOKEN=… TESSIE_VIN=… node job/fetch-snapshot.mjs
  */
 
 async function main() {
   const {
-    writeFile
+    writeFile,
+    readFile
   } = await import('node:fs/promises');
   const {
     shape
@@ -1474,6 +2385,7 @@ async function main() {
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
   const OUT = process.env.OUT || 'odometer.json';
+  const HIST = process.env.HISTORY || 'history.json';
   if (!TOKEN || !VIN) {
     console.error('Missing TESSIE_TOKEN or TESSIE_VIN');
     process.exit(1);
@@ -1490,19 +2402,50 @@ async function main() {
     if (!res.ok) throw new Error(`${path} → ${res.status} ${res.statusText}`);
     return res.json();
   };
-  const [state, drives, charges] = await Promise.all([get('state'), get(`drives?${q}&limit=400`), get(`charges?${q}&limit=2000`).catch(e => {
-    console.warn('charges unavailable:', e.message);
+  /* Optional endpoints must never take the odometer down with them. */
+  const soft = path => get(path).catch(e => {
+    console.warn(`${path} unavailable:`, e.message);
     return null;
-  })]);
+  });
+  const [state, drives, charges, health] = await Promise.all([get('state'), get(`drives?${q}&limit=400`), soft(`charges?${q}&limit=2000`), soft('battery_health')]);
   const chargeList = charges ? charges.results || charges : [];
+
+  /* history.json is append-only and must survive a failed read — losing it
+     would silently reset the firmware log to empty and commit that. */
+  let history = {
+    firmware: []
+  };
+  try {
+    const raw = await readFile(HIST, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (parsed && Array.isArray(parsed.firmware)) history = parsed;
+  } catch (e) {
+    console.warn('history.json not read, starting fresh:', e.message);
+  }
+  const version = state && (state.car_version || state.vehicle_state && state.vehicle_state.car_version) || null;
+  if (version) {
+    const clean = String(version).split(' ')[0];
+    const latest = history.firmware[history.firmware.length - 1];
+    if (!latest || latest.version !== clean) {
+      history.firmware.push({
+        version: clean,
+        since: new Date().toISOString().slice(0, 10)
+      });
+      console.log(`firmware recorded: ${clean}`);
+    }
+  }
   const snapshot = shape({
     state,
     drives: drives.results || drives,
-    charges: chargeList
+    charges: chargeList,
+    health,
+    history
   });
   await writeFile(OUT, JSON.stringify(snapshot, null, 2));
+  await writeFile(HIST, JSON.stringify(history, null, 2));
   if (!snapshot.odometer) console.warn('WARNING: odometer read as 0 — check the /state payload shape');
   if (snapshot.day === null) console.warn('WARNING: day index null — DEPARTURE in tessie.js is not a valid date');
+  if (!snapshot.nerd.efficiency.points.length) console.warn('NOTE: no efficiency points — check the drives payload carries energy and outside temperature');
   console.log(`wrote ${OUT} — odometer ${snapshot.odometer} km, as at ${snapshot.asOf}`);
 }
 main().catch(e => {
@@ -1577,6 +2520,13 @@ const LOCATION_EMBARGO_HOURS = Math.max(24, EMBARGO_HOURS);
 const LIVE_KM = EMBARGO_HOURS < 24;
 const DEPARTURE = '2026-09-02'; // day 1 — Ron departed the morning of Sept 2, 2026
 const GOAL = 1000000;
+/* How many days get a plotted route. Every plotted day costs ~500 bytes in
+   odometer.json, so this is a rolling window rather than the whole trip —
+   at 1,000 days the file would otherwise pass half a megabyte. Older days
+   keep their log row and their distance, they just stop being clickable. */
+const MAP_DAYS = 30;
+/* How many days the log lists. */
+const LOG_DAYS = 10;
 
 /* --- the scheduled job ----------------------------------------------------
  * Runs somewhere private on a timer. Never in the web tier.
@@ -1653,19 +2603,28 @@ function odometerKm(state) {
 /* "1240 18th St, Brandon, Manitoba R7A 7S1, Canada" → "Brandon, Manitoba".
    Drops the street line, the country, and the postal code — a postal code is a
    few blocks, which defeats the point of rounding to a town. */
+/* Reverse geocoding on a remote stretch often returns the road rather than a
+   settlement — "Alaska Highway Frontage Road, British Columbia". A road name is
+   not a town and reads as noise on the map, so it is dropped in favour of
+   whatever comes after it. */
+const ROADISH = /\b(highway|hwy|freeway|expressway|frontage|road|rd|route|rte|street|ave|avenue|drive|lane|boulevard|blvd|trail|parkway|pkwy|access|service)\b/i;
 function town(loc) {
   if (!loc) return '—';
   let parts = String(loc).split(',').map(s => s.trim()).filter(Boolean);
   parts = parts.filter(p => !/^(canada|usa|u\.s\.a\.|united states|mexico)$/i.test(p));
   if (parts.length > 2 || /^\d/.test(parts[0] || '')) parts = parts.slice(1);
   parts = parts.map(p => p.replace(/\s+[A-Za-z]\d[A-Za-z]\s*\d[A-Za-z]\d$/, '').replace(/\s+\d{5}(-\d{4})?$/, '').trim());
+  while (parts.length > 1 && ROADISH.test(parts[0])) parts = parts.slice(1);
   return parts.filter(Boolean).join(', ') || '—';
 }
 
-/* Tessie returns one record per drive; the dashboard wants one per day. */
+/* Tessie returns one record per drive; the dashboard wants one per day.
+   Sorted before folding so `starting` is genuinely the day's first departure
+   and `ending` its last arrival — the records do not arrive in order. */
 function byDay(drives) {
   const acc = new Map();
-  for (const d of drives) {
+  const ordered = [...(drives || [])].sort((a, b) => (toDate(a.started_at) || 0) - (toDate(b.started_at) || 0));
+  for (const d of ordered) {
     const key = dayKey(d.started_at);
     if (!key) continue;
     const row = acc.get(key) || {
@@ -1674,12 +2633,14 @@ function byDay(drives) {
       drives: 0,
       energy: 0,
       autopilot: 0,
+      starting: null,
       ending: null
     };
     row.km += d.odometer_distance || 0;
     row.energy += d.energy_used || 0;
     row.autopilot += d.autopilot_distance || 0;
     row.drives += 1;
+    if (row.starting === null) row.starting = d.starting_location || null;
     row.ending = d.ending_location || row.ending;
     acc.set(key, row);
   }
@@ -1742,15 +2703,29 @@ function coords(o, prefix) {
   return [snap(lat), snap(lon)];
 }
 
+/* The viewBox DayMap draws into. Projection needs these to keep one scale on
+   both axes, so they live here and must match Panels.jsx. */
+const VB_W = 720,
+  VB_H = 300,
+  PAD = 0.08,
+  DEG_KM = 111.0;
+
 /* Project one day's drives into the normalised 0–1 points DayMap plots.
-   Independent lat/lon normalisation with a span floor — the floor stops a
-   90km day from being magnified into a fake continental sweep. Callers must
-   pass only location-embargoed drives — this function does not police the
-   clock, it just draws what it is handed. */
+
+   EQUAL SCALE ON BOTH AXES. An earlier version normalised lat and lon
+   independently, which made every day fill the frame regardless of length —
+   fine for a single latest-day panel, wrong the moment days can be compared.
+   One px-per-degree factor is used for both axes and reported back as
+   kmPerPx, so the panel can draw an honest scale bar and a 90km day reads as
+   visibly smaller than a 1,300km one.
+
+   Callers must pass only location-embargoed drives — this function does not
+   police the clock, it just draws what it is handed. */
 function projectDay(drives, charges, targetDay) {
   const empty = {
     path: [],
-    stops: []
+    stops: [],
+    kmPerPx: 0
   };
   if (!targetDay) return empty;
   const dayDrives = (drives || []).filter(d => dayKey(d.started_at) === targetDay).sort((a, b) => (toDate(a.started_at) || 0) - (toDate(b.started_at) || 0));
@@ -1772,26 +2747,46 @@ function projectDay(drives, charges, targetDay) {
   const pts = raw.filter((p, i) => !i || p.ll[0] !== raw[i - 1].ll[0] || p.ll[1] !== raw[i - 1].ll[1]);
   if (pts.length < 2) return empty;
   const lats = pts.map(p => p.ll[0]);
-  const lons = pts.map(p => p.ll[1]);
-  const minLat = Math.min(...lats),
-    maxLat = Math.max(...lats);
-  const minLon = Math.min(...lons),
-    maxLon = Math.max(...lons);
-  const FLOOR = 0.5;
-  const spanLat = Math.max(maxLat - minLat, FLOOR);
-  const spanLon = Math.max(maxLon - minLon, FLOOR);
-  const midLat = (minLat + maxLat) / 2,
-    midLon = (minLon + maxLon) / 2;
-  const PAD = 0.08,
-    SCALE = 1 - PAD * 2;
-  /* y inverted — north is up. */
-  const nx = lon => PAD + ((lon - midLon) / spanLon + 0.5) * SCALE;
-  const ny = lat => PAD + (0.5 - (lat - midLat) / spanLat) * SCALE;
-  const at = p => [Number(nx(p.ll[1]).toFixed(4)), Number(ny(p.ll[0]).toFixed(4))];
-  const path = pts.map(at);
+  const midLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+  /* Equirectangular: squeeze longitude by cos(lat) so a degree east covers the
+     same ground as a degree north at this latitude. y inverted — north is up. */
+  const kx = Math.cos(midLat * Math.PI / 180);
+  const mu = ll => [ll[1] * kx, -ll[0]];
+  const units = pts.map(p => mu(p.ll));
+  const xs = units.map(m => m[0]),
+    ys = units.map(m => m[1]);
+  const minX = Math.min(...xs),
+    maxX = Math.max(...xs);
+  const minY = Math.min(...ys),
+    maxY = Math.max(...ys);
+  /* Floor matches the 5km snap grid — below it the points are one cell and
+     there is nothing real left to magnify. */
+  const FLOOR = GRID;
+  const boxW = Math.max(maxX - minX, FLOOR),
+    boxH = Math.max(maxY - minY, FLOOR);
+  const midX = (minX + maxX) / 2,
+    midY = (minY + maxY) / 2;
+  /* One factor, both axes: px per degree, whichever axis is tighter. */
+  const k = Math.min(VB_W * (1 - PAD * 2) / boxW, VB_H * (1 - PAD * 2) / boxH);
+  const at = m => [Number((0.5 + (m[0] - midX) * k / VB_W).toFixed(4)), Number((0.5 + (m[1] - midY) * k / VB_H).toFixed(4))];
+  const path = units.map(at);
+
+  /* One marker per place. Start and end are placed first so they always win;
+     a charge in a town already on the map is counted in chargeStops but does
+     not earn a second pin — three "FORT NELSON" labels stacked on each other
+     is what this prevents. Coordinates are checked too, since two towns can
+     snap into the same 5km cell. */
   const stops = [];
-  const push = (p, kind) => {
-    const [x, y] = at(p);
+  const coordSeen = new Set(),
+    townSeen = new Set();
+  const add = (p, kind) => {
+    const [x, y] = at(mu(p.ll));
+    const ck = x + ',' + y;
+    const tk = String(p.town || '').trim().toLowerCase();
+    if (coordSeen.has(ck)) return;
+    if (tk && tk !== '—' && townSeen.has(tk)) return;
+    coordSeen.add(ck);
+    if (tk && tk !== '—') townSeen.add(tk);
     stops.push({
       x,
       y,
@@ -1799,7 +2794,8 @@ function projectDay(drives, charges, targetDay) {
       kind
     });
   };
-  push(pts[0], 'start');
+  add(pts[0], 'start');
+  add(pts[pts.length - 1], 'end');
 
   /* Charge stops for the day, snapped and matched to the nearest path point so
      a marker always sits on the drawn line. */
@@ -1813,32 +2809,191 @@ function projectDay(drives, charges, targetDay) {
         dist
       } : best;
     }, null);
-    if (near && near.dist < 0.6) push({
+    if (near && near.dist < 0.6) add({
       ll: near.p.ll,
       town: town(c.location) || near.p.town
     }, 'charge');
   }
-  push(pts[pts.length - 1], 'end');
-
-  /* A charge that happened where the day started or ended lands on the same
-     coordinates as the start/end marker and renders as a dot stacked on a dot.
-     Keep one marker per point, preferring start/end — the charge is still
-     counted in chargeStops, which is read off the records, not these pins. */
-  const seen = new Map();
-  for (const s of stops) {
-    const key = s.x + ',' + s.y;
-    const prev = seen.get(key);
-    if (!prev || prev.kind === 'charge' && s.kind !== 'charge') seen.set(key, s);
-  }
   return {
     path,
-    stops: [...seen.values()]
+    stops,
+    kmPerPx: Number((DEG_KM / k).toFixed(4))
+  };
+}
+
+/* Tessie mirrors Tesla's field names, which have drifted across firmware and
+   are not identical between the drives and charges payloads. Every optional
+   figure is read through this rather than a single hard-coded key, so a
+   renamed field degrades to "no data" instead of NaN on the page. */
+function pick(obj, keys) {
+  for (const k of keys) {
+    const v = obj && obj[k];
+    if (typeof v === 'number' && Number.isFinite(v)) return v;
+  }
+  return null;
+}
+const F_OUTSIDE_TEMP = ['average_outside_temperature', 'outside_temp', 'outside_temperature', 'avg_outside_temp'];
+const F_ENERGY_USED = ['energy_used', 'energy_used_kwh', 'kwh_used'];
+const F_ENERGY_ADDED = ['energy_added', 'charge_energy_added', 'energy_added_kwh'];
+const F_COST = ['cost', 'total_cost', 'charge_cost'];
+const F_SOC_END = ['ending_battery', 'end_battery_level', 'battery_level_end', 'ending_battery_level'];
+const F_SOC_START = ['starting_battery', 'start_battery_level', 'battery_level_start', 'starting_battery_level'];
+const F_POWER = ['max_charger_power', 'charger_power', 'peak_power_kw'];
+
+/* Everything the nerd section reads. Built from the payloads already fetched
+   for the odometer \u2014 no extra Tessie calls except battery health, which the
+   job passes in. Anything naming a place is built from locPublished, so the
+   province colouring on the scatter is 24h behind like every other location. */
+function nerdBlock({
+  published,
+  locPublished,
+  charges,
+  health,
+  history
+}) {
+  const chargeList = charges || [];
+
+  /* Efficiency. One dot per drive: outside temperature against Wh/km, coloured
+     by province. Short hops are dropped \u2014 under 5km the figure is dominated by
+     start-up draw and says nothing about the drive. */
+  const points = [];
+  for (const d of locPublished) {
+    const km2 = d.odometer_distance || 0;
+    const kwh = pick(d, F_ENERGY_USED);
+    const t = pick(d, F_OUTSIDE_TEMP);
+    if (km2 < 5 || kwh === null || kwh <= 0 || t === null) continue;
+    points.push({
+      t: Number(t.toFixed(1)),
+      wh: Math.round(kwh * 1000 / km2),
+      km: km(km2),
+      prov: town(d.ending_location).split(',').pop().trim() || '\u2014'
+    });
+  }
+  /* Newest last, capped \u2014 the whole trip's drives would eventually dominate
+     the file, and the pattern is legible long before then. */
+  const scatter = points.slice(-600);
+  const whVals = scatter.map(p => p.wh).sort((a, b) => a - b);
+  const median = whVals.length ? whVals[Math.floor(whVals.length / 2)] : 0;
+
+  /* Autopilot and energy totals run on the distance clock \u2014 no place in them. */
+  let apKm = 0,
+    totalKm = 0,
+    usedKwh = 0;
+  for (const d of published) {
+    totalKm += d.odometer_distance || 0;
+    apKm += d.autopilot_distance || 0;
+    const e = pick(d, F_ENERGY_USED);
+    if (e !== null && e > 0) usedKwh += e;
+  }
+  let addedKwh = 0,
+    cost = 0,
+    costSc = 0,
+    costOther = 0,
+    costed = 0;
+  /* Usable pack size, measured rather than assumed. A session that moved the
+     battery a long way gives energy added per percent; the median across such
+     sessions is a far better figure than a spec-sheet number, and it needs no
+     guess about which Model 3 this is. Short top-ups are excluded — taper and
+     rounding make them wildly inaccurate. */
+  const packSamples = [];
+  const curve = new Map(); // state of charge bucket -> [kW samples]
+  for (const c of chargeList) {
+    const a = pick(c, F_ENERGY_ADDED);
+    if (a !== null && a > 0) addedKwh += a;
+    const money = pick(c, F_COST);
+    if (money !== null && money > 0) {
+      cost += money;
+      costed += 1;
+      if (isSupercharger(c)) costSc += money;else costOther += money;
+    }
+    /* Aggregate charge curve. A session summary gives one peak-power reading at
+       one state of charge, so a single session is a dot, not a curve \u2014 pooled
+       across every session the shape of the taper appears. Bucketed in 5% steps. */
+    const soc = pick(c, F_SOC_END);
+    const kw = pick(c, F_POWER);
+    if (soc !== null && kw !== null && kw > 0) {
+      const b = Math.round(soc / 5) * 5;
+      if (!curve.has(b)) curve.set(b, []);
+      curve.get(b).push(kw);
+    }
+    const soc0 = pick(c, F_SOC_START);
+    if (a !== null && a > 0 && soc !== null && soc0 !== null && soc - soc0 >= 20) {
+      packSamples.push(a / (soc - soc0) * 100);
+    }
+  }
+  packSamples.sort((x, y) => x - y);
+  const packKwh = packSamples.length ? packSamples[Math.floor(packSamples.length / 2)] : null;
+  const curvePoints = [...curve.entries()].map(([soc, vals]) => ({
+    soc,
+    kw: Math.round(vals.reduce((s, v) => s + v, 0) / vals.length),
+    n: vals.length
+  })).sort((a, b) => a.soc - b.soc);
+  return {
+    efficiency: {
+      points: scatter,
+      median,
+      best: whVals.length ? whVals[0] : 0,
+      worst: whVals.length ? whVals[whVals.length - 1] : 0,
+      /* Distinct provinces present, so the legend is built from the data. */
+      provinces: [...new Set(scatter.map(p => p.prov))].filter(p => p && p !== '\u2014')
+    },
+    autopilot: {
+      km: km(apKm),
+      pct: totalKm > 0 ? Number((apKm / totalKm * 100).toFixed(1)) : 0
+    },
+    energy: {
+      used: Math.round(usedKwh),
+      added: Math.round(addedKwh),
+      /* Charging losses and preconditioning \u2014 added is always the larger. */
+      overhead: addedKwh > 0 && usedKwh > 0 ? Number(((addedKwh - usedKwh) / addedKwh * 100).toFixed(1)) : null,
+      whPerKm: totalKm > 0 && usedKwh > 0 ? Math.round(usedKwh * 1000 / totalKm) : 0,
+      /* Plain-language translation of Wh/km for readers who don't think in it.
+         Range is only offered when the pack size was actually measured. */
+      kmPerKwh: totalKm > 0 && usedKwh > 0 ? Number((totalKm / usedKwh).toFixed(1)) : 0,
+      packKwh: packKwh ? Math.round(packKwh) : null,
+      rangeEst: packKwh && totalKm > 0 && usedKwh > 0 ? Math.round(packKwh / (usedKwh / totalKm)) : null
+    },
+    cost: {
+      total: Number(cost.toFixed(2)),
+      supercharger: Number(costSc.toFixed(2)),
+      other: Number(costOther.toFixed(2)),
+      perKm: totalKm > 0 && cost > 0 ? Number((cost / totalKm).toFixed(3)) : 0,
+      /* How many sessions actually carried a price \u2014 free chargers and missing
+         invoices both show as no cost, and the average lies without this. */
+      sessions: costed,
+      currency: 'CAD'
+    },
+    chargeCurve: {
+      points: curvePoints,
+      sessions: chargeList.length,
+      note: 'Peak power per session, pooled by state of charge'
+    },
+    battery: (() => {
+      /* Tessie wraps some endpoints in `results` and the health payload's key
+         names vary; normalise here so the panel has no guessing to do. */
+      const hb = health && (health.results || health);
+      if (!hb || typeof hb !== 'object') return null;
+      const healthPct = pick(hb, ['battery_health', 'health', 'health_percent', 'state_of_health']);
+      const rangeNow = pick(hb, ['max_range', 'current_max_range', 'rated_range']);
+      const rangeOriginal = pick(hb, ['original_max_range', 'original_range', 'as_new_max_range']);
+      const degradation = pick(hb, ['degradation', 'degradation_percent']);
+      const derived = healthPct !== null ? healthPct : degradation !== null ? 100 - degradation : rangeNow && rangeOriginal ? Number((rangeNow / rangeOriginal * 100).toFixed(1)) : null;
+      if (derived === null && rangeNow === null) return null;
+      return {
+        healthPct: derived,
+        rangeNow,
+        rangeOriginal
+      };
+    })(),
+    firmware: history && history.firmware || []
   };
 }
 function shape({
   state,
   drives,
-  charges
+  charges,
+  health,
+  history
 }) {
   const all = drives || [];
   const now = Date.now();
@@ -1865,16 +3020,17 @@ function shape({
   });
   const days = byDay(published);
   const locDays = byDay(locPublished);
-  /* Which day keys may show a town at all. A day appears here as soon as some
-     of it clears the location window; the ending_location it carries is drawn
-     from those cleared drives, so it is never fresher than the window. */
-  const placeOf = new Map(locDays.map(d => [d.date, d.ending]));
+  /* Which day keys may show a place at all, and the whole row so the log can
+     name both ends of the day. A day appears here as soon as some of it clears
+     the location window; the locations it carries are drawn from those cleared
+     drives, so they are never fresher than the window. */
+  const placeOf = new Map(locDays.map(d => [d.date, d]));
 
   /* The dashboard is about the challenge, not the car's whole history. Days
      before departure are dropped — otherwise they render as "Day -15". The
      lifetime odometer stays lifetime; only the daily figures are trip-scoped. */
   const trip = days.filter(d => (dayIndex(d.date) || 0) >= 1);
-  const recent = trip.slice(-8);
+  const recent = trip.slice(-30);
   const last = trip[trip.length - 1] || null;
   const dayNo = last ? dayIndex(last.date) : 0;
 
@@ -1883,6 +3039,7 @@ function shape({
      least LOCATION_EMBARGO_HOURS old by construction. */
   const position = locDays[locDays.length - 1] || {
     date: null,
+    starting: null,
     ending: null
   };
   const locTrip = locDays.filter(d => (dayIndex(d.date) || 0) >= 1);
@@ -1890,10 +3047,32 @@ function shape({
   const odometer = km(odometerKm(state) - heldKm);
   const driving = trip.filter(d => d.km > 0);
   const ch = chargeCounts(charges, cutoff, last ? last.date : null);
-  /* Charge STOPS are plotted, so the map is built off the location clock and
-     the location-side drives — never off `last`, which may be today. */
-  const geo = projectDay(locPublished, charges, mapDay ? mapDay.date : null);
-  const mapCh = chargeCounts(charges, locCutoff, mapDay ? mapDay.date : null);
+  /* Charge STOPS are plotted, so the maps are built off the location clock and
+     the location-side drives — never off `last`, which may be today. One entry
+     per day in the rolling window, oldest first, so the page can let the reader
+     click back through the trip. */
+  const dayMaps = locTrip.slice(-MAP_DAYS).map(d => {
+    const g = projectDay(locPublished, charges, d.date);
+    return {
+      key: d.date,
+      day: dayIndex(d.date),
+      label: 'Day ' + dayIndex(d.date) + ' \u00b7 ' + fmtDayKey(d.date),
+      km: km(d.km),
+      from: town(d.starting),
+      to: town(d.ending),
+      corridor: town(d.ending),
+      /* Counted from the charge records, not the plotted markers — a session
+         without coordinates still counts but never gets a pin. */
+      chargeStops: chargeCounts(charges, locCutoff, d.date).day,
+      note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
+      path: g.path,
+      stops: g.stops,
+      /* km per viewBox pixel — what the panel's scale bar is drawn from. */
+      kmPerPx: g.kmPerPx,
+      plotted: g.path.length > 1 || undefined
+    };
+  });
+  const plottedKeys = new Set(dayMaps.filter(m => m.plotted).map(m => m.key));
   return {
     odometer,
     goal: GOAL,
@@ -1912,19 +3091,21 @@ function shape({
     /* Plotted from the location-embargoed drives, snapped to a 5km grid. Its
        label reports the day it actually shows, which under live km is a day
        behind the odometer above it — say so on the page rather than letting the
-       two read as the same day. */
-    dayMap: {
-      label: mapDay ? 'Day ' + dayIndex(mapDay.date) + ' · ' + fmtDayKey(mapDay.date) : 'Awaiting day 1',
+       two read as the same day. `dayMap` is the newest plotted day; `dayMaps`
+       carries the rolling window the log rows select from. */
+    dayMap: dayMaps[dayMaps.length - 1] || {
+      label: 'Awaiting day 1',
       corridor: town(position.ending),
-      km: km(mapDay ? mapDay.km : 0),
-      /* Counted from the charge records, not the plotted markers — a session
-         without coordinates still counts but never gets a pin. */
-      chargeStops: mapCh.day,
+      from: '\u2014',
+      to: '\u2014',
+      km: 0,
+      chargeStops: 0,
       note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
-      path: geo.path,
-      stops: geo.stops,
-      plotted: geo.path.length > 1 || undefined
+      path: [],
+      stops: [],
+      kmPerPx: 0
     },
+    dayMaps,
     asOf: last && last.date || position.date || dayKey(cutoff),
     /* Wall-clock time the job ran. asOf is the day the DATA covers, which only
        moves once a day — this is the only field that proves the feed is alive. */
@@ -1932,17 +3113,37 @@ function shape({
     embargoHours: EMBARGO_HOURS,
     locationEmbargoHours: LOCATION_EMBARGO_HOURS,
     liveKm: LIVE_KM || undefined,
+    nerd: nerdBlock({
+      published,
+      locPublished,
+      charges,
+      health,
+      history
+    }),
+    /* Last 30 days of distance. The page slices this to 8 or shows all 30 — it
+       is one honest series either way, not a short one repeated to look long. */
     days: recent.map(d => ({
+      key: d.date,
       label: 'D ' + dayIndex(d.date),
       km: km(d.km)
     })),
-    log: trip.slice(-5).reverse().map(d => ({
-      day: 'Day ' + dayIndex(d.date),
-      date: fmtDayKey(d.date),
-      province: placeOf.has(d.date) ? town(placeOf.get(d.date)).split(',').pop().trim() : '—',
-      km: km(d.km).toLocaleString('en-CA'),
-      note: '' // written by hand — Tessie has no field for what broke
-    }))
+    log: trip.slice(-LOG_DAYS).reverse().map(d => {
+      const place = placeOf.get(d.date) || null;
+      return {
+        key: d.date,
+        day: 'Day ' + dayIndex(d.date),
+        date: fmtDayKey(d.date),
+        province: place ? town(place.ending).split(',').pop().trim() : '—',
+        /* Both ends of the day, town level. Held on the location clock like
+           everything else, so today's row reads "—" until it clears. */
+        from: place ? town(place.starting) : '—',
+        to: place ? town(place.ending) : '—',
+        /* Whether this row has a route to show when clicked. */
+        plotted: plottedKeys.has(d.date) || undefined,
+        km: km(d.km).toLocaleString('en-CA'),
+        note: '' // written by hand — Tessie has no field for what broke
+      };
+    })
   };
 }
 
