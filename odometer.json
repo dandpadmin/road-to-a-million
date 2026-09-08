@@ -7,12 +7,12 @@
   "today": 618,
   "best": 1333,
   "avgPerDay": 877,
-  "chargeSessions": 3,
+  "chargeSessions": 4,
   "chargeSupercharger": 0,
-  "chargeOther": 3,
-  "chargeLifetime": 39,
+  "chargeOther": 4,
+  "chargeLifetime": 40,
   "chargeLifetimeSupercharger": 13,
-  "chargeLifetimeOther": 26,
+  "chargeLifetimeOther": 27,
   "dayMap": {
     "key": "2026-09-06",
     "day": 5,
@@ -524,7 +524,7 @@
     }
   ],
   "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T09:43:25.595Z",
+  "updatedAt": "2026-09-08T09:57:50.981Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -903,8 +903,8 @@
     },
     "energy": {
       "used": 940,
-      "added": 990,
-      "overhead": 5,
+      "added": 1026,
+      "overhead": 8.3,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -920,7 +920,7 @@
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 39,
+      "sessions": 40,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
