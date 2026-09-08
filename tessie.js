@@ -349,6 +349,7 @@ const F_ENERGY_USED = ['energy_used', 'energy_used_kwh', 'kwh_used'];
 const F_ENERGY_ADDED = ['energy_added', 'charge_energy_added', 'energy_added_kwh'];
 const F_COST = ['cost', 'total_cost', 'charge_cost'];
 const F_SOC_END = ['ending_battery', 'end_battery_level', 'battery_level_end', 'ending_battery_level'];
+const F_SOC_START = ['starting_battery', 'start_battery_level', 'battery_level_start', 'starting_battery_level'];
 const F_POWER = ['max_charger_power', 'charger_power', 'peak_power_kw'];
 
 /* Everything the nerd section reads. Built from the payloads already fetched
@@ -390,6 +391,12 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
   }
 
   let addedKwh = 0, cost = 0, costSc = 0, costOther = 0, costed = 0;
+  /* Usable pack size, measured rather than assumed. A session that moved the
+     battery a long way gives energy added per percent; the median across such
+     sessions is a far better figure than a spec-sheet number, and it needs no
+     guess about which Model 3 this is. Short top-ups are excluded — taper and
+     rounding make them wildly inaccurate. */
+  const packSamples = [];
   const curve = new Map(); // state of charge bucket -> [kW samples]
   for (const c of chargeList) {
     const a = pick(c, F_ENERGY_ADDED);
@@ -409,7 +416,13 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
       if (!curve.has(b)) curve.set(b, []);
       curve.get(b).push(kw);
     }
+    const soc0 = pick(c, F_SOC_START);
+    if (a !== null && a > 0 && soc !== null && soc0 !== null && soc - soc0 >= 20) {
+      packSamples.push((a / (soc - soc0)) * 100);
+    }
   }
+  packSamples.sort((x, y) => x - y);
+  const packKwh = packSamples.length ? packSamples[Math.floor(packSamples.length / 2)] : null;
   const curvePoints = [...curve.entries()]
     .map(([soc, vals]) => ({ soc, kw: Math.round(vals.reduce((s, v) => s + v, 0) / vals.length), n: vals.length }))
     .sort((a, b) => a.soc - b.soc);
@@ -433,6 +446,13 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
       /* Charging losses and preconditioning \u2014 added is always the larger. */
       overhead: addedKwh > 0 && usedKwh > 0 ? Number((((addedKwh - usedKwh) / addedKwh) * 100).toFixed(1)) : null,
       whPerKm: totalKm > 0 && usedKwh > 0 ? Math.round((usedKwh * 1000) / totalKm) : 0,
+      /* Plain-language translation of Wh/km for readers who don't think in it.
+         Range is only offered when the pack size was actually measured. */
+      kmPerKwh: totalKm > 0 && usedKwh > 0 ? Number((totalKm / usedKwh).toFixed(1)) : 0,
+      packKwh: packKwh ? Math.round(packKwh) : null,
+      rangeEst: packKwh && totalKm > 0 && usedKwh > 0
+        ? Math.round(packKwh / (usedKwh / totalKm))
+        : null,
     },
     cost: {
       total: Number(cost.toFixed(2)),

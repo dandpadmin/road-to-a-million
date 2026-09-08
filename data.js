@@ -80,7 +80,7 @@ window.RTAM_DATA = {
       provinces: RTAM_PROVS,
     },
     autopilot: { km: 289640, pct: 69.3 },
-    energy: { used: 62451, added: 70118, overhead: 10.9, whPerKm: 149 },
+    energy: { used: 62451, added: 70118, overhead: 10.9, whPerKm: 149, kmPerKwh: 6.7, packKwh: 75, rangeEst: 503 },
     cost: { total: 8214.55, supercharger: 6402.1, other: 1812.45, perKm: 0.02, sessions: 1102, currency: 'CAD' },
     chargeCurve: {
       points: [

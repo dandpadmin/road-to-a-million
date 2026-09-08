@@ -163,7 +163,7 @@ function App() {
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 20 }}>
-              <NerdStat label="Lifetime consumption" value={(N.energy.whPerKm || 0).toLocaleString()} unit="WH/KM" sub={'Median drive ' + (N.efficiency.median || 0) + ' Wh/km'} />
+              <NerdStat label="Lifetime consumption" value={(N.energy.whPerKm || 0).toLocaleString()} unit="WH/KM" sub={(N.energy.rangeEst ? '≈ ' + N.energy.rangeEst.toLocaleString() + ' km of range at this rate' : (N.energy.kmPerKwh || 0) + ' km per kWh') + ' · median drive ' + (N.efficiency.median || 0) + ' Wh/km'} />
               <NerdStat label="Energy used" value={(N.energy.used || 0).toLocaleString()} unit="KWH" sub={'Best drive ' + (N.efficiency.best || 0) + ' Wh/km'} />
               <NerdStat label="Energy added" value={(N.energy.added || 0).toLocaleString()} unit="KWH" sub={N.energy.overhead !== null ? N.energy.overhead + '% lost to charging and conditioning' : 'Charging overhead pending'} />
               <NerdStat label="Autopilot share" value={(N.autopilot.pct || 0).toLocaleString()} unit="%" sub={(N.autopilot.km || 0).toLocaleString() + ' km of the total'} />
