@@ -181,19 +181,19 @@ function DayMap({ map }) {
    selection is useless if you have to scroll away from the map to use it. */
 function DayList({ rows, activeKey, onSelect, onLatest, following }) {
   return (
-    <div style={{ border: '1px solid rgba(246,240,227,.18)', display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)', maxHeight: 466 }}>
+    <div className="rtam-daylist" style={{ border: '1px solid rgba(246,240,227,.18)', display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)', maxHeight: 466 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, padding: '16px 18px', borderBottom: '1px solid rgba(246,240,227,.18)' }}>
         <Eyebrow tone="bronze" size={10} track={0.24}>Daily log</Eyebrow>
         {following
           ? <span style={{ fontSize: 9, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Select a day</span>
           : <button onClick={onLatest} style={{ padding: '5px 10px', cursor: 'pointer', borderRadius: 0, background: 'transparent', color: '#00B4D9', border: '1px solid rgba(0,180,217,.5)', fontFamily: 'inherit', fontSize: 9, letterSpacing: '.16em', textTransform: 'uppercase' }}>Latest</button>}
       </div>
-      <div style={{ overflowY: 'auto' }}>
+      <div className="rtam-daylist-rows" style={{ overflowY: 'auto' }}>
         {rows.map((r, i) => {
           const clickable = !!(r.plotted && onSelect);
           const active = !!(r.key && r.key === activeKey);
           return (
-            <div key={r.key || i}
+            <div key={r.key || i} className="rtam-daylist-row"
               onClick={clickable ? () => onSelect(r.key) : undefined}
               title={clickable ? 'Show this day on the map' : 'No route yet for this day'}
               style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) auto', gap: '5px 12px', padding: '13px 18px', borderBottom: '1px solid rgba(246,240,227,.10)', cursor: clickable ? 'pointer' : 'default', opacity: clickable ? 1 : 0.55, background: active ? 'rgba(0,180,217,.10)' : 'transparent', boxShadow: active ? 'inset 2px 0 0 #00B4D9' : 'none' }}>

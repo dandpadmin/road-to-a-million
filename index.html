@@ -1,11 +1,22 @@
 <!-- @dsCard group="Odometer" viewport="1280x860" name="Odometer dashboard" subtitle="Distance to a million, latest-day route, daily log and charge" -->
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>RTAM — Odometer</title>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RTAM — Odometer</title>
 <link rel="stylesheet" href="./styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <script src="./_ds_bundle.js"></script>
-<style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}</style></head>
+<style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}
+@media (max-width:860px){
+.rtam-page{padding:36px 18px 64px!important;gap:34px!important}
+.rtam-mapgrid{grid-template-columns:minmax(0,1fr)!important;gap:22px!important}
+.rtam-nerdgrid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+.rtam-daylist{max-height:none!important}
+.rtam-daylist-rows{display:flex!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.rtam-daylist-row{flex:0 0 74%!important;scroll-snap-align:start;align-content:start;border-bottom:none!important;border-right:1px solid rgba(246,240,227,.10)}
+.rtam-daylist-rows::-webkit-scrollbar{height:3px}
+.rtam-daylist-rows::-webkit-scrollbar-thumb{background:rgba(246,240,227,.25)}
+}
+@media (max-width:560px){.rtam-daylist-row{flex:0 0 88%!important}}</style></head>
 <body>
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#1C242C"/><text x="50" y="46" text-anchor="middle" fill="#00B4D9" font-family="monospace" font-size="15" font-weight="700" letter-spacing="1">1M</text><text x="50" y="62" text-anchor="middle" fill="#A47D51" font-family="monospace" font-size="7" letter-spacing="1.5">KM</text></svg></template>
 <div id="root"></div>
@@ -85,7 +96,7 @@ function App() {
         <span style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: D.liveKm ? '#E8B33A' : '#00B4D9' }}>● {D.liveKm ? 'Live km · map delayed ' + (D.locationEmbargoHours ?? 24) + 'H' : 'Delayed ' + (D.embargoHours ?? 24) + 'H'} · through Day {D.day}{stamp ? ' · updated ' + stamp : ''}</span>
       </div>
 
-      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>
+      <div className="rtam-page" style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>
 
         <div style={{ display: 'grid', gap: 26 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 32, flexWrap: 'wrap' }}>
@@ -128,7 +139,7 @@ function App() {
           <SplitMetric label="Latest day charge sessions" a={{ value: D.chargeSupercharger, label: 'Tesla Supercharger' }} b={{ value: D.chargeOther, label: 'Other networks' }} />
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '320px minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
+        <div className="rtam-mapgrid" style={{ display: 'grid', gridTemplateColumns: '320px minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
           <DayList rows={D.log || []} activeKey={shownKey} onSelect={setSelected} onLatest={() => setSelected(null)} following={!selected} />
           <DayMap map={shownMap} />
         </div>
@@ -179,7 +190,7 @@ function App() {
               <EfficiencyScatter data={N.efficiency} />
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.6fr) minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
+            <div className="rtam-nerdgrid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.6fr) minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
               <div style={{ display: 'grid', gap: 18 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 16, flexWrap: 'wrap' }}>
                   <Eyebrow tone="bronze" size={11} track={0.24}>Charge curve · kW</Eyebrow>
