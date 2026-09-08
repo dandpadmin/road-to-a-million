@@ -2,8 +2,8 @@
   "odometer": 5971,
   "goal": 1000000,
   "day": 6,
-  "province": "Withheld — live test mode",
-  "route": "Withheld — live test mode",
+  "province": "Yukon",
+  "route": "Whitehorse, Yukon",
   "today": 449,
   "best": 1333,
   "avgPerDay": 849,
@@ -14,17 +14,86 @@
   "chargeLifetimeSupercharger": 13,
   "chargeLifetimeOther": 25,
   "dayMap": {
-    "label": "Latest day · Day 6",
-    "corridor": "Withheld — live test mode",
-    "km": 449,
-    "chargeStops": 2,
-    "note": "Live test · location withheld",
-    "path": [],
-    "stops": []
+    "label": "Day 5 · Sep 6",
+    "corridor": "Whitehorse, Yukon",
+    "km": 555,
+    "chargeStops": 4,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.92,
+        0.92
+      ],
+      [
+        0.92,
+        0.9075
+      ],
+      [
+        0.6814,
+        0.569
+      ],
+      [
+        0.6336,
+        0.3809
+      ],
+      [
+        0.605,
+        0.243
+      ],
+      [
+        0.1086,
+        0.08
+      ],
+      [
+        0.08,
+        0.08
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.92,
+        "y": 0.92,
+        "town": "Whitehorse, Yukon",
+        "kind": "start"
+      },
+      {
+        "x": 0.08,
+        "y": 0.08,
+        "town": "Dawson, Yukon",
+        "kind": "charge"
+      },
+      {
+        "x": 0.605,
+        "y": 0.243,
+        "town": "Mayo, Yukon",
+        "kind": "charge"
+      },
+      {
+        "x": 0.6814,
+        "y": 0.569,
+        "town": "Carmacks, Yukon",
+        "kind": "charge"
+      },
+      {
+        "x": 0.92,
+        "y": 0.92,
+        "town": "Whitehorse, Yukon",
+        "kind": "charge"
+      },
+      {
+        "x": 0.08,
+        "y": 0.08,
+        "town": "Dawson, Yukon",
+        "kind": "end"
+      }
+    ],
+    "plotted": true
   },
   "asOf": "2026-09-07",
+  "updatedAt": "2026-09-08T02:42:17.121Z",
   "embargoHours": 0,
-  "liveTest": true,
+  "locationEmbargoHours": 24,
+  "liveKm": true,
   "days": [
     {
       "label": "D 1",
@@ -55,35 +124,35 @@
     {
       "day": "Day 6",
       "date": "Sep 7",
-      "province": "Withheld — live test mode",
+      "province": "—",
       "km": "449",
       "note": ""
     },
     {
       "day": "Day 5",
       "date": "Sep 6",
-      "province": "Withheld — live test mode",
+      "province": "Yukon",
       "km": "556",
       "note": ""
     },
     {
       "day": "Day 4",
       "date": "Sep 5",
-      "province": "Withheld — live test mode",
+      "province": "British Columbia",
       "km": "1,182",
       "note": ""
     },
     {
       "day": "Day 3",
       "date": "Sep 4",
-      "province": "Withheld — live test mode",
+      "province": "Alberta",
       "km": "1,117",
       "note": ""
     },
     {
       "day": "Day 2",
       "date": "Sep 3",
-      "province": "Withheld — live test mode",
+      "province": "Alberta",
       "km": "455",
       "note": ""
     }
