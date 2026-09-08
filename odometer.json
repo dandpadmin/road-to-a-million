@@ -1,15 +1,15 @@
 {
-  "odometer": 6140,
+  "odometer": 6145,
   "goal": 1000000,
-  "day": 6,
+  "day": 7,
   "province": "Yukon",
   "route": "Dawson, Yukon",
-  "today": 618,
+  "today": 1,
   "best": 1333,
-  "avgPerDay": 877,
-  "chargeSessions": 4,
+  "avgPerDay": 752,
+  "chargeSessions": 1,
   "chargeSupercharger": 0,
-  "chargeOther": 4,
+  "chargeOther": 1,
   "chargeLifetime": 41,
   "chargeLifetimeSupercharger": 13,
   "chargeLifetimeOther": 28,
@@ -523,8 +523,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T15:58:56.241Z",
+  "asOf": "2026-09-08",
+  "updatedAt": "2026-09-08T16:21:26.537Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -902,7 +902,7 @@
       "pct": 84.5
     },
     "energy": {
-      "used": 940,
+      "used": 941,
       "added": 1045,
       "overhead": 10,
       "whPerKm": 156,
@@ -961,9 +961,24 @@
       "key": "2026-09-07",
       "label": "D 6",
       "km": 618
+    },
+    {
+      "key": "2026-09-08",
+      "label": "D 7",
+      "km": 1
     }
   ],
   "log": [
+    {
+      "key": "2026-09-08",
+      "day": "Day 7",
+      "date": "Sep 8",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "1",
+      "note": ""
+    },
     {
       "key": "2026-09-07",
       "day": "Day 6",
