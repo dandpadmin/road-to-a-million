@@ -48,32 +48,33 @@ function LogRow({ day, date, province, km, note }) {
    Town-level markers only, held back 24h — never a live position. */
 function DayMap({ map }) {
   const W = 720, H = 300;
-  const pts = map.path.map(([x, y]) => [x * W, y * H]);
+  const pts = (map.path || []).map(([x, y]) => [x * W, y * H]);
+  const plotted = pts.length > 1;
   const line = pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
   return (
     <Plate tone="ghost" pad={26} style={{ gap: 18 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
         <Eyebrow tone="bronze" size={11} track={0.24}>Route · {map.label}</Eyebrow>
-        <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.45)' }}>Town level · delayed 24h</span>
+        <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.45)' }}>{map.note || 'Town level · delayed 24h'}</span>
       </div>
-      <div style={{ position: 'relative', border: '1px dashed rgba(246,240,227,.22)' }}>
+      <div style={{ position: 'relative', border: plotted ? '1px solid rgba(246,240,227,.18)' : '1px dashed rgba(246,240,227,.22)' }}>
         <svg viewBox={'0 0 ' + W + ' ' + H} preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: 300 }}>
           <defs><pattern id="rtam-grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" fill="none" stroke="rgba(246,240,227,.07)" strokeWidth="1" /></pattern></defs>
           <rect width={W} height={H} fill="url(#rtam-grid)" />
           <polyline points={line} fill="none" stroke="#00B4D9" strokeWidth="2.5" />
-          {map.stops.map((s, i) => (
+          {(map.stops || []).map((s, i) => (
             <g key={i}>
               <circle cx={s.x * W} cy={s.y * H} r={s.kind === 'charge' ? 4 : 6} fill={s.kind === 'charge' ? '#1C242C' : '#00B4D9'} stroke="#00B4D9" strokeWidth="2" />
               <text x={s.x * W} y={s.y * H - 16} textAnchor={s.x > 0.85 ? 'end' : s.x < 0.12 ? 'start' : 'middle'} fill="rgba(246,240,227,.7)" style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '1.6px', textTransform: 'uppercase' }}>{s.town.toUpperCase()}</text>
             </g>
           ))}
         </svg>
-        <span style={{ position: 'absolute', left: 12, bottom: 10, fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(246,240,227,.35)' }}>Placeholder — Tessie drive path goes here</span>
+        {!plotted && <span style={{ position: 'absolute', left: 12, bottom: 10, fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(246,240,227,.35)' }}>Awaiting the first closed day</span>}
       </div>
       <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>
         <span>{map.corridor}</span>
         <span style={{ color: '#F6F0E3' }}>{map.km.toLocaleString()} km</span>
-        <span>{map.stops.filter(s => s.kind === 'charge').length} charge stops</span>
+        <span>{(map.chargeStops ?? map.stops.filter(s => s.kind === 'charge').length).toLocaleString()} charge stops</span>
       </div>
     </Plate>
   );
@@ -96,4 +97,30 @@ function SplitMetric({ label, a, b, sub }) {
   );
 }
 
-Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayMap });
+/* Ron's Instagram posts. Reads the shape the fetch-instagram job writes:
+   { id, permalink, thumb, caption, timestamp, type }. Renders as flat square
+   tiles — hairline borders, no rounding, caption on hover only, so the grid
+   reads as a contact sheet rather than a social widget. */
+function PostGrid({ posts, count = 6 }) {
+  const slots = Array.from({ length: count }, (_, i) => (posts || [])[i] || null);
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(170px,1fr))', gap: 16 }}>
+      {slots.map((p, i) => (
+        <a key={p ? p.id : 'empty' + i} href={p ? p.permalink : undefined} target="_blank" rel="noreferrer"
+          style={{ position: 'relative', display: 'block', aspectRatio: '1 / 1', overflow: 'hidden', border: '1px solid rgba(246,240,227,.18)', background: 'rgba(246,240,227,.03)', cursor: p ? 'pointer' : 'default', textDecoration: 'none' }}>
+          {p && p.thumb
+            ? <img src={p.thumb} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'saturate(.92)' }} />
+            : <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.28)', textAlign: 'center', padding: 16 }}>Awaiting post</div>}
+          {p && (
+            <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', gap: 6, padding: 14, background: 'linear-gradient(to top, rgba(28,36,44,.94) 0%, rgba(28,36,44,.55) 45%, rgba(28,36,44,0) 100%)' }}>
+              <span style={{ fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: '#00B4D9' }}>{p.dateLabel || ''}</span>
+              <span style={{ fontSize: 11, lineHeight: 1.5, color: 'rgba(246,240,227,.82)', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{p.caption || ''}</span>
+            </div>
+          )}
+        </a>
+      ))}
+    </div>
+  );
+}
+
+Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayMap, PostGrid });
