@@ -1,0 +1,194 @@
+<!-- @dsCard group="Odometer" viewport="1280x860" name="Odometer dashboard" subtitle="Distance to a million, latest-day route, daily log and charge" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>RTAM — Odometer</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}</style></head>
+<body>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#1C242C"/><text x="50" y="46" text-anchor="middle" fill="#00B4D9" font-family="monospace" font-size="15" font-weight="700" letter-spacing="1">1M</text><text x="50" y="62" text-anchor="middle" fill="#A47D51" font-family="monospace" font-size="7" letter-spacing="1.5">KM</text></svg></template>
+<div id="root"></div>
+<script src="data.js"></script>
+<script type="text/babel" src="Panels.jsx"></script>
+<script type="text/babel">
+const { Badge, Wordmark, Eyebrow, Plate, StatReadout, ProgressRule, Chip, SpecColumns, DpLockup } = window.RoadToAMillionDesignSystem_6606d4;
+const { DayMap } = window;
+const { useState, useEffect } = React;
+const FALLBACK = window.RTAM_DATA;
+const A = '../../assets/';
+
+/* Where the live snapshot comes from. First hit wins: a file sitting next to
+   this page when deployed, otherwise the copy the GitHub Action commits. The
+   raw URL only resolves while the repo is public. */
+const FEEDS = [
+  './odometer.json',
+  'https://raw.githubusercontent.com/dandpadmin/road-to-a-million/main/odometer.json',
+];
+const IG_FEEDS = [
+  './instagram.json',
+  'https://raw.githubusercontent.com/dandpadmin/road-to-a-million/main/instagram.json',
+];
+
+async function firstJson(urls) {
+  for (const url of urls) {
+    try {
+      const r = await fetch(url, { cache: 'no-store' });
+      if (r.ok) return await r.json();
+    } catch (e) { /* try the next source */ }
+  }
+  return null;
+}
+
+function App() {
+  /* Starts on the static figures in data.js so the page never renders empty,
+     then swaps to the real snapshot the moment it arrives. */
+  const [D, setD] = useState(FALLBACK);
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    let live = true;
+    const tick = () => {
+      firstJson(FEEDS).then((d) => { if (live && d) setD(d); });
+      firstJson(IG_FEEDS).then((d) => { if (live && d && d.posts) setPosts(d.posts); });
+    };
+    tick();
+    const id = setInterval(tick, 15 * 60 * 1000);
+    return () => { live = false; clearInterval(id); };
+  }, []);
+
+  const [range, setRange] = useState('8 days');
+  /* Which day the map is showing. null = follow the feed's newest plotted day,
+     so the page keeps advancing on its own until the reader picks a row. */
+  const [selected, setSelected] = useState(null);
+  const maps = D.dayMaps || [];
+  const shownMap = (selected && maps.find(m => m.key === selected)) || D.dayMap;
+  const shownKey = shownMap ? shownMap.key : null;
+  const barDays = range === '8 days' ? (D.days || []).slice(-8) : (D.days || []);
+  const pct = (D.odometer / D.goal) * 100;
+  const stamp = D.updatedAt ? new Date(D.updatedAt).toLocaleTimeString('en-CA', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Winnipeg' }) : null;
+  const remaining = D.goal - D.odometer;
+  const daysLeft = D.avgPerDay > 0 ? Math.round(remaining / D.avgPerDay) : null;
+
+  return (
+    <div style={{ minHeight: '100vh' }}>
+      <div style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <Badge size={28} src={A + 'badge-art.svg'} showType={false} />
+          <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase' }}>Road To A Million</span>
+        </div>
+        <div style={{ flex: 1 }}></div>
+        <span style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: D.liveKm ? '#E8B33A' : '#00B4D9' }}>● {D.liveKm ? 'Live km · map delayed ' + (D.locationEmbargoHours ?? 24) + 'H' : 'Delayed ' + (D.embargoHours ?? 24) + 'H'} · through Day {D.day}{stamp ? ' · updated ' + stamp : ''}</span>
+      </div>
+
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>
+
+        <div style={{ display: 'grid', gap: 26 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 32, flexWrap: 'wrap' }}>
+            <div style={{ display: 'grid', gap: 14 }}>
+              <Eyebrow tone="cyan" size={13} track={0.22}>Day {D.day} · {D.province}</Eyebrow>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 18 }}>
+                <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 86, lineHeight: .95, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.odometer.toLocaleString()}</span>
+                <span style={{ fontSize: 22, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51' }}>km</span>
+              </div>
+              <div style={{ fontSize: 13, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.55)' }}>{D.route}</div>
+            </div>
+            <div style={{ display: 'grid', gap: 10, justifyItems: 'end', textAlign: 'right' }}>
+              <Eyebrow tone="bronze" size={10}>Remaining</Eyebrow>
+              <div style={{ fontSize: 34, fontWeight: 600, fontVariantNumeric: 'tabular-nums', color: '#F6F0E3' }}>{remaining.toLocaleString()} <span style={{ fontSize: 14, letterSpacing: '.18em', color: '#A47D51' }}>KM</span></div>
+              <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{daysLeft === null ? 'Pace not established yet' : '≈ ' + daysLeft.toLocaleString() + ' days at current pace'}</div>
+            </div>
+          </div>
+          <div style={{ display: 'grid', gap: 10 }}>
+            <ProgressRule percent={pct} height={5} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>
+              <span>{pct.toFixed(1)}% complete</span><span style={{ color: '#A47D51' }}>1,000,000 km goal</span>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap', padding: '0 0 24px', borderBottom: '1px solid rgba(246,240,227,.18)' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
+            <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 56, lineHeight: 1, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.chargeLifetime.toLocaleString()}</span>
+            <span style={{ fontSize: 15, fontWeight: 500, lineHeight: 1.3, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51', paddingBottom: 4 }}>Charge sessions<br />so far</span>
+          </div>
+          <div style={{ display: 'grid', gap: 6, justifyItems: 'end', textAlign: 'right', paddingBottom: 4 }}>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{D.chargeLifetimeSupercharger.toLocaleString()} Tesla Supercharger</span>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{D.chargeLifetimeOther.toLocaleString()} other networks</span>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 24 }}>
+          <Metric label="Latest day" value={D.today.toLocaleString()} unit="KM" sub={'Best ' + D.best.toLocaleString() + ' km — Day 406'} />
+          <Metric label="Daily average" value={D.avgPerDay.toLocaleString()} unit="KM" sub={'Across ' + D.day + ' days'} />
+          <SplitMetric label="Latest day charge sessions" a={{ value: D.chargeSupercharger, label: 'Tesla Supercharger' }} b={{ value: D.chargeOther, label: 'Other networks' }} />
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 32, alignItems: 'start' }}>
+          <DayMap map={shownMap} />
+          <Plate tone="ghost" pad={26} style={{ gap: 16 }}>
+            <Eyebrow tone="bronze" size={10}>Agreement</Eyebrow>
+            <p style={{ margin: 0, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.62)' }}>The run ends at the earliest of: the odometer reaching 1,000,000 km; the battery failing past reasonable operation; or the vehicle being declared a total loss.</p>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Chip>Started 2 Sep 2026</Chip><Chip>2026 Model 3</Chip></div>
+          </Plate>
+        </div>
+
+        <div style={{ display: 'grid', gap: 32 }}>
+          <div style={{ display: 'grid', gap: 20 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 20 }}>
+              <Eyebrow tone="bronze" size={11} track={0.24}>Distance per day</Eyebrow>
+              <div style={{ display: 'flex', gap: 8 }}>
+                {['8 days', '30 days'].map(r => (
+                  <button key={r} onClick={() => setRange(r)} style={{ padding: '8px 14px', cursor: 'pointer', borderRadius: 0, background: range === r ? '#00B4D9' : 'transparent', color: range === r ? '#1C242C' : 'rgba(246,240,227,.6)', border: '1px solid ' + (range === r ? '#00B4D9' : 'rgba(246,240,227,.22)'), fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>{r}</button>
+                ))}
+              </div>
+            </div>
+            <DistanceBars days={barDays} activeKey={shownKey} onSelect={setSelected} />
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gap: 8 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
+            <Eyebrow tone="bronze" size={11} track={0.24}>Daily log</Eyebrow>
+            {selected
+              ? <button onClick={() => setSelected(null)} style={{ padding: '6px 12px', cursor: 'pointer', borderRadius: 0, background: 'transparent', color: '#00B4D9', border: '1px solid rgba(0,180,217,.5)', fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>Back to latest</button>
+              : <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Select a day to map it</span>}
+          </div>
+          <div style={{ borderTop: '1px solid rgba(246,240,227,.18)', marginTop: 12 }}>
+            {D.log.map((r, i) => <LogRow key={r.key || i} {...r} active={!!r.key && r.key === shownKey} onSelect={() => setSelected(r.key)} />)}
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gap: 20 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
+            <Eyebrow tone="bronze" size={11} track={0.24}>From the road</Eyebrow>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase' }}>@roadtoamillion →</a>
+          </div>
+          <PostGrid posts={posts} count={6} />
+        </div>
+
+        <SpecColumns items={[
+          { label: 'Figures', body: 'Every number is mono with tabular figures. Counters must not jitter as they tick.' },
+          { label: 'One accent', body: 'Cyan marks the headline value and the latest day\u2019s bar. Nothing else on the page is cyan.' },
+          { label: 'Source', body: 'Tessie, held back 24 hours and rounded to town. Never a live position.' },
+        ]} />
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap', paddingTop: 36, borderTop: '1px solid rgba(246,240,227,.18)' }}>
+          <DpLockup badgeSize={58} badgeSrc={A + 'badge-art.svg'} wordmarkSrc={A + 'dp-wordmark.svg'} />
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+/* Embedded in an iframe, the parent page can't know how tall this is. Report
+   height on every layout change so the host can size the frame. */
+if (window.parent !== window) {
+  const post = () => window.parent.postMessage(
+    { type: 'rtam:height', height: document.documentElement.scrollHeight }, '*');
+  new ResizeObserver(post).observe(document.documentElement);
+  window.addEventListener('load', post);
+  post();
+}
+</script>
+</body></html>
