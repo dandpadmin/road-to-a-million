@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 6,
   "province": "Yukon",
-  "route": "Whitehorse, Yukon",
+  "route": "Dawson, Yukon",
   "today": 449,
   "best": 1333,
   "avgPerDay": 849,
@@ -14,146 +14,646 @@
   "chargeLifetimeSupercharger": 13,
   "chargeLifetimeOther": 26,
   "dayMap": {
+    "key": "2026-09-06",
+    "day": 5,
     "label": "Day 5 · Sep 6",
-    "corridor": "Whitehorse, Yukon",
     "km": 556,
+    "from": "Whitehorse, Yukon",
+    "to": "Dawson, Yukon",
+    "corridor": "Dawson, Yukon",
     "chargeStops": 4,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.92,
+        0.6066,
         0.92
       ],
       [
-        0.92,
+        0.6066,
         0.9075
       ],
       [
-        0.6814,
+        0.546,
         0.569
       ],
       [
-        0.6336,
+        0.5339,
         0.3809
       ],
       [
-        0.605,
+        0.5266,
         0.243
       ],
       [
-        0.1086,
+        0.4007,
         0.08
       ],
       [
-        0.08,
+        0.3934,
         0.08
       ]
     ],
     "stops": [
       {
-        "x": 0.92,
+        "x": 0.6066,
         "y": 0.92,
         "town": "Whitehorse, Yukon",
         "kind": "start"
       },
       {
-        "x": 0.08,
+        "x": 0.3934,
         "y": 0.08,
         "town": "Dawson, Yukon",
-        "kind": "charge"
+        "kind": "end"
       },
       {
-        "x": 0.605,
+        "x": 0.5266,
         "y": 0.243,
         "town": "Mayo, Yukon",
         "kind": "charge"
       },
       {
-        "x": 0.6814,
+        "x": 0.546,
         "y": 0.569,
         "town": "Carmacks, Yukon",
         "kind": "charge"
-      },
-      {
-        "x": 0.92,
-        "y": 0.92,
-        "town": "Whitehorse, Yukon",
-        "kind": "charge"
-      },
-      {
-        "x": 0.08,
-        "y": 0.08,
-        "town": "Dawson, Yukon",
-        "kind": "end"
       }
     ],
+    "kmPerPx": 1.4756,
     "plotted": true
   },
+  "dayMaps": [
+    {
+      "key": "2026-09-02",
+      "day": 1,
+      "label": "Day 1 · Sep 2",
+      "km": 1333,
+      "from": "Winkler, Manitoba",
+      "to": "Calgary, Alberta",
+      "corridor": "Calgary, Alberta",
+      "chargeStops": 5,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.92,
+          0.6658
+        ],
+        [
+          0.8157,
+          0.539
+        ],
+        [
+          0.7374,
+          0.5
+        ],
+        [
+          0.6957,
+          0.4415
+        ],
+        [
+          0.5757,
+          0.422
+        ],
+        [
+          0.4061,
+          0.4512
+        ],
+        [
+          0.2913,
+          0.5195
+        ],
+        [
+          0.2574,
+          0.5098
+        ],
+        [
+          0.08,
+          0.3342
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.92,
+          "y": 0.6658,
+          "town": "Winkler, Manitoba",
+          "kind": "start"
+        },
+        {
+          "x": 0.2574,
+          "y": 0.5098,
+          "town": "Medicine Hat, Alberta",
+          "kind": "charge"
+        },
+        {
+          "x": 0.4061,
+          "y": 0.4512,
+          "town": "Swift Current, Saskatchewan",
+          "kind": "charge"
+        },
+        {
+          "x": 0.5757,
+          "y": 0.422,
+          "town": "Regina, Saskatchewan",
+          "kind": "charge"
+        },
+        {
+          "x": 0.6957,
+          "y": 0.4415,
+          "town": "Whitewood, Saskatchewan",
+          "kind": "charge"
+        },
+        {
+          "x": 0.8157,
+          "y": 0.539,
+          "town": "Brandon, Manitoba",
+          "kind": "charge"
+        },
+        {
+          "x": 0.08,
+          "y": 0.3342,
+          "town": "Calgary, Alberta",
+          "kind": "end"
+        }
+      ],
+      "kmPerPx": 1.8974,
+      "plotted": true
+    },
+    {
+      "key": "2026-09-03",
+      "day": 2,
+      "label": "Day 2 · Sep 3",
+      "km": 455,
+      "from": "Calgary, Alberta",
+      "to": "Calgary, Alberta",
+      "corridor": "Calgary, Alberta",
+      "chargeStops": 3,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.2533,
+          0.92
+        ],
+        [
+          0.2898,
+          0.85
+        ],
+        [
+          0.2533,
+          0.78
+        ],
+        [
+          0.2533,
+          0.85
+        ],
+        [
+          0.2533,
+          0.92
+        ],
+        [
+          0.2716,
+          0.92
+        ],
+        [
+          0.2533,
+          0.92
+        ],
+        [
+          0.2533,
+          0.78
+        ],
+        [
+          0.2533,
+          0.64
+        ],
+        [
+          0.7102,
+          0.08
+        ],
+        [
+          0.7467,
+          0.15
+        ],
+        [
+          0.4909,
+          0.71
+        ],
+        [
+          0.2716,
+          0.92
+        ],
+        [
+          0.2533,
+          0.92
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.2533,
+          "y": 0.92,
+          "town": "Calgary, Alberta",
+          "kind": "start"
+        },
+        {
+          "x": 0.4909,
+          "y": 0.71,
+          "town": "Strathmore, Alberta",
+          "kind": "charge"
+        },
+        {
+          "x": 0.2533,
+          "y": 0.64,
+          "town": "Calgary, Alberta",
+          "kind": "charge"
+        },
+        {
+          "x": 0.2898,
+          "y": 0.85,
+          "town": "Calgary, Alberta",
+          "kind": "charge"
+        }
+      ],
+      "kmPerPx": 0.2643,
+      "plotted": true
+    },
+    {
+      "key": "2026-09-04",
+      "day": 3,
+      "label": "Day 3 · Sep 4",
+      "km": 1117,
+      "from": "Calgary, Alberta",
+      "to": "Alaska Highway Frontage Road, British Columbia",
+      "corridor": "Alaska Highway Frontage Road, British Columbia",
+      "chargeStops": 6,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.6372,
+          0.92
+        ],
+        [
+          0.6456,
+          0.7424
+        ],
+        [
+          0.5837,
+          0.4761
+        ],
+        [
+          0.5285,
+          0.3532
+        ],
+        [
+          0.4782,
+          0.3327
+        ],
+        [
+          0.4381,
+          0.2917
+        ],
+        [
+          0.4297,
+          0.2576
+        ],
+        [
+          0.3544,
+          0.08
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.6372,
+          "y": 0.92,
+          "town": "Calgary, Alberta",
+          "kind": "start"
+        },
+        {
+          "x": 0.3544,
+          "y": 0.08,
+          "town": "Alaska Highway Frontage Road, British Columbia",
+          "kind": "end"
+        },
+        {
+          "x": 0.4297,
+          "y": 0.2576,
+          "town": "Dawson Creek, British Columbia",
+          "kind": "charge"
+        },
+        {
+          "x": 0.4782,
+          "y": 0.3327,
+          "town": "Grande Prairie, Alberta",
+          "kind": "charge"
+        },
+        {
+          "x": 0.5285,
+          "y": 0.3532,
+          "town": "Valleyview, Alberta",
+          "kind": "charge"
+        },
+        {
+          "x": 0.5837,
+          "y": 0.4761,
+          "town": "Whitecourt, Alberta",
+          "kind": "charge"
+        },
+        {
+          "x": 0.6456,
+          "y": 0.7424,
+          "town": "Red Deer County, Alberta",
+          "kind": "charge"
+        }
+      ],
+      "kmPerPx": 2.7089,
+      "plotted": true
+    },
+    {
+      "key": "2026-09-05",
+      "day": 4,
+      "label": "Day 4 · Sep 5",
+      "km": 1182,
+      "from": "Alaska Highway Frontage Road, British Columbia",
+      "to": "Whitehorse, Yukon",
+      "corridor": "Whitehorse, Yukon",
+      "chargeStops": 6,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.811,
+          0.92
+        ],
+        [
+          0.8011,
+          0.5173
+        ],
+        [
+          0.6995,
+          0.5518
+        ],
+        [
+          0.697,
+          0.5403
+        ],
+        [
+          0.6747,
+          0.5058
+        ],
+        [
+          0.6326,
+          0.3677
+        ],
+        [
+          0.6276,
+          0.3677
+        ],
+        [
+          0.5087,
+          0.2411
+        ],
+        [
+          0.5037,
+          0.2296
+        ],
+        [
+          0.3798,
+          0.2411
+        ],
+        [
+          0.3055,
+          0.2066
+        ],
+        [
+          0.2757,
+          0.126
+        ],
+        [
+          0.189,
+          0.08
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.811,
+          "y": 0.92,
+          "town": "Alaska Highway Frontage Road, British Columbia",
+          "kind": "start"
+        },
+        {
+          "x": 0.2757,
+          "y": 0.126,
+          "town": "Teslin, Yukon",
+          "kind": "charge"
+        },
+        {
+          "x": 0.3055,
+          "y": 0.2066,
+          "town": "Teslin, Yukon",
+          "kind": "charge"
+        },
+        {
+          "x": 0.5037,
+          "y": 0.2296,
+          "town": "Watson Lake, Yukon",
+          "kind": "charge"
+        },
+        {
+          "x": 0.6326,
+          "y": 0.3677,
+          "town": "Fort Nelson, British Columbia",
+          "kind": "charge"
+        },
+        {
+          "x": 0.6747,
+          "y": 0.5058,
+          "town": "Fort Nelson, British Columbia",
+          "kind": "charge"
+        },
+        {
+          "x": 0.8011,
+          "y": 0.5173,
+          "town": "Fort Nelson, British Columbia",
+          "kind": "charge"
+        },
+        {
+          "x": 0.189,
+          "y": 0.08,
+          "town": "Whitehorse, Yukon",
+          "kind": "end"
+        }
+      ],
+      "kmPerPx": 1.6077,
+      "plotted": true
+    },
+    {
+      "key": "2026-09-06",
+      "day": 5,
+      "label": "Day 5 · Sep 6",
+      "km": 556,
+      "from": "Whitehorse, Yukon",
+      "to": "Dawson, Yukon",
+      "corridor": "Dawson, Yukon",
+      "chargeStops": 4,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.6066,
+          0.92
+        ],
+        [
+          0.6066,
+          0.9075
+        ],
+        [
+          0.546,
+          0.569
+        ],
+        [
+          0.5339,
+          0.3809
+        ],
+        [
+          0.5266,
+          0.243
+        ],
+        [
+          0.4007,
+          0.08
+        ],
+        [
+          0.3934,
+          0.08
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.6066,
+          "y": 0.92,
+          "town": "Whitehorse, Yukon",
+          "kind": "start"
+        },
+        {
+          "x": 0.3934,
+          "y": 0.08,
+          "town": "Dawson, Yukon",
+          "kind": "end"
+        },
+        {
+          "x": 0.5266,
+          "y": 0.243,
+          "town": "Mayo, Yukon",
+          "kind": "charge"
+        },
+        {
+          "x": 0.546,
+          "y": 0.569,
+          "town": "Carmacks, Yukon",
+          "kind": "charge"
+        }
+      ],
+      "kmPerPx": 1.4756,
+      "plotted": true
+    }
+  ],
   "asOf": "2026-09-07",
-  "updatedAt": "2026-09-08T03:32:59.764Z",
+  "updatedAt": "2026-09-08T03:44:08.724Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "days": [
     {
+      "key": "2026-09-02",
       "label": "D 1",
       "km": 1333
     },
     {
+      "key": "2026-09-03",
       "label": "D 2",
       "km": 455
     },
     {
+      "key": "2026-09-04",
       "label": "D 3",
       "km": 1117
     },
     {
+      "key": "2026-09-05",
       "label": "D 4",
       "km": 1182
     },
     {
+      "key": "2026-09-06",
       "label": "D 5",
       "km": 556
     },
     {
+      "key": "2026-09-07",
       "label": "D 6",
       "km": 449
     }
   ],
   "log": [
     {
+      "key": "2026-09-07",
       "day": "Day 6",
       "date": "Sep 7",
       "province": "—",
+      "from": "—",
+      "to": "—",
       "km": "449",
       "note": ""
     },
     {
+      "key": "2026-09-06",
       "day": "Day 5",
       "date": "Sep 6",
       "province": "Yukon",
+      "from": "Whitehorse, Yukon",
+      "to": "Dawson, Yukon",
+      "plotted": true,
       "km": "556",
       "note": ""
     },
     {
+      "key": "2026-09-05",
       "day": "Day 4",
       "date": "Sep 5",
-      "province": "British Columbia",
+      "province": "Yukon",
+      "from": "Alaska Highway Frontage Road, British Columbia",
+      "to": "Whitehorse, Yukon",
+      "plotted": true,
       "km": "1,182",
       "note": ""
     },
     {
+      "key": "2026-09-04",
       "day": "Day 3",
       "date": "Sep 4",
-      "province": "Alberta",
+      "province": "British Columbia",
+      "from": "Calgary, Alberta",
+      "to": "Alaska Highway Frontage Road, British Columbia",
+      "plotted": true,
       "km": "1,117",
       "note": ""
     },
     {
+      "key": "2026-09-03",
       "day": "Day 2",
       "date": "Sep 3",
       "province": "Alberta",
+      "from": "Calgary, Alberta",
+      "to": "Calgary, Alberta",
+      "plotted": true,
       "km": "455",
+      "note": ""
+    },
+    {
+      "key": "2026-09-02",
+      "day": "Day 1",
+      "date": "Sep 2",
+      "province": "Alberta",
+      "from": "Winkler, Manitoba",
+      "to": "Calgary, Alberta",
+      "plotted": true,
+      "km": "1,333",
       "note": ""
     }
   ]
