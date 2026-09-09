@@ -1,13 +1,13 @@
 {
-  "odometer": 7094,
+  "odometer": 7106,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
-  "route": "Whitehorse, Yukon",
-  "today": 87,
+  "route": "Teslin, Yukon",
+  "today": 134,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 742,
+  "avgPerDay": 748,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -18,41 +18,45 @@
     "key": "2026-09-08",
     "day": 7,
     "label": "Day 7 · Sep 8",
-    "km": 34,
+    "km": 158,
     "from": "Marsh Lake, Yukon",
-    "to": "Whitehorse, Yukon",
-    "corridor": "Whitehorse, Yukon",
-    "chargeStops": 1,
+    "to": "Teslin, Yukon",
+    "corridor": "Teslin, Yukon",
+    "chargeStops": 2,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3719,
-        0.08
+        0.08,
+        0.0981
       ],
       [
-        0.5,
-        0.29
+        0.1415,
+        0.1986
       ],
       [
-        0.6281,
-        0.92
+        0.2029,
+        0.5
+      ],
+      [
+        0.92,
+        0.9019
       ]
     ],
     "stops": [
       {
-        "x": 0.3719,
-        "y": 0.08,
+        "x": 0.08,
+        "y": 0.0981,
         "town": "Marsh Lake, Yukon",
         "kind": "start"
       },
       {
-        "x": 0.6281,
-        "y": 0.92,
-        "town": "Whitehorse, Yukon",
+        "x": 0.92,
+        "y": 0.9019,
+        "town": "Teslin, Yukon",
         "kind": "end"
       }
     ],
-    "kmPerPx": 0.0881,
+    "kmPerPx": 0.1841,
     "plotted": true
   },
   "dayMaps": [
@@ -604,52 +608,62 @@
       "key": "2026-09-08",
       "day": 7,
       "label": "Day 7 · Sep 8",
-      "km": 34,
+      "km": 158,
       "from": "Marsh Lake, Yukon",
-      "to": "Whitehorse, Yukon",
-      "corridor": "Whitehorse, Yukon",
-      "chargeStops": 1,
+      "to": "Teslin, Yukon",
+      "corridor": "Teslin, Yukon",
+      "chargeStops": 2,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3719,
-          0.08
+          0.08,
+          0.0981
         ],
         [
-          0.5,
-          0.29
+          0.1415,
+          0.1986
         ],
         [
-          0.6281,
-          0.92
+          0.2029,
+          0.5
+        ],
+        [
+          0.92,
+          0.9019
         ]
       ],
       "stops": [
         {
-          "x": 0.3719,
-          "y": 0.08,
+          "x": 0.08,
+          "y": 0.0981,
           "town": "Marsh Lake, Yukon",
           "kind": "start"
         },
         {
-          "x": 0.6281,
-          "y": 0.92,
-          "town": "Whitehorse, Yukon",
+          "x": 0.92,
+          "y": 0.9019,
+          "town": "Teslin, Yukon",
           "kind": "end"
         }
       ],
-      "kmPerPx": 0.0881,
+      "kmPerPx": 0.1841,
       "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T18:44:14.901Z",
+  "updatedAt": "2026-09-09T18:56:28.872Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.4,
+          "wh": 140,
+          "km": 124,
+          "prov": "Yukon"
+        },
         {
           "t": 11.3,
           "wh": 135,
@@ -1071,7 +1085,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 149,
+      "median": 148,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1083,13 +1097,13 @@
       ]
     },
     "autopilot": {
-      "km": 5719,
-      "pct": 85.2
+      "km": 5765,
+      "pct": 85.3
     },
     "energy": {
-      "used": 1050,
+      "used": 1056,
       "added": 1153,
-      "overhead": 8.9,
+      "overhead": 8.4,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -1155,7 +1169,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 87
+      "km": 134
     }
   ],
   "log": [
@@ -1166,7 +1180,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "87",
+      "km": "134",
       "note": ""
     },
     {
@@ -1175,7 +1189,7 @@
       "date": "Sep 8",
       "province": "Yukon",
       "from": "Marsh Lake, Yukon",
-      "to": "Whitehorse, Yukon",
+      "to": "Teslin, Yukon",
       "plotted": true,
       "km": "591",
       "note": ""
