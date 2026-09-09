@@ -1,10 +1,10 @@
 {
-  "odometer": 6773,
+  "odometer": 6819,
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
-  "route": "Yukon",
-  "today": 590,
+  "route": "Carmacks, Yukon",
+  "today": 591,
   "best": 1333,
   "avgPerDay": 836,
   "chargeSessions": 3,
@@ -17,91 +17,95 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 290,
+    "km": 449,
     "from": "Dawson, Yukon",
-    "to": "Yukon",
-    "corridor": "Yukon",
-    "chargeStops": 2,
+    "to": "Carmacks, Yukon",
+    "corridor": "Carmacks, Yukon",
+    "chargeStops": 3,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3451,
-        0.2126
+        0.4191,
+        0.14
       ],
       [
-        0.3532,
-        0.2126
+        0.4228,
+        0.14
       ],
       [
-        0.3451,
-        0.2126
+        0.4191,
+        0.14
       ],
       [
-        0.2472,
+        0.3739,
         0.08
       ],
       [
-        0.182,
+        0.3438,
         0.08
       ],
       [
-        0.1983,
+        0.3513,
         0.08
       ],
       [
-        0.3124,
-        0.1684
+        0.404,
+        0.12
       ],
       [
-        0.3206,
-        0.1684
+        0.4078,
+        0.12
       ],
       [
-        0.3288,
-        0.1684
+        0.4116,
+        0.12
       ],
       [
-        0.3451,
-        0.2126
+        0.4191,
+        0.14
       ],
       [
-        0.3614,
-        0.2126
+        0.4266,
+        0.14
       ],
       [
-        0.7528,
-        0.7432
+        0.6073,
+        0.38
       ],
       [
-        0.7936,
-        0.7874
+        0.6261,
+        0.4
       ],
       [
-        0.818,
+        0.6374,
+        0.46
+      ],
+      [
+        0.6562,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3451,
-        "y": 0.2126,
+        "x": 0.4191,
+        "y": 0.14,
         "town": "Dawson, Yukon",
         "kind": "start"
       },
       {
-        "x": 0.818,
+        "x": 0.6562,
         "y": 0.92,
-        "town": "Yukon",
+        "town": "Carmacks, Yukon",
         "kind": "end"
       },
       {
-        "x": 0.7936,
-        "y": 0.7874,
+        "x": 0.6261,
+        "y": 0.4,
         "town": "Mayo, Yukon",
         "kind": "charge"
       }
     ],
-    "kmPerPx": 0.4185,
+    "kmPerPx": 0.925,
     "plotted": true
   },
   "dayMaps": [
@@ -548,102 +552,112 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 290,
+      "km": 449,
       "from": "Dawson, Yukon",
-      "to": "Yukon",
-      "corridor": "Yukon",
-      "chargeStops": 2,
+      "to": "Carmacks, Yukon",
+      "corridor": "Carmacks, Yukon",
+      "chargeStops": 3,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3451,
-          0.2126
+          0.4191,
+          0.14
         ],
         [
-          0.3532,
-          0.2126
+          0.4228,
+          0.14
         ],
         [
-          0.3451,
-          0.2126
+          0.4191,
+          0.14
         ],
         [
-          0.2472,
+          0.3739,
           0.08
         ],
         [
-          0.182,
+          0.3438,
           0.08
         ],
         [
-          0.1983,
+          0.3513,
           0.08
         ],
         [
-          0.3124,
-          0.1684
+          0.404,
+          0.12
         ],
         [
-          0.3206,
-          0.1684
+          0.4078,
+          0.12
         ],
         [
-          0.3288,
-          0.1684
+          0.4116,
+          0.12
         ],
         [
-          0.3451,
-          0.2126
+          0.4191,
+          0.14
         ],
         [
-          0.3614,
-          0.2126
+          0.4266,
+          0.14
         ],
         [
-          0.7528,
-          0.7432
+          0.6073,
+          0.38
         ],
         [
-          0.7936,
-          0.7874
+          0.6261,
+          0.4
         ],
         [
-          0.818,
+          0.6374,
+          0.46
+        ],
+        [
+          0.6562,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.3451,
-          "y": 0.2126,
+          "x": 0.4191,
+          "y": 0.14,
           "town": "Dawson, Yukon",
           "kind": "start"
         },
         {
-          "x": 0.818,
+          "x": 0.6562,
           "y": 0.92,
-          "town": "Yukon",
+          "town": "Carmacks, Yukon",
           "kind": "end"
         },
         {
-          "x": 0.7936,
-          "y": 0.7874,
+          "x": 0.6261,
+          "y": 0.4,
           "town": "Mayo, Yukon",
           "kind": "charge"
         }
       ],
-      "kmPerPx": 0.4185,
+      "kmPerPx": 0.925,
       "plotted": true
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-09T01:54:57.114Z",
+  "updatedAt": "2026-09-09T02:14:01.628Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 18,
+          "wh": 173,
+          "km": 159,
+          "prov": "Yukon"
+        },
         {
           "t": 17,
           "wh": 209,
@@ -1120,7 +1134,7 @@
     {
       "key": "2026-09-08",
       "label": "D 7",
-      "km": 590
+      "km": 591
     }
   ],
   "log": [
@@ -1131,7 +1145,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "590",
+      "km": "591",
       "note": ""
     },
     {
@@ -1140,7 +1154,7 @@
       "date": "Sep 7",
       "province": "Yukon",
       "from": "Dawson, Yukon",
-      "to": "Yukon",
+      "to": "Carmacks, Yukon",
       "plotted": true,
       "km": "618",
       "note": ""
