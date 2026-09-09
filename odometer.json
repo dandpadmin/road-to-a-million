@@ -1,13 +1,13 @@
 {
-  "odometer": 7047,
+  "odometer": 7094,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
   "route": "Whitehorse, Yukon",
-  "today": 54,
+  "today": 87,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 738,
+  "avgPerDay": 742,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -643,7 +643,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T18:17:02.775Z",
+  "updatedAt": "2026-09-09T18:44:14.901Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1083,17 +1083,17 @@
       ]
     },
     "autopilot": {
-      "km": 5688,
+      "km": 5719,
       "pct": 85.2
     },
     "energy": {
-      "used": 1040,
+      "used": 1050,
       "added": 1153,
-      "overhead": 9.8,
+      "overhead": 8.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 404
+      "rangeEst": 402
     },
     "cost": {
       "total": 161.77,
@@ -1155,7 +1155,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 54
+      "km": 87
     }
   ],
   "log": [
@@ -1166,7 +1166,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "54",
+      "km": "87",
       "note": ""
     },
     {
