@@ -17,11 +17,11 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 617,
+    "km": 618,
     "from": "Dawson, Yukon",
     "to": "Marsh Lake, Yukon",
     "corridor": "Marsh Lake, Yukon",
-    "chargeStops": 3,
+    "chargeStops": 4,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -562,11 +562,11 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 617,
+      "km": 618,
       "from": "Dawson, Yukon",
       "to": "Marsh Lake, Yukon",
       "corridor": "Marsh Lake, Yukon",
-      "chargeStops": 3,
+      "chargeStops": 4,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -665,7 +665,7 @@
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-09T04:32:16.401Z",
+  "updatedAt": "2026-09-09T04:54:45.711Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
