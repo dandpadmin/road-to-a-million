@@ -17,15 +17,32 @@
     "key": "2026-09-08",
     "day": 7,
     "label": "Day 7 · Sep 8",
-    "km": 1,
+    "km": 11,
     "from": "Marsh Lake, Yukon",
     "to": "Marsh Lake, Yukon",
     "corridor": "Marsh Lake, Yukon",
     "chargeStops": 1,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.2445,
+        0.08
+      ],
+      [
+        0.7555,
+        0.92
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.2445,
+        "y": 0.08,
+        "town": "Marsh Lake, Yukon",
+        "kind": "start"
+      }
+    ],
+    "kmPerPx": 0.022,
+    "plotted": true
   },
   "dayMaps": [
     {
@@ -576,25 +593,48 @@
       "key": "2026-09-08",
       "day": 7,
       "label": "Day 7 · Sep 8",
-      "km": 1,
+      "km": 11,
       "from": "Marsh Lake, Yukon",
       "to": "Marsh Lake, Yukon",
       "corridor": "Marsh Lake, Yukon",
       "chargeStops": 1,
       "note": "Town level · delayed 24h",
-      "path": [],
-      "stops": [],
-      "kmPerPx": 0
+      "path": [
+        [
+          0.2445,
+          0.08
+        ],
+        [
+          0.7555,
+          0.92
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.2445,
+          "y": 0.08,
+          "town": "Marsh Lake, Yukon",
+          "kind": "start"
+        }
+      ],
+      "kmPerPx": 0.022,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T16:15:16.350Z",
+  "updatedAt": "2026-09-09T16:43:49.889Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 8.7,
+          "wh": 121,
+          "km": 10,
+          "prov": "Yukon"
+        },
         {
           "t": 14.6,
           "wh": 155,
@@ -1004,7 +1044,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 149,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1109,6 +1149,7 @@
       "province": "Yukon",
       "from": "Marsh Lake, Yukon",
       "to": "Marsh Lake, Yukon",
+      "plotted": true,
       "km": "591",
       "note": ""
     },
