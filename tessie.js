@@ -566,6 +566,10 @@ export function shape({ state, drives, charges, health, history }) {
     route: town(position.ending),
     today: km(last ? last.km : 0),
     best: km(Math.max(0, ...trip.map((d) => d.km))),
+    /* Which day set that best — the panel reports it alongside the figure. */
+    bestDay: trip.length
+      ? dayIndex(trip.reduce((b, d) => (!b || d.km > b.km ? d : b), null).date)
+      : dayNo,
     avgPerDay: driving.length ? km(driving.reduce((s, d) => s + d.km, 0) / driving.length) : 0,
     chargeSessions: ch.day,
     chargeSupercharger: ch.daySc,
