@@ -1,5 +1,5 @@
 {
-  "odometer": 6819,
+  "odometer": 6820,
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
@@ -7,12 +7,12 @@
   "today": 591,
   "best": 1333,
   "avgPerDay": 836,
-  "chargeSessions": 3,
+  "chargeSessions": 4,
   "chargeSupercharger": 0,
-  "chargeOther": 3,
-  "chargeLifetime": 43,
+  "chargeOther": 4,
+  "chargeLifetime": 44,
   "chargeLifetimeSupercharger": 13,
-  "chargeLifetimeOther": 30,
+  "chargeLifetimeOther": 31,
   "dayMap": {
     "key": "2026-09-07",
     "day": 6,
@@ -645,7 +645,7 @@
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-09T02:54:34.846Z",
+  "updatedAt": "2026-09-09T03:14:10.349Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1072,8 +1072,8 @@
     },
     "energy": {
       "used": 1028,
-      "added": 1113,
-      "overhead": 7.6,
+      "added": 1153,
+      "overhead": 10.8,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -1089,7 +1089,7 @@
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 43,
+      "sessions": 44,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
