@@ -6,6 +6,7 @@
   "route": "Whitehorse, Yukon",
   "today": 54,
   "best": 1333,
+  "bestDay": 1,
   "avgPerDay": 738,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
@@ -642,7 +643,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T16:56:35.328Z",
+  "updatedAt": "2026-09-09T17:15:51.638Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
