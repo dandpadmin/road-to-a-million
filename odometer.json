@@ -1,122 +1,31 @@
 {
-  "odometer": 6820,
+  "odometer": 6872,
   "goal": 1000000,
-  "day": 7,
+  "day": 8,
   "province": "Yukon",
   "route": "Marsh Lake, Yukon",
-  "today": 591,
+  "today": 52,
   "best": 1333,
-  "avgPerDay": 836,
-  "chargeSessions": 4,
+  "avgPerDay": 738,
+  "chargeSessions": 0,
   "chargeSupercharger": 0,
-  "chargeOther": 4,
+  "chargeOther": 0,
   "chargeLifetime": 44,
   "chargeLifetimeSupercharger": 13,
   "chargeLifetimeOther": 31,
   "dayMap": {
-    "key": "2026-09-07",
-    "day": 6,
-    "label": "Day 6 · Sep 7",
-    "km": 618,
-    "from": "Dawson, Yukon",
+    "key": "2026-09-08",
+    "day": 7,
+    "label": "Day 7 · Sep 8",
+    "km": 1,
+    "from": "Marsh Lake, Yukon",
     "to": "Marsh Lake, Yukon",
     "corridor": "Marsh Lake, Yukon",
-    "chargeStops": 4,
+    "chargeStops": 1,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.4242,
-        0.1182
-      ],
-      [
-        0.4267,
-        0.1182
-      ],
-      [
-        0.4242,
-        0.1182
-      ],
-      [
-        0.3949,
-        0.08
-      ],
-      [
-        0.3753,
-        0.08
-      ],
-      [
-        0.3802,
-        0.08
-      ],
-      [
-        0.4144,
-        0.1055
-      ],
-      [
-        0.4169,
-        0.1055
-      ],
-      [
-        0.4193,
-        0.1055
-      ],
-      [
-        0.4242,
-        0.1182
-      ],
-      [
-        0.4291,
-        0.1182
-      ],
-      [
-        0.5464,
-        0.2709
-      ],
-      [
-        0.5587,
-        0.2836
-      ],
-      [
-        0.566,
-        0.3218
-      ],
-      [
-        0.5782,
-        0.6145
-      ],
-      [
-        0.6247,
-        0.92
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.4242,
-        "y": 0.1182,
-        "town": "Dawson, Yukon",
-        "kind": "start"
-      },
-      {
-        "x": 0.6247,
-        "y": 0.92,
-        "town": "Marsh Lake, Yukon",
-        "kind": "end"
-      },
-      {
-        "x": 0.5782,
-        "y": 0.6145,
-        "town": "Carmacks, Yukon",
-        "kind": "charge"
-      },
-      {
-        "x": 0.5587,
-        "y": 0.2836,
-        "town": "Mayo, Yukon",
-        "kind": "charge"
-      }
-    ],
-    "kmPerPx": 1.4536,
-    "plotted": true
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
     {
@@ -662,10 +571,24 @@
       ],
       "kmPerPx": 1.4536,
       "plotted": true
+    },
+    {
+      "key": "2026-09-08",
+      "day": 7,
+      "label": "Day 7 · Sep 8",
+      "km": 1,
+      "from": "Marsh Lake, Yukon",
+      "to": "Marsh Lake, Yukon",
+      "corridor": "Marsh Lake, Yukon",
+      "chargeStops": 1,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
-  "asOf": "2026-09-08",
-  "updatedAt": "2026-09-09T15:54:14.685Z",
+  "asOf": "2026-09-09",
+  "updatedAt": "2026-09-09T16:15:16.350Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1093,17 +1016,17 @@
       ]
     },
     "autopilot": {
-      "km": 5639,
-      "pct": 85.1
+      "km": 5688,
+      "pct": 85.2
     },
     "energy": {
-      "used": 1028,
+      "used": 1040,
       "added": 1153,
-      "overhead": 10.8,
-      "whPerKm": 155,
+      "overhead": 9.8,
+      "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 405
+      "rangeEst": 403
     },
     "cost": {
       "total": 161.77,
@@ -1161,16 +1084,31 @@
       "key": "2026-09-08",
       "label": "D 7",
       "km": 591
+    },
+    {
+      "key": "2026-09-09",
+      "label": "D 8",
+      "km": 52
     }
   ],
   "log": [
     {
-      "key": "2026-09-08",
-      "day": "Day 7",
-      "date": "Sep 8",
+      "key": "2026-09-09",
+      "day": "Day 8",
+      "date": "Sep 9",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "52",
+      "note": ""
+    },
+    {
+      "key": "2026-09-08",
+      "day": "Day 7",
+      "date": "Sep 8",
+      "province": "Yukon",
+      "from": "Marsh Lake, Yukon",
+      "to": "Marsh Lake, Yukon",
       "km": "591",
       "note": ""
     },
