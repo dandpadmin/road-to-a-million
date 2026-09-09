@@ -1,13 +1,13 @@
 {
-  "odometer": 7351,
+  "odometer": 7358,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
-  "route": "Teslin, Yukon",
-  "today": 301,
+  "route": "Watson Lake, Yukon",
+  "today": 391,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 769,
+  "avgPerDay": 780,
   "chargeSessions": 1,
   "chargeSupercharger": 0,
   "chargeOther": 1,
@@ -18,45 +18,55 @@
     "key": "2026-09-08",
     "day": 7,
     "label": "Day 7 · Sep 8",
-    "km": 158,
+    "km": 386,
     "from": "Marsh Lake, Yukon",
-    "to": "Teslin, Yukon",
-    "corridor": "Teslin, Yukon",
+    "to": "Watson Lake, Yukon",
+    "corridor": "Watson Lake, Yukon",
     "chargeStops": 2,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.08,
-        0.0981
+        0.2292
       ],
       [
-        0.1415,
-        0.1986
+        0.1038,
+        0.2679
       ],
       [
-        0.2029,
-        0.5
+        0.1275,
+        0.384
+      ],
+      [
+        0.4049,
+        0.5387
       ],
       [
         0.92,
-        0.9019
+        0.7708
       ]
     ],
     "stops": [
       {
         "x": 0.08,
-        "y": 0.0981,
+        "y": 0.2292,
         "town": "Marsh Lake, Yukon",
         "kind": "start"
       },
       {
         "x": 0.92,
-        "y": 0.9019,
-        "town": "Teslin, Yukon",
+        "y": 0.7708,
+        "town": "Watson Lake, Yukon",
         "kind": "end"
+      },
+      {
+        "x": 0.4049,
+        "y": 0.5387,
+        "town": "Teslin, Yukon",
+        "kind": "charge"
       }
     ],
-    "kmPerPx": 0.1841,
+    "kmPerPx": 0.4783,
     "plotted": true
   },
   "dayMaps": [
@@ -608,56 +618,72 @@
       "key": "2026-09-08",
       "day": 7,
       "label": "Day 7 · Sep 8",
-      "km": 158,
+      "km": 386,
       "from": "Marsh Lake, Yukon",
-      "to": "Teslin, Yukon",
-      "corridor": "Teslin, Yukon",
+      "to": "Watson Lake, Yukon",
+      "corridor": "Watson Lake, Yukon",
       "chargeStops": 2,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.08,
-          0.0981
+          0.2292
         ],
         [
-          0.1415,
-          0.1986
+          0.1038,
+          0.2679
         ],
         [
-          0.2029,
-          0.5
+          0.1275,
+          0.384
+        ],
+        [
+          0.4049,
+          0.5387
         ],
         [
           0.92,
-          0.9019
+          0.7708
         ]
       ],
       "stops": [
         {
           "x": 0.08,
-          "y": 0.0981,
+          "y": 0.2292,
           "town": "Marsh Lake, Yukon",
           "kind": "start"
         },
         {
           "x": 0.92,
-          "y": 0.9019,
-          "town": "Teslin, Yukon",
+          "y": 0.7708,
+          "town": "Watson Lake, Yukon",
           "kind": "end"
+        },
+        {
+          "x": 0.4049,
+          "y": 0.5387,
+          "town": "Teslin, Yukon",
+          "kind": "charge"
         }
       ],
-      "kmPerPx": 0.1841,
+      "kmPerPx": 0.4783,
       "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T21:44:09.127Z",
+  "updatedAt": "2026-09-09T21:55:45.189Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 13.2,
+          "wh": 152,
+          "km": 228,
+          "prov": "Yukon"
+        },
         {
           "t": 12.4,
           "wh": 140,
@@ -1085,7 +1111,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 148,
+      "median": 149,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1097,17 +1123,17 @@
       ]
     },
     "autopilot": {
-      "km": 5912,
-      "pct": 85.4
+      "km": 5996,
+      "pct": 85.5
     },
     "energy": {
-      "used": 1086,
+      "used": 1102,
       "added": 1198,
-      "overhead": 9.3,
+      "overhead": 8,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 401
+      "rangeEst": 400
     },
     "cost": {
       "total": 161.77,
@@ -1169,7 +1195,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 301
+      "km": 391
     }
   ],
   "log": [
@@ -1180,7 +1206,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "301",
+      "km": "391",
       "note": ""
     },
     {
@@ -1189,7 +1215,7 @@
       "date": "Sep 8",
       "province": "Yukon",
       "from": "Marsh Lake, Yukon",
-      "to": "Teslin, Yukon",
+      "to": "Watson Lake, Yukon",
       "plotted": true,
       "km": "591",
       "note": ""
