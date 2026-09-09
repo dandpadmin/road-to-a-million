@@ -1,39 +1,57 @@
 const { Eyebrow, Plate, StatReadout, ProgressRule, Badge } = window.RoadToAMillionDesignSystem_6606d4;
 
-/* Every panel is a Plate. No rounding, no shadow, hairlines only. */
+/* The data panels sit on a raised grey rather than on the page ground — 6% bone
+   over midnight, so stacked panels separate without the page flipping light.
+   Figures go cyan, everything smaller stays bone. */
+const PANEL = '#252D35';
+const INK = '#F6F0E3';
+const INK_2 = 'rgba(246,240,227,.78)';
+const INK_3 = 'rgba(246,240,227,.58)';
+const INK_4 = 'rgba(246,240,227,.42)';
+const BRONZE_D = '#A47D51';
+const CYAN_D = '#00B4D9';
+const CYAN_LINE = '#00B4D9';
+const CYAN = '#00B4D9';
+const HAIR = 'rgba(246,240,227,.16)';
+const HAIR_2 = 'rgba(246,240,227,.10)';
+const GRID = 'rgba(246,240,227,.07)';
+const SEL = 'rgba(0,180,217,.12)';
+/* One radius for every corner on the page — see --rtam-r in index.html. */
+const RR = 'var(--rtam-r)';
+
+window.RTAM_INK = { RR, PANEL, INK, INK_2, INK_3, INK_4, BRONZE_D, CYAN_D, CYAN_LINE, CYAN, HAIR, HAIR_2, GRID, SEL };
 
 function Metric({ label, value, unit, sub, size = 40 }) {
   return (
-    <Plate tone="ghost" pad={26} style={{ gap: 14, alignContent: 'start' }}>
-      <Eyebrow tone="bronze" size={10} track={0.22}>{label}</Eyebrow>
-      <StatReadout value={value} unit={unit} size={size} />
-      {sub && <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{sub}</div>}
+    <Plate tone="raised" pad={26} style={{ gap: 14, alignContent: 'start', borderRadius: RR }}>
+      <Eyebrow tone={BRONZE_D} size={10} track={0.22}>{label}</Eyebrow>
+      <StatReadout className="rtam-bonestat" value={value} unit={unit} size={size} tone="accent" />
+      {sub && <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{sub}</div>}
     </Plate>
   );
 }
 
-/* Sparkline of the last N days' distance. One hairline baseline, cyan bars,
-   bronze label on the peak. No axes — the numbers carry the detail.
-   Bars are selectable when the day has a route to show. */
+/* Sparkline of the last N days' distance, on bone. Bars are selectable when the
+   day has a route to show. */
 function DistanceBars({ days, activeKey, onSelect }) {
   const max = Math.max(...days.map(d => d.km));
   return (
-    <div style={{ display: 'grid', gap: 12 }}>
-      <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, height: 96, borderBottom: '1px solid rgba(246,240,227,.18)' }}>
+    <Plate tone="raised" pad={24} style={{ gap: 12, borderRadius: RR }}>
+      <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, height: 96, borderBottom: '1px solid ' + HAIR }}>
         {days.map((d, i) => {
           const selectable = !!(onSelect && d.key);
           const active = !!(d.key && d.key === activeKey);
           return (
             <div key={i} title={d.label + ' · ' + d.km + ' km'}
               onClick={selectable ? () => onSelect(d.key) : undefined}
-              style={{ flex: 1, height: Math.max(3, Math.round((d.km / max) * 96)) + 'px', cursor: selectable ? 'pointer' : 'default', background: active ? '#00B4D9' : i === days.length - 1 ? 'rgba(0,180,217,.5)' : 'rgba(246,240,227,.28)' }}></div>
+              style={{ flex: 1, height: Math.max(3, Math.round((d.km / max) * 96)) + 'px', cursor: selectable ? 'pointer' : 'default', borderRadius: '3px 3px 0 0', background: active ? CYAN_LINE : i === days.length - 1 ? 'rgba(0,180,217,.5)' : 'rgba(246,240,227,.28)' }}></div>
           );
         })}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.45)' }}>
-        <span>{days[0].label}</span><span style={{ color: '#A47D51' }}>peak {max.toLocaleString()} km</span><span>{days[days.length - 1].label}</span>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>
+        <span>{days[0].label}</span><span style={{ color: BRONZE_D }}>peak {max.toLocaleString()} km</span><span>{days[days.length - 1].label}</span>
       </div>
-    </div>
+    </Plate>
   );
 }
 
@@ -49,23 +67,29 @@ function routeLabel(from, to, fallback) {
   return from + ' → ' + to;
 }
 
-/* The daily log — one row per day, town to town. Rows with a plotted route are
-   selectable and drive the map above; rows still inside the location embargo
-   read "—" and stay inert. */
+/* Today is still inside the location embargo, so it has no route and no map.
+   Say that in the row rather than printing an em dash — a reader who taps and
+   gets nothing assumes the page is broken. */
+const SOON = 'Location & map available tomorrow';
+
+/* The full-width daily log row. Rows with a plotted route are selectable and
+   drive the map; rows still inside the embargo read the SOON line and stay inert. */
 function LogRow({ day, date, province, from, to, km, note, plotted, active, onSelect }) {
   const clickable = !!(plotted && onSelect);
   return (
     <div
       onClick={clickable ? onSelect : undefined}
       title={clickable ? 'Show this day on the map' : undefined}
-      style={{ display: 'grid', gridTemplateColumns: '90px 120px 1fr 110px', gap: 20, padding: '18px 14px', margin: '0 -14px', borderBottom: '1px solid rgba(246,240,227,.12)', alignItems: 'baseline', cursor: clickable ? 'pointer' : 'default', background: active ? 'rgba(0,180,217,.10)' : 'transparent', boxShadow: active ? 'inset 2px 0 0 #00B4D9' : 'none' }}>
-      <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: '.16em', textTransform: 'uppercase', color: '#00B4D9' }}>{day}</div>
-      <div style={{ fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{date}</div>
+      style={{ display: 'grid', gridTemplateColumns: '90px 120px 1fr 110px', gap: 20, padding: '18px 14px', margin: '0 -14px', borderBottom: '1px solid ' + HAIR_2, alignItems: 'baseline', cursor: clickable ? 'pointer' : 'default', background: active ? SEL : 'transparent', boxShadow: active ? 'inset 2px 0 0 ' + CYAN_LINE : 'none' }}>
+      <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: '.16em', textTransform: 'uppercase', color: CYAN_D }}>{day}</div>
+      <div style={{ fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase', color: INK_3 }}>{date}</div>
       <div style={{ display: 'grid', gap: 5 }}>
-        <div style={{ fontSize: 13, letterSpacing: '.14em', textTransform: 'uppercase', color: active ? '#F6F0E3' : 'rgba(246,240,227,.78)' }}>{routeLabel(from, to, province)}</div>
-        {note && <div style={{ fontSize: 13, lineHeight: 1.6, color: 'rgba(246,240,227,.55)' }}>{note}</div>}
+        {plotted
+          ? <div style={{ fontSize: 13, letterSpacing: '.14em', textTransform: 'uppercase', color: active ? INK : INK_2 }}>{routeLabel(from, to, province)}</div>
+          : <div style={{ fontSize: 12, letterSpacing: '.12em', textTransform: 'uppercase', color: INK_4 }}>{SOON}</div>}
+        {note && <div style={{ fontSize: 13, lineHeight: 1.6, color: INK_3 }}>{note}</div>}
       </div>
-      <div style={{ fontSize: 15, fontWeight: 600, fontVariantNumeric: 'tabular-nums', textAlign: 'right', color: '#F6F0E3' }}>{km} <span style={{ color: '#A47D51', fontSize: 11, letterSpacing: '.18em' }}>KM</span></div>
+      <div style={{ fontSize: 15, fontWeight: 600, fontVariantNumeric: 'tabular-nums', textAlign: 'right', color: INK }}>{km} <span style={{ color: BRONZE_D, fontSize: 11, letterSpacing: '.18em' }}>KM</span></div>
     </div>
   );
 }
@@ -134,33 +158,33 @@ function DayMap({ map }) {
   if (kmPerPx > 0) { for (const n of SCALE_STEPS) { if (n / kmPerPx <= W * 0.34) barKm = n; } if (!barKm) barKm = SCALE_STEPS[0]; }
   const barPct = barKm ? (barKm / kmPerPx / W) * 100 : 0;
   return (
-    <Plate tone="ghost" pad={26} style={{ gap: 18 }}>
+    <Plate tone="raised" pad={26} style={{ gap: 18, borderRadius: RR }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-        <Eyebrow tone="bronze" size={11} track={0.24}>Route · {map.label}</Eyebrow>
-        <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.45)' }}>{map.note || 'Town level · delayed 24h'}</span>
+        <Eyebrow tone={BRONZE_D} size={11} track={0.24}>Route · {map.label}</Eyebrow>
+        <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: INK_4 }}>{map.note || 'Town level · delayed 24h'}</span>
       </div>
-      <div style={{ position: 'relative', border: plotted ? '1px solid rgba(246,240,227,.18)' : '1px dashed rgba(246,240,227,.22)' }}>
+      <div style={{ position: 'relative', border: plotted ? '1px solid ' + HAIR : '1px dashed ' + HAIR, borderRadius: RR, overflow: 'hidden' }}>
         {/* aspect-ratio keeps the box at the viewBox's shape, so the equal-scale
             projection is not stretched by the column width. */}
         <svg viewBox={'0 0 ' + W + ' ' + H} preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: W + ' / ' + H }}>
-          <defs><pattern id="rtam-grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" fill="none" stroke="rgba(246,240,227,.07)" strokeWidth="1" /></pattern></defs>
+          <defs><pattern id="rtam-grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" fill="none" stroke={GRID} strokeWidth="1" /></pattern></defs>
           <rect width={W} height={H} fill="url(#rtam-grid)" />
-          <polyline points={line} fill="none" stroke="#00B4D9" strokeWidth="2.5" />
+          <polyline points={line} fill="none" stroke={CYAN_LINE} strokeWidth="2.5" />
           {stops.map((s, i) => (
             <g key={'m' + i}>
-              {s.kind === 'end' && <circle cx={s.x * W} cy={s.y * H} r={10} fill="none" stroke="rgba(246,240,227,.55)" strokeWidth="1.5" />}
-              <circle cx={s.x * W} cy={s.y * H} r={s.kind === 'charge' ? 4 : 6} fill={s.kind === 'charge' ? '#1C242C' : '#00B4D9'} stroke="#00B4D9" strokeWidth="2" />
+              {s.kind === 'end' && <circle cx={s.x * W} cy={s.y * H} r={10} fill="none" stroke="rgba(246,240,227,.5)" strokeWidth="1.5" />}
+              <circle cx={s.x * W} cy={s.y * H} r={s.kind === 'charge' ? 4 : 6} fill={s.kind === 'charge' ? PANEL : CYAN_LINE} stroke={CYAN_LINE} strokeWidth="2" />
             </g>
           ))}
           {/* Stroke-then-fill puts a ground-coloured halo behind the type so a
               label crossing the route stays readable. */}
           {labels.map((l, i) => (
-            <text key={'l' + i} x={l.tx} y={l.ty} textAnchor={l.anchor} fill="rgba(246,240,227,.82)" stroke="#1C242C" strokeWidth="4" strokeLinejoin="round" style={{ paintOrder: 'stroke', fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '1.4px' }}>{l.text}</text>
+            <text key={'l' + i} x={l.tx} y={l.ty} textAnchor={l.anchor} fill={INK_2} stroke={PANEL} strokeWidth="4" strokeLinejoin="round" style={{ paintOrder: 'stroke', fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '1.4px' }}>{l.text}</text>
           ))}
         </svg>
-        {!plotted && <span style={{ position: 'absolute', left: 12, bottom: 10, fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(246,240,227,.35)' }}>Awaiting the first closed day</span>}
+        {!plotted && <span style={{ position: 'absolute', left: 12, bottom: 10, fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: INK_4 }}>Awaiting the first closed day</span>}
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap', fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap', fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>
         {barPct > 0 && (
           <div style={{ flex: '0 0 auto', width: barPct + '%', display: 'flex', alignItems: 'center' }}>
             <span style={{ width: 1, height: 9, background: 'rgba(246,240,227,.45)' }}></span>
@@ -170,37 +194,49 @@ function DayMap({ map }) {
         )}
         {barPct > 0 && <span style={{ whiteSpace: 'nowrap' }}>{barKm.toLocaleString()} km</span>}
         <div style={{ flex: '1 1 auto' }}></div>
-        <span style={{ color: '#F6F0E3', whiteSpace: 'nowrap' }}>{map.km.toLocaleString()} km</span>
+        <span style={{ color: INK, whiteSpace: 'nowrap' }}>{map.km.toLocaleString()} km</span>
         <span style={{ whiteSpace: 'nowrap' }}>{(map.chargeStops ?? stops.filter(s => s.kind === 'charge').length).toLocaleString()} charge stops</span>
       </div>
     </Plate>
   );
 }
-/* The condensed day list that sits beside the map and drives it. Same rows as
-   LogRow but stacked two-line so the whole window fits the map's height — the
-   selection is useless if you have to scroll away from the map to use it. */
+
+/* The condensed day list that sits beside the map and drives it. Two lines per
+   row on desktop so the whole window fits the map's height.
+
+   On mobile the same rows become a horizontal strip of narrow day buttons —
+   day number set large because that is the only thing you scan by — and the
+   selected one widens to half the viewport to show the route. Everything that
+   changes shape lives in the rtam-dl-* classes so the media query owns it. */
 function DayList({ rows, activeKey, onSelect, onLatest, following }) {
   return (
-    <div className="rtam-daylist" style={{ border: '1px solid rgba(246,240,227,.18)', display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)', maxHeight: 466 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, padding: '16px 18px', borderBottom: '1px solid rgba(246,240,227,.18)' }}>
-        <Eyebrow tone="bronze" size={10} track={0.24}>Daily log</Eyebrow>
+    <div className="rtam-daylist" style={{ background: 'rgba(246,240,227,.06)', border: '1px solid ' + HAIR, display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)', maxHeight: 466 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, padding: '13px 18px', minHeight: 50, boxSizing: 'border-box', borderBottom: '1px solid ' + HAIR }}>
+        <Eyebrow tone={BRONZE_D} size={10} track={0.24}>Daily log</Eyebrow>
         {following
-          ? <span style={{ fontSize: 9, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Select a day</span>
-          : <button onClick={onLatest} style={{ padding: '5px 10px', cursor: 'pointer', borderRadius: 0, background: 'transparent', color: '#00B4D9', border: '1px solid rgba(0,180,217,.5)', fontFamily: 'inherit', fontSize: 9, letterSpacing: '.16em', textTransform: 'uppercase' }}>Latest</button>}
+          ? <span style={{ fontSize: 9, letterSpacing: '.18em', textTransform: 'uppercase', color: INK_4 }}>Select a day</span>
+          : <button onClick={onLatest} style={{ padding: '5px 10px', cursor: 'pointer', borderRadius: RR, background: 'transparent', color: CYAN_D, border: '1px solid rgba(0,180,217,.5)', fontFamily: 'inherit', fontSize: 9, letterSpacing: '.16em', textTransform: 'uppercase' }}>Latest</button>}
       </div>
       <div className="rtam-daylist-rows" style={{ overflowY: 'auto' }}>
         {rows.map((r, i) => {
           const clickable = !!(r.plotted && onSelect);
           const active = !!(r.key && r.key === activeKey);
+          const dayNo = String(r.day || '').replace(/^\s*day\s*/i, '');
           return (
-            <div key={r.key || i} className="rtam-daylist-row"
+            <div key={r.key || i} className={'rtam-daylist-row' + (active ? ' is-open' : '') + (clickable ? '' : ' is-inert')}
               onClick={clickable ? () => onSelect(r.key) : undefined}
               title={clickable ? 'Show this day on the map' : 'No route yet for this day'}
-              style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) auto', gap: '5px 12px', padding: '13px 18px', borderBottom: '1px solid rgba(246,240,227,.10)', cursor: clickable ? 'pointer' : 'default', opacity: clickable ? 1 : 0.55, background: active ? 'rgba(0,180,217,.10)' : 'transparent', boxShadow: active ? 'inset 2px 0 0 #00B4D9' : 'none' }}>
-              <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '.16em', textTransform: 'uppercase', color: '#00B4D9' }}>{r.day} · <span style={{ color: 'rgba(246,240,227,.45)' }}>{r.date}</span></div>
-              <div style={{ fontSize: 12, fontWeight: 600, fontVariantNumeric: 'tabular-nums', textAlign: 'right', color: '#F6F0E3' }}>{r.km} <span style={{ color: '#A47D51', fontSize: 9, letterSpacing: '.16em' }}>KM</span></div>
-              <div style={{ gridColumn: '1 / -1', fontSize: 11, lineHeight: 1.5, letterSpacing: '.1em', textTransform: 'uppercase', color: active ? 'rgba(246,240,227,.85)' : 'rgba(246,240,227,.55)' }}>{routeLabel(r.from, r.to, r.province)}</div>
-              {r.note && <div style={{ gridColumn: '1 / -1', fontSize: 11, lineHeight: 1.55, color: 'rgba(246,240,227,.45)' }}>{r.note}</div>}
+              style={{ display: 'grid', gridTemplateColumns: '52px minmax(0,1fr) auto', gap: '5px 14px', padding: '14px 18px', borderBottom: '1px solid ' + HAIR_2, cursor: clickable ? 'pointer' : 'default', background: active ? SEL : 'transparent', boxShadow: active ? 'inset 2px 0 0 ' + CYAN_LINE : 'none' }}>
+              <div className="rtam-dl-head" style={{ gridRow: '1 / -1', display: 'grid', gap: 1, alignContent: 'start' }}>
+                <span className="rtam-dl-daypre" style={{ fontSize: 9, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: INK_4 }}>Day</span>
+                <span className="rtam-dl-day" style={{ fontSize: 26, fontWeight: 600, lineHeight: 1, letterSpacing: '-.02em', fontVariantNumeric: 'tabular-nums', color: CYAN_D }}>{dayNo}</span>
+              </div>
+              <div className="rtam-dl-date" style={{ fontSize: 10, fontWeight: 600, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{r.date}</div>
+              <div className="rtam-dl-km" style={{ fontSize: 12, fontWeight: 600, fontVariantNumeric: 'tabular-nums', textAlign: 'right', color: INK }}>{r.km} <span style={{ color: BRONZE_D, fontSize: 9, letterSpacing: '.16em' }}>KM</span></div>
+              {r.plotted
+                ? <div className="rtam-dl-loc" style={{ gridColumn: '2 / -1', fontSize: 11, lineHeight: 1.5, letterSpacing: '.1em', textTransform: 'uppercase', color: active ? INK : INK_2 }}>{routeLabel(r.from, r.to, r.province)}</div>
+                : <div className="rtam-dl-soon" style={{ gridColumn: '2 / -1', fontSize: 10, lineHeight: 1.5, letterSpacing: '.1em', textTransform: 'uppercase', color: INK_4 }}>{SOON}</div>}
+              {r.note && <div className="rtam-dl-note" style={{ gridColumn: '2 / -1', fontSize: 11, lineHeight: 1.55, color: INK_3 }}>{r.note}</div>}
             </div>
           );
         })}
@@ -212,45 +248,19 @@ function DayList({ rows, activeKey, onSelect, onLatest, following }) {
 /* Two readouts in one Plate — same footprint as Metric, split by a hairline. */
 function SplitMetric({ label, a, b, sub }) {
   return (
-    <Plate tone="ghost" pad={26} style={{ gap: 14, alignContent: 'start' }}>
-      <Eyebrow tone="bronze" size={10} track={0.22}>{label}</Eyebrow>
+    <Plate tone="raised" pad={26} style={{ gap: 14, alignContent: 'start', borderRadius: RR }}>
+      <Eyebrow tone={BRONZE_D} size={10} track={0.22}>{label}</Eyebrow>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
         {[a, b].map((m, i) => (
-          <div key={i} style={{ display: 'grid', gap: 8, alignContent: 'start', paddingLeft: i ? 20 : 0, borderLeft: i ? '1px solid rgba(246,240,227,.18)' : 'none' }}>
-            <StatReadout value={m.value} unit={m.unit || ''} size={40} />
-            <div style={{ fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{m.label}</div>
+          <div key={i} style={{ display: 'grid', gap: 8, alignContent: 'start', paddingLeft: i ? 20 : 0, borderLeft: i ? '1px solid ' + HAIR : 'none' }}>
+            <StatReadout className="rtam-bonestat" value={m.value} unit={m.unit || ''} size={40} tone="accent" />
+            <div style={{ fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{m.label}</div>
           </div>
         ))}
       </div>
-      {sub && <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{sub}</div>}
+      {sub && <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{sub}</div>}
     </Plate>
   );
 }
 
-/* Ron's Instagram posts. Reads the shape the fetch-instagram job writes:
-   { id, permalink, thumb, caption, timestamp, type }. Renders as flat square
-   tiles — hairline borders, no rounding, caption on hover only, so the grid
-   reads as a contact sheet rather than a social widget. */
-function PostGrid({ posts, count = 6 }) {
-  const slots = Array.from({ length: count }, (_, i) => (posts || [])[i] || null);
-  return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(170px,1fr))', gap: 16 }}>
-      {slots.map((p, i) => (
-        <a key={p ? p.id : 'empty' + i} href={p ? p.permalink : undefined} target="_blank" rel="noreferrer"
-          style={{ position: 'relative', display: 'block', aspectRatio: '1 / 1', overflow: 'hidden', border: '1px solid rgba(246,240,227,.18)', background: 'rgba(246,240,227,.03)', cursor: p ? 'pointer' : 'default', textDecoration: 'none' }}>
-          {p && p.thumb
-            ? <img src={p.thumb} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'saturate(.92)' }} />
-            : <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.28)', textAlign: 'center', padding: 16 }}>Awaiting post</div>}
-          {p && (
-            <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', gap: 6, padding: 14, background: 'linear-gradient(to top, rgba(28,36,44,.94) 0%, rgba(28,36,44,.55) 45%, rgba(28,36,44,0) 100%)' }}>
-              <span style={{ fontSize: 9, letterSpacing: '.2em', textTransform: 'uppercase', color: '#00B4D9' }}>{p.dateLabel || ''}</span>
-              <span style={{ fontSize: 11, lineHeight: 1.5, color: 'rgba(246,240,227,.82)', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{p.caption || ''}</span>
-            </div>
-          )}
-        </a>
-      ))}
-    </div>
-  );
-}
-
-Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayList, DayMap, PostGrid });
+Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayList, DayMap });

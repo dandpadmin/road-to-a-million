@@ -1,11 +1,31 @@
 <!-- @dsCard group="Odometer" viewport="1280x860" name="Odometer dashboard" subtitle="Distance to a million, latest-day route, daily log and charge" -->
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RTAM — Odometer</title>
-<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="../../styles.css">
+<!-- These three are referenced as strings in JSX, so the bundler cannot find them
+     on its own — declared here and read back from window.__resources at runtime. -->
+<meta name="ext-resource-dependency" content="../../assets/hero-road.jpg" data-resource-id="heroPhoto" />
+<meta name="ext-resource-dependency" content="../../assets/badge-art.svg" data-resource-id="badgeArt" />
+<meta name="ext-resource-dependency" content="../../assets/dp-wordmark.svg" data-resource-id="dpWordmark" />
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script src="./_ds_bundle.js"></script>
-<style>body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}
+<script src="../../_ds_bundle.js"></script>
+<style>:root{--rtam-r:12px}
+body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}a{color:var(--rtam-cyan);text-decoration:none}a:hover{color:var(--rtam-bone)}button{font-family:inherit}
+/* Readouts inside a raised panel: cyan figure, bronze unit. */
+.rtam-bonestat>span:first-child{color:#00B4D9!important}.rtam-bonestat>span:last-child{color:#A47D51!important}
+/* Header photo: full-bleed behind the hero, bleeding under the sticky topbar.
+   The extra bottom padding is the strip of open photograph below the numbers. */
+.rtam-hero-band{position:relative;margin:-56px -40px 0;padding:56px 40px 188px;overflow:hidden;border-radius:0 0 var(--rtam-r) var(--rtam-r)}
+/* The log window clips its rows, so the radius has to be on the frame. */
+.rtam-daylist{border-radius:var(--rtam-r);overflow:hidden}
+@media (max-width:860px){.rtam-hero-band{margin:-36px -18px 0;padding:36px 18px 128px}.rtam-hero-band-in{gap:34px!important}
+/* The network split keeps its desktop shape — right-aligned, baselines level. */
+.rtam-charge{flex-wrap:nowrap!important;gap:16px!important}
+.rtam-charge-l>span:first-child{font-size:44px!important}
+.rtam-charge-l>span:last-child{font-size:12px!important;letter-spacing:.16em!important}
+.rtam-charge-r>span{font-size:10px!important;letter-spacing:.12em!important}
+}
 @media (max-width:860px){
 .rtam-topbar{flex-direction:column!important;align-items:flex-start!important;gap:5px!important;padding:11px 18px 12px!important}
 .rtam-topbar-gap{display:none!important}
@@ -15,27 +35,41 @@
 .rtam-mapgrid{grid-template-columns:minmax(0,1fr)!important;gap:22px!important}
 .rtam-nerdgrid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
 .rtam-daylist{max-height:none!important}
-.rtam-daylist-rows{display:flex!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-.rtam-daylist-row{flex:0 0 74%!important;scroll-snap-align:start;align-content:start;border-bottom:none!important;border-right:1px solid rgba(246,240,227,.10)}
+.rtam-daylist-rows{display:flex!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
 .rtam-daylist-rows::-webkit-scrollbar{height:3px}
 .rtam-daylist-rows::-webkit-scrollbar-thumb{background:rgba(246,240,227,.25)}
-}
-@media (max-width:560px){.rtam-daylist-row{flex:0 0 88%!important}}</style></head>
+/* Mobile daily log: a strip of narrow day buttons. The strip height is fixed so
+   opening a day widens it without shifting anything below — the collapsed cards
+   carry the slack, and the note is desktop-only. */
+.rtam-daylist-rows{height:176px!important;box-sizing:border-box}
+.rtam-daylist-row{flex:0 0 108px!important;display:flex!important;flex-direction:column!important;gap:7px!important;padding:14px 13px!important;scroll-snap-align:start;border-bottom:none!important;border-right:1px solid rgba(246,240,227,.11);transition:flex-basis .2s cubic-bezier(.2,0,0,1)}
+.rtam-daylist-row.is-open{flex:0 0 50%!important;min-width:210px}
+.rtam-dl-head{gap:2px!important}
+.rtam-dl-day{font-size:34px!important}
+.rtam-dl-daypre{font-size:10px!important}
+.rtam-dl-date{font-size:11px!important}
+.rtam-dl-km{text-align:left!important;font-size:16px!important;margin-top:auto}
+.rtam-dl-loc,.rtam-dl-note{display:none!important}
+.rtam-daylist-row.is-open .rtam-dl-day{font-size:24px!important}
+.rtam-daylist-row.is-open .rtam-dl-loc{display:block!important;font-size:12px!important}
+}</style></head>
 <body>
-<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#1C242C"/><text x="50" y="46" text-anchor="middle" fill="#00B4D9" font-family="monospace" font-size="15" font-weight="700" letter-spacing="1">1M</text><text x="50" y="62" text-anchor="middle" fill="#A47D51" font-family="monospace" font-size="7" letter-spacing="1.5">KM</text></svg></template>
+<template id="__bundler_thumbnail" data-bg-color="#1C242C"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#1C242C"/><text x="50" y="46" text-anchor="middle" fill="#00B4D9" font-family="monospace" font-size="15" font-weight="700" letter-spacing="1">1M</text><text x="50" y="62" text-anchor="middle" fill="#A47D51" font-family="monospace" font-size="7" letter-spacing="1.5">KM</text></svg></template>
 <div id="root"></div>
 <script src="data.js"></script>
 <script type="text/babel" src="Panels.jsx"></script>
 <script type="text/babel" src="Nerd.jsx"></script>
 <script type="text/babel">
-const { Badge, Wordmark, Eyebrow, Plate, StatReadout, ProgressRule, Chip, SpecColumns, DpLockup } = window.RoadToAMillionDesignSystem_6606d4;
+const { Badge, Wordmark, Eyebrow, Plate, StatReadout, ProgressRule, Chip } = window.RoadToAMillionDesignSystem_6606d4;
 const { DayMap, DayList, EfficiencyScatter, ChargeCurve, NerdStat, FirmwareLog } = window;
 /* Charging spend is real money and the call on publishing it is still open.
    Flip to true when it is decided — nothing else needs to change. */
 const SHOW_COST = false;
 const { useState, useEffect } = React;
 const FALLBACK = window.RTAM_DATA;
-const A = './assets/';
+const A = '../../assets/';
+/* Published bundles swap these for blob URLs; unbundled the relative path stands. */
+const asset = (id, file) => (window.__resources && window.__resources[id]) || (A + file);
 
 /* Where the live snapshot comes from. First hit wins: a file sitting next to
    this page when deployed, otherwise the copy the GitHub Action commits. The
@@ -43,10 +77,6 @@ const A = './assets/';
 const FEEDS = [
   './odometer.json',
   'https://raw.githubusercontent.com/dandpadmin/road-to-a-million/main/odometer.json',
-];
-const IG_FEEDS = [
-  './instagram.json',
-  'https://raw.githubusercontent.com/dandpadmin/road-to-a-million/main/instagram.json',
 ];
 
 async function firstJson(urls) {
@@ -63,12 +93,10 @@ function App() {
   /* Starts on the static figures in data.js so the page never renders empty,
      then swaps to the real snapshot the moment it arrives. */
   const [D, setD] = useState(FALLBACK);
-  const [posts, setPosts] = useState([]);
   useEffect(() => {
     let live = true;
     const tick = () => {
       firstJson(FEEDS).then((d) => { if (live && d) setD(d); });
-      firstJson(IG_FEEDS).then((d) => { if (live && d && d.posts) setPosts(d.posts); });
     };
     tick();
     const id = setInterval(tick, 15 * 60 * 1000);
@@ -93,7 +121,7 @@ function App() {
     <div style={{ minHeight: '100vh' }}>
       <div className="rtam-topbar" style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <Badge size={28} src={A + 'badge-art.svg'} showType={false} />
+          <Badge size={28} src={asset('badgeArt', 'badge-art.svg')} showType={false} />
           <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>Road To A Million</span>
         </div>
         <div className="rtam-topbar-gap" style={{ flex: 1 }}></div>
@@ -101,6 +129,14 @@ function App() {
       </div>
 
       <div className="rtam-page" style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>
+
+        {/* The hero sits on the photograph rather than beside it. Midnight is laid
+           over the top, heaviest where the type is and thinning toward the ground
+           so the car reads at the bottom edge. */}
+        <div className="rtam-hero-band">
+          <img src={asset('heroPhoto', 'hero-road.jpg')} alt="The car parked above a river valley" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 100%' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, #1C242C 0%, rgba(28,36,44,.95) 32%, rgba(28,36,44,.74) 54%, rgba(28,36,44,.26) 74%, rgba(28,36,44,.06) 90%, rgba(28,36,44,.03) 100%)' }}></div>
+          <div className="rtam-hero-band-in" style={{ position: 'relative', display: 'grid', gap: 48 }}>
 
         <div style={{ display: 'grid', gap: 26 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 32, flexWrap: 'wrap' }}>
@@ -126,14 +162,17 @@ function App() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap', padding: '0 0 24px', borderBottom: '1px solid rgba(246,240,227,.18)' }}>
-          <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
+        <div className="rtam-charge" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
+          <div className="rtam-charge-l" style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
             <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 56, lineHeight: 1, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.chargeLifetime.toLocaleString()}</span>
             <span style={{ fontSize: 15, fontWeight: 500, lineHeight: 1.3, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51', paddingBottom: 4 }}>Charge sessions<br />so far</span>
           </div>
-          <div style={{ display: 'grid', gap: 6, justifyItems: 'end', textAlign: 'right', paddingBottom: 4 }}>
-            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{D.chargeLifetimeSupercharger.toLocaleString()} Tesla Supercharger</span>
-            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{D.chargeLifetimeOther.toLocaleString()} other networks</span>
+          <div className="rtam-charge-r" style={{ display: 'grid', gap: 6, justifyItems: 'end', textAlign: 'right', paddingBottom: 4 }}>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.8)' }}>{D.chargeLifetimeSupercharger.toLocaleString()} Tesla Supercharger</span>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.8)' }}>{D.chargeLifetimeOther.toLocaleString()} other networks</span>
+          </div>
+        </div>
+
           </div>
         </div>
 
@@ -154,7 +193,7 @@ function App() {
               <Eyebrow tone="bronze" size={11} track={0.24}>Distance per day</Eyebrow>
               <div style={{ display: 'flex', gap: 8 }}>
                 {['8 days', '30 days'].map(r => (
-                  <button key={r} onClick={() => setRange(r)} style={{ padding: '8px 14px', cursor: 'pointer', borderRadius: 0, background: range === r ? '#00B4D9' : 'transparent', color: range === r ? '#1C242C' : 'rgba(246,240,227,.6)', border: '1px solid ' + (range === r ? '#00B4D9' : 'rgba(246,240,227,.22)'), fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>{r}</button>
+                  <button key={r} onClick={() => setRange(r)} style={{ padding: '8px 14px', cursor: 'pointer', borderRadius: 'var(--rtam-r)', background: range === r ? '#00B4D9' : 'transparent', color: range === r ? '#1C242C' : 'rgba(246,240,227,.6)', border: '1px solid ' + (range === r ? '#00B4D9' : 'rgba(246,240,227,.22)'), fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>{r}</button>
                 ))}
               </div>
             </div>
@@ -162,19 +201,10 @@ function App() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gap: 20 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-            <Eyebrow tone="bronze" size={11} track={0.24}>From the road</Eyebrow>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase' }}>@roadtoamillion →</a>
-          </div>
-          <PostGrid posts={posts} count={6} />
-        </div>
-
         {N && (
           <div style={{ display: 'grid', gap: 34, paddingTop: 40, borderTop: '1px solid rgba(246,240,227,.18)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
               <Eyebrow tone="cyan" size={12} track={0.24}>The numbers behind it</Eyebrow>
-              <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Derived from the same feed · no extra polling</span>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 20 }}>
@@ -194,37 +224,29 @@ function App() {
               <EfficiencyScatter data={N.efficiency} />
             </div>
 
-            <div className="rtam-nerdgrid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.6fr) minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
-              <div style={{ display: 'grid', gap: 18 }}>
+            <div className="rtam-nerdgrid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.6fr) minmax(0,1fr)', gap: 32, alignItems: 'stretch' }}>
+              <div style={{ display: 'grid', gridTemplateRows: 'auto minmax(0,1fr) auto', gap: 18 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 16, flexWrap: 'wrap' }}>
                   <Eyebrow tone="bronze" size={11} track={0.24}>Charge curve · kW</Eyebrow>
-                  <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>{N.chargeCurve.note}</span>
                 </div>
                 <ChargeCurve data={N.chargeCurve} />
+                <span style={{ minHeight: 28, fontSize: 10, lineHeight: 1.4, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>{N.chargeCurve.note}</span>
               </div>
-              <div style={{ display: 'grid', gap: 18 }}>
+              <div style={{ display: 'grid', gridTemplateRows: 'auto minmax(0,1fr) auto', gap: 18 }}>
                 <Eyebrow tone="bronze" size={11} track={0.24}>Firmware</Eyebrow>
                 <FirmwareLog versions={N.firmware} />
+                <span style={{ minHeight: 28, fontSize: 10, lineHeight: 1.4, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Logged when the car reports a new version</span>
               </div>
             </div>
           </div>
         )}
 
-        <Plate tone="ghost" pad={26} style={{ gap: 16 }}>
+        <Plate tone="ghost" pad={26} style={{ gap: 16, borderRadius: 'var(--rtam-r)' }}>
           <Eyebrow tone="bronze" size={10}>Agreement</Eyebrow>
           <p style={{ margin: 0, maxWidth: 720, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.62)' }}>The run ends at the earliest of: the odometer reaching 1,000,000 km; the battery failing past reasonable operation; or the vehicle being declared a total loss.</p>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Chip>Started 2 Sep 2026</Chip><Chip>2026 Model 3</Chip></div>
         </Plate>
 
-        <SpecColumns items={[
-          { label: 'Figures', body: 'Every number is mono with tabular figures. Counters must not jitter as they tick.' },
-          { label: 'One accent', body: 'Cyan marks the headline value and the latest day\u2019s bar. Nothing else on the page is cyan.' },
-          { label: 'Source', body: 'Tessie, held back 24 hours and rounded to town. Never a live position.' },
-        ]} />
-
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap', paddingTop: 36, borderTop: '1px solid rgba(246,240,227,.18)' }}>
-          <DpLockup badgeSize={76} badgeSrc={A + 'badge-art.svg'} wordmarkSrc={A + 'dp-wordmark.svg'} />
-        </div>
       </div>
     </div>
   );
