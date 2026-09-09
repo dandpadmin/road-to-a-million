@@ -1,10 +1,10 @@
 {
-  "odometer": 6872,
+  "odometer": 6918,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
-  "route": "Marsh Lake, Yukon",
-  "today": 52,
+  "route": "Whitehorse, Yukon",
+  "today": 54,
   "best": 1333,
   "avgPerDay": 738,
   "chargeSessions": 0,
@@ -17,31 +17,41 @@
     "key": "2026-09-08",
     "day": 7,
     "label": "Day 7 · Sep 8",
-    "km": 11,
+    "km": 34,
     "from": "Marsh Lake, Yukon",
-    "to": "Marsh Lake, Yukon",
-    "corridor": "Marsh Lake, Yukon",
+    "to": "Whitehorse, Yukon",
+    "corridor": "Whitehorse, Yukon",
     "chargeStops": 1,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.2445,
+        0.3719,
         0.08
       ],
       [
-        0.7555,
+        0.5,
+        0.29
+      ],
+      [
+        0.6281,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.2445,
+        "x": 0.3719,
         "y": 0.08,
         "town": "Marsh Lake, Yukon",
         "kind": "start"
+      },
+      {
+        "x": 0.6281,
+        "y": 0.92,
+        "town": "Whitehorse, Yukon",
+        "kind": "end"
       }
     ],
-    "kmPerPx": 0.022,
+    "kmPerPx": 0.0881,
     "plotted": true
   },
   "dayMaps": [
@@ -593,42 +603,58 @@
       "key": "2026-09-08",
       "day": 7,
       "label": "Day 7 · Sep 8",
-      "km": 11,
+      "km": 34,
       "from": "Marsh Lake, Yukon",
-      "to": "Marsh Lake, Yukon",
-      "corridor": "Marsh Lake, Yukon",
+      "to": "Whitehorse, Yukon",
+      "corridor": "Whitehorse, Yukon",
       "chargeStops": 1,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.2445,
+          0.3719,
           0.08
         ],
         [
-          0.7555,
+          0.5,
+          0.29
+        ],
+        [
+          0.6281,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.2445,
+          "x": 0.3719,
           "y": 0.08,
           "town": "Marsh Lake, Yukon",
           "kind": "start"
+        },
+        {
+          "x": 0.6281,
+          "y": 0.92,
+          "town": "Whitehorse, Yukon",
+          "kind": "end"
         }
       ],
-      "kmPerPx": 0.022,
+      "kmPerPx": 0.0881,
       "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T16:43:49.889Z",
+  "updatedAt": "2026-09-09T16:56:35.328Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 11.3,
+          "wh": 135,
+          "km": 23,
+          "prov": "Yukon"
+        },
         {
           "t": 8.7,
           "wh": 121,
@@ -1066,7 +1092,7 @@
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 403
+      "rangeEst": 404
     },
     "cost": {
       "total": 161.77,
@@ -1128,7 +1154,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 52
+      "km": 54
     }
   ],
   "log": [
@@ -1139,7 +1165,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "52",
+      "km": "54",
       "note": ""
     },
     {
@@ -1148,7 +1174,7 @@
       "date": "Sep 8",
       "province": "Yukon",
       "from": "Marsh Lake, Yukon",
-      "to": "Marsh Lake, Yukon",
+      "to": "Whitehorse, Yukon",
       "plotted": true,
       "km": "591",
       "note": ""
