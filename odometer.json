@@ -1,12 +1,12 @@
 {
-  "odometer": 6622,
+  "odometer": 6773,
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
   "route": "Yukon",
-  "today": 429,
+  "today": 590,
   "best": 1333,
-  "avgPerDay": 813,
+  "avgPerDay": 836,
   "chargeSessions": 3,
   "chargeSupercharger": 0,
   "chargeOther": 3,
@@ -637,7 +637,7 @@
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-09T01:30:55.637Z",
+  "updatedAt": "2026-09-09T01:54:57.114Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1053,13 +1053,13 @@
       ]
     },
     "autopilot": {
-      "km": 5484,
-      "pct": 84.9
+      "km": 5639,
+      "pct": 85.1
     },
     "energy": {
-      "used": 1002,
+      "used": 1028,
       "added": 1113,
-      "overhead": 10,
+      "overhead": 7.6,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -1069,7 +1069,7 @@
       "total": 161.77,
       "supercharger": 161.77,
       "other": 0,
-      "perKm": 0.025,
+      "perKm": 0.024,
       "sessions": 13,
       "currency": "CAD"
     },
@@ -1120,7 +1120,7 @@
     {
       "key": "2026-09-08",
       "label": "D 7",
-      "km": 429
+      "km": 590
     }
   ],
   "log": [
@@ -1131,7 +1131,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "429",
+      "km": "590",
       "note": ""
     },
     {
