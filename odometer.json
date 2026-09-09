@@ -1,13 +1,13 @@
 {
-  "odometer": 7223,
+  "odometer": 7257,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
   "route": "Teslin, Yukon",
-  "today": 165,
+  "today": 263,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 752,
+  "avgPerDay": 764,
   "chargeSessions": 1,
   "chargeSupercharger": 0,
   "chargeOther": 1,
@@ -651,7 +651,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T20:32:19.463Z",
+  "updatedAt": "2026-09-09T20:52:28.088Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1097,23 +1097,23 @@
       ]
     },
     "autopilot": {
-      "km": 5780,
-      "pct": 85.1
+      "km": 5874,
+      "pct": 85.3
     },
     "energy": {
-      "used": 1060,
+      "used": 1078,
       "added": 1198,
-      "overhead": 11.5,
-      "whPerKm": 156,
+      "overhead": 10,
+      "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 402
+      "rangeEst": 401
     },
     "cost": {
       "total": 161.77,
       "supercharger": 161.77,
       "other": 0,
-      "perKm": 0.024,
+      "perKm": 0.023,
       "sessions": 13,
       "currency": "CAD"
     },
@@ -1169,7 +1169,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 165
+      "km": 263
     }
   ],
   "log": [
@@ -1180,7 +1180,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "165",
+      "km": "263",
       "note": ""
     },
     {
