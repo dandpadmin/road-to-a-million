@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 7,
   "province": "Yukon",
-  "route": "Carmacks, Yukon",
+  "route": "Marsh Lake, Yukon",
   "today": 591,
   "best": 1333,
   "avgPerDay": 836,
@@ -17,95 +17,105 @@
     "key": "2026-09-07",
     "day": 6,
     "label": "Day 6 · Sep 7",
-    "km": 449,
+    "km": 617,
     "from": "Dawson, Yukon",
-    "to": "Carmacks, Yukon",
-    "corridor": "Carmacks, Yukon",
+    "to": "Marsh Lake, Yukon",
+    "corridor": "Marsh Lake, Yukon",
     "chargeStops": 3,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4191,
-        0.14
+        0.4242,
+        0.1182
       ],
       [
-        0.4228,
-        0.14
+        0.4267,
+        0.1182
       ],
       [
-        0.4191,
-        0.14
+        0.4242,
+        0.1182
       ],
       [
-        0.3739,
+        0.3949,
         0.08
       ],
       [
-        0.3438,
+        0.3753,
         0.08
       ],
       [
-        0.3513,
+        0.3802,
         0.08
       ],
       [
-        0.404,
-        0.12
+        0.4144,
+        0.1055
       ],
       [
-        0.4078,
-        0.12
+        0.4169,
+        0.1055
       ],
       [
-        0.4116,
-        0.12
+        0.4193,
+        0.1055
       ],
       [
-        0.4191,
-        0.14
+        0.4242,
+        0.1182
       ],
       [
-        0.4266,
-        0.14
+        0.4291,
+        0.1182
       ],
       [
-        0.6073,
-        0.38
+        0.5464,
+        0.2709
       ],
       [
-        0.6261,
-        0.4
+        0.5587,
+        0.2836
       ],
       [
-        0.6374,
-        0.46
+        0.566,
+        0.3218
       ],
       [
-        0.6562,
+        0.5782,
+        0.6145
+      ],
+      [
+        0.6247,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.4191,
-        "y": 0.14,
+        "x": 0.4242,
+        "y": 0.1182,
         "town": "Dawson, Yukon",
         "kind": "start"
       },
       {
-        "x": 0.6562,
+        "x": 0.6247,
         "y": 0.92,
-        "town": "Carmacks, Yukon",
+        "town": "Marsh Lake, Yukon",
         "kind": "end"
       },
       {
-        "x": 0.6261,
-        "y": 0.4,
+        "x": 0.5782,
+        "y": 0.6145,
+        "town": "Carmacks, Yukon",
+        "kind": "charge"
+      },
+      {
+        "x": 0.5587,
+        "y": 0.2836,
         "town": "Mayo, Yukon",
         "kind": "charge"
       }
     ],
-    "kmPerPx": 0.925,
+    "kmPerPx": 1.4536,
     "plotted": true
   },
   "dayMaps": [
@@ -552,106 +562,122 @@
       "key": "2026-09-07",
       "day": 6,
       "label": "Day 6 · Sep 7",
-      "km": 449,
+      "km": 617,
       "from": "Dawson, Yukon",
-      "to": "Carmacks, Yukon",
-      "corridor": "Carmacks, Yukon",
+      "to": "Marsh Lake, Yukon",
+      "corridor": "Marsh Lake, Yukon",
       "chargeStops": 3,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4191,
-          0.14
+          0.4242,
+          0.1182
         ],
         [
-          0.4228,
-          0.14
+          0.4267,
+          0.1182
         ],
         [
-          0.4191,
-          0.14
+          0.4242,
+          0.1182
         ],
         [
-          0.3739,
+          0.3949,
           0.08
         ],
         [
-          0.3438,
+          0.3753,
           0.08
         ],
         [
-          0.3513,
+          0.3802,
           0.08
         ],
         [
-          0.404,
-          0.12
+          0.4144,
+          0.1055
         ],
         [
-          0.4078,
-          0.12
+          0.4169,
+          0.1055
         ],
         [
-          0.4116,
-          0.12
+          0.4193,
+          0.1055
         ],
         [
-          0.4191,
-          0.14
+          0.4242,
+          0.1182
         ],
         [
-          0.4266,
-          0.14
+          0.4291,
+          0.1182
         ],
         [
-          0.6073,
-          0.38
+          0.5464,
+          0.2709
         ],
         [
-          0.6261,
-          0.4
+          0.5587,
+          0.2836
         ],
         [
-          0.6374,
-          0.46
+          0.566,
+          0.3218
         ],
         [
-          0.6562,
+          0.5782,
+          0.6145
+        ],
+        [
+          0.6247,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.4191,
-          "y": 0.14,
+          "x": 0.4242,
+          "y": 0.1182,
           "town": "Dawson, Yukon",
           "kind": "start"
         },
         {
-          "x": 0.6562,
+          "x": 0.6247,
           "y": 0.92,
-          "town": "Carmacks, Yukon",
+          "town": "Marsh Lake, Yukon",
           "kind": "end"
         },
         {
-          "x": 0.6261,
-          "y": 0.4,
+          "x": 0.5782,
+          "y": 0.6145,
+          "town": "Carmacks, Yukon",
+          "kind": "charge"
+        },
+        {
+          "x": 0.5587,
+          "y": 0.2836,
           "town": "Mayo, Yukon",
           "kind": "charge"
         }
       ],
-      "kmPerPx": 0.925,
+      "kmPerPx": 1.4536,
       "plotted": true
     }
   ],
   "asOf": "2026-09-08",
-  "updatedAt": "2026-09-09T04:14:05.490Z",
+  "updatedAt": "2026-09-09T04:32:16.401Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 14.6,
+          "wh": 155,
+          "km": 168,
+          "prov": "Yukon"
+        },
         {
           "t": 18,
           "wh": 173,
@@ -1055,7 +1081,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 149,
+      "median": 151,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1154,7 +1180,7 @@
       "date": "Sep 7",
       "province": "Yukon",
       "from": "Dawson, Yukon",
-      "to": "Carmacks, Yukon",
+      "to": "Marsh Lake, Yukon",
       "plotted": true,
       "km": "618",
       "note": ""
