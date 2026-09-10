@@ -1,13 +1,13 @@
 {
-  "odometer": 8076,
+  "odometer": 8102,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
   "route": "Buick, British Columbia",
-  "today": 417,
+  "today": 513,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 765,
+  "avgPerDay": 776,
   "chargeSessions": 3,
   "chargeSupercharger": 3,
   "chargeOther": 0,
@@ -1094,7 +1094,7 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T21:56:33.010Z",
+  "updatedAt": "2026-09-10T22:15:01.948Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1600,17 +1600,17 @@
       ]
     },
     "autopilot": {
-      "km": 6585,
-      "pct": 85.9
+      "km": 6681,
+      "pct": 86.1
     },
     "energy": {
-      "used": 1203,
+      "used": 1220,
       "added": 1329,
-      "overhead": 9.5,
+      "overhead": 8.2,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 400
+      "rangeEst": 399
     },
     "cost": {
       "total": 179.81,
@@ -1677,7 +1677,7 @@
     {
       "key": "2026-09-10",
       "label": "D 9",
-      "km": 417
+      "km": 513
     }
   ],
   "log": [
@@ -1688,7 +1688,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "417",
+      "km": "513",
       "chargeMinutes": 30,
       "note": ""
     },
