@@ -1,19 +1,19 @@
 {
-  "odometer": 7586,
+  "odometer": 7588,
   "goal": 1000000,
-  "day": 8,
+  "day": 9,
   "province": "British Columbia",
   "route": "Fort Nelson, British Columbia",
-  "today": 620,
+  "today": 621,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 809,
-  "chargeSessions": 2,
+  "chargeSessions": 3,
   "chargeSupercharger": 0,
-  "chargeOther": 2,
-  "chargeLifetime": 46,
+  "chargeOther": 3,
+  "chargeLifetime": 47,
   "chargeLifetimeSupercharger": 13,
-  "chargeLifetimeOther": 33,
+  "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-08",
     "day": 7,
@@ -67,25 +67,57 @@
         "x": 0.08,
         "y": 0.1823,
         "town": "Marsh Lake, Yukon",
-        "kind": "start"
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 182,
+            "socStart": 69,
+            "socEnd": 100
+          }
+        ]
       },
       {
         "x": 0.92,
         "y": 0.8177,
         "town": "Fort Nelson, British Columbia",
-        "kind": "end"
-      },
-      {
-        "x": 0.6839,
-        "y": 0.5548,
-        "town": "Watson Lake, Yukon",
-        "kind": "charge"
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 62,
+            "socStart": 35,
+            "socEnd": 98
+          }
+        ]
       },
       {
         "x": 0.2662,
         "y": 0.3576,
         "town": "Teslin, Yukon",
-        "kind": "charge"
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 42,
+            "socStart": 63,
+            "socEnd": 87
+          }
+        ]
+      },
+      {
+        "x": 0.6839,
+        "y": 0.5548,
+        "town": "Watson Lake, Yukon",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 71,
+            "socStart": 9,
+            "socEnd": 92
+          }
+        ]
       }
     ],
     "kmPerPx": 0.8443,
@@ -145,43 +177,85 @@
           "x": 0.92,
           "y": 0.6658,
           "town": "Winkler, Manitoba",
-          "kind": "start"
+          "kind": "start",
+          "sessions": []
         },
         {
           "x": 0.08,
           "y": 0.3342,
           "town": "Calgary, Alberta",
-          "kind": "end"
-        },
-        {
-          "x": 0.2574,
-          "y": 0.5098,
-          "town": "Medicine Hat, Alberta",
-          "kind": "charge"
-        },
-        {
-          "x": 0.4061,
-          "y": 0.4512,
-          "town": "Swift Current, Saskatchewan",
-          "kind": "charge"
-        },
-        {
-          "x": 0.5757,
-          "y": 0.422,
-          "town": "Regina, Saskatchewan",
-          "kind": "charge"
-        },
-        {
-          "x": 0.6957,
-          "y": 0.4415,
-          "town": "Whitewood, Saskatchewan",
-          "kind": "charge"
+          "kind": "end",
+          "sessions": []
         },
         {
           "x": 0.8157,
           "y": 0.539,
           "town": "Brandon, Manitoba",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 22,
+              "socStart": 36,
+              "socEnd": 89
+            }
+          ]
+        },
+        {
+          "x": 0.6957,
+          "y": 0.4415,
+          "town": "Whitewood, Saskatchewan",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 5,
+              "socStart": 38,
+              "socEnd": 55
+            }
+          ]
+        },
+        {
+          "x": 0.5757,
+          "y": 0.422,
+          "town": "Regina, Saskatchewan",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 54,
+              "socStart": 15,
+              "socEnd": 100
+            }
+          ]
+        },
+        {
+          "x": 0.4061,
+          "y": 0.4512,
+          "town": "Swift Current, Saskatchewan",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 16,
+              "socStart": 34,
+              "socEnd": 80
+            }
+          ]
+        },
+        {
+          "x": 0.2574,
+          "y": 0.5098,
+          "town": "Medicine Hat, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 30,
+              "socStart": 17,
+              "socEnd": 90
+            }
+          ]
         }
       ],
       "kmPerPx": 1.8974,
@@ -260,13 +334,35 @@
           "x": 0.2533,
           "y": 0.92,
           "town": "Calgary, Alberta",
-          "kind": "start"
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 35,
+              "socStart": 12,
+              "socEnd": 94
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 6,
+              "socStart": 59,
+              "socEnd": 77
+            }
+          ]
         },
         {
           "x": 0.4909,
           "y": 0.71,
           "town": "Strathmore, Alberta",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 18,
+              "socStart": 25,
+              "socEnd": 79
+            }
+          ]
         }
       ],
       "kmPerPx": 0.2643,
@@ -321,43 +417,92 @@
           "x": 0.6372,
           "y": 0.92,
           "town": "Calgary, Alberta",
-          "kind": "start"
+          "kind": "start",
+          "sessions": []
         },
         {
           "x": 0.3544,
           "y": 0.08,
           "town": "British Columbia",
-          "kind": "end"
-        },
-        {
-          "x": 0.4297,
-          "y": 0.2576,
-          "town": "Dawson Creek, British Columbia",
-          "kind": "charge"
-        },
-        {
-          "x": 0.4782,
-          "y": 0.3327,
-          "town": "Grande Prairie, Alberta",
-          "kind": "charge"
-        },
-        {
-          "x": 0.5285,
-          "y": 0.3532,
-          "town": "Valleyview, Alberta",
-          "kind": "charge"
-        },
-        {
-          "x": 0.5837,
-          "y": 0.4761,
-          "town": "Whitecourt, Alberta",
-          "kind": "charge"
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 61,
+              "socStart": 27,
+              "socEnd": 94
+            }
+          ]
         },
         {
           "x": 0.6456,
           "y": 0.7424,
           "town": "Red Deer County, Alberta",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 25,
+              "socStart": 19,
+              "socEnd": 87
+            }
+          ]
+        },
+        {
+          "x": 0.5837,
+          "y": 0.4761,
+          "town": "Whitecourt, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 44,
+              "socStart": 9,
+              "socEnd": 98
+            }
+          ]
+        },
+        {
+          "x": 0.5285,
+          "y": 0.3532,
+          "town": "Valleyview, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 12,
+              "socStart": 43,
+              "socEnd": 81
+            }
+          ]
+        },
+        {
+          "x": 0.4782,
+          "y": 0.3327,
+          "town": "Grande Prairie, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 17,
+              "socStart": 49,
+              "socEnd": 90
+            }
+          ]
+        },
+        {
+          "x": 0.4297,
+          "y": 0.2576,
+          "town": "Dawson Creek, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 12,
+              "socStart": 60,
+              "socEnd": 85
+            }
+          ]
         }
       ],
       "kmPerPx": 2.7089,
@@ -432,31 +577,75 @@
           "x": 0.811,
           "y": 0.92,
           "town": "British Columbia",
-          "kind": "start"
+          "kind": "start",
+          "sessions": []
         },
         {
           "x": 0.189,
           "y": 0.08,
           "town": "Whitehorse, Yukon",
-          "kind": "end"
+          "kind": "end",
+          "sessions": []
         },
         {
-          "x": 0.2757,
-          "y": 0.126,
-          "town": "Teslin, Yukon",
-          "kind": "charge"
+          "x": 0.8011,
+          "y": 0.5173,
+          "town": "Fort Nelson, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 21,
+              "socStart": 23,
+              "socEnd": 82
+            },
+            {
+              "network": "DC fast",
+              "minutes": 31,
+              "socStart": 33,
+              "socEnd": 47
+            },
+            {
+              "network": "DC fast",
+              "minutes": 54,
+              "socStart": 22,
+              "socEnd": 85
+            }
+          ]
         },
         {
           "x": 0.5037,
           "y": 0.2296,
           "town": "Watson Lake, Yukon",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 54,
+              "socStart": 25,
+              "socEnd": 90
+            }
+          ]
         },
         {
-          "x": 0.6326,
-          "y": 0.3677,
-          "town": "Fort Nelson, British Columbia",
-          "kind": "charge"
+          "x": 0.3055,
+          "y": 0.2066,
+          "town": "Teslin, Yukon",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 29,
+              "socStart": 25,
+              "socEnd": 47
+            },
+            {
+              "network": "DC fast",
+              "minutes": 20,
+              "socStart": 32,
+              "socEnd": 43
+            }
+          ]
         }
       ],
       "kmPerPx": 1.6077,
@@ -507,25 +696,57 @@
           "x": 0.6066,
           "y": 0.92,
           "town": "Whitehorse, Yukon",
-          "kind": "start"
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 72,
+              "socStart": 11,
+              "socEnd": 92
+            }
+          ]
         },
         {
           "x": 0.3934,
           "y": 0.08,
           "town": "Dawson, Yukon",
-          "kind": "end"
-        },
-        {
-          "x": 0.5266,
-          "y": 0.243,
-          "town": "Mayo, Yukon",
-          "kind": "charge"
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 69,
+              "socStart": 20,
+              "socEnd": 96
+            }
+          ]
         },
         {
           "x": 0.546,
           "y": 0.569,
           "town": "Carmacks, Yukon",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 33,
+              "socStart": 47,
+              "socEnd": 86
+            }
+          ]
+        },
+        {
+          "x": 0.5266,
+          "y": 0.243,
+          "town": "Mayo, Yukon",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 26,
+              "socStart": 39,
+              "socEnd": 69
+            }
+          ]
         }
       ],
       "kmPerPx": 1.4756,
@@ -612,25 +833,57 @@
           "x": 0.4242,
           "y": 0.1182,
           "town": "Dawson, Yukon",
-          "kind": "start"
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 29,
+              "socStart": 51,
+              "socEnd": 85
+            }
+          ]
         },
         {
           "x": 0.6247,
           "y": 0.92,
           "town": "Marsh Lake, Yukon",
-          "kind": "end"
-        },
-        {
-          "x": 0.5782,
-          "y": 0.6145,
-          "town": "Carmacks, Yukon",
-          "kind": "charge"
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 295,
+              "socStart": 14,
+              "socEnd": 70
+            }
+          ]
         },
         {
           "x": 0.5587,
           "y": 0.2836,
           "town": "Mayo, Yukon",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 34,
+              "socStart": 33,
+              "socEnd": 71
+            }
+          ]
+        },
+        {
+          "x": 0.5782,
+          "y": 0.6145,
+          "town": "Carmacks, Yukon",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 32,
+              "socStart": 20,
+              "socEnd": 57
+            }
+          ]
         }
       ],
       "kmPerPx": 1.4536,
@@ -689,25 +942,57 @@
           "x": 0.08,
           "y": 0.1823,
           "town": "Marsh Lake, Yukon",
-          "kind": "start"
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 182,
+              "socStart": 69,
+              "socEnd": 100
+            }
+          ]
         },
         {
           "x": 0.92,
           "y": 0.8177,
           "town": "Fort Nelson, British Columbia",
-          "kind": "end"
-        },
-        {
-          "x": 0.6839,
-          "y": 0.5548,
-          "town": "Watson Lake, Yukon",
-          "kind": "charge"
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 62,
+              "socStart": 35,
+              "socEnd": 98
+            }
+          ]
         },
         {
           "x": 0.2662,
           "y": 0.3576,
           "town": "Teslin, Yukon",
-          "kind": "charge"
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 42,
+              "socStart": 63,
+              "socEnd": 87
+            }
+          ]
+        },
+        {
+          "x": 0.6839,
+          "y": 0.5548,
+          "town": "Watson Lake, Yukon",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 71,
+              "socStart": 9,
+              "socEnd": 92
+            }
+          ]
         }
       ],
       "kmPerPx": 0.8443,
@@ -715,7 +1000,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T02:32:11.777Z",
+  "updatedAt": "2026-09-10T02:52:44.777Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1183,13 +1468,13 @@
       "pct": 85.5
     },
     "energy": {
-      "used": 1133,
-      "added": 1240,
-      "overhead": 8.6,
+      "used": 1134,
+      "added": 1282,
+      "overhead": 11.6,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 401
+      "rangeEst": 402
     },
     "cost": {
       "total": 161.77,
@@ -1201,7 +1486,7 @@
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 46,
+      "sessions": 47,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1251,7 +1536,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 620
+      "km": 621
     }
   ],
   "log": [
@@ -1262,7 +1547,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "620",
+      "km": "621",
       "note": ""
     },
     {
