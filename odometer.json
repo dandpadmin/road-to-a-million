@@ -1,5 +1,5 @@
 {
-  "odometer": 7518,
+  "odometer": 7551,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
@@ -687,7 +687,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T00:18:54.511Z",
+  "updatedAt": "2026-09-10T00:46:37.585Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
