@@ -1,5 +1,5 @@
 {
-  "odometer": 7965,
+  "odometer": 7993,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
@@ -18,7 +18,7 @@
     "key": "2026-09-09",
     "day": 8,
     "label": "Day 8 · Sep 9",
-    "km": 263,
+    "km": 301,
     "from": "Fort Nelson, British Columbia",
     "to": "British Columbia",
     "corridor": "British Columbia",
@@ -27,49 +27,53 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.2795,
+        0.3176,
         0.08
       ],
       [
-        0.3184,
-        0.32
+        0.3498,
+        0.2776
       ],
       [
-        0.3573,
-        0.47
+        0.382,
+        0.4012
       ],
       [
-        0.3509,
-        0.47
+        0.3766,
+        0.4012
       ],
       [
-        0.5324,
-        0.56
+        0.5268,
+        0.4753
       ],
       [
-        0.5843,
-        0.56
+        0.5697,
+        0.4753
       ],
       [
-        0.6556,
-        0.41
+        0.6287,
+        0.3518
       ],
       [
-        0.6621,
-        0.41
+        0.6341,
+        0.3518
       ],
       [
-        0.7205,
-        0.47
+        0.6824,
+        0.4012
       ],
       [
-        0.7205,
+        0.6824,
+        0.7718
+      ],
+      [
+        0.6555,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.2795,
+        "x": 0.3176,
         "y": 0.08,
         "town": "Fort Nelson, British Columbia",
         "kind": "start",
@@ -83,14 +87,14 @@
         ]
       },
       {
-        "x": 0.7205,
+        "x": 0.6555,
         "y": 0.92,
         "town": "British Columbia",
         "kind": "end",
         "sessions": []
       }
     ],
-    "kmPerPx": 0.6167,
+    "kmPerPx": 0.7488,
     "plotted": true
   },
   "dayMaps": [
@@ -979,7 +983,7 @@
       "key": "2026-09-09",
       "day": 8,
       "label": "Day 8 · Sep 9",
-      "km": 263,
+      "km": 301,
       "from": "Fort Nelson, British Columbia",
       "to": "British Columbia",
       "corridor": "British Columbia",
@@ -988,49 +992,53 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.2795,
+          0.3176,
           0.08
         ],
         [
-          0.3184,
-          0.32
+          0.3498,
+          0.2776
         ],
         [
-          0.3573,
-          0.47
+          0.382,
+          0.4012
         ],
         [
-          0.3509,
-          0.47
+          0.3766,
+          0.4012
         ],
         [
-          0.5324,
-          0.56
+          0.5268,
+          0.4753
         ],
         [
-          0.5843,
-          0.56
+          0.5697,
+          0.4753
         ],
         [
-          0.6556,
-          0.41
+          0.6287,
+          0.3518
         ],
         [
-          0.6621,
-          0.41
+          0.6341,
+          0.3518
         ],
         [
-          0.7205,
-          0.47
+          0.6824,
+          0.4012
         ],
         [
-          0.7205,
+          0.6824,
+          0.7718
+        ],
+        [
+          0.6555,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.2795,
+          "x": 0.3176,
           "y": 0.08,
           "town": "Fort Nelson, British Columbia",
           "kind": "start",
@@ -1044,25 +1052,31 @@
           ]
         },
         {
-          "x": 0.7205,
+          "x": 0.6555,
           "y": 0.92,
           "town": "British Columbia",
           "kind": "end",
           "sessions": []
         }
       ],
-      "kmPerPx": 0.6167,
+      "kmPerPx": 0.7488,
       "plotted": true
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T20:44:25.823Z",
+  "updatedAt": "2026-09-10T20:56:52.681Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.5,
+          "wh": 210,
+          "km": 38,
+          "prov": "British Columbia"
+        },
         {
           "t": 13.6,
           "wh": 186,
@@ -1538,7 +1552,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 149,
+      "median": 151,
       "best": 88,
       "worst": 491,
       "provinces": [
