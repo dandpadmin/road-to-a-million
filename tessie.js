@@ -342,6 +342,22 @@ function projectDay(drives, charges, targetDay) {
   return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)) };
 }
 
+/* Minutes plugged in across one day's sessions. Duration is not location data,
+   so it publishes on whichever clock the caller hands it — the log passes the
+   distance cutoff, the map passes the location one so its footer agrees with
+   the pins drawn above it. */
+function chargeMinutes(charges, cutoff, targetDay) {
+  if (!targetDay) return 0;
+  let total = 0;
+  for (const c of charges || []) {
+    const d = toDate(c.started_at);
+    if (!d || d > cutoff || dayKey(c.started_at) !== targetDay) continue;
+    const mins = session(c).minutes;
+    if (mins) total += mins;
+  }
+  return total;
+}
+
 /* What one charge session reports to a map popup: who the charger belonged to,
    how long the car was plugged in, and what the pack did while it sat there.
    Duration comes off the timestamps rather than any duration field, which
@@ -588,6 +604,7 @@ export function shape({ state, drives, charges, health, history }) {
       /* Counted from the charge records, not the plotted markers — a session
          without coordinates still counts but never gets a pin. */
       chargeStops: chargeCounts(charges, locCutoff, d.date).day,
+      chargeMinutes: chargeMinutes(charges, locCutoff, d.date),
       note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
       path: g.path,
       stops: g.stops,
@@ -629,6 +646,7 @@ export function shape({ state, drives, charges, health, history }) {
       to: '\u2014',
       km: 0,
       chargeStops: 0,
+      chargeMinutes: 0,
       note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
       path: [],
       stops: [],
@@ -660,6 +678,7 @@ export function shape({ state, drives, charges, health, history }) {
         /* Whether this row has a route to show when clicked. */
         plotted: plottedKeys.has(d.date) || undefined,
         km: km(d.km).toLocaleString('en-CA'),
+        chargeMinutes: chargeMinutes(charges, cutoff, d.date),
         note: '', // written by hand — Tessie has no field for what broke
       };
     }),
