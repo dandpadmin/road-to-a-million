@@ -1,13 +1,13 @@
 {
-  "odometer": 7551,
+  "odometer": 7585,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
   "route": "Watson Lake, Yukon",
-  "today": 391,
+  "today": 618,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 780,
+  "avgPerDay": 809,
   "chargeSessions": 2,
   "chargeSupercharger": 0,
   "chargeOther": 2,
@@ -687,7 +687,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T00:46:37.585Z",
+  "updatedAt": "2026-09-10T01:13:09.432Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1145,23 +1145,23 @@
       ]
     },
     "autopilot": {
-      "km": 5996,
+      "km": 6193,
       "pct": 85.5
     },
     "energy": {
-      "used": 1102,
+      "used": 1133,
       "added": 1240,
-      "overhead": 11.1,
-      "whPerKm": 157,
+      "overhead": 8.6,
+      "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 399
+      "rangeEst": 401
     },
     "cost": {
       "total": 161.77,
       "supercharger": 161.77,
       "other": 0,
-      "perKm": 0.023,
+      "perKm": 0.022,
       "sessions": 13,
       "currency": "CAD"
     },
@@ -1217,7 +1217,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 391
+      "km": 618
     }
   ],
   "log": [
@@ -1228,7 +1228,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "391",
+      "km": "618",
       "note": ""
     },
     {
