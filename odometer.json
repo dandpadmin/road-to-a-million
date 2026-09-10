@@ -1,5 +1,5 @@
 {
-  "odometer": 8208,
+  "odometer": 8229,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
@@ -1094,7 +1094,7 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T23:26:21.452Z",
+  "updatedAt": "2026-09-10T23:40:32.750Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
