@@ -1,5 +1,5 @@
 {
-  "odometer": 7480,
+  "odometer": 7518,
   "goal": 1000000,
   "day": 8,
   "province": "Yukon",
@@ -18,7 +18,7 @@
     "key": "2026-09-08",
     "day": 7,
     "label": "Day 7 · Sep 8",
-    "km": 428,
+    "km": 429,
     "from": "Marsh Lake, Yukon",
     "to": "Watson Lake, Yukon",
     "corridor": "Watson Lake, Yukon",
@@ -626,7 +626,7 @@
       "key": "2026-09-08",
       "day": 7,
       "label": "Day 7 · Sep 8",
-      "km": 428,
+      "km": 429,
       "from": "Marsh Lake, Yukon",
       "to": "Watson Lake, Yukon",
       "corridor": "Watson Lake, Yukon",
@@ -687,7 +687,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-09T23:54:25.702Z",
+  "updatedAt": "2026-09-10T00:18:54.511Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
