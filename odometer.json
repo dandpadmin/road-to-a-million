@@ -1,9 +1,9 @@
 {
-  "odometer": 8054,
+  "odometer": 8076,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
-  "route": "British Columbia",
+  "route": "Buick, British Columbia",
   "today": 417,
   "best": 1333,
   "bestDay": 1,
@@ -18,62 +18,70 @@
     "key": "2026-09-09",
     "day": 8,
     "label": "Day 8 · Sep 9",
-    "km": 301,
+    "km": 391,
     "from": "Fort Nelson, British Columbia",
-    "to": "British Columbia",
-    "corridor": "British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 25,
+    "to": "Buick, British Columbia",
+    "corridor": "Buick, British Columbia",
+    "chargeStops": 2,
+    "chargeMinutes": 82,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3176,
+        0.3619,
         0.08
       ],
       [
-        0.3498,
-        0.2776
+        0.3849,
+        0.22
       ],
       [
-        0.382,
-        0.4012
+        0.4079,
+        0.3075
       ],
       [
-        0.3766,
-        0.4012
+        0.4041,
+        0.3075
       ],
       [
-        0.5268,
-        0.4753
+        0.5115,
+        0.36
       ],
       [
-        0.5697,
-        0.4753
+        0.5422,
+        0.36
       ],
       [
-        0.6287,
-        0.3518
+        0.5844,
+        0.2725
       ],
       [
-        0.6341,
-        0.3518
+        0.5883,
+        0.2725
       ],
       [
-        0.6824,
-        0.4012
+        0.6228,
+        0.3075
       ],
       [
-        0.6824,
-        0.7718
+        0.6228,
+        0.57
       ],
       [
-        0.6555,
+        0.6036,
+        0.675
+      ],
+      [
+        0.5998,
+        0.6925
+      ],
+      [
+        0.6381,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3176,
+        "x": 0.3619,
         "y": 0.08,
         "town": "Fort Nelson, British Columbia",
         "kind": "start",
@@ -87,14 +95,21 @@
         ]
       },
       {
-        "x": 0.6555,
+        "x": 0.6381,
         "y": 0.92,
-        "town": "British Columbia",
+        "town": "Buick, British Columbia",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 57,
+            "socStart": 14,
+            "socEnd": 81
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.7488,
+    "kmPerPx": 1.0571,
     "plotted": true
   },
   "dayMaps": [
@@ -983,62 +998,70 @@
       "key": "2026-09-09",
       "day": 8,
       "label": "Day 8 · Sep 9",
-      "km": 301,
+      "km": 391,
       "from": "Fort Nelson, British Columbia",
-      "to": "British Columbia",
-      "corridor": "British Columbia",
-      "chargeStops": 1,
-      "chargeMinutes": 25,
+      "to": "Buick, British Columbia",
+      "corridor": "Buick, British Columbia",
+      "chargeStops": 2,
+      "chargeMinutes": 82,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3176,
+          0.3619,
           0.08
         ],
         [
-          0.3498,
-          0.2776
+          0.3849,
+          0.22
         ],
         [
-          0.382,
-          0.4012
+          0.4079,
+          0.3075
         ],
         [
-          0.3766,
-          0.4012
+          0.4041,
+          0.3075
         ],
         [
-          0.5268,
-          0.4753
+          0.5115,
+          0.36
         ],
         [
-          0.5697,
-          0.4753
+          0.5422,
+          0.36
         ],
         [
-          0.6287,
-          0.3518
+          0.5844,
+          0.2725
         ],
         [
-          0.6341,
-          0.3518
+          0.5883,
+          0.2725
         ],
         [
-          0.6824,
-          0.4012
+          0.6228,
+          0.3075
         ],
         [
-          0.6824,
-          0.7718
+          0.6228,
+          0.57
         ],
         [
-          0.6555,
+          0.6036,
+          0.675
+        ],
+        [
+          0.5998,
+          0.6925
+        ],
+        [
+          0.6381,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.3176,
+          "x": 0.3619,
           "y": 0.08,
           "town": "Fort Nelson, British Columbia",
           "kind": "start",
@@ -1052,25 +1075,38 @@
           ]
         },
         {
-          "x": 0.6555,
+          "x": 0.6381,
           "y": 0.92,
-          "town": "British Columbia",
+          "town": "Buick, British Columbia",
           "kind": "end",
-          "sessions": []
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 57,
+              "socStart": 14,
+              "socEnd": 81
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.7488,
+      "kmPerPx": 1.0571,
       "plotted": true
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T21:44:49.608Z",
+  "updatedAt": "2026-09-10T21:56:33.010Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 16.4,
+          "wh": 180,
+          "km": 90,
+          "prov": "British Columbia"
+        },
         {
           "t": 12.5,
           "wh": 210,
@@ -1662,7 +1698,7 @@
       "date": "Sep 9",
       "province": "British Columbia",
       "from": "Fort Nelson, British Columbia",
-      "to": "British Columbia",
+      "to": "Buick, British Columbia",
       "plotted": true,
       "km": "622",
       "chargeMinutes": 124,
