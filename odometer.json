@@ -23,6 +23,7 @@
     "to": "Fort Nelson, British Columbia",
     "corridor": "Fort Nelson, British Columbia",
     "chargeStops": 4,
+    "chargeMinutes": 357,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -133,6 +134,7 @@
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
       "chargeStops": 5,
+      "chargeMinutes": 127,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -270,6 +272,7 @@
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
       "chargeStops": 3,
+      "chargeMinutes": 59,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -377,6 +380,7 @@
       "to": "British Columbia",
       "corridor": "British Columbia",
       "chargeStops": 6,
+      "chargeMinutes": 171,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -517,6 +521,7 @@
       "to": "Whitehorse, Yukon",
       "corridor": "Whitehorse, Yukon",
       "chargeStops": 6,
+      "chargeMinutes": 209,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -660,6 +665,7 @@
       "to": "Dawson, Yukon",
       "corridor": "Dawson, Yukon",
       "chargeStops": 4,
+      "chargeMinutes": 200,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -761,6 +767,7 @@
       "to": "Marsh Lake, Yukon",
       "corridor": "Marsh Lake, Yukon",
       "chargeStops": 4,
+      "chargeMinutes": 390,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -898,6 +905,7 @@
       "to": "Fort Nelson, British Columbia",
       "corridor": "Fort Nelson, British Columbia",
       "chargeStops": 4,
+      "chargeMinutes": 357,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -1000,7 +1008,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T02:54:49.230Z",
+  "updatedAt": "2026-09-10T03:01:45.796Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1548,6 +1556,7 @@
       "from": "—",
       "to": "—",
       "km": "622",
+      "chargeMinutes": 124,
       "note": ""
     },
     {
@@ -1559,6 +1568,7 @@
       "to": "Fort Nelson, British Columbia",
       "plotted": true,
       "km": "591",
+      "chargeMinutes": 357,
       "note": ""
     },
     {
@@ -1570,6 +1580,7 @@
       "to": "Marsh Lake, Yukon",
       "plotted": true,
       "km": "618",
+      "chargeMinutes": 390,
       "note": ""
     },
     {
@@ -1581,6 +1592,7 @@
       "to": "Dawson, Yukon",
       "plotted": true,
       "km": "556",
+      "chargeMinutes": 200,
       "note": ""
     },
     {
@@ -1592,6 +1604,7 @@
       "to": "Whitehorse, Yukon",
       "plotted": true,
       "km": "1,182",
+      "chargeMinutes": 209,
       "note": ""
     },
     {
@@ -1603,6 +1616,7 @@
       "to": "British Columbia",
       "plotted": true,
       "km": "1,117",
+      "chargeMinutes": 171,
       "note": ""
     },
     {
@@ -1614,6 +1628,7 @@
       "to": "Calgary, Alberta",
       "plotted": true,
       "km": "455",
+      "chargeMinutes": 59,
       "note": ""
     },
     {
@@ -1625,6 +1640,7 @@
       "to": "Calgary, Alberta",
       "plotted": true,
       "km": "1,333",
+      "chargeMinutes": 127,
       "note": ""
     }
   ]
