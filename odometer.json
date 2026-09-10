@@ -2,8 +2,8 @@
   "odometer": 7585,
   "goal": 1000000,
   "day": 8,
-  "province": "Yukon",
-  "route": "Watson Lake, Yukon",
+  "province": "British Columbia",
+  "route": "British Columbia",
   "today": 619,
   "best": 1333,
   "bestDay": 1,
@@ -18,63 +18,73 @@
     "key": "2026-09-08",
     "day": 7,
     "label": "Day 7 · Sep 8",
-    "km": 429,
+    "km": 590,
     "from": "Marsh Lake, Yukon",
-    "to": "Watson Lake, Yukon",
-    "corridor": "Watson Lake, Yukon",
+    "to": "British Columbia",
+    "corridor": "British Columbia",
     "chargeStops": 3,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.08,
-        0.2386
+        0.1911
       ],
       [
-        0.0989,
-        0.2693
+        0.0947,
+        0.2149
       ],
       [
-        0.1179,
-        0.3616
+        0.1095,
+        0.2862
       ],
       [
-        0.3389,
-        0.4846
+        0.2814,
+        0.3812
       ],
       [
-        0.7495,
-        0.6692
+        0.6007,
+        0.5238
       ],
       [
-        0.8316,
-        0.7307
+        0.6646,
+        0.5713
+      ],
+      [
+        0.7333,
+        0.595
       ],
       [
         0.92,
-        0.7614
+        0.8089
       ]
     ],
     "stops": [
       {
         "x": 0.08,
-        "y": 0.2386,
+        "y": 0.1911,
         "town": "Marsh Lake, Yukon",
         "kind": "start"
       },
       {
         "x": 0.92,
-        "y": 0.7614,
-        "town": "Watson Lake, Yukon",
+        "y": 0.8089,
+        "town": "British Columbia",
         "kind": "end"
       },
       {
-        "x": 0.3389,
-        "y": 0.4846,
+        "x": 0.7333,
+        "y": 0.595,
+        "town": "Watson Lake, Yukon",
+        "kind": "charge"
+      },
+      {
+        "x": 0.2814,
+        "y": 0.3812,
         "town": "Teslin, Yukon",
         "kind": "charge"
       }
     ],
-    "kmPerPx": 0.6015,
+    "kmPerPx": 0.7787,
     "plotted": true
   },
   "dayMaps": [
@@ -626,74 +636,90 @@
       "key": "2026-09-08",
       "day": 7,
       "label": "Day 7 · Sep 8",
-      "km": 429,
+      "km": 590,
       "from": "Marsh Lake, Yukon",
-      "to": "Watson Lake, Yukon",
-      "corridor": "Watson Lake, Yukon",
+      "to": "British Columbia",
+      "corridor": "British Columbia",
       "chargeStops": 3,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.08,
-          0.2386
+          0.1911
         ],
         [
-          0.0989,
-          0.2693
+          0.0947,
+          0.2149
         ],
         [
-          0.1179,
-          0.3616
+          0.1095,
+          0.2862
         ],
         [
-          0.3389,
-          0.4846
+          0.2814,
+          0.3812
         ],
         [
-          0.7495,
-          0.6692
+          0.6007,
+          0.5238
         ],
         [
-          0.8316,
-          0.7307
+          0.6646,
+          0.5713
+        ],
+        [
+          0.7333,
+          0.595
         ],
         [
           0.92,
-          0.7614
+          0.8089
         ]
       ],
       "stops": [
         {
           "x": 0.08,
-          "y": 0.2386,
+          "y": 0.1911,
           "town": "Marsh Lake, Yukon",
           "kind": "start"
         },
         {
           "x": 0.92,
-          "y": 0.7614,
-          "town": "Watson Lake, Yukon",
+          "y": 0.8089,
+          "town": "British Columbia",
           "kind": "end"
         },
         {
-          "x": 0.3389,
-          "y": 0.4846,
+          "x": 0.7333,
+          "y": 0.595,
+          "town": "Watson Lake, Yukon",
+          "kind": "charge"
+        },
+        {
+          "x": 0.2814,
+          "y": 0.3812,
           "town": "Teslin, Yukon",
           "kind": "charge"
         }
       ],
-      "kmPerPx": 0.6015,
+      "kmPerPx": 0.7787,
       "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T01:29:12.688Z",
+  "updatedAt": "2026-09-10T01:46:02.516Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 17.1,
+          "wh": 163,
+          "km": 161,
+          "prov": "British Columbia"
+        },
         {
           "t": 15.9,
           "wh": 119,
@@ -1133,12 +1159,12 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 148,
+      "median": 149,
       "best": 88,
       "worst": 491,
       "provinces": [
-        "Yukon",
         "British Columbia",
+        "Yukon",
         "Alberta",
         "Saskatchewan",
         "Manitoba"
@@ -1235,9 +1261,9 @@
       "key": "2026-09-08",
       "day": "Day 7",
       "date": "Sep 8",
-      "province": "Yukon",
+      "province": "British Columbia",
       "from": "Marsh Lake, Yukon",
-      "to": "Watson Lake, Yukon",
+      "to": "British Columbia",
       "plotted": true,
       "km": "591",
       "note": ""
