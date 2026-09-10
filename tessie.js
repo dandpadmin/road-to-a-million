@@ -240,7 +240,7 @@ function coords(o, prefix) {
 
 /* The viewBox DayMap draws into. Projection needs these to keep one scale on
    both axes, so they live here and must match Panels.jsx. */
-const VB_W = 720, VB_H = 300, PAD = 0.08, DEG_KM = 111.0;
+const VB_W = 720, VB_H = 360, PAD = 0.05, DEG_KM = 111.0;
 
 /* Project one day's drives into the normalised 0–1 points DayMap plots.
 
