@@ -1,5 +1,5 @@
 {
-  "odometer": 7588,
+  "odometer": 7616,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
@@ -18,7 +18,7 @@
     "key": "2026-09-09",
     "day": 8,
     "label": "Day 8 · Sep 9",
-    "km": 52,
+    "km": 54,
     "from": "Fort Nelson, British Columbia",
     "to": "British Columbia",
     "corridor": "British Columbia",
@@ -27,31 +27,39 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4329,
+        0.4171,
         0.08
       ],
       [
-        0.5671,
+        0.5,
+        0.5969
+      ],
+      [
+        0.5829,
+        0.92
+      ],
+      [
+        0.5691,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.4329,
+        "x": 0.4171,
         "y": 0.08,
         "town": "Fort Nelson, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5671,
+        "x": 0.5691,
         "y": 0.92,
         "town": "British Columbia",
         "kind": "end",
         "sessions": []
       }
     ],
-    "kmPerPx": 0.1762,
+    "kmPerPx": 0.2863,
     "plotted": true
   },
   "dayMaps": [
@@ -940,7 +948,7 @@
       "key": "2026-09-09",
       "day": 8,
       "label": "Day 8 · Sep 9",
-      "km": 52,
+      "km": 54,
       "from": "Fort Nelson, British Columbia",
       "to": "British Columbia",
       "corridor": "British Columbia",
@@ -949,36 +957,44 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4329,
+          0.4171,
           0.08
         ],
         [
-          0.5671,
+          0.5,
+          0.5969
+        ],
+        [
+          0.5829,
+          0.92
+        ],
+        [
+          0.5691,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.4329,
+          "x": 0.4171,
           "y": 0.08,
           "town": "Fort Nelson, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.5671,
+          "x": 0.5691,
           "y": 0.92,
           "town": "British Columbia",
           "kind": "end",
           "sessions": []
         }
       ],
-      "kmPerPx": 0.1762,
+      "kmPerPx": 0.2863,
       "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T16:31:28.825Z",
+  "updatedAt": "2026-09-10T16:54:16.922Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
