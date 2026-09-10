@@ -1,18 +1,18 @@
 {
-  "odometer": 7832,
+  "odometer": 7835,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
   "route": "Fort Nelson, British Columbia",
-  "today": 130,
+  "today": 247,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 734,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 747,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 48,
-  "chargeLifetimeSupercharger": 14,
+  "chargeLifetime": 49,
+  "chargeLifetimeSupercharger": 15,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-09",
@@ -1034,7 +1034,7 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T19:27:46.181Z",
+  "updatedAt": "2026-09-10T19:42:03.717Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1522,14 +1522,14 @@
       ]
     },
     "autopilot": {
-      "km": 6298,
-      "pct": 85.4
+      "km": 6415,
+      "pct": 85.6
     },
     "energy": {
-      "used": 1153,
-      "added": 1303,
-      "overhead": 11.5,
-      "whPerKm": 156,
+      "used": 1173,
+      "added": 1315,
+      "overhead": 10.8,
+      "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 401
@@ -1544,7 +1544,7 @@
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 48,
+      "sessions": 49,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1599,7 +1599,7 @@
     {
       "key": "2026-09-10",
       "label": "D 9",
-      "km": 130
+      "km": 247
     }
   ],
   "log": [
@@ -1610,8 +1610,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "130",
-      "chargeMinutes": 17,
+      "km": "247",
+      "chargeMinutes": 23,
       "note": ""
     },
     {
