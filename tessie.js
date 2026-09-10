@@ -297,39 +297,77 @@ function projectDay(drives, charges, targetDay) {
 
   const path = units.map(at);
 
-  /* One marker per place. Start and end are placed first so they always win;
-     a charge in a town already on the map is counted in chargeStops but does
-     not earn a second pin — three "FORT NELSON" labels stacked on each other
-     is what this prevents. Coordinates are checked too, since two towns can
-     snap into the same 5km cell. */
+  /* One marker per place — but a place can hold several charges. Two sessions
+     in the same town stack onto one pin and both ride in its `sessions` list,
+     which is what the popup reads. Three "FORT NELSON" labels piled on each
+     other is what this prevents. Coordinates are checked as well as names,
+     since two towns can snap into the same 5km cell. */
   const stops = [];
-  const coordSeen = new Set(), townSeen = new Set();
-  const add = (p, kind) => {
+  const byCoord = new Map(), byTown = new Map();
+  const add = (p, kind, session) => {
     const [x, y] = at(mu(p.ll));
     const ck = x + ',' + y;
     const tk = String(p.town || '').trim().toLowerCase();
-    if (coordSeen.has(ck)) return;
-    if (tk && tk !== '—' && townSeen.has(tk)) return;
-    coordSeen.add(ck);
-    if (tk && tk !== '—') townSeen.add(tk);
-    stops.push({ x, y, town: p.town || '—', kind });
+    let stop = byCoord.get(ck) || (tk && tk !== '\u2014' ? byTown.get(tk) : null);
+    if (!stop) {
+      stop = { x, y, town: p.town || '\u2014', kind, sessions: [] };
+      stops.push(stop);
+      byCoord.set(ck, stop);
+      if (tk && tk !== '\u2014') byTown.set(tk, stop);
+    }
+    /* A charge at the start or end town keeps the stronger marker but still
+       gains the session, so hovering the end pin reports the charge there. */
+    if (session) stop.sessions.push(session);
   };
   add(pts[0], 'start');
   add(pts[pts.length - 1], 'end');
 
   /* Charge stops for the day, snapped and matched to the nearest path point so
      a marker always sits on the drawn line. */
-  for (const c of (charges || []).filter((c) => dayKey(c.started_at) === targetDay)) {
+  const dayCharges = (charges || [])
+    .filter((c) => dayKey(c.started_at) === targetDay)
+    .sort((a, b) => (toDate(a.started_at) || 0) - (toDate(b.started_at) || 0));
+  for (const c of dayCharges) {
     const ll = coords(c, 'starting_');
     if (!ll) continue;
     const near = pts.reduce((best, p) => {
       const dist = Math.hypot(p.ll[0] - ll[0], p.ll[1] - ll[1]);
       return !best || dist < best.dist ? { p, dist } : best;
     }, null);
-    if (near && near.dist < 0.6) add({ ll: near.p.ll, town: town(c.location) || near.p.town }, 'charge');
+    if (near && near.dist < 0.6) {
+      add({ ll: near.p.ll, town: town(c.location) || near.p.town }, 'charge', session(c));
+    }
   }
 
   return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)) };
+}
+
+/* What one charge session reports to a map popup: who the charger belonged to,
+   how long the car was plugged in, and what the pack did while it sat there.
+   Duration comes off the timestamps rather than any duration field, which
+   Tessie only sometimes sends and in inconsistent units. Anything missing is
+   null and the popup simply omits that line. */
+function session(c) {
+  const s = toDate(c.started_at);
+  const e = toDate(c.ended_at ?? c.finished_at ?? c.ended ?? c.end_date);
+  const mins = s && e && e > s ? Math.round((e - s) / 60000) : null;
+  let network = 'Other network';
+  if (isSupercharger(c)) network = 'Supercharger';
+  else {
+    const named = [c.network, c.fast_charger_brand, c.charger_type].find((v) => typeof v === 'string' && v.trim());
+    if (named) network = named.trim();
+    else if (c.is_fast_charger === true) network = 'DC fast';
+    else network = 'AC / destination';
+  }
+  const socStart = pick(c, F_SOC_START), socEnd = pick(c, F_SOC_END);
+  return {
+    network,
+    /* Capped at a day — a session left open by a dropped connection would
+       otherwise report a nonsense figure like 51h. */
+    minutes: mins !== null && mins <= 1440 ? mins : null,
+    socStart: typeof socStart === 'number' ? Math.round(socStart) : null,
+    socEnd: typeof socEnd === 'number' ? Math.round(socEnd) : null,
+  };
 }
 
 /* Tessie mirrors Tesla's field names, which have drifted across firmware and
@@ -519,7 +557,9 @@ export function shape({ state, drives, charges, health, history }) {
   const trip = days.filter((d) => (dayIndex(d.date) || 0) >= 1);
   const recent = trip.slice(-30);
   const last = trip[trip.length - 1] || null;
-  const dayNo = last ? dayIndex(last.date) : 0;
+  /* Day number is calendar-based, not drive-based — it advances every morning
+     whether or not the car moved, so a rest day doesn't freeze the counter. */
+  const dayNo = Math.max(dayIndex(new Date()) || 0, last ? dayIndex(last.date) : 0);
 
   /* Position comes from the last location-embargoed drive whatever its date, so
      the location box isn't blank before day 1 closes. Town-rounded, and at
