@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
-  "route": "Fort Nelson, British Columbia",
+  "route": "British Columbia",
   "today": 622,
   "best": 1333,
   "bestDay": 1,
@@ -15,113 +15,43 @@
   "chargeLifetimeSupercharger": 13,
   "chargeLifetimeOther": 34,
   "dayMap": {
-    "key": "2026-09-08",
-    "day": 7,
-    "label": "Day 7 · Sep 8",
-    "km": 591,
-    "from": "Marsh Lake, Yukon",
-    "to": "Fort Nelson, British Columbia",
-    "corridor": "Fort Nelson, British Columbia",
-    "chargeStops": 4,
-    "chargeMinutes": 357,
+    "key": "2026-09-09",
+    "day": 8,
+    "label": "Day 8 · Sep 9",
+    "km": 52,
+    "from": "Fort Nelson, British Columbia",
+    "to": "British Columbia",
+    "corridor": "British Columbia",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.08,
-        0.1823
+        0.4329,
+        0.08
       ],
       [
-        0.0936,
-        0.2042
-      ],
-      [
-        0.1072,
-        0.2699
-      ],
-      [
-        0.2662,
-        0.3576
-      ],
-      [
-        0.5613,
-        0.489
-      ],
-      [
-        0.6203,
-        0.5329
-      ],
-      [
-        0.6839,
-        0.5548
-      ],
-      [
-        0.8564,
-        0.752
-      ],
-      [
-        0.92,
-        0.8177
+        0.5671,
+        0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.08,
-        "y": 0.1823,
-        "town": "Marsh Lake, Yukon",
-        "kind": "start",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 182,
-            "socStart": 69,
-            "socEnd": 100
-          }
-        ]
-      },
-      {
-        "x": 0.92,
-        "y": 0.8177,
+        "x": 0.4329,
+        "y": 0.08,
         "town": "Fort Nelson, British Columbia",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.5671,
+        "y": 0.92,
+        "town": "British Columbia",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 62,
-            "socStart": 35,
-            "socEnd": 98
-          }
-        ]
-      },
-      {
-        "x": 0.2662,
-        "y": 0.3576,
-        "town": "Teslin, Yukon",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 42,
-            "socStart": 63,
-            "socEnd": 87
-          }
-        ]
-      },
-      {
-        "x": 0.6839,
-        "y": 0.5548,
-        "town": "Watson Lake, Yukon",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 71,
-            "socStart": 9,
-            "socEnd": 92
-          }
-        ]
+        "sessions": []
       }
     ],
-    "kmPerPx": 0.8443,
+    "kmPerPx": 0.1762,
     "plotted": true
   },
   "dayMaps": [
@@ -1005,16 +935,62 @@
       ],
       "kmPerPx": 0.8443,
       "plotted": true
+    },
+    {
+      "key": "2026-09-09",
+      "day": 8,
+      "label": "Day 8 · Sep 9",
+      "km": 52,
+      "from": "Fort Nelson, British Columbia",
+      "to": "British Columbia",
+      "corridor": "British Columbia",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.4329,
+          0.08
+        ],
+        [
+          0.5671,
+          0.92
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.4329,
+          "y": 0.08,
+          "town": "Fort Nelson, British Columbia",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.5671,
+          "y": 0.92,
+          "town": "British Columbia",
+          "kind": "end",
+          "sessions": []
+        }
+      ],
+      "kmPerPx": 0.1762,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T15:56:07.205Z",
+  "updatedAt": "2026-09-10T16:14:35.212Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 11.9,
+          "wh": 213,
+          "km": 52,
+          "prov": "British Columbia"
+        },
         {
           "t": 17.1,
           "wh": 163,
@@ -1552,9 +1528,10 @@
       "key": "2026-09-09",
       "day": "Day 8",
       "date": "Sep 9",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "British Columbia",
+      "from": "Fort Nelson, British Columbia",
+      "to": "British Columbia",
+      "plotted": true,
       "km": "622",
       "chargeMinutes": 124,
       "note": ""
