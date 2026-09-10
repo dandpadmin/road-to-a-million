@@ -4,7 +4,7 @@
   "day": 9,
   "province": "British Columbia",
   "route": "Fort Nelson, British Columbia",
-  "today": 621,
+  "today": 622,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 809,
@@ -1000,7 +1000,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T02:52:44.777Z",
+  "updatedAt": "2026-09-10T02:54:49.230Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1536,7 +1536,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 621
+      "km": 622
     }
   ],
   "log": [
@@ -1547,7 +1547,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "621",
+      "km": "622",
       "note": ""
     },
     {
