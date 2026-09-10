@@ -4,7 +4,7 @@
   "day": 8,
   "province": "Yukon",
   "route": "Watson Lake, Yukon",
-  "today": 618,
+  "today": 619,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 809,
@@ -687,7 +687,7 @@
     }
   ],
   "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T01:13:09.432Z",
+  "updatedAt": "2026-09-10T01:29:12.688Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1217,7 +1217,7 @@
     {
       "key": "2026-09-09",
       "label": "D 8",
-      "km": 618
+      "km": 619
     }
   ],
   "log": [
@@ -1228,7 +1228,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "618",
+      "km": "619",
       "note": ""
     },
     {
