@@ -1,18 +1,18 @@
 {
-  "odometer": 7718,
+  "odometer": 7719,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
   "route": "British Columbia",
-  "today": 622,
+  "today": 129,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 809,
-  "chargeSessions": 3,
-  "chargeSupercharger": 0,
-  "chargeOther": 3,
-  "chargeLifetime": 47,
-  "chargeLifetimeSupercharger": 13,
+  "avgPerDay": 734,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
+  "chargeOther": 0,
+  "chargeLifetime": 48,
+  "chargeLifetimeSupercharger": 14,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-09",
@@ -993,8 +993,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-09",
-  "updatedAt": "2026-09-10T17:56:02.390Z",
+  "asOf": "2026-09-10",
+  "updatedAt": "2026-09-10T18:17:34.710Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1464,29 +1464,29 @@
       ]
     },
     "autopilot": {
-      "km": 6193,
-      "pct": 85.5
+      "km": 6298,
+      "pct": 85.4
     },
     "energy": {
-      "used": 1134,
-      "added": 1282,
-      "overhead": 11.6,
+      "used": 1153,
+      "added": 1303,
+      "overhead": 11.5,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 402
+      "rangeEst": 401
     },
     "cost": {
-      "total": 161.77,
-      "supercharger": 161.77,
+      "total": 169.96,
+      "supercharger": 169.96,
       "other": 0,
-      "perKm": 0.022,
-      "sessions": 13,
+      "perKm": 0.023,
+      "sessions": 14,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 47,
+      "sessions": 48,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1537,9 +1537,25 @@
       "key": "2026-09-09",
       "label": "D 8",
       "km": 622
+    },
+    {
+      "key": "2026-09-10",
+      "label": "D 9",
+      "km": 129
     }
   ],
   "log": [
+    {
+      "key": "2026-09-10",
+      "day": "Day 9",
+      "date": "Sep 10",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "129",
+      "chargeMinutes": 17,
+      "note": ""
+    },
     {
       "key": "2026-09-09",
       "day": "Day 8",
