@@ -1,5 +1,5 @@
 {
-  "odometer": 7741,
+  "odometer": 7768,
   "goal": 1000000,
   "day": 9,
   "province": "British Columbia",
@@ -18,7 +18,7 @@
     "key": "2026-09-09",
     "day": 8,
     "label": "Day 8 · Sep 9",
-    "km": 87,
+    "km": 134,
     "from": "Fort Nelson, British Columbia",
     "to": "British Columbia",
     "corridor": "British Columbia",
@@ -27,44 +27,59 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.2356,
+        0.1681,
         0.08
       ],
       [
-        0.3031,
+        0.2356,
         0.5
       ],
       [
-        0.3706,
+        0.3031,
         0.7625
       ],
       [
-        0.3594,
+        0.2919,
         0.7625
       ],
       [
-        0.6744,
+        0.6069,
         0.92
       ],
       [
-        0.7644,
+        0.6969,
         0.92
+      ],
+      [
+        0.8206,
+        0.6575
+      ],
+      [
+        0.8319,
+        0.6575
       ]
     ],
     "stops": [
       {
-        "x": 0.2356,
+        "x": 0.1681,
         "y": 0.08,
         "town": "Fort Nelson, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.7644,
-        "y": 0.92,
+        "x": 0.8319,
+        "y": 0.6575,
         "town": "British Columbia",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 25,
+            "socStart": 13,
+            "socEnd": 86
+          }
+        ]
       }
     ],
     "kmPerPx": 0.3524,
@@ -956,7 +971,7 @@
       "key": "2026-09-09",
       "day": 8,
       "label": "Day 8 · Sep 9",
-      "km": 87,
+      "km": 134,
       "from": "Fort Nelson, British Columbia",
       "to": "British Columbia",
       "corridor": "British Columbia",
@@ -965,44 +980,59 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.2356,
+          0.1681,
           0.08
         ],
         [
-          0.3031,
+          0.2356,
           0.5
         ],
         [
-          0.3706,
+          0.3031,
           0.7625
         ],
         [
-          0.3594,
+          0.2919,
           0.7625
         ],
         [
-          0.6744,
+          0.6069,
           0.92
         ],
         [
-          0.7644,
+          0.6969,
           0.92
+        ],
+        [
+          0.8206,
+          0.6575
+        ],
+        [
+          0.8319,
+          0.6575
         ]
       ],
       "stops": [
         {
-          "x": 0.2356,
+          "x": 0.1681,
           "y": 0.08,
           "town": "Fort Nelson, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.7644,
-          "y": 0.92,
+          "x": 0.8319,
+          "y": 0.6575,
           "town": "British Columbia",
           "kind": "end",
-          "sessions": []
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 25,
+              "socStart": 13,
+              "socEnd": 86
+            }
+          ]
         }
       ],
       "kmPerPx": 0.3524,
@@ -1010,13 +1040,19 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T18:44:07.863Z",
+  "updatedAt": "2026-09-10T18:57:31.853Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.2,
+          "wh": 135,
+          "km": 46,
+          "prov": "British Columbia"
+        },
         {
           "t": 11.5,
           "wh": 311,
@@ -1474,7 +1510,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 149,
       "best": 88,
       "worst": 491,
       "provinces": [
