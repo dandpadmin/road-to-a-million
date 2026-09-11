@@ -1,18 +1,18 @@
 {
-  "odometer": 8916,
+  "odometer": 8932,
   "goal": 1000000,
   "day": 10,
   "province": "Alberta",
   "route": "Grande Prairie, Alberta",
-  "today": 225,
+  "today": 344,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 770,
-  "chargeSessions": 8,
-  "chargeSupercharger": 8,
+  "avgPerDay": 782,
+  "chargeSessions": 9,
+  "chargeSupercharger": 9,
   "chargeOther": 0,
-  "chargeLifetime": 61,
-  "chargeLifetimeSupercharger": 27,
+  "chargeLifetime": 62,
+  "chargeLifetimeSupercharger": 28,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-10",
@@ -1124,7 +1124,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T19:12:18.298Z",
+  "updatedAt": "2026-09-11T19:27:52.777Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1642,29 +1642,29 @@
       ]
     },
     "autopilot": {
-      "km": 7214,
-      "pct": 85.2
+      "km": 7219,
+      "pct": 84.1
     },
     "energy": {
-      "used": 1331,
-      "added": 1477,
-      "overhead": 9.9,
+      "used": 1348,
+      "added": 1486,
+      "overhead": 9.3,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 399
+      "rangeEst": 400
     },
     "cost": {
       "total": 217.95,
       "supercharger": 217.95,
       "other": 0,
-      "perKm": 0.026,
+      "perKm": 0.025,
       "sessions": 27,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 61,
+      "sessions": 62,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1724,7 +1724,7 @@
     {
       "key": "2026-09-11",
       "label": "D 10",
-      "km": 225
+      "km": 344
     }
   ],
   "log": [
@@ -1735,8 +1735,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "225",
-      "chargeMinutes": 46,
+      "km": "344",
+      "chargeMinutes": 50,
       "note": ""
     },
     {
