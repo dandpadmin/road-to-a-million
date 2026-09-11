@@ -1,13 +1,13 @@
 {
-  "odometer": 8989,
+  "odometer": 9013,
   "goal": 1000000,
   "day": 10,
   "province": "Alberta",
   "route": "Valleyview, Alberta",
-  "today": 401,
+  "today": 425,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 787,
+  "avgPerDay": 790,
   "chargeSessions": 12,
   "chargeSupercharger": 12,
   "chargeOther": 0,
@@ -1160,7 +1160,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T20:31:28.276Z",
+  "updatedAt": "2026-09-11T20:54:35.047Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1684,24 +1684,24 @@
       ]
     },
     "autopilot": {
-      "km": 7268,
+      "km": 7292,
       "pct": 84.1
     },
     "energy": {
-      "used": 1355,
+      "used": 1359,
       "added": 1507,
-      "overhead": 10,
+      "overhead": 9.8,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 400
     },
     "cost": {
-      "total": 221.79,
-      "supercharger": 221.79,
+      "total": 224.57,
+      "supercharger": 224.57,
       "other": 0,
       "perKm": 0.026,
-      "sessions": 30,
+      "sessions": 31,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -1766,7 +1766,7 @@
     {
       "key": "2026-09-11",
       "label": "D 10",
-      "km": 401
+      "km": 425
     }
   ],
   "log": [
@@ -1777,7 +1777,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "401",
+      "km": "425",
       "chargeMinutes": 70,
       "note": ""
     },
