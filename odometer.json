@@ -1,57 +1,75 @@
 {
-  "odometer": 8932,
+  "odometer": 8938,
   "goal": 1000000,
   "day": 10,
   "province": "Alberta",
-  "route": "Grande Prairie, Alberta",
-  "today": 344,
+  "route": "Valleyview, Alberta",
+  "today": 346,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 782,
-  "chargeSessions": 9,
-  "chargeSupercharger": 9,
+  "chargeSessions": 10,
+  "chargeSupercharger": 10,
   "chargeOther": 0,
-  "chargeLifetime": 62,
-  "chargeLifetimeSupercharger": 28,
+  "chargeLifetime": 63,
+  "chargeLifetimeSupercharger": 29,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-10",
     "day": 9,
     "label": "Day 9 · Sep 10",
-    "km": 130,
+    "km": 247,
     "from": "Dawson Creek, British Columbia",
-    "to": "Grande Prairie, Alberta",
-    "corridor": "Grande Prairie, Alberta",
-    "chargeStops": 1,
-    "chargeMinutes": 17,
+    "to": "Valleyview, Alberta",
+    "corridor": "Valleyview, Alberta",
+    "chargeStops": 2,
+    "chargeMinutes": 23,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.2684,
+        0.0883,
         0.08
       ],
       [
-        0.7316,
-        0.85
+        0.4858,
+        0.74
       ],
       [
-        0.715,
+        0.4716,
+        0.8
+      ],
+      [
+        0.9117,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.2684,
+        "x": 0.0883,
         "y": 0.08,
         "town": "Dawson Creek, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.715,
+        "x": 0.9117,
         "y": 0.92,
-        "town": "Grande Prairie, Alberta",
+        "town": "Valleyview, Alberta",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 61,
+            "socEnd": 81
+          }
+        ]
+      },
+      {
+        "x": 0.4858,
+        "y": 0.74,
+        "town": "Grande Prairie, Alberta",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -62,7 +80,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2643,
+    "kmPerPx": 0.3083,
     "plotted": true
   },
   "dayMaps": [
@@ -1075,40 +1093,58 @@
       "key": "2026-09-10",
       "day": 9,
       "label": "Day 9 · Sep 10",
-      "km": 130,
+      "km": 247,
       "from": "Dawson Creek, British Columbia",
-      "to": "Grande Prairie, Alberta",
-      "corridor": "Grande Prairie, Alberta",
-      "chargeStops": 1,
-      "chargeMinutes": 17,
+      "to": "Valleyview, Alberta",
+      "corridor": "Valleyview, Alberta",
+      "chargeStops": 2,
+      "chargeMinutes": 23,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.2684,
+          0.0883,
           0.08
         ],
         [
-          0.7316,
-          0.85
+          0.4858,
+          0.74
         ],
         [
-          0.715,
+          0.4716,
+          0.8
+        ],
+        [
+          0.9117,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.2684,
+          "x": 0.0883,
           "y": 0.08,
           "town": "Dawson Creek, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.715,
+          "x": 0.9117,
           "y": 0.92,
-          "town": "Grande Prairie, Alberta",
+          "town": "Valleyview, Alberta",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 6,
+              "socStart": 61,
+              "socEnd": 81
+            }
+          ]
+        },
+        {
+          "x": 0.4858,
+          "y": 0.74,
+          "town": "Grande Prairie, Alberta",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -1119,18 +1155,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.2643,
+      "kmPerPx": 0.3083,
       "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T19:27:52.777Z",
+  "updatedAt": "2026-09-11T19:41:50.129Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 11.7,
+          "wh": 168,
+          "km": 117,
+          "prov": "Alberta"
+        },
         {
           "t": 9.7,
           "wh": 150,
@@ -1630,7 +1672,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 150,
+      "median": 151,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1643,28 +1685,28 @@
     },
     "autopilot": {
       "km": 7219,
-      "pct": 84.1
+      "pct": 84
     },
     "energy": {
       "used": 1348,
-      "added": 1486,
-      "overhead": 9.3,
+      "added": 1492,
+      "overhead": 9.6,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 400
     },
     "cost": {
-      "total": 217.95,
-      "supercharger": 217.95,
+      "total": 221.07,
+      "supercharger": 221.07,
       "other": 0,
-      "perKm": 0.025,
-      "sessions": 27,
+      "perKm": 0.026,
+      "sessions": 29,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 62,
+      "sessions": 63,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1724,7 +1766,7 @@
     {
       "key": "2026-09-11",
       "label": "D 10",
-      "km": 344
+      "km": 346
     }
   ],
   "log": [
@@ -1735,8 +1777,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "344",
-      "chargeMinutes": 50,
+      "km": "346",
+      "chargeMinutes": 55,
       "note": ""
     },
     {
@@ -1745,7 +1787,7 @@
       "date": "Sep 10",
       "province": "Alberta",
       "from": "Dawson Creek, British Columbia",
-      "to": "Grande Prairie, Alberta",
+      "to": "Valleyview, Alberta",
       "plotted": true,
       "km": "999",
       "chargeMinutes": 66,
