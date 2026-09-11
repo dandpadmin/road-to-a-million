@@ -1,9 +1,9 @@
 {
-  "odometer": 8330,
+  "odometer": 8365,
   "goal": 1000000,
   "day": 10,
   "province": "British Columbia",
-  "route": "Buick, British Columbia",
+  "route": "Dawson Creek, British Columbia",
   "today": 677,
   "best": 1333,
   "bestDay": 1,
@@ -18,70 +18,74 @@
     "key": "2026-09-09",
     "day": 8,
     "label": "Day 8 · Sep 9",
-    "km": 391,
+    "km": 619,
     "from": "Fort Nelson, British Columbia",
-    "to": "Buick, British Columbia",
-    "corridor": "Buick, British Columbia",
+    "to": "Dawson Creek, British Columbia",
+    "corridor": "Dawson Creek, British Columbia",
     "chargeStops": 2,
     "chargeMinutes": 82,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3619,
+        0.3505,
         0.08
       ],
       [
-        0.3849,
-        0.22
+        0.3657,
+        0.1708
       ],
       [
-        0.4079,
-        0.3075
+        0.3809,
+        0.2276
       ],
       [
-        0.4041,
-        0.3075
+        0.3784,
+        0.2276
       ],
       [
-        0.5115,
-        0.36
+        0.4493,
+        0.2616
       ],
       [
-        0.5422,
-        0.36
+        0.4696,
+        0.2616
       ],
       [
-        0.5844,
-        0.2725
+        0.4975,
+        0.2049
       ],
       [
-        0.5883,
-        0.2725
+        0.5,
+        0.2049
       ],
       [
-        0.6228,
-        0.3075
+        0.5228,
+        0.2276
       ],
       [
-        0.6228,
-        0.57
+        0.5228,
+        0.3978
       ],
       [
-        0.6036,
-        0.675
+        0.5101,
+        0.4659
       ],
       [
-        0.5998,
-        0.6925
+        0.5076,
+        0.4773
       ],
       [
-        0.6381,
+        0.5329,
+        0.6249
+      ],
+      [
+        0.6495,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3619,
+        "x": 0.3505,
         "y": 0.08,
         "town": "Fort Nelson, British Columbia",
         "kind": "start",
@@ -95,10 +99,24 @@
         ]
       },
       {
-        "x": 0.6381,
+        "x": 0.6495,
         "y": 0.92,
-        "town": "Buick, British Columbia",
+        "town": "Dawson Creek, British Columbia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 42,
+            "socStart": 30,
+            "socEnd": 97
+          }
+        ]
+      },
+      {
+        "x": 0.5329,
+        "y": 0.6249,
+        "town": "Buick, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "DC fast",
@@ -109,7 +127,7 @@
         ]
       }
     ],
-    "kmPerPx": 1.0571,
+    "kmPerPx": 1.6298,
     "plotted": true
   },
   "dayMaps": [
@@ -998,70 +1016,74 @@
       "key": "2026-09-09",
       "day": 8,
       "label": "Day 8 · Sep 9",
-      "km": 391,
+      "km": 619,
       "from": "Fort Nelson, British Columbia",
-      "to": "Buick, British Columbia",
-      "corridor": "Buick, British Columbia",
+      "to": "Dawson Creek, British Columbia",
+      "corridor": "Dawson Creek, British Columbia",
       "chargeStops": 2,
       "chargeMinutes": 82,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3619,
+          0.3505,
           0.08
         ],
         [
-          0.3849,
-          0.22
+          0.3657,
+          0.1708
         ],
         [
-          0.4079,
-          0.3075
+          0.3809,
+          0.2276
         ],
         [
-          0.4041,
-          0.3075
+          0.3784,
+          0.2276
         ],
         [
-          0.5115,
-          0.36
+          0.4493,
+          0.2616
         ],
         [
-          0.5422,
-          0.36
+          0.4696,
+          0.2616
         ],
         [
-          0.5844,
-          0.2725
+          0.4975,
+          0.2049
         ],
         [
-          0.5883,
-          0.2725
+          0.5,
+          0.2049
         ],
         [
-          0.6228,
-          0.3075
+          0.5228,
+          0.2276
         ],
         [
-          0.6228,
-          0.57
+          0.5228,
+          0.3978
         ],
         [
-          0.6036,
-          0.675
+          0.5101,
+          0.4659
         ],
         [
-          0.5998,
-          0.6925
+          0.5076,
+          0.4773
         ],
         [
-          0.6381,
+          0.5329,
+          0.6249
+        ],
+        [
+          0.6495,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.3619,
+          "x": 0.3505,
           "y": 0.08,
           "town": "Fort Nelson, British Columbia",
           "kind": "start",
@@ -1075,10 +1097,24 @@
           ]
         },
         {
-          "x": 0.6381,
+          "x": 0.6495,
           "y": 0.92,
-          "town": "Buick, British Columbia",
+          "town": "Dawson Creek, British Columbia",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 42,
+              "socStart": 30,
+              "socEnd": 97
+            }
+          ]
+        },
+        {
+          "x": 0.5329,
+          "y": 0.6249,
+          "town": "Buick, British Columbia",
+          "kind": "charge",
           "sessions": [
             {
               "network": "DC fast",
@@ -1089,18 +1125,24 @@
           ]
         }
       ],
-      "kmPerPx": 1.0571,
+      "kmPerPx": 1.6298,
       "plotted": true
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-11T00:58:47.613Z",
+  "updatedAt": "2026-09-11T01:17:15.089Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 15.4,
+          "wh": 135,
+          "km": 227,
+          "prov": "British Columbia"
+        },
         {
           "t": 16.4,
           "wh": 180,
@@ -1698,7 +1740,7 @@
       "date": "Sep 9",
       "province": "British Columbia",
       "from": "Fort Nelson, British Columbia",
-      "to": "Buick, British Columbia",
+      "to": "Dawson Creek, British Columbia",
       "plotted": true,
       "km": "622",
       "chargeMinutes": 124,
