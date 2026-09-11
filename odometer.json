@@ -1,5 +1,5 @@
 {
-  "odometer": 8490,
+  "odometer": 8514,
   "goal": 1000000,
   "day": 10,
   "province": "British Columbia",
@@ -18,7 +18,7 @@
     "key": "2026-09-09",
     "day": 8,
     "label": "Day 8 · Sep 9",
-    "km": 620,
+    "km": 622,
     "from": "Fort Nelson, British Columbia",
     "to": "Dawson Creek, British Columbia",
     "corridor": "Dawson Creek, British Columbia",
@@ -85,6 +85,10 @@
       [
         0.647,
         0.92
+      ],
+      [
+        0.6495,
+        0.92
       ]
     ],
     "stops": [
@@ -103,7 +107,7 @@
         ]
       },
       {
-        "x": 0.647,
+        "x": 0.6495,
         "y": 0.92,
         "town": "Dawson Creek, British Columbia",
         "kind": "end",
@@ -1020,7 +1024,7 @@
       "key": "2026-09-09",
       "day": 8,
       "label": "Day 8 · Sep 9",
-      "km": 620,
+      "km": 622,
       "from": "Fort Nelson, British Columbia",
       "to": "Dawson Creek, British Columbia",
       "corridor": "Dawson Creek, British Columbia",
@@ -1087,6 +1091,10 @@
         [
           0.647,
           0.92
+        ],
+        [
+          0.6495,
+          0.92
         ]
       ],
       "stops": [
@@ -1105,7 +1113,7 @@
           ]
         },
         {
-          "x": 0.647,
+          "x": 0.6495,
           "y": 0.92,
           "town": "Dawson Creek, British Columbia",
           "kind": "end",
@@ -1138,7 +1146,7 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-11T02:42:11.789Z",
+  "updatedAt": "2026-09-11T02:55:26.950Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
