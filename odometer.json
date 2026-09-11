@@ -1,141 +1,64 @@
 {
-  "odometer": 8810,
+  "odometer": 8813,
   "goal": 1000000,
   "day": 10,
-  "province": "British Columbia",
-  "route": "Dawson Creek, British Columbia",
+  "province": "Alberta",
+  "route": "Grande Prairie, Alberta",
   "today": 223,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 769,
-  "chargeSessions": 4,
-  "chargeSupercharger": 4,
+  "chargeSessions": 7,
+  "chargeSupercharger": 7,
   "chargeOther": 0,
-  "chargeLifetime": 57,
-  "chargeLifetimeSupercharger": 23,
+  "chargeLifetime": 60,
+  "chargeLifetimeSupercharger": 26,
   "chargeLifetimeOther": 34,
   "dayMap": {
-    "key": "2026-09-09",
-    "day": 8,
-    "label": "Day 8 · Sep 9",
-    "km": 622,
-    "from": "Fort Nelson, British Columbia",
-    "to": "Dawson Creek, British Columbia",
-    "corridor": "Dawson Creek, British Columbia",
-    "chargeStops": 3,
-    "chargeMinutes": 124,
+    "key": "2026-09-10",
+    "day": 9,
+    "label": "Day 9 · Sep 10",
+    "km": 129,
+    "from": "Dawson Creek, British Columbia",
+    "to": "Grande Prairie, Alberta",
+    "corridor": "Grande Prairie, Alberta",
+    "chargeStops": 1,
+    "chargeMinutes": 17,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3505,
+        0.2475,
         0.08
       ],
       [
-        0.3657,
-        0.1708
-      ],
-      [
-        0.3809,
-        0.2276
-      ],
-      [
-        0.3784,
-        0.2276
-      ],
-      [
-        0.4493,
-        0.2616
-      ],
-      [
-        0.4696,
-        0.2616
-      ],
-      [
-        0.4975,
-        0.2049
-      ],
-      [
-        0.5,
-        0.2049
-      ],
-      [
-        0.5228,
-        0.2276
-      ],
-      [
-        0.5228,
-        0.3978
-      ],
-      [
-        0.5101,
-        0.4659
-      ],
-      [
-        0.5076,
-        0.4773
-      ],
-      [
-        0.5329,
-        0.6249
-      ],
-      [
-        0.6495,
-        0.92
-      ],
-      [
-        0.647,
-        0.92
-      ],
-      [
-        0.6495,
+        0.7525,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3505,
+        "x": 0.2475,
         "y": 0.08,
-        "town": "Fort Nelson, British Columbia",
+        "town": "Dawson Creek, British Columbia",
         "kind": "start",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 25,
-            "socStart": 13,
-            "socEnd": 86
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.6495,
+        "x": 0.7525,
         "y": 0.92,
-        "town": "Dawson Creek, British Columbia",
+        "town": "Grande Prairie, Alberta",
         "kind": "end",
         "sessions": [
           {
-            "network": "DC fast",
-            "minutes": 42,
-            "socStart": 30,
-            "socEnd": 97
-          }
-        ]
-      },
-      {
-        "x": 0.5329,
-        "y": 0.6249,
-        "town": "Buick, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 57,
-            "socStart": 14,
-            "socEnd": 81
+            "network": "Supercharger",
+            "minutes": 17,
+            "socStart": 60,
+            "socEnd": 93
           }
         ]
       }
     ],
-    "kmPerPx": 1.6298,
+    "kmPerPx": 0.2423,
     "plotted": true
   },
   "dayMaps": [
@@ -1143,16 +1066,69 @@
       ],
       "kmPerPx": 1.6298,
       "plotted": true
+    },
+    {
+      "key": "2026-09-10",
+      "day": 9,
+      "label": "Day 9 · Sep 10",
+      "km": 129,
+      "from": "Dawson Creek, British Columbia",
+      "to": "Grande Prairie, Alberta",
+      "corridor": "Grande Prairie, Alberta",
+      "chargeStops": 1,
+      "chargeMinutes": 17,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.2475,
+          0.08
+        ],
+        [
+          0.7525,
+          0.92
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.2475,
+          "y": 0.08,
+          "town": "Dawson Creek, British Columbia",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.7525,
+          "y": 0.92,
+          "town": "Grande Prairie, Alberta",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 17,
+              "socStart": 60,
+              "socEnd": 93
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.2423,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T17:55:13.580Z",
+  "updatedAt": "2026-09-11T18:16:19.034Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 9.7,
+          "wh": 150,
+          "km": 129,
+          "prov": "Alberta"
+        },
         {
           "t": 15.4,
           "wh": 135,
@@ -1646,13 +1622,13 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 150,
       "best": 88,
       "worst": 491,
       "provinces": [
+        "Alberta",
         "British Columbia",
         "Yukon",
-        "Alberta",
         "Saskatchewan",
         "Manitoba"
       ]
@@ -1663,24 +1639,24 @@
     },
     "energy": {
       "used": 1330,
-      "added": 1454,
-      "overhead": 8.5,
+      "added": 1474,
+      "overhead": 9.8,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 399
     },
     "cost": {
-      "total": 212.98,
-      "supercharger": 212.98,
+      "total": 217.31,
+      "supercharger": 217.31,
       "other": 0,
-      "perKm": 0.025,
-      "sessions": 23,
+      "perKm": 0.026,
+      "sessions": 26,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 57,
+      "sessions": 60,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1752,16 +1728,17 @@
       "from": "—",
       "to": "—",
       "km": "223",
-      "chargeMinutes": 30,
+      "chargeMinutes": 43,
       "note": ""
     },
     {
       "key": "2026-09-10",
       "day": "Day 9",
       "date": "Sep 10",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Alberta",
+      "from": "Dawson Creek, British Columbia",
+      "to": "Grande Prairie, Alberta",
+      "plotted": true,
       "km": "999",
       "chargeMinutes": 66,
       "note": ""
