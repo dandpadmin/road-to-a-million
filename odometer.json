@@ -1,13 +1,13 @@
 {
-  "odometer": 8578,
+  "odometer": 8587,
   "goal": 1000000,
   "day": 10,
   "province": "British Columbia",
   "route": "Dawson Creek, British Columbia",
-  "today": 800,
+  "today": 999,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 808,
+  "avgPerDay": 830,
   "chargeSessions": 6,
   "chargeSupercharger": 6,
   "chargeOther": 0,
@@ -1146,7 +1146,7 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-11T03:32:14.952Z",
+  "updatedAt": "2026-09-11T03:54:50.853Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1658,17 +1658,17 @@
       ]
     },
     "autopilot": {
-      "km": 6875,
-      "pct": 85.4
+      "km": 7057,
+      "pct": 85.6
     },
     "energy": {
-      "used": 1264,
+      "used": 1293,
       "added": 1403,
-      "overhead": 9.9,
+      "overhead": 7.8,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 399
+      "rangeEst": 400
     },
     "cost": {
       "total": 202.01,
@@ -1735,7 +1735,7 @@
     {
       "key": "2026-09-10",
       "label": "D 9",
-      "km": 800
+      "km": 999
     }
   ],
   "log": [
@@ -1746,7 +1746,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "800",
+      "km": "999",
       "chargeMinutes": 66,
       "note": ""
     },
