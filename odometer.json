@@ -1,15 +1,15 @@
 {
-  "odometer": 8587,
+  "odometer": 8590,
   "goal": 1000000,
   "day": 10,
   "province": "British Columbia",
   "route": "Dawson Creek, British Columbia",
-  "today": 999,
+  "today": 2,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 830,
-  "chargeSessions": 6,
-  "chargeSupercharger": 6,
+  "avgPerDay": 747,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 53,
   "chargeLifetimeSupercharger": 19,
@@ -1145,8 +1145,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-10",
-  "updatedAt": "2026-09-11T14:55:43.354Z",
+  "asOf": "2026-09-11",
+  "updatedAt": "2026-09-11T15:14:37.686Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1662,7 +1662,7 @@
       "pct": 85.6
     },
     "energy": {
-      "used": 1293,
+      "used": 1294,
       "added": 1403,
       "overhead": 7.8,
       "whPerKm": 157,
@@ -1674,7 +1674,7 @@
       "total": 202.01,
       "supercharger": 202.01,
       "other": 0,
-      "perKm": 0.025,
+      "perKm": 0.024,
       "sessions": 19,
       "currency": "CAD"
     },
@@ -1736,9 +1736,25 @@
       "key": "2026-09-10",
       "label": "D 9",
       "km": 999
+    },
+    {
+      "key": "2026-09-11",
+      "label": "D 10",
+      "km": 2
     }
   ],
   "log": [
+    {
+      "key": "2026-09-11",
+      "day": "Day 10",
+      "date": "Sep 11",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "2",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-10",
       "day": "Day 9",
