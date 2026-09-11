@@ -1,18 +1,18 @@
 {
-  "odometer": 8252,
+  "odometer": 8268,
   "goal": 1000000,
-  "day": 9,
+  "day": 10,
   "province": "British Columbia",
   "route": "Buick, British Columbia",
-  "today": 513,
+  "today": 677,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 776,
-  "chargeSessions": 4,
-  "chargeSupercharger": 4,
+  "avgPerDay": 794,
+  "chargeSessions": 5,
+  "chargeSupercharger": 5,
   "chargeOther": 0,
-  "chargeLifetime": 51,
-  "chargeLifetimeSupercharger": 17,
+  "chargeLifetime": 52,
+  "chargeLifetimeSupercharger": 18,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-09",
@@ -1094,7 +1094,7 @@
     }
   ],
   "asOf": "2026-09-10",
-  "updatedAt": "2026-09-10T23:52:21.307Z",
+  "updatedAt": "2026-09-11T00:20:04.676Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1600,29 +1600,29 @@
       ]
     },
     "autopilot": {
-      "km": 6681,
-      "pct": 86.1
+      "km": 6845,
+      "pct": 86.4
     },
     "energy": {
-      "used": 1220,
-      "added": 1359,
-      "overhead": 10.2,
+      "used": 1248,
+      "added": 1379,
+      "overhead": 9.5,
       "whPerKm": 157,
-      "kmPerKwh": 6.4,
+      "kmPerKwh": 6.3,
       "packKwh": 63,
-      "rangeEst": 399
+      "rangeEst": 398
     },
     "cost": {
-      "total": 189.62,
-      "supercharger": 189.62,
+      "total": 196.62,
+      "supercharger": 196.62,
       "other": 0,
-      "perKm": 0.024,
-      "sessions": 17,
+      "perKm": 0.025,
+      "sessions": 18,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 51,
+      "sessions": 52,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1677,7 +1677,7 @@
     {
       "key": "2026-09-10",
       "label": "D 9",
-      "km": 513
+      "km": 677
     }
   ],
   "log": [
@@ -1688,8 +1688,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "513",
-      "chargeMinutes": 45,
+      "km": "677",
+      "chargeMinutes": 54,
       "note": ""
     },
     {
