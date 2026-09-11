@@ -1,18 +1,18 @@
 {
-  "odometer": 8980,
+  "odometer": 8989,
   "goal": 1000000,
   "day": 10,
   "province": "Alberta",
   "route": "Valleyview, Alberta",
-  "today": 350,
+  "today": 401,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 782,
-  "chargeSessions": 11,
-  "chargeSupercharger": 11,
+  "avgPerDay": 787,
+  "chargeSessions": 12,
+  "chargeSupercharger": 12,
   "chargeOther": 0,
-  "chargeLifetime": 64,
-  "chargeLifetimeSupercharger": 30,
+  "chargeLifetime": 65,
+  "chargeLifetimeSupercharger": 31,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-10",
@@ -1160,7 +1160,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T20:14:10.773Z",
+  "updatedAt": "2026-09-11T20:31:28.276Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1684,13 +1684,13 @@
       ]
     },
     "autopilot": {
-      "km": 7219,
-      "pct": 84
+      "km": 7268,
+      "pct": 84.1
     },
     "energy": {
-      "used": 1348,
-      "added": 1495,
-      "overhead": 9.8,
+      "used": 1355,
+      "added": 1507,
+      "overhead": 10,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -1706,7 +1706,7 @@
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 64,
+      "sessions": 65,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1766,7 +1766,7 @@
     {
       "key": "2026-09-11",
       "label": "D 10",
-      "km": 350
+      "km": 401
     }
   ],
   "log": [
@@ -1777,8 +1777,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "350",
-      "chargeMinutes": 59,
+      "km": "401",
+      "chargeMinutes": 70,
       "note": ""
     },
     {
