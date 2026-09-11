@@ -1,10 +1,10 @@
 {
-  "odometer": 9157,
+  "odometer": 9160,
   "goal": 1000000,
   "day": 10,
   "province": "Alberta",
   "route": "Edson, Alberta",
-  "today": 569,
+  "today": 572,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 804,
@@ -1232,7 +1232,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T23:40:34.584Z",
+  "updatedAt": "2026-09-11T23:52:39.403Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1769,12 +1769,12 @@
     },
     "autopilot": {
       "km": 7401,
-      "pct": 84
+      "pct": 83.9
     },
     "energy": {
       "used": 1377,
       "added": 1523,
-      "overhead": 9.6,
+      "overhead": 9.5,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -1850,7 +1850,7 @@
     {
       "key": "2026-09-11",
       "label": "D 10",
-      "km": 569
+      "km": 572
     }
   ],
   "log": [
@@ -1861,7 +1861,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "569",
+      "km": "572",
       "chargeMinutes": 85,
       "note": ""
     },
