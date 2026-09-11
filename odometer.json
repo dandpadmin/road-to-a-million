@@ -1,18 +1,18 @@
 {
-  "odometer": 8719,
+  "odometer": 8730,
   "goal": 1000000,
   "day": 10,
   "province": "British Columbia",
   "route": "Dawson Creek, British Columbia",
-  "today": 130,
+  "today": 143,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 760,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 761,
+  "chargeSessions": 3,
+  "chargeSupercharger": 3,
   "chargeOther": 0,
-  "chargeLifetime": 55,
-  "chargeLifetimeSupercharger": 21,
+  "chargeLifetime": 56,
+  "chargeLifetimeSupercharger": 22,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-09",
@@ -1146,7 +1146,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T16:53:01.404Z",
+  "updatedAt": "2026-09-11T17:12:34.309Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1658,29 +1658,29 @@
       ]
     },
     "autopilot": {
-      "km": 7181,
-      "pct": 85.8
+      "km": 7192,
+      "pct": 85.7
     },
     "energy": {
-      "used": 1313,
-      "added": 1443,
-      "overhead": 9,
+      "used": 1315,
+      "added": 1449,
+      "overhead": 9.2,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 400
     },
     "cost": {
-      "total": 210.47,
-      "supercharger": 210.47,
+      "total": 211.76,
+      "supercharger": 211.76,
       "other": 0,
       "perKm": 0.025,
-      "sessions": 21,
+      "sessions": 22,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 55,
+      "sessions": 56,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -1740,7 +1740,7 @@
     {
       "key": "2026-09-11",
       "label": "D 10",
-      "km": 130
+      "km": 143
     }
   ],
   "log": [
@@ -1751,8 +1751,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "130",
-      "chargeMinutes": 23,
+      "km": "143",
+      "chargeMinutes": 26,
       "note": ""
     },
     {
