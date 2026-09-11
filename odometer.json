@@ -1,9 +1,9 @@
 {
-  "odometer": 9077,
+  "odometer": 9103,
   "goal": 1000000,
   "day": 10,
   "province": "Alberta",
-  "route": "Whitecourt, Alberta",
+  "route": "Edson, Alberta",
   "today": 429,
   "best": 1333,
   "bestDay": 1,
@@ -18,60 +18,64 @@
     "key": "2026-09-10",
     "day": 9,
     "label": "Day 9 · Sep 10",
-    "km": 417,
+    "km": 513,
     "from": "Dawson Creek, British Columbia",
-    "to": "Whitecourt, Alberta",
-    "corridor": "Whitecourt, Alberta",
-    "chargeStops": 3,
-    "chargeMinutes": 30,
+    "to": "Edson, Alberta",
+    "corridor": "Edson, Alberta",
+    "chargeStops": 4,
+    "chargeMinutes": 45,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.2142,
+        0.2859,
         0.08
       ],
       [
-        0.3901,
-        0.3687
+        0.4176,
+        0.2949
       ],
       [
-        0.3838,
-        0.395
+        0.4129,
+        0.3144
       ],
       [
-        0.5785,
-        0.4475
+        0.5588,
+        0.3535
       ],
       [
-        0.7858,
+        0.7141,
+        0.7051
+      ],
+      [
+        0.6435,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.2142,
+        "x": 0.2859,
         "y": 0.08,
         "town": "Dawson Creek, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.7858,
+        "x": 0.6435,
         "y": 0.92,
-        "town": "Whitecourt, Alberta",
+        "town": "Edson, Alberta",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 33,
-            "socEnd": 56
+            "minutes": 15,
+            "socStart": 28,
+            "socEnd": 76
           }
         ]
       },
       {
-        "x": 0.3901,
-        "y": 0.3687,
+        "x": 0.4176,
+        "y": 0.2949,
         "town": "Grande Prairie, Alberta",
         "kind": "charge",
         "sessions": [
@@ -84,8 +88,8 @@
         ]
       },
       {
-        "x": 0.5785,
-        "y": 0.4475,
+        "x": 0.5588,
+        "y": 0.3535,
         "town": "Valleyview, Alberta",
         "kind": "charge",
         "sessions": [
@@ -96,9 +100,23 @@
             "socEnd": 81
           }
         ]
+      },
+      {
+        "x": 0.7141,
+        "y": 0.7051,
+        "town": "Whitecourt, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 33,
+            "socEnd": 56
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.7048,
+    "kmPerPx": 0.947,
     "plotted": true
   },
   "dayMaps": [
@@ -1111,60 +1129,64 @@
       "key": "2026-09-10",
       "day": 9,
       "label": "Day 9 · Sep 10",
-      "km": 417,
+      "km": 513,
       "from": "Dawson Creek, British Columbia",
-      "to": "Whitecourt, Alberta",
-      "corridor": "Whitecourt, Alberta",
-      "chargeStops": 3,
-      "chargeMinutes": 30,
+      "to": "Edson, Alberta",
+      "corridor": "Edson, Alberta",
+      "chargeStops": 4,
+      "chargeMinutes": 45,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.2142,
+          0.2859,
           0.08
         ],
         [
-          0.3901,
-          0.3687
+          0.4176,
+          0.2949
         ],
         [
-          0.3838,
-          0.395
+          0.4129,
+          0.3144
         ],
         [
-          0.5785,
-          0.4475
+          0.5588,
+          0.3535
         ],
         [
-          0.7858,
+          0.7141,
+          0.7051
+        ],
+        [
+          0.6435,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.2142,
+          "x": 0.2859,
           "y": 0.08,
           "town": "Dawson Creek, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.7858,
+          "x": 0.6435,
           "y": 0.92,
-          "town": "Whitecourt, Alberta",
+          "town": "Edson, Alberta",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
-              "minutes": 7,
-              "socStart": 33,
-              "socEnd": 56
+              "minutes": 15,
+              "socStart": 28,
+              "socEnd": 76
             }
           ]
         },
         {
-          "x": 0.3901,
-          "y": 0.3687,
+          "x": 0.4176,
+          "y": 0.2949,
           "town": "Grande Prairie, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1177,8 +1199,8 @@
           ]
         },
         {
-          "x": 0.5785,
-          "y": 0.4475,
+          "x": 0.5588,
+          "y": 0.3535,
           "town": "Valleyview, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1189,20 +1211,40 @@
               "socEnd": 81
             }
           ]
+        },
+        {
+          "x": 0.7141,
+          "y": 0.7051,
+          "town": "Whitecourt, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 7,
+              "socStart": 33,
+              "socEnd": 56
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.7048,
+      "kmPerPx": 0.947,
       "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-11T21:53:24.909Z",
+  "updatedAt": "2026-09-11T22:13:30.294Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.4,
+          "wh": 178,
+          "km": 97,
+          "prov": "Alberta"
+        },
         {
           "t": 11,
           "wh": 177,
@@ -1714,7 +1756,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 152,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1829,7 +1871,7 @@
       "date": "Sep 10",
       "province": "Alberta",
       "from": "Dawson Creek, British Columbia",
-      "to": "Whitecourt, Alberta",
+      "to": "Edson, Alberta",
       "plotted": true,
       "km": "999",
       "chargeMinutes": 66,
