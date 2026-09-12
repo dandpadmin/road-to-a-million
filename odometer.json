@@ -1326,7 +1326,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T09:54:58.294Z",
+  "updatedAt": "2026-09-12T10:14:00.210Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1910,6 +1910,10 @@
       {
         "version": "2026.26.6.5",
         "since": "2026-09-09"
+      },
+      {
+        "version": "2026.27.6",
+        "since": "2026-09-12"
       }
     ]
   },
