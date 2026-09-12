@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
-  "route": "Kamloops, British Columbia",
+  "route": "Merritt, British Columbia",
   "today": 572,
   "best": 1333,
   "bestDay": 1,
@@ -18,34 +18,38 @@
     "key": "2026-09-11",
     "day": 10,
     "label": "Day 10 · Sep 11",
-    "km": 143,
+    "km": 223,
     "from": "Clearwater, British Columbia",
-    "to": "Kamloops, British Columbia",
-    "corridor": "Kamloops, British Columbia",
-    "chargeStops": 4,
-    "chargeMinutes": 30,
+    "to": "Merritt, British Columbia",
+    "corridor": "Merritt, British Columbia",
+    "chargeStops": 7,
+    "chargeMinutes": 43,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5329,
+        0.5499,
         0.08
       ],
       [
-        0.4671,
-        0.92
+        0.5071,
+        0.6219
       ],
       [
-        0.478,
-        0.878
+        0.5142,
+        0.5948
       ],
       [
-        0.4671,
+        0.5071,
+        0.6219
+      ],
+      [
+        0.4501,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.5329,
+        "x": 0.5499,
         "y": 0.08,
         "town": "Clearwater, British Columbia",
         "kind": "start",
@@ -59,10 +63,42 @@
         ]
       },
       {
-        "x": 0.4671,
+        "x": 0.4501,
         "y": 0.92,
-        "town": "Kamloops, British Columbia",
+        "town": "Merritt, British Columbia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 48,
+            "socEnd": 67
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 69,
+            "socEnd": 74
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 4,
+            "socStart": 75,
+            "socEnd": 82
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 82,
+            "socEnd": 86
+          }
+        ]
+      },
+      {
+        "x": 0.5071,
+        "y": 0.6219,
+        "town": "Kamloops, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -85,7 +121,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.4405,
+    "kmPerPx": 0.6827,
     "plotted": true
   },
   "dayMaps": [
@@ -1250,34 +1286,38 @@
       "key": "2026-09-11",
       "day": 10,
       "label": "Day 10 · Sep 11",
-      "km": 143,
+      "km": 223,
       "from": "Clearwater, British Columbia",
-      "to": "Kamloops, British Columbia",
-      "corridor": "Kamloops, British Columbia",
-      "chargeStops": 4,
-      "chargeMinutes": 30,
+      "to": "Merritt, British Columbia",
+      "corridor": "Merritt, British Columbia",
+      "chargeStops": 7,
+      "chargeMinutes": 43,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.5329,
+          0.5499,
           0.08
         ],
         [
-          0.4671,
-          0.92
+          0.5071,
+          0.6219
         ],
         [
-          0.478,
-          0.878
+          0.5142,
+          0.5948
         ],
         [
-          0.4671,
+          0.5071,
+          0.6219
+        ],
+        [
+          0.4501,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.5329,
+          "x": 0.5499,
           "y": 0.08,
           "town": "Clearwater, British Columbia",
           "kind": "start",
@@ -1291,10 +1331,42 @@
           ]
         },
         {
-          "x": 0.4671,
+          "x": 0.4501,
           "y": 0.92,
-          "town": "Kamloops, British Columbia",
+          "town": "Merritt, British Columbia",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 6,
+              "socStart": 48,
+              "socEnd": 67
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 69,
+              "socEnd": 74
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 4,
+              "socStart": 75,
+              "socEnd": 82
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 82,
+              "socEnd": 86
+            }
+          ]
+        },
+        {
+          "x": 0.5071,
+          "y": 0.6219,
+          "town": "Kamloops, British Columbia",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -1317,18 +1389,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.4405,
+      "kmPerPx": 0.6827,
       "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T17:52:22.471Z",
+  "updatedAt": "2026-09-12T18:15:03.490Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 13,
+          "wh": 191,
+          "km": 80,
+          "prov": "British Columbia"
+        },
         {
           "t": 14,
           "wh": 329,
@@ -1876,7 +1954,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 152,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1984,7 +2062,7 @@
       "date": "Sep 11",
       "province": "British Columbia",
       "from": "Clearwater, British Columbia",
-      "to": "Kamloops, British Columbia",
+      "to": "Merritt, British Columbia",
       "plotted": true,
       "km": "572",
       "chargeMinutes": 85,
