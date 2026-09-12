@@ -2,8 +2,8 @@
   "odometer": 9160,
   "goal": 1000000,
   "day": 11,
-  "province": "Alberta",
-  "route": "Jasper, Alberta",
+  "province": "British Columbia",
+  "route": "Valemount, British Columbia",
   "today": 572,
   "best": 1333,
   "bestDay": 1,
@@ -18,68 +18,72 @@
     "key": "2026-09-10",
     "day": 9,
     "label": "Day 9 · Sep 10",
-    "km": 677,
+    "km": 800,
     "from": "Dawson Creek, British Columbia",
-    "to": "Jasper, Alberta",
-    "corridor": "Jasper, Alberta",
-    "chargeStops": 5,
-    "chargeMinutes": 54,
+    "to": "Valemount, British Columbia",
+    "corridor": "Valemount, British Columbia",
+    "chargeStops": 6,
+    "chargeMinutes": 66,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3371,
+        0.3398,
         0.08
       ],
       [
-        0.4373,
-        0.2421
+        0.4384,
+        0.2393
       ],
       [
-        0.4338,
-        0.2568
+        0.4349,
+        0.2538
       ],
       [
-        0.5448,
-        0.2863
+        0.544,
+        0.2828
       ],
       [
-        0.6629,
-        0.5516
+        0.6602,
+        0.5434
       ],
       [
-        0.6092,
-        0.7137
+        0.6074,
+        0.7028
       ],
       [
-        0.4875,
+        0.4877,
+        0.9055
+      ],
+      [
+        0.4032,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3371,
+        "x": 0.3398,
         "y": 0.08,
         "town": "Dawson Creek, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4875,
+        "x": 0.4032,
         "y": 0.92,
-        "town": "Jasper, Alberta",
+        "town": "Valemount, British Columbia",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 9,
-            "socStart": 29,
-            "socEnd": 60
+            "minutes": 12,
+            "socStart": 35,
+            "socEnd": 74
           }
         ]
       },
       {
-        "x": 0.4373,
-        "y": 0.2421,
+        "x": 0.4384,
+        "y": 0.2393,
         "town": "Grande Prairie, Alberta",
         "kind": "charge",
         "sessions": [
@@ -92,8 +96,8 @@
         ]
       },
       {
-        "x": 0.5448,
-        "y": 0.2863,
+        "x": 0.544,
+        "y": 0.2828,
         "town": "Valleyview, Alberta",
         "kind": "charge",
         "sessions": [
@@ -106,8 +110,8 @@
         ]
       },
       {
-        "x": 0.6629,
-        "y": 0.5516,
+        "x": 0.6602,
+        "y": 0.5434,
         "town": "Whitecourt, Alberta",
         "kind": "charge",
         "sessions": [
@@ -120,8 +124,8 @@
         ]
       },
       {
-        "x": 0.6092,
-        "y": 0.7137,
+        "x": 0.6074,
+        "y": 0.7028,
         "town": "Edson, Alberta",
         "kind": "charge",
         "sessions": [
@@ -132,9 +136,23 @@
             "socEnd": 76
           }
         ]
+      },
+      {
+        "x": 0.4877,
+        "y": 0.9055,
+        "town": "Jasper, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 9,
+            "socStart": 29,
+            "socEnd": 60
+          }
+        ]
       }
     ],
-    "kmPerPx": 1.2554,
+    "kmPerPx": 1.2774,
     "plotted": true
   },
   "dayMaps": [
@@ -1147,68 +1165,72 @@
       "key": "2026-09-10",
       "day": 9,
       "label": "Day 9 · Sep 10",
-      "km": 677,
+      "km": 800,
       "from": "Dawson Creek, British Columbia",
-      "to": "Jasper, Alberta",
-      "corridor": "Jasper, Alberta",
-      "chargeStops": 5,
-      "chargeMinutes": 54,
+      "to": "Valemount, British Columbia",
+      "corridor": "Valemount, British Columbia",
+      "chargeStops": 6,
+      "chargeMinutes": 66,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3371,
+          0.3398,
           0.08
         ],
         [
-          0.4373,
-          0.2421
+          0.4384,
+          0.2393
         ],
         [
-          0.4338,
-          0.2568
+          0.4349,
+          0.2538
         ],
         [
-          0.5448,
-          0.2863
+          0.544,
+          0.2828
         ],
         [
-          0.6629,
-          0.5516
+          0.6602,
+          0.5434
         ],
         [
-          0.6092,
-          0.7137
+          0.6074,
+          0.7028
         ],
         [
-          0.4875,
+          0.4877,
+          0.9055
+        ],
+        [
+          0.4032,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.3371,
+          "x": 0.3398,
           "y": 0.08,
           "town": "Dawson Creek, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.4875,
+          "x": 0.4032,
           "y": 0.92,
-          "town": "Jasper, Alberta",
+          "town": "Valemount, British Columbia",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
-              "minutes": 9,
-              "socStart": 29,
-              "socEnd": 60
+              "minutes": 12,
+              "socStart": 35,
+              "socEnd": 74
             }
           ]
         },
         {
-          "x": 0.4373,
-          "y": 0.2421,
+          "x": 0.4384,
+          "y": 0.2393,
           "town": "Grande Prairie, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1221,8 +1243,8 @@
           ]
         },
         {
-          "x": 0.5448,
-          "y": 0.2863,
+          "x": 0.544,
+          "y": 0.2828,
           "town": "Valleyview, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1235,8 +1257,8 @@
           ]
         },
         {
-          "x": 0.6629,
-          "y": 0.5516,
+          "x": 0.6602,
+          "y": 0.5434,
           "town": "Whitecourt, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1249,8 +1271,8 @@
           ]
         },
         {
-          "x": 0.6092,
-          "y": 0.7137,
+          "x": 0.6074,
+          "y": 0.7028,
           "town": "Edson, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1261,20 +1283,40 @@
               "socEnd": 76
             }
           ]
+        },
+        {
+          "x": 0.4877,
+          "y": 0.9055,
+          "town": "Jasper, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 9,
+              "socStart": 29,
+              "socEnd": 60
+            }
+          ]
         }
       ],
-      "kmPerPx": 1.2554,
+      "kmPerPx": 1.2774,
       "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T01:15:56.638Z",
+  "updatedAt": "2026-09-12T01:40:24.325Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.3,
+          "wh": 134,
+          "km": 124,
+          "prov": "British Columbia"
+        },
         {
           "t": 14.2,
           "wh": 170,
@@ -1802,8 +1844,8 @@
       "best": 88,
       "worst": 491,
       "provinces": [
-        "Alberta",
         "British Columbia",
+        "Alberta",
         "Yukon",
         "Saskatchewan",
         "Manitoba"
@@ -1911,9 +1953,9 @@
       "key": "2026-09-10",
       "day": "Day 9",
       "date": "Sep 10",
-      "province": "Alberta",
+      "province": "British Columbia",
       "from": "Dawson Creek, British Columbia",
-      "to": "Jasper, Alberta",
+      "to": "Valemount, British Columbia",
       "plotted": true,
       "km": "999",
       "chargeMinutes": 66,
