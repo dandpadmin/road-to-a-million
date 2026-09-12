@@ -1,13 +1,13 @@
 {
-  "odometer": 9201,
+  "odometer": 9210,
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
   "route": "Abbotsford, British Columbia",
-  "today": 28,
+  "today": 49,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 734,
+  "avgPerDay": 736,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -1562,7 +1562,7 @@
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-12T21:42:49.039Z",
+  "updatedAt": "2026-09-12T21:54:59.552Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2153,12 +2153,12 @@
     },
     "autopilot": {
       "km": 7402,
-      "pct": 83.7
+      "pct": 83.5
     },
     "energy": {
-      "used": 1381,
+      "used": 1383,
       "added": 1523,
-      "overhead": 9.3,
+      "overhead": 9.2,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -2243,7 +2243,7 @@
     {
       "key": "2026-09-12",
       "label": "D 11",
-      "km": 28
+      "km": 49
     }
   ],
   "log": [
@@ -2254,7 +2254,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "28",
+      "km": "49",
       "chargeMinutes": 0,
       "note": ""
     },
