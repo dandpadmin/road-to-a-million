@@ -1,15 +1,15 @@
 {
-  "odometer": 9168,
+  "odometer": 9172,
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
   "route": "Merritt, British Columbia",
-  "today": 572,
+  "today": 12,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 804,
-  "chargeSessions": 15,
-  "chargeSupercharger": 15,
+  "avgPerDay": 732,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 68,
   "chargeLifetimeSupercharger": 34,
@@ -1393,8 +1393,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T18:32:04.284Z",
+  "asOf": "2026-09-12",
+  "updatedAt": "2026-09-12T18:52:19.260Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1966,17 +1966,17 @@
       ]
     },
     "autopilot": {
-      "km": 7401,
-      "pct": 83.9
+      "km": 7402,
+      "pct": 83.8
     },
     "energy": {
-      "used": 1377,
+      "used": 1379,
       "added": 1523,
       "overhead": 9.5,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 401
+      "rangeEst": 402
     },
     "cost": {
       "total": 227.95,
@@ -2053,9 +2053,25 @@
       "key": "2026-09-11",
       "label": "D 10",
       "km": 572
+    },
+    {
+      "key": "2026-09-12",
+      "label": "D 11",
+      "km": 12
     }
   ],
   "log": [
+    {
+      "key": "2026-09-12",
+      "day": "Day 11",
+      "date": "Sep 12",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "12",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-11",
       "day": "Day 10",
@@ -2162,18 +2178,6 @@
       "plotted": true,
       "km": "455",
       "chargeMinutes": 59,
-      "note": ""
-    },
-    {
-      "key": "2026-09-02",
-      "day": "Day 1",
-      "date": "Sep 2",
-      "province": "Alberta",
-      "from": "Winkler, Manitoba",
-      "to": "Calgary, Alberta",
-      "plotted": true,
-      "km": "1,333",
-      "chargeMinutes": 127,
       "note": ""
     }
   ]
