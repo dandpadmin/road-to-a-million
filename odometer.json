@@ -15,156 +15,19 @@
   "chargeLifetimeSupercharger": 34,
   "chargeLifetimeOther": 34,
   "dayMap": {
-    "key": "2026-09-10",
-    "day": 9,
-    "label": "Day 9 · Sep 10",
-    "km": 999,
-    "from": "Dawson Creek, British Columbia",
+    "key": "2026-09-11",
+    "day": 10,
+    "label": "Day 10 · Sep 11",
+    "km": 2,
+    "from": "Clearwater, British Columbia",
     "to": "Clearwater, British Columbia",
     "corridor": "Clearwater, British Columbia",
-    "chargeStops": 6,
-    "chargeMinutes": 66,
+    "chargeStops": 1,
+    "chargeMinutes": 16,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.385,
-        0.08
-      ],
-      [
-        0.4558,
-        0.1927
-      ],
-      [
-        0.4533,
-        0.2029
-      ],
-      [
-        0.5316,
-        0.2234
-      ],
-      [
-        0.615,
-        0.4078
-      ],
-      [
-        0.5771,
-        0.5205
-      ],
-      [
-        0.4912,
-        0.6639
-      ],
-      [
-        0.4305,
-        0.6741
-      ],
-      [
-        0.3926,
-        0.92
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.385,
-        "y": 0.08,
-        "town": "Dawson Creek, British Columbia",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.3926,
-        "y": 0.92,
-        "town": "Clearwater, British Columbia",
-        "kind": "end",
-        "sessions": []
-      },
-      {
-        "x": 0.4558,
-        "y": 0.1927,
-        "town": "Grande Prairie, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 17,
-            "socStart": 60,
-            "socEnd": 93
-          }
-        ]
-      },
-      {
-        "x": 0.5316,
-        "y": 0.2234,
-        "town": "Valleyview, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 6,
-            "socStart": 61,
-            "socEnd": 81
-          }
-        ]
-      },
-      {
-        "x": 0.615,
-        "y": 0.4078,
-        "town": "Whitecourt, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 33,
-            "socEnd": 56
-          }
-        ]
-      },
-      {
-        "x": 0.5771,
-        "y": 0.5205,
-        "town": "Edson, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 15,
-            "socStart": 28,
-            "socEnd": 76
-          }
-        ]
-      },
-      {
-        "x": 0.4912,
-        "y": 0.6639,
-        "town": "Jasper, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 9,
-            "socStart": 29,
-            "socEnd": 60
-          }
-        ]
-      },
-      {
-        "x": 0.4305,
-        "y": 0.6741,
-        "town": "Valemount, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 12,
-            "socStart": 35,
-            "socEnd": 74
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 1.806,
-    "plotted": true
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
     {
@@ -1323,10 +1186,25 @@
       ],
       "kmPerPx": 1.806,
       "plotted": true
+    },
+    {
+      "key": "2026-09-11",
+      "day": 10,
+      "label": "Day 10 · Sep 11",
+      "km": 2,
+      "from": "Clearwater, British Columbia",
+      "to": "Clearwater, British Columbia",
+      "corridor": "Clearwater, British Columbia",
+      "chargeStops": 1,
+      "chargeMinutes": 16,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T14:55:40.249Z",
+  "updatedAt": "2026-09-12T15:13:27.142Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -1974,9 +1852,9 @@
       "key": "2026-09-11",
       "day": "Day 10",
       "date": "Sep 11",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "British Columbia",
+      "from": "Clearwater, British Columbia",
+      "to": "Clearwater, British Columbia",
       "km": "572",
       "chargeMinutes": 85,
       "note": ""
