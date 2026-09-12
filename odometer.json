@@ -18,7 +18,7 @@
     "key": "2026-09-11",
     "day": 10,
     "label": "Day 10 · Sep 11",
-    "km": 566,
+    "km": 569,
     "from": "Clearwater, British Columbia",
     "to": "Squamish, British Columbia",
     "corridor": "Squamish, British Columbia",
@@ -73,6 +73,10 @@
       [
         0.3669,
         0.71
+      ],
+      [
+        0.3669,
+        0.6938
       ]
     ],
     "stops": [
@@ -92,7 +96,7 @@
       },
       {
         "x": 0.3669,
-        "y": 0.71,
+        "y": 0.6938,
         "town": "Squamish, British Columbia",
         "kind": "end",
         "sessions": [
@@ -1388,7 +1392,7 @@
       "key": "2026-09-11",
       "day": 10,
       "label": "Day 10 · Sep 11",
-      "km": 566,
+      "km": 569,
       "from": "Clearwater, British Columbia",
       "to": "Squamish, British Columbia",
       "corridor": "Squamish, British Columbia",
@@ -1443,6 +1447,10 @@
         [
           0.3669,
           0.71
+        ],
+        [
+          0.3669,
+          0.6938
         ]
       ],
       "stops": [
@@ -1462,7 +1470,7 @@
         },
         {
           "x": 0.3669,
-          "y": 0.71,
+          "y": 0.6938,
           "town": "Squamish, British Columbia",
           "kind": "end",
           "sessions": [
@@ -1598,7 +1606,7 @@
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-12T23:27:37.828Z",
+  "updatedAt": "2026-09-12T23:40:42.632Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
