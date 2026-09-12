@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
-  "route": "Valemount, British Columbia",
+  "route": "Clearwater, British Columbia",
   "today": 572,
   "best": 1333,
   "bestDay": 1,
@@ -18,72 +18,69 @@
     "key": "2026-09-10",
     "day": 9,
     "label": "Day 9 · Sep 10",
-    "km": 800,
+    "km": 999,
     "from": "Dawson Creek, British Columbia",
-    "to": "Valemount, British Columbia",
-    "corridor": "Valemount, British Columbia",
+    "to": "Clearwater, British Columbia",
+    "corridor": "Clearwater, British Columbia",
     "chargeStops": 6,
     "chargeMinutes": 66,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3398,
+        0.385,
         0.08
       ],
       [
-        0.4384,
-        0.2393
+        0.4558,
+        0.1927
       ],
       [
-        0.4349,
-        0.2538
+        0.4533,
+        0.2029
       ],
       [
-        0.544,
-        0.2828
+        0.5316,
+        0.2234
       ],
       [
-        0.6602,
-        0.5434
+        0.615,
+        0.4078
       ],
       [
-        0.6074,
-        0.7028
+        0.5771,
+        0.5205
       ],
       [
-        0.4877,
-        0.9055
+        0.4912,
+        0.6639
       ],
       [
-        0.4032,
+        0.4305,
+        0.6741
+      ],
+      [
+        0.3926,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.3398,
+        "x": 0.385,
         "y": 0.08,
         "town": "Dawson Creek, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4032,
+        "x": 0.3926,
         "y": 0.92,
-        "town": "Valemount, British Columbia",
+        "town": "Clearwater, British Columbia",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 12,
-            "socStart": 35,
-            "socEnd": 74
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.4384,
-        "y": 0.2393,
+        "x": 0.4558,
+        "y": 0.1927,
         "town": "Grande Prairie, Alberta",
         "kind": "charge",
         "sessions": [
@@ -96,8 +93,8 @@
         ]
       },
       {
-        "x": 0.544,
-        "y": 0.2828,
+        "x": 0.5316,
+        "y": 0.2234,
         "town": "Valleyview, Alberta",
         "kind": "charge",
         "sessions": [
@@ -110,8 +107,8 @@
         ]
       },
       {
-        "x": 0.6602,
-        "y": 0.5434,
+        "x": 0.615,
+        "y": 0.4078,
         "town": "Whitecourt, Alberta",
         "kind": "charge",
         "sessions": [
@@ -124,8 +121,8 @@
         ]
       },
       {
-        "x": 0.6074,
-        "y": 0.7028,
+        "x": 0.5771,
+        "y": 0.5205,
         "town": "Edson, Alberta",
         "kind": "charge",
         "sessions": [
@@ -138,8 +135,8 @@
         ]
       },
       {
-        "x": 0.4877,
-        "y": 0.9055,
+        "x": 0.4912,
+        "y": 0.6639,
         "town": "Jasper, Alberta",
         "kind": "charge",
         "sessions": [
@@ -150,9 +147,23 @@
             "socEnd": 60
           }
         ]
+      },
+      {
+        "x": 0.4305,
+        "y": 0.6741,
+        "town": "Valemount, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 12,
+            "socStart": 35,
+            "socEnd": 74
+          }
+        ]
       }
     ],
-    "kmPerPx": 1.2774,
+    "kmPerPx": 1.806,
     "plotted": true
   },
   "dayMaps": [
@@ -1165,72 +1176,69 @@
       "key": "2026-09-10",
       "day": 9,
       "label": "Day 9 · Sep 10",
-      "km": 800,
+      "km": 999,
       "from": "Dawson Creek, British Columbia",
-      "to": "Valemount, British Columbia",
-      "corridor": "Valemount, British Columbia",
+      "to": "Clearwater, British Columbia",
+      "corridor": "Clearwater, British Columbia",
       "chargeStops": 6,
       "chargeMinutes": 66,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3398,
+          0.385,
           0.08
         ],
         [
-          0.4384,
-          0.2393
+          0.4558,
+          0.1927
         ],
         [
-          0.4349,
-          0.2538
+          0.4533,
+          0.2029
         ],
         [
-          0.544,
-          0.2828
+          0.5316,
+          0.2234
         ],
         [
-          0.6602,
-          0.5434
+          0.615,
+          0.4078
         ],
         [
-          0.6074,
-          0.7028
+          0.5771,
+          0.5205
         ],
         [
-          0.4877,
-          0.9055
+          0.4912,
+          0.6639
         ],
         [
-          0.4032,
+          0.4305,
+          0.6741
+        ],
+        [
+          0.3926,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.3398,
+          "x": 0.385,
           "y": 0.08,
           "town": "Dawson Creek, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.4032,
+          "x": 0.3926,
           "y": 0.92,
-          "town": "Valemount, British Columbia",
+          "town": "Clearwater, British Columbia",
           "kind": "end",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 12,
-              "socStart": 35,
-              "socEnd": 74
-            }
-          ]
+          "sessions": []
         },
         {
-          "x": 0.4384,
-          "y": 0.2393,
+          "x": 0.4558,
+          "y": 0.1927,
           "town": "Grande Prairie, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1243,8 +1251,8 @@
           ]
         },
         {
-          "x": 0.544,
-          "y": 0.2828,
+          "x": 0.5316,
+          "y": 0.2234,
           "town": "Valleyview, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1257,8 +1265,8 @@
           ]
         },
         {
-          "x": 0.6602,
-          "y": 0.5434,
+          "x": 0.615,
+          "y": 0.4078,
           "town": "Whitecourt, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1271,8 +1279,8 @@
           ]
         },
         {
-          "x": 0.6074,
-          "y": 0.7028,
+          "x": 0.5771,
+          "y": 0.5205,
           "town": "Edson, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1285,8 +1293,8 @@
           ]
         },
         {
-          "x": 0.4877,
-          "y": 0.9055,
+          "x": 0.4912,
+          "y": 0.6639,
           "town": "Jasper, Alberta",
           "kind": "charge",
           "sessions": [
@@ -1297,20 +1305,40 @@
               "socEnd": 60
             }
           ]
+        },
+        {
+          "x": 0.4305,
+          "y": 0.6741,
+          "town": "Valemount, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 12,
+              "socStart": 35,
+              "socEnd": 74
+            }
+          ]
         }
       ],
-      "kmPerPx": 1.2774,
+      "kmPerPx": 1.806,
       "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T03:30:29.734Z",
+  "updatedAt": "2026-09-12T03:52:50.082Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.1,
+          "wh": 145,
+          "km": 198,
+          "prov": "British Columbia"
+        },
         {
           "t": 12.3,
           "wh": 134,
@@ -1840,7 +1868,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 152,
+      "median": 151,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -1955,7 +1983,7 @@
       "date": "Sep 10",
       "province": "British Columbia",
       "from": "Dawson Creek, British Columbia",
-      "to": "Valemount, British Columbia",
+      "to": "Clearwater, British Columbia",
       "plotted": true,
       "km": "999",
       "chargeMinutes": 66,
