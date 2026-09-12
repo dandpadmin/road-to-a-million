@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
-  "route": "Clearwater, British Columbia",
+  "route": "Kamloops, British Columbia",
   "today": 572,
   "best": 1333,
   "bestDay": 1,
@@ -18,16 +18,67 @@
     "key": "2026-09-11",
     "day": 10,
     "label": "Day 10 · Sep 11",
-    "km": 2,
+    "km": 130,
     "from": "Clearwater, British Columbia",
-    "to": "Clearwater, British Columbia",
-    "corridor": "Clearwater, British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 16,
+    "to": "Kamloops, British Columbia",
+    "corridor": "Kamloops, British Columbia",
+    "chargeStops": 2,
+    "chargeMinutes": 23,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.5329,
+        0.08
+      ],
+      [
+        0.4671,
+        0.92
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.5329,
+        "y": 0.08,
+        "town": "Clearwater, British Columbia",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 16,
+            "socStart": 21,
+            "socEnd": 63
+          }
+        ]
+      },
+      {
+        "x": 0.4671,
+        "y": 0.92,
+        "town": "Kamloops, British Columbia",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 31,
+            "socEnd": 55
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 57,
+            "socEnd": 65
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 4,
+            "socStart": 64,
+            "socEnd": 72
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.4405,
+    "plotted": true
   },
   "dayMaps": [
     {
@@ -1191,26 +1242,83 @@
       "key": "2026-09-11",
       "day": 10,
       "label": "Day 10 · Sep 11",
-      "km": 2,
+      "km": 130,
       "from": "Clearwater, British Columbia",
-      "to": "Clearwater, British Columbia",
-      "corridor": "Clearwater, British Columbia",
-      "chargeStops": 1,
-      "chargeMinutes": 16,
+      "to": "Kamloops, British Columbia",
+      "corridor": "Kamloops, British Columbia",
+      "chargeStops": 2,
+      "chargeMinutes": 23,
       "note": "Town level · delayed 24h",
-      "path": [],
-      "stops": [],
-      "kmPerPx": 0
+      "path": [
+        [
+          0.5329,
+          0.08
+        ],
+        [
+          0.4671,
+          0.92
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.5329,
+          "y": 0.08,
+          "town": "Clearwater, British Columbia",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 16,
+              "socStart": 21,
+              "socEnd": 63
+            }
+          ]
+        },
+        {
+          "x": 0.4671,
+          "y": 0.92,
+          "town": "Kamloops, British Columbia",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 7,
+              "socStart": 31,
+              "socEnd": 55
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 57,
+              "socEnd": 65
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 4,
+              "socStart": 64,
+              "socEnd": 72
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.4405,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T16:29:49.886Z",
+  "updatedAt": "2026-09-12T16:43:35.469Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 8.8,
+          "wh": 147,
+          "km": 128,
+          "prov": "British Columbia"
+        },
         {
           "t": 12.1,
           "wh": 145,
@@ -1854,7 +1962,8 @@
       "date": "Sep 11",
       "province": "British Columbia",
       "from": "Clearwater, British Columbia",
-      "to": "Clearwater, British Columbia",
+      "to": "Kamloops, British Columbia",
+      "plotted": true,
       "km": "572",
       "chargeMinutes": 85,
       "note": ""
