@@ -1,10 +1,10 @@
 {
-  "odometer": 9177,
+  "odometer": 9180,
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
   "route": "Hope, British Columbia",
-  "today": 17,
+  "today": 20,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 733,
@@ -18,12 +18,12 @@
     "key": "2026-09-11",
     "day": 10,
     "label": "Day 10 · Sep 11",
-    "km": 344,
+    "km": 346,
     "from": "Clearwater, British Columbia",
     "to": "Hope, British Columbia",
     "corridor": "Hope, British Columbia",
-    "chargeStops": 9,
-    "chargeMinutes": 50,
+    "chargeStops": 10,
+    "chargeMinutes": 55,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -49,6 +49,10 @@
       [
         0.4322,
         0.92
+      ],
+      [
+        0.4322,
+        0.9017
       ]
     ],
     "stops": [
@@ -68,7 +72,7 @@
       },
       {
         "x": 0.4322,
-        "y": 0.92,
+        "y": 0.9017,
         "town": "Hope, British Columbia",
         "kind": "end",
         "sessions": [
@@ -89,12 +93,6 @@
             "minutes": 4,
             "socStart": 83,
             "socEnd": 89
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 77,
-            "socEnd": 94
           }
         ]
       },
@@ -153,6 +151,20 @@
             "minutes": 3,
             "socStart": 82,
             "socEnd": 86
+          }
+        ]
+      },
+      {
+        "x": 0.4322,
+        "y": 0.92,
+        "town": "Chilliwack, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 11,
+            "socStart": 77,
+            "socEnd": 94
           }
         ]
       }
@@ -1322,12 +1334,12 @@
       "key": "2026-09-11",
       "day": 10,
       "label": "Day 10 · Sep 11",
-      "km": 344,
+      "km": 346,
       "from": "Clearwater, British Columbia",
       "to": "Hope, British Columbia",
       "corridor": "Hope, British Columbia",
-      "chargeStops": 9,
-      "chargeMinutes": 50,
+      "chargeStops": 10,
+      "chargeMinutes": 55,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -1353,6 +1365,10 @@
         [
           0.4322,
           0.92
+        ],
+        [
+          0.4322,
+          0.9017
         ]
       ],
       "stops": [
@@ -1372,7 +1388,7 @@
         },
         {
           "x": 0.4322,
-          "y": 0.92,
+          "y": 0.9017,
           "town": "Hope, British Columbia",
           "kind": "end",
           "sessions": [
@@ -1393,12 +1409,6 @@
               "minutes": 4,
               "socStart": 83,
               "socEnd": 89
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 11,
-              "socStart": 77,
-              "socEnd": 94
             }
           ]
         },
@@ -1459,6 +1469,20 @@
               "socEnd": 86
             }
           ]
+        },
+        {
+          "x": 0.4322,
+          "y": 0.92,
+          "town": "Chilliwack, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 11,
+              "socStart": 77,
+              "socEnd": 94
+            }
+          ]
         }
       ],
       "kmPerPx": 1.0131,
@@ -1466,7 +1490,7 @@
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-12T19:25:30.780Z",
+  "updatedAt": "2026-09-12T19:39:57.633Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2048,7 +2072,7 @@
       "pct": 83.8
     },
     "energy": {
-      "used": 1379,
+      "used": 1380,
       "added": 1523,
       "overhead": 9.4,
       "whPerKm": 156,
@@ -2135,7 +2159,7 @@
     {
       "key": "2026-09-12",
       "label": "D 11",
-      "km": 17
+      "km": 20
     }
   ],
   "log": [
@@ -2146,7 +2170,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "17",
+      "km": "20",
       "chargeMinutes": 0,
       "note": ""
     },
