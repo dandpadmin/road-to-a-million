@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
-  "route": "Chilliwack, British Columbia",
+  "route": "Abbotsford, British Columbia",
   "today": 20,
   "best": 1333,
   "bestDay": 1,
@@ -18,54 +18,58 @@
     "key": "2026-09-11",
     "day": 10,
     "label": "Day 10 · Sep 11",
-    "km": 401,
+    "km": 425,
     "from": "Clearwater, British Columbia",
-    "to": "Chilliwack, British Columbia",
-    "corridor": "Chilliwack, British Columbia",
-    "chargeStops": 12,
-    "chargeMinutes": 70,
+    "to": "Abbotsford, British Columbia",
+    "corridor": "Abbotsford, British Columbia",
+    "chargeStops": 13,
+    "chargeMinutes": 74,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5848,
+        0.5923,
         0.08
       ],
       [
-        0.558,
-        0.416
+        0.5666,
+        0.4031
       ],
       [
-        0.5625,
-        0.3992
+        0.5709,
+        0.3869
       ],
       [
-        0.558,
-        0.416
+        0.5666,
+        0.4031
       ],
       [
-        0.5223,
-        0.6008
+        0.5322,
+        0.5808
       ],
       [
-        0.4598,
-        0.8528
+        0.4721,
+        0.8231
       ],
       [
-        0.4598,
-        0.836
+        0.4721,
+        0.8069
       ],
       [
-        0.4554,
-        0.8528
+        0.4678,
+        0.8231
       ],
       [
-        0.4152,
+        0.4291,
+        0.8877
+      ],
+      [
+        0.4077,
         0.92
       ]
     ],
     "stops": [
       {
-        "x": 0.5848,
+        "x": 0.5923,
         "y": 0.08,
         "town": "Clearwater, British Columbia",
         "kind": "start",
@@ -79,17 +83,11 @@
         ]
       },
       {
-        "x": 0.4152,
+        "x": 0.4077,
         "y": 0.92,
-        "town": "Chilliwack, British Columbia",
+        "town": "Abbotsford, British Columbia",
         "kind": "end",
         "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 77,
-            "socEnd": 94
-          },
           {
             "network": "Supercharger",
             "minutes": 4,
@@ -105,8 +103,8 @@
         ]
       },
       {
-        "x": 0.558,
-        "y": 0.416,
+        "x": 0.5666,
+        "y": 0.4031,
         "town": "Kamloops, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -131,8 +129,8 @@
         ]
       },
       {
-        "x": 0.5223,
-        "y": 0.6008,
+        "x": 0.5322,
+        "y": 0.5808,
         "town": "Merritt, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -163,8 +161,8 @@
         ]
       },
       {
-        "x": 0.4598,
-        "y": 0.8528,
+        "x": 0.4721,
+        "y": 0.8231,
         "town": "Hope, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -187,9 +185,23 @@
             "socEnd": 89
           }
         ]
+      },
+      {
+        "x": 0.4291,
+        "y": 0.8877,
+        "town": "Chilliwack, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 11,
+            "socStart": 77,
+            "socEnd": 94
+          }
+        ]
       }
     ],
-    "kmPerPx": 1.1012,
+    "kmPerPx": 1.1452,
     "plotted": true
   },
   "dayMaps": [
@@ -1354,54 +1366,58 @@
       "key": "2026-09-11",
       "day": 10,
       "label": "Day 10 · Sep 11",
-      "km": 401,
+      "km": 425,
       "from": "Clearwater, British Columbia",
-      "to": "Chilliwack, British Columbia",
-      "corridor": "Chilliwack, British Columbia",
-      "chargeStops": 12,
-      "chargeMinutes": 70,
+      "to": "Abbotsford, British Columbia",
+      "corridor": "Abbotsford, British Columbia",
+      "chargeStops": 13,
+      "chargeMinutes": 74,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.5848,
+          0.5923,
           0.08
         ],
         [
-          0.558,
-          0.416
+          0.5666,
+          0.4031
         ],
         [
-          0.5625,
-          0.3992
+          0.5709,
+          0.3869
         ],
         [
-          0.558,
-          0.416
+          0.5666,
+          0.4031
         ],
         [
-          0.5223,
-          0.6008
+          0.5322,
+          0.5808
         ],
         [
-          0.4598,
-          0.8528
+          0.4721,
+          0.8231
         ],
         [
-          0.4598,
-          0.836
+          0.4721,
+          0.8069
         ],
         [
-          0.4554,
-          0.8528
+          0.4678,
+          0.8231
         ],
         [
-          0.4152,
+          0.4291,
+          0.8877
+        ],
+        [
+          0.4077,
           0.92
         ]
       ],
       "stops": [
         {
-          "x": 0.5848,
+          "x": 0.5923,
           "y": 0.08,
           "town": "Clearwater, British Columbia",
           "kind": "start",
@@ -1415,17 +1431,11 @@
           ]
         },
         {
-          "x": 0.4152,
+          "x": 0.4077,
           "y": 0.92,
-          "town": "Chilliwack, British Columbia",
+          "town": "Abbotsford, British Columbia",
           "kind": "end",
           "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 11,
-              "socStart": 77,
-              "socEnd": 94
-            },
             {
               "network": "Supercharger",
               "minutes": 4,
@@ -1441,8 +1451,8 @@
           ]
         },
         {
-          "x": 0.558,
-          "y": 0.416,
+          "x": 0.5666,
+          "y": 0.4031,
           "town": "Kamloops, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -1467,8 +1477,8 @@
           ]
         },
         {
-          "x": 0.5223,
-          "y": 0.6008,
+          "x": 0.5322,
+          "y": 0.5808,
           "town": "Merritt, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -1499,8 +1509,8 @@
           ]
         },
         {
-          "x": 0.4598,
-          "y": 0.8528,
+          "x": 0.4721,
+          "y": 0.8231,
           "town": "Hope, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -1523,20 +1533,40 @@
               "socEnd": 89
             }
           ]
+        },
+        {
+          "x": 0.4291,
+          "y": 0.8877,
+          "town": "Chilliwack, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 11,
+              "socStart": 77,
+              "socEnd": 94
+            }
+          ]
         }
       ],
-      "kmPerPx": 1.1012,
+      "kmPerPx": 1.1452,
       "plotted": true
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-12T20:31:10.530Z",
+  "updatedAt": "2026-09-12T20:54:42.932Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 22.4,
+          "wh": 136,
+          "km": 25,
+          "prov": "British Columbia"
+        },
         {
           "t": 21,
           "wh": 147,
@@ -2102,7 +2132,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 150,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -2226,7 +2256,7 @@
       "date": "Sep 11",
       "province": "British Columbia",
       "from": "Clearwater, British Columbia",
-      "to": "Chilliwack, British Columbia",
+      "to": "Abbotsford, British Columbia",
       "plotted": true,
       "km": "572",
       "chargeMinutes": 85,
