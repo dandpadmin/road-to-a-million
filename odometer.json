@@ -22,8 +22,8 @@
     "from": "Clearwater, British Columbia",
     "to": "Squamish, British Columbia",
     "corridor": "Squamish, British Columbia",
-    "chargeStops": 14,
-    "chargeMinutes": 78,
+    "chargeStops": 15,
+    "chargeMinutes": 85,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1392,8 +1392,8 @@
       "from": "Clearwater, British Columbia",
       "to": "Squamish, British Columbia",
       "corridor": "Squamish, British Columbia",
-      "chargeStops": 14,
-      "chargeMinutes": 78,
+      "chargeStops": 15,
+      "chargeMinutes": 85,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -1598,7 +1598,7 @@
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-12T23:13:09.205Z",
+  "updatedAt": "2026-09-12T23:27:37.828Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
