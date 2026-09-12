@@ -1,5 +1,5 @@
 {
-  "odometer": 9160,
+  "odometer": 9168,
   "goal": 1000000,
   "day": 11,
   "province": "British Columbia",
@@ -18,12 +18,12 @@
     "key": "2026-09-11",
     "day": 10,
     "label": "Day 10 · Sep 11",
-    "km": 223,
+    "km": 225,
     "from": "Clearwater, British Columbia",
     "to": "Merritt, British Columbia",
     "corridor": "Merritt, British Columbia",
-    "chargeStops": 7,
-    "chargeMinutes": 43,
+    "chargeStops": 8,
+    "chargeMinutes": 46,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1286,12 +1286,12 @@
       "key": "2026-09-11",
       "day": 10,
       "label": "Day 10 · Sep 11",
-      "km": 223,
+      "km": 225,
       "from": "Clearwater, British Columbia",
       "to": "Merritt, British Columbia",
       "corridor": "Merritt, British Columbia",
-      "chargeStops": 7,
-      "chargeMinutes": 43,
+      "chargeStops": 8,
+      "chargeMinutes": 46,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -1394,7 +1394,7 @@
     }
   ],
   "asOf": "2026-09-11",
-  "updatedAt": "2026-09-12T18:15:03.490Z",
+  "updatedAt": "2026-09-12T18:32:04.284Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
