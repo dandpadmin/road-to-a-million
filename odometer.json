@@ -1,9 +1,9 @@
 {
-  "odometer": 9351,
+  "odometer": 9361,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
-  "route": "British Columbia",
+  "route": "Squamish, British Columbia",
   "today": 107,
   "best": 1333,
   "bestDay": 1,
@@ -18,10 +18,10 @@
     "key": "2026-09-12",
     "day": 11,
     "label": "Day 11 · Sep 12",
-    "km": 57,
+    "km": 74,
     "from": "Squamish, British Columbia",
-    "to": "British Columbia",
-    "corridor": "British Columbia",
+    "to": "Squamish, British Columbia",
+    "corridor": "Squamish, British Columbia",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
@@ -49,6 +49,10 @@
       [
         0.4718,
         0.29
+      ],
+      [
+        0.5847,
+        0.71
       ]
     ],
     "stops": [
@@ -65,13 +69,6 @@
             "socEnd": 74
           }
         ]
-      },
-      {
-        "x": 0.4718,
-        "y": 0.29,
-        "town": "British Columbia",
-        "kind": "end",
-        "sessions": []
       }
     ],
     "kmPerPx": 0.0881,
@@ -1455,10 +1452,10 @@
       "key": "2026-09-12",
       "day": 11,
       "label": "Day 11 · Sep 12",
-      "km": 57,
+      "km": 74,
       "from": "Squamish, British Columbia",
-      "to": "British Columbia",
-      "corridor": "British Columbia",
+      "to": "Squamish, British Columbia",
+      "corridor": "Squamish, British Columbia",
       "chargeStops": 0,
       "chargeMinutes": 0,
       "note": "Town level · delayed 24h",
@@ -1486,6 +1483,10 @@
         [
           0.4718,
           0.29
+        ],
+        [
+          0.5847,
+          0.71
         ]
       ],
       "stops": [
@@ -1502,13 +1503,6 @@
               "socEnd": 74
             }
           ]
-        },
-        {
-          "x": 0.4718,
-          "y": 0.29,
-          "town": "British Columbia",
-          "kind": "end",
-          "sessions": []
         }
       ],
       "kmPerPx": 0.0881,
@@ -1516,13 +1510,19 @@
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-13T22:13:44.397Z",
+  "updatedAt": "2026-09-13T22:31:11.639Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.6,
+          "wh": 104,
+          "km": 17,
+          "prov": "British Columbia"
+        },
         {
           "t": 22.2,
           "wh": 117,
@@ -2253,7 +2253,7 @@
       "date": "Sep 12",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "British Columbia",
+      "to": "Squamish, British Columbia",
       "plotted": true,
       "km": "80",
       "chargeMinutes": 5,
