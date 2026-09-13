@@ -1,7 +1,7 @@
 {
   "odometer": 9238,
   "goal": 1000000,
-  "day": 11,
+  "day": 12,
   "province": "British Columbia",
   "route": "Squamish, British Columbia",
   "today": 77,
@@ -1606,7 +1606,7 @@
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-12T23:52:39.095Z",
+  "updatedAt": "2026-09-13T00:20:10.176Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
