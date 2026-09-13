@@ -1,5 +1,5 @@
 {
-  "odometer": 9241,
+  "odometer": 9265,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
@@ -15,219 +15,43 @@
   "chargeLifetimeSupercharger": 35,
   "chargeLifetimeOther": 34,
   "dayMap": {
-    "key": "2026-09-11",
-    "day": 10,
-    "label": "Day 10 · Sep 11",
-    "km": 572,
-    "from": "Clearwater, British Columbia",
+    "key": "2026-09-12",
+    "day": 11,
+    "label": "Day 11 · Sep 12",
+    "km": 9,
+    "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
     "corridor": "Squamish, British Columbia",
-    "chargeStops": 15,
-    "chargeMinutes": 85,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6331,
+        0.5,
         0.08
       ],
       [
-        0.6074,
-        0.4031
-      ],
-      [
-        0.6117,
-        0.3869
-      ],
-      [
-        0.6074,
-        0.4031
-      ],
-      [
-        0.573,
-        0.5808
-      ],
-      [
-        0.5129,
-        0.8231
-      ],
-      [
-        0.5129,
-        0.8069
-      ],
-      [
-        0.5086,
-        0.8231
-      ],
-      [
-        0.4699,
-        0.8877
-      ],
-      [
-        0.4485,
+        0.5,
         0.92
-      ],
-      [
-        0.4442,
-        0.92
-      ],
-      [
-        0.3669,
-        0.71
-      ],
-      [
-        0.3669,
-        0.6938
       ]
     ],
     "stops": [
       {
-        "x": 0.6331,
+        "x": 0.5,
         "y": 0.08,
-        "town": "Clearwater, British Columbia",
+        "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 16,
-            "socStart": 21,
-            "socEnd": 63
-          }
-        ]
-      },
-      {
-        "x": 0.3669,
-        "y": 0.6938,
-        "town": "Squamish, British Columbia",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 68,
-            "socEnd": 84
-          }
-        ]
-      },
-      {
-        "x": 0.6074,
-        "y": 0.4031,
-        "town": "Kamloops, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 31,
-            "socEnd": 55
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 57,
-            "socEnd": 65
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 64,
-            "socEnd": 72
-          }
-        ]
-      },
-      {
-        "x": 0.573,
-        "y": 0.5808,
-        "town": "Merritt, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 6,
-            "socStart": 48,
-            "socEnd": 67
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 69,
-            "socEnd": 74
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 75,
-            "socEnd": 82
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 82,
-            "socEnd": 86
-          }
-        ]
-      },
-      {
-        "x": 0.5129,
-        "y": 0.8231,
-        "town": "Hope, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 59,
-            "socEnd": 71
-          },
-          {
-            "network": "Supercharger",
             "minutes": 5,
-            "socStart": 74,
-            "socEnd": 84
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 83,
-            "socEnd": 89
-          }
-        ]
-      },
-      {
-        "x": 0.4699,
-        "y": 0.8877,
-        "town": "Chilliwack, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 77,
-            "socEnd": 94
-          }
-        ]
-      },
-      {
-        "x": 0.4485,
-        "y": 0.92,
-        "town": "Abbotsford, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 89,
-            "socEnd": 95
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 95,
-            "socEnd": 98
+            "socStart": 61,
+            "socEnd": 74
           }
         ]
       }
     ],
-    "kmPerPx": 1.1452,
+    "kmPerPx": 0.022,
     "plotted": true
   },
   "dayMaps": [
@@ -1603,16 +1427,62 @@
       ],
       "kmPerPx": 1.1452,
       "plotted": true
+    },
+    {
+      "key": "2026-09-12",
+      "day": 11,
+      "label": "Day 11 · Sep 12",
+      "km": 9,
+      "from": "Squamish, British Columbia",
+      "to": "Squamish, British Columbia",
+      "corridor": "Squamish, British Columbia",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.5,
+          0.08
+        ],
+        [
+          0.5,
+          0.92
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.5,
+          "y": 0.08,
+          "town": "Squamish, British Columbia",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 5,
+              "socStart": 61,
+              "socEnd": 74
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.022,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-12",
-  "updatedAt": "2026-09-13T18:15:38.874Z",
+  "updatedAt": "2026-09-13T18:42:18.080Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 21,
+          "wh": 103,
+          "km": 9,
+          "prov": "British Columbia"
+        },
         {
           "t": 20.9,
           "wh": 128,
@@ -2190,7 +2060,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 150,
+      "median": 149,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -2301,9 +2171,10 @@
       "key": "2026-09-12",
       "day": "Day 11",
       "date": "Sep 12",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "British Columbia",
+      "from": "Squamish, British Columbia",
+      "to": "Squamish, British Columbia",
+      "plotted": true,
       "km": "80",
       "chargeMinutes": 5,
       "note": ""
