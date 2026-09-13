@@ -1,24 +1,24 @@
 {
-  "odometer": 9306,
+  "odometer": 9310,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
   "route": "Squamish, British Columbia",
-  "today": 80,
+  "today": 68,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 738,
+  "avgPerDay": 683,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 69,
-  "chargeLifetimeSupercharger": 35,
+  "chargeLifetime": 70,
+  "chargeLifetimeSupercharger": 36,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-12",
     "day": 11,
     "label": "Day 11 · Sep 12",
-    "km": 12,
+    "km": 17,
     "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
     "corridor": "Squamish, British Columbia",
@@ -33,6 +33,10 @@
       [
         0.5,
         0.92
+      ],
+      [
+        0.5,
+        0.08
       ]
     ],
     "stops": [
@@ -1432,7 +1436,7 @@
       "key": "2026-09-12",
       "day": 11,
       "label": "Day 11 · Sep 12",
-      "km": 12,
+      "km": 17,
       "from": "Squamish, British Columbia",
       "to": "Squamish, British Columbia",
       "corridor": "Squamish, British Columbia",
@@ -1447,6 +1451,10 @@
         [
           0.5,
           0.92
+        ],
+        [
+          0.5,
+          0.08
         ]
       ],
       "stops": [
@@ -1469,14 +1477,20 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-12",
-  "updatedAt": "2026-09-13T19:12:05.975Z",
+  "asOf": "2026-09-13",
+  "updatedAt": "2026-09-13T19:26:44.133Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 25.1,
+          "wh": 109,
+          "km": 6,
+          "prov": "British Columbia"
+        },
         {
           "t": 21,
           "wh": 103,
@@ -2072,29 +2086,29 @@
       ]
     },
     "autopilot": {
-      "km": 7407,
-      "pct": 83.3
+      "km": 7474,
+      "pct": 83.4
     },
     "energy": {
-      "used": 1387,
-      "added": 1529,
-      "overhead": 9.3,
+      "used": 1397,
+      "added": 1532,
+      "overhead": 8.8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 402
     },
     "cost": {
-      "total": 230.55,
-      "supercharger": 230.55,
+      "total": 231.78,
+      "supercharger": 231.78,
       "other": 0,
       "perKm": 0.026,
-      "sessions": 35,
+      "sessions": 36,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 69,
+      "sessions": 70,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2164,9 +2178,25 @@
       "key": "2026-09-12",
       "label": "D 11",
       "km": 80
+    },
+    {
+      "key": "2026-09-13",
+      "label": "D 12",
+      "km": 68
     }
   ],
   "log": [
+    {
+      "key": "2026-09-13",
+      "day": "Day 12",
+      "date": "Sep 13",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "68",
+      "chargeMinutes": 2,
+      "note": ""
+    },
     {
       "key": "2026-09-12",
       "day": "Day 11",
@@ -2273,18 +2303,6 @@
       "plotted": true,
       "km": "1,117",
       "chargeMinutes": 171,
-      "note": ""
-    },
-    {
-      "key": "2026-09-03",
-      "day": "Day 2",
-      "date": "Sep 3",
-      "province": "Alberta",
-      "from": "Calgary, Alberta",
-      "to": "Calgary, Alberta",
-      "plotted": true,
-      "km": "455",
-      "chargeMinutes": 59,
       "note": ""
     }
   ]
