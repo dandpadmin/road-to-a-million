@@ -1,38 +1,42 @@
 {
-  "odometer": 9327,
+  "odometer": 9336,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
-  "route": "Brackendale, British Columbia",
-  "today": 83,
+  "route": "British Columbia",
+  "today": 95,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 684,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 685,
+  "chargeSessions": 3,
+  "chargeSupercharger": 3,
   "chargeOther": 0,
-  "chargeLifetime": 71,
-  "chargeLifetimeSupercharger": 37,
+  "chargeLifetime": 72,
+  "chargeLifetimeSupercharger": 38,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-12",
     "day": 11,
     "label": "Day 11 · Sep 12",
-    "km": 20,
+    "km": 28,
     "from": "Squamish, British Columbia",
-    "to": "Brackendale, British Columbia",
-    "corridor": "Brackendale, British Columbia",
+    "to": "British Columbia",
+    "corridor": "British Columbia",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.5,
-        0.08
+        0.5
       ],
       [
         0.5,
         0.92
+      ],
+      [
+        0.5,
+        0.5
       ],
       [
         0.5,
@@ -42,7 +46,7 @@
     "stops": [
       {
         "x": 0.5,
-        "y": 0.08,
+        "y": 0.5,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": [
@@ -53,9 +57,16 @@
             "socEnd": 74
           }
         ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.08,
+        "town": "Cheakamus 11, British Columbia",
+        "kind": "end",
+        "sessions": []
       }
     ],
-    "kmPerPx": 0.022,
+    "kmPerPx": 0.044,
     "plotted": true
   },
   "dayMaps": [
@@ -1436,21 +1447,25 @@
       "key": "2026-09-12",
       "day": 11,
       "label": "Day 11 · Sep 12",
-      "km": 20,
+      "km": 28,
       "from": "Squamish, British Columbia",
-      "to": "Brackendale, British Columbia",
-      "corridor": "Brackendale, British Columbia",
+      "to": "British Columbia",
+      "corridor": "British Columbia",
       "chargeStops": 0,
       "chargeMinutes": 0,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.5,
-          0.08
+          0.5
         ],
         [
           0.5,
           0.92
+        ],
+        [
+          0.5,
+          0.5
         ],
         [
           0.5,
@@ -1460,7 +1475,7 @@
       "stops": [
         {
           "x": 0.5,
-          "y": 0.08,
+          "y": 0.5,
           "town": "Squamish, British Columbia",
           "kind": "start",
           "sessions": [
@@ -1471,14 +1486,21 @@
               "socEnd": 74
             }
           ]
+        },
+        {
+          "x": 0.5,
+          "y": 0.08,
+          "town": "Cheakamus 11, British Columbia",
+          "kind": "end",
+          "sessions": []
         }
       ],
-      "kmPerPx": 0.022,
+      "kmPerPx": 0.044,
       "plotted": true
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-13T21:13:13.947Z",
+  "updatedAt": "2026-09-13T21:28:38.772Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2086,12 +2108,12 @@
       ]
     },
     "autopilot": {
-      "km": 7489,
+      "km": 7501,
       "pct": 83.4
     },
     "energy": {
-      "used": 1399,
-      "added": 1538,
+      "used": 1401,
+      "added": 1542,
       "overhead": 9.1,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
@@ -2099,16 +2121,16 @@
       "rangeEst": 403
     },
     "cost": {
-      "total": 234.16,
-      "supercharger": 234.16,
+      "total": 235.52,
+      "supercharger": 235.52,
       "other": 0,
       "perKm": 0.026,
-      "sessions": 37,
+      "sessions": 38,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 71,
+      "sessions": 72,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2182,7 +2204,7 @@
     {
       "key": "2026-09-13",
       "label": "D 12",
-      "km": 83
+      "km": 95
     }
   ],
   "log": [
@@ -2193,8 +2215,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "83",
-      "chargeMinutes": 5,
+      "km": "95",
+      "chargeMinutes": 7,
       "note": ""
     },
     {
@@ -2203,7 +2225,7 @@
       "date": "Sep 12",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "Brackendale, British Columbia",
+      "to": "British Columbia",
       "plotted": true,
       "km": "80",
       "chargeMinutes": 5,
