@@ -1,24 +1,24 @@
 {
-  "odometer": 9343,
+  "odometer": 9347,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
   "route": "British Columbia",
-  "today": 95,
+  "today": 102,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 685,
-  "chargeSessions": 3,
-  "chargeSupercharger": 3,
+  "chargeSessions": 4,
+  "chargeSupercharger": 4,
   "chargeOther": 0,
-  "chargeLifetime": 72,
-  "chargeLifetimeSupercharger": 38,
+  "chargeLifetime": 73,
+  "chargeLifetimeSupercharger": 39,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-12",
     "day": 11,
     "label": "Day 11 · Sep 12",
-    "km": 28,
+    "km": 49,
     "from": "Squamish, British Columbia",
     "to": "British Columbia",
     "corridor": "British Columbia",
@@ -27,26 +27,30 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5,
-        0.5
+        0.5847,
+        0.71
       ],
       [
-        0.5,
+        0.5847,
         0.92
       ],
       [
-        0.5,
+        0.5847,
+        0.71
+      ],
+      [
+        0.5847,
         0.5
       ],
       [
-        0.5,
+        0.4153,
         0.08
       ]
     ],
     "stops": [
       {
-        "x": 0.5,
-        "y": 0.5,
+        "x": 0.5847,
+        "y": 0.71,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": [
@@ -59,14 +63,14 @@
         ]
       },
       {
-        "x": 0.5,
+        "x": 0.4153,
         "y": 0.08,
-        "town": "Cheakamus 11, British Columbia",
+        "town": "British Columbia",
         "kind": "end",
         "sessions": []
       }
     ],
-    "kmPerPx": 0.044,
+    "kmPerPx": 0.0881,
     "plotted": true
   },
   "dayMaps": [
@@ -1447,7 +1451,7 @@
       "key": "2026-09-12",
       "day": 11,
       "label": "Day 11 · Sep 12",
-      "km": 28,
+      "km": 49,
       "from": "Squamish, British Columbia",
       "to": "British Columbia",
       "corridor": "British Columbia",
@@ -1456,26 +1460,30 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.5,
-          0.5
+          0.5847,
+          0.71
         ],
         [
-          0.5,
+          0.5847,
           0.92
         ],
         [
-          0.5,
+          0.5847,
+          0.71
+        ],
+        [
+          0.5847,
           0.5
         ],
         [
-          0.5,
+          0.4153,
           0.08
         ]
       ],
       "stops": [
         {
-          "x": 0.5,
-          "y": 0.5,
+          "x": 0.5847,
+          "y": 0.71,
           "town": "Squamish, British Columbia",
           "kind": "start",
           "sessions": [
@@ -1488,25 +1496,31 @@
           ]
         },
         {
-          "x": 0.5,
+          "x": 0.4153,
           "y": 0.08,
-          "town": "Cheakamus 11, British Columbia",
+          "town": "British Columbia",
           "kind": "end",
           "sessions": []
         }
       ],
-      "kmPerPx": 0.044,
+      "kmPerPx": 0.0881,
       "plotted": true
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-13T21:42:27.918Z",
+  "updatedAt": "2026-09-13T21:54:41.282Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.8,
+          "wh": 109,
+          "km": 21,
+          "prov": "British Columbia"
+        },
         {
           "t": 25.1,
           "wh": 109,
@@ -2096,7 +2110,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 149,
+      "median": 148,
       "best": 88,
       "worst": 491,
       "provinces": [
@@ -2108,29 +2122,29 @@
       ]
     },
     "autopilot": {
-      "km": 7501,
+      "km": 7509,
       "pct": 83.4
     },
     "energy": {
-      "used": 1401,
-      "added": 1542,
-      "overhead": 9.1,
+      "used": 1402,
+      "added": 1543,
+      "overhead": 9.2,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 403
     },
     "cost": {
-      "total": 235.52,
-      "supercharger": 235.52,
+      "total": 236.2,
+      "supercharger": 236.2,
       "other": 0,
       "perKm": 0.026,
-      "sessions": 38,
+      "sessions": 39,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 72,
+      "sessions": 73,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2204,7 +2218,7 @@
     {
       "key": "2026-09-13",
       "label": "D 12",
-      "km": 95
+      "km": 102
     }
   ],
   "log": [
@@ -2215,8 +2229,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "95",
-      "chargeMinutes": 7,
+      "km": "102",
+      "chargeMinutes": 8,
       "note": ""
     },
     {
