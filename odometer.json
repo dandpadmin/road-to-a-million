@@ -1,13 +1,13 @@
 {
-  "odometer": 9347,
+  "odometer": 9351,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
   "route": "British Columbia",
-  "today": 102,
+  "today": 107,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 685,
+  "avgPerDay": 686,
   "chargeSessions": 4,
   "chargeSupercharger": 4,
   "chargeOther": 0,
@@ -18,7 +18,7 @@
     "key": "2026-09-12",
     "day": 11,
     "label": "Day 11 · Sep 12",
-    "km": 49,
+    "km": 57,
     "from": "Squamish, British Columbia",
     "to": "British Columbia",
     "corridor": "British Columbia",
@@ -45,6 +45,10 @@
       [
         0.4153,
         0.08
+      ],
+      [
+        0.4718,
+        0.29
       ]
     ],
     "stops": [
@@ -63,8 +67,8 @@
         ]
       },
       {
-        "x": 0.4153,
-        "y": 0.08,
+        "x": 0.4718,
+        "y": 0.29,
         "town": "British Columbia",
         "kind": "end",
         "sessions": []
@@ -1451,7 +1455,7 @@
       "key": "2026-09-12",
       "day": 11,
       "label": "Day 11 · Sep 12",
-      "km": 49,
+      "km": 57,
       "from": "Squamish, British Columbia",
       "to": "British Columbia",
       "corridor": "British Columbia",
@@ -1478,6 +1482,10 @@
         [
           0.4153,
           0.08
+        ],
+        [
+          0.4718,
+          0.29
         ]
       ],
       "stops": [
@@ -1496,8 +1504,8 @@
           ]
         },
         {
-          "x": 0.4153,
-          "y": 0.08,
+          "x": 0.4718,
+          "y": 0.29,
           "town": "British Columbia",
           "kind": "end",
           "sessions": []
@@ -1508,13 +1516,19 @@
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-13T21:54:41.282Z",
+  "updatedAt": "2026-09-13T22:13:44.397Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 22.2,
+          "wh": 117,
+          "km": 5,
+          "prov": "British Columbia"
+        },
         {
           "t": 20.8,
           "wh": 109,
@@ -2122,8 +2136,8 @@
       ]
     },
     "autopilot": {
-      "km": 7509,
-      "pct": 83.4
+      "km": 7513,
+      "pct": 83.5
     },
     "energy": {
       "used": 1402,
@@ -2218,7 +2232,7 @@
     {
       "key": "2026-09-13",
       "label": "D 12",
-      "km": 102
+      "km": 107
     }
   ],
   "log": [
@@ -2229,7 +2243,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "102",
+      "km": "107",
       "chargeMinutes": 8,
       "note": ""
     },
