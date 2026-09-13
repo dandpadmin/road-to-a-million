@@ -1,13 +1,13 @@
 {
-  "odometer": 9321,
+  "odometer": 9324,
   "goal": 1000000,
   "day": 12,
   "province": "British Columbia",
   "route": "Brackendale, British Columbia",
-  "today": 71,
+  "today": 83,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 683,
+  "avgPerDay": 684,
   "chargeSessions": 2,
   "chargeSupercharger": 2,
   "chargeOther": 0,
@@ -1478,7 +1478,7 @@
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-13T19:52:09.948Z",
+  "updatedAt": "2026-09-13T20:13:23.550Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2086,17 +2086,17 @@
       ]
     },
     "autopilot": {
-      "km": 7478,
+      "km": 7489,
       "pct": 83.4
     },
     "energy": {
-      "used": 1398,
+      "used": 1399,
       "added": 1538,
       "overhead": 9.1,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 402
+      "rangeEst": 403
     },
     "cost": {
       "total": 234.16,
@@ -2182,7 +2182,7 @@
     {
       "key": "2026-09-13",
       "label": "D 12",
-      "km": 71
+      "km": 83
     }
   ],
   "log": [
@@ -2193,7 +2193,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "71",
+      "km": "83",
       "chargeMinutes": 5,
       "note": ""
     },
