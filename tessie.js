@@ -571,6 +571,35 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
   };
 }
 
+/* One day's route + stats, in the shape both the live map and the static
+   archive pages draw from. Pulled out so the two never drift apart — the
+   live page's dayMaps is a recent window of this; the archive is all of it,
+   grouped by month, never pruned. */
+function dayRecord(d, locPublished, charges, locCutoff) {
+  const g = projectDay(locPublished, charges, d.date);
+  return {
+    key: d.date,
+    day: dayIndex(d.date),
+    date: fmtDayKey(d.date),
+    label: 'Day ' + dayIndex(d.date) + ' \u00b7 ' + fmtDayKey(d.date),
+    km: km(d.km),
+    from: town(d.starting),
+    to: town(d.ending),
+    corridor: town(d.ending),
+    province: town(d.ending).split(',').pop().trim() || '\u2014',
+    /* Counted from the charge records, not the plotted markers — a session
+       without coordinates still counts but never gets a pin. */
+    chargeStops: chargeCounts(charges, locCutoff, d.date).day,
+    chargeMinutes: chargeMinutes(charges, locCutoff, d.date),
+    note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
+    path: g.path,
+    stops: g.stops,
+    /* km per viewBox pixel — what the panel's scale bar is drawn from. */
+    kmPerPx: g.kmPerPx,
+    plotted: g.path.length > 1 || undefined,
+  };
+}
+
 export function shape({ state, drives, charges, health, history }) {
   const all = drives || [];
   const now = Date.now();
@@ -619,28 +648,7 @@ export function shape({ state, drives, charges, health, history }) {
      the location-side drives — never off `last`, which may be today. One entry
      per day in the rolling window, oldest first, so the page can let the reader
      click back through the trip. */
-  const dayMaps = locTrip.slice(-MAP_DAYS).map((d) => {
-    const g = projectDay(locPublished, charges, d.date);
-    return {
-      key: d.date,
-      day: dayIndex(d.date),
-      label: 'Day ' + dayIndex(d.date) + ' \u00b7 ' + fmtDayKey(d.date),
-      km: km(d.km),
-      from: town(d.starting),
-      to: town(d.ending),
-      corridor: town(d.ending),
-      /* Counted from the charge records, not the plotted markers — a session
-         without coordinates still counts but never gets a pin. */
-      chargeStops: chargeCounts(charges, locCutoff, d.date).day,
-      chargeMinutes: chargeMinutes(charges, locCutoff, d.date),
-      note: 'Town level \u00b7 delayed ' + LOCATION_EMBARGO_HOURS + 'h',
-      path: g.path,
-      stops: g.stops,
-      /* km per viewBox pixel — what the panel's scale bar is drawn from. */
-      kmPerPx: g.kmPerPx,
-      plotted: g.path.length > 1 || undefined,
-    };
-  });
+  const dayMaps = locTrip.slice(-MAP_DAYS).map((d) => dayRecord(d, locPublished, charges, locCutoff));
   const plottedKeys = new Set(dayMaps.filter((m) => m.plotted).map((m) => m.key));
 
   return {
@@ -711,6 +719,30 @@ export function shape({ state, drives, charges, health, history }) {
       };
     }),
   };
+}
+
+/* Every closed day, forever, grouped by calendar month — for the static
+   archive pages. odometer.json only ever ships MAP_DAYS of these (dayMaps
+   above) to keep the live page light; nothing is actually discarded, it just
+   stops being reachable from the live feed once a day ages out. This runs
+   the same projection over the whole trip and buckets the result by month
+   so the job can write one small file per month instead of one file that
+   only grows. Archive pages are not live, so there is no cost to rebuilding
+   every month on every run — the job only commits a month's file when its
+   content actually changed. */
+export function archiveByMonth({ drives, charges }) {
+  const all = drives || [];
+  const locCutoff = Date.now() - LOCATION_EMBARGO_HOURS * 36e5;
+  const locPublished = all.filter((d) => { const t = toDate(d.ended_at || d.started_at); return t && t <= locCutoff; });
+  const locTrip = byDay(locPublished).filter((d) => (dayIndex(d.date) || 0) >= 1);
+  const months = new Map();
+  for (const d of locTrip) {
+    const rec = dayRecord(d, locPublished, charges, locCutoff);
+    const monthKey = d.date.slice(0, 7); // 'YYYY-MM'
+    if (!months.has(monthKey)) months.set(monthKey, []);
+    months.get(monthKey).push(rec);
+  }
+  return months;
 }
 
 /* The browser reads the pre-shaped snapshot — no shaping, no token, no Tessie. */

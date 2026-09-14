@@ -10,13 +10,14 @@
  */
 
 async function main() {
-  const { writeFile, readFile } = await import('node:fs/promises');
-  const { shape } = await import('../tessie.js');
+  const { writeFile, readFile, mkdir } = await import('node:fs/promises');
+  const { shape, archiveByMonth } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
   const OUT = process.env.OUT || 'odometer.json';
   const HIST = process.env.HISTORY || 'history.json';
+  const ARCHIVE_DIR = process.env.ARCHIVE_DIR || 'archive';
   if (!TOKEN || !VIN) { console.error('Missing TESSIE_TOKEN or TESSIE_VIN'); process.exit(1); }
 
   const H = { Authorization: `Bearer ${TOKEN}`, Accept: 'application/json' };
@@ -81,6 +82,46 @@ async function main() {
   if (snapshot.day === null) console.warn('WARNING: day index null — DEPARTURE in tessie.js is not a valid date');
   if (!snapshot.nerd.efficiency.points.length) console.warn('NOTE: no efficiency points — check the drives payload carries energy and outside temperature');
   console.log(`wrote ${OUT} — odometer ${snapshot.odometer} km, as at ${snapshot.asOf}`);
+
+  /* Static archive pages. odometer.json only ever ships a recent window of
+     dayMaps to stay light — this writes one small file per calendar month,
+     covering the whole trip, and never prunes. Recomputed from the same
+     drives every run and only written when a month's content actually
+     changed, so a job that runs every 15 minutes doesn't spam the history
+     with identical commits. */
+  const months = archiveByMonth({ drives: drives.results || drives, charges: chargeList });
+  if (months.size) {
+    await mkdir(ARCHIVE_DIR, { recursive: true });
+    const index = [];
+    for (const [monthKey, days] of [...months.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+      const path = `${ARCHIVE_DIR}/${monthKey}.json`;
+      const body = JSON.stringify(days, null, 2);
+      let prior = null;
+      try { prior = await readFile(path, 'utf8'); } catch (e) { /* first time this month is written */ }
+      if (prior !== body) {
+        await writeFile(path, body);
+        console.log(`archive: wrote ${path} (${days.length} day${days.length === 1 ? '' : 's'})`);
+      }
+      const [y, m] = monthKey.split('-').map(Number);
+      index.push({
+        month: monthKey,
+        label: new Date(y, m - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+        days: days.length,
+        km: days.reduce((s, d) => s + d.km, 0),
+        first: days[0].key,
+        last: days[days.length - 1].key,
+      });
+    }
+    index.sort((a, b) => b.month.localeCompare(a.month)); // newest first
+    const indexPath = `${ARCHIVE_DIR}/index.json`;
+    const indexBody = JSON.stringify(index, null, 2);
+    let priorIndex = null;
+    try { priorIndex = await readFile(indexPath, 'utf8'); } catch (e) { /* first run */ }
+    if (priorIndex !== indexBody) {
+      await writeFile(indexPath, indexBody);
+      console.log(`archive: wrote ${indexPath} (${index.length} month${index.length === 1 ? '' : 's'})`);
+    }
+  }
 }
 
 main().catch((e) => { console.error(`::error::${e.message}`); process.exit(1); });

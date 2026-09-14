@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RTAM — Archive</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="_ds_bundle.js"></script>
+<style>
+body{margin:0;background:var(--surface-base);color:var(--text-primary);font-family:var(--font-mono)}
+a{color:#00B4D9;text-decoration:none}a:hover{color:#F6F0E3}
+button{font-family:inherit}
+.rtam-arc-month{cursor:pointer;text-align:left;background:transparent;border:none;padding:14px 18px;display:grid;gap:4px;color:inherit;border-bottom:1px solid rgba(246,240,227,.10)}
+.rtam-arc-month:hover{background:rgba(246,240,227,.05)}
+.rtam-arc-month.is-active{background:rgba(0,180,217,.10);box-shadow:inset 2px 0 0 #00B4D9}
+.rtam-arc-day{cursor:pointer;text-align:left;background:transparent;border:none;padding:12px 16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;color:inherit;border-bottom:1px solid rgba(246,240,227,.08)}
+.rtam-arc-day:hover{background:rgba(246,240,227,.05)}
+.rtam-arc-day.is-active{background:rgba(0,180,217,.10);box-shadow:inset 2px 0 0 #00B4D9}
+@media (max-width:860px){
+.rtam-arc-page{padding:36px 18px 64px!important}
+.rtam-arc-grid{grid-template-columns:minmax(0,1fr)!important}
+.rtam-arc-daymap{margin:0 -18px!important}
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="data.js"></script>
+<script type="text/babel" src="Panels.jsx"></script>
+<script type="text/babel">
+const { Eyebrow, Plate, Chip } = window.RoadToAMillionDesignSystem_6606d4;
+const { DayMap } = window;
+const INK = window.RTAM_INK || {};
+const { useState, useEffect } = React;
+
+/* "2026-09" -> "September 2026" is precomputed by the job into index.json's
+   label; this only formats things the job didn't already hand us. */
+function ArchiveApp() {
+  const [index, setIndex] = useState(null); // null = loading, [] = none yet
+  const [monthKey, setMonthKey] = useState(null);
+  const [monthDays, setMonthDays] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(null);
+  const [err, setErr] = useState(null);
+
+  useEffect(() => {
+    fetch('archive/index.json', { cache: 'no-store' })
+      .then((r) => { if (!r.ok) throw new Error('no archive yet'); return r.json(); })
+      .then((idx) => { setIndex(idx); if (idx.length) setMonthKey(idx[0].month); })
+      .catch(() => setIndex([]));
+  }, []);
+
+  useEffect(() => {
+    if (!monthKey) return;
+    setMonthDays(null);
+    setSelectedDay(null);
+    setErr(null);
+    fetch('archive/' + monthKey + '.json', { cache: 'no-store' })
+      .then((r) => { if (!r.ok) throw new Error('month file missing'); return r.json(); })
+      .then((days) => { setMonthDays(days); setSelectedDay(days.length ? days[days.length - 1].key : null); })
+      .catch((e) => { setMonthDays([]); setErr(e.message); });
+  }, [monthKey]);
+
+  const shownDay = (monthDays || []).find((d) => d.key === selectedDay) || null;
+
+  return (
+    <div style={{ minHeight: '100vh' }}>
+      <div style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
+        <a href="./" style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(246,240,227,.6)' }}>&larr; Live dashboard</a>
+        <span style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51' }}>Archive</span>
+      </div>
+
+      <div className="rtam-arc-page" style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 32 }}>
+        <div style={{ display: 'grid', gap: 10 }}>
+          <Eyebrow tone="cyan" size={13} track={0.22}>Trip archive</Eyebrow>
+          <p style={{ margin: 0, maxWidth: 640, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.6)' }}>
+            The live dashboard only keeps a rolling window of routes. Every day that closes is filed here by month, permanently — this page is a static snapshot, not a live feed.
+          </p>
+        </div>
+
+        {index === null && <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Loading archive…</span>}
+        {index && index.length === 0 && (
+          <Plate tone="ghost" pad={26} style={{ borderRadius: 12 }}>
+            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>No archived months yet — the first month files in once the job has run with archiving enabled.</span>
+          </Plate>
+        )}
+
+        {index && index.length > 0 && (
+          <div className="rtam-arc-grid" style={{ display: 'grid', gridTemplateColumns: '260px minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
+            <div style={{ display: 'grid', gap: 24 }}>
+              <div style={{ background: 'rgba(246,240,227,.06)', border: '1px solid rgba(246,240,227,.16)', borderRadius: 12, overflow: 'hidden' }}>
+                <div style={{ padding: '13px 18px', borderBottom: '1px solid rgba(246,240,227,.16)' }}>
+                  <Eyebrow tone="bronze" size={10} track={0.24}>Months</Eyebrow>
+                </div>
+                {index.map((m) => (
+                  <button key={m.month} className={'rtam-arc-month' + (m.month === monthKey ? ' is-active' : '')} onClick={() => setMonthKey(m.month)}>
+                    <span style={{ fontSize: 15, fontWeight: 600, color: '#F6F0E3' }}>{m.label}</span>
+                    <span style={{ fontSize: 10, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{m.days} day{m.days === 1 ? '' : 's'} · {m.km.toLocaleString()} km</span>
+                  </button>
+                ))}
+              </div>
+
+              {monthDays && monthDays.length > 0 && (
+                <div style={{ background: 'rgba(246,240,227,.06)', border: '1px solid rgba(246,240,227,.16)', borderRadius: 12, overflow: 'hidden' }}>
+                  <div style={{ padding: '13px 18px', borderBottom: '1px solid rgba(246,240,227,.16)' }}>
+                    <Eyebrow tone="bronze" size={10} track={0.24}>Days</Eyebrow>
+                  </div>
+                  <div style={{ maxHeight: 420, overflowY: 'auto' }}>
+                    {[...monthDays].reverse().map((d) => (
+                      <button key={d.key} className={'rtam-arc-day' + (d.key === selectedDay ? ' is-active' : '')} onClick={() => setSelectedDay(d.key)}>
+                        <span>
+                          <span style={{ display: 'block', fontSize: 13, color: '#F6F0E3' }}>Day {d.day} · {d.date}</span>
+                          <span style={{ display: 'block', fontSize: 10, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(246,240,227,.45)' }}>{d.province}</span>
+                        </span>
+                        <span style={{ fontSize: 13, color: '#F6F0E3', whiteSpace: 'nowrap' }}>{d.km.toLocaleString()} km</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="rtam-arc-daymap">
+              {monthDays === null && !err && <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Loading month…</span>}
+              {err && <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>{err}</span>}
+              {shownDay && <DayMap map={shownDay} />}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<ArchiveApp />);
+</script>
+</body></html>
