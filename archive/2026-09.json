@@ -1459,10 +1459,10 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 126,
+    "km": 138,
     "from": "Squamish, British Columbia",
-    "to": "Richmond, British Columbia",
-    "corridor": "Richmond, British Columbia",
+    "to": "Vancouver, British Columbia",
+    "corridor": "Vancouver, British Columbia",
     "province": "British Columbia",
     "chargeStops": 7,
     "chargeMinutes": 17,
@@ -1503,6 +1503,10 @@
       [
         0.4688,
         0.875
+      ],
+      [
+        0.4688,
+        0.725
       ]
     ],
     "stops": [
@@ -1515,35 +1519,9 @@
       },
       {
         "x": 0.4688,
-        "y": 0.875,
-        "town": "Richmond, British Columbia",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 65,
-            "socEnd": 69
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 68,
-            "socEnd": 75
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 75,
-            "socEnd": 79
-          }
-        ]
-      },
-      {
-        "x": 0.4688,
         "y": 0.725,
-        "town": "North Vancouver, British Columbia",
-        "kind": "charge",
+        "town": "Vancouver, British Columbia",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
@@ -1553,15 +1531,29 @@
           },
           {
             "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 55,
-            "socEnd": 64
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
           },
           {
             "network": "Supercharger",
             "minutes": 3,
             "socStart": 76,
             "socEnd": 82
+          }
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.65,
+        "town": "North Vancouver, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 55,
+            "socEnd": 64
           }
         ]
       },
@@ -1580,16 +1572,28 @@
         ]
       },
       {
-        "x": 0.5,
-        "y": 0.8,
-        "town": "Vancouver, British Columbia",
+        "x": 0.4377,
+        "y": 0.95,
+        "town": "Richmond, British Columbia",
         "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 1,
+            "minutes": 4,
             "socStart": 65,
-            "socEnd": 66
+            "socEnd": 69
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 68,
+            "socEnd": 75
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 75,
+            "socEnd": 79
           }
         ]
       }
