@@ -1,10 +1,10 @@
 {
-  "odometer": 9485,
+  "odometer": 9492,
   "goal": 1000000,
   "day": 13,
   "province": "British Columbia",
   "route": "Vancouver, British Columbia",
-  "today": 22,
+  "today": 28,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 644,
@@ -1686,7 +1686,7 @@
     }
   ],
   "asOf": "2026-09-14",
-  "updatedAt": "2026-09-14T20:14:41.917Z",
+  "updatedAt": "2026-09-14T20:31:49.975Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2319,10 +2319,10 @@
     },
     "autopilot": {
       "km": 7602,
-      "pct": 83.2
+      "pct": 83.1
     },
     "energy": {
-      "used": 1420,
+      "used": 1421,
       "added": 1555,
       "overhead": 8.7,
       "whPerKm": 155,
@@ -2480,7 +2480,7 @@
     {
       "key": "2026-09-14",
       "label": "D 13",
-      "km": 22
+      "km": 28
     }
   ],
   "log": [
@@ -2491,7 +2491,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "22",
+      "km": "28",
       "chargeMinutes": 0,
       "note": ""
     },
