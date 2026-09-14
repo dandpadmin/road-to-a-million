@@ -1459,64 +1459,62 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 107,
+    "km": 120,
     "from": "Squamish, British Columbia",
-    "to": "Vancouver, British Columbia",
-    "corridor": "Vancouver, British Columbia",
+    "to": "Richmond, British Columbia",
+    "corridor": "Richmond, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 4,
-    "chargeMinutes": 8,
+    "chargeStops": 5,
+    "chargeMinutes": 12,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4253,
+        0.4377,
         0.05
       ],
       [
-        0.4627,
-        0.86
+        0.4688,
+        0.725
       ],
       [
         0.5,
-        0.77
+        0.65
       ],
       [
         0.5,
-        0.86
+        0.725
       ],
       [
-        0.5747,
-        0.95
+        0.5623,
+        0.8
       ],
       [
         0.5,
-        0.95
+        0.8
       ],
       [
-        0.4627,
+        0.4688,
+        0.8
+      ],
+      [
+        0.4377,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.4253,
+        "x": 0.4377,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4627,
+        "x": 0.4377,
         "y": 0.95,
-        "town": "Vancouver, British Columbia",
+        "town": "Richmond, British Columbia",
         "kind": "end",
         "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 1,
-            "socStart": 65,
-            "socEnd": 66
-          },
           {
             "network": "Supercharger",
             "minutes": 4,
@@ -1538,8 +1536,8 @@
         ]
       },
       {
-        "x": 0.4627,
-        "y": 0.86,
+        "x": 0.4688,
+        "y": 0.725,
         "town": "North Vancouver, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -1564,8 +1562,8 @@
         ]
       },
       {
-        "x": 0.5747,
-        "y": 0.95,
+        "x": 0.5623,
+        "y": 0.8,
         "town": "Burnaby, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -1576,9 +1574,23 @@
             "socEnd": 63
           }
         ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.8,
+        "town": "Vancouver, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.1341,
+    "kmPerPx": 0.1609,
     "plotted": true
   }
 ]

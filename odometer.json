@@ -1,13 +1,13 @@
 {
-  "odometer": 9555,
+  "odometer": 9564,
   "goal": 1000000,
   "day": 13,
   "province": "British Columbia",
-  "route": "Vancouver, British Columbia",
-  "today": 47,
+  "route": "Richmond, British Columbia",
+  "today": 101,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 645,
+  "avgPerDay": 650,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -19,64 +19,62 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 107,
+    "km": 120,
     "from": "Squamish, British Columbia",
-    "to": "Vancouver, British Columbia",
-    "corridor": "Vancouver, British Columbia",
+    "to": "Richmond, British Columbia",
+    "corridor": "Richmond, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 4,
-    "chargeMinutes": 8,
+    "chargeStops": 5,
+    "chargeMinutes": 12,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4253,
+        0.4377,
         0.05
       ],
       [
-        0.4627,
-        0.86
+        0.4688,
+        0.725
       ],
       [
         0.5,
-        0.77
+        0.65
       ],
       [
         0.5,
-        0.86
+        0.725
       ],
       [
-        0.5747,
-        0.95
+        0.5623,
+        0.8
       ],
       [
         0.5,
-        0.95
+        0.8
       ],
       [
-        0.4627,
+        0.4688,
+        0.8
+      ],
+      [
+        0.4377,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.4253,
+        "x": 0.4377,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4627,
+        "x": 0.4377,
         "y": 0.95,
-        "town": "Vancouver, British Columbia",
+        "town": "Richmond, British Columbia",
         "kind": "end",
         "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 1,
-            "socStart": 65,
-            "socEnd": 66
-          },
           {
             "network": "Supercharger",
             "minutes": 4,
@@ -98,8 +96,8 @@
         ]
       },
       {
-        "x": 0.4627,
-        "y": 0.86,
+        "x": 0.4688,
+        "y": 0.725,
         "town": "North Vancouver, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -124,8 +122,8 @@
         ]
       },
       {
-        "x": 0.5747,
-        "y": 0.95,
+        "x": 0.5623,
+        "y": 0.8,
         "town": "Burnaby, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -136,9 +134,23 @@
             "socEnd": 63
           }
         ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.8,
+        "town": "Vancouver, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.1341,
+    "kmPerPx": 0.1609,
     "plotted": true
   },
   "dayMaps": [
@@ -1602,64 +1614,62 @@
       "day": 12,
       "date": "Sep 13",
       "label": "Day 12 · Sep 13",
-      "km": 107,
+      "km": 120,
       "from": "Squamish, British Columbia",
-      "to": "Vancouver, British Columbia",
-      "corridor": "Vancouver, British Columbia",
+      "to": "Richmond, British Columbia",
+      "corridor": "Richmond, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 4,
-      "chargeMinutes": 8,
+      "chargeStops": 5,
+      "chargeMinutes": 12,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4253,
+          0.4377,
           0.05
         ],
         [
-          0.4627,
-          0.86
+          0.4688,
+          0.725
         ],
         [
           0.5,
-          0.77
+          0.65
         ],
         [
           0.5,
-          0.86
+          0.725
         ],
         [
-          0.5747,
-          0.95
+          0.5623,
+          0.8
         ],
         [
           0.5,
-          0.95
+          0.8
         ],
         [
-          0.4627,
+          0.4688,
+          0.8
+        ],
+        [
+          0.4377,
           0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.4253,
+          "x": 0.4377,
           "y": 0.05,
           "town": "Squamish, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.4627,
+          "x": 0.4377,
           "y": 0.95,
-          "town": "Vancouver, British Columbia",
+          "town": "Richmond, British Columbia",
           "kind": "end",
           "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 1,
-              "socStart": 65,
-              "socEnd": 66
-            },
             {
               "network": "Supercharger",
               "minutes": 4,
@@ -1681,8 +1691,8 @@
           ]
         },
         {
-          "x": 0.4627,
-          "y": 0.86,
+          "x": 0.4688,
+          "y": 0.725,
           "town": "North Vancouver, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -1707,8 +1717,8 @@
           ]
         },
         {
-          "x": 0.5747,
-          "y": 0.95,
+          "x": 0.5623,
+          "y": 0.8,
           "town": "Burnaby, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -1719,20 +1729,40 @@
               "socEnd": 63
             }
           ]
+        },
+        {
+          "x": 0.5,
+          "y": 0.8,
+          "town": "Vancouver, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 1,
+              "socStart": 65,
+              "socEnd": 66
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.1341,
+      "kmPerPx": 0.1609,
       "plotted": true
     }
   ],
   "asOf": "2026-09-14",
-  "updatedAt": "2026-09-14T22:14:37.957Z",
+  "updatedAt": "2026-09-14T22:31:53.586Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.1,
+          "wh": 141,
+          "km": 13,
+          "prov": "British Columbia"
+        },
         {
           "t": 20.3,
           "wh": 100,
@@ -2370,17 +2400,17 @@
       ]
     },
     "autopilot": {
-      "km": 7602,
-      "pct": 82.9
+      "km": 7653,
+      "pct": 83
     },
     "energy": {
-      "used": 1423,
+      "used": 1434,
       "added": 1555,
-      "overhead": 8.5,
-      "whPerKm": 155,
+      "overhead": 7.8,
+      "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 404
+      "rangeEst": 403
     },
     "cost": {
       "total": 239.67,
@@ -2532,7 +2562,7 @@
     {
       "key": "2026-09-14",
       "label": "D 13",
-      "km": 47
+      "km": 101
     }
   ],
   "log": [
@@ -2543,7 +2573,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "47",
+      "km": "101",
       "chargeMinutes": 0,
       "note": ""
     },
@@ -2553,7 +2583,7 @@
       "date": "Sep 13",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "Vancouver, British Columbia",
+      "to": "Richmond, British Columbia",
       "plotted": true,
       "km": "221",
       "chargeMinutes": 20,
