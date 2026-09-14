@@ -4,12 +4,12 @@
   "day": 13,
   "province": "British Columbia",
   "route": "Squamish, British Columbia",
-  "today": 221,
+  "today": 0,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 695,
-  "chargeSessions": 8,
-  "chargeSupercharger": 8,
+  "avgPerDay": 642,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 77,
   "chargeLifetimeSupercharger": 43,
@@ -1533,8 +1533,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-13",
-  "updatedAt": "2026-09-14T16:19:23.257Z",
+  "asOf": "2026-09-14",
+  "updatedAt": "2026-09-14T16:44:26.696Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2318,9 +2318,25 @@
       "key": "2026-09-13",
       "label": "D 12",
       "km": 221
+    },
+    {
+      "key": "2026-09-14",
+      "label": "D 13",
+      "km": 0
     }
   ],
   "log": [
+    {
+      "key": "2026-09-14",
+      "day": "Day 13",
+      "date": "Sep 14",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "0",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-13",
       "day": "Day 12",
@@ -2426,18 +2442,6 @@
       "plotted": true,
       "km": "1,182",
       "chargeMinutes": 209,
-      "note": ""
-    },
-    {
-      "key": "2026-09-04",
-      "day": "Day 3",
-      "date": "Sep 4",
-      "province": "British Columbia",
-      "from": "Calgary, Alberta",
-      "to": "British Columbia",
-      "plotted": true,
-      "km": "1,117",
-      "chargeMinutes": 171,
       "note": ""
     }
   ]
