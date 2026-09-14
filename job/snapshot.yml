@@ -1,4 +1,5 @@
 # Copy to .github/workflows/snapshot.yml in the repository.
+# Assumes this folder (odometer) IS the repository root.
 # This is the timer: every 15 minutes it runs the helper and commits odometer.json.
 name: Odometer snapshot
 on:
@@ -7,6 +8,10 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+# Two runs committing the same file at once is a guaranteed rejected push.
+concurrency:
+  group: odometer-snapshot
+  cancel-in-progress: false
 jobs:
   snapshot:
     runs-on: ubuntu-latest
@@ -15,16 +20,34 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Check the credentials exist before calling anything
+        env:
+          TESSIE_TOKEN: ${{ secrets.TESSIE_TOKEN }}
+          TESSIE_VIN: ${{ secrets.TESSIE_VIN }}
+        run: |
+          [ -n "$TESSIE_TOKEN" ] || { echo "::error::TESSIE_TOKEN secret is empty or missing"; exit 1; }
+          [ -n "$TESSIE_VIN" ]   || { echo "::error::TESSIE_VIN secret is empty or missing"; exit 1; }
       - name: Pull and shape the feed
         env:
           TESSIE_TOKEN: ${{ secrets.TESSIE_TOKEN }}
           TESSIE_VIN: ${{ secrets.TESSIE_VIN }}
-          OUT: ui_kits/odometer/odometer.json
-        run: node ui_kits/odometer/job/fetch-snapshot.mjs
+          EMBARGO_HOURS: ${{ vars.EMBARGO_HOURS }}
+          OUT: odometer.json
+          HISTORY: history.json
+        run: node job/fetch-snapshot.mjs
+      # A human push lands between the checkout and the push often enough that a
+      # bare `git push` fails on its own schedule. Rebase and retry instead.
       - name: Commit if changed
         run: |
           git config user.name "odometer-bot"
           git config user.email "odometer-bot@users.noreply.github.com"
-          git add ui_kits/odometer/odometer.json
-          git diff --staged --quiet || git commit -m "odometer snapshot"
-          git push
+          git add odometer.json history.json
+          if git diff --staged --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -m "odometer snapshot"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push attempt $i failed — retrying"
+            sleep $((i * 5))
+          done
+          echo "::error::could not push the snapshot after 3 attempts"
+          exit 1

@@ -404,7 +404,13 @@ const F_ENERGY_ADDED = ['energy_added', 'charge_energy_added', 'energy_added_kwh
 const F_COST = ['cost', 'total_cost', 'charge_cost'];
 const F_SOC_END = ['ending_battery', 'end_battery_level', 'battery_level_end', 'ending_battery_level'];
 const F_SOC_START = ['starting_battery', 'start_battery_level', 'battery_level_start', 'starting_battery_level'];
-const F_POWER = ['max_charger_power', 'charger_power', 'peak_power_kw'];
+const F_POWER = [
+  'max_charger_power', 'charger_power', 'peak_power_kw',
+  /* Tessie has shipped this figure under several names across firmware and
+     across the charges vs. charging_state payloads. None of the first three
+     appear in current /charges summaries, which is why the curve read empty. */
+  'charger_power_max', 'max_power', 'peak_power', 'power', 'max_charger_power_kw',
+];
 
 /* Everything the nerd section reads. Built from the payloads already fetched
    for the odometer \u2014 no extra Tessie calls except battery health, which the
@@ -452,6 +458,7 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
      rounding make them wildly inaccurate. */
   const packSamples = [];
   const curve = new Map(); // state of charge bucket -> [kW samples]
+  let derived = 0;         // sessions whose power had to be computed, not read
   for (const c of chargeList) {
     const a = pick(c, F_ENERGY_ADDED);
     if (a !== null && a > 0) addedKwh += a;
@@ -464,13 +471,30 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
        one state of charge, so a single session is a dot, not a curve \u2014 pooled
        across every session the shape of the taper appears. Bucketed in 5% steps. */
     const soc = pick(c, F_SOC_END);
-    const kw = pick(c, F_POWER);
-    if (soc !== null && kw !== null && kw > 0) {
-      const b = Math.round(soc / 5) * 5;
+    const soc0 = pick(c, F_SOC_START);
+    let kw = pick(c, F_POWER), atSoc = soc;
+    /* No reported power field. Derive average power over the session from the
+       energy it added and how long it was plugged in — less sharp than a true
+       peak, but it is real data rather than an empty panel, and the taper still
+       shows because a session that ends high charges slower throughout. Plotted
+       at the midpoint state of charge, which is where an average belongs. */
+    if (kw === null) {
+      const st = toDate(c.started_at);
+      const en = toDate(c.ended_at ?? c.finished_at ?? c.ended ?? c.end_date);
+      const hrs = st && en && en > st ? (en - st) / 3600000 : null;
+      /* Under six minutes the duration rounding swamps the result, and a
+         session left open by a dropped connection reports a nonsense figure. */
+      if (a !== null && a > 0 && hrs !== null && hrs >= 0.1 && hrs <= 24) {
+        kw = a / hrs;
+        derived += 1;
+        if (soc !== null && soc0 !== null) atSoc = (soc + soc0) / 2;
+      }
+    }
+    if (atSoc !== null && kw !== null && kw > 0) {
+      const b = Math.round(atSoc / 5) * 5;
       if (!curve.has(b)) curve.set(b, []);
       curve.get(b).push(kw);
     }
-    const soc0 = pick(c, F_SOC_START);
     if (a !== null && a > 0 && soc !== null && soc0 !== null && soc - soc0 >= 20) {
       packSamples.push((a / (soc - soc0)) * 100);
     }
@@ -521,7 +545,11 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
     chargeCurve: {
       points: curvePoints,
       sessions: chargeList.length,
-      note: 'Peak power per session, pooled by state of charge',
+      /* The label has to be honest about which figure is on the axis — a
+         derived average reads materially lower than a reported peak. */
+      note: derived > 0 && derived === curvePoints.reduce((s, p) => s + p.n, 0)
+        ? 'Average power per session, pooled by state of charge'
+        : 'Peak power per session, pooled by state of charge',
     },
     battery: (() => {
       /* Tessie wraps some endpoints in `results` and the health payload's key

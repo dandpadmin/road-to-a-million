@@ -24,7 +24,16 @@ async function main() {
 
   const get = async (path) => {
     const res = await fetch(`https://api.tessie.com/${VIN}/${path}`, { headers: H });
-    if (!res.ok) throw new Error(`${path} → ${res.status} ${res.statusText}`);
+    if (!res.ok) {
+      /* The two failures worth naming: an expired/rotated token and a VIN the
+         token can't see. Everything else reads as itself. */
+      const why = res.status === 401 || res.status === 403
+        ? ' — TESSIE_TOKEN is rejected; regenerate it in Tessie and update the repo secret'
+        : res.status === 404
+          ? ' — TESSIE_VIN not found on this Tessie account'
+          : '';
+      throw new Error(`${path} → ${res.status} ${res.statusText}${why}`);
+    }
     return res.json();
   };
   /* Optional endpoints must never take the odometer down with them. */
@@ -74,4 +83,4 @@ async function main() {
   console.log(`wrote ${OUT} — odometer ${snapshot.odometer} km, as at ${snapshot.asOf}`);
 }
 
-main().catch((e) => { console.error(e.message); process.exit(1); });
+main().catch((e) => { console.error(`::error::${e.message}`); process.exit(1); });
