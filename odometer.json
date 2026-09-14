@@ -1,18 +1,18 @@
 {
-  "odometer": 9379,
+  "odometer": 9386,
   "goal": 1000000,
-  "day": 12,
+  "day": 13,
   "province": "British Columbia",
   "route": "Squamish, British Columbia",
-  "today": 126,
+  "today": 140,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 687,
-  "chargeSessions": 7,
-  "chargeSupercharger": 7,
+  "avgPerDay": 689,
+  "chargeSessions": 8,
+  "chargeSupercharger": 8,
   "chargeOther": 0,
-  "chargeLifetime": 76,
-  "chargeLifetimeSupercharger": 42,
+  "chargeLifetime": 77,
+  "chargeLifetimeSupercharger": 43,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-12",
@@ -1510,7 +1510,7 @@
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-13T23:53:03.513Z",
+  "updatedAt": "2026-09-14T00:20:42.104Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2136,29 +2136,29 @@
       ]
     },
     "autopilot": {
-      "km": 7533,
+      "km": 7544,
       "pct": 83.5
     },
     "energy": {
-      "used": 1404,
-      "added": 1552,
-      "overhead": 9.5,
+      "used": 1406,
+      "added": 1555,
+      "overhead": 9.6,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
       "rangeEst": 403
     },
     "cost": {
-      "total": 238.69,
-      "supercharger": 238.69,
+      "total": 239.67,
+      "supercharger": 239.67,
       "other": 0,
-      "perKm": 0.026,
-      "sessions": 42,
+      "perKm": 0.027,
+      "sessions": 43,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [],
-      "sessions": 76,
+      "sessions": 77,
       "note": "Peak power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2232,7 +2232,7 @@
     {
       "key": "2026-09-13",
       "label": "D 12",
-      "km": 126
+      "km": 140
     }
   ],
   "log": [
@@ -2243,8 +2243,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "126",
-      "chargeMinutes": 17,
+      "km": "140",
+      "chargeMinutes": 20,
       "note": ""
     },
     {
