@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 13,
   "province": "British Columbia",
-  "route": "North Vancouver, British Columbia",
+  "route": "Vancouver, British Columbia",
   "today": 22,
   "best": 1333,
   "bestDay": 1,
@@ -19,10 +19,10 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 71,
+    "km": 83,
     "from": "Squamish, British Columbia",
-    "to": "North Vancouver, British Columbia",
-    "corridor": "North Vancouver, British Columbia",
+    "to": "Vancouver, British Columbia",
+    "corridor": "Vancouver, British Columbia",
     "province": "British Columbia",
     "chargeStops": 2,
     "chargeMinutes": 5,
@@ -39,6 +39,10 @@
       [
         0.5415,
         0.85
+      ],
+      [
+        0.5415,
+        0.95
       ]
     ],
     "stops": [
@@ -51,9 +55,29 @@
       },
       {
         "x": 0.5415,
-        "y": 0.85,
-        "town": "North Vancouver, British Columbia",
+        "y": 0.95,
+        "town": "Vancouver, British Columbia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 58,
+            "socEnd": 63
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
+          }
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.95,
+        "town": "North Vancouver, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -66,26 +90,6 @@
             "minutes": 3,
             "socStart": 55,
             "socEnd": 64
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 58,
-            "socEnd": 63
-          }
-        ]
-      },
-      {
-        "x": 0.5,
-        "y": 0.95,
-        "town": "Vancouver, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 1,
-            "socStart": 65,
-            "socEnd": 66
           },
           {
             "network": "Supercharger",
@@ -1578,10 +1582,10 @@
       "day": 12,
       "date": "Sep 13",
       "label": "Day 12 · Sep 13",
-      "km": 71,
+      "km": 83,
       "from": "Squamish, British Columbia",
-      "to": "North Vancouver, British Columbia",
-      "corridor": "North Vancouver, British Columbia",
+      "to": "Vancouver, British Columbia",
+      "corridor": "Vancouver, British Columbia",
       "province": "British Columbia",
       "chargeStops": 2,
       "chargeMinutes": 5,
@@ -1598,6 +1602,10 @@
         [
           0.5415,
           0.85
+        ],
+        [
+          0.5415,
+          0.95
         ]
       ],
       "stops": [
@@ -1610,9 +1618,29 @@
         },
         {
           "x": 0.5415,
-          "y": 0.85,
-          "town": "North Vancouver, British Columbia",
+          "y": 0.95,
+          "town": "Vancouver, British Columbia",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 2,
+              "socStart": 58,
+              "socEnd": 63
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 1,
+              "socStart": 65,
+              "socEnd": 66
+            }
+          ]
+        },
+        {
+          "x": 0.5,
+          "y": 0.95,
+          "town": "North Vancouver, British Columbia",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -1625,26 +1653,6 @@
               "minutes": 3,
               "socStart": 55,
               "socEnd": 64
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 2,
-              "socStart": 58,
-              "socEnd": 63
-            }
-          ]
-        },
-        {
-          "x": 0.5,
-          "y": 0.95,
-          "town": "Vancouver, British Columbia",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 1,
-              "socStart": 65,
-              "socEnd": 66
             },
             {
               "network": "Supercharger",
@@ -1678,7 +1686,7 @@
     }
   ],
   "asOf": "2026-09-14",
-  "updatedAt": "2026-09-14T19:54:01.720Z",
+  "updatedAt": "2026-09-14T20:14:41.917Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2493,7 +2501,7 @@
       "date": "Sep 13",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "North Vancouver, British Columbia",
+      "to": "Vancouver, British Columbia",
       "plotted": true,
       "km": "221",
       "chargeMinutes": 20,
