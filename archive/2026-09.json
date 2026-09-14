@@ -1459,35 +1459,39 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 69,
+    "km": 71,
     "from": "Squamish, British Columbia",
     "to": "North Vancouver, British Columbia",
     "corridor": "North Vancouver, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 2,
+    "chargeStops": 2,
+    "chargeMinutes": 5,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4793,
+        0.4585,
         0.05
       ],
       [
-        0.5207,
+        0.5,
         0.95
+      ],
+      [
+        0.5415,
+        0.85
       ]
     ],
     "stops": [
       {
-        "x": 0.4793,
+        "x": 0.4585,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5207,
-        "y": 0.95,
+        "x": 0.5415,
+        "y": 0.85,
         "town": "North Vancouver, British Columbia",
         "kind": "end",
         "sessions": [
@@ -1508,7 +1512,15 @@
             "minutes": 2,
             "socStart": 58,
             "socEnd": 63
-          },
+          }
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.95,
+        "town": "Vancouver, British Columbia",
+        "kind": "charge",
+        "sessions": [
           {
             "network": "Supercharger",
             "minutes": 1,
