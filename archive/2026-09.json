@@ -1453,5 +1453,96 @@
     ],
     "kmPerPx": 0.0536,
     "plotted": true
+  },
+  {
+    "key": "2026-09-13",
+    "day": 12,
+    "date": "Sep 13",
+    "label": "Day 12 · Sep 13",
+    "km": 69,
+    "from": "Squamish, British Columbia",
+    "to": "North Vancouver, British Columbia",
+    "corridor": "North Vancouver, British Columbia",
+    "province": "British Columbia",
+    "chargeStops": 1,
+    "chargeMinutes": 2,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.4793,
+        0.05
+      ],
+      [
+        0.5207,
+        0.95
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.4793,
+        "y": 0.05,
+        "town": "Squamish, British Columbia",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.5207,
+        "y": 0.95,
+        "town": "North Vancouver, British Columbia",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 49,
+            "socEnd": 52
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 55,
+            "socEnd": 64
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 58,
+            "socEnd": 63
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 4,
+            "socStart": 65,
+            "socEnd": 69
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 68,
+            "socEnd": 75
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 75,
+            "socEnd": 79
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 76,
+            "socEnd": 82
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.1207,
+    "plotted": true
   }
 ]

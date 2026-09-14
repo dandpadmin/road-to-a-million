@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 13,
   "province": "British Columbia",
-  "route": "Squamish, British Columbia",
+  "route": "North Vancouver, British Columbia",
   "today": 22,
   "best": 1333,
   "bestDay": 1,
@@ -15,65 +15,94 @@
   "chargeLifetimeSupercharger": 43,
   "chargeLifetimeOther": 34,
   "dayMap": {
-    "key": "2026-09-12",
-    "day": 11,
-    "date": "Sep 12",
-    "label": "Day 11 · Sep 12",
-    "km": 80,
+    "key": "2026-09-13",
+    "day": 12,
+    "date": "Sep 13",
+    "label": "Day 12 · Sep 13",
+    "km": 69,
     "from": "Squamish, British Columbia",
-    "to": "Squamish, British Columbia",
-    "corridor": "Squamish, British Columbia",
+    "to": "North Vancouver, British Columbia",
+    "corridor": "North Vancouver, British Columbia",
     "province": "British Columbia",
     "chargeStops": 1,
-    "chargeMinutes": 5,
+    "chargeMinutes": 2,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6392,
-        0.725
-      ],
-      [
-        0.6392,
-        0.95
-      ],
-      [
-        0.6392,
-        0.725
-      ],
-      [
-        0.6392,
-        0.5
-      ],
-      [
-        0.3608,
+        0.4793,
         0.05
       ],
       [
-        0.4536,
-        0.275
-      ],
-      [
-        0.6392,
-        0.725
+        0.5207,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.6392,
-        "y": 0.725,
+        "x": 0.4793,
+        "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.5207,
+        "y": 0.95,
+        "town": "North Vancouver, British Columbia",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 5,
-            "socStart": 61,
-            "socEnd": 74
+            "minutes": 2,
+            "socStart": 49,
+            "socEnd": 52
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 55,
+            "socEnd": 64
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 58,
+            "socEnd": 63
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 4,
+            "socStart": 65,
+            "socEnd": 69
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 68,
+            "socEnd": 75
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 75,
+            "socEnd": 79
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 76,
+            "socEnd": 82
           }
         ]
       }
     ],
-    "kmPerPx": 0.0536,
+    "kmPerPx": 0.1207,
     "plotted": true
   },
   "dayMaps": [
@@ -1531,16 +1560,113 @@
       ],
       "kmPerPx": 0.0536,
       "plotted": true
+    },
+    {
+      "key": "2026-09-13",
+      "day": 12,
+      "date": "Sep 13",
+      "label": "Day 12 · Sep 13",
+      "km": 69,
+      "from": "Squamish, British Columbia",
+      "to": "North Vancouver, British Columbia",
+      "corridor": "North Vancouver, British Columbia",
+      "province": "British Columbia",
+      "chargeStops": 1,
+      "chargeMinutes": 2,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.4793,
+          0.05
+        ],
+        [
+          0.5207,
+          0.95
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.4793,
+          "y": 0.05,
+          "town": "Squamish, British Columbia",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.5207,
+          "y": 0.95,
+          "town": "North Vancouver, British Columbia",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 2,
+              "socStart": 49,
+              "socEnd": 52
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 55,
+              "socEnd": 64
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 2,
+              "socStart": 58,
+              "socEnd": 63
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 1,
+              "socStart": 65,
+              "socEnd": 66
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 4,
+              "socStart": 65,
+              "socEnd": 69
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 68,
+              "socEnd": 75
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 2,
+              "socStart": 75,
+              "socEnd": 79
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 76,
+              "socEnd": 82
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.1207,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-14",
-  "updatedAt": "2026-09-14T19:14:17.667Z",
+  "updatedAt": "2026-09-14T19:32:14.432Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 17.3,
+          "wh": 153,
+          "km": 68,
+          "prov": "British Columbia"
+        },
         {
           "t": 20.6,
           "wh": 104,
@@ -2341,9 +2467,10 @@
       "key": "2026-09-13",
       "day": "Day 12",
       "date": "Sep 13",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "British Columbia",
+      "from": "Squamish, British Columbia",
+      "to": "North Vancouver, British Columbia",
+      "plotted": true,
       "km": "221",
       "chargeMinutes": 20,
       "note": ""
