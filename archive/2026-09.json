@@ -1459,7 +1459,7 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 102,
+    "km": 107,
     "from": "Squamish, British Columbia",
     "to": "Vancouver, British Columbia",
     "corridor": "Vancouver, British Columbia",
@@ -1491,6 +1491,10 @@
       [
         0.5,
         0.95
+      ],
+      [
+        0.4627,
+        0.95
       ]
     ],
     "stops": [
@@ -1502,7 +1506,7 @@
         "sessions": []
       },
       {
-        "x": 0.5,
+        "x": 0.4627,
         "y": 0.95,
         "town": "Vancouver, British Columbia",
         "kind": "end",
