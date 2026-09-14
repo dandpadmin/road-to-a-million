@@ -1459,13 +1459,13 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 120,
+    "km": 126,
     "from": "Squamish, British Columbia",
     "to": "Richmond, British Columbia",
     "corridor": "Richmond, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 5,
-    "chargeMinutes": 12,
+    "chargeStops": 7,
+    "chargeMinutes": 17,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1499,6 +1499,10 @@
       [
         0.4377,
         0.95
+      ],
+      [
+        0.4688,
+        0.875
       ]
     ],
     "stops": [
@@ -1510,8 +1514,8 @@
         "sessions": []
       },
       {
-        "x": 0.4377,
-        "y": 0.95,
+        "x": 0.4688,
+        "y": 0.875,
         "town": "Richmond, British Columbia",
         "kind": "end",
         "sessions": [
