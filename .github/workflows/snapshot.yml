@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "odometer-bot"
           git config user.email "odometer-bot@users.noreply.github.com"
-          git add odometer.json history.json
+          git add odometer.json history.json archive
           if git diff --staged --quiet; then echo "nothing changed"; exit 0; fi
           git commit -m "odometer snapshot"
           for i in 1 2 3; do
