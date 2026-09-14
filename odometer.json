@@ -1,5 +1,5 @@
 {
-  "odometer": 9428,
+  "odometer": 9450,
   "goal": 1000000,
   "day": 13,
   "province": "British Columbia",
@@ -18,7 +18,7 @@
     "key": "2026-09-12",
     "day": 11,
     "label": "Day 11 · Sep 12",
-    "km": 77,
+    "km": 80,
     "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
     "corridor": "Squamish, British Columbia",
@@ -1452,7 +1452,7 @@
       "key": "2026-09-12",
       "day": 11,
       "label": "Day 11 · Sep 12",
-      "km": 77,
+      "km": 80,
       "from": "Squamish, British Columbia",
       "to": "Squamish, British Columbia",
       "corridor": "Squamish, British Columbia",
@@ -1510,7 +1510,7 @@
     }
   ],
   "asOf": "2026-09-13",
-  "updatedAt": "2026-09-14T01:13:34.691Z",
+  "updatedAt": "2026-09-14T01:30:30.002Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
