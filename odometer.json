@@ -1,7 +1,7 @@
 {
   "odometer": 9564,
   "goal": 1000000,
-  "day": 13,
+  "day": 14,
   "province": "British Columbia",
   "route": "Vancouver, British Columbia",
   "today": 101,
@@ -19,13 +19,13 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 138,
+    "km": 140,
     "from": "Squamish, British Columbia",
     "to": "Vancouver, British Columbia",
     "corridor": "Vancouver, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 7,
-    "chargeMinutes": 17,
+    "chargeStops": 8,
+    "chargeMinutes": 20,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1622,13 +1622,13 @@
       "day": 12,
       "date": "Sep 13",
       "label": "Day 12 · Sep 13",
-      "km": 138,
+      "km": 140,
       "from": "Squamish, British Columbia",
       "to": "Vancouver, British Columbia",
       "corridor": "Vancouver, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 7,
-      "chargeMinutes": 17,
+      "chargeStops": 8,
+      "chargeMinutes": 20,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -1766,7 +1766,7 @@
     }
   ],
   "asOf": "2026-09-14",
-  "updatedAt": "2026-09-14T23:54:27.760Z",
+  "updatedAt": "2026-09-15T00:20:30.858Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
