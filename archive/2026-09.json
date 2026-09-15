@@ -1618,53 +1618,57 @@
     "day": 13,
     "date": "Sep 14",
     "label": "Day 13 · Sep 14",
-    "km": 47,
+    "km": 101,
     "from": "Squamish, British Columbia",
-    "to": "Squamish, British Columbia",
-    "corridor": "Squamish, British Columbia",
+    "to": "Whistler, British Columbia",
+    "corridor": "Whistler, British Columbia",
     "province": "British Columbia",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4071,
-        0.5
+        0.4074,
+        0.8375
       ],
       [
-        0.5929,
-        0.05
+        0.4537,
+        0.725
       ],
       [
-        0.4071,
-        0.05
+        0.4074,
+        0.725
       ],
       [
-        0.4071,
-        0.5
+        0.4074,
+        0.8375
       ],
       [
-        0.4071,
+        0.4074,
         0.95
       ],
       [
-        0.4071,
-        0.5
+        0.4074,
+        0.8375
+      ],
+      [
+        0.5926,
+        0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4071,
-        "y": 0.5,
+        "x": 0.4074,
+        "y": 0.8375,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5929,
+        "x": 0.5926,
         "y": 0.05,
         "town": "Whistler, British Columbia",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
@@ -1675,7 +1679,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.0268,
+    "kmPerPx": 0.1072,
     "plotted": true
   }
 ]
