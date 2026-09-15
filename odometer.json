@@ -1,9 +1,9 @@
 {
-  "odometer": 9721,
+  "odometer": 9747,
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
-  "route": "Squamish, British Columbia",
+  "route": "Brackendale, British Columbia",
   "today": 0,
   "best": 1333,
   "bestDay": 1,
@@ -15,163 +15,21 @@
   "chargeLifetimeSupercharger": 44,
   "chargeLifetimeOther": 34,
   "dayMap": {
-    "key": "2026-09-13",
-    "day": 12,
-    "date": "Sep 13",
-    "label": "Day 12 · Sep 13",
-    "km": 221,
+    "key": "2026-09-14",
+    "day": 13,
+    "date": "Sep 14",
+    "label": "Day 13 · Sep 14",
+    "km": 0,
     "from": "Squamish, British Columbia",
-    "to": "Squamish, British Columbia",
-    "corridor": "Squamish, British Columbia",
+    "to": "Brackendale, British Columbia",
+    "corridor": "Brackendale, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 8,
-    "chargeMinutes": 20,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.4377,
-        0.05
-      ],
-      [
-        0.4688,
-        0.725
-      ],
-      [
-        0.5,
-        0.65
-      ],
-      [
-        0.5,
-        0.725
-      ],
-      [
-        0.5623,
-        0.8
-      ],
-      [
-        0.5,
-        0.8
-      ],
-      [
-        0.4688,
-        0.8
-      ],
-      [
-        0.4377,
-        0.95
-      ],
-      [
-        0.4688,
-        0.875
-      ],
-      [
-        0.4688,
-        0.725
-      ],
-      [
-        0.4377,
-        0.725
-      ],
-      [
-        0.4377,
-        0.65
-      ],
-      [
-        0.4377,
-        0.05
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.4377,
-        "y": 0.05,
-        "town": "Squamish, British Columbia",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.4688,
-        "y": 0.725,
-        "town": "North Vancouver, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 49,
-            "socEnd": 52
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 55,
-            "socEnd": 64
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 76,
-            "socEnd": 82
-          }
-        ]
-      },
-      {
-        "x": 0.5623,
-        "y": 0.8,
-        "town": "Burnaby, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 58,
-            "socEnd": 63
-          }
-        ]
-      },
-      {
-        "x": 0.5,
-        "y": 0.8,
-        "town": "Vancouver, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 1,
-            "socStart": 65,
-            "socEnd": 66
-          }
-        ]
-      },
-      {
-        "x": 0.4377,
-        "y": 0.95,
-        "town": "Richmond, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 65,
-            "socEnd": 69
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 68,
-            "socEnd": 75
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 75,
-            "socEnd": 79
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 0.1609,
-    "plotted": true
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
     {
@@ -1787,10 +1645,27 @@
       ],
       "kmPerPx": 0.1609,
       "plotted": true
+    },
+    {
+      "key": "2026-09-14",
+      "day": 13,
+      "date": "Sep 14",
+      "label": "Day 13 · Sep 14",
+      "km": 0,
+      "from": "Squamish, British Columbia",
+      "to": "Brackendale, British Columbia",
+      "corridor": "Brackendale, British Columbia",
+      "province": "British Columbia",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-15T16:16:03.330Z",
+  "updatedAt": "2026-09-15T16:42:49.751Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2644,9 +2519,9 @@
       "key": "2026-09-14",
       "day": "Day 13",
       "date": "Sep 14",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "British Columbia",
+      "from": "Squamish, British Columbia",
+      "to": "Brackendale, British Columbia",
       "km": "163",
       "chargeMinutes": 30,
       "note": ""
