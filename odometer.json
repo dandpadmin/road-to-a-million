@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
-  "route": "West Vancouver, British Columbia",
+  "route": "Squamish, British Columbia",
   "today": 105,
   "best": 1333,
   "bestDay": 1,
@@ -19,10 +19,10 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 153,
+    "km": 216,
     "from": "Squamish, British Columbia",
-    "to": "West Vancouver, British Columbia",
-    "corridor": "West Vancouver, British Columbia",
+    "to": "Squamish, British Columbia",
+    "corridor": "Squamish, British Columbia",
     "province": "British Columbia",
     "chargeStops": 8,
     "chargeMinutes": 20,
@@ -75,6 +75,10 @@
       [
         0.4377,
         0.65
+      ],
+      [
+        0.4377,
+        0.05
       ]
     ],
     "stops": [
@@ -83,13 +87,6 @@
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.4377,
-        "y": 0.65,
-        "town": "West Vancouver, British Columbia",
-        "kind": "end",
         "sessions": []
       },
       {
@@ -1637,10 +1634,10 @@
       "day": 12,
       "date": "Sep 13",
       "label": "Day 12 · Sep 13",
-      "km": 153,
+      "km": 216,
       "from": "Squamish, British Columbia",
-      "to": "West Vancouver, British Columbia",
-      "corridor": "West Vancouver, British Columbia",
+      "to": "Squamish, British Columbia",
+      "corridor": "Squamish, British Columbia",
       "province": "British Columbia",
       "chargeStops": 8,
       "chargeMinutes": 20,
@@ -1693,6 +1690,10 @@
         [
           0.4377,
           0.65
+        ],
+        [
+          0.4377,
+          0.05
         ]
       ],
       "stops": [
@@ -1701,13 +1702,6 @@
           "y": 0.05,
           "town": "Squamish, British Columbia",
           "kind": "start",
-          "sessions": []
-        },
-        {
-          "x": 0.4377,
-          "y": 0.65,
-          "town": "West Vancouver, British Columbia",
-          "kind": "end",
           "sessions": []
         },
         {
@@ -1796,13 +1790,19 @@
     }
   ],
   "asOf": "2026-09-14",
-  "updatedAt": "2026-09-15T01:33:51.140Z",
+  "updatedAt": "2026-09-15T01:55:45.829Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 19,
+          "wh": 128,
+          "km": 61,
+          "prov": "British Columbia"
+        },
         {
           "t": 20.6,
           "wh": 111,
@@ -2641,7 +2641,7 @@
       "date": "Sep 13",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "West Vancouver, British Columbia",
+      "to": "Squamish, British Columbia",
       "plotted": true,
       "km": "221",
       "chargeMinutes": 20,
