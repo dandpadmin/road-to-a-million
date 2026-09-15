@@ -1,18 +1,18 @@
 {
-  "odometer": 9748,
+  "odometer": 9761,
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
   "route": "Brackendale, British Columbia",
-  "today": 121,
+  "today": 133,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 616,
-  "chargeSessions": 0,
-  "chargeSupercharger": 0,
+  "avgPerDay": 617,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 78,
-  "chargeLifetimeSupercharger": 44,
+  "chargeLifetime": 79,
+  "chargeLifetimeSupercharger": 45,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-14",
@@ -1665,7 +1665,7 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-15T16:56:37.757Z",
+  "updatedAt": "2026-09-15T17:15:06.906Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2333,24 +2333,24 @@
       ]
     },
     "autopilot": {
-      "km": 7818,
+      "km": 7830,
       "pct": 83.2
     },
     "energy": {
-      "used": 1455,
-      "added": 1596,
-      "overhead": 8.8,
+      "used": 1457,
+      "added": 1616,
+      "overhead": 9.9,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 405
     },
     "cost": {
-      "total": 250.73,
-      "supercharger": 250.73,
+      "total": 254.83,
+      "supercharger": 254.83,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 44,
+      "sessions": 45,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2392,8 +2392,8 @@
         },
         {
           "soc": 70,
-          "kw": 74,
-          "n": 5
+          "kw": 78,
+          "n": 6
         },
         {
           "soc": 75,
@@ -2416,7 +2416,7 @@
           "n": 1
         }
       ],
-      "sessions": 78,
+      "sessions": 79,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2500,7 +2500,7 @@
     {
       "key": "2026-09-15",
       "label": "D 14",
-      "km": 121
+      "km": 133
     }
   ],
   "log": [
@@ -2511,8 +2511,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "121",
-      "chargeMinutes": 0,
+      "km": "133",
+      "chargeMinutes": 12,
       "note": ""
     },
     {
