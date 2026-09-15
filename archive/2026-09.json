@@ -1618,16 +1618,48 @@
     "day": 13,
     "date": "Sep 14",
     "label": "Day 13 · Sep 14",
-    "km": 0,
+    "km": 13,
     "from": "Squamish, British Columbia",
-    "to": "Brackendale, British Columbia",
-    "corridor": "Brackendale, British Columbia",
+    "to": "British Columbia",
+    "corridor": "British Columbia",
     "province": "British Columbia",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.3143,
+        0.95
+      ],
+      [
+        0.6857,
+        0.05
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.3143,
+        "y": 0.95,
+        "town": "Squamish, British Columbia",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.6857,
+        "y": 0.05,
+        "town": "British Columbia",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 30,
+            "socStart": 31,
+            "socEnd": 95
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true
   }
 ]
