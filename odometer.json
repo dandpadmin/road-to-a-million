@@ -1,18 +1,18 @@
 {
-  "odometer": 9925,
+  "odometer": 9932,
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
   "route": "Whistler, British Columbia",
-  "today": 296,
+  "today": 299,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 629,
-  "chargeSessions": 4,
-  "chargeSupercharger": 4,
+  "chargeSessions": 5,
+  "chargeSupercharger": 5,
   "chargeOther": 0,
-  "chargeLifetime": 82,
-  "chargeLifetimeSupercharger": 48,
+  "chargeLifetime": 83,
+  "chargeLifetimeSupercharger": 49,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-14",
@@ -1769,7 +1769,7 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-15T23:27:40.586Z",
+  "updatedAt": "2026-09-15T23:41:53.457Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2467,24 +2467,24 @@
       ]
     },
     "autopilot": {
-      "km": 7989,
+      "km": 7991,
       "pct": 83.4
     },
     "energy": {
       "used": 1479,
-      "added": 1637,
-      "overhead": 9.6,
+      "added": 1642,
+      "overhead": 9.9,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 406
     },
     "cost": {
-      "total": 260.13,
-      "supercharger": 260.13,
+      "total": 261.05,
+      "supercharger": 261.05,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 48,
+      "sessions": 49,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2550,7 +2550,7 @@
           "n": 1
         }
       ],
-      "sessions": 82,
+      "sessions": 83,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2634,7 +2634,7 @@
     {
       "key": "2026-09-15",
       "label": "D 14",
-      "km": 296
+      "km": 299
     }
   ],
   "log": [
@@ -2645,8 +2645,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "296",
-      "chargeMinutes": 26,
+      "km": "299",
+      "chargeMinutes": 31,
       "note": ""
     },
     {
