@@ -1,5 +1,5 @@
 {
-  "odometer": 9869,
+  "odometer": 9899,
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
@@ -24,8 +24,8 @@
     "to": "Whistler, British Columbia",
     "corridor": "Whistler, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 30,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1708,8 +1708,8 @@
       "to": "Whistler, British Columbia",
       "corridor": "Whistler, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 1,
+      "chargeMinutes": 30,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -1769,7 +1769,7 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-15T22:30:18.306Z",
+  "updatedAt": "2026-09-15T22:51:59.587Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
