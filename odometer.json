@@ -1,5 +1,5 @@
 {
-  "odometer": 9772,
+  "odometer": 9793,
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
@@ -19,7 +19,7 @@
     "day": 13,
     "date": "Sep 14",
     "label": "Day 13 · Sep 14",
-    "km": 22,
+    "km": 28,
     "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
     "corridor": "Squamish, British Columbia",
@@ -39,6 +39,10 @@
       [
         0.3143,
         0.05
+      ],
+      [
+        0.3143,
+        0.95
       ]
     ],
     "stops": [
@@ -1687,7 +1691,7 @@
       "day": 13,
       "date": "Sep 14",
       "label": "Day 13 · Sep 14",
-      "km": 22,
+      "km": 28,
       "from": "Squamish, British Columbia",
       "to": "Squamish, British Columbia",
       "corridor": "Squamish, British Columbia",
@@ -1707,6 +1711,10 @@
         [
           0.3143,
           0.05
+        ],
+        [
+          0.3143,
+          0.95
         ]
       ],
       "stops": [
@@ -1737,13 +1745,19 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-15T20:16:01.186Z",
+  "updatedAt": "2026-09-15T20:41:17.272Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 16.6,
+          "wh": 72,
+          "km": 5,
+          "prov": "British Columbia"
+        },
         {
           "t": 16.4,
           "wh": 287,
@@ -2400,7 +2414,7 @@
         }
       ],
       "median": 148,
-      "best": 88,
+      "best": 72,
       "worst": 491,
       "provinces": [
         "British Columbia",
