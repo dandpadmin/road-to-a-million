@@ -1,5 +1,5 @@
 {
-  "odometer": 9802,
+  "odometer": 9810,
   "goal": 1000000,
   "day": 14,
   "province": "British Columbia",
@@ -1761,7 +1761,7 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-15T21:28:57.140Z",
+  "updatedAt": "2026-09-15T21:43:07.609Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2466,11 +2466,11 @@
       "rangeEst": 405
     },
     "cost": {
-      "total": 255.47,
-      "supercharger": 255.47,
+      "total": 257.15,
+      "supercharger": 257.15,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 46,
+      "sessions": 47,
       "currency": "CAD"
     },
     "chargeCurve": {
