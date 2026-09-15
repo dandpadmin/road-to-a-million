@@ -1459,10 +1459,10 @@
     "day": 12,
     "date": "Sep 13",
     "label": "Day 12 · Sep 13",
-    "km": 140,
+    "km": 153,
     "from": "Squamish, British Columbia",
-    "to": "Vancouver, British Columbia",
-    "corridor": "Vancouver, British Columbia",
+    "to": "West Vancouver, British Columbia",
+    "corridor": "West Vancouver, British Columbia",
     "province": "British Columbia",
     "chargeStops": 8,
     "chargeMinutes": 20,
@@ -1507,6 +1507,14 @@
       [
         0.4688,
         0.725
+      ],
+      [
+        0.4377,
+        0.725
+      ],
+      [
+        0.4377,
+        0.65
       ]
     ],
     "stops": [
@@ -1518,10 +1526,17 @@
         "sessions": []
       },
       {
+        "x": 0.4377,
+        "y": 0.65,
+        "town": "West Vancouver, British Columbia",
+        "kind": "end",
+        "sessions": []
+      },
+      {
         "x": 0.4688,
         "y": 0.725,
-        "town": "Vancouver, British Columbia",
-        "kind": "end",
+        "town": "North Vancouver, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -1531,29 +1546,15 @@
           },
           {
             "network": "Supercharger",
-            "minutes": 1,
-            "socStart": 65,
-            "socEnd": 66
+            "minutes": 3,
+            "socStart": 55,
+            "socEnd": 64
           },
           {
             "network": "Supercharger",
             "minutes": 3,
             "socStart": 76,
             "socEnd": 82
-          }
-        ]
-      },
-      {
-        "x": 0.5,
-        "y": 0.65,
-        "town": "North Vancouver, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 55,
-            "socEnd": 64
           }
         ]
       },
@@ -1568,6 +1569,20 @@
             "minutes": 2,
             "socStart": 58,
             "socEnd": 63
+          }
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 0.8,
+        "town": "Vancouver, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 1,
+            "socStart": 65,
+            "socEnd": 66
           }
         ]
       },
