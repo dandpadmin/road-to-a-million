@@ -1695,56 +1695,54 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 139,
+    "km": 169,
     "from": "Squamish, British Columbia",
-    "to": "North Saanich, British Columbia",
-    "corridor": "North Saanich, British Columbia",
+    "to": "Victoria, British Columbia",
+    "corridor": "Victoria, British Columbia",
     "province": "British Columbia",
     "chargeStops": 2,
     "chargeMinutes": 14,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5342,
+        0.5279,
         0.05
       ],
       [
-        0.5512,
-        0.5818
+        0.5419,
+        0.4833
       ],
       [
-        0.5512,
-        0.6636
+        0.5419,
+        0.55
       ],
       [
-        0.5342,
-        0.6636
+        0.5279,
+        0.55
       ],
       [
-        0.4488,
+        0.4581,
+        0.7833
+      ],
+      [
+        0.4721,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.5342,
+        "x": 0.5279,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4488,
+        "x": 0.4721,
         "y": 0.95,
-        "town": "North Saanich, British Columbia",
+        "town": "Victoria, British Columbia",
         "kind": "end",
         "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 80,
-            "socEnd": 83
-          },
           {
             "network": "Supercharger",
             "minutes": 6,
@@ -1754,8 +1752,8 @@
         ]
       },
       {
-        "x": 0.5512,
-        "y": 0.5818,
+        "x": 0.5419,
+        "y": 0.4833,
         "town": "Delta, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -1766,9 +1764,23 @@
             "socEnd": 88
           }
         ]
+      },
+      {
+        "x": 0.4581,
+        "y": 0.7833,
+        "town": "North Saanich, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 80,
+            "socEnd": 83
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.2949,
+    "kmPerPx": 0.362,
     "plotted": true
   }
 ]
