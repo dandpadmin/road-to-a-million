@@ -1,25 +1,25 @@
 {
-  "odometer": 9985,
+  "odometer": 10003,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
   "route": "Whistler, British Columbia",
-  "today": 299,
+  "today": 368,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 629,
-  "chargeSessions": 5,
-  "chargeSupercharger": 5,
+  "avgPerDay": 634,
+  "chargeSessions": 6,
+  "chargeSupercharger": 6,
   "chargeOther": 0,
-  "chargeLifetime": 83,
-  "chargeLifetimeSupercharger": 49,
+  "chargeLifetime": 84,
+  "chargeLifetimeSupercharger": 50,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-14",
     "day": 13,
     "date": "Sep 14",
     "label": "Day 13 · Sep 14",
-    "km": 101,
+    "km": 105,
     "from": "Squamish, British Columbia",
     "to": "Whistler, British Columbia",
     "corridor": "Whistler, British Columbia",
@@ -29,44 +29,48 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4074,
-        0.8375
+        0.4177,
+        0.85
       ],
       [
-        0.4537,
-        0.725
+        0.4589,
+        0.75
       ],
       [
-        0.4074,
-        0.725
+        0.4177,
+        0.75
       ],
       [
-        0.4074,
-        0.8375
+        0.4177,
+        0.85
       ],
       [
-        0.4074,
+        0.4177,
         0.95
       ],
       [
-        0.4074,
-        0.8375
+        0.4177,
+        0.85
       ],
       [
-        0.5926,
+        0.5823,
+        0.15
+      ],
+      [
+        0.5823,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4074,
-        "y": 0.8375,
+        "x": 0.4177,
+        "y": 0.85,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5926,
+        "x": 0.5823,
         "y": 0.05,
         "town": "Whistler, British Columbia",
         "kind": "end",
@@ -80,7 +84,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1072,
+    "kmPerPx": 0.1207,
     "plotted": true
   },
   "dayMaps": [
@@ -1703,7 +1707,7 @@
       "day": 13,
       "date": "Sep 14",
       "label": "Day 13 · Sep 14",
-      "km": 101,
+      "km": 105,
       "from": "Squamish, British Columbia",
       "to": "Whistler, British Columbia",
       "corridor": "Whistler, British Columbia",
@@ -1713,44 +1717,48 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4074,
-          0.8375
+          0.4177,
+          0.85
         ],
         [
-          0.4537,
-          0.725
+          0.4589,
+          0.75
         ],
         [
-          0.4074,
-          0.725
+          0.4177,
+          0.75
         ],
         [
-          0.4074,
-          0.8375
+          0.4177,
+          0.85
         ],
         [
-          0.4074,
+          0.4177,
           0.95
         ],
         [
-          0.4074,
-          0.8375
+          0.4177,
+          0.85
         ],
         [
-          0.5926,
+          0.5823,
+          0.15
+        ],
+        [
+          0.5823,
           0.05
         ]
       ],
       "stops": [
         {
-          "x": 0.4074,
-          "y": 0.8375,
+          "x": 0.4177,
+          "y": 0.85,
           "town": "Squamish, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.5926,
+          "x": 0.5823,
           "y": 0.05,
           "town": "Whistler, British Columbia",
           "kind": "end",
@@ -1764,12 +1772,12 @@
           ]
         }
       ],
-      "kmPerPx": 0.1072,
+      "kmPerPx": 0.1207,
       "plotted": true
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-16T00:18:39.257Z",
+  "updatedAt": "2026-09-16T00:46:07.920Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2467,13 +2475,13 @@
       ]
     },
     "autopilot": {
-      "km": 7991,
-      "pct": 83.4
+      "km": 8060,
+      "pct": 83.5
     },
     "energy": {
-      "used": 1479,
-      "added": 1642,
-      "overhead": 9.9,
+      "used": 1487,
+      "added": 1652,
+      "overhead": 10,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -2541,8 +2549,8 @@
         },
         {
           "soc": 85,
-          "kw": 20,
-          "n": 4
+          "kw": 34,
+          "n": 5
         },
         {
           "soc": 90,
@@ -2550,7 +2558,7 @@
           "n": 1
         }
       ],
-      "sessions": 83,
+      "sessions": 84,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2634,7 +2642,7 @@
     {
       "key": "2026-09-15",
       "label": "D 14",
-      "km": 299
+      "km": 368
     }
   ],
   "log": [
@@ -2645,8 +2653,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "299",
-      "chargeMinutes": 31,
+      "km": "368",
+      "chargeMinutes": 38,
       "note": ""
     },
     {

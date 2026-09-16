@@ -1618,7 +1618,7 @@
     "day": 13,
     "date": "Sep 14",
     "label": "Day 13 · Sep 14",
-    "km": 101,
+    "km": 105,
     "from": "Squamish, British Columbia",
     "to": "Whistler, British Columbia",
     "corridor": "Whistler, British Columbia",
@@ -1628,44 +1628,48 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4074,
-        0.8375
+        0.4177,
+        0.85
       ],
       [
-        0.4537,
-        0.725
+        0.4589,
+        0.75
       ],
       [
-        0.4074,
-        0.725
+        0.4177,
+        0.75
       ],
       [
-        0.4074,
-        0.8375
+        0.4177,
+        0.85
       ],
       [
-        0.4074,
+        0.4177,
         0.95
       ],
       [
-        0.4074,
-        0.8375
+        0.4177,
+        0.85
       ],
       [
-        0.5926,
+        0.5823,
+        0.15
+      ],
+      [
+        0.5823,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4074,
-        "y": 0.8375,
+        "x": 0.4177,
+        "y": 0.85,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5926,
+        "x": 0.5823,
         "y": 0.05,
         "town": "Whistler, British Columbia",
         "kind": "end",
@@ -1679,7 +1683,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1072,
+    "kmPerPx": 0.1207,
     "plotted": true
   }
 ]
