@@ -1689,5 +1689,22 @@
     ],
     "kmPerPx": 0.1207,
     "plotted": true
+  },
+  {
+    "key": "2026-09-15",
+    "day": 14,
+    "date": "Sep 15",
+    "label": "Day 14 · Sep 15",
+    "km": 0,
+    "from": "Squamish, British Columbia",
+    "to": "Squamish, British Columbia",
+    "corridor": "Squamish, British Columbia",
+    "province": "British Columbia",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]
