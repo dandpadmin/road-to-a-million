@@ -1695,13 +1695,13 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 169,
+    "km": 176,
     "from": "Squamish, British Columbia",
     "to": "Victoria, British Columbia",
     "corridor": "Victoria, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 2,
-    "chargeMinutes": 14,
+    "chargeStops": 3,
+    "chargeMinutes": 20,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1727,6 +1727,10 @@
       [
         0.4721,
         0.95
+      ],
+      [
+        0.4581,
+        0.9167
       ]
     ],
     "stops": [
@@ -1738,8 +1742,8 @@
         "sessions": []
       },
       {
-        "x": 0.4721,
-        "y": 0.95,
+        "x": 0.4581,
+        "y": 0.9167,
         "town": "Victoria, British Columbia",
         "kind": "end",
         "sessions": [
