@@ -1,13 +1,13 @@
 {
-  "odometer": 10290,
+  "odometer": 10318,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
   "route": "Delta, British Columbia",
-  "today": 49,
+  "today": 171,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 604,
+  "avgPerDay": 612,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -1834,7 +1834,7 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-16T18:58:02.595Z",
+  "updatedAt": "2026-09-16T19:17:13.122Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2550,17 +2550,17 @@
       ]
     },
     "autopilot": {
-      "km": 8228,
-      "pct": 83.7
+      "km": 8348,
+      "pct": 83.9
     },
     "energy": {
-      "used": 1511,
+      "used": 1527,
       "added": 1675,
-      "overhead": 9.8,
-      "whPerKm": 154,
+      "overhead": 8.9,
+      "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 408
+      "rangeEst": 409
     },
     "cost": {
       "total": 265.03,
@@ -2727,7 +2727,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 49
+      "km": 171
     }
   ],
   "log": [
@@ -2738,7 +2738,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "49",
+      "km": "171",
       "chargeMinutes": 0,
       "note": ""
     },
