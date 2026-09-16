@@ -1695,16 +1695,54 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 0,
+    "km": 121,
     "from": "Squamish, British Columbia",
-    "to": "Squamish, British Columbia",
-    "corridor": "Squamish, British Columbia",
+    "to": "Delta, British Columbia",
+    "corridor": "Delta, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 12,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.4856,
+        0.05
+      ],
+      [
+        0.5144,
+        0.95
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.4856,
+        "y": 0.05,
+        "town": "Squamish, British Columbia",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.5144,
+        "y": 0.95,
+        "town": "Delta, British Columbia",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 12,
+            "socStart": 55,
+            "socEnd": 88
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 80,
+            "socEnd": 83
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.1743,
+    "plotted": true
   }
 ]
