@@ -1,13 +1,13 @@
 {
-  "odometer": 10145,
+  "odometer": 10156,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
   "route": "Squamish, British Columbia",
-  "today": 11,
+  "today": 25,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 601,
+  "avgPerDay": 602,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -1742,7 +1742,7 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-16T15:56:45.476Z",
+  "updatedAt": "2026-09-16T16:17:26.678Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2446,17 +2446,17 @@
       ]
     },
     "autopilot": {
-      "km": 8191,
+      "km": 8204,
       "pct": 83.6
     },
     "energy": {
-      "used": 1506,
+      "used": 1508,
       "added": 1675,
-      "overhead": 10.1,
+      "overhead": 10,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 407
+      "rangeEst": 408
     },
     "cost": {
       "total": 265.03,
@@ -2623,7 +2623,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 11
+      "km": 25
     }
   ],
   "log": [
@@ -2634,7 +2634,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "11",
+      "km": "25",
       "chargeMinutes": 0,
       "note": ""
     },
