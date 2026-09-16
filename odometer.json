@@ -1,16 +1,16 @@
 {
-  "odometer": 10131,
+  "odometer": 10139,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
   "route": "Squamish, British Columbia",
-  "today": 504,
+  "today": 8,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 644,
-  "chargeSessions": 8,
-  "chargeSupercharger": 7,
-  "chargeOther": 1,
+  "avgPerDay": 601,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
+  "chargeOther": 0,
   "chargeLifetime": 86,
   "chargeLifetimeSupercharger": 51,
   "chargeLifetimeOther": 35,
@@ -1741,8 +1741,8 @@
       "kmPerPx": 0
     }
   ],
-  "asOf": "2026-09-15",
-  "updatedAt": "2026-09-16T15:18:01.050Z",
+  "asOf": "2026-09-16",
+  "updatedAt": "2026-09-16T15:42:11.938Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2447,12 +2447,12 @@
     },
     "autopilot": {
       "km": 8191,
-      "pct": 83.7
+      "pct": 83.6
     },
     "energy": {
-      "used": 1505,
+      "used": 1506,
       "added": 1675,
-      "overhead": 10.2,
+      "overhead": 10.1,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -2619,9 +2619,25 @@
       "key": "2026-09-15",
       "label": "D 14",
       "km": 504
+    },
+    {
+      "key": "2026-09-16",
+      "label": "D 15",
+      "km": 8
     }
   ],
   "log": [
+    {
+      "key": "2026-09-16",
+      "day": "Day 15",
+      "date": "Sep 16",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "8",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-15",
       "day": "Day 14",
@@ -2727,18 +2743,6 @@
       "plotted": true,
       "km": "618",
       "chargeMinutes": 390,
-      "note": ""
-    },
-    {
-      "key": "2026-09-06",
-      "day": "Day 5",
-      "date": "Sep 6",
-      "province": "Yukon",
-      "from": "Whitehorse, Yukon",
-      "to": "Dawson, Yukon",
-      "plotted": true,
-      "km": "556",
-      "chargeMinutes": 200,
       "note": ""
     }
   ]
