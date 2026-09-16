@@ -4,10 +4,10 @@
   "day": 15,
   "province": "British Columbia",
   "route": "North Saanich, British Columbia",
-  "today": 203,
+  "today": 232,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 614,
+  "avgPerDay": 616,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
@@ -1870,7 +1870,7 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-16T20:15:02.662Z",
+  "updatedAt": "2026-09-16T20:32:24.286Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2586,17 +2586,17 @@
       ]
     },
     "autopilot": {
-      "km": 8380,
+      "km": 8407,
       "pct": 83.9
     },
     "energy": {
-      "used": 1532,
+      "used": 1535,
       "added": 1701,
-      "overhead": 10,
+      "overhead": 9.8,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 408
+      "rangeEst": 409
     },
     "cost": {
       "total": 270.07,
@@ -2763,7 +2763,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 203
+      "km": 232
     }
   ],
   "log": [
@@ -2774,7 +2774,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "203",
+      "km": "232",
       "chargeMinutes": 20,
       "note": ""
     },
