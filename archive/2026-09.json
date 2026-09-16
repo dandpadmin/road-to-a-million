@@ -1695,68 +1695,78 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 176,
+    "km": 299,
     "from": "Squamish, British Columbia",
-    "to": "Victoria, British Columbia",
-    "corridor": "Victoria, British Columbia",
+    "to": "Nanaimo, British Columbia",
+    "corridor": "Nanaimo, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 3,
-    "chargeMinutes": 20,
+    "chargeStops": 5,
+    "chargeMinutes": 31,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5279,
+        0.6186,
         0.05
       ],
       [
-        0.5419,
+        0.6325,
         0.4833
       ],
       [
-        0.5419,
+        0.6325,
         0.55
       ],
       [
-        0.5279,
+        0.6186,
         0.55
       ],
       [
-        0.4581,
+        0.5488,
         0.7833
       ],
       [
-        0.4721,
+        0.5628,
         0.95
       ],
       [
-        0.4581,
+        0.5488,
         0.9167
+      ],
+      [
+        0.3675,
+        0.3833
       ]
     ],
     "stops": [
       {
-        "x": 0.5279,
+        "x": 0.6186,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4581,
-        "y": 0.9167,
-        "town": "Victoria, British Columbia",
+        "x": 0.3675,
+        "y": 0.3833,
+        "town": "Nanaimo, British Columbia",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
             "minutes": 6,
-            "socStart": 77,
-            "socEnd": 86
+            "socStart": 60,
+            "socEnd": 80
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 5,
+            "socStart": 81,
+            "socEnd": 89
           }
         ]
       },
       {
-        "x": 0.5419,
+        "x": 0.6325,
         "y": 0.4833,
         "town": "Delta, British Columbia",
         "kind": "charge",
@@ -1770,7 +1780,7 @@
         ]
       },
       {
-        "x": 0.4581,
+        "x": 0.5488,
         "y": 0.7833,
         "town": "North Saanich, British Columbia",
         "kind": "charge",
@@ -1780,6 +1790,20 @@
             "minutes": 2,
             "socStart": 80,
             "socEnd": 83
+          }
+        ]
+      },
+      {
+        "x": 0.5488,
+        "y": 0.9167,
+        "town": "Victoria, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 77,
+            "socEnd": 86
           }
         ]
       }

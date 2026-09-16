@@ -1,86 +1,96 @@
 {
-  "odometer": 10368,
+  "odometer": 10374,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
-  "route": "Victoria, British Columbia",
-  "today": 233,
+  "route": "Nanaimo, British Columbia",
+  "today": 238,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 616,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 617,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 87,
-  "chargeLifetimeSupercharger": 52,
+  "chargeLifetime": 88,
+  "chargeLifetimeSupercharger": 53,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-15",
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 176,
+    "km": 299,
     "from": "Squamish, British Columbia",
-    "to": "Victoria, British Columbia",
-    "corridor": "Victoria, British Columbia",
+    "to": "Nanaimo, British Columbia",
+    "corridor": "Nanaimo, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 3,
-    "chargeMinutes": 20,
+    "chargeStops": 5,
+    "chargeMinutes": 31,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5279,
+        0.6186,
         0.05
       ],
       [
-        0.5419,
+        0.6325,
         0.4833
       ],
       [
-        0.5419,
+        0.6325,
         0.55
       ],
       [
-        0.5279,
+        0.6186,
         0.55
       ],
       [
-        0.4581,
+        0.5488,
         0.7833
       ],
       [
-        0.4721,
+        0.5628,
         0.95
       ],
       [
-        0.4581,
+        0.5488,
         0.9167
+      ],
+      [
+        0.3675,
+        0.3833
       ]
     ],
     "stops": [
       {
-        "x": 0.5279,
+        "x": 0.6186,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4581,
-        "y": 0.9167,
-        "town": "Victoria, British Columbia",
+        "x": 0.3675,
+        "y": 0.3833,
+        "town": "Nanaimo, British Columbia",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
             "minutes": 6,
-            "socStart": 77,
-            "socEnd": 86
+            "socStart": 60,
+            "socEnd": 80
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 5,
+            "socStart": 81,
+            "socEnd": 89
           }
         ]
       },
       {
-        "x": 0.5419,
+        "x": 0.6325,
         "y": 0.4833,
         "town": "Delta, British Columbia",
         "kind": "charge",
@@ -94,7 +104,7 @@
         ]
       },
       {
-        "x": 0.4581,
+        "x": 0.5488,
         "y": 0.7833,
         "town": "North Saanich, British Columbia",
         "kind": "charge",
@@ -104,6 +114,20 @@
             "minutes": 2,
             "socStart": 80,
             "socEnd": 83
+          }
+        ]
+      },
+      {
+        "x": 0.5488,
+        "y": 0.9167,
+        "town": "Victoria, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 77,
+            "socEnd": 86
           }
         ]
       }
@@ -1808,68 +1832,78 @@
       "day": 14,
       "date": "Sep 15",
       "label": "Day 14 · Sep 15",
-      "km": 176,
+      "km": 299,
       "from": "Squamish, British Columbia",
-      "to": "Victoria, British Columbia",
-      "corridor": "Victoria, British Columbia",
+      "to": "Nanaimo, British Columbia",
+      "corridor": "Nanaimo, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 3,
-      "chargeMinutes": 20,
+      "chargeStops": 5,
+      "chargeMinutes": 31,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.5279,
+          0.6186,
           0.05
         ],
         [
-          0.5419,
+          0.6325,
           0.4833
         ],
         [
-          0.5419,
+          0.6325,
           0.55
         ],
         [
-          0.5279,
+          0.6186,
           0.55
         ],
         [
-          0.4581,
+          0.5488,
           0.7833
         ],
         [
-          0.4721,
+          0.5628,
           0.95
         ],
         [
-          0.4581,
+          0.5488,
           0.9167
+        ],
+        [
+          0.3675,
+          0.3833
         ]
       ],
       "stops": [
         {
-          "x": 0.5279,
+          "x": 0.6186,
           "y": 0.05,
           "town": "Squamish, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.4581,
-          "y": 0.9167,
-          "town": "Victoria, British Columbia",
+          "x": 0.3675,
+          "y": 0.3833,
+          "town": "Nanaimo, British Columbia",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
               "minutes": 6,
-              "socStart": 77,
-              "socEnd": 86
+              "socStart": 60,
+              "socEnd": 80
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 5,
+              "socStart": 81,
+              "socEnd": 89
             }
           ]
         },
         {
-          "x": 0.5419,
+          "x": 0.6325,
           "y": 0.4833,
           "town": "Delta, British Columbia",
           "kind": "charge",
@@ -1883,7 +1917,7 @@
           ]
         },
         {
-          "x": 0.4581,
+          "x": 0.5488,
           "y": 0.7833,
           "town": "North Saanich, British Columbia",
           "kind": "charge",
@@ -1895,6 +1929,20 @@
               "socEnd": 83
             }
           ]
+        },
+        {
+          "x": 0.5488,
+          "y": 0.9167,
+          "town": "Victoria, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 6,
+              "socStart": 77,
+              "socEnd": 86
+            }
+          ]
         }
       ],
       "kmPerPx": 0.362,
@@ -1902,13 +1950,19 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-16T23:15:12.055Z",
+  "updatedAt": "2026-09-16T23:31:08.469Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 22,
+          "wh": 132,
+          "km": 120,
+          "prov": "British Columbia"
+        },
         {
           "t": 19.9,
           "wh": 137,
@@ -2618,7 +2672,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 147,
+      "median": 145,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -2630,24 +2684,24 @@
       ]
     },
     "autopilot": {
-      "km": 8407,
+      "km": 8412,
       "pct": 83.9
     },
     "energy": {
-      "used": 1535,
-      "added": 1701,
-      "overhead": 9.8,
+      "used": 1536,
+      "added": 1706,
+      "overhead": 9.9,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 409
     },
     "cost": {
-      "total": 270.07,
-      "supercharger": 270.07,
+      "total": 271.43,
+      "supercharger": 271.43,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 51,
+      "sessions": 52,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2718,7 +2772,7 @@
           "n": 1
         }
       ],
-      "sessions": 87,
+      "sessions": 88,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2807,7 +2861,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 233
+      "km": 238
     }
   ],
   "log": [
@@ -2818,8 +2872,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "233",
-      "chargeMinutes": 20,
+      "km": "238",
+      "chargeMinutes": 23,
       "note": ""
     },
     {
@@ -2828,7 +2882,7 @@
       "date": "Sep 15",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "Victoria, British Columbia",
+      "to": "Nanaimo, British Columbia",
       "plotted": true,
       "km": "504",
       "chargeMinutes": 389,
