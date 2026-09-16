@@ -1695,62 +1695,80 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 135,
+    "km": 139,
     "from": "Squamish, British Columbia",
-    "to": "Delta, British Columbia",
-    "corridor": "Delta, British Columbia",
+    "to": "North Saanich, British Columbia",
+    "corridor": "North Saanich, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 12,
+    "chargeStops": 2,
+    "chargeMinutes": 14,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4875,
+        0.5342,
         0.05
       ],
       [
-        0.5125,
-        0.83
+        0.5512,
+        0.5818
       ],
       [
-        0.5125,
-        0.95
+        0.5512,
+        0.6636
       ],
       [
-        0.4875,
+        0.5342,
+        0.6636
+      ],
+      [
+        0.4488,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.4875,
+        "x": 0.5342,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4875,
+        "x": 0.4488,
         "y": 0.95,
-        "town": "Delta, British Columbia",
+        "town": "North Saanich, British Columbia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 80,
+            "socEnd": 83
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 77,
+            "socEnd": 86
+          }
+        ]
+      },
+      {
+        "x": 0.5512,
+        "y": 0.5818,
+        "town": "Delta, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
             "minutes": 12,
             "socStart": 55,
             "socEnd": 88
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 80,
-            "socEnd": 83
           }
         ]
       }
     ],
-    "kmPerPx": 0.2011,
+    "kmPerPx": 0.2949,
     "plotted": true
   }
 ]
