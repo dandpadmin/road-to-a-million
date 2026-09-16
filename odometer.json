@@ -1,13 +1,13 @@
 {
-  "odometer": 10166,
+  "odometer": 10181,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
-  "route": "British Columbia",
-  "today": 25,
+  "route": "Delta, British Columbia",
+  "today": 49,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 602,
+  "avgPerDay": 604,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -19,10 +19,10 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 133,
+    "km": 134,
     "from": "Squamish, British Columbia",
-    "to": "British Columbia",
-    "corridor": "British Columbia",
+    "to": "Delta, British Columbia",
+    "corridor": "Delta, British Columbia",
     "province": "British Columbia",
     "chargeStops": 1,
     "chargeMinutes": 12,
@@ -39,6 +39,10 @@
       [
         0.5125,
         0.95
+      ],
+      [
+        0.4875,
+        0.95
       ]
     ],
     "stops": [
@@ -50,30 +54,22 @@
         "sessions": []
       },
       {
-        "x": 0.5125,
+        "x": 0.4875,
         "y": 0.95,
-        "town": "British Columbia",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 80,
-            "socEnd": 83
-          }
-        ]
-      },
-      {
-        "x": 0.5125,
-        "y": 0.83,
         "town": "Delta, British Columbia",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
             "minutes": 12,
             "socStart": 55,
             "socEnd": 88
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 80,
+            "socEnd": 83
           }
         ]
       }
@@ -1778,10 +1774,10 @@
       "day": 14,
       "date": "Sep 15",
       "label": "Day 14 · Sep 15",
-      "km": 133,
+      "km": 134,
       "from": "Squamish, British Columbia",
-      "to": "British Columbia",
-      "corridor": "British Columbia",
+      "to": "Delta, British Columbia",
+      "corridor": "Delta, British Columbia",
       "province": "British Columbia",
       "chargeStops": 1,
       "chargeMinutes": 12,
@@ -1798,6 +1794,10 @@
         [
           0.5125,
           0.95
+        ],
+        [
+          0.4875,
+          0.95
         ]
       ],
       "stops": [
@@ -1809,30 +1809,22 @@
           "sessions": []
         },
         {
-          "x": 0.5125,
+          "x": 0.4875,
           "y": 0.95,
-          "town": "British Columbia",
-          "kind": "end",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 2,
-              "socStart": 80,
-              "socEnd": 83
-            }
-          ]
-        },
-        {
-          "x": 0.5125,
-          "y": 0.83,
           "town": "Delta, British Columbia",
-          "kind": "charge",
+          "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
               "minutes": 12,
               "socStart": 55,
               "socEnd": 88
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 2,
+              "socStart": 80,
+              "socEnd": 83
             }
           ]
         }
@@ -1842,7 +1834,7 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-16T17:13:43.271Z",
+  "updatedAt": "2026-09-16T17:29:56.150Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2558,13 +2550,13 @@
       ]
     },
     "autopilot": {
-      "km": 8204,
-      "pct": 83.6
+      "km": 8228,
+      "pct": 83.7
     },
     "energy": {
-      "used": 1508,
+      "used": 1511,
       "added": 1675,
-      "overhead": 10,
+      "overhead": 9.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -2735,7 +2727,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 25
+      "km": 49
     }
   ],
   "log": [
@@ -2746,7 +2738,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "25",
+      "km": "49",
       "chargeMinutes": 0,
       "note": ""
     },
@@ -2756,7 +2748,7 @@
       "date": "Sep 15",
       "province": "British Columbia",
       "from": "Squamish, British Columbia",
-      "to": "British Columbia",
+      "to": "Delta, British Columbia",
       "plotted": true,
       "km": "504",
       "chargeMinutes": 389,

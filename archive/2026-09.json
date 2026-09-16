@@ -1695,10 +1695,10 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 133,
+    "km": 134,
     "from": "Squamish, British Columbia",
-    "to": "British Columbia",
-    "corridor": "British Columbia",
+    "to": "Delta, British Columbia",
+    "corridor": "Delta, British Columbia",
     "province": "British Columbia",
     "chargeStops": 1,
     "chargeMinutes": 12,
@@ -1715,6 +1715,10 @@
       [
         0.5125,
         0.95
+      ],
+      [
+        0.4875,
+        0.95
       ]
     ],
     "stops": [
@@ -1726,30 +1730,22 @@
         "sessions": []
       },
       {
-        "x": 0.5125,
+        "x": 0.4875,
         "y": 0.95,
-        "town": "British Columbia",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 80,
-            "socEnd": 83
-          }
-        ]
-      },
-      {
-        "x": 0.5125,
-        "y": 0.83,
         "town": "Delta, British Columbia",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
             "minutes": 12,
             "socStart": 55,
             "socEnd": 88
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 80,
+            "socEnd": 83
           }
         ]
       }
