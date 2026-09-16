@@ -4,10 +4,10 @@
   "day": 15,
   "province": "British Columbia",
   "route": "Whistler, British Columbia",
-  "today": 478,
+  "today": 495,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 642,
+  "avgPerDay": 643,
   "chargeSessions": 6,
   "chargeSupercharger": 6,
   "chargeOther": 0,
@@ -1777,7 +1777,7 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-16T02:42:24.492Z",
+  "updatedAt": "2026-09-16T02:56:14.705Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2475,17 +2475,17 @@
       ]
     },
     "autopilot": {
-      "km": 8168,
+      "km": 8183,
       "pct": 83.7
     },
     "energy": {
-      "used": 1500,
+      "used": 1504,
       "added": 1652,
-      "overhead": 9.2,
+      "overhead": 9,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 408
+      "rangeEst": 407
     },
     "cost": {
       "total": 261.05,
@@ -2642,7 +2642,7 @@
     {
       "key": "2026-09-15",
       "label": "D 14",
-      "km": 478
+      "km": 495
     }
   ],
   "log": [
@@ -2653,7 +2653,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "478",
+      "km": "495",
       "chargeMinutes": 38,
       "note": ""
     },
