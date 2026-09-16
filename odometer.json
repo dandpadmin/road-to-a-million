@@ -1,18 +1,18 @@
 {
-  "odometer": 10122,
+  "odometer": 10130,
   "goal": 1000000,
   "day": 15,
   "province": "British Columbia",
   "route": "Whistler, British Columbia",
-  "today": 495,
+  "today": 498,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 643,
-  "chargeSessions": 6,
-  "chargeSupercharger": 6,
+  "chargeSessions": 7,
+  "chargeSupercharger": 7,
   "chargeOther": 0,
-  "chargeLifetime": 84,
-  "chargeLifetimeSupercharger": 50,
+  "chargeLifetime": 85,
+  "chargeLifetimeSupercharger": 51,
   "chargeLifetimeOther": 34,
   "dayMap": {
     "key": "2026-09-14",
@@ -1777,7 +1777,7 @@
     }
   ],
   "asOf": "2026-09-15",
-  "updatedAt": "2026-09-16T02:56:14.705Z",
+  "updatedAt": "2026-09-16T03:16:12.728Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2475,24 +2475,24 @@
       ]
     },
     "autopilot": {
-      "km": 8183,
+      "km": 8186,
       "pct": 83.7
     },
     "energy": {
       "used": 1504,
-      "added": 1652,
-      "overhead": 9,
+      "added": 1672,
+      "overhead": 10,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 407
     },
     "cost": {
-      "total": 261.05,
-      "supercharger": 261.05,
+      "total": 265.03,
+      "supercharger": 265.03,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 49,
+      "sessions": 50,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2544,8 +2544,8 @@
         },
         {
           "soc": 80,
-          "kw": 27,
-          "n": 2
+          "kw": 41,
+          "n": 3
         },
         {
           "soc": 85,
@@ -2558,7 +2558,7 @@
           "n": 1
         }
       ],
-      "sessions": 84,
+      "sessions": 85,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2642,7 +2642,7 @@
     {
       "key": "2026-09-15",
       "label": "D 14",
-      "km": 495
+      "km": 498
     }
   ],
   "log": [
@@ -2653,8 +2653,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "495",
-      "chargeMinutes": 38,
+      "km": "498",
+      "chargeMinutes": 55,
       "note": ""
     },
     {
