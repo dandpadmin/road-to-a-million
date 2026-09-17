@@ -1,52 +1,63 @@
 {
-  "odometer": 10953,
+  "odometer": 10954,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
-  "route": "Tofino, British Columbia",
+  "route": "British Columbia",
   "today": 101,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 615,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 90,
-  "chargeLifetimeSupercharger": 55,
+  "chargeLifetime": 91,
+  "chargeLifetimeSupercharger": 56,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-16",
     "day": 15,
     "date": "Sep 16",
     "label": "Day 15 · Sep 16",
-    "km": 11,
+    "km": 25,
     "from": "Tofino, British Columbia",
-    "to": "Tofino, British Columbia",
-    "corridor": "Tofino, British Columbia",
+    "to": "British Columbia",
+    "corridor": "British Columbia",
     "province": "British Columbia",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6881,
-        0.95
+        0.4059,
+        0.5
       ],
       [
-        0.3119,
+        0.2176,
         0.05
+      ],
+      [
+        0.7824,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.6881,
-        "y": 0.95,
+        "x": 0.4059,
+        "y": 0.5,
         "town": "Tofino, British Columbia",
         "kind": "start",
         "sessions": []
+      },
+      {
+        "x": 0.7824,
+        "y": 0.95,
+        "town": "British Columbia",
+        "kind": "end",
+        "sessions": []
       }
     ],
-    "kmPerPx": 0.0134,
+    "kmPerPx": 0.0268,
     "plotted": true
   },
   "dayMaps": [
@@ -1921,45 +1932,62 @@
       "day": 15,
       "date": "Sep 16",
       "label": "Day 15 · Sep 16",
-      "km": 11,
+      "km": 25,
       "from": "Tofino, British Columbia",
-      "to": "Tofino, British Columbia",
-      "corridor": "Tofino, British Columbia",
+      "to": "British Columbia",
+      "corridor": "British Columbia",
       "province": "British Columbia",
       "chargeStops": 0,
       "chargeMinutes": 0,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.6881,
-          0.95
+          0.4059,
+          0.5
         ],
         [
-          0.3119,
+          0.2176,
           0.05
+        ],
+        [
+          0.7824,
+          0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.6881,
-          "y": 0.95,
+          "x": 0.4059,
+          "y": 0.5,
           "town": "Tofino, British Columbia",
           "kind": "start",
           "sessions": []
+        },
+        {
+          "x": 0.7824,
+          "y": 0.95,
+          "town": "British Columbia",
+          "kind": "end",
+          "sessions": []
         }
       ],
-      "kmPerPx": 0.0134,
+      "kmPerPx": 0.0268,
       "plotted": true
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T15:55:47.082Z",
+  "updatedAt": "2026-09-17T16:16:31.305Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.7,
+          "wh": 103,
+          "km": 15,
+          "prov": "British Columbia"
+        },
         {
           "t": 10.7,
           "wh": 119,
@@ -2728,19 +2756,19 @@
     },
     "energy": {
       "used": 1631,
-      "added": 1765,
-      "overhead": 7.6,
+      "added": 1770,
+      "overhead": 7.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 407
     },
     "cost": {
-      "total": 283.78,
-      "supercharger": 283.78,
+      "total": 284.77,
+      "supercharger": 284.77,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 54,
+      "sessions": 55,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2811,7 +2839,7 @@
           "n": 1
         }
       ],
-      "sessions": 90,
+      "sessions": 91,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2917,7 +2945,7 @@
       "from": "—",
       "to": "—",
       "km": "101",
-      "chargeMinutes": 9,
+      "chargeMinutes": 14,
       "note": ""
     },
     {
@@ -2926,7 +2954,7 @@
       "date": "Sep 16",
       "province": "British Columbia",
       "from": "Tofino, British Columbia",
-      "to": "Tofino, British Columbia",
+      "to": "British Columbia",
       "plotted": true,
       "km": "721",
       "chargeMinutes": 45,
