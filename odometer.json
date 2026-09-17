@@ -1,13 +1,13 @@
 {
-  "odometer": 10450,
+  "odometer": 10481,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Port Alberni, British Columbia",
-  "today": 238,
+  "today": 350,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 617,
+  "avgPerDay": 624,
   "chargeSessions": 2,
   "chargeSupercharger": 2,
   "chargeOther": 0,
@@ -1986,7 +1986,7 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-17T00:46:44.519Z",
+  "updatedAt": "2026-09-17T01:13:45.516Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2726,17 +2726,17 @@
       ]
     },
     "autopilot": {
-      "km": 8412,
-      "pct": 83.9
+      "km": 8521,
+      "pct": 84.1
     },
     "energy": {
-      "used": 1536,
+      "used": 1550,
       "added": 1706,
-      "overhead": 9.9,
+      "overhead": 9.1,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 409
+      "rangeEst": 410
     },
     "cost": {
       "total": 271.43,
@@ -2903,7 +2903,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 238
+      "km": 350
     }
   ],
   "log": [
@@ -2914,7 +2914,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "238",
+      "km": "350",
       "chargeMinutes": 23,
       "note": ""
     },
