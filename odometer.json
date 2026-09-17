@@ -1,9 +1,9 @@
 {
-  "odometer": 11113,
+  "odometer": 11153,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
-  "route": "Parksville, British Columbia",
+  "route": "Nanaimo, British Columbia",
   "today": 255,
   "best": 1333,
   "bestDay": 1,
@@ -19,52 +19,56 @@
     "day": 15,
     "date": "Sep 16",
     "label": "Day 15 · Sep 16",
-    "km": 171,
+    "km": 203,
     "from": "Tofino, British Columbia",
-    "to": "Parksville, British Columbia",
-    "corridor": "Parksville, British Columbia",
+    "to": "Nanaimo, British Columbia",
+    "corridor": "Nanaimo, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 20,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.081,
-        0.5743
+        0.0743,
+        0.5582
       ],
       [
         0.05,
         0.5
       ],
       [
-        0.1431,
-        0.6485
+        0.123,
+        0.6164
       ],
       [
-        0.2362,
-        0.7228
+        0.1959,
+        0.6746
       ],
       [
-        0.2672,
-        0.6485
+        0.2203,
+        0.6164
+      ],
+      [
+        0.7554,
+        0.3254
       ],
       [
         0.95,
-        0.2772
+        0.3836
       ]
     ],
     "stops": [
       {
-        "x": 0.081,
-        "y": 0.5743,
+        "x": 0.0743,
+        "y": 0.5582,
         "town": "Tofino, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.2772,
-        "town": "Parksville, British Columbia",
+        "y": 0.3836,
+        "town": "Nanaimo, British Columbia",
         "kind": "end",
         "sessions": [
           {
@@ -76,7 +80,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1625,
+    "kmPerPx": 0.2073,
     "plotted": true
   },
   "dayMaps": [
@@ -1951,52 +1955,56 @@
       "day": 15,
       "date": "Sep 16",
       "label": "Day 15 · Sep 16",
-      "km": 171,
+      "km": 203,
       "from": "Tofino, British Columbia",
-      "to": "Parksville, British Columbia",
-      "corridor": "Parksville, British Columbia",
+      "to": "Nanaimo, British Columbia",
+      "corridor": "Nanaimo, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 1,
+      "chargeMinutes": 20,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.081,
-          0.5743
+          0.0743,
+          0.5582
         ],
         [
           0.05,
           0.5
         ],
         [
-          0.1431,
-          0.6485
+          0.123,
+          0.6164
         ],
         [
-          0.2362,
-          0.7228
+          0.1959,
+          0.6746
         ],
         [
-          0.2672,
-          0.6485
+          0.2203,
+          0.6164
+        ],
+        [
+          0.7554,
+          0.3254
         ],
         [
           0.95,
-          0.2772
+          0.3836
         ]
       ],
       "stops": [
         {
-          "x": 0.081,
-          "y": 0.5743,
+          "x": 0.0743,
+          "y": 0.5582,
           "town": "Tofino, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.2772,
-          "town": "Parksville, British Columbia",
+          "y": 0.3836,
+          "town": "Nanaimo, British Columbia",
           "kind": "end",
           "sessions": [
             {
@@ -2008,18 +2016,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.1625,
+      "kmPerPx": 0.2073,
       "plotted": true
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T19:17:14.222Z",
+  "updatedAt": "2026-09-17T19:40:50.677Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 19.7,
+          "wh": 149,
+          "km": 33,
+          "prov": "British Columbia"
+        },
         {
           "t": 16.9,
           "wh": 134,
@@ -3015,7 +3029,7 @@
       "date": "Sep 16",
       "province": "British Columbia",
       "from": "Tofino, British Columbia",
-      "to": "Parksville, British Columbia",
+      "to": "Nanaimo, British Columbia",
       "plotted": true,
       "km": "721",
       "chargeMinutes": 45,
