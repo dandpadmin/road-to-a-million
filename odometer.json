@@ -1,18 +1,18 @@
 {
-  "odometer": 11102,
+  "odometer": 11105,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Ucluelet, British Columbia",
-  "today": 104,
+  "today": 253,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 615,
-  "chargeSessions": 3,
-  "chargeSupercharger": 3,
+  "avgPerDay": 624,
+  "chargeSessions": 5,
+  "chargeSupercharger": 5,
   "chargeOther": 0,
-  "chargeLifetime": 92,
-  "chargeLifetimeSupercharger": 57,
+  "chargeLifetime": 94,
+  "chargeLifetimeSupercharger": 59,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-16",
@@ -1991,7 +1991,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T18:20:36.910Z",
+  "updatedAt": "2026-09-17T18:44:52.704Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2779,28 +2779,33 @@
       ]
     },
     "autopilot": {
-      "km": 8962,
+      "km": 9086,
       "pct": 84.5
     },
     "energy": {
-      "used": 1631,
-      "added": 1778,
-      "overhead": 8.3,
+      "used": 1653,
+      "added": 1795,
+      "overhead": 7.9,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 407
     },
     "cost": {
-      "total": 286.42,
-      "supercharger": 286.42,
+      "total": 290.55,
+      "supercharger": 290.55,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 56,
+      "sessions": 58,
       "currency": "CAD"
     },
     "chargeCurve": {
       "points": [
+        {
+          "soc": 25,
+          "kw": 122,
+          "n": 1
+        },
         {
           "soc": 35,
           "kw": 28,
@@ -2867,7 +2872,7 @@
           "n": 1
         }
       ],
-      "sessions": 92,
+      "sessions": 94,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2961,7 +2966,7 @@
     {
       "key": "2026-09-17",
       "label": "D 16",
-      "km": 104
+      "km": 253
     }
   ],
   "log": [
@@ -2972,8 +2977,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "104",
-      "chargeMinutes": 19,
+      "km": "253",
+      "chargeMinutes": 27,
       "note": ""
     },
     {
