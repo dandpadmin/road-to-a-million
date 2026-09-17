@@ -1,13 +1,13 @@
 {
-  "odometer": 11282,
+  "odometer": 11303,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Nanaimo, British Columbia",
-  "today": 420,
+  "today": 450,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 634,
+  "avgPerDay": 636,
   "chargeSessions": 9,
   "chargeSupercharger": 9,
   "chargeOther": 0,
@@ -2029,7 +2029,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T21:29:29.079Z",
+  "updatedAt": "2026-09-17T21:43:04.344Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2835,13 +2835,13 @@
       ]
     },
     "autopilot": {
-      "km": 9241,
+      "km": 9271,
       "pct": 84.6
     },
     "energy": {
-      "used": 1679,
+      "used": 1683,
       "added": 1839,
-      "overhead": 8.7,
+      "overhead": 8.5,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3022,7 +3022,7 @@
     {
       "key": "2026-09-17",
       "label": "D 16",
-      "km": 420
+      "km": 450
     }
   ],
   "log": [
@@ -3033,7 +3033,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "420",
+      "km": "450",
       "chargeMinutes": 61,
       "note": ""
     },
