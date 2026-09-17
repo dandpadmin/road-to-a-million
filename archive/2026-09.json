@@ -1695,76 +1695,86 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 368,
+    "km": 424,
     "from": "Squamish, British Columbia",
-    "to": "Port Alberni, British Columbia",
-    "corridor": "Port Alberni, British Columbia",
+    "to": "Ucluelet, British Columbia",
+    "corridor": "Ucluelet, British Columbia",
     "province": "British Columbia",
     "chargeStops": 6,
     "chargeMinutes": 38,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.7232,
+        0.7999,
         0.05
       ],
       [
-        0.7372,
+        0.8139,
         0.4833
       ],
       [
-        0.7372,
+        0.8139,
         0.55
       ],
       [
-        0.7232,
+        0.7999,
         0.55
       ],
       [
-        0.6535,
+        0.7302,
         0.7833
       ],
       [
-        0.6674,
+        0.7441,
         0.95
       ],
       [
-        0.6535,
+        0.7302,
         0.9167
       ],
       [
-        0.4721,
+        0.5488,
         0.3833
       ],
       [
-        0.2628,
+        0.3396,
         0.3833
+      ],
+      [
+        0.1861,
+        0.4167
       ]
     ],
     "stops": [
       {
-        "x": 0.7232,
+        "x": 0.7999,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.2628,
-        "y": 0.3833,
-        "town": "Port Alberni, British Columbia",
+        "x": 0.1861,
+        "y": 0.4167,
+        "town": "Ucluelet, British Columbia",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 75,
-            "socEnd": 91
+            "minutes": 17,
+            "socStart": 64,
+            "socEnd": 96
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 334,
+            "socStart": 94,
+            "socEnd": 99
           }
         ]
       },
       {
-        "x": 0.7372,
+        "x": 0.8139,
         "y": 0.4833,
         "town": "Delta, British Columbia",
         "kind": "charge",
@@ -1778,7 +1788,7 @@
         ]
       },
       {
-        "x": 0.6535,
+        "x": 0.7302,
         "y": 0.7833,
         "town": "North Saanich, British Columbia",
         "kind": "charge",
@@ -1792,7 +1802,7 @@
         ]
       },
       {
-        "x": 0.6535,
+        "x": 0.7302,
         "y": 0.9167,
         "town": "Victoria, British Columbia",
         "kind": "charge",
@@ -1806,7 +1816,7 @@
         ]
       },
       {
-        "x": 0.4721,
+        "x": 0.5488,
         "y": 0.3833,
         "town": "Nanaimo, British Columbia",
         "kind": "charge",
@@ -1822,6 +1832,20 @@
             "minutes": 5,
             "socStart": 81,
             "socEnd": 89
+          }
+        ]
+      },
+      {
+        "x": 0.3396,
+        "y": 0.3833,
+        "town": "Port Alberni, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 75,
+            "socEnd": 91
           }
         ]
       }
