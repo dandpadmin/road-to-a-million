@@ -1,18 +1,18 @@
 {
-  "odometer": 11250,
+  "odometer": 11272,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Nanaimo, British Columbia",
-  "today": 391,
+  "today": 419,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 633,
-  "chargeSessions": 6,
-  "chargeSupercharger": 6,
+  "avgPerDay": 634,
+  "chargeSessions": 7,
+  "chargeSupercharger": 7,
   "chargeOther": 0,
-  "chargeLifetime": 95,
-  "chargeLifetimeSupercharger": 60,
+  "chargeLifetime": 96,
+  "chargeLifetimeSupercharger": 61,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-16",
@@ -2029,7 +2029,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T20:52:09.900Z",
+  "updatedAt": "2026-09-17T21:13:54.594Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2835,24 +2835,24 @@
       ]
     },
     "autopilot": {
-      "km": 9221,
+      "km": 9241,
       "pct": 84.6
     },
     "energy": {
-      "used": 1676,
-      "added": 1824,
-      "overhead": 8.1,
+      "used": 1679,
+      "added": 1829,
+      "overhead": 8.2,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 406
+      "rangeEst": 407
     },
     "cost": {
-      "total": 295.18,
-      "supercharger": 295.18,
+      "total": 297.73,
+      "supercharger": 297.73,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 59,
+      "sessions": 60,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2928,7 +2928,7 @@
           "n": 1
         }
       ],
-      "sessions": 95,
+      "sessions": 96,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3022,7 +3022,7 @@
     {
       "key": "2026-09-17",
       "label": "D 16",
-      "km": 391
+      "km": 419
     }
   ],
   "log": [
@@ -3033,8 +3033,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "391",
-      "chargeMinutes": 51,
+      "km": "419",
+      "chargeMinutes": 55,
       "note": ""
     },
     {
