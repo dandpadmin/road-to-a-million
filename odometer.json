@@ -1,15 +1,15 @@
 {
-  "odometer": 10919,
+  "odometer": 10953,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Tofino, British Columbia",
-  "today": 721,
+  "today": 101,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 649,
-  "chargeSessions": 3,
-  "chargeSupercharger": 3,
+  "avgPerDay": 615,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
   "chargeLifetime": 90,
   "chargeLifetimeSupercharger": 55,
@@ -2057,8 +2057,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-16",
-  "updatedAt": "2026-09-17T05:54:07.520Z",
+  "asOf": "2026-09-17",
+  "updatedAt": "2026-09-17T06:18:36.042Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2822,13 +2822,13 @@
       ]
     },
     "autopilot": {
-      "km": 8864,
-      "pct": 84.4
+      "km": 8962,
+      "pct": 84.5
     },
     "energy": {
-      "used": 1615,
+      "used": 1631,
       "added": 1765,
-      "overhead": 8.5,
+      "overhead": 7.6,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3000,9 +3000,25 @@
       "key": "2026-09-16",
       "label": "D 15",
       "km": 721
+    },
+    {
+      "key": "2026-09-17",
+      "label": "D 16",
+      "km": 101
     }
   ],
   "log": [
+    {
+      "key": "2026-09-17",
+      "day": "Day 16",
+      "date": "Sep 17",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "101",
+      "chargeMinutes": 9,
+      "note": ""
+    },
     {
       "key": "2026-09-16",
       "day": "Day 15",
@@ -3108,18 +3124,6 @@
       "plotted": true,
       "km": "591",
       "chargeMinutes": 357,
-      "note": ""
-    },
-    {
-      "key": "2026-09-07",
-      "day": "Day 6",
-      "date": "Sep 7",
-      "province": "Yukon",
-      "from": "Dawson, Yukon",
-      "to": "Marsh Lake, Yukon",
-      "plotted": true,
-      "km": "618",
-      "chargeMinutes": 390,
       "note": ""
     }
   ]
