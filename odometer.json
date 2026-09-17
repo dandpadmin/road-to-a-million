@@ -1,18 +1,18 @@
 {
-  "odometer": 11272,
+  "odometer": 11282,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Nanaimo, British Columbia",
-  "today": 419,
+  "today": 420,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 634,
-  "chargeSessions": 7,
-  "chargeSupercharger": 7,
+  "chargeSessions": 9,
+  "chargeSupercharger": 9,
   "chargeOther": 0,
-  "chargeLifetime": 96,
-  "chargeLifetimeSupercharger": 61,
+  "chargeLifetime": 98,
+  "chargeLifetimeSupercharger": 63,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-16",
@@ -2029,7 +2029,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T21:13:54.594Z",
+  "updatedAt": "2026-09-17T21:29:29.079Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2840,19 +2840,19 @@
     },
     "energy": {
       "used": 1679,
-      "added": 1829,
-      "overhead": 8.2,
+      "added": 1839,
+      "overhead": 8.7,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 407
     },
     "cost": {
-      "total": 297.73,
-      "supercharger": 297.73,
+      "total": 301.59,
+      "supercharger": 301.59,
       "other": 0,
-      "perKm": 0.027,
-      "sessions": 60,
+      "perKm": 0.028,
+      "sessions": 62,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2928,7 +2928,7 @@
           "n": 1
         }
       ],
-      "sessions": 96,
+      "sessions": 98,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3022,7 +3022,7 @@
     {
       "key": "2026-09-17",
       "label": "D 16",
-      "km": 419
+      "km": 420
     }
   ],
   "log": [
@@ -3033,8 +3033,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "419",
-      "chargeMinutes": 55,
+      "km": "420",
+      "chargeMinutes": 61,
       "note": ""
     },
     {
