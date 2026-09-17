@@ -1870,61 +1870,83 @@
     "day": 15,
     "date": "Sep 16",
     "label": "Day 15 · Sep 16",
-    "km": 233,
+    "km": 238,
     "from": "Tofino, British Columbia",
-    "to": "Nanaimo, British Columbia",
-    "corridor": "Nanaimo, British Columbia",
+    "to": "Tsawwassen, British Columbia",
+    "corridor": "Tsawwassen, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 20,
+    "chargeStops": 2,
+    "chargeMinutes": 23,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0725,
-        0.5538
+        0.0661,
+        0.5385
       ],
       [
         0.05,
         0.5
       ],
       [
-        0.1175,
-        0.6077
+        0.0982,
+        0.5769
       ],
       [
-        0.185,
-        0.6615
+        0.1464,
+        0.6154
       ],
       [
-        0.2075,
-        0.6077
+        0.1625,
+        0.5769
       ],
       [
-        0.7025,
-        0.3385
+        0.5161,
+        0.3846
       ],
       [
-        0.8825,
-        0.3923
+        0.6446,
+        0.4231
+      ],
+      [
+        0.6929,
+        0.5
+      ],
+      [
+        0.9339,
+        0.6154
       ],
       [
         0.95,
-        0.5
+        0.5769
       ]
     ],
     "stops": [
       {
-        "x": 0.0725,
-        "y": 0.5538,
+        "x": 0.0661,
+        "y": 0.5385,
         "town": "Tofino, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5,
-        "town": "Nanaimo, British Columbia",
+        "y": 0.5769,
+        "town": "Tsawwassen, British Columbia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 84,
+            "socEnd": 92
+          }
+        ]
+      },
+      {
+        "x": 0.6446,
+        "y": 0.4231,
+        "town": "Nanaimo, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -1935,7 +1957,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2241,
+    "kmPerPx": 0.3137,
     "plotted": true
   }
 ]
