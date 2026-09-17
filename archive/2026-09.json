@@ -1695,13 +1695,13 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 498,
+    "km": 504,
     "from": "Squamish, British Columbia",
     "to": "Tofino, British Columbia",
     "corridor": "Tofino, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 7,
-    "chargeMinutes": 55,
+    "chargeStops": 8,
+    "chargeMinutes": 389,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -1751,6 +1751,10 @@
       [
         0.1094,
         0.45
+      ],
+      [
+        0.1233,
+        0.4833
       ]
     ],
     "stops": [
@@ -1762,8 +1766,8 @@
         "sessions": []
       },
       {
-        "x": 0.1094,
-        "y": 0.45,
+        "x": 0.1233,
+        "y": 0.4833,
         "town": "Tofino, British Columbia",
         "kind": "end",
         "sessions": [
