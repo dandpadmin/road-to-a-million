@@ -8,11 +8,11 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 636,
-  "chargeSessions": 9,
-  "chargeSupercharger": 9,
+  "chargeSessions": 10,
+  "chargeSupercharger": 10,
   "chargeOther": 0,
-  "chargeLifetime": 98,
-  "chargeLifetimeSupercharger": 63,
+  "chargeLifetime": 99,
+  "chargeLifetimeSupercharger": 64,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-16",
@@ -2029,7 +2029,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T21:43:04.344Z",
+  "updatedAt": "2026-09-17T21:54:36.431Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2840,19 +2840,19 @@
     },
     "energy": {
       "used": 1683,
-      "added": 1839,
-      "overhead": 8.5,
+      "added": 1851,
+      "overhead": 9.1,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 407
     },
     "cost": {
-      "total": 301.59,
-      "supercharger": 301.59,
+      "total": 305.63,
+      "supercharger": 305.63,
       "other": 0,
       "perKm": 0.028,
-      "sessions": 62,
+      "sessions": 63,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2914,8 +2914,8 @@
         },
         {
           "soc": 85,
-          "kw": 34,
-          "n": 5
+          "kw": 38,
+          "n": 6
         },
         {
           "soc": 90,
@@ -2928,7 +2928,7 @@
           "n": 1
         }
       ],
-      "sessions": 98,
+      "sessions": 99,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3034,7 +3034,7 @@
       "from": "—",
       "to": "—",
       "km": "450",
-      "chargeMinutes": 61,
+      "chargeMinutes": 72,
       "note": ""
     },
     {
