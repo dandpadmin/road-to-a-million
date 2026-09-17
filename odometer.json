@@ -1,18 +1,18 @@
 {
-  "odometer": 10845,
+  "odometer": 10852,
   "goal": 1000000,
   "day": 16,
   "province": "British Columbia",
   "route": "Tofino, British Columbia",
-  "today": 525,
+  "today": 721,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 636,
+  "avgPerDay": 649,
   "chargeSessions": 3,
   "chargeSupercharger": 3,
   "chargeOther": 0,
-  "chargeLifetime": 89,
-  "chargeLifetimeSupercharger": 54,
+  "chargeLifetime": 90,
+  "chargeLifetimeSupercharger": 55,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-15",
@@ -2058,7 +2058,7 @@
     }
   ],
   "asOf": "2026-09-16",
-  "updatedAt": "2026-09-17T04:55:11.839Z",
+  "updatedAt": "2026-09-17T05:13:37.242Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2822,24 +2822,24 @@
       ]
     },
     "autopilot": {
-      "km": 8673,
-      "pct": 84.1
+      "km": 8864,
+      "pct": 84.4
     },
     "energy": {
-      "used": 1583,
-      "added": 1747,
-      "overhead": 9.4,
+      "used": 1615,
+      "added": 1765,
+      "overhead": 8.5,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 408
+      "rangeEst": 407
     },
     "cost": {
-      "total": 279.69,
-      "supercharger": 279.69,
+      "total": 283.78,
+      "supercharger": 283.78,
       "other": 0,
       "perKm": 0.027,
-      "sessions": 53,
+      "sessions": 54,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2851,8 +2851,8 @@
         },
         {
           "soc": 40,
-          "kw": 45,
-          "n": 9
+          "kw": 52,
+          "n": 10
         },
         {
           "soc": 45,
@@ -2910,7 +2910,7 @@
           "n": 1
         }
       ],
-      "sessions": 89,
+      "sessions": 90,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -2999,7 +2999,7 @@
     {
       "key": "2026-09-16",
       "label": "D 15",
-      "km": 525
+      "km": 721
     }
   ],
   "log": [
@@ -3010,7 +3010,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "525",
+      "km": "721",
       "chargeMinutes": 45,
       "note": ""
     },
