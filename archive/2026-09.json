@@ -1695,7 +1695,7 @@
     "day": 14,
     "date": "Sep 15",
     "label": "Day 14 · Sep 15",
-    "km": 424,
+    "km": 478,
     "from": "Squamish, British Columbia",
     "to": "Ucluelet, British Columbia",
     "corridor": "Ucluelet, British Columbia",
@@ -1705,57 +1705,61 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.7999,
+        0.8557,
         0.05
       ],
       [
-        0.8139,
+        0.8697,
         0.4833
       ],
       [
-        0.8139,
+        0.8697,
         0.55
       ],
       [
-        0.7999,
+        0.8557,
         0.55
       ],
       [
-        0.7302,
+        0.786,
         0.7833
       ],
       [
-        0.7441,
+        0.7999,
         0.95
       ],
       [
-        0.7302,
+        0.786,
         0.9167
       ],
       [
-        0.5488,
+        0.6046,
         0.3833
       ],
       [
-        0.3396,
+        0.3954,
         0.3833
       ],
       [
-        0.1861,
+        0.2419,
         0.4167
+      ],
+      [
+        0.1303,
+        0.5167
       ]
     ],
     "stops": [
       {
-        "x": 0.7999,
+        "x": 0.8557,
         "y": 0.05,
         "town": "Squamish, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.1861,
-        "y": 0.4167,
+        "x": 0.1303,
+        "y": 0.5167,
         "town": "Ucluelet, British Columbia",
         "kind": "end",
         "sessions": [
@@ -1774,7 +1778,7 @@
         ]
       },
       {
-        "x": 0.8139,
+        "x": 0.8697,
         "y": 0.4833,
         "town": "Delta, British Columbia",
         "kind": "charge",
@@ -1788,7 +1792,7 @@
         ]
       },
       {
-        "x": 0.7302,
+        "x": 0.786,
         "y": 0.7833,
         "town": "North Saanich, British Columbia",
         "kind": "charge",
@@ -1802,7 +1806,7 @@
         ]
       },
       {
-        "x": 0.7302,
+        "x": 0.786,
         "y": 0.9167,
         "town": "Victoria, British Columbia",
         "kind": "charge",
@@ -1816,7 +1820,7 @@
         ]
       },
       {
-        "x": 0.5488,
+        "x": 0.6046,
         "y": 0.3833,
         "town": "Nanaimo, British Columbia",
         "kind": "charge",
@@ -1836,7 +1840,7 @@
         ]
       },
       {
-        "x": 0.3396,
+        "x": 0.3954,
         "y": 0.3833,
         "town": "Port Alberni, British Columbia",
         "kind": "charge",
