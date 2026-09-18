@@ -1,13 +1,13 @@
 {
-  "odometer": 11560,
+  "odometer": 11576,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
   "route": "Chilliwack, British Columbia",
-  "today": 694,
+  "today": 723,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 652,
+  "avgPerDay": 653,
   "chargeSessions": 12,
   "chargeSupercharger": 12,
   "chargeOther": 0,
@@ -2095,7 +2095,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-18T01:13:32.567Z",
+  "updatedAt": "2026-09-18T01:28:08.878Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2913,13 +2913,13 @@
       ]
     },
     "autopilot": {
-      "km": 9512,
-      "pct": 84.9
+      "km": 9541,
+      "pct": 85
     },
     "energy": {
-      "used": 1713,
+      "used": 1716,
       "added": 1881,
-      "overhead": 8.9,
+      "overhead": 8.8,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3100,7 +3100,7 @@
     {
       "key": "2026-09-17",
       "label": "D 16",
-      "km": 694
+      "km": 723
     }
   ],
   "log": [
@@ -3111,7 +3111,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "694",
+      "km": "723",
       "chargeMinutes": 92,
       "note": ""
     },
