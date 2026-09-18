@@ -1,5 +1,5 @@
 {
-  "odometer": 12089,
+  "odometer": 12111,
   "goal": 1000000,
   "day": 17,
   "province": "Alberta",
@@ -2311,7 +2311,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T21:43:09.302Z",
+  "updatedAt": "2026-09-18T21:54:55.196Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3184,11 +3184,11 @@
       "rangeEst": 408
     },
     "cost": {
-      "total": 335.56,
-      "supercharger": 335.56,
+      "total": 349.24,
+      "supercharger": 349.24,
       "other": 0,
-      "perKm": 0.029,
-      "sessions": 67,
+      "perKm": 0.03,
+      "sessions": 68,
       "currency": "CAD"
     },
     "chargeCurve": {
