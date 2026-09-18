@@ -1,5 +1,5 @@
 {
-  "odometer": 11705,
+  "odometer": 11722,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
@@ -8,11 +8,11 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 623,
-  "chargeSessions": 0,
-  "chargeSupercharger": 0,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 101,
-  "chargeLifetimeSupercharger": 66,
+  "chargeLifetime": 102,
+  "chargeLifetimeSupercharger": 67,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-17",
@@ -2135,7 +2135,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T17:13:40.816Z",
+  "updatedAt": "2026-09-18T17:27:50.860Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2976,19 +2976,19 @@
     },
     "energy": {
       "used": 1735,
-      "added": 1881,
-      "overhead": 7.7,
+      "added": 1899,
+      "overhead": 8.6,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 409
     },
     "cost": {
-      "total": 317.72,
-      "supercharger": 317.72,
+      "total": 324.34,
+      "supercharger": 324.34,
       "other": 0,
-      "perKm": 0.028,
-      "sessions": 65,
+      "perKm": 0.029,
+      "sessions": 66,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -3030,8 +3030,8 @@
         },
         {
           "soc": 65,
-          "kw": 54,
-          "n": 6
+          "kw": 63,
+          "n": 7
         },
         {
           "soc": 70,
@@ -3064,7 +3064,7 @@
           "n": 1
         }
       ],
-      "sessions": 101,
+      "sessions": 102,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3175,7 +3175,7 @@
       "from": "—",
       "to": "—",
       "km": "121",
-      "chargeMinutes": 0,
+      "chargeMinutes": 9,
       "note": ""
     },
     {
