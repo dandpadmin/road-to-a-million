@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
-  "route": "Chilliwack, British Columbia",
+  "route": "Merritt, British Columbia",
   "today": 731,
   "best": 1333,
   "bestDay": 1,
@@ -19,78 +19,89 @@
     "day": 15,
     "date": "Sep 16",
     "label": "Day 15 · Sep 16",
-    "km": 350,
+    "km": 525,
     "from": "Tofino, British Columbia",
-    "to": "Chilliwack, British Columbia",
-    "corridor": "Chilliwack, British Columbia",
+    "to": "Merritt, British Columbia",
+    "corridor": "Merritt, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 2,
-    "chargeMinutes": 23,
+    "chargeStops": 3,
+    "chargeMinutes": 45,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0613,
-        0.5269
+        0.0587,
+        0.6897
       ],
       [
         0.05,
-        0.5
+        0.6686
       ],
       [
-        0.0838,
-        0.5538
+        0.0762,
+        0.7108
       ],
       [
-        0.1175,
-        0.5808
+        0.1024,
+        0.7319
       ],
       [
-        0.1287,
-        0.5538
+        0.1112,
+        0.7108
       ],
       [
-        0.3763,
-        0.4192
+        0.3034,
+        0.6054
       ],
       [
-        0.4662,
-        0.4462
+        0.3733,
+        0.6265
       ],
       [
-        0.5,
-        0.5
+        0.3995,
+        0.6686
       ],
       [
-        0.6687,
-        0.5808
+        0.5306,
+        0.7319
       ],
       [
-        0.68,
-        0.5538
+        0.5393,
+        0.7108
+      ],
+      [
+        0.749,
+        0.6897
       ],
       [
         0.95,
-        0.5269
+        0.2681
       ]
     ],
     "stops": [
       {
-        "x": 0.0613,
-        "y": 0.5269,
+        "x": 0.0587,
+        "y": 0.6897,
         "town": "Tofino, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5269,
-        "town": "Chilliwack, British Columbia",
+        "y": 0.2681,
+        "town": "Merritt, British Columbia",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 13,
+            "socEnd": 80
+          }
+        ]
       },
       {
-        "x": 0.4662,
-        "y": 0.4462,
+        "x": 0.3733,
+        "y": 0.6265,
         "town": "Nanaimo, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -103,8 +114,8 @@
         ]
       },
       {
-        "x": 0.68,
-        "y": 0.5538,
+        "x": 0.5393,
+        "y": 0.7108,
         "town": "Tsawwassen, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -117,7 +128,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.4482,
+    "kmPerPx": 0.5723,
     "plotted": true
   },
   "dayMaps": [
@@ -1992,78 +2003,89 @@
       "day": 15,
       "date": "Sep 16",
       "label": "Day 15 · Sep 16",
-      "km": 350,
+      "km": 525,
       "from": "Tofino, British Columbia",
-      "to": "Chilliwack, British Columbia",
-      "corridor": "Chilliwack, British Columbia",
+      "to": "Merritt, British Columbia",
+      "corridor": "Merritt, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 2,
-      "chargeMinutes": 23,
+      "chargeStops": 3,
+      "chargeMinutes": 45,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.0613,
-          0.5269
+          0.0587,
+          0.6897
         ],
         [
           0.05,
-          0.5
+          0.6686
         ],
         [
-          0.0838,
-          0.5538
+          0.0762,
+          0.7108
         ],
         [
-          0.1175,
-          0.5808
+          0.1024,
+          0.7319
         ],
         [
-          0.1287,
-          0.5538
+          0.1112,
+          0.7108
         ],
         [
-          0.3763,
-          0.4192
+          0.3034,
+          0.6054
         ],
         [
-          0.4662,
-          0.4462
+          0.3733,
+          0.6265
         ],
         [
-          0.5,
-          0.5
+          0.3995,
+          0.6686
         ],
         [
-          0.6687,
-          0.5808
+          0.5306,
+          0.7319
         ],
         [
-          0.68,
-          0.5538
+          0.5393,
+          0.7108
+        ],
+        [
+          0.749,
+          0.6897
         ],
         [
           0.95,
-          0.5269
+          0.2681
         ]
       ],
       "stops": [
         {
-          "x": 0.0613,
-          "y": 0.5269,
+          "x": 0.0587,
+          "y": 0.6897,
           "town": "Tofino, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.5269,
-          "town": "Chilliwack, British Columbia",
+          "y": 0.2681,
+          "town": "Merritt, British Columbia",
           "kind": "end",
-          "sessions": []
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 22,
+              "socStart": 13,
+              "socEnd": 80
+            }
+          ]
         },
         {
-          "x": 0.4662,
-          "y": 0.4462,
+          "x": 0.3733,
+          "y": 0.6265,
           "town": "Nanaimo, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -2076,8 +2098,8 @@
           ]
         },
         {
-          "x": 0.68,
-          "y": 0.5538,
+          "x": 0.5393,
+          "y": 0.7108,
           "town": "Tsawwassen, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -2090,18 +2112,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.4482,
+      "kmPerPx": 0.5723,
       "plotted": true
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-18T02:33:05.926Z",
+  "updatedAt": "2026-09-18T02:53:28.403Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 18.6,
+          "wh": 190,
+          "km": 175,
+          "prov": "British Columbia"
+        },
         {
           "t": 22.9,
           "wh": 123,
@@ -3121,7 +3149,7 @@
       "date": "Sep 16",
       "province": "British Columbia",
       "from": "Tofino, British Columbia",
-      "to": "Chilliwack, British Columbia",
+      "to": "Merritt, British Columbia",
       "plotted": true,
       "km": "721",
       "chargeMinutes": 45,
