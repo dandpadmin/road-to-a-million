@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
-  "route": "Salmon Arm, British Columbia",
+  "route": "Revelstoke, British Columbia",
   "today": 731,
   "best": 1333,
   "bestDay": 1,
@@ -15,131 +15,65 @@
   "chargeLifetimeSupercharger": 66,
   "chargeLifetimeOther": 35,
   "dayMap": {
-    "key": "2026-09-16",
-    "day": 15,
-    "date": "Sep 16",
-    "label": "Day 15 · Sep 16",
-    "km": 721,
-    "from": "Tofino, British Columbia",
-    "to": "Salmon Arm, British Columbia",
-    "corridor": "Salmon Arm, British Columbia",
+    "key": "2026-09-17",
+    "day": 16,
+    "date": "Sep 17",
+    "label": "Day 16 · Sep 17",
+    "km": 101,
+    "from": "Salmon Arm, British Columbia",
+    "to": "Revelstoke, British Columbia",
+    "corridor": "Revelstoke, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 3,
-    "chargeMinutes": 45,
+    "chargeStops": 1,
+    "chargeMinutes": 9,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0568,
-        0.7464
-      ],
-      [
         0.05,
-        0.73
-      ],
-      [
-        0.0703,
-        0.7628
-      ],
-      [
-        0.0906,
-        0.7793
-      ],
-      [
-        0.0974,
-        0.7628
-      ],
-      [
-        0.2462,
-        0.6807
-      ],
-      [
-        0.3004,
-        0.6971
-      ],
-      [
-        0.3207,
-        0.73
-      ],
-      [
-        0.4222,
-        0.7793
-      ],
-      [
-        0.4289,
-        0.7628
-      ],
-      [
-        0.5914,
-        0.7464
-      ],
-      [
-        0.747,
-        0.4179
+        0.8187
       ],
       [
         0.95,
-        0.2207
+        0.1813
       ]
     ],
     "stops": [
       {
-        "x": 0.0568,
-        "y": 0.7464,
-        "town": "Tofino, British Columbia",
+        "x": 0.05,
+        "y": 0.8187,
+        "town": "Salmon Arm, British Columbia",
         "kind": "start",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 9,
+            "socStart": 26,
+            "socEnd": 56
+          }
+        ]
       },
       {
         "x": 0.95,
-        "y": 0.2207,
-        "town": "Salmon Arm, British Columbia",
+        "y": 0.1813,
+        "town": "Revelstoke, British Columbia",
         "kind": "end",
-        "sessions": []
-      },
-      {
-        "x": 0.3004,
-        "y": 0.6971,
-        "town": "Nanaimo, British Columbia",
-        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 20,
-            "socStart": 54,
-            "socEnd": 96
-          }
-        ]
-      },
-      {
-        "x": 0.4289,
-        "y": 0.7628,
-        "town": "Tsawwassen, British Columbia",
-        "kind": "charge",
-        "sessions": [
+            "minutes": 5,
+            "socStart": 30,
+            "socEnd": 37
+          },
           {
             "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 84,
-            "socEnd": 92
-          }
-        ]
-      },
-      {
-        "x": 0.747,
-        "y": 0.4179,
-        "town": "Merritt, British Columbia",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 22,
-            "socStart": 13,
-            "socEnd": 80
+            "minutes": 5,
+            "socStart": 37,
+            "socEnd": 50
           }
         ]
       }
     ],
-    "kmPerPx": 0.7345,
+    "kmPerPx": 0.1136,
     "plotted": true
   },
   "dayMaps": [
@@ -2136,16 +2070,84 @@
       ],
       "kmPerPx": 0.7345,
       "plotted": true
+    },
+    {
+      "key": "2026-09-17",
+      "day": 16,
+      "date": "Sep 17",
+      "label": "Day 16 · Sep 17",
+      "km": 101,
+      "from": "Salmon Arm, British Columbia",
+      "to": "Revelstoke, British Columbia",
+      "corridor": "Revelstoke, British Columbia",
+      "province": "British Columbia",
+      "chargeStops": 1,
+      "chargeMinutes": 9,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.05,
+          0.8187
+        ],
+        [
+          0.95,
+          0.1813
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.05,
+          "y": 0.8187,
+          "town": "Salmon Arm, British Columbia",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 9,
+              "socStart": 26,
+              "socEnd": 56
+            }
+          ]
+        },
+        {
+          "x": 0.95,
+          "y": 0.1813,
+          "town": "Revelstoke, British Columbia",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 5,
+              "socStart": 30,
+              "socEnd": 37
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 5,
+              "socStart": 37,
+              "socEnd": 50
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.1136,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-18T05:55:43.707Z",
+  "updatedAt": "2026-09-18T06:19:13.369Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 11.5,
+          "wh": 152,
+          "km": 101,
+          "prov": "British Columbia"
+        },
         {
           "t": 12.7,
           "wh": 164,
@@ -3164,9 +3166,10 @@
       "key": "2026-09-17",
       "day": "Day 16",
       "date": "Sep 17",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "British Columbia",
+      "from": "Salmon Arm, British Columbia",
+      "to": "Revelstoke, British Columbia",
+      "plotted": true,
       "km": "731",
       "chargeMinutes": 92,
       "note": ""
