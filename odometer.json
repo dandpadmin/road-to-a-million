@@ -1,5 +1,5 @@
 {
-  "odometer": 11584,
+  "odometer": 11611,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
@@ -24,8 +24,8 @@
     "to": "Revelstoke, British Columbia",
     "corridor": "Revelstoke, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 9,
+    "chargeStops": 2,
+    "chargeMinutes": 14,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -2081,8 +2081,8 @@
       "to": "Revelstoke, British Columbia",
       "corridor": "Revelstoke, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 1,
-      "chargeMinutes": 9,
+      "chargeStops": 2,
+      "chargeMinutes": 14,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2135,7 +2135,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T15:53:54.815Z",
+  "updatedAt": "2026-09-18T16:13:10.876Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,

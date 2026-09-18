@@ -2003,8 +2003,8 @@
     "to": "Revelstoke, British Columbia",
     "corridor": "Revelstoke, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 1,
-    "chargeMinutes": 9,
+    "chargeStops": 2,
+    "chargeMinutes": 14,
     "note": "Town level · delayed 24h",
     "path": [
       [
