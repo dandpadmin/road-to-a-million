@@ -1,13 +1,13 @@
 {
-  "odometer": 11859,
+  "odometer": 11862,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
   "route": "Golden, British Columbia",
-  "today": 121,
+  "today": 278,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 623,
+  "avgPerDay": 632,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
@@ -2195,7 +2195,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T18:41:53.999Z",
+  "updatedAt": "2026-09-18T18:54:09.383Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3037,13 +3037,13 @@
       ]
     },
     "autopilot": {
-      "km": 9669,
-      "pct": 85.1
+      "km": 9826,
+      "pct": 85.3
     },
     "energy": {
-      "used": 1735,
+      "used": 1761,
       "added": 1899,
-      "overhead": 8.6,
+      "overhead": 7.3,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3053,7 +3053,7 @@
       "total": 324.34,
       "supercharger": 324.34,
       "other": 0,
-      "perKm": 0.029,
+      "perKm": 0.028,
       "sessions": 66,
       "currency": "CAD"
     },
@@ -3229,7 +3229,7 @@
     {
       "key": "2026-09-18",
       "label": "D 17",
-      "km": 121
+      "km": 278
     }
   ],
   "log": [
@@ -3240,7 +3240,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "121",
+      "km": "278",
       "chargeMinutes": 9,
       "note": ""
     },
