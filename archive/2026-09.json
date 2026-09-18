@@ -1998,36 +1998,40 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 391,
+    "km": 419,
     "from": "Salmon Arm, British Columbia",
-    "to": "Banff, Alberta",
-    "corridor": "Banff, Alberta",
+    "to": "Canmore, Alberta",
+    "corridor": "Canmore, Alberta",
     "province": "Alberta",
-    "chargeStops": 6,
-    "chargeMinutes": 51,
+    "chargeStops": 8,
+    "chargeMinutes": 59,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.684
+        0.6722
       ],
       [
-        0.3089,
+        0.2923,
         0.5
       ],
       [
-        0.6171,
-        0.316
+        0.5808,
+        0.3278
+      ],
+      [
+        0.8923,
+        0.3852
       ],
       [
         0.95,
-        0.3773
+        0.4426
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.684,
+        "y": 0.6722,
         "town": "Salmon Arm, British Columbia",
         "kind": "start",
         "sessions": [
@@ -2041,8 +2045,8 @@
       },
       {
         "x": 0.95,
-        "y": 0.3773,
-        "town": "Banff, Alberta",
+        "y": 0.4426,
+        "town": "Canmore, Alberta",
         "kind": "end",
         "sessions": [
           {
@@ -2062,11 +2066,23 @@
             "minutes": 2,
             "socStart": 75,
             "socEnd": 78
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 11,
+            "socStart": 74,
+            "socEnd": 92
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 58,
+            "socEnd": 77
           }
         ]
       },
       {
-        "x": 0.3089,
+        "x": 0.2923,
         "y": 0.5,
         "town": "Revelstoke, British Columbia",
         "kind": "charge",
@@ -2086,8 +2102,8 @@
         ]
       },
       {
-        "x": 0.6171,
-        "y": 0.316,
+        "x": 0.5808,
+        "y": 0.3278,
         "town": "Golden, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -2112,7 +2128,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.3935,
+    "kmPerPx": 0.4204,
     "plotted": true
   }
 ]

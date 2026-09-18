@@ -1,9 +1,9 @@
 {
-  "odometer": 12052,
+  "odometer": 12087,
   "goal": 1000000,
   "day": 17,
   "province": "Alberta",
-  "route": "Banff, Alberta",
+  "route": "Canmore, Alberta",
   "today": 283,
   "best": 1333,
   "bestDay": 1,
@@ -19,36 +19,40 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 391,
+    "km": 419,
     "from": "Salmon Arm, British Columbia",
-    "to": "Banff, Alberta",
-    "corridor": "Banff, Alberta",
+    "to": "Canmore, Alberta",
+    "corridor": "Canmore, Alberta",
     "province": "Alberta",
-    "chargeStops": 6,
-    "chargeMinutes": 51,
+    "chargeStops": 8,
+    "chargeMinutes": 59,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.684
+        0.6722
       ],
       [
-        0.3089,
+        0.2923,
         0.5
       ],
       [
-        0.6171,
-        0.316
+        0.5808,
+        0.3278
+      ],
+      [
+        0.8923,
+        0.3852
       ],
       [
         0.95,
-        0.3773
+        0.4426
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.684,
+        "y": 0.6722,
         "town": "Salmon Arm, British Columbia",
         "kind": "start",
         "sessions": [
@@ -62,8 +66,8 @@
       },
       {
         "x": 0.95,
-        "y": 0.3773,
-        "town": "Banff, Alberta",
+        "y": 0.4426,
+        "town": "Canmore, Alberta",
         "kind": "end",
         "sessions": [
           {
@@ -83,11 +87,23 @@
             "minutes": 2,
             "socStart": 75,
             "socEnd": 78
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 11,
+            "socStart": 74,
+            "socEnd": 92
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 58,
+            "socEnd": 77
           }
         ]
       },
       {
-        "x": 0.3089,
+        "x": 0.2923,
         "y": 0.5,
         "town": "Revelstoke, British Columbia",
         "kind": "charge",
@@ -107,8 +123,8 @@
         ]
       },
       {
-        "x": 0.6171,
-        "y": 0.316,
+        "x": 0.5808,
+        "y": 0.3278,
         "town": "Golden, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -133,7 +149,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.3935,
+    "kmPerPx": 0.4204,
     "plotted": true
   },
   "dayMaps": [
@@ -2136,36 +2152,40 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 391,
+      "km": 419,
       "from": "Salmon Arm, British Columbia",
-      "to": "Banff, Alberta",
-      "corridor": "Banff, Alberta",
+      "to": "Canmore, Alberta",
+      "corridor": "Canmore, Alberta",
       "province": "Alberta",
-      "chargeStops": 6,
-      "chargeMinutes": 51,
+      "chargeStops": 8,
+      "chargeMinutes": 59,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.684
+          0.6722
         ],
         [
-          0.3089,
+          0.2923,
           0.5
         ],
         [
-          0.6171,
-          0.316
+          0.5808,
+          0.3278
+        ],
+        [
+          0.8923,
+          0.3852
         ],
         [
           0.95,
-          0.3773
+          0.4426
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.684,
+          "y": 0.6722,
           "town": "Salmon Arm, British Columbia",
           "kind": "start",
           "sessions": [
@@ -2179,8 +2199,8 @@
         },
         {
           "x": 0.95,
-          "y": 0.3773,
-          "town": "Banff, Alberta",
+          "y": 0.4426,
+          "town": "Canmore, Alberta",
           "kind": "end",
           "sessions": [
             {
@@ -2200,11 +2220,23 @@
               "minutes": 2,
               "socStart": 75,
               "socEnd": 78
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 11,
+              "socStart": 74,
+              "socEnd": 92
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 7,
+              "socStart": 58,
+              "socEnd": 77
             }
           ]
         },
         {
-          "x": 0.3089,
+          "x": 0.2923,
           "y": 0.5,
           "town": "Revelstoke, British Columbia",
           "kind": "charge",
@@ -2224,8 +2256,8 @@
           ]
         },
         {
-          "x": 0.6171,
-          "y": 0.316,
+          "x": 0.5808,
+          "y": 0.3278,
           "town": "Golden, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -2250,18 +2282,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.3935,
+      "kmPerPx": 0.4204,
       "plotted": true
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T20:55:55.140Z",
+  "updatedAt": "2026-09-18T21:14:18.413Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.6,
+          "wh": 113,
+          "km": 28,
+          "prov": "Alberta"
+        },
         {
           "t": 16.9,
           "wh": 168,
@@ -3091,7 +3129,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 145,
+      "median": 144,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -3316,7 +3354,7 @@
       "date": "Sep 17",
       "province": "Alberta",
       "from": "Salmon Arm, British Columbia",
-      "to": "Banff, Alberta",
+      "to": "Canmore, Alberta",
       "plotted": true,
       "km": "731",
       "chargeMinutes": 92,
