@@ -4,12 +4,12 @@
   "day": 17,
   "province": "British Columbia",
   "route": "Revelstoke, British Columbia",
-  "today": 731,
+  "today": 0,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 654,
-  "chargeSessions": 12,
-  "chargeSupercharger": 12,
+  "avgPerDay": 615,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 101,
   "chargeLifetimeSupercharger": 66,
@@ -2134,8 +2134,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-17",
-  "updatedAt": "2026-09-18T14:31:16.983Z",
+  "asOf": "2026-09-18",
+  "updatedAt": "2026-09-18T14:54:35.957Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3159,9 +3159,25 @@
       "key": "2026-09-17",
       "label": "D 16",
       "km": 731
+    },
+    {
+      "key": "2026-09-18",
+      "label": "D 17",
+      "km": 0
     }
   ],
   "log": [
+    {
+      "key": "2026-09-18",
+      "day": "Day 17",
+      "date": "Sep 18",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "0",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-17",
       "day": "Day 16",
@@ -3268,18 +3284,6 @@
       "plotted": true,
       "km": "622",
       "chargeMinutes": 124,
-      "note": ""
-    },
-    {
-      "key": "2026-09-08",
-      "day": "Day 7",
-      "date": "Sep 8",
-      "province": "British Columbia",
-      "from": "Marsh Lake, Yukon",
-      "to": "Fort Nelson, British Columbia",
-      "plotted": true,
-      "km": "591",
-      "chargeMinutes": 357,
       "note": ""
     }
   ]
