@@ -1,13 +1,13 @@
 {
-  "odometer": 11686,
+  "odometer": 11705,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
   "route": "Revelstoke, British Columbia",
-  "today": 0,
+  "today": 121,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 615,
+  "avgPerDay": 623,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -2135,7 +2135,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T16:56:05.147Z",
+  "updatedAt": "2026-09-18T17:13:40.816Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2971,13 +2971,13 @@
       ]
     },
     "autopilot": {
-      "km": 9550,
-      "pct": 85
+      "km": 9669,
+      "pct": 85.1
     },
     "energy": {
-      "used": 1717,
+      "used": 1735,
       "added": 1881,
-      "overhead": 8.7,
+      "overhead": 7.7,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3163,7 +3163,7 @@
     {
       "key": "2026-09-18",
       "label": "D 17",
-      "km": 0
+      "km": 121
     }
   ],
   "log": [
@@ -3174,7 +3174,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "0",
+      "km": "121",
       "chargeMinutes": 0,
       "note": ""
     },
