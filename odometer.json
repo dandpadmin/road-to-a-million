@@ -1,10 +1,10 @@
 {
-  "odometer": 11862,
+  "odometer": 11868,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
   "route": "Golden, British Columbia",
-  "today": 278,
+  "today": 283,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 632,
@@ -19,7 +19,7 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 253,
+    "km": 255,
     "from": "Salmon Arm, British Columbia",
     "to": "Golden, British Columbia",
     "corridor": "Golden, British Columbia",
@@ -2106,7 +2106,7 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 253,
+      "km": 255,
       "from": "Salmon Arm, British Columbia",
       "to": "Golden, British Columbia",
       "corridor": "Golden, British Columbia",
@@ -2195,7 +2195,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T18:54:09.383Z",
+  "updatedAt": "2026-09-18T19:13:21.295Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3037,13 +3037,13 @@
       ]
     },
     "autopilot": {
-      "km": 9826,
+      "km": 9831,
       "pct": 85.3
     },
     "energy": {
-      "used": 1761,
+      "used": 1762,
       "added": 1899,
-      "overhead": 7.3,
+      "overhead": 7.2,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3229,7 +3229,7 @@
     {
       "key": "2026-09-18",
       "label": "D 17",
-      "km": 278
+      "km": 283
     }
   ],
   "log": [
@@ -3240,7 +3240,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "278",
+      "km": "283",
       "chargeMinutes": 9,
       "note": ""
     },
