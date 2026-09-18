@@ -1998,13 +1998,13 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 450,
+    "km": 619,
     "from": "Salmon Arm, British Columbia",
     "to": "Kananaskis, Alberta",
     "corridor": "Kananaskis, Alberta",
     "province": "Alberta",
-    "chargeStops": 10,
-    "chargeMinutes": 72,
+    "chargeStops": 11,
+    "chargeMinutes": 79,
     "note": "Town level · delayed 24h",
     "path": [
       [
