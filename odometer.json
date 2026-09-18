@@ -1,13 +1,13 @@
 {
-  "odometer": 12087,
+  "odometer": 12088,
   "goal": 1000000,
   "day": 17,
   "province": "Alberta",
   "route": "Canmore, Alberta",
-  "today": 283,
+  "today": 504,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 632,
+  "avgPerDay": 645,
   "chargeSessions": 2,
   "chargeSupercharger": 2,
   "chargeOther": 0,
@@ -19,13 +19,13 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 419,
+    "km": 420,
     "from": "Salmon Arm, British Columbia",
     "to": "Canmore, Alberta",
     "corridor": "Canmore, Alberta",
     "province": "Alberta",
-    "chargeStops": 8,
-    "chargeMinutes": 59,
+    "chargeStops": 9,
+    "chargeMinutes": 61,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -2152,13 +2152,13 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 419,
+      "km": 420,
       "from": "Salmon Arm, British Columbia",
       "to": "Canmore, Alberta",
       "corridor": "Canmore, Alberta",
       "province": "Alberta",
-      "chargeStops": 8,
-      "chargeMinutes": 59,
+      "chargeStops": 9,
+      "chargeMinutes": 61,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2287,7 +2287,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T21:14:18.413Z",
+  "updatedAt": "2026-09-18T21:30:04.245Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3141,17 +3141,17 @@
       ]
     },
     "autopilot": {
-      "km": 9831,
-      "pct": 85.3
+      "km": 10050,
+      "pct": 85.6
     },
     "energy": {
-      "used": 1762,
+      "used": 1802,
       "added": 1931,
-      "overhead": 8.8,
+      "overhead": 6.7,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 409
+      "rangeEst": 408
     },
     "cost": {
       "total": 335.56,
@@ -3333,7 +3333,7 @@
     {
       "key": "2026-09-18",
       "label": "D 17",
-      "km": 283
+      "km": 504
     }
   ],
   "log": [
@@ -3344,7 +3344,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "283",
+      "km": "504",
       "chargeMinutes": 29,
       "note": ""
     },

@@ -1998,13 +1998,13 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 419,
+    "km": 420,
     "from": "Salmon Arm, British Columbia",
     "to": "Canmore, Alberta",
     "corridor": "Canmore, Alberta",
     "province": "Alberta",
-    "chargeStops": 8,
-    "chargeMinutes": 59,
+    "chargeStops": 9,
+    "chargeMinutes": 61,
     "note": "Town level · delayed 24h",
     "path": [
       [
