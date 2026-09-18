@@ -1,9 +1,9 @@
 {
-  "odometer": 11816,
+  "odometer": 11859,
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
-  "route": "Revelstoke, British Columbia",
+  "route": "Golden, British Columbia",
   "today": 121,
   "best": 1333,
   "bestDay": 1,
@@ -19,28 +19,32 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 104,
+    "km": 253,
     "from": "Salmon Arm, British Columbia",
-    "to": "Revelstoke, British Columbia",
-    "corridor": "Revelstoke, British Columbia",
+    "to": "Golden, British Columbia",
+    "corridor": "Golden, British Columbia",
     "province": "British Columbia",
-    "chargeStops": 3,
-    "chargeMinutes": 19,
+    "chargeStops": 6,
+    "chargeMinutes": 51,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.8187
+        0.792
+      ],
+      [
+        0.4609,
+        0.5
       ],
       [
         0.95,
-        0.1813
+        0.208
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.8187,
+        "y": 0.792,
         "town": "Salmon Arm, British Columbia",
         "kind": "start",
         "sessions": [
@@ -54,9 +58,35 @@
       },
       {
         "x": 0.95,
-        "y": 0.1813,
-        "town": "Revelstoke, British Columbia",
+        "y": 0.208,
+        "town": "Golden, British Columbia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 14,
+            "socEnd": 35
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 39,
+            "socEnd": 48
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 24,
+            "socStart": 48,
+            "socEnd": 93
+          }
+        ]
+      },
+      {
+        "x": 0.4609,
+        "y": 0.5,
+        "town": "Revelstoke, British Columbia",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -73,7 +103,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1136,
+    "kmPerPx": 0.2479,
     "plotted": true
   },
   "dayMaps": [
@@ -2076,28 +2106,32 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 104,
+      "km": 253,
       "from": "Salmon Arm, British Columbia",
-      "to": "Revelstoke, British Columbia",
-      "corridor": "Revelstoke, British Columbia",
+      "to": "Golden, British Columbia",
+      "corridor": "Golden, British Columbia",
       "province": "British Columbia",
-      "chargeStops": 3,
-      "chargeMinutes": 19,
+      "chargeStops": 6,
+      "chargeMinutes": 51,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.8187
+          0.792
+        ],
+        [
+          0.4609,
+          0.5
         ],
         [
           0.95,
-          0.1813
+          0.208
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.8187,
+          "y": 0.792,
           "town": "Salmon Arm, British Columbia",
           "kind": "start",
           "sessions": [
@@ -2111,9 +2145,35 @@
         },
         {
           "x": 0.95,
-          "y": 0.1813,
-          "town": "Revelstoke, British Columbia",
+          "y": 0.208,
+          "town": "Golden, British Columbia",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 6,
+              "socStart": 14,
+              "socEnd": 35
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 2,
+              "socStart": 39,
+              "socEnd": 48
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 24,
+              "socStart": 48,
+              "socEnd": 93
+            }
+          ]
+        },
+        {
+          "x": 0.4609,
+          "y": 0.5,
+          "town": "Revelstoke, British Columbia",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -2130,18 +2190,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.1136,
+      "kmPerPx": 0.2479,
       "plotted": true
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T18:15:25.057Z",
+  "updatedAt": "2026-09-18T18:41:53.999Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 9.9,
+          "wh": 151,
+          "km": 147,
+          "prov": "British Columbia"
+        },
         {
           "t": 11.5,
           "wh": 152,
@@ -3184,7 +3250,7 @@
       "date": "Sep 17",
       "province": "British Columbia",
       "from": "Salmon Arm, British Columbia",
-      "to": "Revelstoke, British Columbia",
+      "to": "Golden, British Columbia",
       "plotted": true,
       "km": "731",
       "chargeMinutes": 92,
