@@ -1870,81 +1870,78 @@
     "day": 15,
     "date": "Sep 16",
     "label": "Day 15 · Sep 16",
-    "km": 238,
+    "km": 350,
     "from": "Tofino, British Columbia",
-    "to": "Tsawwassen, British Columbia",
-    "corridor": "Tsawwassen, British Columbia",
+    "to": "Chilliwack, British Columbia",
+    "corridor": "Chilliwack, British Columbia",
     "province": "British Columbia",
     "chargeStops": 2,
     "chargeMinutes": 23,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0661,
-        0.5385
+        0.0613,
+        0.5269
       ],
       [
         0.05,
         0.5
       ],
       [
-        0.0982,
-        0.5769
+        0.0838,
+        0.5538
       ],
       [
-        0.1464,
-        0.6154
+        0.1175,
+        0.5808
       ],
       [
-        0.1625,
-        0.5769
+        0.1287,
+        0.5538
       ],
       [
-        0.5161,
-        0.3846
+        0.3763,
+        0.4192
       ],
       [
-        0.6446,
-        0.4231
+        0.4662,
+        0.4462
       ],
       [
-        0.6929,
+        0.5,
         0.5
       ],
       [
-        0.9339,
-        0.6154
+        0.6687,
+        0.5808
+      ],
+      [
+        0.68,
+        0.5538
       ],
       [
         0.95,
-        0.5769
+        0.5269
       ]
     ],
     "stops": [
       {
-        "x": 0.0661,
-        "y": 0.5385,
+        "x": 0.0613,
+        "y": 0.5269,
         "town": "Tofino, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5769,
-        "town": "Tsawwassen, British Columbia",
+        "y": 0.5269,
+        "town": "Chilliwack, British Columbia",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 3,
-            "socStart": 84,
-            "socEnd": 92
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.6446,
-        "y": 0.4231,
+        "x": 0.4662,
+        "y": 0.4462,
         "town": "Nanaimo, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -1955,9 +1952,23 @@
             "socEnd": 96
           }
         ]
+      },
+      {
+        "x": 0.68,
+        "y": 0.5538,
+        "town": "Tsawwassen, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 84,
+            "socEnd": 92
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.3137,
+    "kmPerPx": 0.4482,
     "plotted": true
   }
 ]
