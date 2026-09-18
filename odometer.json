@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 17,
   "province": "British Columbia",
-  "route": "Merritt, British Columbia",
+  "route": "Salmon Arm, British Columbia",
   "today": 731,
   "best": 1333,
   "bestDay": 1,
@@ -19,89 +19,86 @@
     "day": 15,
     "date": "Sep 16",
     "label": "Day 15 · Sep 16",
-    "km": 525,
+    "km": 721,
     "from": "Tofino, British Columbia",
-    "to": "Merritt, British Columbia",
-    "corridor": "Merritt, British Columbia",
+    "to": "Salmon Arm, British Columbia",
+    "corridor": "Salmon Arm, British Columbia",
     "province": "British Columbia",
     "chargeStops": 3,
     "chargeMinutes": 45,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0587,
-        0.6897
+        0.0568,
+        0.7464
       ],
       [
         0.05,
-        0.6686
+        0.73
       ],
       [
-        0.0762,
-        0.7108
+        0.0703,
+        0.7628
       ],
       [
-        0.1024,
-        0.7319
+        0.0906,
+        0.7793
       ],
       [
-        0.1112,
-        0.7108
+        0.0974,
+        0.7628
       ],
       [
-        0.3034,
-        0.6054
+        0.2462,
+        0.6807
       ],
       [
-        0.3733,
-        0.6265
+        0.3004,
+        0.6971
       ],
       [
-        0.3995,
-        0.6686
+        0.3207,
+        0.73
       ],
       [
-        0.5306,
-        0.7319
+        0.4222,
+        0.7793
       ],
       [
-        0.5393,
-        0.7108
+        0.4289,
+        0.7628
       ],
       [
-        0.749,
-        0.6897
+        0.5914,
+        0.7464
+      ],
+      [
+        0.747,
+        0.4179
       ],
       [
         0.95,
-        0.2681
+        0.2207
       ]
     ],
     "stops": [
       {
-        "x": 0.0587,
-        "y": 0.6897,
+        "x": 0.0568,
+        "y": 0.7464,
         "town": "Tofino, British Columbia",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.2681,
-        "town": "Merritt, British Columbia",
+        "y": 0.2207,
+        "town": "Salmon Arm, British Columbia",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 22,
-            "socStart": 13,
-            "socEnd": 80
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.3733,
-        "y": 0.6265,
+        "x": 0.3004,
+        "y": 0.6971,
         "town": "Nanaimo, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -114,8 +111,8 @@
         ]
       },
       {
-        "x": 0.5393,
-        "y": 0.7108,
+        "x": 0.4289,
+        "y": 0.7628,
         "town": "Tsawwassen, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -126,9 +123,23 @@
             "socEnd": 92
           }
         ]
+      },
+      {
+        "x": 0.747,
+        "y": 0.4179,
+        "town": "Merritt, British Columbia",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 13,
+            "socEnd": 80
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.5723,
+    "kmPerPx": 0.7345,
     "plotted": true
   },
   "dayMaps": [
@@ -2003,89 +2014,86 @@
       "day": 15,
       "date": "Sep 16",
       "label": "Day 15 · Sep 16",
-      "km": 525,
+      "km": 721,
       "from": "Tofino, British Columbia",
-      "to": "Merritt, British Columbia",
-      "corridor": "Merritt, British Columbia",
+      "to": "Salmon Arm, British Columbia",
+      "corridor": "Salmon Arm, British Columbia",
       "province": "British Columbia",
       "chargeStops": 3,
       "chargeMinutes": 45,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.0587,
-          0.6897
+          0.0568,
+          0.7464
         ],
         [
           0.05,
-          0.6686
+          0.73
         ],
         [
-          0.0762,
-          0.7108
+          0.0703,
+          0.7628
         ],
         [
-          0.1024,
-          0.7319
+          0.0906,
+          0.7793
         ],
         [
-          0.1112,
-          0.7108
+          0.0974,
+          0.7628
         ],
         [
-          0.3034,
-          0.6054
+          0.2462,
+          0.6807
         ],
         [
-          0.3733,
-          0.6265
+          0.3004,
+          0.6971
         ],
         [
-          0.3995,
-          0.6686
+          0.3207,
+          0.73
         ],
         [
-          0.5306,
-          0.7319
+          0.4222,
+          0.7793
         ],
         [
-          0.5393,
-          0.7108
+          0.4289,
+          0.7628
         ],
         [
-          0.749,
-          0.6897
+          0.5914,
+          0.7464
+        ],
+        [
+          0.747,
+          0.4179
         ],
         [
           0.95,
-          0.2681
+          0.2207
         ]
       ],
       "stops": [
         {
-          "x": 0.0587,
-          "y": 0.6897,
+          "x": 0.0568,
+          "y": 0.7464,
           "town": "Tofino, British Columbia",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.2681,
-          "town": "Merritt, British Columbia",
+          "y": 0.2207,
+          "town": "Salmon Arm, British Columbia",
           "kind": "end",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 22,
-              "socStart": 13,
-              "socEnd": 80
-            }
-          ]
+          "sessions": []
         },
         {
-          "x": 0.3733,
-          "y": 0.6265,
+          "x": 0.3004,
+          "y": 0.6971,
           "town": "Nanaimo, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -2098,8 +2106,8 @@
           ]
         },
         {
-          "x": 0.5393,
-          "y": 0.7108,
+          "x": 0.4289,
+          "y": 0.7628,
           "town": "Tsawwassen, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -2110,20 +2118,40 @@
               "socEnd": 92
             }
           ]
+        },
+        {
+          "x": 0.747,
+          "y": 0.4179,
+          "town": "Merritt, British Columbia",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 22,
+              "socStart": 13,
+              "socEnd": 80
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.5723,
+      "kmPerPx": 0.7345,
       "plotted": true
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-18T04:53:33.868Z",
+  "updatedAt": "2026-09-18T05:12:40.780Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.7,
+          "wh": 164,
+          "km": 196,
+          "prov": "British Columbia"
+        },
         {
           "t": 18.6,
           "wh": 190,
@@ -3149,7 +3177,7 @@
       "date": "Sep 16",
       "province": "British Columbia",
       "from": "Tofino, British Columbia",
-      "to": "Merritt, British Columbia",
+      "to": "Salmon Arm, British Columbia",
       "plotted": true,
       "km": "721",
       "chargeMinutes": 45,
