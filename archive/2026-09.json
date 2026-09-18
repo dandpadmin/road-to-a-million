@@ -1998,40 +1998,44 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 420,
+    "km": 450,
     "from": "Salmon Arm, British Columbia",
-    "to": "Canmore, Alberta",
-    "corridor": "Canmore, Alberta",
+    "to": "Kananaskis, Alberta",
+    "corridor": "Kananaskis, Alberta",
     "province": "Alberta",
-    "chargeStops": 9,
-    "chargeMinutes": 61,
+    "chargeStops": 10,
+    "chargeMinutes": 72,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.6722
+        0.658
       ],
       [
-        0.2923,
+        0.2724,
         0.5
       ],
       [
-        0.5808,
-        0.3278
+        0.5371,
+        0.342
       ],
       [
-        0.8923,
-        0.3852
+        0.8229,
+        0.3947
+      ],
+      [
+        0.8759,
+        0.4473
       ],
       [
         0.95,
-        0.4426
+        0.4473
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6722,
+        "y": 0.658,
         "town": "Salmon Arm, British Columbia",
         "kind": "start",
         "sessions": [
@@ -2045,28 +2049,10 @@
       },
       {
         "x": 0.95,
-        "y": 0.4426,
-        "town": "Canmore, Alberta",
+        "y": 0.4473,
+        "town": "Kananaskis, Alberta",
         "kind": "end",
         "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 50,
-            "socEnd": 58
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 4,
-            "socStart": 61,
-            "socEnd": 74
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 2,
-            "socStart": 75,
-            "socEnd": 78
-          },
           {
             "network": "Supercharger",
             "minutes": 11,
@@ -2082,7 +2068,7 @@
         ]
       },
       {
-        "x": 0.2923,
+        "x": 0.2724,
         "y": 0.5,
         "town": "Revelstoke, British Columbia",
         "kind": "charge",
@@ -2102,8 +2088,8 @@
         ]
       },
       {
-        "x": 0.5808,
-        "y": 0.3278,
+        "x": 0.5371,
+        "y": 0.342,
         "town": "Golden, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -2126,9 +2112,35 @@
             "socEnd": 93
           }
         ]
+      },
+      {
+        "x": 0.8759,
+        "y": 0.4473,
+        "town": "Canmore, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 4,
+            "socStart": 50,
+            "socEnd": 58
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 4,
+            "socStart": 61,
+            "socEnd": 74
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 2,
+            "socStart": 75,
+            "socEnd": 78
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.4204,
+    "kmPerPx": 0.4582,
     "plotted": true
   }
 ]
