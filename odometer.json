@@ -1,18 +1,18 @@
 {
-  "odometer": 11472,
+  "odometer": 11515,
   "goal": 1000000,
-  "day": 16,
+  "day": 17,
   "province": "British Columbia",
   "route": "Tsawwassen, British Columbia",
   "today": 619,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 647,
-  "chargeSessions": 10,
-  "chargeSupercharger": 10,
+  "chargeSessions": 11,
+  "chargeSupercharger": 11,
   "chargeOther": 0,
-  "chargeLifetime": 99,
-  "chargeLifetimeSupercharger": 64,
+  "chargeLifetime": 100,
+  "chargeLifetimeSupercharger": 65,
   "chargeLifetimeOther": 35,
   "dayMap": {
     "key": "2026-09-16",
@@ -2073,7 +2073,7 @@
     }
   ],
   "asOf": "2026-09-17",
-  "updatedAt": "2026-09-17T23:52:12.805Z",
+  "updatedAt": "2026-09-18T00:19:10.640Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -2890,19 +2890,19 @@
     },
     "energy": {
       "used": 1703,
-      "added": 1851,
-      "overhead": 7.9,
+      "added": 1863,
+      "overhead": 8.6,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 63,
       "rangeEst": 408
     },
     "cost": {
-      "total": 305.63,
-      "supercharger": 305.63,
+      "total": 310.29,
+      "supercharger": 310.29,
       "other": 0,
-      "perKm": 0.027,
-      "sessions": 63,
+      "perKm": 0.028,
+      "sessions": 64,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -2949,8 +2949,8 @@
         },
         {
           "soc": 70,
-          "kw": 82,
-          "n": 8
+          "kw": 85,
+          "n": 9
         },
         {
           "soc": 75,
@@ -2978,7 +2978,7 @@
           "n": 1
         }
       ],
-      "sessions": 99,
+      "sessions": 100,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3084,7 +3084,7 @@
       "from": "—",
       "to": "—",
       "km": "619",
-      "chargeMinutes": 72,
+      "chargeMinutes": 79,
       "note": ""
     },
     {
