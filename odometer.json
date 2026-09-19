@@ -2,8 +2,8 @@
   "odometer": 12946,
   "goal": 1000000,
   "day": 18,
-  "province": "Alberta",
-  "route": "Medicine Hat, Alberta",
+  "province": "Saskatchewan",
+  "route": "Swift Current, Saskatchewan",
   "today": 581,
   "best": 1333,
   "bestDay": 1,
@@ -19,57 +19,61 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 283,
+    "km": 504,
     "from": "Calgary, Alberta",
-    "to": "Medicine Hat, Alberta",
-    "corridor": "Medicine Hat, Alberta",
-    "province": "Alberta",
-    "chargeStops": 2,
-    "chargeMinutes": 29,
+    "to": "Swift Current, Saskatchewan",
+    "corridor": "Swift Current, Saskatchewan",
+    "province": "Saskatchewan",
+    "chargeStops": 3,
+    "chargeMinutes": 54,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.2072
+        0.3407
       ],
       [
-        0.4735,
-        0.2723
+        0.2804,
+        0.3761
       ],
       [
-        0.9368,
-        0.7928
+        0.5324,
+        0.6593
+      ],
+      [
+        0.5396,
+        0.6593
       ],
       [
         0.95,
-        0.7928
+        0.5531
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.2072,
+        "y": 0.3407,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.7928,
-        "town": "Medicine Hat, Alberta",
+        "y": 0.5531,
+        "town": "Swift Current, Saskatchewan",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 20,
-            "socStart": 37,
-            "socEnd": 89
+            "minutes": 25,
+            "socStart": 22,
+            "socEnd": 87
           }
         ]
       },
       {
-        "x": 0.4735,
-        "y": 0.2723,
+        "x": 0.2804,
+        "y": 0.3761,
         "town": "Bassano, Alberta",
         "kind": "charge",
         "sessions": [
@@ -80,9 +84,23 @@
             "socEnd": 79
           }
         ]
+      },
+      {
+        "x": 0.5396,
+        "y": 0.6593,
+        "town": "Medicine Hat, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 20,
+            "socStart": 37,
+            "socEnd": 89
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.3708,
+    "kmPerPx": 0.6817,
     "plotted": true
   },
   "dayMaps": [
@@ -2257,57 +2275,61 @@
       "day": 17,
       "date": "Sep 18",
       "label": "Day 17 · Sep 18",
-      "km": 283,
+      "km": 504,
       "from": "Calgary, Alberta",
-      "to": "Medicine Hat, Alberta",
-      "corridor": "Medicine Hat, Alberta",
-      "province": "Alberta",
-      "chargeStops": 2,
-      "chargeMinutes": 29,
+      "to": "Swift Current, Saskatchewan",
+      "corridor": "Swift Current, Saskatchewan",
+      "province": "Saskatchewan",
+      "chargeStops": 3,
+      "chargeMinutes": 54,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.2072
+          0.3407
         ],
         [
-          0.4735,
-          0.2723
+          0.2804,
+          0.3761
         ],
         [
-          0.9368,
-          0.7928
+          0.5324,
+          0.6593
+        ],
+        [
+          0.5396,
+          0.6593
         ],
         [
           0.95,
-          0.7928
+          0.5531
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.2072,
+          "y": 0.3407,
           "town": "Calgary, Alberta",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.7928,
-          "town": "Medicine Hat, Alberta",
+          "y": 0.5531,
+          "town": "Swift Current, Saskatchewan",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
-              "minutes": 20,
-              "socStart": 37,
-              "socEnd": 89
+              "minutes": 25,
+              "socStart": 22,
+              "socEnd": 87
             }
           ]
         },
         {
-          "x": 0.4735,
-          "y": 0.2723,
+          "x": 0.2804,
+          "y": 0.3761,
           "town": "Bassano, Alberta",
           "kind": "charge",
           "sessions": [
@@ -2318,20 +2340,40 @@
               "socEnd": 79
             }
           ]
+        },
+        {
+          "x": 0.5396,
+          "y": 0.6593,
+          "town": "Medicine Hat, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 20,
+              "socStart": 37,
+              "socEnd": 89
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.3708,
+      "kmPerPx": 0.6817,
       "plotted": true
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T21:12:39.534Z",
+  "updatedAt": "2026-09-19T21:27:46.670Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 24.2,
+          "wh": 182,
+          "km": 221,
+          "prov": "Saskatchewan"
+        },
         {
           "t": 21,
           "wh": 162,
@@ -3207,10 +3249,10 @@
       "best": 66,
       "worst": 491,
       "provinces": [
+        "Saskatchewan",
         "Alberta",
         "British Columbia",
         "Yukon",
-        "Saskatchewan",
         "Manitoba"
       ]
     },
@@ -3431,9 +3473,9 @@
       "key": "2026-09-18",
       "day": "Day 17",
       "date": "Sep 18",
-      "province": "Alberta",
+      "province": "Saskatchewan",
       "from": "Calgary, Alberta",
-      "to": "Medicine Hat, Alberta",
+      "to": "Swift Current, Saskatchewan",
       "plotted": true,
       "km": "781",
       "chargeMinutes": 885,
