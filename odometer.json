@@ -1,13 +1,13 @@
 {
-  "odometer": 12342,
+  "odometer": 12356,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
   "route": "Kananaskis, Alberta",
-  "today": 674,
+  "today": 772,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 655,
+  "avgPerDay": 661,
   "chargeSessions": 4,
   "chargeSupercharger": 4,
   "chargeOther": 0,
@@ -2311,7 +2311,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-19T00:18:50.763Z",
+  "updatedAt": "2026-09-19T00:44:49.657Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3177,13 +3177,13 @@
       ]
     },
     "autopilot": {
-      "km": 10220,
-      "pct": 85.8
+      "km": 10313,
+      "pct": 85.9
     },
     "energy": {
-      "used": 1833,
+      "used": 1851,
       "added": 2006,
-      "overhead": 8.6,
+      "overhead": 7.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3369,7 +3369,7 @@
     {
       "key": "2026-09-18",
       "label": "D 17",
-      "km": 674
+      "km": 772
     }
   ],
   "log": [
@@ -3380,7 +3380,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "674",
+      "km": "772",
       "chargeMinutes": 77,
       "note": ""
     },
