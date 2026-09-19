@@ -1,10 +1,10 @@
 {
-  "odometer": 12944,
+  "odometer": 12946,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
   "route": "Medicine Hat, Alberta",
-  "today": 579,
+  "today": 581,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 657,
@@ -2325,7 +2325,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T20:13:15.186Z",
+  "updatedAt": "2026-09-19T20:29:18.098Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3412,7 +3412,7 @@
     {
       "key": "2026-09-19",
       "label": "D 18",
-      "km": 579
+      "km": 581
     }
   ],
   "log": [
@@ -3423,7 +3423,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "579",
+      "km": "581",
       "chargeMinutes": 36,
       "note": ""
     },
