@@ -1,5 +1,5 @@
 {
-  "odometer": 12612,
+  "odometer": 12637,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
@@ -2217,7 +2217,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T16:43:28.319Z",
+  "updatedAt": "2026-09-19T16:55:25.822Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
