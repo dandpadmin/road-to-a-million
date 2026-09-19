@@ -1,9 +1,9 @@
 {
-  "odometer": 12637,
+  "odometer": 12672,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
-  "route": "Calgary, Alberta",
+  "route": "Bassano, Alberta",
   "today": 159,
   "best": 1333,
   "bestDay": 1,
@@ -19,17 +19,49 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 0,
+    "km": 121,
     "from": "Calgary, Alberta",
-    "to": "Calgary, Alberta",
-    "corridor": "Calgary, Alberta",
+    "to": "Bassano, Alberta",
+    "corridor": "Bassano, Alberta",
     "province": "Alberta",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 9,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.05,
+        0.4303
+      ],
+      [
+        0.95,
+        0.5697
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.05,
+        "y": 0.4303,
+        "town": "Calgary, Alberta",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.95,
+        "y": 0.5697,
+        "town": "Bassano, Alberta",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 9,
+            "socStart": 50,
+            "socEnd": 79
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.173,
+    "plotted": true
   },
   "dayMaps": [
     {
@@ -2203,27 +2235,65 @@
       "day": 17,
       "date": "Sep 18",
       "label": "Day 17 · Sep 18",
-      "km": 0,
+      "km": 121,
       "from": "Calgary, Alberta",
-      "to": "Calgary, Alberta",
-      "corridor": "Calgary, Alberta",
+      "to": "Bassano, Alberta",
+      "corridor": "Bassano, Alberta",
       "province": "Alberta",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 1,
+      "chargeMinutes": 9,
       "note": "Town level · delayed 24h",
-      "path": [],
-      "stops": [],
-      "kmPerPx": 0
+      "path": [
+        [
+          0.05,
+          0.4303
+        ],
+        [
+          0.95,
+          0.5697
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.05,
+          "y": 0.4303,
+          "town": "Calgary, Alberta",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.95,
+          "y": 0.5697,
+          "town": "Bassano, Alberta",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 9,
+              "socStart": 50,
+              "socEnd": 79
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.173,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T16:55:25.822Z",
+  "updatedAt": "2026-09-19T17:12:01.413Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 14.6,
+          "wh": 152,
+          "km": 121,
+          "prov": "Alberta"
+        },
         {
           "t": 21.8,
           "wh": 112,
@@ -3313,7 +3383,8 @@
       "date": "Sep 18",
       "province": "Alberta",
       "from": "Calgary, Alberta",
-      "to": "Calgary, Alberta",
+      "to": "Bassano, Alberta",
+      "plotted": true,
       "km": "781",
       "chargeMinutes": 885,
       "note": ""

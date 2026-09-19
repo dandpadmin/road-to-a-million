@@ -2170,16 +2170,48 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 0,
+    "km": 121,
     "from": "Calgary, Alberta",
-    "to": "Calgary, Alberta",
-    "corridor": "Calgary, Alberta",
+    "to": "Bassano, Alberta",
+    "corridor": "Bassano, Alberta",
     "province": "Alberta",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 9,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.05,
+        0.4303
+      ],
+      [
+        0.95,
+        0.5697
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.05,
+        "y": 0.4303,
+        "town": "Calgary, Alberta",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.95,
+        "y": 0.5697,
+        "town": "Bassano, Alberta",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 9,
+            "socStart": 50,
+            "socEnd": 79
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.173,
+    "plotted": true
   }
 ]
