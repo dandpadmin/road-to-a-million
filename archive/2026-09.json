@@ -2164,5 +2164,22 @@
     ],
     "kmPerPx": 0.5606,
     "plotted": true
+  },
+  {
+    "key": "2026-09-18",
+    "day": 17,
+    "date": "Sep 18",
+    "label": "Day 17 · Sep 18",
+    "km": 0,
+    "from": "Calgary, Alberta",
+    "to": "Calgary, Alberta",
+    "corridor": "Calgary, Alberta",
+    "province": "Alberta",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]
