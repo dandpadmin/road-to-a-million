@@ -1,10 +1,10 @@
 {
-  "odometer": 12359,
+  "odometer": 12365,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
   "route": "Calgary, Alberta",
-  "today": 772,
+  "today": 781,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 661,
@@ -19,7 +19,7 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 723,
+    "km": 727,
     "from": "Salmon Arm, British Columbia",
     "to": "Calgary, Alberta",
     "corridor": "Calgary, Alberta",
@@ -2186,7 +2186,7 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 723,
+      "km": 727,
       "from": "Salmon Arm, British Columbia",
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
@@ -2355,7 +2355,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-19T01:41:02.127Z",
+  "updatedAt": "2026-09-19T01:53:42.805Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3233,11 +3233,11 @@
       ]
     },
     "autopilot": {
-      "km": 10313,
+      "km": 10317,
       "pct": 85.9
     },
     "energy": {
-      "used": 1851,
+      "used": 1852,
       "added": 2007,
       "overhead": 7.8,
       "whPerKm": 154,
@@ -3425,7 +3425,7 @@
     {
       "key": "2026-09-18",
       "label": "D 17",
-      "km": 772
+      "km": 781
     }
   ],
   "log": [
@@ -3436,7 +3436,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "772",
+      "km": "781",
       "chargeMinutes": 139,
       "note": ""
     },
