@@ -2170,61 +2170,65 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 504,
+    "km": 674,
     "from": "Calgary, Alberta",
-    "to": "Swift Current, Saskatchewan",
-    "corridor": "Swift Current, Saskatchewan",
+    "to": "Moose Jaw, Saskatchewan",
+    "corridor": "Moose Jaw, Saskatchewan",
     "province": "Saskatchewan",
-    "chargeStops": 3,
-    "chargeMinutes": 54,
+    "chargeStops": 4,
+    "chargeMinutes": 77,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.3407
+        0.3829
       ],
       [
-        0.2804,
-        0.3761
+        0.2194,
+        0.4089
       ],
       [
-        0.5324,
-        0.6593
+        0.4047,
+        0.6171
       ],
       [
-        0.5396,
-        0.6593
+        0.41,
+        0.6171
+      ],
+      [
+        0.7118,
+        0.539
       ],
       [
         0.95,
-        0.5531
+        0.513
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.3407,
+        "y": 0.3829,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5531,
-        "town": "Swift Current, Saskatchewan",
+        "y": 0.513,
+        "town": "Moose Jaw, Saskatchewan",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 25,
-            "socStart": 22,
-            "socEnd": 87
+            "minutes": 23,
+            "socStart": 34,
+            "socEnd": 91
           }
         ]
       },
       {
-        "x": 0.2804,
-        "y": 0.3761,
+        "x": 0.2194,
+        "y": 0.4089,
         "town": "Bassano, Alberta",
         "kind": "charge",
         "sessions": [
@@ -2237,8 +2241,8 @@
         ]
       },
       {
-        "x": 0.5396,
-        "y": 0.6593,
+        "x": 0.41,
+        "y": 0.6171,
         "town": "Medicine Hat, Alberta",
         "kind": "charge",
         "sessions": [
@@ -2249,9 +2253,23 @@
             "socEnd": 89
           }
         ]
+      },
+      {
+        "x": 0.7118,
+        "y": 0.539,
+        "town": "Swift Current, Saskatchewan",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 25,
+            "socStart": 22,
+            "socEnd": 87
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.6817,
+    "kmPerPx": 0.9271,
     "plotted": true
   }
 ]
