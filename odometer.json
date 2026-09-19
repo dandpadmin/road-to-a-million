@@ -1,5 +1,5 @@
 {
-  "odometer": 12356,
+  "odometer": 12359,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
@@ -8,18 +8,18 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 661,
-  "chargeSessions": 4,
+  "chargeSessions": 5,
   "chargeSupercharger": 4,
-  "chargeOther": 0,
-  "chargeLifetime": 105,
+  "chargeOther": 1,
+  "chargeLifetime": 106,
   "chargeLifetimeSupercharger": 70,
-  "chargeLifetimeOther": 35,
+  "chargeLifetimeOther": 36,
   "dayMap": {
     "key": "2026-09-17",
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 694,
+    "km": 723,
     "from": "Salmon Arm, British Columbia",
     "to": "Calgary, Alberta",
     "corridor": "Calgary, Alberta",
@@ -55,6 +55,10 @@
       [
         0.95,
         0.4785
+      ],
+      [
+        0.95,
+        0.543
       ]
     ],
     "stops": [
@@ -74,7 +78,7 @@
       },
       {
         "x": 0.95,
-        "y": 0.4785,
+        "y": 0.543,
         "town": "Calgary, Alberta",
         "kind": "end",
         "sessions": [
@@ -2182,7 +2186,7 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 694,
+      "km": 723,
       "from": "Salmon Arm, British Columbia",
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
@@ -2218,6 +2222,10 @@
         [
           0.95,
           0.4785
+        ],
+        [
+          0.95,
+          0.543
         ]
       ],
       "stops": [
@@ -2237,7 +2245,7 @@
         },
         {
           "x": 0.95,
-          "y": 0.4785,
+          "y": 0.543,
           "town": "Calgary, Alberta",
           "kind": "end",
           "sessions": [
@@ -2347,13 +2355,19 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-19T01:15:44.513Z",
+  "updatedAt": "2026-09-19T01:41:02.127Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 21.8,
+          "wh": 112,
+          "km": 29,
+          "prov": "Alberta"
+        },
         {
           "t": 21.3,
           "wh": 126,
@@ -3224,7 +3238,7 @@
     },
     "energy": {
       "used": 1851,
-      "added": 2006,
+      "added": 2007,
       "overhead": 7.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
@@ -3278,8 +3292,8 @@
         },
         {
           "soc": 65,
-          "kw": 69,
-          "n": 9
+          "kw": 63,
+          "n": 10
         },
         {
           "soc": 70,
@@ -3312,7 +3326,7 @@
           "n": 1
         }
       ],
-      "sessions": 105,
+      "sessions": 106,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3423,7 +3437,7 @@
       "from": "—",
       "to": "—",
       "km": "772",
-      "chargeMinutes": 77,
+      "chargeMinutes": 139,
       "note": ""
     },
     {
