@@ -1,7 +1,7 @@
 {
-  "odometer": 12291,
+  "odometer": 12342,
   "goal": 1000000,
-  "day": 17,
+  "day": 18,
   "province": "Alberta",
   "route": "Kananaskis, Alberta",
   "today": 674,
@@ -2311,7 +2311,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-18T23:54:31.444Z",
+  "updatedAt": "2026-09-19T00:18:50.763Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
