@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
-  "route": "Kananaskis, Alberta",
+  "route": "Calgary, Alberta",
   "today": 772,
   "best": 1333,
   "bestDay": 1,
@@ -19,44 +19,48 @@
     "day": 16,
     "date": "Sep 17",
     "label": "Day 16 · Sep 17",
-    "km": 619,
+    "km": 694,
     "from": "Salmon Arm, British Columbia",
-    "to": "Kananaskis, Alberta",
-    "corridor": "Kananaskis, Alberta",
+    "to": "Calgary, Alberta",
+    "corridor": "Calgary, Alberta",
     "province": "Alberta",
-    "chargeStops": 11,
-    "chargeMinutes": 79,
+    "chargeStops": 12,
+    "chargeMinutes": 92,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.658
+        0.6291
       ],
       [
-        0.2724,
+        0.2317,
         0.5
       ],
       [
-        0.5371,
-        0.342
+        0.4481,
+        0.3709
       ],
       [
-        0.8229,
-        0.3947
+        0.6817,
+        0.4139
       ],
       [
-        0.8759,
-        0.4473
+        0.725,
+        0.457
+      ],
+      [
+        0.7856,
+        0.457
       ],
       [
         0.95,
-        0.4473
+        0.4785
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.658,
+        "y": 0.6291,
         "town": "Salmon Arm, British Columbia",
         "kind": "start",
         "sessions": [
@@ -70,26 +74,20 @@
       },
       {
         "x": 0.95,
-        "y": 0.4473,
-        "town": "Kananaskis, Alberta",
+        "y": 0.4785,
+        "town": "Calgary, Alberta",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 74,
+            "minutes": 13,
+            "socStart": 64,
             "socEnd": 92
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 58,
-            "socEnd": 77
           }
         ]
       },
       {
-        "x": 0.2724,
+        "x": 0.2317,
         "y": 0.5,
         "town": "Revelstoke, British Columbia",
         "kind": "charge",
@@ -109,8 +107,8 @@
         ]
       },
       {
-        "x": 0.5371,
-        "y": 0.342,
+        "x": 0.4481,
+        "y": 0.3709,
         "town": "Golden, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -135,8 +133,8 @@
         ]
       },
       {
-        "x": 0.8759,
-        "y": 0.4473,
+        "x": 0.725,
+        "y": 0.457,
         "town": "Canmore, Alberta",
         "kind": "charge",
         "sessions": [
@@ -159,9 +157,29 @@
             "socEnd": 78
           }
         ]
+      },
+      {
+        "x": 0.7856,
+        "y": 0.457,
+        "town": "Kananaskis, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 11,
+            "socStart": 74,
+            "socEnd": 92
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 58,
+            "socEnd": 77
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.4582,
+    "kmPerPx": 0.5606,
     "plotted": true
   },
   "dayMaps": [
@@ -2164,44 +2182,48 @@
       "day": 16,
       "date": "Sep 17",
       "label": "Day 16 · Sep 17",
-      "km": 619,
+      "km": 694,
       "from": "Salmon Arm, British Columbia",
-      "to": "Kananaskis, Alberta",
-      "corridor": "Kananaskis, Alberta",
+      "to": "Calgary, Alberta",
+      "corridor": "Calgary, Alberta",
       "province": "Alberta",
-      "chargeStops": 11,
-      "chargeMinutes": 79,
+      "chargeStops": 12,
+      "chargeMinutes": 92,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.658
+          0.6291
         ],
         [
-          0.2724,
+          0.2317,
           0.5
         ],
         [
-          0.5371,
-          0.342
+          0.4481,
+          0.3709
         ],
         [
-          0.8229,
-          0.3947
+          0.6817,
+          0.4139
         ],
         [
-          0.8759,
-          0.4473
+          0.725,
+          0.457
+        ],
+        [
+          0.7856,
+          0.457
         ],
         [
           0.95,
-          0.4473
+          0.4785
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.658,
+          "y": 0.6291,
           "town": "Salmon Arm, British Columbia",
           "kind": "start",
           "sessions": [
@@ -2215,26 +2237,20 @@
         },
         {
           "x": 0.95,
-          "y": 0.4473,
-          "town": "Kananaskis, Alberta",
+          "y": 0.4785,
+          "town": "Calgary, Alberta",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
-              "minutes": 11,
-              "socStart": 74,
+              "minutes": 13,
+              "socStart": 64,
               "socEnd": 92
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 7,
-              "socStart": 58,
-              "socEnd": 77
             }
           ]
         },
         {
-          "x": 0.2724,
+          "x": 0.2317,
           "y": 0.5,
           "town": "Revelstoke, British Columbia",
           "kind": "charge",
@@ -2254,8 +2270,8 @@
           ]
         },
         {
-          "x": 0.5371,
-          "y": 0.342,
+          "x": 0.4481,
+          "y": 0.3709,
           "town": "Golden, British Columbia",
           "kind": "charge",
           "sessions": [
@@ -2280,8 +2296,8 @@
           ]
         },
         {
-          "x": 0.8759,
-          "y": 0.4473,
+          "x": 0.725,
+          "y": 0.457,
           "town": "Canmore, Alberta",
           "kind": "charge",
           "sessions": [
@@ -2304,20 +2320,46 @@
               "socEnd": 78
             }
           ]
+        },
+        {
+          "x": 0.7856,
+          "y": 0.457,
+          "town": "Kananaskis, Alberta",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 11,
+              "socStart": 74,
+              "socEnd": 92
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 7,
+              "socStart": 58,
+              "socEnd": 77
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.4582,
+      "kmPerPx": 0.5606,
       "plotted": true
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-19T00:44:49.657Z",
+  "updatedAt": "2026-09-19T00:58:07.922Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 21.3,
+          "wh": 126,
+          "km": 75,
+          "prov": "Alberta"
+        },
         {
           "t": 17.7,
           "wh": 122,
@@ -3390,7 +3432,7 @@
       "date": "Sep 17",
       "province": "Alberta",
       "from": "Salmon Arm, British Columbia",
-      "to": "Kananaskis, Alberta",
+      "to": "Calgary, Alberta",
       "plotted": true,
       "km": "731",
       "chargeMinutes": 92,
