@@ -1,13 +1,13 @@
 {
-  "odometer": 12701,
+  "odometer": 12714,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
   "route": "Bassano, Alberta",
-  "today": 159,
+  "today": 348,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 633,
+  "avgPerDay": 644,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
@@ -2281,7 +2281,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T17:26:09.924Z",
+  "updatedAt": "2026-09-19T17:39:17.397Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3165,23 +3165,23 @@
       ]
     },
     "autopilot": {
-      "km": 10475,
-      "pct": 86
+      "km": 10662,
+      "pct": 86.2
     },
     "energy": {
-      "used": 1883,
+      "used": 1917,
       "added": 2054,
-      "overhead": 8.3,
+      "overhead": 6.6,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 63,
-      "rangeEst": 404
+      "rangeEst": 403
     },
     "cost": {
       "total": 372.37,
       "supercharger": 372.37,
       "other": 0,
-      "perKm": 0.031,
+      "perKm": 0.03,
       "sessions": 70,
       "currency": "CAD"
     },
@@ -3362,7 +3362,7 @@
     {
       "key": "2026-09-19",
       "label": "D 18",
-      "km": 159
+      "km": 348
     }
   ],
   "log": [
@@ -3373,7 +3373,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "159",
+      "km": "348",
       "chargeMinutes": 18,
       "note": ""
     },
