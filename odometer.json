@@ -1,5 +1,5 @@
 {
-  "odometer": 12365,
+  "odometer": 12375,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
@@ -8,12 +8,12 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 661,
-  "chargeSessions": 5,
+  "chargeSessions": 6,
   "chargeSupercharger": 4,
-  "chargeOther": 1,
-  "chargeLifetime": 106,
+  "chargeOther": 2,
+  "chargeLifetime": 107,
   "chargeLifetimeSupercharger": 70,
-  "chargeLifetimeOther": 36,
+  "chargeLifetimeOther": 37,
   "dayMap": {
     "key": "2026-09-17",
     "day": 16,
@@ -2355,7 +2355,7 @@
     }
   ],
   "asOf": "2026-09-18",
-  "updatedAt": "2026-09-19T14:12:53.263Z",
+  "updatedAt": "2026-09-19T14:28:31.848Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3238,8 +3238,8 @@
     },
     "energy": {
       "used": 1852,
-      "added": 2007,
-      "overhead": 7.8,
+      "added": 2021,
+      "overhead": 8.4,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 63,
@@ -3302,8 +3302,8 @@
         },
         {
           "soc": 75,
-          "kw": 67,
-          "n": 5
+          "kw": 56,
+          "n": 6
         },
         {
           "soc": 80,
@@ -3326,7 +3326,7 @@
           "n": 1
         }
       ],
-      "sessions": 106,
+      "sessions": 107,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3437,7 +3437,7 @@
       "from": "—",
       "to": "—",
       "km": "781",
-      "chargeMinutes": 139,
+      "chargeMinutes": 885,
       "note": ""
     },
     {
