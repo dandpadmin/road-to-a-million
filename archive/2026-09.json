@@ -2170,39 +2170,43 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 278,
+    "km": 283,
     "from": "Calgary, Alberta",
     "to": "Medicine Hat, Alberta",
     "corridor": "Medicine Hat, Alberta",
     "province": "Alberta",
-    "chargeStops": 1,
-    "chargeMinutes": 9,
+    "chargeStops": 2,
+    "chargeMinutes": 29,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.2028
+        0.2072
       ],
       [
-        0.4799,
-        0.2689
+        0.4735,
+        0.2723
+      ],
+      [
+        0.9368,
+        0.7928
       ],
       [
         0.95,
-        0.7972
+        0.7928
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.2028,
+        "y": 0.2072,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.7972,
+        "y": 0.7928,
         "town": "Medicine Hat, Alberta",
         "kind": "end",
         "sessions": [
@@ -2215,8 +2219,8 @@
         ]
       },
       {
-        "x": 0.4799,
-        "y": 0.2689,
+        "x": 0.4735,
+        "y": 0.2723,
         "town": "Bassano, Alberta",
         "kind": "charge",
         "sessions": [
@@ -2229,7 +2233,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.3654,
+    "kmPerPx": 0.3708,
     "plotted": true
   }
 ]
