@@ -1,9 +1,9 @@
 {
-  "odometer": 12770,
+  "odometer": 12808,
   "goal": 1000000,
   "day": 18,
   "province": "Alberta",
-  "route": "Bassano, Alberta",
+  "route": "Medicine Hat, Alberta",
   "today": 348,
   "best": 1333,
   "bestDay": 1,
@@ -19,10 +19,10 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 121,
+    "km": 278,
     "from": "Calgary, Alberta",
-    "to": "Bassano, Alberta",
-    "corridor": "Bassano, Alberta",
+    "to": "Medicine Hat, Alberta",
+    "corridor": "Medicine Hat, Alberta",
     "province": "Alberta",
     "chargeStops": 1,
     "chargeMinutes": 9,
@@ -30,26 +30,44 @@
     "path": [
       [
         0.05,
-        0.4303
+        0.2028
+      ],
+      [
+        0.4799,
+        0.2689
       ],
       [
         0.95,
-        0.5697
+        0.7972
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.4303,
+        "y": 0.2028,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5697,
-        "town": "Bassano, Alberta",
+        "y": 0.7972,
+        "town": "Medicine Hat, Alberta",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 20,
+            "socStart": 37,
+            "socEnd": 89
+          }
+        ]
+      },
+      {
+        "x": 0.4799,
+        "y": 0.2689,
+        "town": "Bassano, Alberta",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -60,7 +78,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.173,
+    "kmPerPx": 0.3654,
     "plotted": true
   },
   "dayMaps": [
@@ -2235,10 +2253,10 @@
       "day": 17,
       "date": "Sep 18",
       "label": "Day 17 · Sep 18",
-      "km": 121,
+      "km": 278,
       "from": "Calgary, Alberta",
-      "to": "Bassano, Alberta",
-      "corridor": "Bassano, Alberta",
+      "to": "Medicine Hat, Alberta",
+      "corridor": "Medicine Hat, Alberta",
       "province": "Alberta",
       "chargeStops": 1,
       "chargeMinutes": 9,
@@ -2246,26 +2264,44 @@
       "path": [
         [
           0.05,
-          0.4303
+          0.2028
+        ],
+        [
+          0.4799,
+          0.2689
         ],
         [
           0.95,
-          0.5697
+          0.7972
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.4303,
+          "y": 0.2028,
           "town": "Calgary, Alberta",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.5697,
-          "town": "Bassano, Alberta",
+          "y": 0.7972,
+          "town": "Medicine Hat, Alberta",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 20,
+              "socStart": 37,
+              "socEnd": 89
+            }
+          ]
+        },
+        {
+          "x": 0.4799,
+          "y": 0.2689,
+          "town": "Bassano, Alberta",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -2276,18 +2312,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.173,
+      "kmPerPx": 0.3654,
       "plotted": true
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T18:32:37.240Z",
+  "updatedAt": "2026-09-19T18:52:37.688Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 21,
+          "wh": 162,
+          "km": 157,
+          "prov": "Alberta"
+        },
         {
           "t": 14.6,
           "wh": 152,
@@ -3383,7 +3425,7 @@
       "date": "Sep 18",
       "province": "Alberta",
       "from": "Calgary, Alberta",
-      "to": "Bassano, Alberta",
+      "to": "Medicine Hat, Alberta",
       "plotted": true,
       "km": "781",
       "chargeMinutes": 885,
