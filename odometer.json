@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 19,
   "province": "Saskatchewan",
-  "route": "Moose Jaw, Saskatchewan",
+  "route": "White City, Saskatchewan",
   "today": 581,
   "best": 1333,
   "bestDay": 1,
@@ -19,65 +19,75 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 674,
+    "km": 772,
     "from": "Calgary, Alberta",
-    "to": "Moose Jaw, Saskatchewan",
-    "corridor": "Moose Jaw, Saskatchewan",
+    "to": "White City, Saskatchewan",
+    "corridor": "White City, Saskatchewan",
     "province": "Saskatchewan",
-    "chargeStops": 4,
-    "chargeMinutes": 77,
+    "chargeStops": 5,
+    "chargeMinutes": 139,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.3829
+        0.3974
       ],
       [
-        0.2194,
-        0.4089
+        0.1985,
+        0.4202
       ],
       [
-        0.4047,
-        0.6171
+        0.3608,
+        0.6026
       ],
       [
-        0.41,
-        0.6171
+        0.3655,
+        0.6026
       ],
       [
-        0.7118,
-        0.539
+        0.6299,
+        0.5342
+      ],
+      [
+        0.8387,
+        0.5114
       ],
       [
         0.95,
-        0.513
+        0.5
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.3829,
+        "y": 0.3974,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.513,
-        "town": "Moose Jaw, Saskatchewan",
+        "y": 0.5,
+        "town": "White City, Saskatchewan",
         "kind": "end",
         "sessions": [
           {
-            "network": "Supercharger",
-            "minutes": 23,
-            "socStart": 34,
-            "socEnd": 91
+            "network": "AC / destination",
+            "minutes": 62,
+            "socStart": 62,
+            "socEnd": 64
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 746,
+            "socStart": 62,
+            "socEnd": 84
           }
         ]
       },
       {
-        "x": 0.2194,
-        "y": 0.4089,
+        "x": 0.1985,
+        "y": 0.4202,
         "town": "Bassano, Alberta",
         "kind": "charge",
         "sessions": [
@@ -90,8 +100,8 @@
         ]
       },
       {
-        "x": 0.41,
-        "y": 0.6171,
+        "x": 0.3655,
+        "y": 0.6026,
         "town": "Medicine Hat, Alberta",
         "kind": "charge",
         "sessions": [
@@ -104,8 +114,8 @@
         ]
       },
       {
-        "x": 0.7118,
-        "y": 0.539,
+        "x": 0.6299,
+        "y": 0.5342,
         "town": "Swift Current, Saskatchewan",
         "kind": "charge",
         "sessions": [
@@ -116,9 +126,23 @@
             "socEnd": 87
           }
         ]
+      },
+      {
+        "x": 0.8387,
+        "y": 0.5114,
+        "town": "Moose Jaw, Saskatchewan",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 23,
+            "socStart": 34,
+            "socEnd": 91
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.9271,
+    "kmPerPx": 1.058,
     "plotted": true
   },
   "dayMaps": [
@@ -2293,65 +2317,75 @@
       "day": 17,
       "date": "Sep 18",
       "label": "Day 17 · Sep 18",
-      "km": 674,
+      "km": 772,
       "from": "Calgary, Alberta",
-      "to": "Moose Jaw, Saskatchewan",
-      "corridor": "Moose Jaw, Saskatchewan",
+      "to": "White City, Saskatchewan",
+      "corridor": "White City, Saskatchewan",
       "province": "Saskatchewan",
-      "chargeStops": 4,
-      "chargeMinutes": 77,
+      "chargeStops": 5,
+      "chargeMinutes": 139,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.3829
+          0.3974
         ],
         [
-          0.2194,
-          0.4089
+          0.1985,
+          0.4202
         ],
         [
-          0.4047,
-          0.6171
+          0.3608,
+          0.6026
         ],
         [
-          0.41,
-          0.6171
+          0.3655,
+          0.6026
         ],
         [
-          0.7118,
-          0.539
+          0.6299,
+          0.5342
+        ],
+        [
+          0.8387,
+          0.5114
         ],
         [
           0.95,
-          0.513
+          0.5
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.3829,
+          "y": 0.3974,
           "town": "Calgary, Alberta",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.513,
-          "town": "Moose Jaw, Saskatchewan",
+          "y": 0.5,
+          "town": "White City, Saskatchewan",
           "kind": "end",
           "sessions": [
             {
-              "network": "Supercharger",
-              "minutes": 23,
-              "socStart": 34,
-              "socEnd": 91
+              "network": "AC / destination",
+              "minutes": 62,
+              "socStart": 62,
+              "socEnd": 64
+            },
+            {
+              "network": "AC / destination",
+              "minutes": 746,
+              "socStart": 62,
+              "socEnd": 84
             }
           ]
         },
         {
-          "x": 0.2194,
-          "y": 0.4089,
+          "x": 0.1985,
+          "y": 0.4202,
           "town": "Bassano, Alberta",
           "kind": "charge",
           "sessions": [
@@ -2364,8 +2398,8 @@
           ]
         },
         {
-          "x": 0.41,
-          "y": 0.6171,
+          "x": 0.3655,
+          "y": 0.6026,
           "town": "Medicine Hat, Alberta",
           "kind": "charge",
           "sessions": [
@@ -2378,8 +2412,8 @@
           ]
         },
         {
-          "x": 0.7118,
-          "y": 0.539,
+          "x": 0.6299,
+          "y": 0.5342,
           "town": "Swift Current, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -2390,20 +2424,40 @@
               "socEnd": 87
             }
           ]
+        },
+        {
+          "x": 0.8387,
+          "y": 0.5114,
+          "town": "Moose Jaw, Saskatchewan",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 23,
+              "socStart": 34,
+              "socEnd": 91
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.9271,
+      "kmPerPx": 1.058,
       "plotted": true
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-20T00:20:05.918Z",
+  "updatedAt": "2026-09-20T00:45:36.724Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 22.6,
+          "wh": 180,
+          "km": 97,
+          "prov": "Saskatchewan"
+        },
         {
           "t": 24,
           "wh": 184,
@@ -3287,7 +3341,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 144,
+      "median": 145,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -3517,7 +3571,7 @@
       "date": "Sep 18",
       "province": "Saskatchewan",
       "from": "Calgary, Alberta",
-      "to": "Moose Jaw, Saskatchewan",
+      "to": "White City, Saskatchewan",
       "plotted": true,
       "km": "781",
       "chargeMinutes": 885,
