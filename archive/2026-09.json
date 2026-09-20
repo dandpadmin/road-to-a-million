@@ -2314,8 +2314,8 @@
     "to": "Brandon, Manitoba",
     "corridor": "Brandon, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 1,
-    "chargeMinutes": 18,
+    "chargeStops": 2,
+    "chargeMinutes": 36,
     "note": "Town level · delayed 24h",
     "path": [
       [
