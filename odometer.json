@@ -19,13 +19,13 @@
     "day": 17,
     "date": "Sep 18",
     "label": "Day 17 · Sep 18",
-    "km": 772,
+    "km": 781,
     "from": "Calgary, Alberta",
     "to": "White City, Saskatchewan",
     "corridor": "White City, Saskatchewan",
     "province": "Saskatchewan",
-    "chargeStops": 5,
-    "chargeMinutes": 139,
+    "chargeStops": 6,
+    "chargeMinutes": 885,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -51,6 +51,14 @@
       [
         0.8387,
         0.5114
+      ],
+      [
+        0.95,
+        0.5
+      ],
+      [
+        0.9454,
+        0.5
       ],
       [
         0.95,
@@ -2317,13 +2325,13 @@
       "day": 17,
       "date": "Sep 18",
       "label": "Day 17 · Sep 18",
-      "km": 772,
+      "km": 781,
       "from": "Calgary, Alberta",
       "to": "White City, Saskatchewan",
       "corridor": "White City, Saskatchewan",
       "province": "Saskatchewan",
-      "chargeStops": 5,
-      "chargeMinutes": 139,
+      "chargeStops": 6,
+      "chargeMinutes": 885,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2349,6 +2357,14 @@
         [
           0.8387,
           0.5114
+        ],
+        [
+          0.95,
+          0.5
+        ],
+        [
+          0.9454,
+          0.5
         ],
         [
           0.95,
@@ -2445,7 +2461,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-20T01:42:28.375Z",
+  "updatedAt": "2026-09-20T01:55:00.851Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
