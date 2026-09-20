@@ -8,12 +8,12 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 657,
-  "chargeSessions": 2,
+  "chargeSessions": 3,
   "chargeSupercharger": 2,
-  "chargeOther": 0,
-  "chargeLifetime": 109,
+  "chargeOther": 1,
+  "chargeLifetime": 110,
   "chargeLifetimeSupercharger": 72,
-  "chargeLifetimeOther": 37,
+  "chargeLifetimeOther": 38,
   "dayMap": {
     "key": "2026-09-19",
     "day": 18,
@@ -2420,7 +2420,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-20T15:54:41.537Z",
+  "updatedAt": "2026-09-20T16:13:49.891Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3339,8 +3339,8 @@
     },
     "energy": {
       "used": 1957,
-      "added": 2087,
-      "overhead": 6.2,
+      "added": 2108,
+      "overhead": 7.2,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3359,6 +3359,11 @@
         {
           "soc": 25,
           "kw": 122,
+          "n": 1
+        },
+        {
+          "soc": 30,
+          "kw": 1,
           "n": 1
         },
         {
@@ -3427,7 +3432,7 @@
           "n": 1
         }
       ],
-      "sessions": 109,
+      "sessions": 110,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3544,7 +3549,7 @@
       "to": "Whitewood, Saskatchewan",
       "plotted": true,
       "km": "581",
-      "chargeMinutes": 36,
+      "chargeMinutes": 1187,
       "note": ""
     },
     {
