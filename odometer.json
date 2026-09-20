@@ -2,8 +2,8 @@
   "odometer": 12946,
   "goal": 1000000,
   "day": 19,
-  "province": "Saskatchewan",
-  "route": "Whitewood, Saskatchewan",
+  "province": "Manitoba",
+  "route": "Brandon, Manitoba",
   "today": 581,
   "best": 1333,
   "bestDay": 1,
@@ -19,37 +19,55 @@
     "day": 18,
     "date": "Sep 19",
     "label": "Day 18 · Sep 19",
-    "km": 159,
+    "km": 348,
     "from": "White City, Saskatchewan",
-    "to": "Whitewood, Saskatchewan",
-    "corridor": "Whitewood, Saskatchewan",
-    "province": "Saskatchewan",
+    "to": "Brandon, Manitoba",
+    "corridor": "Brandon, Manitoba",
+    "province": "Manitoba",
     "chargeStops": 1,
     "chargeMinutes": 18,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.4474
+        0.3501
+      ],
+      [
+        0.4795,
+        0.4001
       ],
       [
         0.95,
-        0.5526
+        0.6499
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.4474,
+        "y": 0.3501,
         "town": "White City, Saskatchewan",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5526,
-        "town": "Whitewood, Saskatchewan",
+        "y": 0.6499,
+        "town": "Brandon, Manitoba",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 27,
+            "socEnd": 81
+          }
+        ]
+      },
+      {
+        "x": 0.4795,
+        "y": 0.4001,
+        "town": "Whitewood, Saskatchewan",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -60,7 +78,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2293,
+    "kmPerPx": 0.483,
     "plotted": true
   },
   "dayMaps": [
@@ -2374,37 +2392,55 @@
       "day": 18,
       "date": "Sep 19",
       "label": "Day 18 · Sep 19",
-      "km": 159,
+      "km": 348,
       "from": "White City, Saskatchewan",
-      "to": "Whitewood, Saskatchewan",
-      "corridor": "Whitewood, Saskatchewan",
-      "province": "Saskatchewan",
+      "to": "Brandon, Manitoba",
+      "corridor": "Brandon, Manitoba",
+      "province": "Manitoba",
       "chargeStops": 1,
       "chargeMinutes": 18,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.4474
+          0.3501
+        ],
+        [
+          0.4795,
+          0.4001
         ],
         [
           0.95,
-          0.5526
+          0.6499
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.4474,
+          "y": 0.3501,
           "town": "White City, Saskatchewan",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.5526,
-          "town": "Whitewood, Saskatchewan",
+          "y": 0.6499,
+          "town": "Brandon, Manitoba",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 18,
+              "socStart": 27,
+              "socEnd": 81
+            }
+          ]
+        },
+        {
+          "x": 0.4795,
+          "y": 0.4001,
+          "town": "Whitewood, Saskatchewan",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -2415,18 +2451,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.2293,
+      "kmPerPx": 0.483,
       "plotted": true
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-20T17:26:48.745Z",
+  "updatedAt": "2026-09-20T17:40:48.466Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 15.8,
+          "wh": 179,
+          "km": 190,
+          "prov": "Manitoba"
+        },
         {
           "t": 12.3,
           "wh": 198,
@@ -3326,11 +3368,11 @@
       "best": 66,
       "worst": 491,
       "provinces": [
+        "Manitoba",
         "Saskatchewan",
         "Alberta",
         "British Columbia",
-        "Yukon",
-        "Manitoba"
+        "Yukon"
       ]
     },
     "autopilot": {
@@ -3544,9 +3586,9 @@
       "key": "2026-09-19",
       "day": "Day 18",
       "date": "Sep 19",
-      "province": "Saskatchewan",
+      "province": "Manitoba",
       "from": "White City, Saskatchewan",
-      "to": "Whitewood, Saskatchewan",
+      "to": "Brandon, Manitoba",
       "plotted": true,
       "km": "581",
       "chargeMinutes": 1187,
