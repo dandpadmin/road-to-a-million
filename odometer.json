@@ -1,7 +1,7 @@
 {
   "odometer": 12946,
   "goal": 1000000,
-  "day": 18,
+  "day": 19,
   "province": "Saskatchewan",
   "route": "Moose Jaw, Saskatchewan",
   "today": 581,
@@ -2397,7 +2397,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-19T23:52:27.114Z",
+  "updatedAt": "2026-09-20T00:20:05.918Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
