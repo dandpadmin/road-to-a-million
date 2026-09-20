@@ -2303,5 +2303,54 @@
     ],
     "kmPerPx": 1.058,
     "plotted": true
+  },
+  {
+    "key": "2026-09-19",
+    "day": 18,
+    "date": "Sep 19",
+    "label": "Day 18 · Sep 19",
+    "km": 159,
+    "from": "White City, Saskatchewan",
+    "to": "Whitewood, Saskatchewan",
+    "corridor": "Whitewood, Saskatchewan",
+    "province": "Saskatchewan",
+    "chargeStops": 1,
+    "chargeMinutes": 18,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.05,
+        0.4474
+      ],
+      [
+        0.95,
+        0.5526
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.05,
+        "y": 0.4474,
+        "town": "White City, Saskatchewan",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.95,
+        "y": 0.5526,
+        "town": "Whitewood, Saskatchewan",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 32,
+            "socEnd": 84
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.2293,
+    "plotted": true
   }
 ]

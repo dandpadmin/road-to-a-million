@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 19,
   "province": "Saskatchewan",
-  "route": "White City, Saskatchewan",
+  "route": "Whitewood, Saskatchewan",
   "today": 581,
   "best": 1333,
   "bestDay": 1,
@@ -15,142 +15,52 @@
   "chargeLifetimeSupercharger": 72,
   "chargeLifetimeOther": 37,
   "dayMap": {
-    "key": "2026-09-18",
-    "day": 17,
-    "date": "Sep 18",
-    "label": "Day 17 · Sep 18",
-    "km": 781,
-    "from": "Calgary, Alberta",
-    "to": "White City, Saskatchewan",
-    "corridor": "White City, Saskatchewan",
+    "key": "2026-09-19",
+    "day": 18,
+    "date": "Sep 19",
+    "label": "Day 18 · Sep 19",
+    "km": 159,
+    "from": "White City, Saskatchewan",
+    "to": "Whitewood, Saskatchewan",
+    "corridor": "Whitewood, Saskatchewan",
     "province": "Saskatchewan",
-    "chargeStops": 6,
-    "chargeMinutes": 885,
+    "chargeStops": 1,
+    "chargeMinutes": 18,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.3974
-      ],
-      [
-        0.1985,
-        0.4202
-      ],
-      [
-        0.3608,
-        0.6026
-      ],
-      [
-        0.3655,
-        0.6026
-      ],
-      [
-        0.6299,
-        0.5342
-      ],
-      [
-        0.8387,
-        0.5114
+        0.4474
       ],
       [
         0.95,
-        0.5
-      ],
-      [
-        0.9454,
-        0.5
-      ],
-      [
-        0.95,
-        0.5
+        0.5526
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.3974,
-        "town": "Calgary, Alberta",
+        "y": 0.4474,
+        "town": "White City, Saskatchewan",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5,
-        "town": "White City, Saskatchewan",
+        "y": 0.5526,
+        "town": "Whitewood, Saskatchewan",
         "kind": "end",
         "sessions": [
           {
-            "network": "AC / destination",
-            "minutes": 62,
-            "socStart": 62,
-            "socEnd": 64
-          },
-          {
-            "network": "AC / destination",
-            "minutes": 746,
-            "socStart": 62,
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 32,
             "socEnd": 84
-          }
-        ]
-      },
-      {
-        "x": 0.1985,
-        "y": 0.4202,
-        "town": "Bassano, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 9,
-            "socStart": 50,
-            "socEnd": 79
-          }
-        ]
-      },
-      {
-        "x": 0.3655,
-        "y": 0.6026,
-        "town": "Medicine Hat, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 20,
-            "socStart": 37,
-            "socEnd": 89
-          }
-        ]
-      },
-      {
-        "x": 0.6299,
-        "y": 0.5342,
-        "town": "Swift Current, Saskatchewan",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 25,
-            "socStart": 22,
-            "socEnd": 87
-          }
-        ]
-      },
-      {
-        "x": 0.8387,
-        "y": 0.5114,
-        "town": "Moose Jaw, Saskatchewan",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 23,
-            "socStart": 34,
-            "socEnd": 91
           }
         ]
       }
     ],
-    "kmPerPx": 1.058,
+    "kmPerPx": 0.2293,
     "plotted": true
   },
   "dayMaps": [
@@ -2458,16 +2368,71 @@
       ],
       "kmPerPx": 1.058,
       "plotted": true
+    },
+    {
+      "key": "2026-09-19",
+      "day": 18,
+      "date": "Sep 19",
+      "label": "Day 18 · Sep 19",
+      "km": 159,
+      "from": "White City, Saskatchewan",
+      "to": "Whitewood, Saskatchewan",
+      "corridor": "Whitewood, Saskatchewan",
+      "province": "Saskatchewan",
+      "chargeStops": 1,
+      "chargeMinutes": 18,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.05,
+          0.4474
+        ],
+        [
+          0.95,
+          0.5526
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.05,
+          "y": 0.4474,
+          "town": "White City, Saskatchewan",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.95,
+          "y": 0.5526,
+          "town": "Whitewood, Saskatchewan",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 18,
+              "socStart": 32,
+              "socEnd": 84
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.2293,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-20T15:28:45.270Z",
+  "updatedAt": "2026-09-20T15:42:58.811Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.3,
+          "wh": 198,
+          "km": 159,
+          "prov": "Saskatchewan"
+        },
         {
           "t": 22.6,
           "wh": 180,
@@ -3574,9 +3539,10 @@
       "key": "2026-09-19",
       "day": "Day 18",
       "date": "Sep 19",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Saskatchewan",
+      "from": "White City, Saskatchewan",
+      "to": "Whitewood, Saskatchewan",
+      "plotted": true,
       "km": "581",
       "chargeMinutes": 36,
       "note": ""
