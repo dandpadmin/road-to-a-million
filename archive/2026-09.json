@@ -2309,10 +2309,10 @@
     "day": 18,
     "date": "Sep 19",
     "label": "Day 18 · Sep 19",
-    "km": 348,
+    "km": 579,
     "from": "White City, Saskatchewan",
-    "to": "Brandon, Manitoba",
-    "corridor": "Brandon, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 2,
     "chargeMinutes": 36,
@@ -2320,42 +2320,46 @@
     "path": [
       [
         0.05,
-        0.3501
+        0.2868
       ],
       [
-        0.4795,
-        0.4001
+        0.3453,
+        0.3209
+      ],
+      [
+        0.6687,
+        0.4915
       ],
       [
         0.95,
-        0.6499
+        0.7132
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.3501,
+        "y": 0.2868,
         "town": "White City, Saskatchewan",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.6499,
-        "town": "Brandon, Manitoba",
+        "y": 0.7132,
+        "town": "Winkler, Manitoba",
         "kind": "end",
         "sessions": [
           {
-            "network": "Supercharger",
-            "minutes": 18,
-            "socStart": 27,
-            "socEnd": 81
+            "network": "AC / destination",
+            "minutes": 1151,
+            "socStart": 14,
+            "socEnd": 48
           }
         ]
       },
       {
-        "x": 0.4795,
-        "y": 0.4001,
+        "x": 0.3453,
+        "y": 0.3209,
         "town": "Whitewood, Saskatchewan",
         "kind": "charge",
         "sessions": [
@@ -2366,9 +2370,23 @@
             "socEnd": 84
           }
         ]
+      },
+      {
+        "x": 0.6687,
+        "y": 0.4915,
+        "town": "Brandon, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 27,
+            "socEnd": 81
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.483,
+    "kmPerPx": 0.7072,
     "plotted": true
   }
 ]
