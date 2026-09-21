@@ -1,5 +1,5 @@
 {
-  "odometer": 13093,
+  "odometer": 13114,
   "goal": 1000000,
   "day": 20,
   "province": "Manitoba",
@@ -2492,7 +2492,7 @@
     }
   ],
   "asOf": "2026-09-21",
-  "updatedAt": "2026-09-21T19:40:46.638Z",
+  "updatedAt": "2026-09-21T19:52:53.069Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
