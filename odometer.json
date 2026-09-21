@@ -1,18 +1,18 @@
 {
-  "odometer": 12991,
+  "odometer": 13033,
   "goal": 1000000,
   "day": 20,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 9,
+  "today": 75,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 592,
-  "chargeSessions": 2,
-  "chargeSupercharger": 0,
+  "avgPerDay": 595,
+  "chargeSessions": 3,
+  "chargeSupercharger": 1,
   "chargeOther": 2,
-  "chargeLifetime": 114,
-  "chargeLifetimeSupercharger": 72,
+  "chargeLifetime": 115,
+  "chargeLifetimeSupercharger": 73,
   "chargeLifetimeOther": 42,
   "dayMap": {
     "key": "2026-09-19",
@@ -2492,7 +2492,7 @@
     }
   ],
   "asOf": "2026-09-21",
-  "updatedAt": "2026-09-21T18:15:46.023Z",
+  "updatedAt": "2026-09-21T18:45:07.901Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3412,24 +3412,24 @@
       ]
     },
     "autopilot": {
-      "km": 10880,
-      "pct": 87.1
+      "km": 10944,
+      "pct": 87.2
     },
     "energy": {
-      "used": 1943,
-      "added": 2142,
-      "overhead": 9.3,
+      "used": 1955,
+      "added": 2152,
+      "overhead": 9.2,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 402
+      "rangeEst": 401
     },
     "cost": {
-      "total": 383.59,
-      "supercharger": 383.59,
+      "total": 387.42,
+      "supercharger": 387.42,
       "other": 0,
       "perKm": 0.031,
-      "sessions": 71,
+      "sessions": 72,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -3510,7 +3510,7 @@
           "n": 1
         }
       ],
-      "sessions": 114,
+      "sessions": 115,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3624,7 +3624,7 @@
     {
       "key": "2026-09-21",
       "label": "D 20",
-      "km": 9
+      "km": 75
     }
   ],
   "log": [
@@ -3635,8 +3635,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "9",
-      "chargeMinutes": 113,
+      "km": "75",
+      "chargeMinutes": 119,
       "note": ""
     },
     {
