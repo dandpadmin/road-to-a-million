@@ -11,9 +11,9 @@
   "chargeSessions": 3,
   "chargeSupercharger": 2,
   "chargeOther": 1,
-  "chargeLifetime": 110,
+  "chargeLifetime": 111,
   "chargeLifetimeSupercharger": 72,
-  "chargeLifetimeOther": 38,
+  "chargeLifetimeOther": 39,
   "dayMap": {
     "key": "2026-09-19",
     "day": 18,
@@ -2492,7 +2492,7 @@
     }
   ],
   "asOf": "2026-09-19",
-  "updatedAt": "2026-09-21T00:19:37.425Z",
+  "updatedAt": "2026-09-21T00:45:54.290Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3423,8 +3423,8 @@
     },
     "energy": {
       "used": 1957,
-      "added": 2108,
-      "overhead": 7.2,
+      "added": 2116,
+      "overhead": 7.5,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3472,8 +3472,8 @@
         },
         {
           "soc": 55,
-          "kw": 90,
-          "n": 11
+          "kw": 82,
+          "n": 12
         },
         {
           "soc": 60,
@@ -3516,7 +3516,7 @@
           "n": 1
         }
       ],
-      "sessions": 110,
+      "sessions": 111,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
