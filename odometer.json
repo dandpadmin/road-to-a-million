@@ -1,15 +1,15 @@
 {
-  "odometer": 12946,
+  "odometer": 12947,
   "goal": 1000000,
   "day": 20,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 581,
+  "today": 1,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 657,
-  "chargeSessions": 3,
-  "chargeSupercharger": 2,
+  "avgPerDay": 622,
+  "chargeSessions": 1,
+  "chargeSupercharger": 0,
   "chargeOther": 1,
   "chargeLifetime": 111,
   "chargeLifetimeSupercharger": 72,
@@ -2491,8 +2491,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-19",
-  "updatedAt": "2026-09-21T00:45:54.290Z",
+  "asOf": "2026-09-20",
+  "updatedAt": "2026-09-21T01:13:41.571Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3621,9 +3621,25 @@
       "key": "2026-09-19",
       "label": "D 18",
       "km": 581
+    },
+    {
+      "key": "2026-09-20",
+      "label": "D 19",
+      "km": 1
     }
   ],
   "log": [
+    {
+      "key": "2026-09-20",
+      "day": "Day 19",
+      "date": "Sep 20",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "1",
+      "chargeMinutes": 448,
+      "note": ""
+    },
     {
       "key": "2026-09-19",
       "day": "Day 18",
@@ -3730,18 +3746,6 @@
       "plotted": true,
       "km": "572",
       "chargeMinutes": 85,
-      "note": ""
-    },
-    {
-      "key": "2026-09-10",
-      "day": "Day 9",
-      "date": "Sep 10",
-      "province": "British Columbia",
-      "from": "Dawson Creek, British Columbia",
-      "to": "Clearwater, British Columbia",
-      "plotted": true,
-      "km": "999",
-      "chargeMinutes": 66,
       "note": ""
     }
   ]
