@@ -1,13 +1,13 @@
 {
-  "odometer": 13213,
+  "odometer": 13215,
   "goal": 1000000,
   "day": 20,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 139,
+  "today": 262,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 599,
+  "avgPerDay": 605,
   "chargeSessions": 3,
   "chargeSupercharger": 1,
   "chargeOther": 2,
@@ -2492,7 +2492,7 @@
     }
   ],
   "asOf": "2026-09-21",
-  "updatedAt": "2026-09-21T20:55:10.218Z",
+  "updatedAt": "2026-09-21T21:13:37.063Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3412,13 +3412,13 @@
       ]
     },
     "autopilot": {
-      "km": 11005,
+      "km": 11112,
       "pct": 87.3
     },
     "energy": {
-      "used": 1965,
+      "used": 1983,
       "added": 2152,
-      "overhead": 8.7,
+      "overhead": 7.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3428,7 +3428,7 @@
       "total": 387.42,
       "supercharger": 387.42,
       "other": 0,
-      "perKm": 0.031,
+      "perKm": 0.03,
       "sessions": 72,
       "currency": "CAD"
     },
@@ -3624,7 +3624,7 @@
     {
       "key": "2026-09-21",
       "label": "D 20",
-      "km": 139
+      "km": 262
     }
   ],
   "log": [
@@ -3635,7 +3635,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "139",
+      "km": "262",
       "chargeMinutes": 119,
       "note": ""
     },
