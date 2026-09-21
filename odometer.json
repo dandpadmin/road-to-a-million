@@ -1,19 +1,19 @@
 {
-  "odometer": 12953,
+  "odometer": 12957,
   "goal": 1000000,
   "day": 20,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 7,
+  "today": 0,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 623,
-  "chargeSessions": 1,
+  "avgPerDay": 592,
+  "chargeSessions": 0,
   "chargeSupercharger": 0,
-  "chargeOther": 1,
-  "chargeLifetime": 111,
+  "chargeOther": 0,
+  "chargeLifetime": 112,
   "chargeLifetimeSupercharger": 72,
-  "chargeLifetimeOther": 39,
+  "chargeLifetimeOther": 40,
   "dayMap": {
     "key": "2026-09-19",
     "day": 18,
@@ -2491,8 +2491,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-20",
-  "updatedAt": "2026-09-21T14:42:45.834Z",
+  "asOf": "2026-09-21",
+  "updatedAt": "2026-09-21T14:56:26.238Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3423,8 +3423,8 @@
     },
     "energy": {
       "used": 1958,
-      "added": 2116,
-      "overhead": 7.5,
+      "added": 2129,
+      "overhead": 8,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3487,8 +3487,8 @@
         },
         {
           "soc": 70,
-          "kw": 85,
-          "n": 9
+          "kw": 76,
+          "n": 10
         },
         {
           "soc": 75,
@@ -3516,7 +3516,7 @@
           "n": 1
         }
       ],
-      "sessions": 111,
+      "sessions": 112,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3626,9 +3626,25 @@
       "key": "2026-09-20",
       "label": "D 19",
       "km": 7
+    },
+    {
+      "key": "2026-09-21",
+      "label": "D 20",
+      "km": 0
     }
   ],
   "log": [
+    {
+      "key": "2026-09-21",
+      "day": "Day 20",
+      "date": "Sep 21",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "0",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-20",
       "day": "Day 19",
@@ -3637,7 +3653,7 @@
       "from": "—",
       "to": "—",
       "km": "7",
-      "chargeMinutes": 448,
+      "chargeMinutes": 1157,
       "note": ""
     },
     {
@@ -3734,18 +3750,6 @@
       "plotted": true,
       "km": "80",
       "chargeMinutes": 5,
-      "note": ""
-    },
-    {
-      "key": "2026-09-11",
-      "day": "Day 10",
-      "date": "Sep 11",
-      "province": "British Columbia",
-      "from": "Clearwater, British Columbia",
-      "to": "Squamish, British Columbia",
-      "plotted": true,
-      "km": "572",
-      "chargeMinutes": 85,
       "note": ""
     }
   ]
