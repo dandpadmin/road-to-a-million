@@ -1,10 +1,10 @@
 {
-  "odometer": 13237,
+  "odometer": 13248,
   "goal": 1000000,
   "day": 21,
   "province": "Manitoba",
-  "route": "Winkler, Manitoba",
-  "today": 11,
+  "route": "Morris, Manitoba",
+  "today": 20,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 577,
@@ -19,32 +19,36 @@
     "day": 20,
     "date": "Sep 21",
     "label": "Day 20 · Sep 21",
-    "km": 9,
+    "km": 75,
     "from": "Winkler, Manitoba",
-    "to": "Winkler, Manitoba",
-    "corridor": "Winkler, Manitoba",
+    "to": "Morris, Manitoba",
+    "corridor": "Morris, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 113,
+    "chargeStops": 3,
+    "chargeMinutes": 119,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3121,
-        0.5
+        0.05,
+        0.7699
       ],
       [
-        0.6879,
-        0.5
+        0.125,
+        0.7699
       ],
       [
-        0.3121,
-        0.5
+        0.05,
+        0.7699
+      ],
+      [
+        0.95,
+        0.2301
       ]
     ],
     "stops": [
       {
-        "x": 0.3121,
-        "y": 0.5,
+        "x": 0.05,
+        "y": 0.7699,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": [
@@ -63,21 +67,33 @@
         ]
       },
       {
-        "x": 0.6879,
-        "y": 0.5,
+        "x": 0.95,
+        "y": 0.2301,
         "town": "Morris, Manitoba",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
             "minutes": 6,
             "socStart": 78,
             "socEnd": 93
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 44,
+            "socEnd": 68
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 1053,
+            "socStart": 68,
+            "socEnd": 100
           }
         ]
       }
     ],
-    "kmPerPx": 0.0134,
+    "kmPerPx": 0.0671,
     "plotted": true
   },
   "dayMaps": [
@@ -2528,32 +2544,36 @@
       "day": 20,
       "date": "Sep 21",
       "label": "Day 20 · Sep 21",
-      "km": 9,
+      "km": 75,
       "from": "Winkler, Manitoba",
-      "to": "Winkler, Manitoba",
-      "corridor": "Winkler, Manitoba",
+      "to": "Morris, Manitoba",
+      "corridor": "Morris, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 2,
-      "chargeMinutes": 113,
+      "chargeStops": 3,
+      "chargeMinutes": 119,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3121,
-          0.5
+          0.05,
+          0.7699
         ],
         [
-          0.6879,
-          0.5
+          0.125,
+          0.7699
         ],
         [
-          0.3121,
-          0.5
+          0.05,
+          0.7699
+        ],
+        [
+          0.95,
+          0.2301
         ]
       ],
       "stops": [
         {
-          "x": 0.3121,
-          "y": 0.5,
+          "x": 0.05,
+          "y": 0.7699,
           "town": "Winkler, Manitoba",
           "kind": "start",
           "sessions": [
@@ -2572,32 +2592,50 @@
           ]
         },
         {
-          "x": 0.6879,
-          "y": 0.5,
+          "x": 0.95,
+          "y": 0.2301,
           "town": "Morris, Manitoba",
-          "kind": "charge",
+          "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
               "minutes": 6,
               "socStart": 78,
               "socEnd": 93
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 7,
+              "socStart": 44,
+              "socEnd": 68
+            },
+            {
+              "network": "AC / destination",
+              "minutes": 1053,
+              "socStart": 68,
+              "socEnd": 100
             }
           ]
         }
       ],
-      "kmPerPx": 0.0134,
+      "kmPerPx": 0.0671,
       "plotted": true
     }
   ],
   "asOf": "2026-09-22",
-  "updatedAt": "2026-09-22T18:17:26.339Z",
+  "updatedAt": "2026-09-22T18:44:08.733Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 19.2,
+          "wh": 189,
+          "km": 65,
+          "prov": "Manitoba"
+        },
         {
           "t": 19.5,
           "wh": 172,
@@ -3505,7 +3543,7 @@
       ]
     },
     "autopilot": {
-      "km": 11116,
+      "km": 11119,
       "pct": 87.3
     },
     "energy": {
@@ -3722,7 +3760,7 @@
     {
       "key": "2026-09-22",
       "label": "D 21",
-      "km": 11
+      "km": 20
     }
   ],
   "log": [
@@ -3733,7 +3771,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "11",
+      "km": "20",
       "chargeMinutes": 0,
       "note": ""
     },
@@ -3743,7 +3781,7 @@
       "date": "Sep 21",
       "province": "Manitoba",
       "from": "Winkler, Manitoba",
-      "to": "Winkler, Manitoba",
+      "to": "Morris, Manitoba",
       "plotted": true,
       "km": "272",
       "chargeMinutes": 1179,
