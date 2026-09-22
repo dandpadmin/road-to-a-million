@@ -2451,8 +2451,8 @@
     "to": "Winnipeg, Manitoba",
     "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 4,
-    "chargeMinutes": 126,
+    "chargeStops": 5,
+    "chargeMinutes": 1179,
     "note": "Town level · delayed 24h",
     "path": [
       [

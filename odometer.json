@@ -24,8 +24,8 @@
     "to": "Winnipeg, Manitoba",
     "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 4,
-    "chargeMinutes": 126,
+    "chargeStops": 5,
+    "chargeMinutes": 1179,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -2569,8 +2569,8 @@
       "to": "Winnipeg, Manitoba",
       "corridor": "Winnipeg, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 4,
-      "chargeMinutes": 126,
+      "chargeStops": 5,
+      "chargeMinutes": 1179,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2663,7 +2663,7 @@
     }
   ],
   "asOf": "2026-09-22",
-  "updatedAt": "2026-09-22T23:11:51.226Z",
+  "updatedAt": "2026-09-22T23:26:46.028Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
