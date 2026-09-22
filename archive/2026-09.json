@@ -2451,8 +2451,8 @@
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 2,
+    "chargeMinutes": 113,
     "note": "Town level · delayed 24h",
     "path": [
       [

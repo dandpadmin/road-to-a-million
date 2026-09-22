@@ -24,8 +24,8 @@
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 2,
+    "chargeMinutes": 113,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -2529,8 +2529,8 @@
       "to": "Winkler, Manitoba",
       "corridor": "Winkler, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 2,
+      "chargeMinutes": 113,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2583,7 +2583,7 @@
     }
   ],
   "asOf": "2026-09-21",
-  "updatedAt": "2026-09-22T14:56:03.901Z",
+  "updatedAt": "2026-09-22T15:15:47.107Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
