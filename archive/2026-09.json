@@ -2446,40 +2446,44 @@
     "day": 20,
     "date": "Sep 21",
     "label": "Day 20 · Sep 21",
-    "km": 139,
+    "km": 262,
     "from": "Winkler, Manitoba",
-    "to": "Winkler, Manitoba",
-    "corridor": "Winkler, Manitoba",
+    "to": "Winnipeg, Manitoba",
+    "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 119,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.05,
-        0.7699
+        0.3002,
+        0.95
       ],
       [
-        0.125,
-        0.7699
+        0.3268,
+        0.95
       ],
       [
-        0.05,
-        0.7699
+        0.3002,
+        0.95
       ],
       [
-        0.95,
-        0.2301
+        0.6199,
+        0.7571
       ],
       [
-        0.05,
-        0.7699
+        0.3002,
+        0.95
+      ],
+      [
+        0.6998,
+        0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.05,
-        "y": 0.7699,
+        "x": 0.3002,
+        "y": 0.95,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": [
@@ -2498,17 +2502,11 @@
         ]
       },
       {
-        "x": 0.95,
-        "y": 0.2301,
-        "town": "Morris, Manitoba",
-        "kind": "charge",
+        "x": 0.6998,
+        "y": 0.05,
+        "town": "Winnipeg, Manitoba",
+        "kind": "end",
         "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 6,
-            "socStart": 78,
-            "socEnd": 93
-          },
           {
             "network": "Supercharger",
             "minutes": 7,
@@ -2522,9 +2520,23 @@
             "socEnd": 100
           }
         ]
+      },
+      {
+        "x": 0.6199,
+        "y": 0.7571,
+        "town": "Morris, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 78,
+            "socEnd": 93
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.0671,
+    "kmPerPx": 0.1877,
     "plotted": true
   }
 ]
