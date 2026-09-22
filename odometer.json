@@ -15,89 +15,21 @@
   "chargeLifetimeSupercharger": 74,
   "chargeLifetimeOther": 42,
   "dayMap": {
-    "key": "2026-09-19",
-    "day": 18,
-    "date": "Sep 19",
-    "label": "Day 18 · Sep 19",
-    "km": 581,
-    "from": "White City, Saskatchewan",
+    "key": "2026-09-20",
+    "day": 19,
+    "date": "Sep 20",
+    "label": "Day 19 · Sep 20",
+    "km": 1,
+    "from": "Winkler, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 1187,
+    "chargeStops": 1,
+    "chargeMinutes": 448,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.05,
-        0.2868
-      ],
-      [
-        0.3453,
-        0.3209
-      ],
-      [
-        0.6687,
-        0.4915
-      ],
-      [
-        0.95,
-        0.7132
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.05,
-        "y": 0.2868,
-        "town": "White City, Saskatchewan",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.95,
-        "y": 0.7132,
-        "town": "Winkler, Manitoba",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 1151,
-            "socStart": 14,
-            "socEnd": 48
-          }
-        ]
-      },
-      {
-        "x": 0.3453,
-        "y": 0.3209,
-        "town": "Whitewood, Saskatchewan",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 18,
-            "socStart": 32,
-            "socEnd": 84
-          }
-        ]
-      },
-      {
-        "x": 0.6687,
-        "y": 0.4915,
-        "town": "Brandon, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 18,
-            "socStart": 27,
-            "socEnd": 81
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 0.7072,
-    "plotted": true
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
     {
@@ -2489,10 +2421,27 @@
       ],
       "kmPerPx": 0.7072,
       "plotted": true
+    },
+    {
+      "key": "2026-09-20",
+      "day": 19,
+      "date": "Sep 20",
+      "label": "Day 19 · Sep 20",
+      "km": 1,
+      "from": "Winkler, Manitoba",
+      "to": "Winkler, Manitoba",
+      "corridor": "Winkler, Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 1,
+      "chargeMinutes": 448,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
   "asOf": "2026-09-21",
-  "updatedAt": "2026-09-22T00:45:34.834Z",
+  "updatedAt": "2026-09-22T01:11:44.422Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3637,9 +3586,9 @@
       "key": "2026-09-20",
       "day": "Day 19",
       "date": "Sep 20",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Winkler, Manitoba",
+      "to": "Winkler, Manitoba",
       "km": "7",
       "chargeMinutes": 1157,
       "note": ""
