@@ -8,12 +8,12 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 605,
-  "chargeSessions": 4,
+  "chargeSessions": 5,
   "chargeSupercharger": 2,
-  "chargeOther": 2,
-  "chargeLifetime": 116,
+  "chargeOther": 3,
+  "chargeLifetime": 117,
   "chargeLifetimeSupercharger": 74,
-  "chargeLifetimeOther": 42,
+  "chargeLifetimeOther": 43,
   "dayMap": {
     "key": "2026-09-21",
     "day": 20,
@@ -2583,7 +2583,7 @@
     }
   ],
   "asOf": "2026-09-21",
-  "updatedAt": "2026-09-22T16:32:48.198Z",
+  "updatedAt": "2026-09-22T16:54:01.475Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3502,8 +3502,8 @@
     },
     "energy": {
       "used": 1983,
-      "added": 2166,
-      "overhead": 8.4,
+      "added": 2186,
+      "overhead": 9.2,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3581,8 +3581,8 @@
         },
         {
           "soc": 85,
-          "kw": 38,
-          "n": 6
+          "kw": 33,
+          "n": 7
         },
         {
           "soc": 90,
@@ -3595,7 +3595,7 @@
           "n": 1
         }
       ],
-      "sessions": 116,
+      "sessions": 117,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -3722,7 +3722,7 @@
       "to": "Winkler, Manitoba",
       "plotted": true,
       "km": "272",
-      "chargeMinutes": 126,
+      "chargeMinutes": 1179,
       "note": ""
     },
     {
