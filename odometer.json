@@ -1,13 +1,13 @@
 {
-  "odometer": 13228,
+  "odometer": 13232,
   "goal": 1000000,
   "day": 21,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 1,
+  "today": 4,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 576,
+  "avgPerDay": 577,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -2591,7 +2591,7 @@
     }
   ],
   "asOf": "2026-09-22",
-  "updatedAt": "2026-09-22T17:29:11.970Z",
+  "updatedAt": "2026-09-22T17:43:10.641Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3722,7 +3722,7 @@
     {
       "key": "2026-09-22",
       "label": "D 21",
-      "km": 1
+      "km": 4
     }
   ],
   "log": [
@@ -3733,7 +3733,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "1",
+      "km": "4",
       "chargeMinutes": 0,
       "note": ""
     },
