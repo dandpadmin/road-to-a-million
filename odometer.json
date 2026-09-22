@@ -1,5 +1,5 @@
 {
-  "odometer": 13652,
+  "odometer": 13674,
   "goal": 1000000,
   "day": 21,
   "province": "Manitoba",
@@ -19,7 +19,7 @@
     "day": 20,
     "date": "Sep 21",
     "label": "Day 20 · Sep 21",
-    "km": 267,
+    "km": 270,
     "from": "Winkler, Manitoba",
     "to": "Winnipeg, Manitoba",
     "corridor": "Winnipeg, Manitoba",
@@ -29,33 +29,37 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3002,
+        0.2868,
         0.95
       ],
       [
-        0.3268,
+        0.3135,
         0.95
       ],
       [
-        0.3002,
+        0.2868,
         0.95
       ],
       [
-        0.6199,
+        0.6066,
         0.7571
       ],
       [
-        0.3002,
+        0.2868,
         0.95
       ],
       [
-        0.6998,
+        0.6865,
+        0.05
+      ],
+      [
+        0.7132,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.3002,
+        "x": 0.2868,
         "y": 0.95,
         "town": "Winkler, Manitoba",
         "kind": "start",
@@ -75,7 +79,7 @@
         ]
       },
       {
-        "x": 0.6998,
+        "x": 0.7132,
         "y": 0.05,
         "town": "Winnipeg, Manitoba",
         "kind": "end",
@@ -95,7 +99,7 @@
         ]
       },
       {
-        "x": 0.6199,
+        "x": 0.6066,
         "y": 0.7571,
         "town": "Morris, Manitoba",
         "kind": "charge",
@@ -2560,7 +2564,7 @@
       "day": 20,
       "date": "Sep 21",
       "label": "Day 20 · Sep 21",
-      "km": 267,
+      "km": 270,
       "from": "Winkler, Manitoba",
       "to": "Winnipeg, Manitoba",
       "corridor": "Winnipeg, Manitoba",
@@ -2570,33 +2574,37 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3002,
+          0.2868,
           0.95
         ],
         [
-          0.3268,
+          0.3135,
           0.95
         ],
         [
-          0.3002,
+          0.2868,
           0.95
         ],
         [
-          0.6199,
+          0.6066,
           0.7571
         ],
         [
-          0.3002,
+          0.2868,
           0.95
         ],
         [
-          0.6998,
+          0.6865,
+          0.05
+        ],
+        [
+          0.7132,
           0.05
         ]
       ],
       "stops": [
         {
-          "x": 0.3002,
+          "x": 0.2868,
           "y": 0.95,
           "town": "Winkler, Manitoba",
           "kind": "start",
@@ -2616,7 +2624,7 @@
           ]
         },
         {
-          "x": 0.6998,
+          "x": 0.7132,
           "y": 0.05,
           "town": "Winnipeg, Manitoba",
           "kind": "end",
@@ -2636,7 +2644,7 @@
           ]
         },
         {
-          "x": 0.6199,
+          "x": 0.6066,
           "y": 0.7571,
           "town": "Morris, Manitoba",
           "kind": "charge",
@@ -2655,7 +2663,7 @@
     }
   ],
   "asOf": "2026-09-22",
-  "updatedAt": "2026-09-22T22:43:29.565Z",
+  "updatedAt": "2026-09-22T22:55:06.525Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
