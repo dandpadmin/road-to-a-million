@@ -2446,10 +2446,10 @@
     "day": 20,
     "date": "Sep 21",
     "label": "Day 20 · Sep 21",
-    "km": 75,
+    "km": 139,
     "from": "Winkler, Manitoba",
-    "to": "Morris, Manitoba",
-    "corridor": "Morris, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 119,
@@ -2470,6 +2470,10 @@
       [
         0.95,
         0.2301
+      ],
+      [
+        0.05,
+        0.7699
       ]
     ],
     "stops": [
@@ -2497,7 +2501,7 @@
         "x": 0.95,
         "y": 0.2301,
         "town": "Morris, Manitoba",
-        "kind": "end",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
