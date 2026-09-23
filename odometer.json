@@ -1,13 +1,13 @@
 {
-  "odometer": 13914,
+  "odometer": 13943,
   "goal": 1000000,
   "day": 22,
   "province": "Manitoba",
   "route": "Winnipeg, Manitoba",
-  "today": 218,
+  "today": 247,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 581,
+  "avgPerDay": 583,
   "chargeSessions": 1,
   "chargeSupercharger": 0,
   "chargeOther": 1,
@@ -19,7 +19,7 @@
     "day": 21,
     "date": "Sep 22",
     "label": "Day 21 · Sep 22",
-    "km": 10,
+    "km": 11,
     "from": "Winnipeg, Manitoba",
     "to": "Winnipeg, Manitoba",
     "corridor": "Winnipeg, Manitoba",
@@ -2603,7 +2603,7 @@
       "day": 21,
       "date": "Sep 22",
       "label": "Day 21 · Sep 22",
-      "km": 10,
+      "km": 11,
       "from": "Winnipeg, Manitoba",
       "to": "Winnipeg, Manitoba",
       "corridor": "Winnipeg, Manitoba",
@@ -2639,7 +2639,7 @@
     }
   ],
   "asOf": "2026-09-23",
-  "updatedAt": "2026-09-23T17:52:43.191Z",
+  "updatedAt": "2026-09-23T18:17:18.890Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3539,12 +3539,6 @@
           "wh": 103,
           "km": 27,
           "prov": "Manitoba"
-        },
-        {
-          "t": 18.2,
-          "wh": 121,
-          "km": 6,
-          "prov": "Manitoba"
         }
       ],
       "median": 147,
@@ -3559,13 +3553,13 @@
       ]
     },
     "autopilot": {
-      "km": 11742,
-      "pct": 88.2
+      "km": 11770,
+      "pct": 88.3
     },
     "energy": {
-      "used": 2071,
+      "used": 2074,
       "added": 2254,
-      "overhead": 8.1,
+      "overhead": 8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3781,7 +3775,7 @@
     {
       "key": "2026-09-23",
       "label": "D 22",
-      "km": 218
+      "km": 247
     }
   ],
   "log": [
@@ -3792,7 +3786,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "218",
+      "km": "247",
       "chargeMinutes": 30,
       "note": ""
     },
