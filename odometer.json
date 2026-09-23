@@ -1,13 +1,13 @@
 {
-  "odometer": 14117,
+  "odometer": 14133,
   "goal": 1000000,
   "day": 22,
   "province": "Manitoba",
   "route": "Fairford, Manitoba",
-  "today": 329,
+  "today": 429,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 586,
+  "avgPerDay": 591,
   "chargeSessions": 2,
   "chargeSupercharger": 0,
   "chargeOther": 2,
@@ -2683,7 +2683,7 @@
     }
   ],
   "asOf": "2026-09-23",
-  "updatedAt": "2026-09-23T21:13:56.143Z",
+  "updatedAt": "2026-09-23T21:30:25.035Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3609,13 +3609,13 @@
       ]
     },
     "autopilot": {
-      "km": 11847,
-      "pct": 88.4
+      "km": 11860,
+      "pct": 87.8
     },
     "energy": {
-      "used": 2084,
+      "used": 2100,
       "added": 2298,
-      "overhead": 9.3,
+      "overhead": 8.6,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3831,7 +3831,7 @@
     {
       "key": "2026-09-23",
       "label": "D 22",
-      "km": 329
+      "km": 429
     }
   ],
   "log": [
@@ -3842,7 +3842,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "329",
+      "km": "429",
       "chargeMinutes": 91,
       "note": ""
     },
