@@ -2542,5 +2542,40 @@
     ],
     "kmPerPx": 0.1877,
     "plotted": true
+  },
+  {
+    "key": "2026-09-22",
+    "day": 21,
+    "date": "Sep 22",
+    "label": "Day 21 · Sep 22",
+    "km": 4,
+    "from": "Winnipeg, Manitoba",
+    "to": "Winnipeg, Manitoba",
+    "corridor": "Winnipeg, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.3148,
+        0.5
+      ],
+      [
+        0.6852,
+        0.5
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.3148,
+        "y": 0.5,
+        "town": "Winnipeg, Manitoba",
+        "kind": "start",
+        "sessions": []
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true
   }
 ]

@@ -15,105 +15,38 @@
   "chargeLifetimeSupercharger": 74,
   "chargeLifetimeOther": 46,
   "dayMap": {
-    "key": "2026-09-21",
-    "day": 20,
-    "date": "Sep 21",
-    "label": "Day 20 · Sep 21",
-    "km": 272,
-    "from": "Winkler, Manitoba",
+    "key": "2026-09-22",
+    "day": 21,
+    "date": "Sep 22",
+    "label": "Day 21 · Sep 22",
+    "km": 4,
+    "from": "Winnipeg, Manitoba",
     "to": "Winnipeg, Manitoba",
     "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 5,
-    "chargeMinutes": 1179,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.2868,
-        0.95
+        0.3148,
+        0.5
       ],
       [
-        0.3135,
-        0.95
-      ],
-      [
-        0.2868,
-        0.95
-      ],
-      [
-        0.6066,
-        0.7571
-      ],
-      [
-        0.2868,
-        0.95
-      ],
-      [
-        0.6865,
-        0.05
-      ],
-      [
-        0.7132,
-        0.05
+        0.6852,
+        0.5
       ]
     ],
     "stops": [
       {
-        "x": 0.2868,
-        "y": 0.95,
-        "town": "Winkler, Manitoba",
-        "kind": "start",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 9,
-            "socStart": 79,
-            "socEnd": 81
-          },
-          {
-            "network": "AC / destination",
-            "minutes": 104,
-            "socStart": 81,
-            "socEnd": 100
-          }
-        ]
-      },
-      {
-        "x": 0.7132,
-        "y": 0.05,
+        "x": 0.3148,
+        "y": 0.5,
         "town": "Winnipeg, Manitoba",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 44,
-            "socEnd": 68
-          },
-          {
-            "network": "AC / destination",
-            "minutes": 1053,
-            "socStart": 68,
-            "socEnd": 100
-          }
-        ]
-      },
-      {
-        "x": 0.6066,
-        "y": 0.7571,
-        "town": "Morris, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 6,
-            "socStart": 78,
-            "socEnd": 93
-          }
-        ]
+        "kind": "start",
+        "sessions": []
       }
     ],
-    "kmPerPx": 0.1877,
+    "kmPerPx": 0.0134,
     "plotted": true
   },
   "dayMaps": [
@@ -2660,10 +2593,45 @@
       ],
       "kmPerPx": 0.1877,
       "plotted": true
+    },
+    {
+      "key": "2026-09-22",
+      "day": 21,
+      "date": "Sep 22",
+      "label": "Day 21 · Sep 22",
+      "km": 4,
+      "from": "Winnipeg, Manitoba",
+      "to": "Winnipeg, Manitoba",
+      "corridor": "Winnipeg, Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.3148,
+          0.5
+        ],
+        [
+          0.6852,
+          0.5
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.3148,
+          "y": 0.5,
+          "town": "Winnipeg, Manitoba",
+          "kind": "start",
+          "sessions": []
+        }
+      ],
+      "kmPerPx": 0.0134,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-23",
-  "updatedAt": "2026-09-23T17:16:01.348Z",
+  "updatedAt": "2026-09-23T17:40:35.230Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3563,15 +3531,9 @@
           "wh": 121,
           "km": 6,
           "prov": "Manitoba"
-        },
-        {
-          "t": 25.2,
-          "wh": 148,
-          "km": 36,
-          "prov": "Manitoba"
         }
       ],
-      "median": 148,
+      "median": 147,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -3584,12 +3546,12 @@
     },
     "autopilot": {
       "km": 11742,
-      "pct": 88
+      "pct": 88.2
     },
     "energy": {
-      "used": 2077,
+      "used": 2071,
       "added": 2251,
-      "overhead": 7.7,
+      "overhead": 8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3599,7 +3561,7 @@
       "total": 393.2,
       "supercharger": 393.2,
       "other": 0,
-      "perKm": 0.029,
+      "perKm": 0.03,
       "sessions": 73,
       "currency": "CAD"
     },
@@ -3824,9 +3786,10 @@
       "key": "2026-09-22",
       "day": "Day 21",
       "date": "Sep 22",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Winnipeg, Manitoba",
+      "to": "Winnipeg, Manitoba",
+      "plotted": true,
       "km": "470",
       "chargeMinutes": 907,
       "note": ""
