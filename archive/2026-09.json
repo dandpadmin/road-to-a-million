@@ -2548,49 +2548,73 @@
     "day": 21,
     "date": "Sep 22",
     "label": "Day 21 · Sep 22",
-    "km": 253,
+    "km": 448,
     "from": "Winnipeg, Manitoba",
-    "to": "Fairford, Manitoba",
-    "corridor": "Fairford, Manitoba",
+    "to": "Cormorant, Manitoba",
+    "corridor": "Cormorant, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 1,
-    "chargeMinutes": 28,
+    "chargeStops": 2,
+    "chargeMinutes": 66,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.656,
-        0.9243
+        0.6112,
+        0.9364
       ],
       [
-        0.6664,
-        0.9243
+        0.6166,
+        0.9364
       ],
       [
-        0.656,
+        0.6112,
         0.95
       ],
       [
-        0.6352,
+        0.6003,
         0.95
       ],
       [
-        0.3336,
+        0.4431,
+        0.4727
+      ],
+      [
+        0.3834,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.656,
-        "y": 0.9243,
+        "x": 0.6112,
+        "y": 0.9364,
         "town": "Winnipeg, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.3336,
+        "x": 0.3834,
         "y": 0.05,
-        "town": "Fairford, Manitoba",
+        "town": "Cormorant, Manitoba",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 38,
+            "socStart": 17,
+            "socEnd": 75
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 841,
+            "socStart": 72,
+            "socEnd": 86
+          }
+        ]
+      },
+      {
+        "x": 0.4431,
+        "y": 0.4727,
+        "town": "Fairford, Manitoba",
+        "kind": "charge",
         "sessions": [
           {
             "network": "DC fast",
@@ -2601,7 +2625,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.4692,
+    "kmPerPx": 0.8848,
     "plotted": true
   }
 ]
