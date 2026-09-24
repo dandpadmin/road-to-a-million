@@ -2645,48 +2645,39 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 218,
+    "km": 247,
     "from": "Manitoba",
-    "to": "Wabowden, Manitoba",
-    "corridor": "Wabowden, Manitoba",
+    "to": "Manitoba",
+    "corridor": "Manitoba",
     "province": "Manitoba",
     "chargeStops": 1,
     "chargeMinutes": 30,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4256,
+        0.4159,
         0.95
       ],
       [
-        0.4455,
-        0.6853
+        0.4336,
+        0.7132
       ],
       [
-        0.5744,
+        0.5487,
+        0.1447
+      ],
+      [
+        0.5841,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4256,
+        "x": 0.4159,
         "y": 0.95,
         "town": "Manitoba",
         "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.5744,
-        "y": 0.05,
-        "town": "Wabowden, Manitoba",
-        "kind": "end",
         "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 30,
-            "socStart": 30,
-            "socEnd": 35
-          },
           {
             "network": "AC / destination",
             "minutes": 88,
@@ -2700,9 +2691,23 @@
             "socEnd": 83
           }
         ]
+      },
+      {
+        "x": 0.5487,
+        "y": 0.1447,
+        "town": "Wabowden, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 30,
+            "socStart": 30,
+            "socEnd": 35
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.4558,
+    "kmPerPx": 0.5094,
     "plotted": true
   }
 ]
