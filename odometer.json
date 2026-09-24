@@ -1,9 +1,9 @@
 {
-  "odometer": 14939,
+  "odometer": 14969,
   "goal": 1000000,
   "day": 23,
   "province": "Manitoba",
-  "route": "Manitoba",
+  "route": "Thompson, Manitoba",
   "today": 450,
   "best": 1333,
   "bestDay": 1,
@@ -19,13 +19,13 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 464,
+    "km": 524,
     "from": "Manitoba",
-    "to": "Manitoba",
-    "corridor": "Manitoba",
+    "to": "Thompson, Manitoba",
+    "corridor": "Thompson, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 91,
+    "chargeStops": 3,
+    "chargeMinutes": 138,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -55,6 +55,10 @@
       [
         0.5031,
         0.05
+      ],
+      [
+        0.5956,
+        0.1167
       ]
     ],
     "stops": [
@@ -79,24 +83,10 @@
         ]
       },
       {
-        "x": 0.4969,
-        "y": 0.3833,
-        "town": "Wabowden, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 30,
-            "socStart": 30,
-            "socEnd": 35
-          }
-        ]
-      },
-      {
         "x": 0.5956,
         "y": 0.1167,
         "town": "Thompson, Manitoba",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "DC fast",
@@ -109,6 +99,20 @@
             "minutes": 47,
             "socStart": 29,
             "socEnd": 84
+          }
+        ]
+      },
+      {
+        "x": 0.4969,
+        "y": 0.3833,
+        "town": "Wabowden, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 30,
+            "socStart": 30,
+            "socEnd": 35
           }
         ]
       }
@@ -2763,13 +2767,13 @@
       "day": 22,
       "date": "Sep 23",
       "label": "Day 22 · Sep 23",
-      "km": 464,
+      "km": 524,
       "from": "Manitoba",
-      "to": "Manitoba",
-      "corridor": "Manitoba",
+      "to": "Thompson, Manitoba",
+      "corridor": "Thompson, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 2,
-      "chargeMinutes": 91,
+      "chargeStops": 3,
+      "chargeMinutes": 138,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2799,6 +2803,10 @@
         [
           0.5031,
           0.05
+        ],
+        [
+          0.5956,
+          0.1167
         ]
       ],
       "stops": [
@@ -2823,24 +2831,10 @@
           ]
         },
         {
-          "x": 0.4969,
-          "y": 0.3833,
-          "town": "Wabowden, Manitoba",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "AC / destination",
-              "minutes": 30,
-              "socStart": 30,
-              "socEnd": 35
-            }
-          ]
-        },
-        {
           "x": 0.5956,
           "y": 0.1167,
           "town": "Thompson, Manitoba",
-          "kind": "charge",
+          "kind": "end",
           "sessions": [
             {
               "network": "DC fast",
@@ -2855,6 +2849,20 @@
               "socEnd": 84
             }
           ]
+        },
+        {
+          "x": 0.4969,
+          "y": 0.3833,
+          "town": "Wabowden, Manitoba",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 30,
+              "socStart": 30,
+              "socEnd": 35
+            }
+          ]
         }
       ],
       "kmPerPx": 0.7239,
@@ -2862,13 +2870,19 @@
     }
   ],
   "asOf": "2026-09-24",
-  "updatedAt": "2026-09-24T22:13:43.449Z",
+  "updatedAt": "2026-09-24T22:30:25.825Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 22,
+          "wh": 157,
+          "km": 60,
+          "prov": "Manitoba"
+        },
         {
           "t": 22,
           "wh": 169,
@@ -4076,7 +4090,7 @@
       "date": "Sep 23",
       "province": "Manitoba",
       "from": "Manitoba",
-      "to": "Manitoba",
+      "to": "Thompson, Manitoba",
       "plotted": true,
       "km": "605",
       "chargeMinutes": 914,
