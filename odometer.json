@@ -1,13 +1,13 @@
 {
-  "odometer": 14538,
+  "odometer": 14557,
   "goal": 1000000,
   "day": 23,
   "province": "Manitoba",
-  "route": "Moose Lake 31J, Manitoba",
-  "today": 185,
+  "route": "Wabowden, Manitoba",
+  "today": 255,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 581,
+  "avgPerDay": 584,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -19,41 +19,64 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 61,
+    "km": 218,
     "from": "Manitoba",
-    "to": "Moose Lake 31J, Manitoba",
-    "corridor": "Moose Lake 31J, Manitoba",
+    "to": "Wabowden, Manitoba",
+    "corridor": "Wabowden, Manitoba",
     "province": "Manitoba",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4658,
+        0.4256,
         0.95
       ],
       [
-        0.5342,
+        0.4455,
+        0.6853
+      ],
+      [
+        0.5744,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4658,
+        "x": 0.4256,
         "y": 0.95,
         "town": "Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5342,
+        "x": 0.5744,
         "y": 0.05,
-        "town": "Moose Lake 31J, Manitoba",
+        "town": "Wabowden, Manitoba",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 30,
+            "socStart": 30,
+            "socEnd": 35
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 88,
+            "socStart": 61,
+            "socEnd": 63
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 688,
+            "socStart": 63,
+            "socEnd": 83
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.1341,
+    "kmPerPx": 0.4558,
     "plotted": true
   },
   "dayMaps": [
@@ -2703,52 +2726,81 @@
       "day": 22,
       "date": "Sep 23",
       "label": "Day 22 · Sep 23",
-      "km": 61,
+      "km": 218,
       "from": "Manitoba",
-      "to": "Moose Lake 31J, Manitoba",
-      "corridor": "Moose Lake 31J, Manitoba",
+      "to": "Wabowden, Manitoba",
+      "corridor": "Wabowden, Manitoba",
       "province": "Manitoba",
       "chargeStops": 0,
       "chargeMinutes": 0,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4658,
+          0.4256,
           0.95
         ],
         [
-          0.5342,
+          0.4455,
+          0.6853
+        ],
+        [
+          0.5744,
           0.05
         ]
       ],
       "stops": [
         {
-          "x": 0.4658,
+          "x": 0.4256,
           "y": 0.95,
           "town": "Manitoba",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.5342,
+          "x": 0.5744,
           "y": 0.05,
-          "town": "Moose Lake 31J, Manitoba",
+          "town": "Wabowden, Manitoba",
           "kind": "end",
-          "sessions": []
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 30,
+              "socStart": 30,
+              "socEnd": 35
+            },
+            {
+              "network": "AC / destination",
+              "minutes": 88,
+              "socStart": 61,
+              "socEnd": 63
+            },
+            {
+              "network": "AC / destination",
+              "minutes": 688,
+              "socStart": 63,
+              "socEnd": 83
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.1341,
+      "kmPerPx": 0.4558,
       "plotted": true
     }
   ],
   "asOf": "2026-09-24",
-  "updatedAt": "2026-09-24T16:56:40.770Z",
+  "updatedAt": "2026-09-24T17:15:43.368Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 18.2,
+          "wh": 150,
+          "km": 157,
+          "prov": "Manitoba"
+        },
         {
           "t": 14.1,
           "wh": 158,
@@ -3666,15 +3718,9 @@
           "wh": 143,
           "km": 37,
           "prov": "Manitoba"
-        },
-        {
-          "t": 19.6,
-          "wh": 103,
-          "km": 27,
-          "prov": "Manitoba"
         }
       ],
-      "median": 147,
+      "median": 148,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -3686,13 +3732,13 @@
       ]
     },
     "autopilot": {
-      "km": 12120,
-      "pct": 87.5
+      "km": 12186,
+      "pct": 87.7
     },
     "energy": {
-      "used": 2157,
+      "used": 2165,
       "added": 2346,
-      "overhead": 8.1,
+      "overhead": 7.7,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
@@ -3917,7 +3963,7 @@
     {
       "key": "2026-09-24",
       "label": "D 23",
-      "km": 185
+      "km": 255
     }
   ],
   "log": [
@@ -3928,7 +3974,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "185",
+      "km": "255",
       "chargeMinutes": 0,
       "note": ""
     },
@@ -3938,7 +3984,7 @@
       "date": "Sep 23",
       "province": "Manitoba",
       "from": "Manitoba",
-      "to": "Moose Lake 31J, Manitoba",
+      "to": "Wabowden, Manitoba",
       "plotted": true,
       "km": "605",
       "chargeMinutes": 914,

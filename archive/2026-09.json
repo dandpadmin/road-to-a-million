@@ -2645,41 +2645,64 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 61,
+    "km": 218,
     "from": "Manitoba",
-    "to": "Moose Lake 31J, Manitoba",
-    "corridor": "Moose Lake 31J, Manitoba",
+    "to": "Wabowden, Manitoba",
+    "corridor": "Wabowden, Manitoba",
     "province": "Manitoba",
     "chargeStops": 0,
     "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4658,
+        0.4256,
         0.95
       ],
       [
-        0.5342,
+        0.4455,
+        0.6853
+      ],
+      [
+        0.5744,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4658,
+        "x": 0.4256,
         "y": 0.95,
         "town": "Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5342,
+        "x": 0.5744,
         "y": 0.05,
-        "town": "Moose Lake 31J, Manitoba",
+        "town": "Wabowden, Manitoba",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 30,
+            "socStart": 30,
+            "socEnd": 35
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 88,
+            "socStart": 61,
+            "socEnd": 63
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 688,
+            "socStart": 63,
+            "socEnd": 83
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.1341,
+    "kmPerPx": 0.4558,
     "plotted": true
   }
 ]
