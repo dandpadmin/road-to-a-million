@@ -1,13 +1,13 @@
 {
-  "odometer": 14284,
+  "odometer": 14302,
   "goal": 1000000,
-  "day": 22,
+  "day": 23,
   "province": "Manitoba",
-  "route": "Cormorant, Manitoba",
-  "today": 524,
+  "route": "Manitoba",
+  "today": 605,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 595,
+  "avgPerDay": 599,
   "chargeSessions": 3,
   "chargeSupercharger": 0,
   "chargeOther": 3,
@@ -19,60 +19,58 @@
     "day": 21,
     "date": "Sep 22",
     "label": "Day 21 · Sep 22",
-    "km": 448,
+    "km": 470,
     "from": "Winnipeg, Manitoba",
-    "to": "Cormorant, Manitoba",
-    "corridor": "Cormorant, Manitoba",
+    "to": "Manitoba",
+    "corridor": "Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 66,
+    "chargeStops": 3,
+    "chargeMinutes": 907,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6112,
-        0.9364
+        0.6157,
+        0.9368
       ],
       [
-        0.6166,
-        0.9364
+        0.6209,
+        0.9368
       ],
       [
-        0.6112,
+        0.6157,
         0.95
       ],
       [
-        0.6003,
+        0.6052,
         0.95
       ],
       [
-        0.4431,
-        0.4727
+        0.4527,
+        0.4868
       ],
       [
-        0.3834,
+        0.3948,
+        0.0765
+      ],
+      [
+        0.3791,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.6112,
-        "y": 0.9364,
+        "x": 0.6157,
+        "y": 0.9368,
         "town": "Winnipeg, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.3834,
+        "x": 0.3791,
         "y": 0.05,
-        "town": "Cormorant, Manitoba",
+        "town": "Manitoba",
         "kind": "end",
         "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 38,
-            "socStart": 17,
-            "socEnd": 75
-          },
           {
             "network": "AC / destination",
             "minutes": 841,
@@ -82,8 +80,8 @@
         ]
       },
       {
-        "x": 0.4431,
-        "y": 0.4727,
+        "x": 0.4527,
+        "y": 0.4868,
         "town": "Fairford, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -94,9 +92,23 @@
             "socEnd": 69
           }
         ]
+      },
+      {
+        "x": 0.3948,
+        "y": 0.0765,
+        "town": "Cormorant, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 38,
+            "socStart": 17,
+            "socEnd": 75
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.8848,
+    "kmPerPx": 0.9116,
     "plotted": true
   },
   "dayMaps": [
@@ -2649,60 +2661,58 @@
       "day": 21,
       "date": "Sep 22",
       "label": "Day 21 · Sep 22",
-      "km": 448,
+      "km": 470,
       "from": "Winnipeg, Manitoba",
-      "to": "Cormorant, Manitoba",
-      "corridor": "Cormorant, Manitoba",
+      "to": "Manitoba",
+      "corridor": "Manitoba",
       "province": "Manitoba",
-      "chargeStops": 2,
-      "chargeMinutes": 66,
+      "chargeStops": 3,
+      "chargeMinutes": 907,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.6112,
-          0.9364
+          0.6157,
+          0.9368
         ],
         [
-          0.6166,
-          0.9364
+          0.6209,
+          0.9368
         ],
         [
-          0.6112,
+          0.6157,
           0.95
         ],
         [
-          0.6003,
+          0.6052,
           0.95
         ],
         [
-          0.4431,
-          0.4727
+          0.4527,
+          0.4868
         ],
         [
-          0.3834,
+          0.3948,
+          0.0765
+        ],
+        [
+          0.3791,
           0.05
         ]
       ],
       "stops": [
         {
-          "x": 0.6112,
-          "y": 0.9364,
+          "x": 0.6157,
+          "y": 0.9368,
           "town": "Winnipeg, Manitoba",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.3834,
+          "x": 0.3791,
           "y": 0.05,
-          "town": "Cormorant, Manitoba",
+          "town": "Manitoba",
           "kind": "end",
           "sessions": [
-            {
-              "network": "DC fast",
-              "minutes": 38,
-              "socStart": 17,
-              "socEnd": 75
-            },
             {
               "network": "AC / destination",
               "minutes": 841,
@@ -2712,8 +2722,8 @@
           ]
         },
         {
-          "x": 0.4431,
-          "y": 0.4727,
+          "x": 0.4527,
+          "y": 0.4868,
           "town": "Fairford, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -2724,20 +2734,40 @@
               "socEnd": 69
             }
           ]
+        },
+        {
+          "x": 0.3948,
+          "y": 0.0765,
+          "town": "Cormorant, Manitoba",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 38,
+              "socStart": 17,
+              "socEnd": 75
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.8848,
+      "kmPerPx": 0.9116,
       "plotted": true
     }
   ],
   "asOf": "2026-09-23",
-  "updatedAt": "2026-09-23T23:51:48.430Z",
+  "updatedAt": "2026-09-24T00:18:45.205Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 19.2,
+          "wh": 127,
+          "km": 22,
+          "prov": "Manitoba"
+        },
         {
           "t": 20.1,
           "wh": 160,
@@ -3663,17 +3693,17 @@
       ]
     },
     "autopilot": {
-      "km": 11860,
-      "pct": 87.2
+      "km": 11937,
+      "pct": 87.3
     },
     "energy": {
-      "used": 2115,
+      "used": 2128,
       "added": 2332,
-      "overhead": 9.3,
+      "overhead": 8.8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 63,
-      "rangeEst": 402
+      "rangeEst": 401
     },
     "cost": {
       "total": 393.2,
@@ -3885,7 +3915,7 @@
     {
       "key": "2026-09-23",
       "label": "D 22",
-      "km": 524
+      "km": 605
     }
   ],
   "log": [
@@ -3896,7 +3926,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "524",
+      "km": "605",
       "chargeMinutes": 138,
       "note": ""
     },
@@ -3906,7 +3936,7 @@
       "date": "Sep 22",
       "province": "Manitoba",
       "from": "Winnipeg, Manitoba",
-      "to": "Cormorant, Manitoba",
+      "to": "Manitoba",
       "plotted": true,
       "km": "470",
       "chargeMinutes": 907,

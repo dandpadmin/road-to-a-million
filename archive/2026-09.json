@@ -2548,60 +2548,58 @@
     "day": 21,
     "date": "Sep 22",
     "label": "Day 21 · Sep 22",
-    "km": 448,
+    "km": 470,
     "from": "Winnipeg, Manitoba",
-    "to": "Cormorant, Manitoba",
-    "corridor": "Cormorant, Manitoba",
+    "to": "Manitoba",
+    "corridor": "Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 66,
+    "chargeStops": 3,
+    "chargeMinutes": 907,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6112,
-        0.9364
+        0.6157,
+        0.9368
       ],
       [
-        0.6166,
-        0.9364
+        0.6209,
+        0.9368
       ],
       [
-        0.6112,
+        0.6157,
         0.95
       ],
       [
-        0.6003,
+        0.6052,
         0.95
       ],
       [
-        0.4431,
-        0.4727
+        0.4527,
+        0.4868
       ],
       [
-        0.3834,
+        0.3948,
+        0.0765
+      ],
+      [
+        0.3791,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.6112,
-        "y": 0.9364,
+        "x": 0.6157,
+        "y": 0.9368,
         "town": "Winnipeg, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.3834,
+        "x": 0.3791,
         "y": 0.05,
-        "town": "Cormorant, Manitoba",
+        "town": "Manitoba",
         "kind": "end",
         "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 38,
-            "socStart": 17,
-            "socEnd": 75
-          },
           {
             "network": "AC / destination",
             "minutes": 841,
@@ -2611,8 +2609,8 @@
         ]
       },
       {
-        "x": 0.4431,
-        "y": 0.4727,
+        "x": 0.4527,
+        "y": 0.4868,
         "town": "Fairford, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -2623,9 +2621,23 @@
             "socEnd": 69
           }
         ]
+      },
+      {
+        "x": 0.3948,
+        "y": 0.0765,
+        "town": "Cormorant, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 38,
+            "socStart": 17,
+            "socEnd": 75
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.8848,
+    "kmPerPx": 0.9116,
     "plotted": true
   }
 ]
