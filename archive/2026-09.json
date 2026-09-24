@@ -2645,39 +2645,43 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 329,
+    "km": 429,
     "from": "Manitoba",
-    "to": "Thompson, Manitoba",
-    "corridor": "Thompson, Manitoba",
+    "to": "Manitoba",
+    "corridor": "Manitoba",
     "province": "Manitoba",
     "chargeStops": 2,
     "chargeMinutes": 91,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3965,
+        0.4006,
         0.95
       ],
       [
-        0.4098,
-        0.77
+        0.4134,
+        0.7769
       ],
       [
-        0.4967,
-        0.338
+        0.4968,
+        0.3615
       ],
       [
-        0.5234,
-        0.266
+        0.5224,
+        0.2923
       ],
       [
-        0.6035,
+        0.5994,
+        0.0846
+      ],
+      [
+        0.4391,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.3965,
+        "x": 0.4006,
         "y": 0.95,
         "town": "Manitoba",
         "kind": "start",
@@ -2697,10 +2701,24 @@
         ]
       },
       {
-        "x": 0.6035,
-        "y": 0.05,
+        "x": 0.4968,
+        "y": 0.3615,
+        "town": "Wabowden, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 30,
+            "socStart": 30,
+            "socEnd": 35
+          }
+        ]
+      },
+      {
+        "x": 0.5994,
+        "y": 0.0846,
         "town": "Thompson, Manitoba",
-        "kind": "end",
+        "kind": "charge",
         "sessions": [
           {
             "network": "DC fast",
@@ -2715,23 +2733,9 @@
             "socEnd": 84
           }
         ]
-      },
-      {
-        "x": 0.4967,
-        "y": 0.338,
-        "town": "Wabowden, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 30,
-            "socStart": 30,
-            "socEnd": 35
-          }
-        ]
       }
     ],
-    "kmPerPx": 0.6703,
+    "kmPerPx": 0.6971,
     "plotted": true
   }
 ]
