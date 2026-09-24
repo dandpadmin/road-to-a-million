@@ -1,13 +1,13 @@
 {
-  "odometer": 14716,
+  "odometer": 14752,
   "goal": 1000000,
   "day": 23,
   "province": "Manitoba",
   "route": "Thompson, Manitoba",
-  "today": 255,
+  "today": 450,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 584,
+  "avgPerDay": 593,
   "chargeSessions": 1,
   "chargeSupercharger": 0,
   "chargeOther": 1,
@@ -2846,7 +2846,7 @@
     }
   ],
   "asOf": "2026-09-24",
-  "updatedAt": "2026-09-24T19:17:15.500Z",
+  "updatedAt": "2026-09-24T19:40:38.852Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3782,12 +3782,6 @@
           "wh": 168,
           "km": 37,
           "prov": "Manitoba"
-        },
-        {
-          "t": 18.7,
-          "wh": 143,
-          "km": 37,
-          "prov": "Manitoba"
         }
       ],
       "median": 147,
@@ -3802,13 +3796,13 @@
       ]
     },
     "autopilot": {
-      "km": 12186,
-      "pct": 87.7
+      "km": 12378,
+      "pct": 88.1
     },
     "energy": {
-      "used": 2165,
+      "used": 2192,
       "added": 2383,
-      "overhead": 9.1,
+      "overhead": 8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4033,7 +4027,7 @@
     {
       "key": "2026-09-24",
       "label": "D 23",
-      "km": 255
+      "km": 450
     }
   ],
   "log": [
@@ -4044,7 +4038,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "255",
+      "km": "450",
       "chargeMinutes": 39,
       "note": ""
     },
