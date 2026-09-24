@@ -417,7 +417,13 @@ const F_POWER = [
    job passes in. Anything naming a place is built from locPublished, so the
    province colouring on the scatter is 24h behind like every other location. */
 function nerdBlock({ published, locPublished, charges, health, history }) {
-  const chargeList = charges || [];
+  /* The nerd section is about the trip, not the car's life before it — drives
+     and sessions from before DEPARTURE would otherwise sit in the scatter and
+     the totals as if they were part of the run. */
+  const onTrip = (x) => (dayIndex(x.started_at) || 0) >= 1;
+  published = (published || []).filter(onTrip);
+  locPublished = (locPublished || []).filter(onTrip);
+  const chargeList = (charges || []).filter(onTrip);
 
   /* Efficiency. One dot per drive: outside temperature against Wh/km, coloured
      by province. Short hops are dropped \u2014 under 5km the figure is dominated by
@@ -432,7 +438,7 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
       t: Number(t.toFixed(1)),
       wh: Math.round((kwh * 1000) / km2),
       km: km(km2),
-      prov: town(d.ending_location).split(',').pop().trim() || '\u2014',
+      prov: d._prov || town(d.ending_location).split(',').pop().trim() || '\u2014',
     });
   }
   /* Newest last, capped \u2014 the whole trip's drives would eventually dominate
@@ -600,8 +606,89 @@ function dayRecord(d, locPublished, charges, locCutoff) {
   };
 }
 
-export function shape({ state, drives, charges, health, history }) {
-  const all = drives || [];
+/* --- the ledger -----------------------------------------------------------
+ * Tessie is asked for a fixed recent window every run, so the request stays
+ * the same size on day 900 as on day 9. Everything that has cleared the
+ * LOCATION embargo is folded into ledger/*.json, one file per month, and the
+ * whole-trip figures read from that instead of from the window.
+ *
+ * The repo is public, so a ledger row is limited to what the page already
+ * publishes: times, distance, energy, temperature and province for a drive;
+ * times, energy, cost, network and battery levels for a charge. No
+ * coordinates, no addresses, no towns — and nothing younger than the
+ * location embargo, so the ledger can never be fresher than the map.
+ * ------------------------------------------------------------------------ */
+const secs = (v) => { const d = toDate(v); return d ? Math.round(d.getTime() / 1000) : null; };
+const num = (v, dp) => (typeof v === 'number' && Number.isFinite(v) ? Number(v.toFixed(dp)) : null);
+const idOf = (x) => (x && x.id !== undefined && x.id !== null ? String(x.id) : 's' + secs(x && x.started_at));
+
+function mergeById(older, newer) {
+  const m = new Map();
+  for (const x of older || []) m.set(idOf(x), x);
+  for (const x of newer || []) m.set(idOf(x), x); // the live record wins
+  return [...m.values()];
+}
+
+/* Rows to add to the ledger from this run's window. Only records that ended
+   before the location cutoff qualify. */
+export function ledgerRows({ drives, charges }) {
+  const locCutoff = Date.now() - LOCATION_EMBARGO_HOURS * 36e5;
+  const cleared = (x) => { const t = toDate(x.ended_at || x.started_at); return t && t <= locCutoff; };
+  const d = (drives || []).filter(cleared).map((x) => ({
+    id: idOf(x),
+    s: secs(x.started_at),
+    e: secs(x.ended_at),
+    km: num(x.odometer_distance, 2),
+    ap: num(x.autopilot_distance, 2),
+    kwh: num(pick(x, F_ENERGY_USED), 3),
+    t: num(pick(x, F_OUTSIDE_TEMP), 1),
+    prov: (() => { const p = town(x.ending_location).split(',').pop().trim(); return p && p !== '—' ? p : null; })(),
+  })).filter((r) => r.s);
+  const c = (charges || []).filter(cleared).map((x) => ({
+    id: idOf(x),
+    s: secs(x.started_at),
+    e: secs(x.ended_at ?? x.finished_at ?? x.ended ?? x.end_date),
+    kwh: num(pick(x, F_ENERGY_ADDED), 3),
+    cost: num(pick(x, F_COST), 2),
+    sc: isSupercharger(x),
+    soc0: num(pick(x, F_SOC_START), 1),
+    soc1: num(pick(x, F_SOC_END), 1),
+    kw: num(pick(x, F_POWER), 1),
+  })).filter((r) => r.s);
+  return { drives: d, charges: c };
+}
+
+/* Month a ledger row files under, Winnipeg time. */
+export function ledgerMonth(row) { return (dayKey(row.s) || '0000-00').slice(0, 7); }
+
+/* Back into Tessie field names so every existing reader works unchanged. */
+function expandLedgerDrives(ledger) {
+  return ((ledger && ledger.drives) || []).map((r) => ({
+    id: r.id, started_at: r.s, ended_at: r.e,
+    odometer_distance: r.km, autopilot_distance: r.ap,
+    energy_used: r.kwh, average_outside_temperature: r.t,
+    _prov: r.prov || null,
+  }));
+}
+function expandLedgerCharges(ledger) {
+  return ((ledger && ledger.charges) || []).map((r) => ({
+    id: r.id, started_at: r.s, ended_at: r.e,
+    energy_added: r.kwh, cost: r.cost, is_supercharger: !!r.sc,
+    starting_battery: r.soc0, ending_battery: r.soc1, max_charger_power: r.kw,
+  }));
+}
+
+export function shape({ state, drives, charges, health, history, ledger }) {
+  const windowDrives = drives || [];
+  const windowCharges = charges || [];
+  /* The window is the last few hundred drives Tessie hands back; the ledger is
+     everything that has ever cleared the location embargo. Merged, they cover
+     the whole trip without the fetch growing with it. Anything that draws a
+     place (maps, log towns, position) still reads the window only — the ledger
+     deliberately carries no coordinates or addresses. */
+  const all = mergeById(expandLedgerDrives(ledger), windowDrives);
+  const allCharges = mergeById(expandLedgerCharges(ledger), windowCharges);
+  charges = windowCharges;
   const now = Date.now();
   const cutoff = now - EMBARGO_HOURS * 36e5;
   const locCutoff = now - LOCATION_EMBARGO_HOURS * 36e5;
@@ -613,8 +700,11 @@ export function shape({ state, drives, charges, health, history }) {
   const held = all.filter((d) => { const t = at(d); return t && t > cutoff; });
   const heldKm = held.reduce((s, d) => s + (d.odometer_distance || 0), 0);
 
-  /* Split again, later, for anything that reveals a place. */
-  const locPublished = all.filter((d) => { const t = at(d); return t && t <= locCutoff; });
+  /* Split again, later, for anything that reveals a place. Window only. */
+  const locPublished = windowDrives.filter((d) => { const t = at(d); return t && t <= locCutoff; });
+  /* Same clock, whole trip, for the province-coloured scatter. Ledger rows
+     carry only the province, never an address. */
+  const locPublishedAll = all.filter((d) => { const t = at(d); return t && t <= locCutoff; });
 
   const days = byDay(published);
   const locDays = byDay(locPublished);
@@ -643,7 +733,7 @@ export function shape({ state, drives, charges, health, history }) {
 
   const odometer = km(odometerKm(state) - heldKm);
   const driving = trip.filter((d) => d.km > 0);
-  const ch = chargeCounts(charges, cutoff, last ? last.date : null);
+  const ch = chargeCounts(allCharges, cutoff, last ? last.date : null);
   /* Charge STOPS are plotted, so the maps are built off the location clock and
      the location-side drives — never off `last`, which may be today. One entry
      per day in the rolling window, oldest first, so the page can let the reader
@@ -696,7 +786,7 @@ export function shape({ state, drives, charges, health, history }) {
     embargoHours: EMBARGO_HOURS,
     locationEmbargoHours: LOCATION_EMBARGO_HOURS,
     liveKm: LIVE_KM || undefined,
-    nerd: nerdBlock({ published, locPublished, charges, health, history }),
+    nerd: nerdBlock({ published, locPublished: locPublishedAll, charges: allCharges, health, history }),
     /* Last 30 days of distance. The page slices this to 8 or shows all 30 — it
        is one honest series either way, not a short one repeated to look long. */
     days: recent.map((d) => ({ key: d.date, label: 'D ' + dayIndex(d.date), km: km(d.km) })),
@@ -714,7 +804,7 @@ export function shape({ state, drives, charges, health, history }) {
         /* Whether this row has a route to show when clicked. */
         plotted: plottedKeys.has(d.date) || undefined,
         km: km(d.km).toLocaleString('en-CA'),
-        chargeMinutes: chargeMinutes(charges, cutoff, d.date),
+        chargeMinutes: chargeMinutes(allCharges, cutoff, d.date),
         note: '', // written by hand — Tessie has no field for what broke
       };
     }),

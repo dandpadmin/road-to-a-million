@@ -11,13 +11,15 @@
 
 async function main() {
   const { writeFile, readFile, mkdir } = await import('node:fs/promises');
-  const { shape, archiveByMonth } = await import('../tessie.js');
+  const { readdir } = await import('node:fs/promises');
+  const { shape, archiveByMonth, ledgerRows, ledgerMonth } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
   const OUT = process.env.OUT || 'odometer.json';
   const HIST = process.env.HISTORY || 'history.json';
   const ARCHIVE_DIR = process.env.ARCHIVE_DIR || 'archive';
+  const LEDGER_DIR = process.env.LEDGER_DIR || 'ledger';
   if (!TOKEN || !VIN) { console.error('Missing TESSIE_TOKEN or TESSIE_VIN'); process.exit(1); }
 
   const H = { Authorization: `Bearer ${TOKEN}`, Accept: 'application/json' };
@@ -42,8 +44,11 @@ async function main() {
 
   const [state, drives, charges, health] = await Promise.all([
     get('state'),
-    get(`drives?${q}&limit=400`),
-    soft(`charges?${q}&limit=2000`),
+    /* A fixed recent window, NOT the whole trip — the request is the same size
+       on day 900 as on day 9. ~6 weeks of drives covers the 30 plotted days in
+       dayMaps with room to spare; anything older is read from the ledger. */
+    get(`drives?${q}&limit=800`),
+    soft(`charges?${q}&limit=600`),
     soft('battery_health'),
   ]);
 
@@ -68,12 +73,56 @@ async function main() {
     }
   }
 
+  const driveList = drives.results || drives;
+
+  /* The ledger: every drive and charge that has cleared the location embargo,
+     one file per month per kind, one row per line so a new drive is a
+     one-line diff. Read everything, fold this run's window in, and write back
+     only the months that changed. A ledger that fails to read aborts the run
+     rather than being rewritten from the window — that would silently drop
+     every drive older than the window and commit the loss. */
+  const ledger = { drives: [], charges: [] };
+  let ledgerFiles = [];
+  try { ledgerFiles = (await readdir(LEDGER_DIR)).filter((f) => /^(drives|charges)-\d{4}-\d{2}\.json$/.test(f)); }
+  catch (e) { console.warn('ledger/ not found, starting it:', e.message); }
+  const priorBody = new Map();
+  for (const f of ledgerFiles) {
+    const raw = await readFile(`${LEDGER_DIR}/${f}`, 'utf8');
+    const rows = JSON.parse(raw); // throws → run fails → nothing committed
+    if (!Array.isArray(rows)) throw new Error(`${LEDGER_DIR}/${f} is not an array — refusing to overwrite`);
+    priorBody.set(f, raw);
+    ledger[f.startsWith('drives') ? 'drives' : 'charges'].push(...rows);
+  }
+  const fresh = ledgerRows({ drives: driveList, charges: chargeList });
+  for (const kind of ['drives', 'charges']) {
+    const byId = new Map(ledger[kind].map((r) => [r.id, r]));
+    for (const r of fresh[kind]) byId.set(r.id, r); // Tessie's latest reading wins
+    ledger[kind] = [...byId.values()].sort((a, b) => a.s - b.s);
+  }
+  const ledgerOut = new Map();
+  for (const kind of ['drives', 'charges']) {
+    for (const r of ledger[kind]) {
+      const f = `${kind}-${ledgerMonth(r)}.json`;
+      if (!ledgerOut.has(f)) ledgerOut.set(f, []);
+      ledgerOut.get(f).push(r);
+    }
+  }
+  await mkdir(LEDGER_DIR, { recursive: true });
+  for (const [f, rows] of ledgerOut) {
+    const body = '[\n' + rows.map((r) => JSON.stringify(r)).join(',\n') + '\n]\n';
+    if (priorBody.get(f) !== body) {
+      await writeFile(`${LEDGER_DIR}/${f}`, body);
+      console.log(`ledger: wrote ${LEDGER_DIR}/${f} (${rows.length} rows)`);
+    }
+  }
+
   const snapshot = shape({
     state,
-    drives: drives.results || drives,
+    drives: driveList,
     charges: chargeList,
     health,
     history,
+    ledger,
   });
 
   await writeFile(OUT, JSON.stringify(snapshot, null, 2));
@@ -89,7 +138,26 @@ async function main() {
      drives every run and only written when a month's content actually
      changed, so a job that runs every 15 minutes doesn't spam the history
      with identical commits. */
-  const months = archiveByMonth({ drives: drives.results || drives, charges: chargeList });
+  const months = archiveByMonth({ drives: driveList, charges: chargeList });
+  /* Closed days are frozen. The archive is rebuilt from the recent window, so
+     the oldest day in it is only partly covered and older days are not
+     covered at all — rewriting from the window alone would shrink or delete
+     them. A day already on file and more than FREEZE_DAYS old is kept exactly
+     as written; newer days are refreshed so late-arriving records land. */
+  const FREEZE_DAYS = 3;
+  const freezeBefore = new Date(Date.now() - (24 + FREEZE_DAYS * 24) * 36e5)
+    .toLocaleDateString('en-CA', { timeZone: 'America/Winnipeg' });
+  let archiveFiles = [];
+  try { archiveFiles = (await readdir(ARCHIVE_DIR)).filter((f) => /^\d{4}-\d{2}\.json$/.test(f)); } catch (e) { /* first run */ }
+  for (const f of archiveFiles) {
+    const monthKey = f.slice(0, 7);
+    const prior = JSON.parse(await readFile(`${ARCHIVE_DIR}/${f}`, 'utf8'));
+    const merged = new Map((months.get(monthKey) || []).map((d) => [d.key, d]));
+    for (const d of prior) {
+      if (!merged.has(d.key) || d.key < freezeBefore) merged.set(d.key, d);
+    }
+    months.set(monthKey, [...merged.values()].sort((a, b) => a.key.localeCompare(b.key)));
+  }
   if (months.size) {
     await mkdir(ARCHIVE_DIR, { recursive: true });
     const index = [];
