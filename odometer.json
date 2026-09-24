@@ -1,5 +1,5 @@
 {
-  "odometer": 14322,
+  "odometer": 14361,
   "goal": 1000000,
   "day": 23,
   "province": "Manitoba",
@@ -15,101 +15,21 @@
   "chargeLifetimeSupercharger": 74,
   "chargeLifetimeOther": 51,
   "dayMap": {
-    "key": "2026-09-22",
-    "day": 21,
-    "date": "Sep 22",
-    "label": "Day 21 · Sep 22",
-    "km": 470,
-    "from": "Winnipeg, Manitoba",
+    "key": "2026-09-23",
+    "day": 22,
+    "date": "Sep 23",
+    "label": "Day 22 · Sep 23",
+    "km": 0,
+    "from": "Manitoba",
     "to": "Manitoba",
     "corridor": "Manitoba",
     "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 907,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.6157,
-        0.9368
-      ],
-      [
-        0.6209,
-        0.9368
-      ],
-      [
-        0.6157,
-        0.95
-      ],
-      [
-        0.6052,
-        0.95
-      ],
-      [
-        0.4527,
-        0.4868
-      ],
-      [
-        0.3948,
-        0.0765
-      ],
-      [
-        0.3791,
-        0.05
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.6157,
-        "y": 0.9368,
-        "town": "Winnipeg, Manitoba",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.3791,
-        "y": 0.05,
-        "town": "Manitoba",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 841,
-            "socStart": 72,
-            "socEnd": 86
-          }
-        ]
-      },
-      {
-        "x": 0.4527,
-        "y": 0.4868,
-        "town": "Fairford, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 28,
-            "socStart": 37,
-            "socEnd": 69
-          }
-        ]
-      },
-      {
-        "x": 0.3948,
-        "y": 0.0765,
-        "town": "Cormorant, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 38,
-            "socStart": 17,
-            "socEnd": 75
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 0.9116,
-    "plotted": true
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
     {
@@ -2752,10 +2672,27 @@
       ],
       "kmPerPx": 0.9116,
       "plotted": true
+    },
+    {
+      "key": "2026-09-23",
+      "day": 22,
+      "date": "Sep 23",
+      "label": "Day 22 · Sep 23",
+      "km": 0,
+      "from": "Manitoba",
+      "to": "Manitoba",
+      "corridor": "Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
   "asOf": "2026-09-23",
-  "updatedAt": "2026-09-24T13:58:24.069Z",
+  "updatedAt": "2026-09-24T14:19:50.052Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3927,9 +3864,9 @@
       "key": "2026-09-23",
       "day": "Day 22",
       "date": "Sep 23",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Manitoba",
+      "to": "Manitoba",
       "km": "605",
       "chargeMinutes": 914,
       "note": ""

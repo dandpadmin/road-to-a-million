@@ -2639,5 +2639,22 @@
     ],
     "kmPerPx": 0.9116,
     "plotted": true
+  },
+  {
+    "key": "2026-09-23",
+    "day": 22,
+    "date": "Sep 23",
+    "label": "Day 22 · Sep 23",
+    "km": 0,
+    "from": "Manitoba",
+    "to": "Manitoba",
+    "corridor": "Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]
