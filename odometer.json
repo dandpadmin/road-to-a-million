@@ -1,5 +1,5 @@
 {
-  "odometer": 14885,
+  "odometer": 14905,
   "goal": 1000000,
   "day": 23,
   "province": "Manitoba",
@@ -19,7 +19,7 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 429,
+    "km": 464,
     "from": "Manitoba",
     "to": "Manitoba",
     "corridor": "Manitoba",
@@ -29,33 +29,37 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4006,
+        0.4044,
         0.95
       ],
       [
-        0.4134,
-        0.7769
+        0.4167,
+        0.7833
       ],
       [
-        0.4968,
-        0.3615
+        0.4969,
+        0.3833
       ],
       [
-        0.5224,
-        0.2923
+        0.5216,
+        0.3167
       ],
       [
-        0.5994,
-        0.0846
+        0.5956,
+        0.1167
       ],
       [
-        0.4391,
+        0.4414,
+        0.0833
+      ],
+      [
+        0.5031,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.4006,
+        "x": 0.4044,
         "y": 0.95,
         "town": "Manitoba",
         "kind": "start",
@@ -75,8 +79,8 @@
         ]
       },
       {
-        "x": 0.4968,
-        "y": 0.3615,
+        "x": 0.4969,
+        "y": 0.3833,
         "town": "Wabowden, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -89,8 +93,8 @@
         ]
       },
       {
-        "x": 0.5994,
-        "y": 0.0846,
+        "x": 0.5956,
+        "y": 0.1167,
         "town": "Thompson, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -109,7 +113,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.6971,
+    "kmPerPx": 0.7239,
     "plotted": true
   },
   "dayMaps": [
@@ -2759,7 +2763,7 @@
       "day": 22,
       "date": "Sep 23",
       "label": "Day 22 · Sep 23",
-      "km": 429,
+      "km": 464,
       "from": "Manitoba",
       "to": "Manitoba",
       "corridor": "Manitoba",
@@ -2769,33 +2773,37 @@
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4006,
+          0.4044,
           0.95
         ],
         [
-          0.4134,
-          0.7769
+          0.4167,
+          0.7833
         ],
         [
-          0.4968,
-          0.3615
+          0.4969,
+          0.3833
         ],
         [
-          0.5224,
-          0.2923
+          0.5216,
+          0.3167
         ],
         [
-          0.5994,
-          0.0846
+          0.5956,
+          0.1167
         ],
         [
-          0.4391,
+          0.4414,
+          0.0833
+        ],
+        [
+          0.5031,
           0.05
         ]
       ],
       "stops": [
         {
-          "x": 0.4006,
+          "x": 0.4044,
           "y": 0.95,
           "town": "Manitoba",
           "kind": "start",
@@ -2815,8 +2823,8 @@
           ]
         },
         {
-          "x": 0.4968,
-          "y": 0.3615,
+          "x": 0.4969,
+          "y": 0.3833,
           "town": "Wabowden, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -2829,8 +2837,8 @@
           ]
         },
         {
-          "x": 0.5994,
-          "y": 0.0846,
+          "x": 0.5956,
+          "y": 0.1167,
           "town": "Thompson, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -2849,18 +2857,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.6971,
+      "kmPerPx": 0.7239,
       "plotted": true
     }
   ],
   "asOf": "2026-09-24",
-  "updatedAt": "2026-09-24T21:43:31.169Z",
+  "updatedAt": "2026-09-24T21:55:13.288Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 22,
+          "wh": 169,
+          "km": 36,
+          "prov": "Manitoba"
+        },
         {
           "t": 21.6,
           "wh": 163,
