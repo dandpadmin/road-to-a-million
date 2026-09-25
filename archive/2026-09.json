@@ -2645,13 +2645,13 @@
     "day": 22,
     "date": "Sep 23",
     "label": "Day 22 · Sep 23",
-    "km": 524,
+    "km": 605,
     "from": "Manitoba",
-    "to": "Thompson, Manitoba",
-    "corridor": "Thompson, Manitoba",
+    "to": "Manitoba",
+    "corridor": "Manitoba",
     "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 138,
+    "chargeStops": 4,
+    "chargeMinutes": 226,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -2685,6 +2685,10 @@
       [
         0.5956,
         0.1167
+      ],
+      [
+        0.5216,
+        0.3167
       ]
     ],
     "stops": [
@@ -2709,10 +2713,24 @@
         ]
       },
       {
+        "x": 0.4969,
+        "y": 0.3833,
+        "town": "Wabowden, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 30,
+            "socStart": 30,
+            "socEnd": 35
+          }
+        ]
+      },
+      {
         "x": 0.5956,
         "y": 0.1167,
         "town": "Thompson, Manitoba",
-        "kind": "end",
+        "kind": "charge",
         "sessions": [
           {
             "network": "DC fast",
@@ -2725,20 +2743,6 @@
             "minutes": 47,
             "socStart": 29,
             "socEnd": 84
-          }
-        ]
-      },
-      {
-        "x": 0.4969,
-        "y": 0.3833,
-        "town": "Wabowden, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 30,
-            "socStart": 30,
-            "socEnd": 35
           }
         ]
       }
