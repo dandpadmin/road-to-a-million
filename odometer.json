@@ -3,8 +3,8 @@
   "goal": 1000000,
   "day": 24,
   "province": "Manitoba",
-  "route": "Fairford, Manitoba",
-  "today": 364,
+  "route": "Winnipeg, Manitoba",
+  "today": 365,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 598,
@@ -19,57 +19,61 @@
     "day": 23,
     "date": "Sep 24",
     "label": "Day 23 · Sep 24",
-    "km": 450,
+    "km": 678,
     "from": "Manitoba",
-    "to": "Fairford, Manitoba",
-    "corridor": "Fairford, Manitoba",
+    "to": "Winnipeg, Manitoba",
+    "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 88,
+    "chargeStops": 3,
+    "chargeMinutes": 105,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5411,
+        0.4917,
         0.05
       ],
       [
-        0.4589,
-        0.4049
+        0.435,
+        0.29
       ],
       [
-        0.4638,
-        0.557
+        0.4384,
+        0.3929
       ],
       [
-        0.5169,
+        0.475,
+        0.6586
+      ],
+      [
+        0.565,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.5411,
+        "x": 0.4917,
         "y": 0.05,
         "town": "Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.5169,
+        "x": 0.565,
         "y": 0.95,
-        "town": "Fairford, Manitoba",
+        "town": "Winnipeg, Manitoba",
         "kind": "end",
         "sessions": [
           {
             "network": "DC fast",
-            "minutes": 49,
-            "socStart": 22,
-            "socEnd": 80
+            "minutes": 17,
+            "socStart": 18,
+            "socEnd": 50
           }
         ]
       },
       {
-        "x": 0.4638,
-        "y": 0.557,
+        "x": 0.4384,
+        "y": 0.3929,
         "town": "Cormorant, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -80,9 +84,23 @@
             "socEnd": 75
           }
         ]
+      },
+      {
+        "x": 0.475,
+        "y": 0.6586,
+        "town": "Fairford, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 49,
+            "socStart": 22,
+            "socEnd": 80
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.9518,
+    "kmPerPx": 1.4076,
     "plotted": true
   },
   "dayMaps": [
@@ -2842,57 +2860,61 @@
       "day": 23,
       "date": "Sep 24",
       "label": "Day 23 · Sep 24",
-      "km": 450,
+      "km": 678,
       "from": "Manitoba",
-      "to": "Fairford, Manitoba",
-      "corridor": "Fairford, Manitoba",
+      "to": "Winnipeg, Manitoba",
+      "corridor": "Winnipeg, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 2,
-      "chargeMinutes": 88,
+      "chargeStops": 3,
+      "chargeMinutes": 105,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.5411,
+          0.4917,
           0.05
         ],
         [
-          0.4589,
-          0.4049
+          0.435,
+          0.29
         ],
         [
-          0.4638,
-          0.557
+          0.4384,
+          0.3929
         ],
         [
-          0.5169,
+          0.475,
+          0.6586
+        ],
+        [
+          0.565,
           0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.5411,
+          "x": 0.4917,
           "y": 0.05,
           "town": "Manitoba",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.5169,
+          "x": 0.565,
           "y": 0.95,
-          "town": "Fairford, Manitoba",
+          "town": "Winnipeg, Manitoba",
           "kind": "end",
           "sessions": [
             {
               "network": "DC fast",
-              "minutes": 49,
-              "socStart": 22,
-              "socEnd": 80
+              "minutes": 17,
+              "socStart": 18,
+              "socEnd": 50
             }
           ]
         },
         {
-          "x": 0.4638,
-          "y": 0.557,
+          "x": 0.4384,
+          "y": 0.3929,
           "town": "Cormorant, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -2903,20 +2925,40 @@
               "socEnd": 75
             }
           ]
+        },
+        {
+          "x": 0.475,
+          "y": 0.6586,
+          "town": "Fairford, Manitoba",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 49,
+              "socStart": 22,
+              "socEnd": 80
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.9518,
+      "kmPerPx": 1.4076,
       "plotted": true
     }
   ],
   "asOf": "2026-09-25",
-  "updatedAt": "2026-09-25T22:29:56.671Z",
+  "updatedAt": "2026-09-25T22:45:18.655Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 19.4,
+          "wh": 162,
+          "km": 227,
+          "prov": "Manitoba"
+        },
         {
           "t": 20.4,
           "wh": 161,
@@ -4120,7 +4162,7 @@
     {
       "key": "2026-09-25",
       "label": "D 24",
-      "km": 364
+      "km": 365
     }
   ],
   "log": [
@@ -4131,7 +4173,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "364",
+      "km": "365",
       "chargeMinutes": 202,
       "note": ""
     },
@@ -4141,7 +4183,7 @@
       "date": "Sep 24",
       "province": "Manitoba",
       "from": "Manitoba",
-      "to": "Fairford, Manitoba",
+      "to": "Winnipeg, Manitoba",
       "plotted": true,
       "km": "799",
       "chargeMinutes": 882,
