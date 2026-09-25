@@ -1,13 +1,13 @@
 {
-  "odometer": 15161,
+  "odometer": 15174,
   "goal": 1000000,
   "day": 24,
   "province": "Manitoba",
   "route": "Cormorant, Manitoba",
-  "today": 9,
+  "today": 74,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 583,
+  "avgPerDay": 585,
   "chargeSessions": 2,
   "chargeSupercharger": 0,
   "chargeOther": 2,
@@ -2874,7 +2874,7 @@
     }
   ],
   "asOf": "2026-09-25",
-  "updatedAt": "2026-09-25T17:42:14.646Z",
+  "updatedAt": "2026-09-25T17:55:54.741Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3854,13 +3854,13 @@
       ]
     },
     "autopilot": {
-      "km": 12694,
+      "km": 12749,
       "pct": 88.5
     },
     "energy": {
-      "used": 2240,
+      "used": 2250,
       "added": 2455,
-      "overhead": 8.8,
+      "overhead": 8.3,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4090,7 +4090,7 @@
     {
       "key": "2026-09-25",
       "label": "D 24",
-      "km": 9
+      "km": 74
     }
   ],
   "log": [
@@ -4101,7 +4101,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "9",
+      "km": "74",
       "chargeMinutes": 151,
       "note": ""
     },
