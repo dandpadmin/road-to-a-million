@@ -1,10 +1,10 @@
 {
-  "odometer": 15100,
+  "odometer": 15101,
   "goal": 1000000,
   "day": 24,
   "province": "Manitoba",
   "route": "Manitoba",
-  "today": 798,
+  "today": 799,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 608,
@@ -2878,7 +2878,7 @@
     }
   ],
   "asOf": "2026-09-24",
-  "updatedAt": "2026-09-25T00:45:41.324Z",
+  "updatedAt": "2026-09-25T01:12:30.099Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4077,7 +4077,7 @@
     {
       "key": "2026-09-24",
       "label": "D 23",
-      "km": 798
+      "km": 799
     }
   ],
   "log": [
@@ -4088,7 +4088,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "798",
+      "km": "799",
       "chargeMinutes": 105,
       "note": ""
     },
