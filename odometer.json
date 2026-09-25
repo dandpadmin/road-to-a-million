@@ -1,9 +1,9 @@
 {
-  "odometer": 15288,
+  "odometer": 15335,
   "goal": 1000000,
   "day": 24,
   "province": "Manitoba",
-  "route": "Cormorant, Manitoba",
+  "route": "Fairford, Manitoba",
   "today": 74,
   "best": 1333,
   "bestDay": 1,
@@ -19,41 +19,59 @@
     "day": 23,
     "date": "Sep 24",
     "label": "Day 23 · Sep 24",
-    "km": 255,
+    "km": 450,
     "from": "Manitoba",
-    "to": "Cormorant, Manitoba",
-    "corridor": "Cormorant, Manitoba",
+    "to": "Fairford, Manitoba",
+    "corridor": "Fairford, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 1,
-    "chargeMinutes": 39,
+    "chargeStops": 2,
+    "chargeMinutes": 88,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.5716,
+        0.5411,
         0.05
       ],
       [
-        0.4284,
-        0.68
+        0.4589,
+        0.4049
       ],
       [
-        0.4369,
+        0.4638,
+        0.557
+      ],
+      [
+        0.5169,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.5716,
+        "x": 0.5411,
         "y": 0.05,
         "town": "Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.4369,
+        "x": 0.5169,
         "y": 0.95,
-        "town": "Cormorant, Manitoba",
+        "town": "Fairford, Manitoba",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 49,
+            "socStart": 22,
+            "socEnd": 80
+          }
+        ]
+      },
+      {
+        "x": 0.4638,
+        "y": 0.557,
+        "town": "Cormorant, Manitoba",
+        "kind": "charge",
         "sessions": [
           {
             "network": "DC fast",
@@ -64,7 +82,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.5362,
+    "kmPerPx": 0.9518,
     "plotted": true
   },
   "dayMaps": [
@@ -2824,41 +2842,59 @@
       "day": 23,
       "date": "Sep 24",
       "label": "Day 23 · Sep 24",
-      "km": 255,
+      "km": 450,
       "from": "Manitoba",
-      "to": "Cormorant, Manitoba",
-      "corridor": "Cormorant, Manitoba",
+      "to": "Fairford, Manitoba",
+      "corridor": "Fairford, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 1,
-      "chargeMinutes": 39,
+      "chargeStops": 2,
+      "chargeMinutes": 88,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.5716,
+          0.5411,
           0.05
         ],
         [
-          0.4284,
-          0.68
+          0.4589,
+          0.4049
         ],
         [
-          0.4369,
+          0.4638,
+          0.557
+        ],
+        [
+          0.5169,
           0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.5716,
+          "x": 0.5411,
           "y": 0.05,
           "town": "Manitoba",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.4369,
+          "x": 0.5169,
           "y": 0.95,
-          "town": "Cormorant, Manitoba",
+          "town": "Fairford, Manitoba",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 49,
+              "socStart": 22,
+              "socEnd": 80
+            }
+          ]
+        },
+        {
+          "x": 0.4638,
+          "y": 0.557,
+          "town": "Cormorant, Manitoba",
+          "kind": "charge",
           "sessions": [
             {
               "network": "DC fast",
@@ -2869,18 +2905,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.5362,
+      "kmPerPx": 0.9518,
       "plotted": true
     }
   ],
   "asOf": "2026-09-25",
-  "updatedAt": "2026-09-25T19:15:45.172Z",
+  "updatedAt": "2026-09-25T19:40:15.077Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.4,
+          "wh": 161,
+          "km": 195,
+          "prov": "Manitoba"
+        },
         {
           "t": 18.1,
           "wh": 159,
@@ -4111,7 +4153,7 @@
       "date": "Sep 24",
       "province": "Manitoba",
       "from": "Manitoba",
-      "to": "Cormorant, Manitoba",
+      "to": "Fairford, Manitoba",
       "plotted": true,
       "km": "799",
       "chargeMinutes": 882,
