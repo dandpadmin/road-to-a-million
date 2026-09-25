@@ -2650,8 +2650,8 @@
     "to": "Manitoba",
     "corridor": "Manitoba",
     "province": "Manitoba",
-    "chargeStops": 4,
-    "chargeMinutes": 226,
+    "chargeStops": 5,
+    "chargeMinutes": 914,
     "note": "Town level · delayed 24h",
     "path": [
       [

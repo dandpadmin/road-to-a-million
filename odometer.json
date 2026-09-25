@@ -24,8 +24,8 @@
     "to": "Manitoba",
     "corridor": "Manitoba",
     "province": "Manitoba",
-    "chargeStops": 4,
-    "chargeMinutes": 226,
+    "chargeStops": 5,
+    "chargeMinutes": 914,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -2776,8 +2776,8 @@
       "to": "Manitoba",
       "corridor": "Manitoba",
       "province": "Manitoba",
-      "chargeStops": 4,
-      "chargeMinutes": 226,
+      "chargeStops": 5,
+      "chargeMinutes": 914,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -2878,7 +2878,7 @@
     }
   ],
   "asOf": "2026-09-24",
-  "updatedAt": "2026-09-25T02:13:07.257Z",
+  "updatedAt": "2026-09-25T02:30:32.061Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
