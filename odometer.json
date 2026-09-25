@@ -1,19 +1,19 @@
 {
-  "odometer": 15101,
+  "odometer": 15105,
   "goal": 1000000,
   "day": 24,
   "province": "Manitoba",
   "route": "Manitoba",
-  "today": 799,
+  "today": 4,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 608,
-  "chargeSessions": 3,
+  "avgPerDay": 583,
+  "chargeSessions": 0,
   "chargeSupercharger": 0,
-  "chargeOther": 3,
-  "chargeLifetime": 128,
+  "chargeOther": 0,
+  "chargeLifetime": 129,
   "chargeLifetimeSupercharger": 74,
-  "chargeLifetimeOther": 54,
+  "chargeLifetimeOther": 55,
   "dayMap": {
     "key": "2026-09-23",
     "day": 22,
@@ -2877,8 +2877,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-24",
-  "updatedAt": "2026-09-25T13:57:16.773Z",
+  "asOf": "2026-09-25",
+  "updatedAt": "2026-09-25T14:19:00.626Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3850,9 +3850,9 @@
       "pct": 88.4
     },
     "energy": {
-      "used": 2241,
-      "added": 2438,
-      "overhead": 8.1,
+      "used": 2240,
+      "added": 2452,
+      "overhead": 8.6,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -3876,7 +3876,7 @@
         {
           "soc": 30,
           "kw": 1,
-          "n": 1
+          "n": 2
         },
         {
           "soc": 35,
@@ -3944,7 +3944,7 @@
           "n": 1
         }
       ],
-      "sessions": 128,
+      "sessions": 129,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4078,9 +4078,25 @@
       "key": "2026-09-24",
       "label": "D 23",
       "km": 799
+    },
+    {
+      "key": "2026-09-25",
+      "label": "D 24",
+      "km": 4
     }
   ],
   "log": [
+    {
+      "key": "2026-09-25",
+      "day": "Day 24",
+      "date": "Sep 25",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "4",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-09-24",
       "day": "Day 23",
@@ -4089,7 +4105,7 @@
       "from": "—",
       "to": "—",
       "km": "799",
-      "chargeMinutes": 105,
+      "chargeMinutes": 882,
       "note": ""
     },
     {
@@ -4186,18 +4202,6 @@
       "plotted": true,
       "km": "721",
       "chargeMinutes": 45,
-      "note": ""
-    },
-    {
-      "key": "2026-09-15",
-      "day": "Day 14",
-      "date": "Sep 15",
-      "province": "British Columbia",
-      "from": "Squamish, British Columbia",
-      "to": "Tofino, British Columbia",
-      "plotted": true,
-      "km": "504",
-      "chargeMinutes": 389,
       "note": ""
     }
   ]
