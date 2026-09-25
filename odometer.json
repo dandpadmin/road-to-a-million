@@ -1,59 +1,70 @@
 {
-  "odometer": 15110,
+  "odometer": 15114,
   "goal": 1000000,
   "day": 24,
   "province": "Manitoba",
-  "route": "Moose Lake 31J, Manitoba",
+  "route": "Cormorant, Manitoba",
   "today": 9,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 583,
-  "chargeSessions": 1,
+  "chargeSessions": 2,
   "chargeSupercharger": 0,
-  "chargeOther": 1,
-  "chargeLifetime": 130,
+  "chargeOther": 2,
+  "chargeLifetime": 131,
   "chargeLifetimeSupercharger": 74,
-  "chargeLifetimeOther": 56,
+  "chargeLifetimeOther": 57,
   "dayMap": {
     "key": "2026-09-24",
     "day": 23,
     "date": "Sep 24",
     "label": "Day 23 · Sep 24",
-    "km": 185,
+    "km": 255,
     "from": "Manitoba",
-    "to": "Moose Lake 31J, Manitoba",
-    "corridor": "Moose Lake 31J, Manitoba",
+    "to": "Cormorant, Manitoba",
+    "corridor": "Cormorant, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 39,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6015,
+        0.5716,
         0.05
       ],
       [
-        0.3985,
+        0.4284,
+        0.68
+      ],
+      [
+        0.4369,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.6015,
+        "x": 0.5716,
         "y": 0.05,
         "town": "Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.3985,
+        "x": 0.4369,
         "y": 0.95,
-        "town": "Moose Lake 31J, Manitoba",
+        "town": "Cormorant, Manitoba",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 39,
+            "socStart": 15,
+            "socEnd": 75
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.3754,
+    "kmPerPx": 0.5362,
     "plotted": true
   },
   "dayMaps": [
@@ -2813,52 +2824,69 @@
       "day": 23,
       "date": "Sep 24",
       "label": "Day 23 · Sep 24",
-      "km": 185,
+      "km": 255,
       "from": "Manitoba",
-      "to": "Moose Lake 31J, Manitoba",
-      "corridor": "Moose Lake 31J, Manitoba",
+      "to": "Cormorant, Manitoba",
+      "corridor": "Cormorant, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 1,
+      "chargeMinutes": 39,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.6015,
+          0.5716,
           0.05
         ],
         [
-          0.3985,
+          0.4284,
+          0.68
+        ],
+        [
+          0.4369,
           0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.6015,
+          "x": 0.5716,
           "y": 0.05,
           "town": "Manitoba",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.3985,
+          "x": 0.4369,
           "y": 0.95,
-          "town": "Moose Lake 31J, Manitoba",
+          "town": "Cormorant, Manitoba",
           "kind": "end",
-          "sessions": []
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 39,
+              "socStart": 15,
+              "socEnd": 75
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.3754,
+      "kmPerPx": 0.5362,
       "plotted": true
     }
   ],
   "asOf": "2026-09-25",
-  "updatedAt": "2026-09-25T16:57:18.945Z",
+  "updatedAt": "2026-09-25T17:16:40.313Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 18.1,
+          "wh": 159,
+          "km": 70,
+          "prov": "Manitoba"
+        },
         {
           "t": 15.3,
           "wh": 157,
@@ -3814,7 +3842,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 148,
+      "median": 149,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -3827,12 +3855,12 @@
     },
     "autopilot": {
       "km": 12694,
-      "pct": 88.4
+      "pct": 88.5
     },
     "energy": {
       "used": 2240,
-      "added": 2453,
-      "overhead": 8.7,
+      "added": 2455,
+      "overhead": 8.8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -3865,8 +3893,8 @@
         },
         {
           "soc": 40,
-          "kw": 48,
-          "n": 11
+          "kw": 44,
+          "n": 12
         },
         {
           "soc": 45,
@@ -3924,7 +3952,7 @@
           "n": 1
         }
       ],
-      "sessions": 130,
+      "sessions": 131,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4074,7 +4102,7 @@
       "from": "—",
       "to": "—",
       "km": "9",
-      "chargeMinutes": 9,
+      "chargeMinutes": 151,
       "note": ""
     },
     {
@@ -4083,7 +4111,7 @@
       "date": "Sep 24",
       "province": "Manitoba",
       "from": "Manitoba",
-      "to": "Moose Lake 31J, Manitoba",
+      "to": "Cormorant, Manitoba",
       "plotted": true,
       "km": "799",
       "chargeMinutes": 882,
