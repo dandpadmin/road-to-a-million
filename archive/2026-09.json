@@ -2755,13 +2755,13 @@
     "day": 23,
     "date": "Sep 24",
     "label": "Day 23 · Sep 24",
-    "km": 798,
+    "km": 799,
     "from": "Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 105,
+    "chargeStops": 4,
+    "chargeMinutes": 882,
     "note": "Town level · delayed 24h",
     "path": [
       [
