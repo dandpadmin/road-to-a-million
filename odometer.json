@@ -1,10 +1,10 @@
 {
-  "odometer": 15765,
+  "odometer": 15767,
   "goal": 1000000,
   "day": 25,
   "province": "Manitoba",
   "route": "Morris, Manitoba",
-  "today": 299,
+  "today": 302,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 586,
@@ -3015,7 +3015,7 @@
     }
   ],
   "asOf": "2026-09-26",
-  "updatedAt": "2026-09-26T17:55:32.578Z",
+  "updatedAt": "2026-09-26T18:15:59.756Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4254,7 +4254,7 @@
     {
       "key": "2026-09-26",
       "label": "D 25",
-      "km": 299
+      "km": 302
     }
   ],
   "log": [
@@ -4265,7 +4265,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "299",
+      "km": "302",
       "chargeMinutes": 22,
       "note": ""
     },
