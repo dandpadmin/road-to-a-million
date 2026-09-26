@@ -15,110 +15,65 @@
   "chargeLifetimeSupercharger": 76,
   "chargeLifetimeOther": 57,
   "dayMap": {
-    "key": "2026-09-24",
-    "day": 23,
-    "date": "Sep 24",
-    "label": "Day 23 · Sep 24",
-    "km": 799,
-    "from": "Manitoba",
+    "key": "2026-09-25",
+    "day": 24,
+    "date": "Sep 25",
+    "label": "Day 24 · Sep 25",
+    "km": 4,
+    "from": "Winkler, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 4,
-    "chargeMinutes": 882,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4926,
-        0.05
+        0.3121,
+        0.5
       ],
       [
-        0.4422,
-        0.2618
-      ],
-      [
-        0.4452,
-        0.3525
-      ],
-      [
-        0.4778,
-        0.587
-      ],
-      [
-        0.5578,
-        0.8441
-      ],
-      [
-        0.5222,
-        0.95
+        0.6879,
+        0.5
       ]
     ],
     "stops": [
       {
-        "x": 0.4926,
-        "y": 0.05,
-        "town": "Manitoba",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.5222,
-        "y": 0.95,
+        "x": 0.3121,
+        "y": 0.5,
         "town": "Winkler, Manitoba",
-        "kind": "end",
+        "kind": "start",
         "sessions": [
           {
             "network": "AC / destination",
-            "minutes": 777,
-            "socStart": 17,
-            "socEnd": 39
+            "minutes": 9,
+            "socStart": 39,
+            "socEnd": 40
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 142,
+            "socStart": 39,
+            "socEnd": 43
           }
         ]
       },
       {
-        "x": 0.4452,
-        "y": 0.3525,
-        "town": "Cormorant, Manitoba",
+        "x": 0.6879,
+        "y": 0.5,
+        "town": "Morris, Manitoba",
         "kind": "charge",
         "sessions": [
           {
-            "network": "DC fast",
-            "minutes": 39,
-            "socStart": 15,
-            "socEnd": 75
-          }
-        ]
-      },
-      {
-        "x": 0.4778,
-        "y": 0.587,
-        "town": "Fairford, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 49,
-            "socStart": 22,
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 25,
             "socEnd": 80
-          }
-        ]
-      },
-      {
-        "x": 0.5578,
-        "y": 0.8441,
-        "town": "Winnipeg, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "DC fast",
-            "minutes": 17,
-            "socStart": 18,
-            "socEnd": 50
           }
         ]
       }
     ],
-    "kmPerPx": 1.5953,
+    "kmPerPx": 0.0134,
     "plotted": true
   },
   "dayMaps": [
@@ -2979,10 +2934,72 @@
       ],
       "kmPerPx": 1.5953,
       "plotted": true
+    },
+    {
+      "key": "2026-09-25",
+      "day": 24,
+      "date": "Sep 25",
+      "label": "Day 24 · Sep 25",
+      "km": 4,
+      "from": "Winkler, Manitoba",
+      "to": "Winkler, Manitoba",
+      "corridor": "Winkler, Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.3121,
+          0.5
+        ],
+        [
+          0.6879,
+          0.5
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.3121,
+          "y": 0.5,
+          "town": "Winkler, Manitoba",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 9,
+              "socStart": 39,
+              "socEnd": 40
+            },
+            {
+              "network": "AC / destination",
+              "minutes": 142,
+              "socStart": 39,
+              "socEnd": 43
+            }
+          ]
+        },
+        {
+          "x": 0.6879,
+          "y": 0.5,
+          "town": "Morris, Manitoba",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 18,
+              "socStart": 25,
+              "socEnd": 80
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.0134,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-25",
-  "updatedAt": "2026-09-26T13:52:17.674Z",
+  "updatedAt": "2026-09-26T14:13:14.667Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4218,9 +4235,10 @@
       "key": "2026-09-25",
       "day": "Day 24",
       "date": "Sep 25",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Winkler, Manitoba",
+      "to": "Winkler, Manitoba",
+      "plotted": true,
       "km": "365",
       "chargeMinutes": 202,
       "note": ""

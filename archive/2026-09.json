@@ -2856,5 +2856,67 @@
     ],
     "kmPerPx": 1.5953,
     "plotted": true
+  },
+  {
+    "key": "2026-09-25",
+    "day": 24,
+    "date": "Sep 25",
+    "label": "Day 24 · Sep 25",
+    "km": 4,
+    "from": "Winkler, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.3121,
+        0.5
+      ],
+      [
+        0.6879,
+        0.5
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.3121,
+        "y": 0.5,
+        "town": "Winkler, Manitoba",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 9,
+            "socStart": 39,
+            "socEnd": 40
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 142,
+            "socStart": 39,
+            "socEnd": 43
+          }
+        ]
+      },
+      {
+        "x": 0.6879,
+        "y": 0.5,
+        "town": "Morris, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 25,
+            "socEnd": 80
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true
   }
 ]
