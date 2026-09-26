@@ -1,9 +1,9 @@
 {
   "odometer": 15465,
   "goal": 1000000,
-  "day": 24,
+  "day": 25,
   "province": "Manitoba",
-  "route": "Winnipeg, Manitoba",
+  "route": "Winkler, Manitoba",
   "today": 365,
   "best": 1333,
   "bestDay": 1,
@@ -19,61 +19,65 @@
     "day": 23,
     "date": "Sep 24",
     "label": "Day 23 · Sep 24",
-    "km": 678,
+    "km": 792,
     "from": "Manitoba",
-    "to": "Winnipeg, Manitoba",
-    "corridor": "Winnipeg, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 105,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.4917,
+        0.4926,
         0.05
       ],
       [
-        0.435,
-        0.29
+        0.4422,
+        0.2618
       ],
       [
-        0.4384,
-        0.3929
+        0.4452,
+        0.3525
       ],
       [
-        0.475,
-        0.6586
+        0.4778,
+        0.587
       ],
       [
-        0.565,
+        0.5578,
+        0.8441
+      ],
+      [
+        0.5222,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.4917,
+        "x": 0.4926,
         "y": 0.05,
         "town": "Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.565,
+        "x": 0.5222,
         "y": 0.95,
-        "town": "Winnipeg, Manitoba",
+        "town": "Winkler, Manitoba",
         "kind": "end",
         "sessions": [
           {
-            "network": "DC fast",
-            "minutes": 17,
-            "socStart": 18,
-            "socEnd": 50
+            "network": "AC / destination",
+            "minutes": 777,
+            "socStart": 17,
+            "socEnd": 39
           }
         ]
       },
       {
-        "x": 0.4384,
-        "y": 0.3929,
+        "x": 0.4452,
+        "y": 0.3525,
         "town": "Cormorant, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -86,8 +90,8 @@
         ]
       },
       {
-        "x": 0.475,
-        "y": 0.6586,
+        "x": 0.4778,
+        "y": 0.587,
         "town": "Fairford, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -98,9 +102,23 @@
             "socEnd": 80
           }
         ]
+      },
+      {
+        "x": 0.5578,
+        "y": 0.8441,
+        "town": "Winnipeg, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 17,
+            "socStart": 18,
+            "socEnd": 50
+          }
+        ]
       }
     ],
-    "kmPerPx": 1.4076,
+    "kmPerPx": 1.5953,
     "plotted": true
   },
   "dayMaps": [
@@ -2860,61 +2878,65 @@
       "day": 23,
       "date": "Sep 24",
       "label": "Day 23 · Sep 24",
-      "km": 678,
+      "km": 792,
       "from": "Manitoba",
-      "to": "Winnipeg, Manitoba",
-      "corridor": "Winnipeg, Manitoba",
+      "to": "Winkler, Manitoba",
+      "corridor": "Winkler, Manitoba",
       "province": "Manitoba",
       "chargeStops": 3,
       "chargeMinutes": 105,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.4917,
+          0.4926,
           0.05
         ],
         [
-          0.435,
-          0.29
+          0.4422,
+          0.2618
         ],
         [
-          0.4384,
-          0.3929
+          0.4452,
+          0.3525
         ],
         [
-          0.475,
-          0.6586
+          0.4778,
+          0.587
         ],
         [
-          0.565,
+          0.5578,
+          0.8441
+        ],
+        [
+          0.5222,
           0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.4917,
+          "x": 0.4926,
           "y": 0.05,
           "town": "Manitoba",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.565,
+          "x": 0.5222,
           "y": 0.95,
-          "town": "Winnipeg, Manitoba",
+          "town": "Winkler, Manitoba",
           "kind": "end",
           "sessions": [
             {
-              "network": "DC fast",
-              "minutes": 17,
-              "socStart": 18,
-              "socEnd": 50
+              "network": "AC / destination",
+              "minutes": 777,
+              "socStart": 17,
+              "socEnd": 39
             }
           ]
         },
         {
-          "x": 0.4384,
-          "y": 0.3929,
+          "x": 0.4452,
+          "y": 0.3525,
           "town": "Cormorant, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -2927,8 +2949,8 @@
           ]
         },
         {
-          "x": 0.475,
-          "y": 0.6586,
+          "x": 0.4778,
+          "y": 0.587,
           "town": "Fairford, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -2939,20 +2961,40 @@
               "socEnd": 80
             }
           ]
+        },
+        {
+          "x": 0.5578,
+          "y": 0.8441,
+          "town": "Winnipeg, Manitoba",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 17,
+              "socStart": 18,
+              "socEnd": 50
+            }
+          ]
         }
       ],
-      "kmPerPx": 1.4076,
+      "kmPerPx": 1.5953,
       "plotted": true
     }
   ],
   "asOf": "2026-09-25",
-  "updatedAt": "2026-09-25T23:54:48.079Z",
+  "updatedAt": "2026-09-26T00:18:14.725Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.4,
+          "wh": 164,
+          "km": 115,
+          "prov": "Manitoba"
+        },
         {
           "t": 19.4,
           "wh": 162,
@@ -4183,7 +4225,7 @@
       "date": "Sep 24",
       "province": "Manitoba",
       "from": "Manitoba",
-      "to": "Winnipeg, Manitoba",
+      "to": "Winkler, Manitoba",
       "plotted": true,
       "km": "799",
       "chargeMinutes": 882,
