@@ -2,8 +2,8 @@
   "odometer": 15767,
   "goal": 1000000,
   "day": 25,
-  "province": "Manitoba",
-  "route": "Morris, Manitoba",
+  "province": "Ontario",
+  "route": "Kenora, Ontario",
   "today": 302,
   "best": 1333,
   "bestDay": 1,
@@ -19,36 +19,40 @@
     "day": 24,
     "date": "Sep 25",
     "label": "Day 24 · Sep 25",
-    "km": 74,
+    "km": 323,
     "from": "Winkler, Manitoba",
-    "to": "Morris, Manitoba",
-    "corridor": "Morris, Manitoba",
-    "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 169,
+    "to": "Kenora, Ontario",
+    "corridor": "Kenora, Ontario",
+    "province": "Ontario",
+    "chargeStops": 4,
+    "chargeMinutes": 202,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.7699
+        0.6703
       ],
       [
-        0.125,
-        0.7699
+        0.0629,
+        0.6703
       ],
       [
         0.05,
-        0.7699
+        0.6703
+      ],
+      [
+        0.2043,
+        0.5774
       ],
       [
         0.95,
-        0.2301
+        0.3297
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.7699,
+        "y": 0.6703,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": [
@@ -68,9 +72,23 @@
       },
       {
         "x": 0.95,
-        "y": 0.2301,
-        "town": "Morris, Manitoba",
+        "y": 0.3297,
+        "town": "Kenora, Ontario",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 33,
+            "socStart": 15,
+            "socEnd": 94
+          }
+        ]
+      },
+      {
+        "x": 0.2043,
+        "y": 0.5774,
+        "town": "Morris, Manitoba",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -81,7 +99,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.0671,
+    "kmPerPx": 0.3896,
     "plotted": true
   },
   "dayMaps": [
@@ -2948,36 +2966,40 @@
       "day": 24,
       "date": "Sep 25",
       "label": "Day 24 · Sep 25",
-      "km": 74,
+      "km": 323,
       "from": "Winkler, Manitoba",
-      "to": "Morris, Manitoba",
-      "corridor": "Morris, Manitoba",
-      "province": "Manitoba",
-      "chargeStops": 3,
-      "chargeMinutes": 169,
+      "to": "Kenora, Ontario",
+      "corridor": "Kenora, Ontario",
+      "province": "Ontario",
+      "chargeStops": 4,
+      "chargeMinutes": 202,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.7699
+          0.6703
         ],
         [
-          0.125,
-          0.7699
+          0.0629,
+          0.6703
         ],
         [
           0.05,
-          0.7699
+          0.6703
+        ],
+        [
+          0.2043,
+          0.5774
         ],
         [
           0.95,
-          0.2301
+          0.3297
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.7699,
+          "y": 0.6703,
           "town": "Winkler, Manitoba",
           "kind": "start",
           "sessions": [
@@ -2997,9 +3019,23 @@
         },
         {
           "x": 0.95,
-          "y": 0.2301,
-          "town": "Morris, Manitoba",
+          "y": 0.3297,
+          "town": "Kenora, Ontario",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 33,
+              "socStart": 15,
+              "socEnd": 94
+            }
+          ]
+        },
+        {
+          "x": 0.2043,
+          "y": 0.5774,
+          "town": "Morris, Manitoba",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -3010,18 +3046,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.0671,
+      "kmPerPx": 0.3896,
       "plotted": true
     }
   ],
   "asOf": "2026-09-26",
-  "updatedAt": "2026-09-26T20:28:56.547Z",
+  "updatedAt": "2026-09-26T20:44:09.621Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 18.3,
+          "wh": 154,
+          "km": 250,
+          "prov": "Ontario"
+        },
         {
           "t": 18.5,
           "wh": 172,
@@ -4005,6 +4047,7 @@
       "best": 66,
       "worst": 491,
       "provinces": [
+        "Ontario",
         "Manitoba",
         "Saskatchewan",
         "Alberta",
@@ -4273,9 +4316,9 @@
       "key": "2026-09-25",
       "day": "Day 24",
       "date": "Sep 25",
-      "province": "Manitoba",
+      "province": "Ontario",
       "from": "Winkler, Manitoba",
-      "to": "Morris, Manitoba",
+      "to": "Kenora, Ontario",
       "plotted": true,
       "km": "365",
       "chargeMinutes": 202,
