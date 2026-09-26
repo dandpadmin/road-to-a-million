@@ -2862,10 +2862,10 @@
     "day": 24,
     "date": "Sep 25",
     "label": "Day 24 · Sep 25",
-    "km": 323,
+    "km": 364,
     "from": "Winkler, Manitoba",
-    "to": "Kenora, Ontario",
-    "corridor": "Kenora, Ontario",
+    "to": "Ontario",
+    "corridor": "Ontario",
     "province": "Ontario",
     "chargeStops": 4,
     "chargeMinutes": 202,
@@ -2873,29 +2873,33 @@
     "path": [
       [
         0.05,
-        0.6703
+        0.7
       ],
       [
-        0.0629,
-        0.6703
+        0.0618,
+        0.7
       ],
       [
         0.05,
-        0.6703
+        0.7
       ],
       [
-        0.2043,
-        0.5774
+        0.1921,
+        0.6143
+      ],
+      [
+        0.8789,
+        0.3857
       ],
       [
         0.95,
-        0.3297
+        0.3
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6703,
+        "y": 0.7,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": [
@@ -2915,21 +2919,14 @@
       },
       {
         "x": 0.95,
-        "y": 0.3297,
-        "town": "Kenora, Ontario",
+        "y": 0.3,
+        "town": "Ontario",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 33,
-            "socStart": 15,
-            "socEnd": 94
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.2043,
-        "y": 0.5774,
+        "x": 0.1921,
+        "y": 0.6143,
         "town": "Morris, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -2940,9 +2937,23 @@
             "socEnd": 80
           }
         ]
+      },
+      {
+        "x": 0.8789,
+        "y": 0.3857,
+        "town": "Kenora, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 33,
+            "socStart": 15,
+            "socEnd": 94
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.3896,
+    "kmPerPx": 0.4223,
     "plotted": true
   }
 ]
