@@ -1,5 +1,5 @@
 {
-  "odometer": 15623,
+  "odometer": 15661,
   "goal": 1000000,
   "day": 25,
   "province": "Manitoba",
@@ -3007,7 +3007,7 @@
     }
   ],
   "asOf": "2026-09-26",
-  "updatedAt": "2026-09-26T16:31:40.805Z",
+  "updatedAt": "2026-09-26T16:53:24.495Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4012,11 +4012,11 @@
       "rangeEst": 400
     },
     "cost": {
-      "total": 422,
-      "supercharger": 422,
+      "total": 432.53,
+      "supercharger": 432.53,
       "other": 0,
-      "perKm": 0.028,
-      "sessions": 75,
+      "perKm": 0.029,
+      "sessions": 76,
       "currency": "CAD"
     },
     "chargeCurve": {
