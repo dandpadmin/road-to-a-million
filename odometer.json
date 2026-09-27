@@ -1,13 +1,13 @@
 {
-  "odometer": 16052,
+  "odometer": 16071,
   "goal": 1000000,
   "day": 26,
   "province": "Manitoba",
   "route": "Bélair, Manitoba",
-  "today": 245,
+  "today": 303,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 573,
+  "avgPerDay": 575,
   "chargeSessions": 3,
   "chargeSupercharger": 0,
   "chargeOther": 3,
@@ -3116,7 +3116,7 @@
     }
   ],
   "asOf": "2026-09-27",
-  "updatedAt": "2026-09-27T22:30:59.891Z",
+  "updatedAt": "2026-09-27T22:53:19.320Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4139,13 +4139,13 @@
       ]
     },
     "autopilot": {
-      "km": 13557,
+      "km": 13606,
       "pct": 89
     },
     "energy": {
-      "used": 2375,
+      "used": 2386,
       "added": 2637,
-      "overhead": 9.9,
+      "overhead": 9.5,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4389,7 +4389,7 @@
     {
       "key": "2026-09-27",
       "label": "D 26",
-      "km": 245
+      "km": 303
     }
   ],
   "log": [
@@ -4400,7 +4400,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "245",
+      "km": "303",
       "chargeMinutes": 510,
       "note": ""
     },
