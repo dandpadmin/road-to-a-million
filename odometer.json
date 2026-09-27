@@ -1,15 +1,15 @@
 {
-  "odometer": 15876,
+  "odometer": 15884,
   "goal": 1000000,
   "day": 26,
   "province": "Ontario",
   "route": "Ontario",
-  "today": 302,
+  "today": 117,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 586,
-  "chargeSessions": 2,
-  "chargeSupercharger": 1,
+  "avgPerDay": 568,
+  "chargeSessions": 1,
+  "chargeSupercharger": 0,
   "chargeOther": 1,
   "chargeLifetime": 136,
   "chargeLifetimeSupercharger": 77,
@@ -3072,8 +3072,8 @@
       "plotted": true
     }
   ],
-  "asOf": "2026-09-26",
-  "updatedAt": "2026-09-27T15:13:14.772Z",
+  "asOf": "2026-09-27",
+  "updatedAt": "2026-09-27T15:29:58.824Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4084,13 +4084,13 @@
       ]
     },
     "autopilot": {
-      "km": 13323,
+      "km": 13436,
       "pct": 88.9
     },
     "energy": {
-      "used": 2340,
+      "used": 2358,
       "added": 2594,
-      "overhead": 9.8,
+      "overhead": 9.1,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4330,9 +4330,25 @@
       "key": "2026-09-26",
       "label": "D 25",
       "km": 302
+    },
+    {
+      "key": "2026-09-27",
+      "label": "D 26",
+      "km": 117
     }
   ],
   "log": [
+    {
+      "key": "2026-09-27",
+      "day": "Day 26",
+      "date": "Sep 27",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "117",
+      "chargeMinutes": 349,
+      "note": ""
+    },
     {
       "key": "2026-09-26",
       "day": "Day 25",
@@ -4438,18 +4454,6 @@
       "plotted": true,
       "km": "781",
       "chargeMinutes": 885,
-      "note": ""
-    },
-    {
-      "key": "2026-09-17",
-      "day": "Day 16",
-      "date": "Sep 17",
-      "province": "Alberta",
-      "from": "Salmon Arm, British Columbia",
-      "to": "Calgary, Alberta",
-      "plotted": true,
-      "km": "731",
-      "chargeMinutes": 92,
       "note": ""
     }
   ]
