@@ -1,9 +1,9 @@
 {
-  "odometer": 15977,
+  "odometer": 15998,
   "goal": 1000000,
   "day": 26,
   "province": "Manitoba",
-  "route": "Reynolds, Manitoba",
+  "route": "Bélair, Manitoba",
   "today": 117,
   "best": 1333,
   "bestDay": 1,
@@ -19,10 +19,10 @@
     "day": 25,
     "date": "Sep 26",
     "label": "Day 25 · Sep 26",
-    "km": 143,
+    "km": 299,
     "from": "Ontario",
-    "to": "Reynolds, Manitoba",
-    "corridor": "Reynolds, Manitoba",
+    "to": "Bélair, Manitoba",
+    "corridor": "Bélair, Manitoba",
     "province": "Manitoba",
     "chargeStops": 1,
     "chargeMinutes": 22,
@@ -30,26 +30,44 @@
     "path": [
       [
         0.95,
-        0.3347
+        0.706
+      ],
+      [
+        0.3313,
+        0.9349
       ],
       [
         0.05,
-        0.6653
+        0.0651
       ]
     ],
     "stops": [
       {
         "x": 0.95,
-        "y": 0.3347,
+        "y": 0.706,
         "town": "Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.05,
-        "y": 0.6653,
-        "town": "Reynolds, Manitoba",
+        "y": 0.0651,
+        "town": "Bélair, Manitoba",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 831,
+            "socStart": 48,
+            "socEnd": 74
+          }
+        ]
+      },
+      {
+        "x": 0.3313,
+        "y": 0.9349,
+        "town": "Reynolds, Manitoba",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -60,7 +78,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1825,
+    "kmPerPx": 0.2636,
     "plotted": true
   },
   "dayMaps": [
@@ -3026,10 +3044,10 @@
       "day": 25,
       "date": "Sep 26",
       "label": "Day 25 · Sep 26",
-      "km": 143,
+      "km": 299,
       "from": "Ontario",
-      "to": "Reynolds, Manitoba",
-      "corridor": "Reynolds, Manitoba",
+      "to": "Bélair, Manitoba",
+      "corridor": "Bélair, Manitoba",
       "province": "Manitoba",
       "chargeStops": 1,
       "chargeMinutes": 22,
@@ -3037,26 +3055,44 @@
       "path": [
         [
           0.95,
-          0.3347
+          0.706
+        ],
+        [
+          0.3313,
+          0.9349
         ],
         [
           0.05,
-          0.6653
+          0.0651
         ]
       ],
       "stops": [
         {
           "x": 0.95,
-          "y": 0.3347,
+          "y": 0.706,
           "town": "Ontario",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.05,
-          "y": 0.6653,
-          "town": "Reynolds, Manitoba",
+          "y": 0.0651,
+          "town": "Bélair, Manitoba",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 831,
+              "socStart": 48,
+              "socEnd": 74
+            }
+          ]
+        },
+        {
+          "x": 0.3313,
+          "y": 0.9349,
+          "town": "Reynolds, Manitoba",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -3067,18 +3103,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.1825,
+      "kmPerPx": 0.2636,
       "plotted": true
     }
   ],
   "asOf": "2026-09-27",
-  "updatedAt": "2026-09-27T17:43:33.796Z",
+  "updatedAt": "2026-09-27T17:55:16.005Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 14.9,
+          "wh": 166,
+          "km": 156,
+          "prov": "Manitoba"
+        },
         {
           "t": 16,
           "wh": 152,
@@ -4360,7 +4402,7 @@
       "date": "Sep 26",
       "province": "Manitoba",
       "from": "Ontario",
-      "to": "Reynolds, Manitoba",
+      "to": "Bélair, Manitoba",
       "plotted": true,
       "km": "302",
       "chargeMinutes": 853,
