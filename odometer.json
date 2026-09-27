@@ -1,5 +1,5 @@
 {
-  "odometer": 15767,
+  "odometer": 15783,
   "goal": 1000000,
   "day": 26,
   "province": "Ontario",
@@ -11,9 +11,9 @@
   "chargeSessions": 2,
   "chargeSupercharger": 1,
   "chargeOther": 1,
-  "chargeLifetime": 135,
+  "chargeLifetime": 136,
   "chargeLifetimeSupercharger": 77,
-  "chargeLifetimeOther": 58,
+  "chargeLifetimeOther": 59,
   "dayMap": {
     "key": "2026-09-25",
     "day": 24,
@@ -3073,7 +3073,7 @@
     }
   ],
   "asOf": "2026-09-26",
-  "updatedAt": "2026-09-27T13:56:28.557Z",
+  "updatedAt": "2026-09-27T14:15:05.034Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4089,8 +4089,8 @@
     },
     "energy": {
       "used": 2340,
-      "added": 2587,
-      "overhead": 9.5,
+      "added": 2594,
+      "overhead": 9.8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4163,8 +4163,8 @@
         },
         {
           "soc": 80,
-          "kw": 35,
-          "n": 6
+          "kw": 30,
+          "n": 7
         },
         {
           "soc": 85,
@@ -4182,7 +4182,7 @@
           "n": 1
         }
       ],
-      "sessions": 135,
+      "sessions": 136,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
