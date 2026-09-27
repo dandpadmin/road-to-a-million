@@ -1,13 +1,13 @@
 {
-  "odometer": 15998,
+  "odometer": 16007,
   "goal": 1000000,
   "day": 26,
   "province": "Manitoba",
   "route": "Bélair, Manitoba",
-  "today": 117,
+  "today": 240,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 568,
+  "avgPerDay": 572,
   "chargeSessions": 1,
   "chargeSupercharger": 0,
   "chargeOther": 1,
@@ -19,39 +19,43 @@
     "day": 25,
     "date": "Sep 26",
     "label": "Day 25 · Sep 26",
-    "km": 299,
+    "km": 302,
     "from": "Ontario",
     "to": "Bélair, Manitoba",
     "corridor": "Bélair, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 1,
-    "chargeMinutes": 22,
+    "chargeStops": 2,
+    "chargeMinutes": 853,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.95,
-        0.706
+        0.7018
       ],
       [
-        0.3313,
-        0.9349
+        0.3439,
+        0.926
+      ],
+      [
+        0.0684,
+        0.074
       ],
       [
         0.05,
-        0.0651
+        0.074
       ]
     ],
     "stops": [
       {
         "x": 0.95,
-        "y": 0.706,
+        "y": 0.7018,
         "town": "Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.05,
-        "y": 0.0651,
+        "y": 0.074,
         "town": "Bélair, Manitoba",
         "kind": "end",
         "sessions": [
@@ -64,8 +68,8 @@
         ]
       },
       {
-        "x": 0.3313,
-        "y": 0.9349,
+        "x": 0.3439,
+        "y": 0.926,
         "town": "Reynolds, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -78,7 +82,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2636,
+    "kmPerPx": 0.2691,
     "plotted": true
   },
   "dayMaps": [
@@ -3044,39 +3048,43 @@
       "day": 25,
       "date": "Sep 26",
       "label": "Day 25 · Sep 26",
-      "km": 299,
+      "km": 302,
       "from": "Ontario",
       "to": "Bélair, Manitoba",
       "corridor": "Bélair, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 1,
-      "chargeMinutes": 22,
+      "chargeStops": 2,
+      "chargeMinutes": 853,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.95,
-          0.706
+          0.7018
         ],
         [
-          0.3313,
-          0.9349
+          0.3439,
+          0.926
+        ],
+        [
+          0.0684,
+          0.074
         ],
         [
           0.05,
-          0.0651
+          0.074
         ]
       ],
       "stops": [
         {
           "x": 0.95,
-          "y": 0.706,
+          "y": 0.7018,
           "town": "Ontario",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.05,
-          "y": 0.0651,
+          "y": 0.074,
           "town": "Bélair, Manitoba",
           "kind": "end",
           "sessions": [
@@ -3089,8 +3097,8 @@
           ]
         },
         {
-          "x": 0.3313,
-          "y": 0.9349,
+          "x": 0.3439,
+          "y": 0.926,
           "town": "Reynolds, Manitoba",
           "kind": "charge",
           "sessions": [
@@ -3103,12 +3111,12 @@
           ]
         }
       ],
-      "kmPerPx": 0.2636,
+      "kmPerPx": 0.2691,
       "plotted": true
     }
   ],
   "asOf": "2026-09-27",
-  "updatedAt": "2026-09-27T17:55:16.005Z",
+  "updatedAt": "2026-09-27T18:16:25.936Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4131,13 +4139,13 @@
       ]
     },
     "autopilot": {
-      "km": 13436,
-      "pct": 88.9
+      "km": 13557,
+      "pct": 89
     },
     "energy": {
-      "used": 2358,
+      "used": 2376,
       "added": 2594,
-      "overhead": 9.1,
+      "overhead": 8.4,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4147,7 +4155,7 @@
       "total": 432.53,
       "supercharger": 432.53,
       "other": 0,
-      "perKm": 0.029,
+      "perKm": 0.028,
       "sessions": 76,
       "currency": "CAD"
     },
@@ -4381,7 +4389,7 @@
     {
       "key": "2026-09-27",
       "label": "D 26",
-      "km": 117
+      "km": 240
     }
   ],
   "log": [
@@ -4392,7 +4400,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "117",
+      "km": "240",
       "chargeMinutes": 349,
       "note": ""
     },
