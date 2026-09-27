@@ -2955,5 +2955,54 @@
     ],
     "kmPerPx": 0.4223,
     "plotted": true
+  },
+  {
+    "key": "2026-09-26",
+    "day": 25,
+    "date": "Sep 26",
+    "label": "Day 25 · Sep 26",
+    "km": 143,
+    "from": "Ontario",
+    "to": "Reynolds, Manitoba",
+    "corridor": "Reynolds, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 1,
+    "chargeMinutes": 22,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.95,
+        0.3347
+      ],
+      [
+        0.05,
+        0.6653
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.95,
+        "y": 0.3347,
+        "town": "Ontario",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.05,
+        "y": 0.6653,
+        "town": "Reynolds, Manitoba",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 41,
+            "socEnd": 92
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.1825,
+    "plotted": true
   }
 ]

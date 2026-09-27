@@ -2,8 +2,8 @@
   "odometer": 15884,
   "goal": 1000000,
   "day": 26,
-  "province": "Ontario",
-  "route": "Ontario",
+  "province": "Manitoba",
+  "route": "Reynolds, Manitoba",
   "today": 117,
   "best": 1333,
   "bestDay": 1,
@@ -15,102 +15,52 @@
   "chargeLifetimeSupercharger": 77,
   "chargeLifetimeOther": 59,
   "dayMap": {
-    "key": "2026-09-25",
-    "day": 24,
-    "date": "Sep 25",
-    "label": "Day 24 · Sep 25",
-    "km": 365,
-    "from": "Winkler, Manitoba",
-    "to": "Ontario",
-    "corridor": "Ontario",
-    "province": "Ontario",
-    "chargeStops": 4,
-    "chargeMinutes": 202,
+    "key": "2026-09-26",
+    "day": 25,
+    "date": "Sep 26",
+    "label": "Day 25 · Sep 26",
+    "km": 143,
+    "from": "Ontario",
+    "to": "Reynolds, Manitoba",
+    "corridor": "Reynolds, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 1,
+    "chargeMinutes": 22,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.05,
-        0.7
-      ],
-      [
-        0.0618,
-        0.7
-      ],
-      [
-        0.05,
-        0.7
-      ],
-      [
-        0.1921,
-        0.6143
-      ],
-      [
-        0.8789,
-        0.3857
-      ],
-      [
         0.95,
-        0.3
+        0.3347
+      ],
+      [
+        0.05,
+        0.6653
       ]
     ],
     "stops": [
       {
-        "x": 0.05,
-        "y": 0.7,
-        "town": "Winkler, Manitoba",
-        "kind": "start",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 9,
-            "socStart": 39,
-            "socEnd": 40
-          },
-          {
-            "network": "AC / destination",
-            "minutes": 142,
-            "socStart": 39,
-            "socEnd": 43
-          }
-        ]
-      },
-      {
         "x": 0.95,
-        "y": 0.3,
+        "y": 0.3347,
         "town": "Ontario",
-        "kind": "end",
+        "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.1921,
-        "y": 0.6143,
-        "town": "Morris, Manitoba",
-        "kind": "charge",
+        "x": 0.05,
+        "y": 0.6653,
+        "town": "Reynolds, Manitoba",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 18,
-            "socStart": 25,
-            "socEnd": 80
-          }
-        ]
-      },
-      {
-        "x": 0.8789,
-        "y": 0.3857,
-        "town": "Kenora, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 33,
-            "socStart": 15,
-            "socEnd": 94
+            "minutes": 22,
+            "socStart": 41,
+            "socEnd": 92
           }
         ]
       }
     ],
-    "kmPerPx": 0.4223,
+    "kmPerPx": 0.1825,
     "plotted": true
   },
   "dayMaps": [
@@ -3070,16 +3020,71 @@
       ],
       "kmPerPx": 0.4223,
       "plotted": true
+    },
+    {
+      "key": "2026-09-26",
+      "day": 25,
+      "date": "Sep 26",
+      "label": "Day 25 · Sep 26",
+      "km": 143,
+      "from": "Ontario",
+      "to": "Reynolds, Manitoba",
+      "corridor": "Reynolds, Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 1,
+      "chargeMinutes": 22,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.95,
+          0.3347
+        ],
+        [
+          0.05,
+          0.6653
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.95,
+          "y": 0.3347,
+          "town": "Ontario",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.05,
+          "y": 0.6653,
+          "town": "Reynolds, Manitoba",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 22,
+              "socStart": 41,
+              "socEnd": 92
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.1825,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-27",
-  "updatedAt": "2026-09-27T15:56:49.415Z",
+  "updatedAt": "2026-09-27T16:16:48.703Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 16,
+          "wh": 152,
+          "km": 143,
+          "prov": "Manitoba"
+        },
         {
           "t": 17.2,
           "wh": 134,
@@ -4075,8 +4080,8 @@
       "best": 66,
       "worst": 491,
       "provinces": [
-        "Ontario",
         "Manitoba",
+        "Ontario",
         "Saskatchewan",
         "Alberta",
         "British Columbia",
@@ -4353,9 +4358,10 @@
       "key": "2026-09-26",
       "day": "Day 25",
       "date": "Sep 26",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Ontario",
+      "to": "Reynolds, Manitoba",
+      "plotted": true,
       "km": "302",
       "chargeMinutes": 853,
       "note": ""
