@@ -3032,10 +3032,10 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 303,
+    "km": 311,
     "from": "Bélair, Manitoba",
-    "to": "Darlingford, Manitoba",
-    "corridor": "Darlingford, Manitoba",
+    "to": "Stanley, Manitoba",
+    "corridor": "Stanley, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 510,
@@ -3064,6 +3064,10 @@
       [
         0.3028,
         0.95
+      ],
+      [
+        0.3144,
+        0.9219
       ]
     ],
     "stops": [
@@ -3082,9 +3086,9 @@
         ]
       },
       {
-        "x": 0.3028,
-        "y": 0.95,
-        "town": "Darlingford, Manitoba",
+        "x": 0.3144,
+        "y": 0.9219,
+        "town": "Stanley, Manitoba",
         "kind": "end",
         "sessions": []
       },

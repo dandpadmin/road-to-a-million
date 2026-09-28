@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 27,
   "province": "Manitoba",
-  "route": "Darlingford, Manitoba",
+  "route": "Stanley, Manitoba",
   "today": 422,
   "best": 1333,
   "bestDay": 1,
@@ -19,10 +19,10 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 303,
+    "km": 311,
     "from": "Bélair, Manitoba",
-    "to": "Darlingford, Manitoba",
-    "corridor": "Darlingford, Manitoba",
+    "to": "Stanley, Manitoba",
+    "corridor": "Stanley, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 510,
@@ -51,6 +51,10 @@
       [
         0.3028,
         0.95
+      ],
+      [
+        0.3144,
+        0.9219
       ]
     ],
     "stops": [
@@ -69,9 +73,9 @@
         ]
       },
       {
-        "x": 0.3028,
-        "y": 0.95,
-        "town": "Darlingford, Manitoba",
+        "x": 0.3144,
+        "y": 0.9219,
+        "town": "Stanley, Manitoba",
         "kind": "end",
         "sessions": []
       },
@@ -3139,10 +3143,10 @@
       "day": 26,
       "date": "Sep 27",
       "label": "Day 26 · Sep 27",
-      "km": 303,
+      "km": 311,
       "from": "Bélair, Manitoba",
-      "to": "Darlingford, Manitoba",
-      "corridor": "Darlingford, Manitoba",
+      "to": "Stanley, Manitoba",
+      "corridor": "Stanley, Manitoba",
       "province": "Manitoba",
       "chargeStops": 3,
       "chargeMinutes": 510,
@@ -3171,6 +3175,10 @@
         [
           0.3028,
           0.95
+        ],
+        [
+          0.3144,
+          0.9219
         ]
       ],
       "stops": [
@@ -3189,9 +3197,9 @@
           ]
         },
         {
-          "x": 0.3028,
-          "y": 0.95,
-          "town": "Darlingford, Manitoba",
+          "x": 0.3144,
+          "y": 0.9219,
+          "town": "Stanley, Manitoba",
           "kind": "end",
           "sessions": []
         },
@@ -3227,13 +3235,19 @@
     }
   ],
   "asOf": "2026-09-28",
-  "updatedAt": "2026-09-28T23:13:08.899Z",
+  "updatedAt": "2026-09-28T23:30:22.473Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 16,
+          "wh": 189,
+          "km": 7,
+          "prov": "Manitoba"
+        },
         {
           "t": 19.4,
           "wh": 182,
@@ -4538,7 +4552,7 @@
       "date": "Sep 27",
       "province": "Manitoba",
       "from": "Bélair, Manitoba",
-      "to": "Darlingford, Manitoba",
+      "to": "Stanley, Manitoba",
       "plotted": true,
       "km": "351",
       "chargeMinutes": 1222,
