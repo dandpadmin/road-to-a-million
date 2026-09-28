@@ -1,5 +1,5 @@
 {
-  "odometer": 16425,
+  "odometer": 16457,
   "goal": 1000000,
   "day": 27,
   "province": "Manitoba",
@@ -19,13 +19,13 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 240,
+    "km": 243,
     "from": "Bélair, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 471,
+    "chargeStops": 3,
+    "chargeMinutes": 510,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -38,6 +38,10 @@
       ],
       [
         0.3214,
+        0.95
+      ],
+      [
+        0.3347,
         0.95
       ]
     ],
@@ -57,7 +61,7 @@
         ]
       },
       {
-        "x": 0.3214,
+        "x": 0.3347,
         "y": 0.95,
         "town": "Winkler, Manitoba",
         "kind": "end",
@@ -3120,13 +3124,13 @@
       "day": 26,
       "date": "Sep 27",
       "label": "Day 26 · Sep 27",
-      "km": 240,
+      "km": 243,
       "from": "Bélair, Manitoba",
       "to": "Winkler, Manitoba",
       "corridor": "Winkler, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 2,
-      "chargeMinutes": 471,
+      "chargeStops": 3,
+      "chargeMinutes": 510,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -3139,6 +3143,10 @@
         ],
         [
           0.3214,
+          0.95
+        ],
+        [
+          0.3347,
           0.95
         ]
       ],
@@ -3158,7 +3166,7 @@
           ]
         },
         {
-          "x": 0.3214,
+          "x": 0.3347,
           "y": 0.95,
           "town": "Winkler, Manitoba",
           "kind": "end",
@@ -3189,7 +3197,7 @@
     }
   ],
   "asOf": "2026-09-28",
-  "updatedAt": "2026-09-28T20:57:04.350Z",
+  "updatedAt": "2026-09-28T21:18:12.793Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
