@@ -3032,39 +3032,43 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 245,
+    "km": 303,
     "from": "Bélair, Manitoba",
-    "to": "Winkler, Manitoba",
-    "corridor": "Winkler, Manitoba",
+    "to": "Darlingford, Manitoba",
+    "corridor": "Darlingford, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 510,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6786,
+        0.6972,
         0.05
       ],
       [
-        0.5198,
-        0.5
+        0.558,
+        0.4437
       ],
       [
-        0.3214,
-        0.95
+        0.384,
+        0.8375
       ],
       [
-        0.3347,
-        0.95
+        0.3956,
+        0.8375
       ],
       [
-        0.3214,
+        0.384,
+        0.8375
+      ],
+      [
+        0.3028,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.6786,
+        "x": 0.6972,
         "y": 0.05,
         "town": "Bélair, Manitoba",
         "kind": "start",
@@ -3078,10 +3082,17 @@
         ]
       },
       {
-        "x": 0.3214,
+        "x": 0.3028,
         "y": 0.95,
-        "town": "Winkler, Manitoba",
+        "town": "Darlingford, Manitoba",
         "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.384,
+        "y": 0.8375,
+        "town": "Winkler, Manitoba",
+        "kind": "charge",
         "sessions": [
           {
             "network": "AC / destination",
@@ -3104,7 +3115,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.3754,
+    "kmPerPx": 0.429,
     "plotted": true
   }
 ]
