@@ -1,9 +1,9 @@
 {
-  "odometer": 16130,
+  "odometer": 16180,
   "goal": 1000000,
   "day": 27,
   "province": "Manitoba",
-  "route": "Bélair, Manitoba",
+  "route": "Winnipeg, Manitoba",
   "today": 351,
   "best": 1333,
   "bestDay": 1,
@@ -15,74 +15,52 @@
   "chargeLifetimeSupercharger": 77,
   "chargeLifetimeOther": 62,
   "dayMap": {
-    "key": "2026-09-26",
-    "day": 25,
-    "date": "Sep 26",
-    "label": "Day 25 · Sep 26",
-    "km": 302,
-    "from": "Ontario",
-    "to": "Bélair, Manitoba",
-    "corridor": "Bélair, Manitoba",
+    "key": "2026-09-27",
+    "day": 26,
+    "date": "Sep 27",
+    "label": "Day 26 · Sep 27",
+    "km": 117,
+    "from": "Bélair, Manitoba",
+    "to": "Winnipeg, Manitoba",
+    "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 2,
-    "chargeMinutes": 853,
+    "chargeStops": 1,
+    "chargeMinutes": 349,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.95,
-        0.7018
+        0.6576,
+        0.05
       ],
       [
-        0.3439,
-        0.926
-      ],
-      [
-        0.0684,
-        0.074
-      ],
-      [
-        0.05,
-        0.074
+        0.3424,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.95,
-        "y": 0.7018,
-        "town": "Ontario",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.05,
-        "y": 0.074,
+        "x": 0.6576,
+        "y": 0.05,
         "town": "Bélair, Manitoba",
-        "kind": "end",
+        "kind": "start",
         "sessions": [
           {
             "network": "AC / destination",
-            "minutes": 831,
-            "socStart": 48,
-            "socEnd": 74
+            "minutes": 349,
+            "socStart": 74,
+            "socEnd": 85
           }
         ]
       },
       {
-        "x": 0.3439,
-        "y": 0.926,
-        "town": "Reynolds, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 22,
-            "socStart": 41,
-            "socEnd": 92
-          }
-        ]
+        "x": 0.3424,
+        "y": 0.95,
+        "town": "Winnipeg, Manitoba",
+        "kind": "end",
+        "sessions": []
       }
     ],
-    "kmPerPx": 0.2691,
+    "kmPerPx": 0.1877,
     "plotted": true
   },
   "dayMaps": [
@@ -3113,16 +3091,71 @@
       ],
       "kmPerPx": 0.2691,
       "plotted": true
+    },
+    {
+      "key": "2026-09-27",
+      "day": 26,
+      "date": "Sep 27",
+      "label": "Day 26 · Sep 27",
+      "km": 117,
+      "from": "Bélair, Manitoba",
+      "to": "Winnipeg, Manitoba",
+      "corridor": "Winnipeg, Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 1,
+      "chargeMinutes": 349,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.6576,
+          0.05
+        ],
+        [
+          0.3424,
+          0.95
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.6576,
+          "y": 0.05,
+          "town": "Bélair, Manitoba",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 349,
+              "socStart": 74,
+              "socEnd": 85
+            }
+          ]
+        },
+        {
+          "x": 0.3424,
+          "y": 0.95,
+          "town": "Winnipeg, Manitoba",
+          "kind": "end",
+          "sessions": []
+        }
+      ],
+      "kmPerPx": 0.1877,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-27",
-  "updatedAt": "2026-09-28T15:16:59.160Z",
+  "updatedAt": "2026-09-28T15:45:32.054Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 14,
+          "wh": 147,
+          "km": 117,
+          "prov": "Manitoba"
+        },
         {
           "t": 14.9,
           "wh": 166,
@@ -4120,7 +4153,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 151,
+      "median": 150,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -4391,9 +4424,10 @@
       "key": "2026-09-27",
       "day": "Day 26",
       "date": "Sep 27",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Bélair, Manitoba",
+      "to": "Winnipeg, Manitoba",
+      "plotted": true,
       "km": "351",
       "chargeMinutes": 1222,
       "note": ""

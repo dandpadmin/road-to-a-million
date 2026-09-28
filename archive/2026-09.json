@@ -3026,5 +3026,54 @@
     ],
     "kmPerPx": 0.2691,
     "plotted": true
+  },
+  {
+    "key": "2026-09-27",
+    "day": 26,
+    "date": "Sep 27",
+    "label": "Day 26 · Sep 27",
+    "km": 117,
+    "from": "Bélair, Manitoba",
+    "to": "Winnipeg, Manitoba",
+    "corridor": "Winnipeg, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 1,
+    "chargeMinutes": 349,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.6576,
+        0.05
+      ],
+      [
+        0.3424,
+        0.95
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.6576,
+        "y": 0.05,
+        "town": "Bélair, Manitoba",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 349,
+            "socStart": 74,
+            "socEnd": 85
+          }
+        ]
+      },
+      {
+        "x": 0.3424,
+        "y": 0.95,
+        "town": "Winnipeg, Manitoba",
+        "kind": "end",
+        "sessions": []
+      }
+    ],
+    "kmPerPx": 0.1877,
+    "plotted": true
   }
 ]
