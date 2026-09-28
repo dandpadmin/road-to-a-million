@@ -3032,7 +3032,7 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 243,
+    "km": 245,
     "from": "Bélair, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
@@ -3056,6 +3056,10 @@
       [
         0.3347,
         0.95
+      ],
+      [
+        0.3214,
+        0.95
       ]
     ],
     "stops": [
@@ -3074,7 +3078,7 @@
         ]
       },
       {
-        "x": 0.3347,
+        "x": 0.3214,
         "y": 0.95,
         "town": "Winkler, Manitoba",
         "kind": "end",
