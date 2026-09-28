@@ -3032,27 +3032,31 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 117,
+    "km": 240,
     "from": "Bélair, Manitoba",
-    "to": "Winnipeg, Manitoba",
-    "corridor": "Winnipeg, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 1,
     "chargeMinutes": 349,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6576,
+        0.6786,
         0.05
       ],
       [
-        0.3424,
+        0.5198,
+        0.5
+      ],
+      [
+        0.3214,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.6576,
+        "x": 0.6786,
         "y": 0.05,
         "town": "Bélair, Manitoba",
         "kind": "start",
@@ -3066,14 +3070,33 @@
         ]
       },
       {
-        "x": 0.3424,
+        "x": 0.3214,
         "y": 0.95,
-        "town": "Winnipeg, Manitoba",
+        "town": "Winkler, Manitoba",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 122,
+            "socStart": 23,
+            "socEnd": 26
+          },
+          {
+            "network": "DC fast",
+            "minutes": 39,
+            "socStart": 25,
+            "socEnd": 91
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 712,
+            "socStart": 61,
+            "socEnd": 82
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.1877,
+    "kmPerPx": 0.3754,
     "plotted": true
   }
 ]
