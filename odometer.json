@@ -1,5 +1,5 @@
 {
-  "odometer": 16120,
+  "odometer": 16130,
   "goal": 1000000,
   "day": 27,
   "province": "Manitoba",
@@ -8,12 +8,12 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 577,
-  "chargeSessions": 3,
+  "chargeSessions": 4,
   "chargeSupercharger": 0,
-  "chargeOther": 3,
-  "chargeLifetime": 138,
+  "chargeOther": 4,
+  "chargeLifetime": 139,
   "chargeLifetimeSupercharger": 77,
-  "chargeLifetimeOther": 61,
+  "chargeLifetimeOther": 62,
   "dayMap": {
     "key": "2026-09-26",
     "day": 25,
@@ -3116,7 +3116,7 @@
     }
   ],
   "asOf": "2026-09-27",
-  "updatedAt": "2026-09-28T14:46:39.620Z",
+  "updatedAt": "2026-09-28T15:16:59.160Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4138,8 +4138,8 @@
     },
     "energy": {
       "used": 2389,
-      "added": 2637,
-      "overhead": 9.4,
+      "added": 2650,
+      "overhead": 9.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4202,8 +4202,8 @@
         },
         {
           "soc": 70,
-          "kw": 76,
-          "n": 10
+          "kw": 70,
+          "n": 11
         },
         {
           "soc": 75,
@@ -4231,7 +4231,7 @@
           "n": 1
         }
       ],
-      "sessions": 138,
+      "sessions": 139,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4395,7 +4395,7 @@
       "from": "—",
       "to": "—",
       "km": "351",
-      "chargeMinutes": 510,
+      "chargeMinutes": 1222,
       "note": ""
     },
     {
