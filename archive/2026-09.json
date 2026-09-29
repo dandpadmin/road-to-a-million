@@ -3128,10 +3128,10 @@
     "day": 27,
     "date": "Sep 28",
     "label": "Day 27 · Sep 28",
-    "km": 291,
+    "km": 420,
     "from": "Winkler, Manitoba",
-    "to": "Winnipeg, Manitoba",
-    "corridor": "Winnipeg, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 2,
     "chargeMinutes": 104,
@@ -3156,6 +3156,10 @@
       [
         0.7734,
         0.11
+      ],
+      [
+        0.3757,
+        0.95
       ]
     ],
     "stops": [
@@ -3174,20 +3178,6 @@
         ]
       },
       {
-        "x": 0.7734,
-        "y": 0.11,
-        "town": "Winnipeg, Manitoba",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 78,
-            "socStart": 68,
-            "socEnd": 70
-          }
-        ]
-      },
-      {
         "x": 0.2017,
         "y": 0.05,
         "town": "Portage La Prairie, Manitoba",
@@ -3198,6 +3188,20 @@
             "minutes": 26,
             "socStart": 27,
             "socEnd": 91
+          }
+        ]
+      },
+      {
+        "x": 0.7734,
+        "y": 0.11,
+        "town": "Winnipeg, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 78,
+            "socStart": 68,
+            "socEnd": 70
           }
         ]
       }
