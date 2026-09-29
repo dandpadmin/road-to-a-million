@@ -3032,10 +3032,10 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 320,
+    "km": 349,
     "from": "Bélair, Manitoba",
-    "to": "Stanley, Manitoba",
-    "corridor": "Stanley, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 510,
@@ -3072,6 +3072,10 @@
       [
         0.3376,
         0.9219
+      ],
+      [
+        0.384,
+        0.8375
       ]
     ],
     "stops": [
@@ -3090,17 +3094,10 @@
         ]
       },
       {
-        "x": 0.3376,
-        "y": 0.9219,
-        "town": "Stanley, Manitoba",
-        "kind": "end",
-        "sessions": []
-      },
-      {
         "x": 0.384,
         "y": 0.8375,
         "town": "Winkler, Manitoba",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "AC / destination",

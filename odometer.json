@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 28,
   "province": "Manitoba",
-  "route": "Stanley, Manitoba",
+  "route": "Winkler, Manitoba",
   "today": 422,
   "best": 1333,
   "bestDay": 1,
@@ -19,10 +19,10 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 320,
+    "km": 349,
     "from": "Bélair, Manitoba",
-    "to": "Stanley, Manitoba",
-    "corridor": "Stanley, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 510,
@@ -59,6 +59,10 @@
       [
         0.3376,
         0.9219
+      ],
+      [
+        0.384,
+        0.8375
       ]
     ],
     "stops": [
@@ -77,17 +81,10 @@
         ]
       },
       {
-        "x": 0.3376,
-        "y": 0.9219,
-        "town": "Stanley, Manitoba",
-        "kind": "end",
-        "sessions": []
-      },
-      {
         "x": 0.384,
         "y": 0.8375,
         "town": "Winkler, Manitoba",
-        "kind": "charge",
+        "kind": "end",
         "sessions": [
           {
             "network": "AC / destination",
@@ -3147,10 +3144,10 @@
       "day": 26,
       "date": "Sep 27",
       "label": "Day 26 · Sep 27",
-      "km": 320,
+      "km": 349,
       "from": "Bélair, Manitoba",
-      "to": "Stanley, Manitoba",
-      "corridor": "Stanley, Manitoba",
+      "to": "Winkler, Manitoba",
+      "corridor": "Winkler, Manitoba",
       "province": "Manitoba",
       "chargeStops": 3,
       "chargeMinutes": 510,
@@ -3187,6 +3184,10 @@
         [
           0.3376,
           0.9219
+        ],
+        [
+          0.384,
+          0.8375
         ]
       ],
       "stops": [
@@ -3205,17 +3206,10 @@
           ]
         },
         {
-          "x": 0.3376,
-          "y": 0.9219,
-          "town": "Stanley, Manitoba",
-          "kind": "end",
-          "sessions": []
-        },
-        {
           "x": 0.384,
           "y": 0.8375,
           "town": "Winkler, Manitoba",
-          "kind": "charge",
+          "kind": "end",
           "sessions": [
             {
               "network": "AC / destination",
@@ -3243,13 +3237,19 @@
     }
   ],
   "asOf": "2026-09-28",
-  "updatedAt": "2026-09-29T00:19:57.177Z",
+  "updatedAt": "2026-09-29T00:49:09.144Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 13.6,
+          "wh": 108,
+          "km": 28,
+          "prov": "Manitoba"
+        },
         {
           "t": 16,
           "wh": 118,
@@ -4566,7 +4566,7 @@
       "date": "Sep 27",
       "province": "Manitoba",
       "from": "Bélair, Manitoba",
-      "to": "Stanley, Manitoba",
+      "to": "Winkler, Manitoba",
       "plotted": true,
       "km": "351",
       "chargeMinutes": 1222,
