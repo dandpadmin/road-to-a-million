@@ -3122,5 +3122,61 @@
     ],
     "kmPerPx": 0.429,
     "plotted": true
+  },
+  {
+    "key": "2026-09-28",
+    "day": 27,
+    "date": "Sep 28",
+    "label": "Day 27 · Sep 28",
+    "km": 198,
+    "from": "Winkler, Manitoba",
+    "to": "Portage La Prairie, Manitoba",
+    "corridor": "Portage La Prairie, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 1,
+    "chargeMinutes": 26,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.587,
+        0.95
+      ],
+      [
+        0.413,
+        0.05
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.587,
+        "y": 0.95,
+        "town": "Winkler, Manitoba",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 979,
+            "socStart": 38,
+            "socEnd": 67
+          }
+        ]
+      },
+      {
+        "x": 0.413,
+        "y": 0.05,
+        "town": "Portage La Prairie, Manitoba",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 26,
+            "socStart": 27,
+            "socEnd": 91
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.2011,
+    "plotted": true
   }
 ]
