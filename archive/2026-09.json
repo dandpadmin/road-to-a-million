@@ -3032,7 +3032,7 @@
     "day": 26,
     "date": "Sep 27",
     "label": "Day 26 · Sep 27",
-    "km": 314,
+    "km": 320,
     "from": "Bélair, Manitoba",
     "to": "Stanley, Manitoba",
     "corridor": "Stanley, Manitoba",
@@ -3068,6 +3068,10 @@
       [
         0.3144,
         0.9219
+      ],
+      [
+        0.3376,
+        0.9219
       ]
     ],
     "stops": [
@@ -3086,7 +3090,7 @@
         ]
       },
       {
-        "x": 0.3144,
+        "x": 0.3376,
         "y": 0.9219,
         "town": "Stanley, Manitoba",
         "kind": "end",
