@@ -1,10 +1,10 @@
 {
-  "odometer": 16553,
+  "odometer": 16556,
   "goal": 1000000,
   "day": 28,
   "province": "Manitoba",
   "route": "Portage La Prairie, Manitoba",
-  "today": 10,
+  "today": 12,
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 551,
@@ -3253,7 +3253,7 @@
     }
   ],
   "asOf": "2026-09-29",
-  "updatedAt": "2026-09-29T17:32:25.758Z",
+  "updatedAt": "2026-09-29T17:57:21.107Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4285,12 +4285,6 @@
           "wh": 119,
           "km": 6,
           "prov": "Manitoba"
-        },
-        {
-          "t": 24.8,
-          "wh": 122,
-          "km": 15,
-          "prov": "Manitoba"
         }
       ],
       "median": 151,
@@ -4306,11 +4300,11 @@
       ]
     },
     "autopilot": {
-      "km": 14011,
+      "km": 13995,
       "pct": 89.1
     },
     "energy": {
-      "used": 2453,
+      "used": 2451,
       "added": 2709,
       "overhead": 9.5,
       "whPerKm": 156,
@@ -4566,7 +4560,7 @@
     {
       "key": "2026-09-29",
       "label": "D 28",
-      "km": 10
+      "km": 12
     }
   ],
   "log": [
@@ -4577,7 +4571,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "10",
+      "km": "12",
       "chargeMinutes": 0,
       "note": ""
     },
