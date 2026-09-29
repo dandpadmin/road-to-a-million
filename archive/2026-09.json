@@ -3037,8 +3037,8 @@
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 510,
+    "chargeStops": 4,
+    "chargeMinutes": 1222,
     "note": "Town level · delayed 24h",
     "path": [
       [
