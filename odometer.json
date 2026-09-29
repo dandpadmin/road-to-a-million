@@ -1,13 +1,13 @@
 {
-  "odometer": 16759,
+  "odometer": 16778,
   "goal": 1000000,
   "day": 28,
   "province": "Manitoba",
   "route": "Winnipeg, Manitoba",
-  "today": 13,
+  "today": 236,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 551,
+  "avgPerDay": 559,
   "chargeSessions": 0,
   "chargeSupercharger": 0,
   "chargeOther": 0,
@@ -3305,7 +3305,7 @@
     }
   ],
   "asOf": "2026-09-29",
-  "updatedAt": "2026-09-29T20:44:03.010Z",
+  "updatedAt": "2026-09-29T20:58:01.275Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4358,17 +4358,17 @@
       ]
     },
     "autopilot": {
-      "km": 13995,
-      "pct": 89.1
+      "km": 14211,
+      "pct": 89.2
     },
     "energy": {
-      "used": 2450,
+      "used": 2484,
       "added": 2709,
-      "overhead": 9.5,
+      "overhead": 8.3,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 399
+      "rangeEst": 400
     },
     "cost": {
       "total": 446.03,
@@ -4618,7 +4618,7 @@
     {
       "key": "2026-09-29",
       "label": "D 28",
-      "km": 13
+      "km": 236
     }
   ],
   "log": [
@@ -4629,7 +4629,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "13",
+      "km": "236",
       "chargeMinutes": 0,
       "note": ""
     },
