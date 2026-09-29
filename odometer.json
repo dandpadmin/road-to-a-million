@@ -1,5 +1,5 @@
 {
-  "odometer": 16556,
+  "odometer": 16598,
   "goal": 1000000,
   "day": 28,
   "province": "Manitoba",
@@ -19,31 +19,39 @@
     "day": 27,
     "date": "Sep 28",
     "label": "Day 27 · Sep 28",
-    "km": 287,
+    "km": 291,
     "from": "Winkler, Manitoba",
     "to": "Winnipeg, Manitoba",
     "corridor": "Winnipeg, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 1,
-    "chargeMinutes": 26,
+    "chargeStops": 2,
+    "chargeMinutes": 104,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3881,
+        0.3757,
         0.95
       ],
       [
-        0.2141,
+        0.2017,
         0.05
       ],
       [
-        0.7859,
+        0.7734,
+        0.11
+      ],
+      [
+        0.7983,
+        0.11
+      ],
+      [
+        0.7734,
         0.11
       ]
     ],
     "stops": [
       {
-        "x": 0.3881,
+        "x": 0.3757,
         "y": 0.95,
         "town": "Winkler, Manitoba",
         "kind": "start",
@@ -57,7 +65,7 @@
         ]
       },
       {
-        "x": 0.7859,
+        "x": 0.7734,
         "y": 0.11,
         "town": "Winnipeg, Manitoba",
         "kind": "end",
@@ -71,7 +79,7 @@
         ]
       },
       {
-        "x": 0.2141,
+        "x": 0.2017,
         "y": 0.05,
         "town": "Portage La Prairie, Manitoba",
         "kind": "charge",
@@ -3218,31 +3226,39 @@
       "day": 27,
       "date": "Sep 28",
       "label": "Day 27 · Sep 28",
-      "km": 287,
+      "km": 291,
       "from": "Winkler, Manitoba",
       "to": "Winnipeg, Manitoba",
       "corridor": "Winnipeg, Manitoba",
       "province": "Manitoba",
-      "chargeStops": 1,
-      "chargeMinutes": 26,
+      "chargeStops": 2,
+      "chargeMinutes": 104,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.3881,
+          0.3757,
           0.95
         ],
         [
-          0.2141,
+          0.2017,
           0.05
         ],
         [
-          0.7859,
+          0.7734,
+          0.11
+        ],
+        [
+          0.7983,
+          0.11
+        ],
+        [
+          0.7734,
           0.11
         ]
       ],
       "stops": [
         {
-          "x": 0.3881,
+          "x": 0.3757,
           "y": 0.95,
           "town": "Winkler, Manitoba",
           "kind": "start",
@@ -3256,7 +3272,7 @@
           ]
         },
         {
-          "x": 0.7859,
+          "x": 0.7734,
           "y": 0.11,
           "town": "Winnipeg, Manitoba",
           "kind": "end",
@@ -3270,7 +3286,7 @@
           ]
         },
         {
-          "x": 0.2141,
+          "x": 0.2017,
           "y": 0.05,
           "town": "Portage La Prairie, Manitoba",
           "kind": "charge",
@@ -3289,7 +3305,7 @@
     }
   ],
   "asOf": "2026-09-29",
-  "updatedAt": "2026-09-29T18:47:35.061Z",
+  "updatedAt": "2026-09-29T19:14:36.020Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
