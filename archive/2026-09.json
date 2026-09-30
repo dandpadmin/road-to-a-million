@@ -3214,10 +3214,10 @@
     "day": 28,
     "date": "Sep 29",
     "label": "Day 28 · Sep 29",
-    "km": 289,
+    "km": 314,
     "from": "Winkler, Manitoba",
-    "to": "Ontario",
-    "corridor": "Ontario",
+    "to": "Clearwater Bay, Ontario",
+    "corridor": "Clearwater Bay, Ontario",
     "province": "Ontario",
     "chargeStops": 1,
     "chargeMinutes": 25,
@@ -3225,43 +3225,47 @@
     "path": [
       [
         0.05,
-        0.7129
+        0.6893
       ],
       [
-        0.0661,
-        0.7129
+        0.0643,
+        0.6893
       ],
       [
         0.05,
-        0.7129
+        0.6893
       ],
       [
-        0.7411,
-        0.3645
+        0.6643,
+        0.3796
+      ],
+      [
+        0.85,
+        0.3107
       ],
       [
         0.95,
-        0.2871
+        0.3451
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.7129,
+        "y": 0.6893,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.2871,
-        "town": "Ontario",
+        "y": 0.3451,
+        "town": "Clearwater Bay, Ontario",
         "kind": "end",
         "sessions": []
       },
       {
-        "x": 0.7411,
-        "y": 0.3645,
+        "x": 0.6643,
+        "y": 0.3796,
         "town": "Reynolds, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -3274,7 +3278,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.3117,
+    "kmPerPx": 0.3506,
     "plotted": true
   }
 ]
