@@ -1,13 +1,13 @@
 {
-  "odometer": 18296,
+  "odometer": 18322,
   "goal": 1000000,
   "day": 29,
   "province": "Ontario",
   "route": "Ontario",
-  "today": 713,
+  "today": 948,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 585,
+  "avgPerDay": 593,
   "chargeSessions": 3,
   "chargeSupercharger": 3,
   "chargeOther": 0,
@@ -3379,7 +3379,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-09-30T22:58:22.667Z",
+  "updatedAt": "2026-09-30T23:17:36.283Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4438,23 +4438,23 @@
       ]
     },
     "autopilot": {
-      "km": 15241,
-      "pct": 89.8
+      "km": 15475,
+      "pct": 90
     },
     "energy": {
-      "used": 2634,
+      "used": 2665,
       "added": 2957,
-      "overhead": 10.9,
+      "overhead": 9.9,
       "whPerKm": 155,
-      "kmPerKwh": 6.4,
+      "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 401
+      "rangeEst": 402
     },
     "cost": {
       "total": 520.13,
       "supercharger": 520.13,
       "other": 0,
-      "perKm": 0.031,
+      "perKm": 0.03,
       "sessions": 83,
       "currency": "CAD"
     },
@@ -4703,7 +4703,7 @@
     {
       "key": "2026-09-30",
       "label": "D 29",
-      "km": 713
+      "km": 948
     }
   ],
   "log": [
@@ -4714,7 +4714,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "713",
+      "km": "948",
       "chargeMinutes": 57,
       "note": ""
     },
