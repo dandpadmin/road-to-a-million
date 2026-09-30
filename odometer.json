@@ -1,5 +1,5 @@
 {
-  "odometer": 18322,
+  "odometer": 18343,
   "goal": 1000000,
   "day": 29,
   "province": "Ontario",
@@ -8,11 +8,11 @@
   "best": 1333,
   "bestDay": 1,
   "avgPerDay": 593,
-  "chargeSessions": 3,
-  "chargeSupercharger": 3,
+  "chargeSessions": 4,
+  "chargeSupercharger": 4,
   "chargeOther": 0,
-  "chargeLifetime": 149,
-  "chargeLifetimeSupercharger": 84,
+  "chargeLifetime": 150,
+  "chargeLifetimeSupercharger": 85,
   "chargeLifetimeOther": 65,
   "dayMap": {
     "key": "2026-09-29",
@@ -3379,7 +3379,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-09-30T23:17:36.283Z",
+  "updatedAt": "2026-09-30T23:42:05.498Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4443,19 +4443,19 @@
     },
     "energy": {
       "used": 2665,
-      "added": 2957,
-      "overhead": 9.9,
+      "added": 2979,
+      "overhead": 10.5,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 402
     },
     "cost": {
-      "total": 520.13,
-      "supercharger": 520.13,
+      "total": 528.34,
+      "supercharger": 528.34,
       "other": 0,
-      "perKm": 0.03,
-      "sessions": 83,
+      "perKm": 0.031,
+      "sessions": 84,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4492,8 +4492,8 @@
         },
         {
           "soc": 55,
-          "kw": 79,
-          "n": 19
+          "kw": 81,
+          "n": 20
         },
         {
           "soc": 60,
@@ -4536,7 +4536,7 @@
           "n": 1
         }
       ],
-      "sessions": 149,
+      "sessions": 150,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4715,7 +4715,7 @@
       "from": "—",
       "to": "—",
       "km": "948",
-      "chargeMinutes": 57,
+      "chargeMinutes": 68,
       "note": ""
     },
     {
