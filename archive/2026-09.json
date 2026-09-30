@@ -3214,62 +3214,73 @@
     "day": 28,
     "date": "Sep 29",
     "label": "Day 28 · Sep 29",
-    "km": 392,
+    "km": 484,
     "from": "Winkler, Manitoba",
-    "to": "Ontario",
-    "corridor": "Ontario",
+    "to": "Dryden, Ontario",
+    "corridor": "Dryden, Ontario",
     "province": "Ontario",
-    "chargeStops": 1,
-    "chargeMinutes": 25,
+    "chargeStops": 2,
+    "chargeMinutes": 41,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.6763
+        0.637
       ],
       [
-        0.0612,
-        0.6763
+        0.0587,
+        0.637
       ],
       [
         0.05,
-        0.6763
+        0.637
       ],
       [
-        0.5337,
-        0.4322
+        0.4257,
+        0.4473
       ],
       [
-        0.68,
-        0.3779
+        0.5393,
+        0.4052
       ],
       [
-        0.7587,
-        0.4051
+        0.6005,
+        0.4263
+      ],
+      [
+        0.749,
+        0.363
       ],
       [
         0.95,
-        0.3237
+        0.3841
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6763,
+        "y": 0.637,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.3237,
-        "town": "Ontario",
+        "y": 0.3841,
+        "town": "Dryden, Ontario",
         "kind": "end",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 16,
+            "socStart": 20,
+            "socEnd": 72
+          }
+        ]
       },
       {
-        "x": 0.5337,
-        "y": 0.4322,
+        "x": 0.4257,
+        "y": 0.4473,
         "town": "Reynolds, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -3282,7 +3293,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.4448,
+    "kmPerPx": 0.5726,
     "plotted": true
   }
 ]
