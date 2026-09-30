@@ -3214,45 +3214,56 @@
     "day": 28,
     "date": "Sep 29",
     "label": "Day 28 · Sep 29",
-    "km": 236,
+    "km": 289,
     "from": "Winkler, Manitoba",
-    "to": "Reynolds, Manitoba",
-    "corridor": "Reynolds, Manitoba",
-    "province": "Manitoba",
+    "to": "Ontario",
+    "corridor": "Ontario",
+    "province": "Ontario",
     "chargeStops": 1,
     "chargeMinutes": 25,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.7266
+        0.7129
       ],
       [
-        0.0709,
-        0.7266
+        0.0661,
+        0.7129
       ],
       [
         0.05,
-        0.7266
+        0.7129
+      ],
+      [
+        0.7411,
+        0.3645
       ],
       [
         0.95,
-        0.2734
+        0.2871
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.7266,
+        "y": 0.7129,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.2734,
-        "town": "Reynolds, Manitoba",
+        "y": 0.2871,
+        "town": "Ontario",
         "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.7411,
+        "y": 0.3645,
+        "town": "Reynolds, Manitoba",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -3263,7 +3274,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2395,
+    "kmPerPx": 0.3117,
     "plotted": true
   }
 ]
