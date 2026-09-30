@@ -3208,5 +3208,40 @@
     ],
     "kmPerPx": 0.2011,
     "plotted": true
+  },
+  {
+    "key": "2026-09-29",
+    "day": 28,
+    "date": "Sep 29",
+    "label": "Day 28 · Sep 29",
+    "km": 4,
+    "from": "Winkler, Manitoba",
+    "to": "Winkler, Manitoba",
+    "corridor": "Winkler, Manitoba",
+    "province": "Manitoba",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.3121,
+        0.5
+      ],
+      [
+        0.6879,
+        0.5
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.3121,
+        "y": 0.5,
+        "town": "Winkler, Manitoba",
+        "kind": "start",
+        "sessions": []
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true
   }
 ]

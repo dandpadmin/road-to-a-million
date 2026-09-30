@@ -1,5 +1,5 @@
 {
-  "odometer": 17598,
+  "odometer": 17640,
   "goal": 1000000,
   "day": 29,
   "province": "Manitoba",
@@ -15,89 +15,38 @@
   "chargeLifetimeSupercharger": 82,
   "chargeLifetimeOther": 65,
   "dayMap": {
-    "key": "2026-09-28",
-    "day": 27,
-    "date": "Sep 28",
-    "label": "Day 27 · Sep 28",
-    "km": 422,
+    "key": "2026-09-29",
+    "day": 28,
+    "date": "Sep 29",
+    "label": "Day 28 · Sep 29",
+    "km": 4,
     "from": "Winkler, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
-    "chargeStops": 3,
-    "chargeMinutes": 1083,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.3757,
-        0.95
+        0.3121,
+        0.5
       ],
       [
-        0.2017,
-        0.05
-      ],
-      [
-        0.7734,
-        0.11
-      ],
-      [
-        0.7983,
-        0.11
-      ],
-      [
-        0.7734,
-        0.11
-      ],
-      [
-        0.3757,
-        0.95
+        0.6879,
+        0.5
       ]
     ],
     "stops": [
       {
-        "x": 0.3757,
-        "y": 0.95,
+        "x": 0.3121,
+        "y": 0.5,
         "town": "Winkler, Manitoba",
         "kind": "start",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 979,
-            "socStart": 38,
-            "socEnd": 67
-          }
-        ]
-      },
-      {
-        "x": 0.2017,
-        "y": 0.05,
-        "town": "Portage La Prairie, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 26,
-            "socStart": 27,
-            "socEnd": 91
-          }
-        ]
-      },
-      {
-        "x": 0.7734,
-        "y": 0.11,
-        "town": "Winnipeg, Manitoba",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "AC / destination",
-            "minutes": 78,
-            "socStart": 68,
-            "socEnd": 70
-          }
-        ]
+        "sessions": []
       }
     ],
-    "kmPerPx": 0.2011,
+    "kmPerPx": 0.0134,
     "plotted": true
   },
   "dayMaps": [
@@ -3310,10 +3259,45 @@
       ],
       "kmPerPx": 0.2011,
       "plotted": true
+    },
+    {
+      "key": "2026-09-29",
+      "day": 28,
+      "date": "Sep 29",
+      "label": "Day 28 · Sep 29",
+      "km": 4,
+      "from": "Winkler, Manitoba",
+      "to": "Winkler, Manitoba",
+      "corridor": "Winkler, Manitoba",
+      "province": "Manitoba",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.3121,
+          0.5
+        ],
+        [
+          0.6879,
+          0.5
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.3121,
+          "y": 0.5,
+          "town": "Winkler, Manitoba",
+          "kind": "start",
+          "sessions": []
+        }
+      ],
+      "kmPerPx": 0.0134,
+      "plotted": true
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-09-30T14:34:48.888Z",
+  "updatedAt": "2026-09-30T15:01:18.568Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4632,9 +4616,10 @@
       "key": "2026-09-29",
       "day": "Day 28",
       "date": "Sep 29",
-      "province": "—",
-      "from": "—",
-      "to": "—",
+      "province": "Manitoba",
+      "from": "Winkler, Manitoba",
+      "to": "Winkler, Manitoba",
+      "plotted": true,
       "km": "831",
       "chargeMinutes": 389,
       "note": ""
