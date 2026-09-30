@@ -1,5 +1,5 @@
 {
-  "odometer": 17640,
+  "odometer": 17692,
   "goal": 1000000,
   "day": 29,
   "province": "Manitoba",
@@ -19,7 +19,7 @@
     "day": 28,
     "date": "Sep 29",
     "label": "Day 28 · Sep 29",
-    "km": 4,
+    "km": 7,
     "from": "Winkler, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
@@ -34,6 +34,10 @@
       ],
       [
         0.6879,
+        0.5
+      ],
+      [
+        0.3121,
         0.5
       ]
     ],
@@ -3265,7 +3269,7 @@
       "day": 28,
       "date": "Sep 29",
       "label": "Day 28 · Sep 29",
-      "km": 4,
+      "km": 7,
       "from": "Winkler, Manitoba",
       "to": "Winkler, Manitoba",
       "corridor": "Winkler, Manitoba",
@@ -3280,6 +3284,10 @@
         ],
         [
           0.6879,
+          0.5
+        ],
+        [
+          0.3121,
           0.5
         ]
       ],
@@ -3297,7 +3305,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-09-30T15:01:18.568Z",
+  "updatedAt": "2026-09-30T15:34:10.948Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
