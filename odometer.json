@@ -1,18 +1,18 @@
 {
-  "odometer": 17222,
+  "odometer": 17237,
   "goal": 1000000,
   "day": 29,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 484,
+  "today": 694,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 568,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 575,
+  "chargeSessions": 3,
+  "chargeSupercharger": 3,
   "chargeOther": 0,
-  "chargeLifetime": 144,
-  "chargeLifetimeSupercharger": 80,
+  "chargeLifetime": 145,
+  "chargeLifetimeSupercharger": 81,
   "chargeLifetimeOther": 64,
   "dayMap": {
     "key": "2026-09-28",
@@ -3313,7 +3313,7 @@
     }
   ],
   "asOf": "2026-09-29",
-  "updatedAt": "2026-09-30T02:16:21.930Z",
+  "updatedAt": "2026-09-30T02:43:58.349Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4339,12 +4339,6 @@
           "wh": 160,
           "km": 61,
           "prov": "Manitoba"
-        },
-        {
-          "t": 19,
-          "wh": 145,
-          "km": 71,
-          "prov": "Manitoba"
         }
       ],
       "median": 151,
@@ -4360,13 +4354,13 @@
       ]
     },
     "autopilot": {
-      "km": 14351,
-      "pct": 89.5
+      "km": 14491,
+      "pct": 89.6
     },
     "energy": {
-      "used": 2501,
-      "added": 2786,
-      "overhead": 10.2,
+      "used": 2521,
+      "added": 2818,
+      "overhead": 10.5,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4409,8 +4403,8 @@
         },
         {
           "soc": 50,
-          "kw": 70,
-          "n": 8
+          "kw": 75,
+          "n": 9
         },
         {
           "soc": 55,
@@ -4458,7 +4452,7 @@
           "n": 1
         }
       ],
-      "sessions": 144,
+      "sessions": 145,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4620,7 +4614,7 @@
     {
       "key": "2026-09-29",
       "label": "D 28",
-      "km": 484
+      "km": 694
     }
   ],
   "log": [
@@ -4631,8 +4625,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "484",
-      "chargeMinutes": 41,
+      "km": "694",
+      "chargeMinutes": 57,
       "note": ""
     },
     {
