@@ -1,18 +1,18 @@
 {
-  "odometer": 17026,
+  "odometer": 17039,
   "goal": 1000000,
-  "day": 28,
+  "day": 29,
   "province": "Manitoba",
   "route": "Winkler, Manitoba",
-  "today": 392,
+  "today": 484,
   "best": 1333,
   "bestDay": 1,
-  "avgPerDay": 565,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 568,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 143,
-  "chargeLifetimeSupercharger": 79,
+  "chargeLifetime": 144,
+  "chargeLifetimeSupercharger": 80,
   "chargeLifetimeOther": 64,
   "dayMap": {
     "key": "2026-09-28",
@@ -3313,7 +3313,7 @@
     }
   ],
   "asOf": "2026-09-29",
-  "updatedAt": "2026-09-29T23:53:38.282Z",
+  "updatedAt": "2026-09-30T00:20:55.337Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4345,12 +4345,6 @@
           "wh": 145,
           "km": 71,
           "prov": "Manitoba"
-        },
-        {
-          "t": 12.9,
-          "wh": 140,
-          "km": 119,
-          "prov": "Manitoba"
         }
       ],
       "median": 151,
@@ -4366,24 +4360,24 @@
       ]
     },
     "autopilot": {
-      "km": 14360,
-      "pct": 89.4
+      "km": 14351,
+      "pct": 89.5
     },
     "energy": {
-      "used": 2505,
-      "added": 2754,
-      "overhead": 9,
+      "used": 2501,
+      "added": 2786,
+      "overhead": 10.2,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
       "rangeEst": 400
     },
     "cost": {
-      "total": 461.41,
-      "supercharger": 461.41,
+      "total": 473.16,
+      "supercharger": 473.16,
       "other": 0,
       "perKm": 0.029,
-      "sessions": 78,
+      "sessions": 79,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4410,8 +4404,8 @@
         },
         {
           "soc": 45,
-          "kw": 93,
-          "n": 7
+          "kw": 96,
+          "n": 8
         },
         {
           "soc": 50,
@@ -4464,7 +4458,7 @@
           "n": 1
         }
       ],
-      "sessions": 143,
+      "sessions": 144,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4626,7 +4620,7 @@
     {
       "key": "2026-09-29",
       "label": "D 28",
-      "km": 392
+      "km": 484
     }
   ],
   "log": [
@@ -4637,8 +4631,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "392",
-      "chargeMinutes": 25,
+      "km": "484",
+      "chargeMinutes": 41,
       "note": ""
     },
     {
