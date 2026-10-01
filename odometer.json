@@ -1,13 +1,13 @@
 {
-  "odometer": 18847,
+  "odometer": 18868,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
   "route": "Thunder Bay, Ontario",
-  "today": 1245,
-  "best": 1333,
-  "bestDay": 1,
-  "avgPerDay": 603,
+  "today": 1493,
+  "best": 1493,
+  "bestDay": 29,
+  "avgPerDay": 612,
   "chargeSessions": 6,
   "chargeSupercharger": 6,
   "chargeOther": 0,
@@ -3473,7 +3473,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-10-01T04:46:31.251Z",
+  "updatedAt": "2026-10-01T05:14:59.280Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4550,17 +4550,17 @@
       ]
     },
     "autopilot": {
-      "km": 15743,
-      "pct": 90
+      "km": 15991,
+      "pct": 90.1
     },
     "energy": {
-      "used": 2715,
+      "used": 2757,
       "added": 3037,
-      "overhead": 10.6,
+      "overhead": 9.2,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 402
+      "rangeEst": 401
     },
     "cost": {
       "total": 548.73,
@@ -4815,7 +4815,7 @@
     {
       "key": "2026-09-30",
       "label": "D 29",
-      "km": 1245
+      "km": 1493
     }
   ],
   "log": [
@@ -4826,7 +4826,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "1,245",
+      "km": "1,493",
       "chargeMinutes": 101,
       "note": ""
     },
