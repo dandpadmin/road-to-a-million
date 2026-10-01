@@ -1,5 +1,5 @@
 {
-  "odometer": 19032,
+  "odometer": 19036,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
@@ -3492,7 +3492,7 @@
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T19:43:04.806Z",
+  "updatedAt": "2026-10-01T19:56:49.384Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
