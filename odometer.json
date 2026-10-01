@@ -1,13 +1,13 @@
 {
-  "odometer": 18947,
+  "odometer": 18948,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
   "route": "Terrace Bay, Ontario",
-  "today": 0,
+  "today": 80,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 591,
+  "avgPerDay": 594,
   "chargeSessions": 1,
   "chargeSupercharger": 0,
   "chargeOther": 1,
@@ -3456,7 +3456,7 @@
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T16:34:10.761Z",
+  "updatedAt": "2026-10-01T16:57:05.177Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4545,17 +4545,17 @@
       ]
     },
     "autopilot": {
-      "km": 15991,
-      "pct": 90.1
+      "km": 16068,
+      "pct": 90.2
     },
     "energy": {
-      "used": 2757,
+      "used": 2766,
       "added": 3050,
-      "overhead": 9.6,
+      "overhead": 9.3,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 401
+      "rangeEst": 402
     },
     "cost": {
       "total": 548.73,
@@ -4815,7 +4815,7 @@
     {
       "key": "2026-10-01",
       "label": "D 30",
-      "km": 0
+      "km": 80
     }
   ],
   "log": [
@@ -4826,7 +4826,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "0",
+      "km": "80",
       "chargeMinutes": 111,
       "note": ""
     },
