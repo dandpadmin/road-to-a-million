@@ -1,9 +1,9 @@
 {
-  "odometer": 19036,
+  "odometer": 19050,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
-  "route": "Wawa, Ontario",
+  "route": "Sault Ste. Marie, Ontario",
   "today": 126,
   "best": 1493,
   "bestDay": 29,
@@ -19,57 +19,65 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 484,
+    "km": 713,
     "from": "Thunder Bay, Ontario",
-    "to": "Wawa, Ontario",
-    "corridor": "Wawa, Ontario",
+    "to": "Sault Ste. Marie, Ontario",
+    "corridor": "Sault Ste. Marie, Ontario",
     "province": "Ontario",
-    "chargeStops": 2,
-    "chargeMinutes": 34,
+    "chargeStops": 3,
+    "chargeMinutes": 57,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.05,
-        0.5
+        0.0698,
+        0.21
       ],
       [
-        0.08,
-        0.4528
+        0.0956,
+        0.17
       ],
       [
-        0.49,
-        0.3114
+        0.4484,
+        0.05
       ],
       [
-        0.95,
-        0.6886
+        0.8441,
+        0.37
+      ],
+      [
+        0.9216,
+        0.95
+      ],
+      [
+        0.9302,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.05,
-        "y": 0.5,
+        "x": 0.0698,
+        "y": 0.21,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.95,
-        "y": 0.6886,
-        "town": "Wawa, Ontario",
+        "x": 0.9302,
+        "y": 0.95,
+        "town": "Sault Ste. Marie, Ontario",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 22,
-            "socStart": 18,
-            "socEnd": 83
+            "minutes": 23,
+            "socStart": 24,
+            "socEnd": 88
           }
         ]
       },
       {
-        "x": 0.49,
-        "y": 0.3114,
+        "x": 0.4484,
+        "y": 0.05,
         "town": "Terrace Bay, Ontario",
         "kind": "charge",
         "sessions": [
@@ -80,9 +88,23 @@
             "socEnd": 81
           }
         ]
+      },
+      {
+        "x": 0.8441,
+        "y": 0.37,
+        "town": "Wawa, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 18,
+            "socEnd": 83
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.5118,
+    "kmPerPx": 0.6033,
     "plotted": true
   },
   "dayMaps": [
@@ -3424,57 +3446,65 @@
       "day": 29,
       "date": "Sep 30",
       "label": "Day 29 · Sep 30",
-      "km": 484,
+      "km": 713,
       "from": "Thunder Bay, Ontario",
-      "to": "Wawa, Ontario",
-      "corridor": "Wawa, Ontario",
+      "to": "Sault Ste. Marie, Ontario",
+      "corridor": "Sault Ste. Marie, Ontario",
       "province": "Ontario",
-      "chargeStops": 2,
-      "chargeMinutes": 34,
+      "chargeStops": 3,
+      "chargeMinutes": 57,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.05,
-          0.5
+          0.0698,
+          0.21
         ],
         [
-          0.08,
-          0.4528
+          0.0956,
+          0.17
         ],
         [
-          0.49,
-          0.3114
+          0.4484,
+          0.05
         ],
         [
-          0.95,
-          0.6886
+          0.8441,
+          0.37
+        ],
+        [
+          0.9216,
+          0.95
+        ],
+        [
+          0.9302,
+          0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.05,
-          "y": 0.5,
+          "x": 0.0698,
+          "y": 0.21,
           "town": "Thunder Bay, Ontario",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.95,
-          "y": 0.6886,
-          "town": "Wawa, Ontario",
+          "x": 0.9302,
+          "y": 0.95,
+          "town": "Sault Ste. Marie, Ontario",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
-              "minutes": 22,
-              "socStart": 18,
-              "socEnd": 83
+              "minutes": 23,
+              "socStart": 24,
+              "socEnd": 88
             }
           ]
         },
         {
-          "x": 0.49,
-          "y": 0.3114,
+          "x": 0.4484,
+          "y": 0.05,
           "town": "Terrace Bay, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3485,20 +3515,40 @@
               "socEnd": 81
             }
           ]
+        },
+        {
+          "x": 0.8441,
+          "y": 0.37,
+          "town": "Wawa, Ontario",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 22,
+              "socStart": 18,
+              "socEnd": 83
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.5118,
+      "kmPerPx": 0.6033,
       "plotted": true
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T19:56:49.384Z",
+  "updatedAt": "2026-10-01T20:18:55.760Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 16.9,
+          "wh": 153,
+          "km": 226,
+          "prov": "Ontario"
+        },
         {
           "t": 15.8,
           "wh": 145,
@@ -4574,7 +4624,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 149,
+      "median": 150,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -4878,7 +4928,7 @@
       "date": "Sep 30",
       "province": "Ontario",
       "from": "Thunder Bay, Ontario",
-      "to": "Wawa, Ontario",
+      "to": "Sault Ste. Marie, Ontario",
       "plotted": true,
       "km": "1,493",
       "chargeMinutes": 101,

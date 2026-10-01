@@ -3337,57 +3337,65 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 484,
+    "km": 713,
     "from": "Thunder Bay, Ontario",
-    "to": "Wawa, Ontario",
-    "corridor": "Wawa, Ontario",
+    "to": "Sault Ste. Marie, Ontario",
+    "corridor": "Sault Ste. Marie, Ontario",
     "province": "Ontario",
-    "chargeStops": 2,
-    "chargeMinutes": 34,
+    "chargeStops": 3,
+    "chargeMinutes": 57,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.05,
-        0.5
+        0.0698,
+        0.21
       ],
       [
-        0.08,
-        0.4528
+        0.0956,
+        0.17
       ],
       [
-        0.49,
-        0.3114
+        0.4484,
+        0.05
       ],
       [
-        0.95,
-        0.6886
+        0.8441,
+        0.37
+      ],
+      [
+        0.9216,
+        0.95
+      ],
+      [
+        0.9302,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.05,
-        "y": 0.5,
+        "x": 0.0698,
+        "y": 0.21,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.95,
-        "y": 0.6886,
-        "town": "Wawa, Ontario",
+        "x": 0.9302,
+        "y": 0.95,
+        "town": "Sault Ste. Marie, Ontario",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 22,
-            "socStart": 18,
-            "socEnd": 83
+            "minutes": 23,
+            "socStart": 24,
+            "socEnd": 88
           }
         ]
       },
       {
-        "x": 0.49,
-        "y": 0.3114,
+        "x": 0.4484,
+        "y": 0.05,
         "town": "Terrace Bay, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3398,9 +3406,23 @@
             "socEnd": 81
           }
         ]
+      },
+      {
+        "x": 0.8441,
+        "y": 0.37,
+        "town": "Wawa, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 18,
+            "socEnd": 83
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.5118,
+    "kmPerPx": 0.6033,
     "plotted": true
   }
 ]
