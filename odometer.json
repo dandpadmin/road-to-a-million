@@ -1,13 +1,13 @@
 {
-  "odometer": 18961,
+  "odometer": 18993,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
   "route": "Wawa, Ontario",
-  "today": 80,
+  "today": 126,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 594,
+  "avgPerDay": 596,
   "chargeSessions": 2,
   "chargeSupercharger": 1,
   "chargeOther": 1,
@@ -3492,7 +3492,7 @@
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T17:45:23.284Z",
+  "updatedAt": "2026-10-01T18:18:56.777Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4587,13 +4587,13 @@
       ]
     },
     "autopilot": {
-      "km": 16068,
+      "km": 16113,
       "pct": 90.2
     },
     "energy": {
-      "used": 2766,
+      "used": 2771,
       "added": 3100,
-      "overhead": 10.8,
+      "overhead": 10.6,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -4857,7 +4857,7 @@
     {
       "key": "2026-10-01",
       "label": "D 30",
-      "km": 80
+      "km": 126
     }
   ],
   "log": [
@@ -4868,7 +4868,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "80",
+      "km": "126",
       "chargeMinutes": 148,
       "note": ""
     },
