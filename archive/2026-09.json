@@ -3326,65 +3326,69 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 713,
+    "km": 948,
     "from": "Thunder Bay, Ontario",
-    "to": "Sault Ste. Marie, Ontario",
-    "corridor": "Sault Ste. Marie, Ontario",
+    "to": "McKerrow, Ontario",
+    "corridor": "McKerrow, Ontario",
     "province": "Ontario",
-    "chargeStops": 3,
-    "chargeMinutes": 57,
+    "chargeStops": 4,
+    "chargeMinutes": 68,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0698,
-        0.21
+        0.05,
+        0.2635
       ],
       [
-        0.0956,
-        0.17
+        0.068,
+        0.2356
       ],
       [
-        0.4484,
-        0.05
+        0.314,
+        0.1521
       ],
       [
-        0.8441,
-        0.37
+        0.59,
+        0.3748
       ],
       [
-        0.9216,
-        0.95
+        0.644,
+        0.7783
       ],
       [
-        0.9302,
-        0.95
+        0.65,
+        0.7783
+      ],
+      [
+        0.95,
+        0.8479
       ]
     ],
     "stops": [
       {
-        "x": 0.0698,
-        "y": 0.21,
+        "x": 0.05,
+        "y": 0.2635,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.9302,
-        "y": 0.95,
-        "town": "Sault Ste. Marie, Ontario",
+        "x": 0.95,
+        "y": 0.8479,
+        "town": "McKerrow, Ontario",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 23,
-            "socStart": 24,
-            "socEnd": 88
+            "minutes": 11,
+            "socStart": 36,
+            "socEnd": 74
           }
         ]
       },
       {
-        "x": 0.4484,
-        "y": 0.05,
+        "x": 0.314,
+        "y": 0.1521,
         "town": "Terrace Bay, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3397,8 +3401,8 @@
         ]
       },
       {
-        "x": 0.8441,
-        "y": 0.37,
+        "x": 0.59,
+        "y": 0.3748,
         "town": "Wawa, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3409,9 +3413,23 @@
             "socEnd": 83
           }
         ]
+      },
+      {
+        "x": 0.65,
+        "y": 0.7783,
+        "town": "Sault Ste. Marie, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 23,
+            "socStart": 24,
+            "socEnd": 88
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.6033,
+    "kmPerPx": 0.8671,
     "plotted": true
   }
 ]
