@@ -3337,34 +3337,52 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 19,
+    "km": 224,
     "from": "Thunder Bay, Ontario",
-    "to": "Thunder Bay, Ontario",
-    "corridor": "Thunder Bay, Ontario",
+    "to": "Terrace Bay, Ontario",
+    "corridor": "Terrace Bay, Ontario",
     "province": "Ontario",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 12,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.214,
-        0.95
+        0.05,
+        0.6937
       ],
       [
-        0.786,
-        0.05
+        0.1114,
+        0.5968
+      ],
+      [
+        0.95,
+        0.3063
       ]
     ],
     "stops": [
       {
-        "x": 0.214,
-        "y": 0.95,
+        "x": 0.05,
+        "y": 0.6937,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
+      },
+      {
+        "x": 0.95,
+        "y": 0.3063,
+        "town": "Terrace Bay, Ontario",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 12,
+            "socStart": 44,
+            "socEnd": 81
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.0268,
+    "kmPerPx": 0.2492,
     "plotted": true
   }
 ]
