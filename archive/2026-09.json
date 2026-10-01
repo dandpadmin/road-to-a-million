@@ -3337,41 +3337,59 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 224,
+    "km": 484,
     "from": "Thunder Bay, Ontario",
-    "to": "Terrace Bay, Ontario",
-    "corridor": "Terrace Bay, Ontario",
+    "to": "Wawa, Ontario",
+    "corridor": "Wawa, Ontario",
     "province": "Ontario",
-    "chargeStops": 1,
-    "chargeMinutes": 12,
+    "chargeStops": 2,
+    "chargeMinutes": 34,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.6937
+        0.5
       ],
       [
-        0.1114,
-        0.5968
+        0.08,
+        0.4528
+      ],
+      [
+        0.49,
+        0.3114
       ],
       [
         0.95,
-        0.3063
+        0.6886
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6937,
+        "y": 0.5,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.3063,
-        "town": "Terrace Bay, Ontario",
+        "y": 0.6886,
+        "town": "Wawa, Ontario",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 18,
+            "socEnd": 83
+          }
+        ]
+      },
+      {
+        "x": 0.49,
+        "y": 0.3114,
+        "town": "Terrace Bay, Ontario",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -3382,7 +3400,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2492,
+    "kmPerPx": 0.5118,
     "plotted": true
   }
 ]

@@ -3,57 +3,75 @@
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
-  "route": "Terrace Bay, Ontario",
+  "route": "Wawa, Ontario",
   "today": 80,
   "best": 1493,
   "bestDay": 29,
   "avgPerDay": 594,
-  "chargeSessions": 1,
-  "chargeSupercharger": 0,
+  "chargeSessions": 2,
+  "chargeSupercharger": 1,
   "chargeOther": 1,
-  "chargeLifetime": 153,
-  "chargeLifetimeSupercharger": 87,
+  "chargeLifetime": 154,
+  "chargeLifetimeSupercharger": 88,
   "chargeLifetimeOther": 66,
   "dayMap": {
     "key": "2026-09-30",
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 224,
+    "km": 484,
     "from": "Thunder Bay, Ontario",
-    "to": "Terrace Bay, Ontario",
-    "corridor": "Terrace Bay, Ontario",
+    "to": "Wawa, Ontario",
+    "corridor": "Wawa, Ontario",
     "province": "Ontario",
-    "chargeStops": 1,
-    "chargeMinutes": 12,
+    "chargeStops": 2,
+    "chargeMinutes": 34,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.6937
+        0.5
       ],
       [
-        0.1114,
-        0.5968
+        0.08,
+        0.4528
+      ],
+      [
+        0.49,
+        0.3114
       ],
       [
         0.95,
-        0.3063
+        0.6886
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6937,
+        "y": 0.5,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.3063,
-        "town": "Terrace Bay, Ontario",
+        "y": 0.6886,
+        "town": "Wawa, Ontario",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 18,
+            "socEnd": 83
+          }
+        ]
+      },
+      {
+        "x": 0.49,
+        "y": 0.3114,
+        "town": "Terrace Bay, Ontario",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -64,7 +82,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.2492,
+    "kmPerPx": 0.5118,
     "plotted": true
   },
   "dayMaps": [
@@ -3406,41 +3424,59 @@
       "day": 29,
       "date": "Sep 30",
       "label": "Day 29 · Sep 30",
-      "km": 224,
+      "km": 484,
       "from": "Thunder Bay, Ontario",
-      "to": "Terrace Bay, Ontario",
-      "corridor": "Terrace Bay, Ontario",
+      "to": "Wawa, Ontario",
+      "corridor": "Wawa, Ontario",
       "province": "Ontario",
-      "chargeStops": 1,
-      "chargeMinutes": 12,
+      "chargeStops": 2,
+      "chargeMinutes": 34,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.6937
+          0.5
         ],
         [
-          0.1114,
-          0.5968
+          0.08,
+          0.4528
+        ],
+        [
+          0.49,
+          0.3114
         ],
         [
           0.95,
-          0.3063
+          0.6886
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.6937,
+          "y": 0.5,
           "town": "Thunder Bay, Ontario",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.3063,
-          "town": "Terrace Bay, Ontario",
+          "y": 0.6886,
+          "town": "Wawa, Ontario",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 22,
+              "socStart": 18,
+              "socEnd": 83
+            }
+          ]
+        },
+        {
+          "x": 0.49,
+          "y": 0.3114,
+          "town": "Terrace Bay, Ontario",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -3451,18 +3487,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.2492,
+      "kmPerPx": 0.5118,
       "plotted": true
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T16:57:05.177Z",
+  "updatedAt": "2026-10-01T17:19:02.013Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 15.8,
+          "wh": 145,
+          "km": 260,
+          "prov": "Ontario"
+        },
         {
           "t": 14.8,
           "wh": 145,
@@ -4532,7 +4574,7 @@
           "prov": "Manitoba"
         }
       ],
-      "median": 150,
+      "median": 149,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -4550,19 +4592,19 @@
     },
     "energy": {
       "used": 2766,
-      "added": 3050,
-      "overhead": 9.3,
+      "added": 3100,
+      "overhead": 10.8,
       "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 62,
       "rangeEst": 402
     },
     "cost": {
-      "total": 548.73,
-      "supercharger": 548.73,
+      "total": 566.92,
+      "supercharger": 566.92,
       "other": 0,
-      "perKm": 0.031,
-      "sessions": 86,
+      "perKm": 0.032,
+      "sessions": 87,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4604,8 +4646,8 @@
         },
         {
           "soc": 60,
-          "kw": 49,
-          "n": 12
+          "kw": 51,
+          "n": 13
         },
         {
           "soc": 65,
@@ -4643,7 +4685,7 @@
           "n": 1
         }
       ],
-      "sessions": 153,
+      "sessions": 154,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4827,7 +4869,7 @@
       "from": "—",
       "to": "—",
       "km": "80",
-      "chargeMinutes": 111,
+      "chargeMinutes": 148,
       "note": ""
     },
     {
@@ -4836,7 +4878,7 @@
       "date": "Sep 30",
       "province": "Ontario",
       "from": "Thunder Bay, Ontario",
-      "to": "Terrace Bay, Ontario",
+      "to": "Wawa, Ontario",
       "plotted": true,
       "km": "1,493",
       "chargeMinutes": 101,
