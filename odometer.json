@@ -7,7 +7,7 @@
   "today": 280,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 601,
+  "avgPerDay": 593,
   "chargeSessions": 2,
   "chargeSupercharger": 1,
   "chargeOther": 1,
@@ -113,8 +113,8 @@
       "day": 1,
       "date": "Sep 2",
       "label": "Day 1 · Sep 2",
-      "km": 1333,
-      "from": "Winkler, Manitoba",
+      "km": 1110,
+      "from": "Brandon, Manitoba",
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
       "province": "Alberta",
@@ -124,61 +124,43 @@
       "path": [
         [
           0.95,
-          0.6158
+          0.5822
         ],
         [
-          0.8382,
-          0.5273
+          0.8543,
+          0.5509
         ],
         [
-          0.7543,
-          0.5
+          0.8032,
+          0.5039
         ],
         [
-          0.7096,
-          0.4591
+          0.6564,
+          0.4883
         ],
         [
-          0.5811,
-          0.4455
+          0.4489,
+          0.5117
         ],
         [
-          0.3994,
-          0.4659
+          0.3085,
+          0.5666
         ],
         [
-          0.2764,
-          0.5136
-        ],
-        [
-          0.2401,
-          0.5068
+          0.267,
+          0.5587
         ],
         [
           0.05,
-          0.3842
+          0.4178
         ]
       ],
       "stops": [
         {
           "x": 0.95,
-          "y": 0.6158,
-          "town": "Winkler, Manitoba",
-          "kind": "start",
-          "sessions": []
-        },
-        {
-          "x": 0.05,
-          "y": 0.3842,
-          "town": "Calgary, Alberta",
-          "kind": "end",
-          "sessions": []
-        },
-        {
-          "x": 0.8382,
-          "y": 0.5273,
+          "y": 0.5822,
           "town": "Brandon, Manitoba",
-          "kind": "charge",
+          "kind": "start",
           "sessions": [
             {
               "network": "Supercharger",
@@ -189,8 +171,15 @@
           ]
         },
         {
-          "x": 0.7096,
-          "y": 0.4591,
+          "x": 0.05,
+          "y": 0.4178,
+          "town": "Calgary, Alberta",
+          "kind": "end",
+          "sessions": []
+        },
+        {
+          "x": 0.8032,
+          "y": 0.5039,
           "town": "Whitewood, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -203,8 +192,8 @@
           ]
         },
         {
-          "x": 0.5811,
-          "y": 0.4455,
+          "x": 0.6564,
+          "y": 0.4883,
           "town": "Regina, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -217,8 +206,8 @@
           ]
         },
         {
-          "x": 0.3994,
-          "y": 0.4659,
+          "x": 0.4489,
+          "y": 0.5117,
           "town": "Swift Current, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -231,8 +220,8 @@
           ]
         },
         {
-          "x": 0.2401,
-          "y": 0.5068,
+          "x": 0.267,
+          "y": 0.5587,
           "town": "Medicine Hat, Alberta",
           "kind": "charge",
           "sessions": [
@@ -245,7 +234,7 @@
           ]
         }
       ],
-      "kmPerPx": 1.7709,
+      "kmPerPx": 1.5404,
       "plotted": true
     },
     {
@@ -3536,7 +3525,7 @@
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T22:55:09.773Z",
+  "updatedAt": "2026-10-01T23:12:07.442Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4616,15 +4605,9 @@
           "wh": 160,
           "km": 124,
           "prov": "Saskatchewan"
-        },
-        {
-          "t": 14.5,
-          "wh": 161,
-          "km": 224,
-          "prov": "Manitoba"
         }
       ],
-      "median": 150,
+      "median": 149,
       "best": 66,
       "worst": 491,
       "provinces": [
@@ -4637,13 +4620,13 @@
       ]
     },
     "autopilot": {
-      "km": 16173,
-      "pct": 89.7
+      "km": 15950,
+      "pct": 89.6
     },
     "energy": {
-      "used": 2793,
+      "used": 2757,
       "added": 3100,
-      "overhead": 9.9,
+      "overhead": 11,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
@@ -4653,7 +4636,7 @@
       "total": 566.92,
       "supercharger": 566.92,
       "other": 0,
-      "perKm": 0.031,
+      "perKm": 0.032,
       "sessions": 87,
       "currency": "CAD"
     },
@@ -4762,7 +4745,7 @@
     {
       "key": "2026-09-02",
       "label": "D 1",
-      "km": 1333
+      "km": 1110
     },
     {
       "key": "2026-09-03",
