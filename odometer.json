@@ -1,13 +1,13 @@
 {
-  "odometer": 19126,
+  "odometer": 19148,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
   "route": "Sault Ste. Marie, Ontario",
-  "today": 126,
+  "today": 280,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 596,
+  "avgPerDay": 601,
   "chargeSessions": 2,
   "chargeSupercharger": 1,
   "chargeOther": 1,
@@ -3536,7 +3536,7 @@
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T21:19:52.092Z",
+  "updatedAt": "2026-10-01T21:45:17.382Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4637,15 +4637,15 @@
       ]
     },
     "autopilot": {
-      "km": 16113,
-      "pct": 90.2
+      "km": 16173,
+      "pct": 89.7
     },
     "energy": {
-      "used": 2771,
+      "used": 2793,
       "added": 3100,
-      "overhead": 10.6,
+      "overhead": 9.9,
       "whPerKm": 155,
-      "kmPerKwh": 6.4,
+      "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 402
     },
@@ -4653,7 +4653,7 @@
       "total": 566.92,
       "supercharger": 566.92,
       "other": 0,
-      "perKm": 0.032,
+      "perKm": 0.031,
       "sessions": 87,
       "currency": "CAD"
     },
@@ -4907,7 +4907,7 @@
     {
       "key": "2026-10-01",
       "label": "D 30",
-      "km": 126
+      "km": 280
     }
   ],
   "log": [
@@ -4918,7 +4918,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "126",
+      "km": "280",
       "chargeMinutes": 148,
       "note": ""
     },
