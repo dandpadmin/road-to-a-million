@@ -3331,5 +3331,40 @@
     ],
     "kmPerPx": 0.9696,
     "plotted": true
+  },
+  {
+    "key": "2026-09-30",
+    "day": 29,
+    "date": "Sep 30",
+    "label": "Day 29 · Sep 30",
+    "km": 19,
+    "from": "Thunder Bay, Ontario",
+    "to": "Thunder Bay, Ontario",
+    "corridor": "Thunder Bay, Ontario",
+    "province": "Ontario",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.214,
+        0.95
+      ],
+      [
+        0.786,
+        0.05
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.214,
+        "y": 0.95,
+        "town": "Thunder Bay, Ontario",
+        "kind": "start",
+        "sessions": []
+      }
+    ],
+    "kmPerPx": 0.0268,
+    "plotted": true
   }
 ]
