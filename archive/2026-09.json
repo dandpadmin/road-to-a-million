@@ -3214,10 +3214,10 @@
     "day": 28,
     "date": "Sep 29",
     "label": "Day 28 · Sep 29",
-    "km": 694,
+    "km": 831,
     "from": "Winkler, Manitoba",
-    "to": "Upsala, Ontario",
-    "corridor": "Upsala, Ontario",
+    "to": "Thunder Bay, Ontario",
+    "corridor": "Thunder Bay, Ontario",
     "province": "Ontario",
     "chargeStops": 3,
     "chargeMinutes": 57,
@@ -3225,66 +3225,70 @@
     "path": [
       [
         0.05,
-        0.5722
+        0.4813
       ],
       [
-        0.056,
-        0.5722
+        0.0552,
+        0.4813
       ],
       [
         0.05,
-        0.5722
+        0.4813
       ],
       [
-        0.308,
-        0.4422
+        0.2737,
+        0.3693
       ],
       [
-        0.386,
-        0.4133
+        0.3413,
+        0.3445
       ],
       [
-        0.428,
-        0.4278
+        0.3777,
+        0.3569
       ],
       [
-        0.53,
-        0.3844
+        0.4662,
+        0.3196
       ],
       [
-        0.668,
-        0.3989
+        0.5858,
+        0.332
+      ],
+      [
+        0.8303,
+        0.5187
       ],
       [
         0.95,
-        0.6156
+        0.6804
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.5722,
+        "y": 0.4813,
         "town": "Winkler, Manitoba",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.6156,
-        "town": "Upsala, Ontario",
+        "y": 0.6804,
+        "town": "Thunder Bay, Ontario",
         "kind": "end",
         "sessions": [
           {
-            "network": "Supercharger",
-            "minutes": 16,
-            "socStart": 24,
-            "socEnd": 75
+            "network": "AC / destination",
+            "minutes": 332,
+            "socStart": 44,
+            "socEnd": 100
           }
         ]
       },
       {
-        "x": 0.308,
-        "y": 0.4422,
+        "x": 0.2737,
+        "y": 0.3693,
         "town": "Reynolds, Manitoba",
         "kind": "charge",
         "sessions": [
@@ -3297,8 +3301,8 @@
         ]
       },
       {
-        "x": 0.668,
-        "y": 0.3989,
+        "x": 0.5858,
+        "y": 0.332,
         "town": "Dryden, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3309,9 +3313,23 @@
             "socEnd": 72
           }
         ]
+      },
+      {
+        "x": 0.8303,
+        "y": 0.5187,
+        "town": "Upsala, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 16,
+            "socStart": 24,
+            "socEnd": 75
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.8352,
+    "kmPerPx": 0.9696,
     "plotted": true
   }
 ]
