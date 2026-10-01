@@ -1,5 +1,5 @@
 {
-  "odometer": 18547,
+  "odometer": 18588,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
@@ -3401,7 +3401,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-10-01T01:59:04.585Z",
+  "updatedAt": "2026-10-01T02:20:26.979Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4479,11 +4479,11 @@
       "rangeEst": 402
     },
     "cost": {
-      "total": 528.34,
-      "supercharger": 528.34,
+      "total": 543.05,
+      "supercharger": 543.05,
       "other": 0,
-      "perKm": 0.03,
-      "sessions": 84,
+      "perKm": 0.031,
+      "sessions": 85,
       "currency": "CAD"
     },
     "chargeCurve": {
