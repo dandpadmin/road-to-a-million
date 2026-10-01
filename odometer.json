@@ -1,7 +1,7 @@
 {
-  "odometer": 18367,
+  "odometer": 18419,
   "goal": 1000000,
-  "day": 29,
+  "day": 30,
   "province": "Ontario",
   "route": "Dryden, Ontario",
   "today": 948,
@@ -3401,7 +3401,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-09-30T23:56:10.242Z",
+  "updatedAt": "2026-10-01T00:25:13.666Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
