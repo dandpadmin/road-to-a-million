@@ -3219,8 +3219,8 @@
     "to": "Thunder Bay, Ontario",
     "corridor": "Thunder Bay, Ontario",
     "province": "Ontario",
-    "chargeStops": 3,
-    "chargeMinutes": 57,
+    "chargeStops": 4,
+    "chargeMinutes": 389,
     "note": "Town level · delayed 24h",
     "path": [
       [

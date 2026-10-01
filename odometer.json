@@ -1,5 +1,5 @@
 {
-  "odometer": 18789,
+  "odometer": 18847,
   "goal": 1000000,
   "day": 30,
   "province": "Ontario",
@@ -24,8 +24,8 @@
     "to": "Thunder Bay, Ontario",
     "corridor": "Thunder Bay, Ontario",
     "province": "Ontario",
-    "chargeStops": 3,
-    "chargeMinutes": 57,
+    "chargeStops": 4,
+    "chargeMinutes": 389,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -3358,8 +3358,8 @@
       "to": "Thunder Bay, Ontario",
       "corridor": "Thunder Bay, Ontario",
       "province": "Ontario",
-      "chargeStops": 3,
-      "chargeMinutes": 57,
+      "chargeStops": 4,
+      "chargeMinutes": 389,
       "note": "Town level · delayed 24h",
       "path": [
         [
@@ -3473,7 +3473,7 @@
     }
   ],
   "asOf": "2026-09-30",
-  "updatedAt": "2026-10-01T04:15:43.436Z",
+  "updatedAt": "2026-10-01T04:46:31.251Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
