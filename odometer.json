@@ -1,7 +1,7 @@
 {
   "odometer": 19148,
   "goal": 1000000,
-  "day": 30,
+  "day": 31,
   "province": "Ontario",
   "route": "McKerrow, Ontario",
   "today": 280,
@@ -3561,7 +3561,7 @@
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-01T23:45:47.038Z",
+  "updatedAt": "2026-10-02T00:20:46.815Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
