@@ -3315,77 +3315,74 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 1245,
+    "km": 1493,
     "from": "Thunder Bay, Ontario",
-    "to": "Port Severn, Ontario",
-    "corridor": "Port Severn, Ontario",
+    "to": "New Hamburg, Ontario",
+    "corridor": "New Hamburg, Ontario",
     "province": "Ontario",
     "chargeStops": 6,
     "chargeMinutes": 101,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.05,
-        0.1552
+        0.1474,
+        0.1167
       ],
       [
-        0.0641,
-        0.1337
+        0.1585,
+        0.1
       ],
       [
-        0.2573,
-        0.069
+        0.3099,
+        0.05
       ],
       [
-        0.4741,
-        0.2414
+        0.4797,
+        0.1833
       ],
       [
-        0.5165,
-        0.5539
+        0.5129,
+        0.425
       ],
       [
-        0.5212,
-        0.5539
+        0.5166,
+        0.425
       ],
       [
-        0.7568,
-        0.6077
+        0.7012,
+        0.4667
       ],
       [
-        0.9264,
-        0.8124
+        0.8341,
+        0.625
       ],
       [
-        0.95,
-        0.931
+        0.8526,
+        0.7167
+      ],
+      [
+        0.7824,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.05,
-        "y": 0.1552,
+        "x": 0.1474,
+        "y": 0.1167,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.95,
-        "y": 0.931,
-        "town": "Port Severn, Ontario",
+        "x": 0.7824,
+        "y": 0.95,
+        "town": "New Hamburg, Ontario",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 10,
-            "socStart": 58,
-            "socEnd": 83
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.2573,
-        "y": 0.069,
+        "x": 0.3099,
+        "y": 0.05,
         "town": "Terrace Bay, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3398,8 +3395,8 @@
         ]
       },
       {
-        "x": 0.4741,
-        "y": 0.2414,
+        "x": 0.4797,
+        "y": 0.1833,
         "town": "Wawa, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3412,8 +3409,8 @@
         ]
       },
       {
-        "x": 0.5212,
-        "y": 0.5539,
+        "x": 0.5166,
+        "y": 0.425,
         "town": "Sault Ste. Marie, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3426,8 +3423,8 @@
         ]
       },
       {
-        "x": 0.7568,
-        "y": 0.6077,
+        "x": 0.7012,
+        "y": 0.4667,
         "town": "McKerrow, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3440,8 +3437,8 @@
         ]
       },
       {
-        "x": 0.9264,
-        "y": 0.8124,
+        "x": 0.8341,
+        "y": 0.625,
         "town": "Parry Sound, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3452,9 +3449,23 @@
             "socEnd": 80
           }
         ]
+      },
+      {
+        "x": 0.8526,
+        "y": 0.7167,
+        "town": "Port Severn, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 10,
+            "socStart": 58,
+            "socEnd": 83
+          }
+        ]
       }
     ],
-    "kmPerPx": 1.1198,
+    "kmPerPx": 1.4478,
     "plotted": true
   }
 ]
