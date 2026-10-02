@@ -4,16 +4,61 @@
     "day": 30,
     "date": "Oct 1",
     "label": "Day 30 · Oct 1",
-    "km": 0,
+    "km": 80,
     "from": "New Hamburg, Ontario",
-    "to": "New Hamburg, Ontario",
-    "corridor": "New Hamburg, Ontario",
+    "to": "Milton, Ontario",
+    "corridor": "Milton, Ontario",
     "province": "Ontario",
-    "chargeStops": 1,
-    "chargeMinutes": 111,
+    "chargeStops": 2,
+    "chargeMinutes": 148,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.05,
+        0.6713
+      ],
+      [
+        0.95,
+        0.3287
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.05,
+        "y": 0.6713,
+        "town": "New Hamburg, Ontario",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 111,
+            "socStart": 13,
+            "socEnd": 35
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 214,
+            "socStart": 51,
+            "socEnd": 94
+          }
+        ]
+      },
+      {
+        "x": 0.95,
+        "y": 0.3287,
+        "town": "Milton, Ontario",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 37,
+            "socStart": 19,
+            "socEnd": 98
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.1057,
+    "plotted": true
   }
 ]
