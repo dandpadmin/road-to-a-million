@@ -3326,69 +3326,73 @@
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 948,
+    "km": 1173,
     "from": "Thunder Bay, Ontario",
-    "to": "McKerrow, Ontario",
-    "corridor": "McKerrow, Ontario",
+    "to": "Parry Sound, Ontario",
+    "corridor": "Parry Sound, Ontario",
     "province": "Ontario",
-    "chargeStops": 4,
-    "chargeMinutes": 68,
+    "chargeStops": 5,
+    "chargeMinutes": 91,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.2635
+        0.2053
       ],
       [
-        0.068,
-        0.2356
+        0.0645,
+        0.1831
       ],
       [
-        0.314,
-        0.1521
+        0.2629,
+        0.1163
       ],
       [
-        0.59,
-        0.3748
+        0.4855,
+        0.2943
       ],
       [
-        0.644,
-        0.7783
+        0.529,
+        0.6168
       ],
       [
-        0.65,
-        0.7783
+        0.5339,
+        0.6168
+      ],
+      [
+        0.7758,
+        0.6724
       ],
       [
         0.95,
-        0.8479
+        0.8837
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.2635,
+        "y": 0.2053,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.8479,
-        "town": "McKerrow, Ontario",
+        "y": 0.8837,
+        "town": "Parry Sound, Ontario",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 36,
-            "socEnd": 74
+            "minutes": 23,
+            "socStart": 12,
+            "socEnd": 80
           }
         ]
       },
       {
-        "x": 0.314,
-        "y": 0.1521,
+        "x": 0.2629,
+        "y": 0.1163,
         "town": "Terrace Bay, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3401,8 +3405,8 @@
         ]
       },
       {
-        "x": 0.59,
-        "y": 0.3748,
+        "x": 0.4855,
+        "y": 0.2943,
         "town": "Wawa, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3415,8 +3419,8 @@
         ]
       },
       {
-        "x": 0.65,
-        "y": 0.7783,
+        "x": 0.5339,
+        "y": 0.6168,
         "town": "Sault Ste. Marie, Ontario",
         "kind": "charge",
         "sessions": [
@@ -3427,9 +3431,23 @@
             "socEnd": 88
           }
         ]
+      },
+      {
+        "x": 0.7758,
+        "y": 0.6724,
+        "town": "McKerrow, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 11,
+            "socStart": 36,
+            "socEnd": 74
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.8671,
+    "kmPerPx": 1.0849,
     "plotted": true
   }
 ]
