@@ -1,176 +1,35 @@
 {
-  "odometer": 19148,
+  "odometer": 19169,
   "goal": 1000000,
   "day": 31,
   "province": "Ontario",
   "route": "New Hamburg, Ontario",
-  "today": 280,
+  "today": 20,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 589,
-  "chargeSessions": 3,
+  "avgPerDay": 571,
+  "chargeSessions": 1,
   "chargeSupercharger": 1,
-  "chargeOther": 2,
-  "chargeLifetime": 155,
-  "chargeLifetimeSupercharger": 88,
+  "chargeOther": 0,
+  "chargeLifetime": 156,
+  "chargeLifetimeSupercharger": 89,
   "chargeLifetimeOther": 67,
   "dayMap": {
-    "key": "2026-09-30",
-    "day": 29,
-    "date": "Sep 30",
-    "label": "Day 29 · Sep 30",
-    "km": 1493,
-    "from": "Thunder Bay, Ontario",
+    "key": "2026-10-01",
+    "day": 30,
+    "date": "Oct 1",
+    "label": "Day 30 · Oct 1",
+    "km": 0,
+    "from": "New Hamburg, Ontario",
     "to": "New Hamburg, Ontario",
     "corridor": "New Hamburg, Ontario",
     "province": "Ontario",
-    "chargeStops": 6,
-    "chargeMinutes": 101,
+    "chargeStops": 1,
+    "chargeMinutes": 111,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.1474,
-        0.1167
-      ],
-      [
-        0.1585,
-        0.1
-      ],
-      [
-        0.3099,
-        0.05
-      ],
-      [
-        0.4797,
-        0.1833
-      ],
-      [
-        0.5129,
-        0.425
-      ],
-      [
-        0.5166,
-        0.425
-      ],
-      [
-        0.7012,
-        0.4667
-      ],
-      [
-        0.8341,
-        0.625
-      ],
-      [
-        0.8526,
-        0.7167
-      ],
-      [
-        0.7824,
-        0.95
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.1474,
-        "y": 0.1167,
-        "town": "Thunder Bay, Ontario",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.7824,
-        "y": 0.95,
-        "town": "New Hamburg, Ontario",
-        "kind": "end",
-        "sessions": []
-      },
-      {
-        "x": 0.3099,
-        "y": 0.05,
-        "town": "Terrace Bay, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 12,
-            "socStart": 44,
-            "socEnd": 81
-          }
-        ]
-      },
-      {
-        "x": 0.4797,
-        "y": 0.1833,
-        "town": "Wawa, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 22,
-            "socStart": 18,
-            "socEnd": 83
-          }
-        ]
-      },
-      {
-        "x": 0.5166,
-        "y": 0.425,
-        "town": "Sault Ste. Marie, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 23,
-            "socStart": 24,
-            "socEnd": 88
-          }
-        ]
-      },
-      {
-        "x": 0.7012,
-        "y": 0.4667,
-        "town": "McKerrow, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 36,
-            "socEnd": 74
-          }
-        ]
-      },
-      {
-        "x": 0.8341,
-        "y": 0.625,
-        "town": "Parry Sound, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 23,
-            "socStart": 12,
-            "socEnd": 80
-          }
-        ]
-      },
-      {
-        "x": 0.8526,
-        "y": 0.7167,
-        "town": "Port Severn, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 10,
-            "socStart": 58,
-            "socEnd": 83
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 1.4478,
-    "plotted": true
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
     {
@@ -3641,10 +3500,27 @@
       ],
       "kmPerPx": 1.4478,
       "plotted": true
+    },
+    {
+      "key": "2026-10-01",
+      "day": 30,
+      "date": "Oct 1",
+      "label": "Day 30 · Oct 1",
+      "km": 0,
+      "from": "New Hamburg, Ontario",
+      "to": "New Hamburg, Ontario",
+      "corridor": "New Hamburg, Ontario",
+      "province": "Ontario",
+      "chargeStops": 1,
+      "chargeMinutes": 111,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
-  "asOf": "2026-10-01",
-  "updatedAt": "2026-10-02T13:46:24.420Z",
+  "asOf": "2026-10-02",
+  "updatedAt": "2026-10-02T14:16:06.682Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4757,24 +4633,24 @@
       ]
     },
     "autopilot": {
-      "km": 15825,
+      "km": 15843,
       "pct": 89.5
     },
     "energy": {
-      "used": 2738,
+      "used": 2742,
       "added": 3127,
-      "overhead": 12.4,
+      "overhead": 12.3,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 402
     },
     "cost": {
-      "total": 566.92,
-      "supercharger": 566.92,
+      "total": 567.44,
+      "supercharger": 567.44,
       "other": 0,
       "perKm": 0.032,
-      "sessions": 87,
+      "sessions": 88,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4855,7 +4731,7 @@
           "n": 1
         }
       ],
-      "sessions": 155,
+      "sessions": 156,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4879,11 +4755,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-02",
-      "label": "D 1",
-      "km": 985
-    },
     {
       "key": "2026-09-03",
       "label": "D 2",
@@ -5028,16 +4899,32 @@
       "key": "2026-10-01",
       "label": "D 30",
       "km": 280
+    },
+    {
+      "key": "2026-10-02",
+      "label": "D 31",
+      "km": 20
     }
   ],
   "log": [
     {
-      "key": "2026-10-01",
-      "day": "Day 30",
-      "date": "Oct 1",
+      "key": "2026-10-02",
+      "day": "Day 31",
+      "date": "Oct 2",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "20",
+      "chargeMinutes": 1,
+      "note": ""
+    },
+    {
+      "key": "2026-10-01",
+      "day": "Day 30",
+      "date": "Oct 1",
+      "province": "Ontario",
+      "from": "New Hamburg, Ontario",
+      "to": "New Hamburg, Ontario",
       "km": "280",
       "chargeMinutes": 362,
       "note": ""
@@ -5136,18 +5023,6 @@
       "plotted": true,
       "km": "605",
       "chargeMinutes": 914,
-      "note": ""
-    },
-    {
-      "key": "2026-09-22",
-      "day": "Day 21",
-      "date": "Sep 22",
-      "province": "Manitoba",
-      "from": "Winnipeg, Manitoba",
-      "to": "Manitoba",
-      "plotted": true,
-      "km": "470",
-      "chargeMinutes": 907,
       "note": ""
     }
   ]

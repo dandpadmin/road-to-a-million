@@ -1,0 +1,19 @@
+[
+  {
+    "key": "2026-10-01",
+    "day": 30,
+    "date": "Oct 1",
+    "label": "Day 30 · Oct 1",
+    "km": 0,
+    "from": "New Hamburg, Ontario",
+    "to": "New Hamburg, Ontario",
+    "corridor": "New Hamburg, Ontario",
+    "province": "Ontario",
+    "chargeStops": 1,
+    "chargeMinutes": 111,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
+  }
+]
