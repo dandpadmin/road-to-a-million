@@ -4,8 +4,8 @@
     "day": 1,
     "date": "Sep 2",
     "label": "Day 1 · Sep 2",
-    "km": 985,
-    "from": "Maryfield 91, Saskatchewan",
+    "km": 747,
+    "from": "Regina, Saskatchewan",
     "to": "Calgary, Alberta",
     "corridor": "Calgary, Alberta",
     "province": "Alberta",
@@ -15,67 +15,31 @@
     "path": [
       [
         0.95,
-        0.5658
+        0.4942
       ],
       [
-        0.8929,
-        0.5132
+        0.6421,
+        0.5291
       ],
       [
-        0.7286,
-        0.4956
+        0.4337,
+        0.6106
       ],
       [
-        0.4964,
-        0.5219
-      ],
-      [
-        0.3393,
-        0.5834
-      ],
-      [
-        0.2929,
-        0.5746
+        0.3721,
+        0.5989
       ],
       [
         0.05,
-        0.4166
+        0.3894
       ]
     ],
     "stops": [
       {
         "x": 0.95,
-        "y": 0.5658,
-        "town": "Maryfield 91, Saskatchewan",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.05,
-        "y": 0.4166,
-        "town": "Calgary, Alberta",
-        "kind": "end",
-        "sessions": []
-      },
-      {
-        "x": 0.8929,
-        "y": 0.5132,
-        "town": "Whitewood, Saskatchewan",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 5,
-            "socStart": 38,
-            "socEnd": 55
-          }
-        ]
-      },
-      {
-        "x": 0.7286,
-        "y": 0.4956,
+        "y": 0.4942,
         "town": "Regina, Saskatchewan",
-        "kind": "charge",
+        "kind": "start",
         "sessions": [
           {
             "network": "Supercharger",
@@ -86,8 +50,15 @@
         ]
       },
       {
-        "x": 0.4964,
-        "y": 0.5219,
+        "x": 0.05,
+        "y": 0.3894,
+        "town": "Calgary, Alberta",
+        "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.6421,
+        "y": 0.5291,
         "town": "Swift Current, Saskatchewan",
         "kind": "charge",
         "sessions": [
@@ -100,8 +71,8 @@
         ]
       },
       {
-        "x": 0.2929,
-        "y": 0.5746,
+        "x": 0.3721,
+        "y": 0.5989,
         "town": "Medicine Hat, Alberta",
         "kind": "charge",
         "sessions": [
@@ -114,7 +85,7 @@
         ]
       }
     ],
-    "kmPerPx": 1.375,
+    "kmPerPx": 1.0367,
     "plotted": true
   },
   {

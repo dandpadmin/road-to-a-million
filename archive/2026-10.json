@@ -4,10 +4,10 @@
     "day": 30,
     "date": "Oct 1",
     "label": "Day 30 · Oct 1",
-    "km": 80,
+    "km": 126,
     "from": "New Hamburg, Ontario",
-    "to": "Milton, Ontario",
-    "corridor": "Milton, Ontario",
+    "to": "Mississauga, Ontario",
+    "corridor": "Mississauga, Ontario",
     "province": "Ontario",
     "chargeStops": 2,
     "chargeMinutes": 148,
@@ -15,17 +15,21 @@
     "path": [
       [
         0.05,
-        0.6713
+        0.6324
+      ],
+      [
+        0.7455,
+        0.3676
       ],
       [
         0.95,
-        0.3287
+        0.3676
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6713,
+        "y": 0.6324,
         "town": "New Hamburg, Ontario",
         "kind": "start",
         "sessions": [
@@ -45,9 +49,16 @@
       },
       {
         "x": 0.95,
-        "y": 0.3287,
-        "town": "Milton, Ontario",
+        "y": 0.3676,
+        "town": "Mississauga, Ontario",
         "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.7455,
+        "y": 0.3676,
+        "town": "Milton, Ontario",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -58,7 +69,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1057,
+    "kmPerPx": 0.1367,
     "plotted": true
   }
 ]

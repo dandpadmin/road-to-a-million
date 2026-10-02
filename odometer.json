@@ -1,28 +1,28 @@
 {
-  "odometer": 19377,
+  "odometer": 19728,
   "goal": 1000000,
   "day": 31,
   "province": "Ontario",
-  "route": "Milton, Ontario",
-  "today": 20,
+  "route": "Mississauga, Ontario",
+  "today": 580,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 571,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 581,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 156,
-  "chargeLifetimeSupercharger": 89,
+  "chargeLifetime": 157,
+  "chargeLifetimeSupercharger": 90,
   "chargeLifetimeOther": 67,
   "dayMap": {
     "key": "2026-10-01",
     "day": 30,
     "date": "Oct 1",
     "label": "Day 30 · Oct 1",
-    "km": 80,
+    "km": 126,
     "from": "New Hamburg, Ontario",
-    "to": "Milton, Ontario",
-    "corridor": "Milton, Ontario",
+    "to": "Mississauga, Ontario",
+    "corridor": "Mississauga, Ontario",
     "province": "Ontario",
     "chargeStops": 2,
     "chargeMinutes": 148,
@@ -30,17 +30,21 @@
     "path": [
       [
         0.05,
-        0.6713
+        0.6324
+      ],
+      [
+        0.7455,
+        0.3676
       ],
       [
         0.95,
-        0.3287
+        0.3676
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.6713,
+        "y": 0.6324,
         "town": "New Hamburg, Ontario",
         "kind": "start",
         "sessions": [
@@ -60,9 +64,16 @@
       },
       {
         "x": 0.95,
-        "y": 0.3287,
-        "town": "Milton, Ontario",
+        "y": 0.3676,
+        "town": "Mississauga, Ontario",
         "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.7455,
+        "y": 0.3676,
+        "town": "Milton, Ontario",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -73,7 +84,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1057,
+    "kmPerPx": 0.1367,
     "plotted": true
   },
   "dayMaps": [
@@ -82,8 +93,8 @@
       "day": 1,
       "date": "Sep 2",
       "label": "Day 1 · Sep 2",
-      "km": 985,
-      "from": "Maryfield 91, Saskatchewan",
+      "km": 747,
+      "from": "Regina, Saskatchewan",
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
       "province": "Alberta",
@@ -93,67 +104,31 @@
       "path": [
         [
           0.95,
-          0.5658
+          0.4942
         ],
         [
-          0.8929,
-          0.5132
+          0.6421,
+          0.5291
         ],
         [
-          0.7286,
-          0.4956
+          0.4337,
+          0.6106
         ],
         [
-          0.4964,
-          0.5219
-        ],
-        [
-          0.3393,
-          0.5834
-        ],
-        [
-          0.2929,
-          0.5746
+          0.3721,
+          0.5989
         ],
         [
           0.05,
-          0.4166
+          0.3894
         ]
       ],
       "stops": [
         {
           "x": 0.95,
-          "y": 0.5658,
-          "town": "Maryfield 91, Saskatchewan",
-          "kind": "start",
-          "sessions": []
-        },
-        {
-          "x": 0.05,
-          "y": 0.4166,
-          "town": "Calgary, Alberta",
-          "kind": "end",
-          "sessions": []
-        },
-        {
-          "x": 0.8929,
-          "y": 0.5132,
-          "town": "Whitewood, Saskatchewan",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 5,
-              "socStart": 38,
-              "socEnd": 55
-            }
-          ]
-        },
-        {
-          "x": 0.7286,
-          "y": 0.4956,
+          "y": 0.4942,
           "town": "Regina, Saskatchewan",
-          "kind": "charge",
+          "kind": "start",
           "sessions": [
             {
               "network": "Supercharger",
@@ -164,8 +139,15 @@
           ]
         },
         {
-          "x": 0.4964,
-          "y": 0.5219,
+          "x": 0.05,
+          "y": 0.3894,
+          "town": "Calgary, Alberta",
+          "kind": "end",
+          "sessions": []
+        },
+        {
+          "x": 0.6421,
+          "y": 0.5291,
           "town": "Swift Current, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -178,8 +160,8 @@
           ]
         },
         {
-          "x": 0.2929,
-          "y": 0.5746,
+          "x": 0.3721,
+          "y": 0.5989,
           "town": "Medicine Hat, Alberta",
           "kind": "charge",
           "sessions": [
@@ -192,7 +174,7 @@
           ]
         }
       ],
-      "kmPerPx": 1.375,
+      "kmPerPx": 1.0367,
       "plotted": true
     },
     {
@@ -3551,10 +3533,10 @@
       "day": 30,
       "date": "Oct 1",
       "label": "Day 30 · Oct 1",
-      "km": 80,
+      "km": 126,
       "from": "New Hamburg, Ontario",
-      "to": "Milton, Ontario",
-      "corridor": "Milton, Ontario",
+      "to": "Mississauga, Ontario",
+      "corridor": "Mississauga, Ontario",
       "province": "Ontario",
       "chargeStops": 2,
       "chargeMinutes": 148,
@@ -3562,17 +3544,21 @@
       "path": [
         [
           0.05,
-          0.6713
+          0.6324
+        ],
+        [
+          0.7455,
+          0.3676
         ],
         [
           0.95,
-          0.3287
+          0.3676
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.6713,
+          "y": 0.6324,
           "town": "New Hamburg, Ontario",
           "kind": "start",
           "sessions": [
@@ -3592,9 +3578,16 @@
         },
         {
           "x": 0.95,
-          "y": 0.3287,
-          "town": "Milton, Ontario",
+          "y": 0.3676,
+          "town": "Mississauga, Ontario",
           "kind": "end",
+          "sessions": []
+        },
+        {
+          "x": 0.7455,
+          "y": 0.3676,
+          "town": "Milton, Ontario",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -3605,18 +3598,24 @@
           ]
         }
       ],
-      "kmPerPx": 0.1057,
+      "kmPerPx": 0.1367,
       "plotted": true
     }
   ],
   "asOf": "2026-10-02",
-  "updatedAt": "2026-10-02T16:36:28.039Z",
+  "updatedAt": "2026-10-02T21:00:17.060Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 24.2,
+          "wh": 109,
+          "km": 46,
+          "prov": "Ontario"
+        },
         {
           "t": 20.4,
           "wh": 116,
@@ -4702,18 +4701,6 @@
           "wh": 160,
           "km": 247,
           "prov": "Saskatchewan"
-        },
-        {
-          "t": 24.6,
-          "wh": 148,
-          "km": 170,
-          "prov": "Saskatchewan"
-        },
-        {
-          "t": 20.9,
-          "wh": 164,
-          "km": 68,
-          "prov": "Saskatchewan"
         }
       ],
       "median": 149,
@@ -4729,24 +4716,24 @@
       ]
     },
     "autopilot": {
-      "km": 15843,
-      "pct": 89.5
+      "km": 15995,
+      "pct": 88.8
     },
     "energy": {
-      "used": 2742,
-      "added": 3127,
-      "overhead": 12.3,
+      "used": 2789,
+      "added": 3169,
+      "overhead": 12,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 402
+      "rangeEst": 403
     },
     "cost": {
-      "total": 567.44,
-      "supercharger": 567.44,
+      "total": 582.14,
+      "supercharger": 582.14,
       "other": 0,
       "perKm": 0.032,
-      "sessions": 88,
+      "sessions": 89,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4783,8 +4770,8 @@
         },
         {
           "soc": 55,
-          "kw": 81,
-          "n": 20
+          "kw": 82,
+          "n": 21
         },
         {
           "soc": 60,
@@ -4827,7 +4814,7 @@
           "n": 1
         }
       ],
-      "sessions": 156,
+      "sessions": 157,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4999,7 +4986,7 @@
     {
       "key": "2026-10-02",
       "label": "D 31",
-      "km": 20
+      "km": 580
     }
   ],
   "log": [
@@ -5010,8 +4997,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "20",
-      "chargeMinutes": 1,
+      "km": "580",
+      "chargeMinutes": 26,
       "note": ""
     },
     {
@@ -5020,7 +5007,7 @@
       "date": "Oct 1",
       "province": "Ontario",
       "from": "New Hamburg, Ontario",
-      "to": "Milton, Ontario",
+      "to": "Mississauga, Ontario",
       "plotted": true,
       "km": "280",
       "chargeMinutes": 362,
