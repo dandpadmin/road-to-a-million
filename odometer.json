@@ -3,89 +3,93 @@
   "goal": 1000000,
   "day": 31,
   "province": "Ontario",
-  "route": "Parry Sound, Ontario",
+  "route": "Port Severn, Ontario",
   "today": 280,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 593,
-  "chargeSessions": 2,
+  "avgPerDay": 589,
+  "chargeSessions": 3,
   "chargeSupercharger": 1,
-  "chargeOther": 1,
-  "chargeLifetime": 154,
+  "chargeOther": 2,
+  "chargeLifetime": 155,
   "chargeLifetimeSupercharger": 88,
-  "chargeLifetimeOther": 66,
+  "chargeLifetimeOther": 67,
   "dayMap": {
     "key": "2026-09-30",
     "day": 29,
     "date": "Sep 30",
     "label": "Day 29 · Sep 30",
-    "km": 1173,
+    "km": 1245,
     "from": "Thunder Bay, Ontario",
-    "to": "Parry Sound, Ontario",
-    "corridor": "Parry Sound, Ontario",
+    "to": "Port Severn, Ontario",
+    "corridor": "Port Severn, Ontario",
     "province": "Ontario",
-    "chargeStops": 5,
-    "chargeMinutes": 91,
+    "chargeStops": 6,
+    "chargeMinutes": 101,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.2053
+        0.1552
       ],
       [
-        0.0645,
-        0.1831
+        0.0641,
+        0.1337
       ],
       [
-        0.2629,
-        0.1163
+        0.2573,
+        0.069
       ],
       [
-        0.4855,
-        0.2943
+        0.4741,
+        0.2414
       ],
       [
-        0.529,
-        0.6168
+        0.5165,
+        0.5539
       ],
       [
-        0.5339,
-        0.6168
+        0.5212,
+        0.5539
       ],
       [
-        0.7758,
-        0.6724
+        0.7568,
+        0.6077
+      ],
+      [
+        0.9264,
+        0.8124
       ],
       [
         0.95,
-        0.8837
+        0.931
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.2053,
+        "y": 0.1552,
         "town": "Thunder Bay, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.8837,
-        "town": "Parry Sound, Ontario",
+        "y": 0.931,
+        "town": "Port Severn, Ontario",
         "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
-            "minutes": 23,
-            "socStart": 12,
-            "socEnd": 80
+            "minutes": 10,
+            "socStart": 58,
+            "socEnd": 83
           }
         ]
       },
       {
-        "x": 0.2629,
-        "y": 0.1163,
+        "x": 0.2573,
+        "y": 0.069,
         "town": "Terrace Bay, Ontario",
         "kind": "charge",
         "sessions": [
@@ -98,8 +102,8 @@
         ]
       },
       {
-        "x": 0.4855,
-        "y": 0.2943,
+        "x": 0.4741,
+        "y": 0.2414,
         "town": "Wawa, Ontario",
         "kind": "charge",
         "sessions": [
@@ -112,8 +116,8 @@
         ]
       },
       {
-        "x": 0.5339,
-        "y": 0.6168,
+        "x": 0.5212,
+        "y": 0.5539,
         "town": "Sault Ste. Marie, Ontario",
         "kind": "charge",
         "sessions": [
@@ -126,8 +130,8 @@
         ]
       },
       {
-        "x": 0.7758,
-        "y": 0.6724,
+        "x": 0.7568,
+        "y": 0.6077,
         "town": "McKerrow, Ontario",
         "kind": "charge",
         "sessions": [
@@ -138,9 +142,23 @@
             "socEnd": 74
           }
         ]
+      },
+      {
+        "x": 0.9264,
+        "y": 0.8124,
+        "town": "Parry Sound, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 23,
+            "socStart": 12,
+            "socEnd": 80
+          }
+        ]
       }
     ],
-    "kmPerPx": 1.0849,
+    "kmPerPx": 1.1198,
     "plotted": true
   },
   "dayMaps": [
@@ -149,8 +167,8 @@
       "day": 1,
       "date": "Sep 2",
       "label": "Day 1 · Sep 2",
-      "km": 1110,
-      "from": "Brandon, Manitoba",
+      "km": 985,
+      "from": "Maryfield 91, Saskatchewan",
       "to": "Calgary, Alberta",
       "corridor": "Calgary, Alberta",
       "province": "Alberta",
@@ -160,62 +178,51 @@
       "path": [
         [
           0.95,
-          0.5822
+          0.5658
         ],
         [
-          0.8543,
-          0.5509
+          0.8929,
+          0.5132
         ],
         [
-          0.8032,
-          0.5039
+          0.7286,
+          0.4956
         ],
         [
-          0.6564,
-          0.4883
+          0.4964,
+          0.5219
         ],
         [
-          0.4489,
-          0.5117
+          0.3393,
+          0.5834
         ],
         [
-          0.3085,
-          0.5666
-        ],
-        [
-          0.267,
-          0.5587
+          0.2929,
+          0.5746
         ],
         [
           0.05,
-          0.4178
+          0.4166
         ]
       ],
       "stops": [
         {
           "x": 0.95,
-          "y": 0.5822,
-          "town": "Brandon, Manitoba",
+          "y": 0.5658,
+          "town": "Maryfield 91, Saskatchewan",
           "kind": "start",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 22,
-              "socStart": 36,
-              "socEnd": 89
-            }
-          ]
+          "sessions": []
         },
         {
           "x": 0.05,
-          "y": 0.4178,
+          "y": 0.4166,
           "town": "Calgary, Alberta",
           "kind": "end",
           "sessions": []
         },
         {
-          "x": 0.8032,
-          "y": 0.5039,
+          "x": 0.8929,
+          "y": 0.5132,
           "town": "Whitewood, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -228,8 +235,8 @@
           ]
         },
         {
-          "x": 0.6564,
-          "y": 0.4883,
+          "x": 0.7286,
+          "y": 0.4956,
           "town": "Regina, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -242,8 +249,8 @@
           ]
         },
         {
-          "x": 0.4489,
-          "y": 0.5117,
+          "x": 0.4964,
+          "y": 0.5219,
           "town": "Swift Current, Saskatchewan",
           "kind": "charge",
           "sessions": [
@@ -256,8 +263,8 @@
           ]
         },
         {
-          "x": 0.267,
-          "y": 0.5587,
+          "x": 0.2929,
+          "y": 0.5746,
           "town": "Medicine Hat, Alberta",
           "kind": "charge",
           "sessions": [
@@ -270,7 +277,7 @@
           ]
         }
       ],
-      "kmPerPx": 1.5404,
+      "kmPerPx": 1.375,
       "plotted": true
     },
     {
@@ -3471,73 +3478,77 @@
       "day": 29,
       "date": "Sep 30",
       "label": "Day 29 · Sep 30",
-      "km": 1173,
+      "km": 1245,
       "from": "Thunder Bay, Ontario",
-      "to": "Parry Sound, Ontario",
-      "corridor": "Parry Sound, Ontario",
+      "to": "Port Severn, Ontario",
+      "corridor": "Port Severn, Ontario",
       "province": "Ontario",
-      "chargeStops": 5,
-      "chargeMinutes": 91,
+      "chargeStops": 6,
+      "chargeMinutes": 101,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.2053
+          0.1552
         ],
         [
-          0.0645,
-          0.1831
+          0.0641,
+          0.1337
         ],
         [
-          0.2629,
-          0.1163
+          0.2573,
+          0.069
         ],
         [
-          0.4855,
-          0.2943
+          0.4741,
+          0.2414
         ],
         [
-          0.529,
-          0.6168
+          0.5165,
+          0.5539
         ],
         [
-          0.5339,
-          0.6168
+          0.5212,
+          0.5539
         ],
         [
-          0.7758,
-          0.6724
+          0.7568,
+          0.6077
+        ],
+        [
+          0.9264,
+          0.8124
         ],
         [
           0.95,
-          0.8837
+          0.931
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.2053,
+          "y": 0.1552,
           "town": "Thunder Bay, Ontario",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.8837,
-          "town": "Parry Sound, Ontario",
+          "y": 0.931,
+          "town": "Port Severn, Ontario",
           "kind": "end",
           "sessions": [
             {
               "network": "Supercharger",
-              "minutes": 23,
-              "socStart": 12,
-              "socEnd": 80
+              "minutes": 10,
+              "socStart": 58,
+              "socEnd": 83
             }
           ]
         },
         {
-          "x": 0.2629,
-          "y": 0.1163,
+          "x": 0.2573,
+          "y": 0.069,
           "town": "Terrace Bay, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3550,8 +3561,8 @@
           ]
         },
         {
-          "x": 0.4855,
-          "y": 0.2943,
+          "x": 0.4741,
+          "y": 0.2414,
           "town": "Wawa, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3564,8 +3575,8 @@
           ]
         },
         {
-          "x": 0.5339,
-          "y": 0.6168,
+          "x": 0.5212,
+          "y": 0.5539,
           "town": "Sault Ste. Marie, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3578,8 +3589,8 @@
           ]
         },
         {
-          "x": 0.7758,
-          "y": 0.6724,
+          "x": 0.7568,
+          "y": 0.6077,
           "town": "McKerrow, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3590,20 +3601,40 @@
               "socEnd": 74
             }
           ]
+        },
+        {
+          "x": 0.9264,
+          "y": 0.8124,
+          "town": "Parry Sound, Ontario",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 23,
+              "socStart": 12,
+              "socEnd": 80
+            }
+          ]
         }
       ],
-      "kmPerPx": 1.0849,
+      "kmPerPx": 1.1198,
       "plotted": true
     }
   ],
   "asOf": "2026-10-01",
-  "updatedAt": "2026-10-02T02:17:37.998Z",
+  "updatedAt": "2026-10-02T02:43:32.360Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 16.1,
+          "wh": 187,
+          "km": 72,
+          "prov": "Ontario"
+        },
         {
           "t": 16.6,
           "wh": 162,
@@ -4683,12 +4714,6 @@
           "wh": 164,
           "km": 68,
           "prov": "Saskatchewan"
-        },
-        {
-          "t": 19.3,
-          "wh": 160,
-          "km": 124,
-          "prov": "Saskatchewan"
         }
       ],
       "median": 149,
@@ -4704,13 +4729,13 @@
       ]
     },
     "autopilot": {
-      "km": 15950,
-      "pct": 89.6
+      "km": 15825,
+      "pct": 89.5
     },
     "energy": {
-      "used": 2757,
-      "added": 3100,
-      "overhead": 11,
+      "used": 2738,
+      "added": 3127,
+      "overhead": 12.4,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
@@ -4778,8 +4803,8 @@
         },
         {
           "soc": 75,
-          "kw": 48,
-          "n": 7
+          "kw": 43,
+          "n": 8
         },
         {
           "soc": 80,
@@ -4802,7 +4827,7 @@
           "n": 1
         }
       ],
-      "sessions": 154,
+      "sessions": 155,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4829,7 +4854,7 @@
     {
       "key": "2026-09-02",
       "label": "D 1",
-      "km": 1110
+      "km": 985
     },
     {
       "key": "2026-09-03",
@@ -4986,7 +5011,7 @@
       "from": "—",
       "to": "—",
       "km": "280",
-      "chargeMinutes": 148,
+      "chargeMinutes": 362,
       "note": ""
     },
     {
@@ -4995,7 +5020,7 @@
       "date": "Sep 30",
       "province": "Ontario",
       "from": "Thunder Bay, Ontario",
-      "to": "Parry Sound, Ontario",
+      "to": "Port Severn, Ontario",
       "plotted": true,
       "km": "1,493",
       "chargeMinutes": 101,
