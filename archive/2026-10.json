@@ -4,13 +4,13 @@
     "day": 30,
     "date": "Oct 1",
     "label": "Day 30 · Oct 1",
-    "km": 126,
+    "km": 280,
     "from": "New Hamburg, Ontario",
-    "to": "Mississauga, Ontario",
-    "corridor": "Mississauga, Ontario",
+    "to": "New Hamburg, Ontario",
+    "corridor": "New Hamburg, Ontario",
     "province": "Ontario",
-    "chargeStops": 2,
-    "chargeMinutes": 148,
+    "chargeStops": 3,
+    "chargeMinutes": 362,
     "note": "Town level · delayed 24h",
     "path": [
       [
@@ -24,6 +24,10 @@
       [
         0.95,
         0.3676
+      ],
+      [
+        0.05,
+        0.6324
       ]
     ],
     "stops": [
@@ -46,13 +50,6 @@
             "socEnd": 94
           }
         ]
-      },
-      {
-        "x": 0.95,
-        "y": 0.3676,
-        "town": "Mississauga, Ontario",
-        "kind": "end",
-        "sessions": []
       },
       {
         "x": 0.7455,

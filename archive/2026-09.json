@@ -1,99 +1,10 @@
 [
   {
-    "key": "2026-09-02",
-    "day": 1,
-    "date": "Sep 2",
-    "label": "Day 1 · Sep 2",
-    "km": 747,
-    "from": "Regina, Saskatchewan",
-    "to": "Calgary, Alberta",
-    "corridor": "Calgary, Alberta",
-    "province": "Alberta",
-    "chargeStops": 5,
-    "chargeMinutes": 127,
-    "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.95,
-        0.4942
-      ],
-      [
-        0.6421,
-        0.5291
-      ],
-      [
-        0.4337,
-        0.6106
-      ],
-      [
-        0.3721,
-        0.5989
-      ],
-      [
-        0.05,
-        0.3894
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.95,
-        "y": 0.4942,
-        "town": "Regina, Saskatchewan",
-        "kind": "start",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 54,
-            "socStart": 15,
-            "socEnd": 100
-          }
-        ]
-      },
-      {
-        "x": 0.05,
-        "y": 0.3894,
-        "town": "Calgary, Alberta",
-        "kind": "end",
-        "sessions": []
-      },
-      {
-        "x": 0.6421,
-        "y": 0.5291,
-        "town": "Swift Current, Saskatchewan",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 16,
-            "socStart": 34,
-            "socEnd": 80
-          }
-        ]
-      },
-      {
-        "x": 0.3721,
-        "y": 0.5989,
-        "town": "Medicine Hat, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 30,
-            "socStart": 17,
-            "socEnd": 90
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 1.0367,
-    "plotted": true
-  },
-  {
     "key": "2026-09-03",
     "day": 2,
     "date": "Sep 3",
     "label": "Day 2 · Sep 3",
-    "km": 455,
+    "km": 432,
     "from": "Calgary, Alberta",
     "to": "Calgary, Alberta",
     "corridor": "Calgary, Alberta",
@@ -102,14 +13,6 @@
     "chargeMinutes": 59,
     "note": "Town level · delayed 24h",
     "path": [
-      [
-        0.0947,
-        0.95
-      ],
-      [
-        0.1547,
-        0.875
-      ],
       [
         0.0947,
         0.8
@@ -162,7 +65,7 @@
     "stops": [
       {
         "x": 0.0947,
-        "y": 0.95,
+        "y": 0.8,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": [
