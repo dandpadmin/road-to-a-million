@@ -3,7 +3,7 @@
   "goal": 1000000,
   "day": 32,
   "province": "Ontario",
-  "route": "Trenton, Ontario",
+  "route": "Cumberland, Ontario",
   "today": 212,
   "best": 1493,
   "bestDay": 29,
@@ -19,53 +19,54 @@
     "day": 31,
     "date": "Oct 2",
     "label": "Day 31 · Oct 2",
-    "km": 285,
+    "km": 603,
     "from": "New Hamburg, Ontario",
-    "to": "Trenton, Ontario",
-    "corridor": "Trenton, Ontario",
+    "to": "Cumberland, Ontario",
+    "corridor": "Cumberland, Ontario",
     "province": "Ontario",
-    "chargeStops": 2,
-    "chargeMinutes": 26,
+    "chargeStops": 3,
+    "chargeMinutes": 42,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.736
+        0.8909
       ],
       [
-        0.1081,
-        0.736
+        0.084,
+        0.8909
+      ],
+      [
+        0.5764,
+        0.6117
+      ],
+      [
+        0.9075,
+        0.1277
       ],
       [
         0.95,
-        0.264
+        0.1091
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.736,
+        "y": 0.8909,
         "town": "New Hamburg, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.264,
-        "town": "Trenton, Ontario",
+        "y": 0.1091,
+        "town": "Cumberland, Ontario",
         "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 25,
-            "socStart": 21,
-            "socEnd": 88
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.1081,
-        "y": 0.736,
+        "x": 0.084,
+        "y": 0.8909,
         "town": "Kitchener, Ontario",
         "kind": "charge",
         "sessions": [
@@ -76,9 +77,37 @@
             "socEnd": 84
           }
         ]
+      },
+      {
+        "x": 0.5764,
+        "y": 0.6117,
+        "town": "Trenton, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 25,
+            "socStart": 21,
+            "socEnd": 88
+          }
+        ]
+      },
+      {
+        "x": 0.9075,
+        "y": 0.1277,
+        "town": "Gloucester, Ontario",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 16,
+            "socStart": 10,
+            "socEnd": 65
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.3834,
+    "kmPerPx": 0.6481,
     "plotted": true
   },
   "dayMaps": [
@@ -3480,53 +3509,54 @@
       "day": 31,
       "date": "Oct 2",
       "label": "Day 31 · Oct 2",
-      "km": 285,
+      "km": 603,
       "from": "New Hamburg, Ontario",
-      "to": "Trenton, Ontario",
-      "corridor": "Trenton, Ontario",
+      "to": "Cumberland, Ontario",
+      "corridor": "Cumberland, Ontario",
       "province": "Ontario",
-      "chargeStops": 2,
-      "chargeMinutes": 26,
+      "chargeStops": 3,
+      "chargeMinutes": 42,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.736
+          0.8909
         ],
         [
-          0.1081,
-          0.736
+          0.084,
+          0.8909
+        ],
+        [
+          0.5764,
+          0.6117
+        ],
+        [
+          0.9075,
+          0.1277
         ],
         [
           0.95,
-          0.264
+          0.1091
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.736,
+          "y": 0.8909,
           "town": "New Hamburg, Ontario",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.264,
-          "town": "Trenton, Ontario",
+          "y": 0.1091,
+          "town": "Cumberland, Ontario",
           "kind": "end",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 25,
-              "socStart": 21,
-              "socEnd": 88
-            }
-          ]
+          "sessions": []
         },
         {
-          "x": 0.1081,
-          "y": 0.736,
+          "x": 0.084,
+          "y": 0.8909,
           "town": "Kitchener, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3537,20 +3567,60 @@
               "socEnd": 84
             }
           ]
+        },
+        {
+          "x": 0.5764,
+          "y": 0.6117,
+          "town": "Trenton, Ontario",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 25,
+              "socStart": 21,
+              "socEnd": 88
+            }
+          ]
+        },
+        {
+          "x": 0.9075,
+          "y": 0.1277,
+          "town": "Gloucester, Ontario",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 16,
+              "socStart": 10,
+              "socEnd": 65
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.3834,
+      "kmPerPx": 0.6481,
       "plotted": true
     }
   ],
   "asOf": "2026-10-03",
-  "updatedAt": "2026-10-03T18:42:01.476Z",
+  "updatedAt": "2026-10-03T21:48:35.480Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 20.4,
+          "wh": 91,
+          "km": 23,
+          "prov": "Ontario"
+        },
+        {
+          "t": 20.2,
+          "wh": 156,
+          "km": 294,
+          "prov": "Ontario"
+        },
         {
           "t": 16.6,
           "wh": 141,
@@ -4912,7 +4982,7 @@
       "date": "Oct 2",
       "province": "Ontario",
       "from": "New Hamburg, Ontario",
-      "to": "Trenton, Ontario",
+      "to": "Cumberland, Ontario",
       "plotted": true,
       "km": "748",
       "chargeMinutes": 64,
