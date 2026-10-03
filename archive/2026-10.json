@@ -74,37 +74,55 @@
     "day": 31,
     "date": "Oct 2",
     "label": "Day 31 · Oct 2",
-    "km": 20,
+    "km": 285,
     "from": "New Hamburg, Ontario",
-    "to": "Kitchener, Ontario",
-    "corridor": "Kitchener, Ontario",
+    "to": "Trenton, Ontario",
+    "corridor": "Trenton, Ontario",
     "province": "Ontario",
-    "chargeStops": 1,
-    "chargeMinutes": 1,
+    "chargeStops": 2,
+    "chargeMinutes": 26,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.5
+        0.736
+      ],
+      [
+        0.1081,
+        0.736
       ],
       [
         0.95,
-        0.5
+        0.264
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.5,
+        "y": 0.736,
         "town": "New Hamburg, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5,
-        "town": "Kitchener, Ontario",
+        "y": 0.264,
+        "town": "Trenton, Ontario",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 25,
+            "socStart": 21,
+            "socEnd": 88
+          }
+        ]
+      },
+      {
+        "x": 0.1081,
+        "y": 0.736,
+        "town": "Kitchener, Ontario",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -115,7 +133,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.0249,
+    "kmPerPx": 0.3834,
     "plotted": true
   }
 ]

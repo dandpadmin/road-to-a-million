@@ -4,7 +4,7 @@
     "day": 2,
     "date": "Sep 3",
     "label": "Day 2 · Sep 3",
-    "km": 410,
+    "km": 322,
     "from": "Calgary, Alberta",
     "to": "Calgary, Alberta",
     "corridor": "Calgary, Alberta",
@@ -13,10 +13,6 @@
     "chargeMinutes": 59,
     "note": "Town level · delayed 24h",
     "path": [
-      [
-        0.0947,
-        0.95
-      ],
       [
         0.0947,
         0.8
@@ -49,7 +45,7 @@
     "stops": [
       {
         "x": 0.0947,
-        "y": 0.95,
+        "y": 0.8,
         "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": [
