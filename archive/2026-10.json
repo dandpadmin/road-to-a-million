@@ -206,10 +206,10 @@
     "day": 32,
     "date": "Oct 3",
     "label": "Day 32 · Oct 3",
-    "km": 197,
+    "km": 212,
     "from": "La Conception, Quebec",
-    "to": "Brossard, Quebec",
-    "corridor": "Brossard, Quebec",
+    "to": "Montréal, Quebec",
+    "corridor": "Montréal, Quebec",
     "province": "Quebec",
     "chargeStops": 0,
     "chargeMinutes": 0,
@@ -230,6 +230,10 @@
       [
         0.8699,
         0.95
+      ],
+      [
+        0.839,
+        0.95
       ]
     ],
     "stops": [
@@ -241,9 +245,9 @@
         "sessions": []
       },
       {
-        "x": 0.8699,
+        "x": 0.839,
         "y": 0.95,
-        "town": "Brossard, Quebec",
+        "town": "Montréal, Quebec",
         "kind": "end",
         "sessions": []
       }
