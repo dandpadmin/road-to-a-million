@@ -4,8 +4,8 @@
     "day": 2,
     "date": "Sep 3",
     "label": "Day 2 · Sep 3",
-    "km": 322,
-    "from": "Calgary, Alberta",
+    "km": 158,
+    "from": "Drumheller, Alberta",
     "to": "Calgary, Alberta",
     "corridor": "Calgary, Alberta",
     "province": "Alberta",
@@ -14,40 +14,35 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.0947,
-        0.8
-      ],
-      [
-        0.0947,
-        0.65
-      ],
-      [
-        0.8453,
+        0.9424,
         0.05
       ],
       [
-        0.9053,
-        0.125
+        0.4836,
+        0.7045
       ],
       [
-        0.485,
-        0.725
-      ],
-      [
-        0.1247,
+        0.0903,
         0.95
       ],
       [
-        0.0947,
+        0.0576,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.0947,
-        "y": 0.8,
-        "town": "Calgary, Alberta",
+        "x": 0.9424,
+        "y": 0.05,
+        "town": "Drumheller, Alberta",
         "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.0576,
+        "y": 0.95,
+        "town": "Calgary, Alberta",
+        "kind": "end",
         "sessions": [
           {
             "network": "Supercharger",
@@ -64,8 +59,8 @@
         ]
       },
       {
-        "x": 0.485,
-        "y": 0.725,
+        "x": 0.4836,
+        "y": 0.7045,
         "town": "Strathmore, Alberta",
         "kind": "charge",
         "sessions": [
@@ -78,7 +73,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1609,
+    "kmPerPx": 0.1475,
     "plotted": true
   },
   {

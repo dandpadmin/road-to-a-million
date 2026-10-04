@@ -1,234 +1,70 @@
 {
-  "odometer": 20108,
+  "odometer": 20156,
   "goal": 1000000,
   "day": 33,
   "province": "Quebec",
-  "route": "La Conception, Quebec",
-  "today": 212,
+  "route": "Brossard, Quebec",
+  "today": 7,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 565,
-  "chargeSessions": 0,
-  "chargeSupercharger": 0,
+  "avgPerDay": 542,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 160,
-  "chargeLifetimeSupercharger": 93,
+  "chargeLifetime": 161,
+  "chargeLifetimeSupercharger": 94,
   "chargeLifetimeOther": 67,
   "dayMap": {
-    "key": "2026-10-02",
-    "day": 31,
-    "date": "Oct 2",
-    "label": "Day 31 · Oct 2",
-    "km": 748,
-    "from": "New Hamburg, Ontario",
-    "to": "La Conception, Quebec",
-    "corridor": "La Conception, Quebec",
+    "key": "2026-10-03",
+    "day": 32,
+    "date": "Oct 3",
+    "label": "Day 32 · Oct 3",
+    "km": 197,
+    "from": "La Conception, Quebec",
+    "to": "Brossard, Quebec",
+    "corridor": "Brossard, Quebec",
     "province": "Quebec",
-    "chargeStops": 5,
-    "chargeMinutes": 64,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.05,
-        0.9437
+        0.1301,
+        0.05
       ],
       [
-        0.0793,
-        0.9437
+        0.1918,
+        0.05
       ],
       [
-        0.5037,
-        0.7017
+        0.5,
+        0.3269
       ],
       [
-        0.789,
-        0.2822
-      ],
-      [
-        0.8256,
-        0.2661
-      ],
-      [
-        0.8256,
-        0.2499
-      ],
-      [
-        0.95,
-        0.0725
-      ],
-      [
-        0.9427,
-        0.0563
-      ],
-      [
-        0.928,
-        0.0563
+        0.8699,
+        0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.05,
-        "y": 0.9437,
-        "town": "New Hamburg, Ontario",
+        "x": 0.1301,
+        "y": 0.05,
+        "town": "La Conception, Quebec",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.928,
-        "y": 0.0563,
-        "town": "La Conception, Quebec",
+        "x": 0.8699,
+        "y": 0.95,
+        "town": "Brossard, Quebec",
         "kind": "end",
         "sessions": []
-      },
-      {
-        "x": 0.0793,
-        "y": 0.9437,
-        "town": "Kitchener, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 1,
-            "socStart": 82,
-            "socEnd": 84
-          }
-        ]
-      },
-      {
-        "x": 0.5037,
-        "y": 0.7017,
-        "town": "Trenton, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 25,
-            "socStart": 21,
-            "socEnd": 88
-          }
-        ]
-      },
-      {
-        "x": 0.789,
-        "y": 0.2822,
-        "town": "Gloucester, Ontario",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 16,
-            "socStart": 10,
-            "socEnd": 65
-          }
-        ]
-      },
-      {
-        "x": 0.9427,
-        "y": 0.0563,
-        "town": "Mont-Tremblant, Quebec",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 15,
-            "socStart": 29,
-            "socEnd": 77
-          },
-          {
-            "network": "Supercharger",
-            "minutes": 7,
-            "socStart": 77,
-            "socEnd": 89
-          }
-        ]
       }
     ],
-    "kmPerPx": 0.7478,
+    "kmPerPx": 0.1743,
     "plotted": true
   },
   "dayMaps": [
-    {
-      "key": "2026-09-03",
-      "day": 2,
-      "date": "Sep 3",
-      "label": "Day 2 · Sep 3",
-      "km": 322,
-      "from": "Calgary, Alberta",
-      "to": "Calgary, Alberta",
-      "corridor": "Calgary, Alberta",
-      "province": "Alberta",
-      "chargeStops": 3,
-      "chargeMinutes": 59,
-      "note": "Town level · delayed 24h",
-      "path": [
-        [
-          0.0947,
-          0.8
-        ],
-        [
-          0.0947,
-          0.65
-        ],
-        [
-          0.8453,
-          0.05
-        ],
-        [
-          0.9053,
-          0.125
-        ],
-        [
-          0.485,
-          0.725
-        ],
-        [
-          0.1247,
-          0.95
-        ],
-        [
-          0.0947,
-          0.95
-        ]
-      ],
-      "stops": [
-        {
-          "x": 0.0947,
-          "y": 0.8,
-          "town": "Calgary, Alberta",
-          "kind": "start",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 35,
-              "socStart": 12,
-              "socEnd": 94
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 6,
-              "socStart": 59,
-              "socEnd": 77
-            }
-          ]
-        },
-        {
-          "x": 0.485,
-          "y": 0.725,
-          "town": "Strathmore, Alberta",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 18,
-              "socStart": 25,
-              "socEnd": 79
-            }
-          ]
-        }
-      ],
-      "kmPerPx": 0.1609,
-      "plotted": true
-    },
     {
       "key": "2026-09-04",
       "day": 3,
@@ -3671,16 +3507,90 @@
       ],
       "kmPerPx": 0.7478,
       "plotted": true
+    },
+    {
+      "key": "2026-10-03",
+      "day": 32,
+      "date": "Oct 3",
+      "label": "Day 32 · Oct 3",
+      "km": 197,
+      "from": "La Conception, Quebec",
+      "to": "Brossard, Quebec",
+      "corridor": "Brossard, Quebec",
+      "province": "Quebec",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.1301,
+          0.05
+        ],
+        [
+          0.1918,
+          0.05
+        ],
+        [
+          0.5,
+          0.3269
+        ],
+        [
+          0.8699,
+          0.95
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.1301,
+          "y": 0.05,
+          "town": "La Conception, Quebec",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.8699,
+          "y": 0.95,
+          "town": "Brossard, Quebec",
+          "kind": "end",
+          "sessions": []
+        }
+      ],
+      "kmPerPx": 0.1743,
+      "plotted": true
     }
   ],
-  "asOf": "2026-10-03",
-  "updatedAt": "2026-10-04T12:27:55.683Z",
+  "asOf": "2026-10-04",
+  "updatedAt": "2026-10-04T16:58:21.685Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 13.3,
+          "wh": 118,
+          "km": 91,
+          "prov": "Quebec"
+        },
+        {
+          "t": 8,
+          "wh": 102,
+          "km": 13,
+          "prov": "Quebec"
+        },
+        {
+          "t": 6.5,
+          "wh": 151,
+          "km": 78,
+          "prov": "Quebec"
+        },
+        {
+          "t": 3.3,
+          "wh": 163,
+          "km": 14,
+          "prov": "Quebec"
+        },
         {
           "t": 12.9,
           "wh": 118,
@@ -4748,24 +4658,6 @@
           "wh": 171,
           "km": 91,
           "prov": "Alberta"
-        },
-        {
-          "t": 21,
-          "wh": 109,
-          "km": 7,
-          "prov": "Alberta"
-        },
-        {
-          "t": 18,
-          "wh": 103,
-          "km": 139,
-          "prov": "Alberta"
-        },
-        {
-          "t": 18.7,
-          "wh": 200,
-          "km": 18,
-          "prov": "Alberta"
         }
       ],
       "median": 149,
@@ -4782,24 +4674,24 @@
       ]
     },
     "autopilot": {
-      "km": 15478,
-      "pct": 88.4
+      "km": 15322,
+      "pct": 88.3
     },
     "energy": {
-      "used": 2698,
-      "added": 3241,
-      "overhead": 16.7,
+      "used": 2681,
+      "added": 3284,
+      "overhead": 18.4,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 405
+      "rangeEst": 404
     },
     "cost": {
-      "total": 608.16,
-      "supercharger": 608.16,
+      "total": 618.7,
+      "supercharger": 618.7,
       "other": 0,
-      "perKm": 0.035,
-      "sessions": 92,
+      "perKm": 0.036,
+      "sessions": 93,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4841,8 +4733,8 @@
         },
         {
           "soc": 60,
-          "kw": 51,
-          "n": 13
+          "kw": 52,
+          "n": 14
         },
         {
           "soc": 65,
@@ -4880,7 +4772,7 @@
           "n": 1
         }
       ],
-      "sessions": 160,
+      "sessions": 161,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4904,11 +4796,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-04",
-      "label": "D 3",
-      "km": 1117
-    },
     {
       "key": "2026-09-05",
       "label": "D 4",
@@ -5053,16 +4940,33 @@
       "key": "2026-10-03",
       "label": "D 32",
       "km": 212
+    },
+    {
+      "key": "2026-10-04",
+      "label": "D 33",
+      "km": 7
     }
   ],
   "log": [
     {
-      "key": "2026-10-03",
-      "day": "Day 32",
-      "date": "Oct 3",
+      "key": "2026-10-04",
+      "day": "Day 33",
+      "date": "Oct 4",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "7",
+      "chargeMinutes": 44,
+      "note": ""
+    },
+    {
+      "key": "2026-10-03",
+      "day": "Day 32",
+      "date": "Oct 3",
+      "province": "Quebec",
+      "from": "La Conception, Quebec",
+      "to": "Brossard, Quebec",
+      "plotted": true,
       "km": "212",
       "chargeMinutes": 0,
       "note": ""
@@ -5161,18 +5065,6 @@
       "plotted": true,
       "km": "365",
       "chargeMinutes": 202,
-      "note": ""
-    },
-    {
-      "key": "2026-09-24",
-      "day": "Day 23",
-      "date": "Sep 24",
-      "province": "Manitoba",
-      "from": "Manitoba",
-      "to": "Winkler, Manitoba",
-      "plotted": true,
-      "km": "799",
-      "chargeMinutes": 882,
       "note": ""
     }
   ]
