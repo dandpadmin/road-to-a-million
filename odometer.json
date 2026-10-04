@@ -1,9 +1,9 @@
 {
   "odometer": 20108,
   "goal": 1000000,
-  "day": 32,
-  "province": "Ontario",
-  "route": "Cumberland, Ontario",
+  "day": 33,
+  "province": "Quebec",
+  "route": "La Conception, Quebec",
   "today": 212,
   "best": 1493,
   "bestDay": 29,
@@ -19,54 +19,70 @@
     "day": 31,
     "date": "Oct 2",
     "label": "Day 31 · Oct 2",
-    "km": 603,
+    "km": 748,
     "from": "New Hamburg, Ontario",
-    "to": "Cumberland, Ontario",
-    "corridor": "Cumberland, Ontario",
-    "province": "Ontario",
-    "chargeStops": 3,
-    "chargeMinutes": 42,
+    "to": "La Conception, Quebec",
+    "corridor": "La Conception, Quebec",
+    "province": "Quebec",
+    "chargeStops": 5,
+    "chargeMinutes": 64,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.8909
+        0.9437
       ],
       [
-        0.084,
-        0.8909
+        0.0793,
+        0.9437
       ],
       [
-        0.5764,
-        0.6117
+        0.5037,
+        0.7017
       ],
       [
-        0.9075,
-        0.1277
+        0.789,
+        0.2822
+      ],
+      [
+        0.8256,
+        0.2661
+      ],
+      [
+        0.8256,
+        0.2499
       ],
       [
         0.95,
-        0.1091
+        0.0725
+      ],
+      [
+        0.9427,
+        0.0563
+      ],
+      [
+        0.928,
+        0.0563
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.8909,
+        "y": 0.9437,
         "town": "New Hamburg, Ontario",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.95,
-        "y": 0.1091,
-        "town": "Cumberland, Ontario",
+        "x": 0.928,
+        "y": 0.0563,
+        "town": "La Conception, Quebec",
         "kind": "end",
         "sessions": []
       },
       {
-        "x": 0.084,
-        "y": 0.8909,
+        "x": 0.0793,
+        "y": 0.9437,
         "town": "Kitchener, Ontario",
         "kind": "charge",
         "sessions": [
@@ -79,8 +95,8 @@
         ]
       },
       {
-        "x": 0.5764,
-        "y": 0.6117,
+        "x": 0.5037,
+        "y": 0.7017,
         "town": "Trenton, Ontario",
         "kind": "charge",
         "sessions": [
@@ -93,8 +109,8 @@
         ]
       },
       {
-        "x": 0.9075,
-        "y": 0.1277,
+        "x": 0.789,
+        "y": 0.2822,
         "town": "Gloucester, Ontario",
         "kind": "charge",
         "sessions": [
@@ -105,9 +121,29 @@
             "socEnd": 65
           }
         ]
+      },
+      {
+        "x": 0.9427,
+        "y": 0.0563,
+        "town": "Mont-Tremblant, Quebec",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 15,
+            "socStart": 29,
+            "socEnd": 77
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 7,
+            "socStart": 77,
+            "socEnd": 89
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.6481,
+    "kmPerPx": 0.7478,
     "plotted": true
   },
   "dayMaps": [
@@ -3509,54 +3545,70 @@
       "day": 31,
       "date": "Oct 2",
       "label": "Day 31 · Oct 2",
-      "km": 603,
+      "km": 748,
       "from": "New Hamburg, Ontario",
-      "to": "Cumberland, Ontario",
-      "corridor": "Cumberland, Ontario",
-      "province": "Ontario",
-      "chargeStops": 3,
-      "chargeMinutes": 42,
+      "to": "La Conception, Quebec",
+      "corridor": "La Conception, Quebec",
+      "province": "Quebec",
+      "chargeStops": 5,
+      "chargeMinutes": 64,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.8909
+          0.9437
         ],
         [
-          0.084,
-          0.8909
+          0.0793,
+          0.9437
         ],
         [
-          0.5764,
-          0.6117
+          0.5037,
+          0.7017
         ],
         [
-          0.9075,
-          0.1277
+          0.789,
+          0.2822
+        ],
+        [
+          0.8256,
+          0.2661
+        ],
+        [
+          0.8256,
+          0.2499
         ],
         [
           0.95,
-          0.1091
+          0.0725
+        ],
+        [
+          0.9427,
+          0.0563
+        ],
+        [
+          0.928,
+          0.0563
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.8909,
+          "y": 0.9437,
           "town": "New Hamburg, Ontario",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.95,
-          "y": 0.1091,
-          "town": "Cumberland, Ontario",
+          "x": 0.928,
+          "y": 0.0563,
+          "town": "La Conception, Quebec",
           "kind": "end",
           "sessions": []
         },
         {
-          "x": 0.084,
-          "y": 0.8909,
+          "x": 0.0793,
+          "y": 0.9437,
           "town": "Kitchener, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3569,8 +3621,8 @@
           ]
         },
         {
-          "x": 0.5764,
-          "y": 0.6117,
+          "x": 0.5037,
+          "y": 0.7017,
           "town": "Trenton, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3583,8 +3635,8 @@
           ]
         },
         {
-          "x": 0.9075,
-          "y": 0.1277,
+          "x": 0.789,
+          "y": 0.2822,
           "town": "Gloucester, Ontario",
           "kind": "charge",
           "sessions": [
@@ -3595,20 +3647,58 @@
               "socEnd": 65
             }
           ]
+        },
+        {
+          "x": 0.9427,
+          "y": 0.0563,
+          "town": "Mont-Tremblant, Quebec",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 15,
+              "socStart": 29,
+              "socEnd": 77
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 7,
+              "socStart": 77,
+              "socEnd": 89
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.6481,
+      "kmPerPx": 0.7478,
       "plotted": true
     }
   ],
   "asOf": "2026-10-03",
-  "updatedAt": "2026-10-03T21:48:35.480Z",
+  "updatedAt": "2026-10-04T00:24:04.932Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
   "nerd": {
     "efficiency": {
       "points": [
+        {
+          "t": 12.9,
+          "wh": 118,
+          "km": 15,
+          "prov": "Quebec"
+        },
+        {
+          "t": 13.3,
+          "wh": 319,
+          "km": 6,
+          "prov": "Quebec"
+        },
+        {
+          "t": 15.9,
+          "wh": 137,
+          "km": 124,
+          "prov": "Quebec"
+        },
         {
           "t": 20.4,
           "wh": 91,
@@ -4682,6 +4772,7 @@
       "best": 66,
       "worst": 491,
       "provinces": [
+        "Quebec",
         "Ontario",
         "Manitoba",
         "Saskatchewan",
@@ -4980,9 +5071,9 @@
       "key": "2026-10-02",
       "day": "Day 31",
       "date": "Oct 2",
-      "province": "Ontario",
+      "province": "Quebec",
       "from": "New Hamburg, Ontario",
-      "to": "Cumberland, Ontario",
+      "to": "La Conception, Quebec",
       "plotted": true,
       "km": "748",
       "chargeMinutes": 64,
