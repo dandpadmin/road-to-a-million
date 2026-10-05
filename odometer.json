@@ -1,217 +1,69 @@
 {
-  "odometer": 20382,
+  "odometer": 20912,
   "goal": 1000000,
   "day": 34,
   "province": "Quebec",
-  "route": "Montréal, Quebec",
-  "today": 274,
+  "route": "Outremont, Quebec",
+  "today": 518,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 551,
-  "chargeSessions": 3,
-  "chargeSupercharger": 2,
-  "chargeOther": 1,
-  "chargeLifetime": 164,
-  "chargeLifetimeSupercharger": 95,
-  "chargeLifetimeOther": 69,
+  "avgPerDay": 557,
+  "chargeSessions": 5,
+  "chargeSupercharger": 3,
+  "chargeOther": 2,
+  "chargeLifetime": 168,
+  "chargeLifetimeSupercharger": 98,
+  "chargeLifetimeOther": 70,
   "dayMap": {
-    "key": "2026-10-03",
-    "day": 32,
-    "date": "Oct 3",
-    "label": "Day 32 · Oct 3",
-    "km": 212,
-    "from": "La Conception, Quebec",
-    "to": "Montréal, Quebec",
-    "corridor": "Montréal, Quebec",
+    "key": "2026-10-04",
+    "day": 33,
+    "date": "Oct 4",
+    "label": "Day 33 · Oct 4",
+    "km": 7,
+    "from": "Montréal, Quebec",
+    "to": "Outremont, Quebec",
+    "corridor": "Outremont, Quebec",
     "province": "Quebec",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 44,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.1301,
-        0.05
+        0.7015,
+        0.5
       ],
       [
-        0.1918,
-        0.05
-      ],
-      [
-        0.5,
-        0.3269
-      ],
-      [
-        0.8699,
-        0.95
-      ],
-      [
-        0.839,
-        0.95
+        0.2985,
+        0.5
       ]
     ],
     "stops": [
       {
-        "x": 0.1301,
-        "y": 0.05,
-        "town": "La Conception, Quebec",
+        "x": 0.7015,
+        "y": 0.5,
+        "town": "Montréal, Quebec",
         "kind": "start",
-        "sessions": []
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 44,
+            "socStart": 24,
+            "socEnd": 94
+          }
+        ]
       },
       {
-        "x": 0.839,
-        "y": 0.95,
-        "town": "Montréal, Quebec",
+        "x": 0.2985,
+        "y": 0.5,
+        "town": "Outremont, Quebec",
         "kind": "end",
         "sessions": []
       }
     ],
-    "kmPerPx": 0.1743,
+    "kmPerPx": 0.0134,
     "plotted": true
   },
   "dayMaps": [
-    {
-      "key": "2026-09-04",
-      "day": 3,
-      "date": "Sep 4",
-      "label": "Day 3 · Sep 4",
-      "km": 1117,
-      "from": "Calgary, Alberta",
-      "to": "British Columbia",
-      "corridor": "British Columbia",
-      "province": "British Columbia",
-      "chargeStops": 6,
-      "chargeMinutes": 171,
-      "note": "Town level · delayed 24h",
-      "path": [
-        [
-          0.7255,
-          0.95
-        ],
-        [
-          0.7392,
-          0.7598
-        ],
-        [
-          0.6375,
-          0.4744
-        ],
-        [
-          0.5467,
-          0.3427
-        ],
-        [
-          0.4643,
-          0.3207
-        ],
-        [
-          0.3983,
-          0.2768
-        ],
-        [
-          0.3845,
-          0.2402
-        ],
-        [
-          0.2608,
-          0.05
-        ]
-      ],
-      "stops": [
-        {
-          "x": 0.7255,
-          "y": 0.95,
-          "town": "Calgary, Alberta",
-          "kind": "start",
-          "sessions": []
-        },
-        {
-          "x": 0.2608,
-          "y": 0.05,
-          "town": "British Columbia",
-          "kind": "end",
-          "sessions": [
-            {
-              "network": "DC fast",
-              "minutes": 61,
-              "socStart": 27,
-              "socEnd": 94
-            }
-          ]
-        },
-        {
-          "x": 0.7392,
-          "y": 0.7598,
-          "town": "Red Deer County, Alberta",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 25,
-              "socStart": 19,
-              "socEnd": 87
-            }
-          ]
-        },
-        {
-          "x": 0.6375,
-          "y": 0.4744,
-          "town": "Whitecourt, Alberta",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 44,
-              "socStart": 9,
-              "socEnd": 98
-            }
-          ]
-        },
-        {
-          "x": 0.5467,
-          "y": 0.3427,
-          "town": "Valleyview, Alberta",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 12,
-              "socStart": 43,
-              "socEnd": 81
-            }
-          ]
-        },
-        {
-          "x": 0.4643,
-          "y": 0.3207,
-          "town": "Grande Prairie, Alberta",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 17,
-              "socStart": 49,
-              "socEnd": 90
-            }
-          ]
-        },
-        {
-          "x": 0.3845,
-          "y": 0.2402,
-          "town": "Dawson Creek, British Columbia",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "DC fast",
-              "minutes": 12,
-              "socStart": 60,
-              "socEnd": 85
-            }
-          ]
-        }
-      ],
-      "kmPerPx": 1.6489,
-      "plotted": true
-    },
     {
       "key": "2026-09-05",
       "day": 4,
@@ -3565,10 +3417,59 @@
       ],
       "kmPerPx": 0.1743,
       "plotted": true
+    },
+    {
+      "key": "2026-10-04",
+      "day": 33,
+      "date": "Oct 4",
+      "label": "Day 33 · Oct 4",
+      "km": 7,
+      "from": "Montréal, Quebec",
+      "to": "Outremont, Quebec",
+      "corridor": "Outremont, Quebec",
+      "province": "Quebec",
+      "chargeStops": 1,
+      "chargeMinutes": 44,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.7015,
+          0.5
+        ],
+        [
+          0.2985,
+          0.5
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.7015,
+          "y": 0.5,
+          "town": "Montréal, Quebec",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 44,
+              "socStart": 24,
+              "socEnd": 94
+            }
+          ]
+        },
+        {
+          "x": 0.2985,
+          "y": 0.5,
+          "town": "Outremont, Quebec",
+          "kind": "end",
+          "sessions": []
+        }
+      ],
+      "kmPerPx": 0.0134,
+      "plotted": true
     }
   ],
-  "asOf": "2026-10-04",
-  "updatedAt": "2026-10-05T09:07:00.892Z",
+  "asOf": "2026-10-05",
+  "updatedAt": "2026-10-05T18:29:37.777Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4648,30 +4549,6 @@
           "wh": 152,
           "km": 308,
           "prov": "Alberta"
-        },
-        {
-          "t": 10.6,
-          "wh": 153,
-          "km": 166,
-          "prov": "Alberta"
-        },
-        {
-          "t": 18.5,
-          "wh": 135,
-          "km": 5,
-          "prov": "Alberta"
-        },
-        {
-          "t": 17.7,
-          "wh": 144,
-          "km": 60,
-          "prov": "Alberta"
-        },
-        {
-          "t": 17.5,
-          "wh": 171,
-          "km": 91,
-          "prov": "Alberta"
         }
       ],
       "median": 149,
@@ -4688,24 +4565,24 @@
       ]
     },
     "autopilot": {
-      "km": 15586,
-      "pct": 88.4
+      "km": 15726,
+      "pct": 88.3
     },
     "energy": {
-      "used": 2720,
-      "added": 3331,
-      "overhead": 18.3,
-      "whPerKm": 154,
+      "used": 2763,
+      "added": 3418,
+      "overhead": 19.2,
+      "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 404
+      "rangeEst": 402
     },
     "cost": {
-      "total": 623.44,
-      "supercharger": 623.44,
+      "total": 658.11,
+      "supercharger": 658.11,
       "other": 0,
-      "perKm": 0.035,
-      "sessions": 94,
+      "perKm": 0.037,
+      "sessions": 97,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4747,13 +4624,13 @@
         },
         {
           "soc": 60,
-          "kw": 52,
-          "n": 14
+          "kw": 56,
+          "n": 15
         },
         {
           "soc": 65,
-          "kw": 69,
-          "n": 12
+          "kw": 75,
+          "n": 14
         },
         {
           "soc": 70,
@@ -4791,7 +4668,7 @@
           "n": 1
         }
       ],
-      "sessions": 164,
+      "sessions": 168,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4815,11 +4692,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-05",
-      "label": "D 4",
-      "km": 1182
-    },
     {
       "key": "2026-09-06",
       "label": "D 5",
@@ -4964,16 +4836,33 @@
       "key": "2026-10-04",
       "label": "D 33",
       "km": 274
+    },
+    {
+      "key": "2026-10-05",
+      "label": "D 34",
+      "km": 518
     }
   ],
   "log": [
     {
-      "key": "2026-10-04",
-      "day": "Day 33",
-      "date": "Oct 4",
+      "key": "2026-10-05",
+      "day": "Day 34",
+      "date": "Oct 5",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "518",
+      "chargeMinutes": 64,
+      "note": ""
+    },
+    {
+      "key": "2026-10-04",
+      "day": "Day 33",
+      "date": "Oct 4",
+      "province": "Quebec",
+      "from": "Montréal, Quebec",
+      "to": "Outremont, Quebec",
+      "plotted": true,
       "km": "274",
       "chargeMinutes": 283,
       "note": ""
@@ -5072,18 +4961,6 @@
       "plotted": true,
       "km": "302",
       "chargeMinutes": 853,
-      "note": ""
-    },
-    {
-      "key": "2026-09-25",
-      "day": "Day 24",
-      "date": "Sep 25",
-      "province": "Ontario",
-      "from": "Winkler, Manitoba",
-      "to": "Ontario",
-      "plotted": true,
-      "km": "365",
-      "chargeMinutes": 202,
       "note": ""
     }
   ]

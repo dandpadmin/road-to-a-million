@@ -254,5 +254,54 @@
     ],
     "kmPerPx": 0.1743,
     "plotted": true
+  },
+  {
+    "key": "2026-10-04",
+    "day": 33,
+    "date": "Oct 4",
+    "label": "Day 33 · Oct 4",
+    "km": 7,
+    "from": "Montréal, Quebec",
+    "to": "Outremont, Quebec",
+    "corridor": "Outremont, Quebec",
+    "province": "Quebec",
+    "chargeStops": 1,
+    "chargeMinutes": 44,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.7015,
+        0.5
+      ],
+      [
+        0.2985,
+        0.5
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.7015,
+        "y": 0.5,
+        "town": "Montréal, Quebec",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 44,
+            "socStart": 24,
+            "socEnd": 94
+          }
+        ]
+      },
+      {
+        "x": 0.2985,
+        "y": 0.5,
+        "town": "Outremont, Quebec",
+        "kind": "end",
+        "sessions": []
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true
   }
 ]
