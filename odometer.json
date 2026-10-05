@@ -1,19 +1,19 @@
 {
   "odometer": 20382,
   "goal": 1000000,
-  "day": 33,
+  "day": 34,
   "province": "Quebec",
   "route": "Montréal, Quebec",
   "today": 274,
   "best": 1493,
   "bestDay": 29,
   "avgPerDay": 551,
-  "chargeSessions": 2,
+  "chargeSessions": 3,
   "chargeSupercharger": 2,
-  "chargeOther": 0,
-  "chargeLifetime": 162,
+  "chargeOther": 1,
+  "chargeLifetime": 163,
   "chargeLifetimeSupercharger": 95,
-  "chargeLifetimeOther": 67,
+  "chargeLifetimeOther": 68,
   "dayMap": {
     "key": "2026-10-03",
     "day": 32,
@@ -3568,7 +3568,7 @@
     }
   ],
   "asOf": "2026-10-04",
-  "updatedAt": "2026-10-04T23:11:49.463Z",
+  "updatedAt": "2026-10-05T02:02:48.029Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -4693,8 +4693,8 @@
     },
     "energy": {
       "used": 2720,
-      "added": 3306,
-      "overhead": 17.7,
+      "added": 3330,
+      "overhead": 18.3,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
@@ -4767,8 +4767,8 @@
         },
         {
           "soc": 80,
-          "kw": 30,
-          "n": 7
+          "kw": 27,
+          "n": 8
         },
         {
           "soc": 85,
@@ -4786,7 +4786,7 @@
           "n": 1
         }
       ],
-      "sessions": 162,
+      "sessions": 163,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -4970,7 +4970,7 @@
       "from": "—",
       "to": "—",
       "km": "274",
-      "chargeMinutes": 55,
+      "chargeMinutes": 283,
       "note": ""
     },
     {
