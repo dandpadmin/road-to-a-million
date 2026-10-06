@@ -4,8 +4,8 @@
     "day": 3,
     "date": "Sep 4",
     "label": "Day 3 · Sep 4",
-    "km": 950,
-    "from": "Red Deer County, Alberta",
+    "km": 268,
+    "from": "Tomslake, British Columbia",
     "to": "British Columbia",
     "corridor": "British Columbia",
     "province": "British Columbia",
@@ -14,51 +14,28 @@
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.7986,
+        0.7575,
         0.95
       ],
       [
-        0.6716,
-        0.5881
+        0.706,
+        0.8048
       ],
       [
-        0.5583,
-        0.4211
-      ],
-      [
-        0.4554,
-        0.3933
-      ],
-      [
-        0.373,
-        0.3376
-      ],
-      [
-        0.3559,
-        0.2912
-      ],
-      [
-        0.2014,
+        0.2425,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.7986,
+        "x": 0.7575,
         "y": 0.95,
-        "town": "Red Deer County, Alberta",
+        "town": "Tomslake, British Columbia",
         "kind": "start",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 25,
-            "socStart": 19,
-            "socEnd": 87
-          }
-        ]
+        "sessions": []
       },
       {
-        "x": 0.2014,
+        "x": 0.2425,
         "y": 0.05,
         "town": "British Columbia",
         "kind": "end",
@@ -72,50 +49,8 @@
         ]
       },
       {
-        "x": 0.6716,
-        "y": 0.5881,
-        "town": "Whitecourt, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 44,
-            "socStart": 9,
-            "socEnd": 98
-          }
-        ]
-      },
-      {
-        "x": 0.5583,
-        "y": 0.4211,
-        "town": "Valleyview, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 12,
-            "socStart": 43,
-            "socEnd": 81
-          }
-        ]
-      },
-      {
-        "x": 0.4554,
-        "y": 0.3933,
-        "town": "Grande Prairie, Alberta",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 17,
-            "socStart": 49,
-            "socEnd": 90
-          }
-        ]
-      },
-      {
-        "x": 0.3559,
-        "y": 0.2912,
+        "x": 0.706,
+        "y": 0.8048,
         "town": "Dawson Creek, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -128,7 +63,7 @@
         ]
       }
     ],
-    "kmPerPx": 1.3004,
+    "kmPerPx": 0.4156,
     "plotted": true
   },
   {
