@@ -253,7 +253,7 @@ const VB_W = 720, VB_H = 460, PAD = 0.05, DEG_KM = 111.0;
 
    Callers must pass only location-embargoed drives — this function does not
    police the clock, it just draws what it is handed. */
-function projectDay(drives, charges, targetDay) {
+function projectDay(drives, charges, targetDay, trackCells) {
   const empty = { path: [], stops: [], kmPerPx: 0 };
   if (!targetDay) return empty;
 
@@ -273,14 +273,23 @@ function projectDay(drives, charges, targetDay) {
   const pts = raw.filter((p, i) => !i || p.ll[0] !== raw[i - 1].ll[0] || p.ll[1] !== raw[i - 1].ll[1]);
   if (pts.length < 2) return empty;
 
-  const lats = pts.map((p) => p.ll[0]);
+  /* The day's real GPS track, when the job has it — already grid-snapped and
+     no fresher than the location embargo. Without it the line falls back to
+     joining drive endpoints, which is all the drives payload carries. */
+  const track = [];
+  if (Array.isArray(trackCells)) for (let i = 0; i + 1 < trackCells.length; i += 2) track.push([trackCells[i] * GRID, trackCells[i + 1] * GRID]);
+  const useTrack = track.length > 1;
+  const lineLL = useTrack ? track : pts.map((p) => p.ll);
+
+  const lats = [...pts.map((p) => p.ll[0]), ...(useTrack ? track.map((t) => t[0]) : [])];
   const midLat = (Math.min(...lats) + Math.max(...lats)) / 2;
   /* Equirectangular: squeeze longitude by cos(lat) so a degree east covers the
      same ground as a degree north at this latitude. y inverted — north is up. */
   const kx = Math.cos((midLat * Math.PI) / 180);
   const mu = (ll) => [ll[1] * kx, -ll[0]];
-  const units = pts.map((p) => mu(p.ll));
-  const xs = units.map((m) => m[0]), ys = units.map((m) => m[1]);
+  const units = lineLL.map(mu);
+  const extent = [...units, ...pts.map((p) => mu(p.ll))];
+  const xs = extent.map((m) => m[0]), ys = extent.map((m) => m[1]);
   const minX = Math.min(...xs), maxX = Math.max(...xs);
   const minY = Math.min(...ys), maxY = Math.max(...ys);
   /* Floor matches the 5km snap grid — below it the points are one cell and
@@ -295,7 +304,10 @@ function projectDay(drives, charges, targetDay) {
     Number((0.5 + ((m[1] - midY) * k) / VB_H).toFixed(4)),
   ];
 
-  const path = units.map(at);
+  /* Thinned to what the panel can show: a point that sits within ~1px of
+     the line through its neighbours is dropped. Keeps a 1,300km day to a
+     few dozen points in odometer.json. */
+  const path = useTrack ? simplify(units.map(at), 0.0015) : units.map(at);
 
   /* One marker per place — but a place can hold several charges. Two sessions
      in the same town stack onto one pin and both ride in its `sessions` list,
@@ -339,7 +351,26 @@ function projectDay(drives, charges, targetDay) {
     }
   }
 
-  return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)) };
+  return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)), track: useTrack };
+}
+
+/* Douglas–Peucker on normalised viewBox points. */
+function simplify(pts, tol) {
+  if (pts.length < 3) return pts;
+  const keep = new Uint8Array(pts.length); keep[0] = keep[pts.length - 1] = 1;
+  const stack = [[0, pts.length - 1]];
+  while (stack.length) {
+    const [a, b] = stack.pop();
+    const [ax, ay] = pts[a], [bx, by] = pts[b];
+    const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy) || 1e-9;
+    let worst = -1, wi = -1;
+    for (let i = a + 1; i < b; i++) {
+      const d = Math.abs(dy * pts[i][0] - dx * pts[i][1] + bx * ay - by * ax) / len;
+      if (d > worst) { worst = d; wi = i; }
+    }
+    if (worst > tol) { keep[wi] = 1; stack.push([a, wi], [wi, b]); }
+  }
+  return pts.filter((_, i) => keep[i]);
 }
 
 /* Minutes plugged in across one day's sessions. Duration is not location data,
@@ -581,8 +612,9 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
    archive pages draw from. Pulled out so the two never drift apart — the
    live page's dayMaps is a recent window of this; the archive is all of it,
    grouped by month, never pruned. */
-function dayRecord(d, locPublished, charges, locCutoff) {
-  const g = projectDay(locPublished, charges, d.date);
+function dayRecord(d, locPublished, charges, locCutoff, dayPaths) {
+  const dp = dayPaths && dayPaths[d.date];
+  const g = projectDay(locPublished, charges, d.date, dp && dp.c);
   return {
     key: d.date,
     day: dayIndex(d.date),
@@ -603,6 +635,8 @@ function dayRecord(d, locPublished, charges, locCutoff) {
     /* km per viewBox pixel — what the panel's scale bar is drawn from. */
     kmPerPx: g.kmPerPx,
     plotted: g.path.length > 1 || undefined,
+    /* True when the line is the real GPS track rather than joined endpoints. */
+    track: g.track || undefined,
   };
 }
 
@@ -696,6 +730,56 @@ export function routePublic(ledger) {
   };
 }
 
+/* --- per-day tracks --------------------------------------------------------
+ * The all-time route stores each road once, so it cannot say what one day
+ * drove. Each day's own track is fetched once from /path and kept in
+ * ledger/daypaths-YYYY-MM.json as grid cells, on the same safety terms: only
+ * the part of the day older than the location embargo, snapped to GRID.
+ * A day still straddling the cutoff is marked unfinished and topped up.
+ * ------------------------------------------------------------------------ */
+export function dayWindow(key) {
+  /* Local midnight to midnight, Winnipeg. The offset is read off the zone for
+     that date so the DST switch in November lands on the right hour. */
+  const probe = new Date(key + 'T12:00:00Z');
+  const tzName = new Intl.DateTimeFormat('en-US', { timeZone: TZ, timeZoneName: 'shortOffset' }).formatToParts(probe).find((p) => p.type === 'timeZoneName').value;
+  const m = /GMT([+-]\d+)/.exec(tzName); const off = m ? Number(m[1]) : -6;
+  const start = Math.floor(new Date(key + 'T00:00:00Z').getTime() / 1000) - off * 3600;
+  return { from: start, to: start + 86400 };
+}
+/* Each trip day's driving span, from its ledger rows: first start to last
+   end, grouped the same way the day maps group drives (by start, local day).
+   Only drives that cleared the location embargo are in the ledger, so the
+   span can never reach past it. */
+export function dayDriveSpans(rows) {
+  const spans = {};
+  for (const r of rows || []) {
+    const key = dayKey(r.s);
+    if (!key || (dayIndex(key) || 0) < 1 || !r.e) continue;
+    const sp = spans[key] || (spans[key] = { from: r.s, to: r.e });
+    if (r.s < sp.from) sp.from = r.s;
+    if (r.e > sp.to) sp.to = r.e;
+  }
+  return spans;
+}
+export function tripDayKeys() {
+  const out = [];
+  const cutoff = Date.now() - LOCATION_EMBARGO_HOURS * 36e5;
+  for (let t = new Date(DEPARTURE + 'T12:00:00Z').getTime(); t <= cutoff + 864e5; t += 864e5) {
+    out.push(new Date(t).toISOString().slice(0, 10));
+  }
+  return out;
+}
+export function dayTrackCells(payload) {
+  const cells = [];
+  let prev = null;
+  for (const [la, ln] of pathPoints(payload)) {
+    const c = [Math.round(la / GRID), Math.round(ln / GRID)];
+    if (prev && prev[0] === c[0] && prev[1] === c[1]) continue;
+    cells.push(c[0], c[1]); prev = c;
+  }
+  return { cells, read: pathPoints(payload).length, raw: rawCount(payload) };
+}
+
 /* --- the ledger -----------------------------------------------------------
  * Tessie is asked for a fixed recent window every run, so the request stays
  * the same size on day 900 as on day 9. Everything that has cleared the
@@ -768,7 +852,7 @@ function expandLedgerCharges(ledger) {
   }));
 }
 
-export function shape({ state, drives, charges, health, history, ledger }) {
+export function shape({ state, drives, charges, health, history, ledger, dayPaths }) {
   const windowDrives = drives || [];
   const windowCharges = charges || [];
   /* The window is the last few hundred drives Tessie hands back; the ledger is
@@ -828,7 +912,7 @@ export function shape({ state, drives, charges, health, history, ledger }) {
      the location-side drives — never off `last`, which may be today. One entry
      per day in the rolling window, oldest first, so the page can let the reader
      click back through the trip. */
-  const dayMaps = locTrip.slice(-MAP_DAYS).map((d) => dayRecord(d, locPublished, charges, locCutoff));
+  const dayMaps = locTrip.slice(-MAP_DAYS).map((d) => dayRecord(d, locPublished, charges, locCutoff, dayPaths));
   const plottedKeys = new Set(dayMaps.filter((m) => m.plotted).map((m) => m.key));
 
   return {
@@ -910,14 +994,14 @@ export function shape({ state, drives, charges, health, history, ledger }) {
    only grows. Archive pages are not live, so there is no cost to rebuilding
    every month on every run — the job only commits a month's file when its
    content actually changed. */
-export function archiveByMonth({ drives, charges }) {
+export function archiveByMonth({ drives, charges, dayPaths }) {
   const all = drives || [];
   const locCutoff = Date.now() - LOCATION_EMBARGO_HOURS * 36e5;
   const locPublished = all.filter((d) => { const t = toDate(d.ended_at || d.started_at); return t && t <= locCutoff; });
   const locTrip = byDay(locPublished).filter((d) => (dayIndex(d.date) || 0) >= 1);
   const months = new Map();
   for (const d of locTrip) {
-    const rec = dayRecord(d, locPublished, charges, locCutoff);
+    const rec = dayRecord(d, locPublished, charges, locCutoff, dayPaths);
     const monthKey = d.date.slice(0, 7); // 'YYYY-MM'
     if (!months.has(monthKey)) months.set(monthKey, []);
     months.get(monthKey).push(rec);

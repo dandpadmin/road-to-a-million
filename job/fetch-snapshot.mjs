@@ -12,7 +12,7 @@
 async function main() {
   const { writeFile, readFile, mkdir } = await import('node:fs/promises');
   const { readdir } = await import('node:fs/promises');
-  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic } = await import('../tessie.js');
+  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic, dayWindow, dayDriveSpans, dayTrackCells } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
@@ -157,6 +157,52 @@ async function main() {
     console.log(`route: ${route.lines.length} lines, ${route.lines.reduce((s, l) => s + l.length / 2, 0)} cells, through ${new Date(route.until * 1000).toISOString()}`);
   }
 
+  /* Per-day tracks for the day maps. Fetched once per finished day; the day
+     still straddling the location cutoff is topped up each run until it
+     clears. Backfill is bounded per run so a cold start spreads over a few
+     runs rather than hammering Tessie. */
+  const dayPaths = {};
+  const dpPrior = new Map();
+  let dpFiles = [];
+  try { dpFiles = (await readdir(LEDGER_DIR)).filter((f) => /^daypaths-\d{4}-\d{2}\.json$/.test(f)); } catch (e) { /* none yet */ }
+  for (const f of dpFiles) {
+    const raw = await readFile(`${LEDGER_DIR}/${f}`, 'utf8');
+    const obj = JSON.parse(raw); // throws → run fails → nothing overwritten
+    dpPrior.set(f, raw);
+    Object.assign(dayPaths, obj);
+  }
+  /* The span fetched is that day's drives, first start to last end — the same
+     drives the day map pins come from, so the line and the pins agree even
+     when a drive runs past midnight. A day is done once the whole calendar
+     day has cleared the embargo; until then it is topped up each run. */
+  const locCut = routeCutoff();
+  const spans = dayDriveSpans(ledger.drives);
+  let dpFetches = 0;
+  for (const key of Object.keys(spans).sort()) {
+    if (dpFetches >= 40) break;
+    const sp = spans[key];
+    const have = dayPaths[key];
+    if (have && have.done && have.to === sp.to) continue;
+    const to = Math.min(sp.to, locCut);
+    try {
+      const payload = await get(`path?from=${sp.from}&to=${to}&simplify=true`);
+      dpFetches += 1;
+      const t = dayTrackCells(payload);
+      if (t.raw > 0 && t.read === 0) { console.warn(`::warning::day path ${key}: unreadable point shape — skipped`); break; }
+      dayPaths[key] = { c: t.cells, to: sp.to, done: dayWindow(key).to <= locCut };
+    } catch (e) { console.warn(`day path ${key} unavailable:`, e.message); break; }
+  }
+  const dpOut = new Map();
+  for (const key of Object.keys(dayPaths).sort()) {
+    const f = `daypaths-${key.slice(0, 7)}.json`;
+    if (!dpOut.has(f)) dpOut.set(f, {});
+    dpOut.get(f)[key] = dayPaths[key];
+  }
+  for (const [f, obj] of dpOut) {
+    const body = '{\n' + Object.entries(obj).map(([k, v]) => JSON.stringify(k) + ':' + JSON.stringify(v)).join(',\n') + '\n}\n';
+    if (dpPrior.get(f) !== body) { await writeFile(`${LEDGER_DIR}/${f}`, body); console.log(`daypaths: wrote ${f} (${Object.keys(obj).length} days)`); }
+  }
+
   const snapshot = shape({
     state,
     drives: driveList,
@@ -164,6 +210,7 @@ async function main() {
     health,
     history,
     ledger,
+    dayPaths,
   });
 
   await writeFile(OUT, JSON.stringify(snapshot, null, 2));
@@ -179,7 +226,7 @@ async function main() {
      drives every run and only written when a month's content actually
      changed, so a job that runs every 15 minutes doesn't spam the history
      with identical commits. */
-  const months = archiveByMonth({ drives: driveList, charges: chargeList });
+  const months = archiveByMonth({ drives: driveList, charges: chargeList, dayPaths });
   /* Closed days are frozen. The archive is rebuilt from the recent window, so
      the oldest day in it is only partly covered and older days are not
      covered at all — rewriting from the window alone would shrink or delete
@@ -195,7 +242,18 @@ async function main() {
     const prior = JSON.parse(await readFile(`${ARCHIVE_DIR}/${f}`, 'utf8'));
     const merged = new Map((months.get(monthKey) || []).map((d) => [d.key, d]));
     for (const d of prior) {
-      if (!merged.has(d.key) || d.key < freezeBefore) merged.set(d.key, d);
+      const fresh = merged.get(d.key);
+      if (!fresh) { merged.set(d.key, d); continue; }
+      if (d.key >= freezeBefore) continue; // still settling — take this run's
+      /* Frozen. The one exception: the copy on file is the old joined-endpoints
+         line and this run can draw the real track. Only the drawing is swapped
+         (line, pins, scale) and only when this run saw the whole day — its km
+         agrees with the frozen figure — so a day half out of the drive window
+         can never shrink the archive. Everything else stays as written. */
+      const whole = d.km > 0 && Math.abs(fresh.km - d.km) / d.km < 0.02;
+      if (fresh.track && !d.track && whole) {
+        merged.set(d.key, { ...d, path: fresh.path, stops: fresh.stops, kmPerPx: fresh.kmPerPx, plotted: fresh.plotted, track: true });
+      } else merged.set(d.key, d);
     }
     months.set(monthKey, [...merged.values()].sort((a, b) => a.key.localeCompare(b.key)));
   }
