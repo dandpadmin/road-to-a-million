@@ -606,6 +606,87 @@ function dayRecord(d, locPublished, charges, locCutoff) {
   };
 }
 
+/* --- the all-time route ----------------------------------------------------
+ * The whole trip as one line, like Tessie's all-time map, on the same safety
+ * terms as everything else here: nothing younger than the location embargo,
+ * and every point snapped to the GRID (0.05°, ~5km) before it is kept. Points
+ * are stored as integer grid cells, so full-precision GPS never reaches disk.
+ *
+ * Growth is bounded by the road network, not the odometer: an edge between
+ * two cells is stored once, ever. The hundredth run down the Trans-Canada adds
+ * nothing. A new road adds one cell per ~5km.
+ * ------------------------------------------------------------------------ */
+export const ROUTE_START = Math.floor(new Date(DEPARTURE + 'T00:00:00-05:00').getTime() / 1000);
+export function routeCutoff() { return Math.floor((Date.now() - LOCATION_EMBARGO_HOURS * 36e5) / 1000); }
+
+/* Tessie's /path returns [lat, lng] pairs, or objects when details are on. */
+function pathPoints(payload) {
+  const list = (payload && (payload.results || payload.path || payload)) || [];
+  const flat = Array.isArray(list[0]) && Array.isArray(list[0][0]) ? list.flat() : list;
+  const out = [];
+  for (const p of flat) {
+    const lat = Array.isArray(p) ? p[0] : p && p.latitude;
+    const lng = Array.isArray(p) ? p[1] : p && p.longitude;
+    if (typeof lat === 'number' && typeof lng === 'number' && Math.abs(lat) <= 90 && Math.abs(lng) <= 180 && (lat || lng)) out.push([lat, lng]);
+  }
+  return out;
+}
+
+/* Fold one /path payload into the route ledger { until, lines: [[c,c,...]] }
+   where each line is a flat [latCell, lngCell, latCell, lngCell, ...] run. */
+export function routeFold(ledger, payload) {
+  const lines = (ledger && ledger.lines) || [];
+  const seen = new Set();
+  const ek = (a, b, c, d) => (a < c || (a === c && b < d)) ? a + ',' + b + ',' + c + ',' + d : c + ',' + d + ',' + a + ',' + b;
+  for (const l of lines) for (let i = 2; i < l.length; i += 2) seen.add(ek(l[i - 2], l[i - 1], l[i], l[i + 1]));
+  const cells = pathPoints(payload).map(([la, ln]) => [Math.round(la / GRID), Math.round(ln / GRID)]);
+  let cur = null, prev = (ledger && ledger.tail) || null, added = 0;
+  const close = () => { if (cur && cur.length >= 4) lines.push(cur); cur = null; };
+  for (const c of cells) {
+    if (prev && prev[0] === c[0] && prev[1] === c[1]) continue;
+    /* A jump of more than ~2° is a GPS gap (ferry, dead zone), not a road. */
+    if (prev && Math.max(Math.abs(prev[0] - c[0]), Math.abs(prev[1] - c[1])) > 40) { close(); prev = c; continue; }
+    if (prev) {
+      const k = ek(prev[0], prev[1], c[0], c[1]);
+      if (seen.has(k)) { close(); }
+      else {
+        seen.add(k); added += 1;
+        if (!cur) cur = [prev[0], prev[1]];
+        cur.push(c[0], c[1]);
+      }
+    }
+    prev = c;
+  }
+  close();
+  return { lines, tail: prev, added };
+}
+
+/* What the page reads: the ledger lines with straight runs collapsed, plus
+   the newest cleared point so the map can mark where the line ends. */
+export function routePublic(ledger) {
+  const lines = ((ledger && ledger.lines) || []).map((l) => {
+    const out = [l[0], l[1]];
+    for (let i = 2; i < l.length; i += 2) {
+      const n = l.length > i + 2;
+      if (n) {
+        const ox = out[out.length - 2], oy = out[out.length - 1];
+        const d1 = [l[i] - ox, l[i + 1] - oy], d2 = [l[i + 2] - l[i], l[i + 3] - l[i + 1]];
+        if (d1[0] * d2[1] - d1[1] * d2[0] === 0 && d1[0] * d2[0] + d1[1] * d2[1] > 0) continue; // collinear
+      }
+      out.push(l[i], l[i + 1]);
+    }
+    return out;
+  });
+  const tail = ledger && ledger.tail;
+  return {
+    grid: GRID,
+    asOf: ledger && ledger.until ? new Date(ledger.until * 1000).toISOString() : null,
+    end: tail ? [Number((tail[0] * GRID).toFixed(2)), Number((tail[1] * GRID).toFixed(2))] : null,
+    note: 'Town level · delayed ' + LOCATION_EMBARGO_HOURS + 'h',
+    lines,
+  };
+}
+
 /* --- the ledger -----------------------------------------------------------
  * Tessie is asked for a fixed recent window every run, so the request stays
  * the same size on day 900 as on day 9. Everything that has cleared the

@@ -1,41 +1,311 @@
 [
   {
+    "key": "2026-09-02",
+    "day": 1,
+    "date": "Sep 2",
+    "label": "Day 1 \u00b7 Sep 2",
+    "km": 1333,
+    "from": "Winkler, Manitoba",
+    "to": "Calgary, Alberta",
+    "corridor": "Calgary, Alberta",
+    "province": "Alberta",
+    "chargeStops": 5,
+    "chargeMinutes": 127,
+    "note": "Town level \u00b7 delayed 24h",
+    "path": [
+      [
+        0.95,
+        0.6158
+      ],
+      [
+        0.8382,
+        0.5273
+      ],
+      [
+        0.7543,
+        0.5
+      ],
+      [
+        0.7096,
+        0.4591
+      ],
+      [
+        0.5811,
+        0.4455
+      ],
+      [
+        0.3994,
+        0.4659
+      ],
+      [
+        0.2764,
+        0.5136
+      ],
+      [
+        0.2401,
+        0.5068
+      ],
+      [
+        0.05,
+        0.3842
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.95,
+        "y": 0.6158,
+        "town": "Winkler, Manitoba",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.05,
+        "y": 0.3842,
+        "town": "Calgary, Alberta",
+        "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.8382,
+        "y": 0.5273,
+        "town": "Brandon, Manitoba",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 22,
+            "socStart": 36,
+            "socEnd": 89
+          }
+        ]
+      },
+      {
+        "x": 0.7096,
+        "y": 0.4591,
+        "town": "Whitewood, Saskatchewan",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 5,
+            "socStart": 38,
+            "socEnd": 55
+          }
+        ]
+      },
+      {
+        "x": 0.5811,
+        "y": 0.4455,
+        "town": "Regina, Saskatchewan",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 54,
+            "socStart": 15,
+            "socEnd": 100
+          }
+        ]
+      },
+      {
+        "x": 0.3994,
+        "y": 0.4659,
+        "town": "Swift Current, Saskatchewan",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 16,
+            "socStart": 34,
+            "socEnd": 80
+          }
+        ]
+      },
+      {
+        "x": 0.2401,
+        "y": 0.5068,
+        "town": "Medicine Hat, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 30,
+            "socStart": 17,
+            "socEnd": 90
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 1.7709,
+    "plotted": true
+  },
+  {
+    "key": "2026-09-03",
+    "day": 2,
+    "date": "Sep 3",
+    "label": "Day 2 \u00b7 Sep 3",
+    "km": 455,
+    "from": "Calgary, Alberta",
+    "to": "Calgary, Alberta",
+    "corridor": "Calgary, Alberta",
+    "province": "Alberta",
+    "chargeStops": 3,
+    "chargeMinutes": 59,
+    "note": "Town level \u00b7 delayed 24h",
+    "path": [
+      [
+        0.0947,
+        0.95
+      ],
+      [
+        0.1547,
+        0.875
+      ],
+      [
+        0.0947,
+        0.8
+      ],
+      [
+        0.0947,
+        0.875
+      ],
+      [
+        0.0947,
+        0.95
+      ],
+      [
+        0.1247,
+        0.95
+      ],
+      [
+        0.0947,
+        0.95
+      ],
+      [
+        0.0947,
+        0.8
+      ],
+      [
+        0.0947,
+        0.65
+      ],
+      [
+        0.8453,
+        0.05
+      ],
+      [
+        0.9053,
+        0.125
+      ],
+      [
+        0.485,
+        0.725
+      ],
+      [
+        0.1247,
+        0.95
+      ],
+      [
+        0.0947,
+        0.95
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.0947,
+        "y": 0.95,
+        "town": "Calgary, Alberta",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 35,
+            "socStart": 12,
+            "socEnd": 94
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 6,
+            "socStart": 59,
+            "socEnd": 77
+          }
+        ]
+      },
+      {
+        "x": 0.485,
+        "y": 0.725,
+        "town": "Strathmore, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 25,
+            "socEnd": 79
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.1609,
+    "plotted": true
+  },
+  {
     "key": "2026-09-04",
     "day": 3,
     "date": "Sep 4",
-    "label": "Day 3 · Sep 4",
-    "km": 268,
-    "from": "Tomslake, British Columbia",
+    "label": "Day 3 \u00b7 Sep 4",
+    "km": 1117,
+    "from": "Calgary, Alberta",
     "to": "British Columbia",
     "corridor": "British Columbia",
     "province": "British Columbia",
     "chargeStops": 6,
     "chargeMinutes": 171,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
-        0.7575,
+        0.7255,
         0.95
       ],
       [
-        0.706,
-        0.8048
+        0.7392,
+        0.7598
       ],
       [
-        0.2425,
+        0.6375,
+        0.4744
+      ],
+      [
+        0.5467,
+        0.3427
+      ],
+      [
+        0.4643,
+        0.3207
+      ],
+      [
+        0.3983,
+        0.2768
+      ],
+      [
+        0.3845,
+        0.2402
+      ],
+      [
+        0.2608,
         0.05
       ]
     ],
     "stops": [
       {
-        "x": 0.7575,
+        "x": 0.7255,
         "y": 0.95,
-        "town": "Tomslake, British Columbia",
+        "town": "Calgary, Alberta",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.2425,
+        "x": 0.2608,
         "y": 0.05,
         "town": "British Columbia",
         "kind": "end",
@@ -49,8 +319,64 @@
         ]
       },
       {
-        "x": 0.706,
-        "y": 0.8048,
+        "x": 0.7392,
+        "y": 0.7598,
+        "town": "Red Deer County, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 25,
+            "socStart": 19,
+            "socEnd": 87
+          }
+        ]
+      },
+      {
+        "x": 0.6375,
+        "y": 0.4744,
+        "town": "Whitecourt, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 44,
+            "socStart": 9,
+            "socEnd": 98
+          }
+        ]
+      },
+      {
+        "x": 0.5467,
+        "y": 0.3427,
+        "town": "Valleyview, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 12,
+            "socStart": 43,
+            "socEnd": 81
+          }
+        ]
+      },
+      {
+        "x": 0.4643,
+        "y": 0.3207,
+        "town": "Grande Prairie, Alberta",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 17,
+            "socStart": 49,
+            "socEnd": 90
+          }
+        ]
+      },
+      {
+        "x": 0.3845,
+        "y": 0.2402,
         "town": "Dawson Creek, British Columbia",
         "kind": "charge",
         "sessions": [
@@ -63,14 +389,14 @@
         ]
       }
     ],
-    "kmPerPx": 0.4156,
+    "kmPerPx": 1.6489,
     "plotted": true
   },
   {
     "key": "2026-09-05",
     "day": 4,
     "date": "Sep 5",
-    "label": "Day 4 · Sep 5",
+    "label": "Day 4 \u00b7 Sep 5",
     "km": 1182,
     "from": "British Columbia",
     "to": "Whitehorse, Yukon",
@@ -78,7 +404,7 @@
     "province": "Yukon",
     "chargeStops": 6,
     "chargeMinutes": 209,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.95,
@@ -216,7 +542,7 @@
     "key": "2026-09-06",
     "day": 5,
     "date": "Sep 6",
-    "label": "Day 5 · Sep 6",
+    "label": "Day 5 \u00b7 Sep 6",
     "km": 556,
     "from": "Whitehorse, Yukon",
     "to": "Dawson, Yukon",
@@ -224,7 +550,7 @@
     "province": "Yukon",
     "chargeStops": 4,
     "chargeMinutes": 200,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.6751,
@@ -320,7 +646,7 @@
     "key": "2026-09-07",
     "day": 6,
     "date": "Sep 7",
-    "label": "Day 6 · Sep 7",
+    "label": "Day 6 \u00b7 Sep 7",
     "km": 618,
     "from": "Dawson, Yukon",
     "to": "Marsh Lake, Yukon",
@@ -328,7 +654,7 @@
     "province": "Yukon",
     "chargeStops": 4,
     "chargeMinutes": 390,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.3755,
@@ -460,7 +786,7 @@
     "key": "2026-09-08",
     "day": 7,
     "date": "Sep 8",
-    "label": "Day 7 · Sep 8",
+    "label": "Day 7 \u00b7 Sep 8",
     "km": 591,
     "from": "Marsh Lake, Yukon",
     "to": "Fort Nelson, British Columbia",
@@ -468,7 +794,7 @@
     "province": "British Columbia",
     "chargeStops": 4,
     "chargeMinutes": 357,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.05,
@@ -572,7 +898,7 @@
     "key": "2026-09-09",
     "day": 8,
     "date": "Sep 9",
-    "label": "Day 8 · Sep 9",
+    "label": "Day 8 \u00b7 Sep 9",
     "km": 622,
     "from": "Fort Nelson, British Columbia",
     "to": "Dawson Creek, British Columbia",
@@ -580,7 +906,7 @@
     "province": "British Columbia",
     "chargeStops": 3,
     "chargeMinutes": 124,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.2544,
@@ -698,7 +1024,7 @@
     "key": "2026-09-10",
     "day": 9,
     "date": "Sep 10",
-    "label": "Day 9 · Sep 10",
+    "label": "Day 9 \u00b7 Sep 10",
     "km": 999,
     "from": "Dawson Creek, British Columbia",
     "to": "Clearwater, British Columbia",
@@ -706,7 +1032,7 @@
     "province": "British Columbia",
     "chargeStops": 6,
     "chargeMinutes": 66,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.3111,
@@ -852,7 +1178,7 @@
     "key": "2026-09-11",
     "day": 10,
     "date": "Sep 11",
-    "label": "Day 10 · Sep 11",
+    "label": "Day 10 \u00b7 Sep 11",
     "km": 572,
     "from": "Clearwater, British Columbia",
     "to": "Squamish, British Columbia",
@@ -860,7 +1186,7 @@
     "province": "British Columbia",
     "chargeStops": 15,
     "chargeMinutes": 85,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.7187,
@@ -1070,7 +1396,7 @@
     "key": "2026-09-12",
     "day": 11,
     "date": "Sep 12",
-    "label": "Day 11 · Sep 12",
+    "label": "Day 11 \u00b7 Sep 12",
     "km": 80,
     "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
@@ -1078,7 +1404,7 @@
     "province": "British Columbia",
     "chargeStops": 1,
     "chargeMinutes": 5,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.6392,
@@ -1132,7 +1458,7 @@
     "key": "2026-09-13",
     "day": 12,
     "date": "Sep 13",
-    "label": "Day 12 · Sep 13",
+    "label": "Day 12 \u00b7 Sep 13",
     "km": 221,
     "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
@@ -1140,7 +1466,7 @@
     "province": "British Columbia",
     "chargeStops": 8,
     "chargeMinutes": 20,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.4377,
@@ -1291,7 +1617,7 @@
     "key": "2026-09-14",
     "day": 13,
     "date": "Sep 14",
-    "label": "Day 13 · Sep 14",
+    "label": "Day 13 \u00b7 Sep 14",
     "km": 163,
     "from": "Squamish, British Columbia",
     "to": "Squamish, British Columbia",
@@ -1299,7 +1625,7 @@
     "province": "British Columbia",
     "chargeStops": 1,
     "chargeMinutes": 30,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.4177,
@@ -1368,7 +1694,7 @@
     "key": "2026-09-15",
     "day": 14,
     "date": "Sep 15",
-    "label": "Day 14 · Sep 15",
+    "label": "Day 14 \u00b7 Sep 15",
     "km": 504,
     "from": "Squamish, British Columbia",
     "to": "Tofino, British Columbia",
@@ -1376,7 +1702,7 @@
     "province": "British Columbia",
     "chargeStops": 8,
     "chargeMinutes": 389,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.8767,
@@ -1543,7 +1869,7 @@
     "key": "2026-09-16",
     "day": 15,
     "date": "Sep 16",
-    "label": "Day 15 · Sep 16",
+    "label": "Day 15 \u00b7 Sep 16",
     "km": 721,
     "from": "Tofino, British Columbia",
     "to": "Salmon Arm, British Columbia",
@@ -1551,7 +1877,7 @@
     "province": "British Columbia",
     "chargeStops": 3,
     "chargeMinutes": 45,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.0568,
@@ -1671,7 +1997,7 @@
     "key": "2026-09-17",
     "day": 16,
     "date": "Sep 17",
-    "label": "Day 16 · Sep 17",
+    "label": "Day 16 \u00b7 Sep 17",
     "km": 731,
     "from": "Salmon Arm, British Columbia",
     "to": "Calgary, Alberta",
@@ -1679,7 +2005,7 @@
     "province": "Alberta",
     "chargeStops": 12,
     "chargeMinutes": 92,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.05,
@@ -1843,7 +2169,7 @@
     "key": "2026-09-18",
     "day": 17,
     "date": "Sep 18",
-    "label": "Day 17 · Sep 18",
+    "label": "Day 17 \u00b7 Sep 18",
     "km": 781,
     "from": "Calgary, Alberta",
     "to": "White City, Saskatchewan",
@@ -1851,7 +2177,7 @@
     "province": "Saskatchewan",
     "chargeStops": 6,
     "chargeMinutes": 885,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.05,
@@ -1982,7 +2308,7 @@
     "key": "2026-09-19",
     "day": 18,
     "date": "Sep 19",
-    "label": "Day 18 · Sep 19",
+    "label": "Day 18 \u00b7 Sep 19",
     "km": 581,
     "from": "White City, Saskatchewan",
     "to": "Winkler, Manitoba",
@@ -1990,7 +2316,7 @@
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 1187,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.05,
@@ -2067,7 +2393,7 @@
     "key": "2026-09-20",
     "day": 19,
     "date": "Sep 20",
-    "label": "Day 19 · Sep 20",
+    "label": "Day 19 \u00b7 Sep 20",
     "km": 7,
     "from": "Winkler, Manitoba",
     "to": "Winkler, Manitoba",
@@ -2075,7 +2401,7 @@
     "province": "Manitoba",
     "chargeStops": 2,
     "chargeMinutes": 1157,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.5,
@@ -2119,7 +2445,7 @@
     "key": "2026-09-21",
     "day": 20,
     "date": "Sep 21",
-    "label": "Day 20 · Sep 21",
+    "label": "Day 20 \u00b7 Sep 21",
     "km": 272,
     "from": "Winkler, Manitoba",
     "to": "Winnipeg, Manitoba",
@@ -2127,7 +2453,7 @@
     "province": "Manitoba",
     "chargeStops": 5,
     "chargeMinutes": 1179,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.2868,
@@ -2221,7 +2547,7 @@
     "key": "2026-09-22",
     "day": 21,
     "date": "Sep 22",
-    "label": "Day 21 · Sep 22",
+    "label": "Day 21 \u00b7 Sep 22",
     "km": 470,
     "from": "Winnipeg, Manitoba",
     "to": "Manitoba",
@@ -2229,7 +2555,7 @@
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 907,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.6157,
@@ -2318,7 +2644,7 @@
     "key": "2026-09-23",
     "day": 22,
     "date": "Sep 23",
-    "label": "Day 22 · Sep 23",
+    "label": "Day 22 \u00b7 Sep 23",
     "km": 605,
     "from": "Manitoba",
     "to": "Manitoba",
@@ -2326,7 +2652,7 @@
     "province": "Manitoba",
     "chargeStops": 5,
     "chargeMinutes": 914,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.4044,
@@ -2428,7 +2754,7 @@
     "key": "2026-09-24",
     "day": 23,
     "date": "Sep 24",
-    "label": "Day 23 · Sep 24",
+    "label": "Day 23 \u00b7 Sep 24",
     "km": 799,
     "from": "Manitoba",
     "to": "Winkler, Manitoba",
@@ -2436,7 +2762,7 @@
     "province": "Manitoba",
     "chargeStops": 4,
     "chargeMinutes": 882,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.4926,
@@ -2535,7 +2861,7 @@
     "key": "2026-09-25",
     "day": 24,
     "date": "Sep 25",
-    "label": "Day 24 · Sep 25",
+    "label": "Day 24 \u00b7 Sep 25",
     "km": 365,
     "from": "Winkler, Manitoba",
     "to": "Ontario",
@@ -2543,7 +2869,7 @@
     "province": "Ontario",
     "chargeStops": 4,
     "chargeMinutes": 202,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.05,
@@ -2634,15 +2960,15 @@
     "key": "2026-09-26",
     "day": 25,
     "date": "Sep 26",
-    "label": "Day 25 · Sep 26",
+    "label": "Day 25 \u00b7 Sep 26",
     "km": 302,
     "from": "Ontario",
-    "to": "Bélair, Manitoba",
-    "corridor": "Bélair, Manitoba",
+    "to": "B\u00e9lair, Manitoba",
+    "corridor": "B\u00e9lair, Manitoba",
     "province": "Manitoba",
     "chargeStops": 2,
     "chargeMinutes": 853,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.95,
@@ -2672,7 +2998,7 @@
       {
         "x": 0.05,
         "y": 0.074,
-        "town": "Bélair, Manitoba",
+        "town": "B\u00e9lair, Manitoba",
         "kind": "end",
         "sessions": [
           {
@@ -2705,15 +3031,15 @@
     "key": "2026-09-27",
     "day": 26,
     "date": "Sep 27",
-    "label": "Day 26 · Sep 27",
+    "label": "Day 26 \u00b7 Sep 27",
     "km": 351,
-    "from": "Bélair, Manitoba",
+    "from": "B\u00e9lair, Manitoba",
     "to": "Winkler, Manitoba",
     "corridor": "Winkler, Manitoba",
     "province": "Manitoba",
     "chargeStops": 4,
     "chargeMinutes": 1222,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.6972,
@@ -2756,7 +3082,7 @@
       {
         "x": 0.6972,
         "y": 0.05,
-        "town": "Bélair, Manitoba",
+        "town": "B\u00e9lair, Manitoba",
         "kind": "start",
         "sessions": [
           {
@@ -2801,7 +3127,7 @@
     "key": "2026-09-28",
     "day": 27,
     "date": "Sep 28",
-    "label": "Day 27 · Sep 28",
+    "label": "Day 27 \u00b7 Sep 28",
     "km": 422,
     "from": "Winkler, Manitoba",
     "to": "Winkler, Manitoba",
@@ -2809,7 +3135,7 @@
     "province": "Manitoba",
     "chargeStops": 3,
     "chargeMinutes": 1083,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.3757,
@@ -2887,7 +3213,7 @@
     "key": "2026-09-29",
     "day": 28,
     "date": "Sep 29",
-    "label": "Day 28 · Sep 29",
+    "label": "Day 28 \u00b7 Sep 29",
     "km": 831,
     "from": "Winkler, Manitoba",
     "to": "Thunder Bay, Ontario",
@@ -2895,7 +3221,7 @@
     "province": "Ontario",
     "chargeStops": 4,
     "chargeMinutes": 389,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.05,
@@ -3010,7 +3336,7 @@
     "key": "2026-09-30",
     "day": 29,
     "date": "Sep 30",
-    "label": "Day 29 · Sep 30",
+    "label": "Day 29 \u00b7 Sep 30",
     "km": 1493,
     "from": "Thunder Bay, Ontario",
     "to": "New Hamburg, Ontario",
@@ -3018,7 +3344,7 @@
     "province": "Ontario",
     "chargeStops": 6,
     "chargeMinutes": 101,
-    "note": "Town level · delayed 24h",
+    "note": "Town level \u00b7 delayed 24h",
     "path": [
       [
         0.1474,

@@ -12,7 +12,7 @@
 async function main() {
   const { writeFile, readFile, mkdir } = await import('node:fs/promises');
   const { readdir } = await import('node:fs/promises');
-  const { shape, archiveByMonth, ledgerRows, ledgerMonth } = await import('../tessie.js');
+  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, routeCutoff, routeFold, routePublic } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
@@ -114,6 +114,37 @@ async function main() {
       await writeFile(`${LEDGER_DIR}/${f}`, body);
       console.log(`ledger: wrote ${LEDGER_DIR}/${f} (${rows.length} rows)`);
     }
+  }
+
+  /* The all-time route. Picks up exactly where the last run stopped, so each
+     call asks Tessie for ~15 minutes of path once the backlog is cleared.
+     Catch-up (first run, or after an outage) walks forward in 3-day chunks,
+     a bounded number per run. Optional — a failure leaves the route where it
+     was and the next run resumes from the same point. */
+  const ROUTE_LEDGER = `${LEDGER_DIR}/route.json`;
+  const ROUTE_OUT = process.env.ROUTE_OUT || 'route.json';
+  let route = { until: ROUTE_START, tail: null, lines: [] };
+  let routeRaw = null;
+  try {
+    routeRaw = await readFile(ROUTE_LEDGER, 'utf8');
+    const r = JSON.parse(routeRaw); // throws → run fails → nothing overwritten
+    if (r && Array.isArray(r.lines) && typeof r.until === 'number') route = r;
+    else throw new Error(`${ROUTE_LEDGER} is malformed — refusing to overwrite`);
+  } catch (e) { if (routeRaw !== null) throw e; console.warn('route ledger not found, starting from departure'); }
+  const stopAt = routeCutoff();
+  for (let chunk = 0; chunk < 14 && route.until < stopAt; chunk++) {
+    const to = Math.min(stopAt, route.until + 3 * 86400);
+    try {
+      const payload = await get(`path?from=${route.until}&to=${to}&simplify=true`);
+      const folded = routeFold(route, payload);
+      route = { until: to, tail: folded.tail, lines: folded.lines };
+    } catch (e) { console.warn('path unavailable:', e.message); break; }
+  }
+  const routeBody = JSON.stringify(route);
+  if (routeBody !== routeRaw) {
+    await writeFile(ROUTE_LEDGER, routeBody);
+    await writeFile(ROUTE_OUT, JSON.stringify(routePublic(route)));
+    console.log(`route: ${route.lines.length} lines, ${route.lines.reduce((s, l) => s + l.length / 2, 0)} cells, through ${new Date(route.until * 1000).toISOString()}`);
   }
 
   const snapshot = shape({
