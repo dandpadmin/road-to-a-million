@@ -239,7 +239,7 @@ function DayMap({ map }) {
         <svg viewBox={'0 0 ' + W + ' ' + H} preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: W + ' / ' + H, borderRadius: RR }}>
           <defs><pattern id="rtam-grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" fill="none" stroke={GRID} strokeWidth="1" /></pattern></defs>
           <rect width={W} height={H} fill="url(#rtam-grid)" />
-          <polyline points={line} fill="none" stroke={CYAN_LINE} strokeWidth="2.5" />
+          <polyline points={line} fill="none" stroke={CYAN_LINE} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
           {stops.map((s, i) => (
             <g key={'m' + i}>
               {s.kind === 'end' && <circle cx={s.x * W} cy={s.y * H} r={10 * markScale} fill="none" stroke="rgba(246,240,227,.5)" strokeWidth={1.5 * Math.sqrt(markScale)} />}

@@ -253,7 +253,7 @@ const VB_W = 720, VB_H = 460, PAD = 0.05, DEG_KM = 111.0;
 
    Callers must pass only location-embargoed drives — this function does not
    police the clock, it just draws what it is handed. */
-function projectDay(drives, charges, targetDay, trackCells) {
+function projectDay(drives, charges, targetDay, trackCells, trackGrid) {
   const empty = { path: [], stops: [], kmPerPx: 0 };
   if (!targetDay) return empty;
 
@@ -277,7 +277,8 @@ function projectDay(drives, charges, targetDay, trackCells) {
      no fresher than the location embargo. Without it the line falls back to
      joining drive endpoints, which is all the drives payload carries. */
   const track = [];
-  if (Array.isArray(trackCells)) for (let i = 0; i + 1 < trackCells.length; i += 2) track.push([trackCells[i] * GRID, trackCells[i + 1] * GRID]);
+  const tg = trackGrid || GRID;
+  if (Array.isArray(trackCells)) for (let i = 0; i + 1 < trackCells.length; i += 2) track.push([trackCells[i] * tg, trackCells[i + 1] * tg]);
   const useTrack = track.length > 1;
   const lineLL = useTrack ? track : pts.map((p) => p.ll);
 
@@ -356,7 +357,7 @@ function projectDay(drives, charges, targetDay, trackCells) {
   return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)), track: useTrack ? TRACK_DRAW : undefined };
 }
 
-const TRACK_DRAW = 2;
+const TRACK_DRAW = 3; // 3 = fine mid-drive track, drive ends cut back to the town cell
 
 /* Douglas–Peucker on normalised viewBox points. */
 function simplify(pts, tol) {
@@ -623,7 +624,7 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
    grouped by month, never pruned. */
 function dayRecord(d, locPublished, charges, locCutoff, dayPaths) {
   const dp = dayPaths && dayPaths[d.date];
-  const g = projectDay(locPublished, charges, d.date, dp && dp.c);
+  const g = projectDay(locPublished, charges, d.date, dp && dp.c, dp && dp.g);
   return {
     key: d.date,
     day: dayIndex(d.date),
@@ -778,15 +779,67 @@ export function tripDayKeys() {
   }
   return out;
 }
+/* Day-map tracks. Along the road the line keeps ~50m precision (TRACK_GRID)
+   — below a pixel even on a short, tightly zoomed day — so it reads like a
+   map app; mid-drive road geometry gives nothing away. The first and last
+   TRACK_END_KM of every drive are dropped and replaced by one point: the
+   drive's end snapped to the 5km GRID, exactly where the town pin sits.
+   That is where a parking spot is (hotel, driveway, lunch stop), and an
+   exact line would point at it far more precisely than the pin. The result
+   is a straight connector from the pin to the road ~3km out. Drives are
+   split wherever the timestamps show a stop longer than TRACK_STOP_S. */
+export const TRACK_GRID = 0.0005;
+const TRACK_END_KM = 3;
+const TRACK_STOP_S = 600;
+const R_KM = 6371;
+const hav = (a, b) => {
+  const D = Math.PI / 180, dLa = (b[0] - a[0]) * D, dLo = (b[1] - a[1]) * D;
+  const h = Math.sin(dLa / 2) ** 2 + Math.cos(a[0] * D) * Math.cos(b[0] * D) * Math.sin(dLo / 2) ** 2;
+  return 2 * R_KM * Math.asin(Math.min(1, Math.sqrt(h)));
+};
+function timedPoints(payload) {
+  const list = (payload && (payload.results || payload.path || payload)) || [];
+  const flat = Array.isArray(list[0]) && Array.isArray(list[0][0]) ? list.flat() : list;
+  const out = [];
+  for (const p of flat) {
+    let lat, lng, t = null;
+    if (typeof p === 'string') { const [a, b] = p.split(','); lat = parseFloat(a); lng = parseFloat(b); }
+    else if (Array.isArray(p)) { lat = Number(p[0]); lng = Number(p[1]); }
+    else if (p) { lat = Number(p.latitude); lng = Number(p.longitude); t = typeof p.timestamp === 'number' ? p.timestamp : null; }
+    if (Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat) <= 90 && Math.abs(lng) <= 180 && (lat || lng)) out.push({ ll: [lat, lng], t });
+  }
+  return out;
+}
 export function dayTrackCells(payload) {
+  const pts = timedPoints(payload);
+  /* Split into drives on time gaps (needs details=true); without timestamps
+     the whole day is treated as one drive, ends coarse at the day's ends. */
+  const drives = [];
+  let cur = [];
+  for (const p of pts) {
+    const last = cur[cur.length - 1];
+    if (last && last.t !== null && p.t !== null && p.t - last.t > TRACK_STOP_S) { drives.push(cur); cur = []; }
+    cur.push(p);
+  }
+  if (cur.length) drives.push(cur);
+  const F = Math.round(GRID / TRACK_GRID); // coarse cell in fine units (10)
   const cells = [];
   let prev = null;
-  for (const [la, ln] of pathPoints(payload)) {
-    const c = [Math.round(la / GRID), Math.round(ln / GRID)];
-    if (prev && prev[0] === c[0] && prev[1] === c[1]) continue;
-    cells.push(c[0], c[1]); prev = c;
+  const push = (c) => { if (prev && prev[0] === c[0] && prev[1] === c[1]) return; cells.push(c[0], c[1]); prev = c; };
+  for (const d of drives) {
+    const fromStart = [0];
+    for (let i = 1; i < d.length; i++) fromStart.push(fromStart[i - 1] + hav(d[i - 1].ll, d[i].ll));
+    const total = fromStart[fromStart.length - 1];
+    const coarse = ([la, ln]) => [Math.round(la / GRID) * F, Math.round(ln / GRID) * F];
+    push(coarse(d[0].ll));
+    for (let i = 0; i < d.length; i++) {
+      if (fromStart[i] < TRACK_END_KM || total - fromStart[i] < TRACK_END_KM) continue;
+      const [la, ln] = d[i].ll;
+      push([Math.round(la / TRACK_GRID), Math.round(ln / TRACK_GRID)]);
+    }
+    push(coarse(d[d.length - 1].ll));
   }
-  return { cells, read: pathPoints(payload).length, raw: rawCount(payload) };
+  return { cells, grid: TRACK_GRID, read: pts.length, raw: rawCount(payload) };
 }
 
 /* --- the ledger -----------------------------------------------------------

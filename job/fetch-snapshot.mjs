@@ -12,7 +12,7 @@
 async function main() {
   const { writeFile, readFile, mkdir } = await import('node:fs/promises');
   const { readdir } = await import('node:fs/promises');
-  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic, dayWindow, dayDriveSpans, dayTrackCells } = await import('../tessie.js');
+  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic, dayWindow, dayDriveSpans, dayTrackCells, TRACK_GRID } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
@@ -182,14 +182,15 @@ async function main() {
     if (dpFetches >= 40) break;
     const sp = spans[key];
     const have = dayPaths[key];
-    if (have && have.done && have.to === sp.to) continue;
+    /* Re-fetched when the stored track predates the current precision. */
+    if (have && have.done && have.to === sp.to && have.g === TRACK_GRID) continue;
     const to = Math.min(sp.to, locCut);
     try {
-      const payload = await get(`path?from=${sp.from}&to=${to}&simplify=true`);
+      const payload = await get(`path?from=${sp.from}&to=${to}&simplify=true&details=true`);
       dpFetches += 1;
       const t = dayTrackCells(payload);
       if (t.raw > 0 && t.read === 0) { console.warn(`::warning::day path ${key}: unreadable point shape — skipped`); break; }
-      dayPaths[key] = { c: t.cells, to: sp.to, done: dayWindow(key).to <= locCut };
+      dayPaths[key] = { c: t.cells, g: t.grid, to: sp.to, done: dayWindow(key).to <= locCut };
     } catch (e) { console.warn(`day path ${key} unavailable:`, e.message); break; }
   }
   const dpOut = new Map();
