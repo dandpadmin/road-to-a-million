@@ -7,7 +7,7 @@
   "today": 964,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 549,
+  "avgPerDay": 595,
   "chargeSessions": 6,
   "chargeSupercharger": 4,
   "chargeOther": 2,
@@ -3511,7 +3511,7 @@
     }
   ],
   "asOf": "2026-10-05",
-  "updatedAt": "2026-10-06T00:17:00.714Z",
+  "updatedAt": "2026-10-06T03:07:55.240Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -3519,951 +3519,255 @@
     "efficiency": {
       "points": [
         {
-          "t": 18.2,
-          "wh": 128,
-          "km": 13,
-          "prov": "Quebec"
-        },
-        {
-          "t": 15.9,
-          "wh": 147,
-          "km": 254,
-          "prov": "Quebec"
-        },
-        {
-          "t": 15.5,
-          "wh": 117,
-          "km": 15,
-          "prov": "Quebec"
-        },
-        {
-          "t": 13.3,
-          "wh": 118,
-          "km": 91,
-          "prov": "Quebec"
-        },
-        {
-          "t": 8,
-          "wh": 102,
-          "km": 13,
-          "prov": "Quebec"
-        },
-        {
-          "t": 6.5,
-          "wh": 151,
-          "km": 78,
-          "prov": "Quebec"
-        },
-        {
-          "t": 3.3,
-          "wh": 163,
-          "km": 14,
-          "prov": "Quebec"
-        },
-        {
-          "t": 12.9,
-          "wh": 118,
-          "km": 15,
-          "prov": "Quebec"
-        },
-        {
-          "t": 13.3,
-          "wh": 319,
-          "km": 6,
-          "prov": "Quebec"
-        },
-        {
-          "t": 15.9,
-          "wh": 137,
-          "km": 124,
-          "prov": "Quebec"
-        },
-        {
-          "t": 20.4,
-          "wh": 91,
-          "km": 23,
-          "prov": "Ontario"
-        },
-        {
-          "t": 20.2,
-          "wh": 156,
-          "km": 294,
-          "prov": "Ontario"
-        },
-        {
-          "t": 16.6,
-          "wh": 141,
-          "km": 266,
-          "prov": "Ontario"
-        },
-        {
-          "t": 12.6,
-          "wh": 229,
-          "km": 20,
-          "prov": "Ontario"
-        },
-        {
-          "t": 23.6,
-          "wh": 145,
-          "km": 155,
-          "prov": "Ontario"
-        },
-        {
-          "t": 24.2,
-          "wh": 109,
-          "km": 46,
-          "prov": "Ontario"
-        },
-        {
-          "t": 20.4,
-          "wh": 116,
-          "km": 80,
-          "prov": "Ontario"
-        },
-        {
-          "t": 17.9,
-          "wh": 172,
-          "km": 248,
-          "prov": "Ontario"
-        },
-        {
-          "t": 16.1,
-          "wh": 187,
-          "km": 72,
-          "prov": "Ontario"
-        },
-        {
-          "t": 16.6,
-          "wh": 162,
-          "km": 225,
-          "prov": "Ontario"
-        },
-        {
-          "t": 18.2,
-          "wh": 133,
-          "km": 235,
-          "prov": "Ontario"
-        },
-        {
-          "t": 16.9,
-          "wh": 153,
-          "km": 226,
-          "prov": "Ontario"
-        },
-        {
-          "t": 15.8,
-          "wh": 145,
-          "km": 260,
-          "prov": "Ontario"
-        },
-        {
-          "t": 14.8,
-          "wh": 145,
-          "km": 205,
-          "prov": "Ontario"
-        },
-        {
           "t": 14.5,
-          "wh": 165,
-          "km": 19,
-          "prov": "Ontario"
-        },
-        {
-          "t": 16.1,
-          "wh": 132,
-          "km": 137,
-          "prov": "Ontario"
-        },
-        {
-          "t": 16.8,
-          "wh": 141,
-          "km": 210,
-          "prov": "Ontario"
-        },
-        {
-          "t": 18.9,
-          "wh": 141,
-          "km": 91,
-          "prov": "Ontario"
-        },
-        {
-          "t": 22,
-          "wh": 142,
-          "km": 78,
-          "prov": "Ontario"
-        },
-        {
-          "t": 22.5,
-          "wh": 136,
-          "km": 25,
-          "prov": "Ontario"
-        },
-        {
-          "t": 21.7,
-          "wh": 155,
-          "km": 53,
-          "prov": "Ontario"
-        },
-        {
-          "t": 22.5,
-          "wh": 149,
-          "km": 223,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 17,
-          "wh": 146,
-          "km": 128,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 15.6,
-          "wh": 148,
-          "km": 88,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 12.8,
-          "wh": 165,
-          "km": 198,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 13.6,
-          "wh": 108,
-          "km": 28,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 16,
-          "wh": 118,
-          "km": 6,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 16,
-          "wh": 189,
-          "km": 7,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.4,
-          "wh": 182,
-          "km": 58,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19,
-          "wh": 153,
-          "km": 123,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 14,
-          "wh": 147,
-          "km": 117,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 14.9,
-          "wh": 166,
-          "km": 156,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 16,
-          "wh": 152,
-          "km": 143,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 17.2,
-          "wh": 134,
-          "km": 41,
-          "prov": "Ontario"
-        },
-        {
-          "t": 18.3,
-          "wh": 154,
-          "km": 250,
-          "prov": "Ontario"
-        },
-        {
-          "t": 18.5,
-          "wh": 172,
-          "km": 65,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.6,
-          "wh": 155,
-          "km": 6,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 20.4,
-          "wh": 164,
-          "km": 115,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.4,
-          "wh": 162,
-          "km": 227,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 20.4,
           "wh": 161,
-          "km": 195,
+          "km": 224,
           "prov": "Manitoba"
         },
         {
-          "t": 18.1,
-          "wh": 159,
-          "km": 70,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 15.3,
-          "wh": 157,
-          "km": 185,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 20.5,
-          "wh": 176,
-          "km": 81,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 22,
-          "wh": 157,
-          "km": 60,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 22,
-          "wh": 169,
-          "km": 36,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 21.6,
-          "wh": 163,
-          "km": 97,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 21.2,
-          "wh": 127,
-          "km": 83,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 21,
-          "wh": 127,
-          "km": 28,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 18.2,
-          "wh": 150,
-          "km": 157,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 14.1,
-          "wh": 158,
-          "km": 61,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.2,
-          "wh": 127,
-          "km": 22,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 20.1,
+          "t": 19.3,
           "wh": 160,
-          "km": 195,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.9,
-          "wh": 146,
-          "km": 233,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.4,
-          "wh": 127,
-          "km": 9,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19,
-          "wh": 131,
-          "km": 7,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 20.7,
-          "wh": 152,
-          "km": 123,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 20.1,
-          "wh": 161,
-          "km": 63,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.2,
-          "wh": 189,
-          "km": 65,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.5,
-          "wh": 172,
-          "km": 231,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 15.8,
-          "wh": 179,
-          "km": 190,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 12.3,
-          "wh": 198,
-          "km": 159,
+          "km": 124,
           "prov": "Saskatchewan"
         },
         {
-          "t": 22.6,
-          "wh": 180,
-          "km": 97,
+          "t": 20.9,
+          "wh": 164,
+          "km": 68,
           "prov": "Saskatchewan"
         },
         {
-          "t": 24,
-          "wh": 184,
+          "t": 24.6,
+          "wh": 148,
           "km": 170,
           "prov": "Saskatchewan"
         },
         {
-          "t": 24.2,
-          "wh": 182,
-          "km": 221,
+          "t": 30.3,
+          "wh": 160,
+          "km": 247,
           "prov": "Saskatchewan"
         },
         {
+          "t": 30.5,
+          "wh": 179,
+          "km": 172,
+          "prov": "Alberta"
+        },
+        {
+          "t": 29.2,
+          "wh": 165,
+          "km": 48,
+          "prov": "Alberta"
+        },
+        {
+          "t": 22,
+          "wh": 159,
+          "km": 279,
+          "prov": "Alberta"
+        },
+        {
+          "t": 15.9,
+          "wh": 220,
+          "km": 9,
+          "prov": "Alberta"
+        },
+        {
+          "t": 17.4,
+          "wh": 114,
+          "km": 13,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18.7,
+          "wh": 119,
+          "km": 7,
+          "prov": "Alberta"
+        },
+        {
+          "t": 15.4,
+          "wh": 120,
+          "km": 10,
+          "prov": "Alberta"
+        },
+        {
+          "t": 16.3,
+          "wh": 144,
+          "km": 87,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18.7,
+          "wh": 200,
+          "km": 18,
+          "prov": "Alberta"
+        },
+        {
+          "t": 18,
+          "wh": 103,
+          "km": 139,
+          "prov": "Alberta"
+        },
+        {
           "t": 21,
-          "wh": 162,
-          "km": 157,
+          "wh": 109,
+          "km": 7,
           "prov": "Alberta"
         },
         {
-          "t": 14.6,
-          "wh": 152,
-          "km": 121,
-          "prov": "Alberta"
-        },
-        {
-          "t": 21.8,
-          "wh": 112,
-          "km": 29,
-          "prov": "Alberta"
-        },
-        {
-          "t": 21.3,
-          "wh": 126,
-          "km": 75,
+          "t": 17.5,
+          "wh": 171,
+          "km": 91,
           "prov": "Alberta"
         },
         {
           "t": 17.7,
-          "wh": 122,
-          "km": 169,
+          "wh": 144,
+          "km": 60,
           "prov": "Alberta"
         },
         {
-          "t": 20.5,
-          "wh": 112,
-          "km": 30,
-          "prov": "Alberta"
-        },
-        {
-          "t": 20.6,
-          "wh": 113,
-          "km": 28,
-          "prov": "Alberta"
-        },
-        {
-          "t": 16.9,
-          "wh": 168,
-          "km": 135,
-          "prov": "Alberta"
-        },
-        {
-          "t": 9.9,
-          "wh": 151,
-          "km": 147,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 11.5,
-          "wh": 152,
-          "km": 101,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 12.7,
-          "wh": 164,
-          "km": 196,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 18.6,
-          "wh": 190,
-          "km": 175,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 22.9,
-          "wh": 123,
-          "km": 112,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.4,
-          "wh": 202,
-          "km": 6,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21.1,
-          "wh": 112,
-          "km": 29,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19.7,
-          "wh": 149,
-          "km": 33,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16.9,
-          "wh": 134,
-          "km": 122,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16,
-          "wh": 102,
-          "km": 7,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16,
-          "wh": 129,
-          "km": 16,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 12.7,
-          "wh": 103,
-          "km": 15,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 10.7,
-          "wh": 119,
-          "km": 8,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 14.4,
-          "wh": 107,
-          "km": 6,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 15.5,
-          "wh": 200,
-          "km": 17,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.1,
-          "wh": 112,
-          "km": 54,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.9,
-          "wh": 127,
-          "km": 56,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21.3,
-          "wh": 121,
-          "km": 69,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 22,
-          "wh": 132,
-          "km": 120,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19.9,
-          "wh": 137,
-          "km": 6,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19.2,
-          "wh": 129,
-          "km": 30,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16.3,
-          "wh": 123,
-          "km": 12,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 15.6,
-          "wh": 136,
-          "km": 121,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 12.8,
-          "wh": 66,
-          "km": 55,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 15.4,
-          "wh": 217,
-          "km": 54,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.5,
-          "wh": 117,
-          "km": 10,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.5,
-          "wh": 109,
-          "km": 8,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16.6,
-          "wh": 72,
+          "t": 18.5,
+          "wh": 135,
           "km": 5,
-          "prov": "British Columbia"
+          "prov": "Alberta"
         },
         {
-          "t": 16.4,
-          "wh": 287,
-          "km": 10,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19,
-          "wh": 128,
-          "km": 61,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.6,
-          "wh": 111,
-          "km": 9,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19.6,
-          "wh": 142,
-          "km": 12,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.1,
-          "wh": 141,
-          "km": 13,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.3,
-          "wh": 100,
-          "km": 7,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21.6,
-          "wh": 188,
-          "km": 12,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.3,
+          "t": 10.6,
           "wh": 153,
-          "km": 68,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.6,
-          "wh": 104,
-          "km": 17,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 22.2,
-          "wh": 117,
-          "km": 5,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.8,
-          "wh": 109,
-          "km": 21,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 25.1,
-          "wh": 109,
-          "km": 6,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21,
-          "wh": 103,
-          "km": 9,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.9,
-          "wh": 128,
-          "km": 136,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 22.4,
-          "wh": 136,
-          "km": 25,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21,
-          "wh": 147,
-          "km": 50,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.2,
-          "wh": 143,
-          "km": 119,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 13,
-          "wh": 191,
-          "km": 80,
-          "prov": "British Columbia"
+          "km": 166,
+          "prov": "Alberta"
         },
         {
           "t": 14,
-          "wh": 329,
-          "km": 7,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 8.8,
-          "wh": 147,
-          "km": 128,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 12.1,
-          "wh": 145,
-          "km": 198,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 12.3,
-          "wh": 134,
-          "km": 124,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 14.2,
-          "wh": 170,
-          "km": 163,
+          "wh": 152,
+          "km": 308,
           "prov": "Alberta"
         },
         {
-          "t": 12.4,
-          "wh": 178,
-          "km": 97,
-          "prov": "Alberta"
-        },
-        {
-          "t": 11,
-          "wh": 177,
+          "t": 10.3,
+          "wh": 193,
           "km": 170,
           "prov": "Alberta"
         },
         {
-          "t": 11.7,
-          "wh": 168,
-          "km": 117,
+          "t": 10.8,
+          "wh": 169,
+          "km": 114,
           "prov": "Alberta"
         },
         {
-          "t": 9.7,
-          "wh": 150,
-          "km": 129,
+          "t": 16.2,
+          "wh": 148,
+          "km": 89,
           "prov": "Alberta"
         },
         {
-          "t": 15.4,
-          "wh": 135,
-          "km": 227,
+          "t": 17.5,
+          "wh": 125,
+          "km": 40,
           "prov": "British Columbia"
         },
         {
-          "t": 16.4,
-          "wh": 180,
-          "km": 90,
+          "t": 15.1,
+          "wh": 155,
+          "km": 226,
           "prov": "British Columbia"
         },
         {
-          "t": 12.5,
-          "wh": 210,
-          "km": 38,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 13.6,
-          "wh": 186,
-          "km": 98,
+          "t": 3.9,
+          "wh": 152,
+          "km": 230,
           "prov": "British Columbia"
         },
         {
           "t": 13.1,
-          "wh": 127,
-          "km": 31,
+          "wh": 179,
+          "km": 149,
           "prov": "British Columbia"
         },
         {
-          "t": 12.2,
-          "wh": 135,
-          "km": 46,
+          "t": 14.8,
+          "wh": 88,
+          "km": 38,
           "prov": "British Columbia"
         },
         {
-          "t": 11.5,
-          "wh": 311,
-          "km": 33,
+          "t": 17.7,
+          "wh": 128,
+          "km": 117,
           "prov": "British Columbia"
         },
         {
-          "t": 11.9,
-          "wh": 213,
-          "km": 52,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.1,
-          "wh": 163,
-          "km": 161,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 15.9,
-          "wh": 119,
-          "km": 42,
+          "t": 22.4,
+          "wh": 172,
+          "km": 194,
           "prov": "Yukon"
         },
         {
-          "t": 13.2,
-          "wh": 152,
-          "km": 228,
-          "prov": "Yukon"
-        },
-        {
-          "t": 12.4,
-          "wh": 140,
-          "km": 124,
-          "prov": "Yukon"
-        },
-        {
-          "t": 11.3,
-          "wh": 135,
-          "km": 23,
-          "prov": "Yukon"
-        },
-        {
-          "t": 8.7,
-          "wh": 121,
+          "t": 22.5,
+          "wh": 147,
           "km": 10,
           "prov": "Yukon"
         },
         {
-          "t": 14.6,
-          "wh": 155,
-          "km": 168,
-          "prov": "Yukon"
-        },
-        {
-          "t": 18,
-          "wh": 173,
-          "km": 159,
-          "prov": "Yukon"
-        },
-        {
-          "t": 17,
-          "wh": 209,
-          "km": 19,
-          "prov": "Yukon"
-        },
-        {
-          "t": 17,
-          "wh": 116,
-          "km": 18,
-          "prov": "Yukon"
-        },
-        {
-          "t": 16.6,
-          "wh": 181,
+          "t": 21.6,
+          "wh": 157,
           "km": 156,
           "prov": "Yukon"
         },
         {
-          "t": 14,
-          "wh": 132,
-          "km": 7,
+          "t": 19.4,
+          "wh": 139,
+          "km": 106,
+          "prov": "Yukon"
+        },
+        {
+          "t": 15.2,
+          "wh": 170,
+          "km": 51,
+          "prov": "Yukon"
+        },
+        {
+          "t": 12.1,
+          "wh": 143,
+          "km": 129,
+          "prov": "Yukon"
+        },
+        {
+          "t": 14.3,
+          "wh": 151,
+          "km": 177,
+          "prov": "Yukon"
+        },
+        {
+          "t": 15.5,
+          "wh": 163,
+          "km": 109,
+          "prov": "Yukon"
+        },
+        {
+          "t": 18.2,
+          "wh": 149,
+          "km": 69,
+          "prov": "Yukon"
+        },
+        {
+          "t": 18.3,
+          "wh": 153,
+          "km": 184,
+          "prov": "Yukon"
+        },
+        {
+          "t": 19.5,
+          "wh": 104,
+          "km": 8,
           "prov": "Yukon"
         },
         {
           "t": 10,
-          "wh": 335,
-          "km": 7,
+          "wh": 491,
+          "km": 9,
           "prov": "Yukon"
         },
         {
@@ -4474,145 +3778,985 @@
         },
         {
           "t": 10,
-          "wh": 491,
-          "km": 9,
+          "wh": 335,
+          "km": 7,
           "prov": "Yukon"
         },
         {
-          "t": 19.5,
-          "wh": 104,
-          "km": 8,
+          "t": 14,
+          "wh": 132,
+          "km": 7,
           "prov": "Yukon"
         },
         {
-          "t": 18.3,
-          "wh": 153,
-          "km": 184,
-          "prov": "Yukon"
-        },
-        {
-          "t": 18.2,
-          "wh": 149,
-          "km": 69,
-          "prov": "Yukon"
-        },
-        {
-          "t": 15.5,
-          "wh": 163,
-          "km": 109,
-          "prov": "Yukon"
-        },
-        {
-          "t": 14.3,
-          "wh": 151,
-          "km": 177,
-          "prov": "Yukon"
-        },
-        {
-          "t": 12.1,
-          "wh": 143,
-          "km": 129,
-          "prov": "Yukon"
-        },
-        {
-          "t": 15.2,
-          "wh": 170,
-          "km": 51,
-          "prov": "Yukon"
-        },
-        {
-          "t": 19.4,
-          "wh": 139,
-          "km": 106,
-          "prov": "Yukon"
-        },
-        {
-          "t": 21.6,
-          "wh": 157,
+          "t": 16.6,
+          "wh": 181,
           "km": 156,
           "prov": "Yukon"
         },
         {
-          "t": 22.5,
-          "wh": 147,
+          "t": 17,
+          "wh": 116,
+          "km": 18,
+          "prov": "Yukon"
+        },
+        {
+          "t": 17,
+          "wh": 209,
+          "km": 19,
+          "prov": "Yukon"
+        },
+        {
+          "t": 18,
+          "wh": 173,
+          "km": 159,
+          "prov": "Yukon"
+        },
+        {
+          "t": 14.6,
+          "wh": 155,
+          "km": 168,
+          "prov": "Yukon"
+        },
+        {
+          "t": 8.7,
+          "wh": 121,
           "km": 10,
           "prov": "Yukon"
         },
         {
-          "t": 22.4,
-          "wh": 172,
-          "km": 194,
+          "t": 11.3,
+          "wh": 135,
+          "km": 23,
           "prov": "Yukon"
         },
         {
-          "t": 17.7,
-          "wh": 128,
-          "km": 117,
+          "t": 12.4,
+          "wh": 140,
+          "km": 124,
+          "prov": "Yukon"
+        },
+        {
+          "t": 13.2,
+          "wh": 152,
+          "km": 228,
+          "prov": "Yukon"
+        },
+        {
+          "t": 15.9,
+          "wh": 119,
+          "km": 42,
+          "prov": "Yukon"
+        },
+        {
+          "t": 17.1,
+          "wh": 163,
+          "km": 161,
           "prov": "British Columbia"
         },
         {
-          "t": 14.8,
-          "wh": 88,
-          "km": 38,
+          "t": 11.9,
+          "wh": 213,
+          "km": 52,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 11.5,
+          "wh": 311,
+          "km": 33,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 12.2,
+          "wh": 135,
+          "km": 46,
           "prov": "British Columbia"
         },
         {
           "t": 13.1,
-          "wh": 179,
-          "km": 149,
+          "wh": 127,
+          "km": 31,
           "prov": "British Columbia"
         },
         {
-          "t": 3.9,
-          "wh": 152,
-          "km": 230,
+          "t": 13.6,
+          "wh": 186,
+          "km": 98,
           "prov": "British Columbia"
         },
         {
-          "t": 15.1,
-          "wh": 155,
-          "km": 226,
+          "t": 12.5,
+          "wh": 210,
+          "km": 38,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.4,
+          "wh": 180,
+          "km": 90,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 15.4,
+          "wh": 135,
+          "km": 227,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 9.7,
+          "wh": 150,
+          "km": 129,
+          "prov": "Alberta"
+        },
+        {
+          "t": 11.7,
+          "wh": 168,
+          "km": 117,
+          "prov": "Alberta"
+        },
+        {
+          "t": 11,
+          "wh": 177,
+          "km": 170,
+          "prov": "Alberta"
+        },
+        {
+          "t": 12.4,
+          "wh": 178,
+          "km": 97,
+          "prov": "Alberta"
+        },
+        {
+          "t": 14.2,
+          "wh": 170,
+          "km": 163,
+          "prov": "Alberta"
+        },
+        {
+          "t": 12.3,
+          "wh": 134,
+          "km": 124,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 12.1,
+          "wh": 145,
+          "km": 198,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 8.8,
+          "wh": 147,
+          "km": 128,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 14,
+          "wh": 329,
+          "km": 7,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 13,
+          "wh": 191,
+          "km": 80,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 17.2,
+          "wh": 143,
+          "km": 119,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 21,
+          "wh": 147,
+          "km": 50,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 22.4,
+          "wh": 136,
+          "km": 25,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.9,
+          "wh": 128,
+          "km": 136,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 21,
+          "wh": 103,
+          "km": 9,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 25.1,
+          "wh": 109,
+          "km": 6,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.8,
+          "wh": 109,
+          "km": 21,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 22.2,
+          "wh": 117,
+          "km": 5,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.6,
+          "wh": 104,
+          "km": 17,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 17.3,
+          "wh": 153,
+          "km": 68,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 21.6,
+          "wh": 188,
+          "km": 12,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.3,
+          "wh": 100,
+          "km": 7,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.1,
+          "wh": 141,
+          "km": 13,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 19.6,
+          "wh": 142,
+          "km": 12,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.6,
+          "wh": 111,
+          "km": 9,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 19,
+          "wh": 128,
+          "km": 61,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.4,
+          "wh": 287,
+          "km": 10,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.6,
+          "wh": 72,
+          "km": 5,
           "prov": "British Columbia"
         },
         {
           "t": 17.5,
-          "wh": 125,
-          "km": 40,
+          "wh": 109,
+          "km": 8,
           "prov": "British Columbia"
+        },
+        {
+          "t": 17.5,
+          "wh": 117,
+          "km": 10,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 15.4,
+          "wh": 217,
+          "km": 54,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 12.8,
+          "wh": 66,
+          "km": 55,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 15.6,
+          "wh": 136,
+          "km": 121,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.3,
+          "wh": 123,
+          "km": 12,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 19.2,
+          "wh": 129,
+          "km": 30,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 19.9,
+          "wh": 137,
+          "km": 6,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 22,
+          "wh": 132,
+          "km": 120,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 21.3,
+          "wh": 121,
+          "km": 69,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.9,
+          "wh": 127,
+          "km": 56,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 17.1,
+          "wh": 112,
+          "km": 54,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 15.5,
+          "wh": 200,
+          "km": 17,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 14.4,
+          "wh": 107,
+          "km": 6,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 10.7,
+          "wh": 119,
+          "km": 8,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 12.7,
+          "wh": 103,
+          "km": 15,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16,
+          "wh": 129,
+          "km": 16,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16,
+          "wh": 102,
+          "km": 7,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.9,
+          "wh": 134,
+          "km": 122,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 19.7,
+          "wh": 149,
+          "km": 33,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 21.1,
+          "wh": 112,
+          "km": 29,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 20.4,
+          "wh": 202,
+          "km": 6,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 22.9,
+          "wh": 123,
+          "km": 112,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 18.6,
+          "wh": 190,
+          "km": 175,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 12.7,
+          "wh": 164,
+          "km": 196,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 11.5,
+          "wh": 152,
+          "km": 101,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 9.9,
+          "wh": 151,
+          "km": 147,
+          "prov": "British Columbia"
+        },
+        {
+          "t": 16.9,
+          "wh": 168,
+          "km": 135,
+          "prov": "Alberta"
+        },
+        {
+          "t": 20.6,
+          "wh": 113,
+          "km": 28,
+          "prov": "Alberta"
+        },
+        {
+          "t": 20.5,
+          "wh": 112,
+          "km": 30,
+          "prov": "Alberta"
+        },
+        {
+          "t": 17.7,
+          "wh": 122,
+          "km": 169,
+          "prov": "Alberta"
+        },
+        {
+          "t": 21.3,
+          "wh": 126,
+          "km": 75,
+          "prov": "Alberta"
+        },
+        {
+          "t": 21.8,
+          "wh": 112,
+          "km": 29,
+          "prov": "Alberta"
+        },
+        {
+          "t": 14.6,
+          "wh": 152,
+          "km": 121,
+          "prov": "Alberta"
+        },
+        {
+          "t": 21,
+          "wh": 162,
+          "km": 157,
+          "prov": "Alberta"
+        },
+        {
+          "t": 24.2,
+          "wh": 182,
+          "km": 221,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 24,
+          "wh": 184,
+          "km": 170,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 22.6,
+          "wh": 180,
+          "km": 97,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 12.3,
+          "wh": 198,
+          "km": 159,
+          "prov": "Saskatchewan"
+        },
+        {
+          "t": 15.8,
+          "wh": 179,
+          "km": 190,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.5,
+          "wh": 172,
+          "km": 231,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.2,
+          "wh": 189,
+          "km": 65,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 20.1,
+          "wh": 161,
+          "km": 63,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 20.7,
+          "wh": 152,
+          "km": 123,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19,
+          "wh": 131,
+          "km": 7,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.4,
+          "wh": 127,
+          "km": 9,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.9,
+          "wh": 146,
+          "km": 233,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 20.1,
+          "wh": 160,
+          "km": 195,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.2,
+          "wh": 127,
+          "km": 22,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 14.1,
+          "wh": 158,
+          "km": 61,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 18.2,
+          "wh": 150,
+          "km": 157,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 21,
+          "wh": 127,
+          "km": 28,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 21.2,
+          "wh": 127,
+          "km": 83,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 21.6,
+          "wh": 163,
+          "km": 97,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 22,
+          "wh": 169,
+          "km": 36,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 22,
+          "wh": 157,
+          "km": 60,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 20.5,
+          "wh": 176,
+          "km": 81,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 15.3,
+          "wh": 157,
+          "km": 185,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 18.1,
+          "wh": 159,
+          "km": 70,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 20.4,
+          "wh": 161,
+          "km": 195,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.4,
+          "wh": 162,
+          "km": 227,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 20.4,
+          "wh": 164,
+          "km": 115,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.6,
+          "wh": 155,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 18.5,
+          "wh": 172,
+          "km": 65,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 18.3,
+          "wh": 154,
+          "km": 250,
+          "prov": "Ontario"
+        },
+        {
+          "t": 17.2,
+          "wh": 134,
+          "km": 41,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16,
+          "wh": 152,
+          "km": 143,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 14.9,
+          "wh": 166,
+          "km": 156,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 14,
+          "wh": 147,
+          "km": 117,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19,
+          "wh": 153,
+          "km": 123,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 19.4,
+          "wh": 182,
+          "km": 58,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 16,
+          "wh": 189,
+          "km": 7,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 16,
+          "wh": 118,
+          "km": 6,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 13.6,
+          "wh": 108,
+          "km": 28,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 12.8,
+          "wh": 165,
+          "km": 198,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 15.6,
+          "wh": 148,
+          "km": 88,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 17,
+          "wh": 146,
+          "km": 128,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 22.5,
+          "wh": 149,
+          "km": 223,
+          "prov": "Manitoba"
+        },
+        {
+          "t": 21.7,
+          "wh": 155,
+          "km": 53,
+          "prov": "Ontario"
+        },
+        {
+          "t": 22.5,
+          "wh": 136,
+          "km": 25,
+          "prov": "Ontario"
+        },
+        {
+          "t": 22,
+          "wh": 142,
+          "km": 78,
+          "prov": "Ontario"
+        },
+        {
+          "t": 18.9,
+          "wh": 141,
+          "km": 91,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16.8,
+          "wh": 141,
+          "km": 210,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16.1,
+          "wh": 132,
+          "km": 137,
+          "prov": "Ontario"
+        },
+        {
+          "t": 14.5,
+          "wh": 165,
+          "km": 19,
+          "prov": "Ontario"
+        },
+        {
+          "t": 14.8,
+          "wh": 145,
+          "km": 205,
+          "prov": "Ontario"
+        },
+        {
+          "t": 15.8,
+          "wh": 145,
+          "km": 260,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16.9,
+          "wh": 153,
+          "km": 226,
+          "prov": "Ontario"
+        },
+        {
+          "t": 18.2,
+          "wh": 133,
+          "km": 235,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16.6,
+          "wh": 162,
+          "km": 225,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16.1,
+          "wh": 187,
+          "km": 72,
+          "prov": "Ontario"
+        },
+        {
+          "t": 17.9,
+          "wh": 172,
+          "km": 248,
+          "prov": "Ontario"
+        },
+        {
+          "t": 20.4,
+          "wh": 116,
+          "km": 80,
+          "prov": "Ontario"
+        },
+        {
+          "t": 24.2,
+          "wh": 109,
+          "km": 46,
+          "prov": "Ontario"
+        },
+        {
+          "t": 23.6,
+          "wh": 145,
+          "km": 155,
+          "prov": "Ontario"
+        },
+        {
+          "t": 12.6,
+          "wh": 229,
+          "km": 20,
+          "prov": "Ontario"
+        },
+        {
+          "t": 16.6,
+          "wh": 141,
+          "km": 266,
+          "prov": "Ontario"
+        },
+        {
+          "t": 20.2,
+          "wh": 156,
+          "km": 294,
+          "prov": "Ontario"
+        },
+        {
+          "t": 20.4,
+          "wh": 91,
+          "km": 23,
+          "prov": "Ontario"
+        },
+        {
+          "t": 15.9,
+          "wh": 137,
+          "km": 124,
+          "prov": "Quebec"
+        },
+        {
+          "t": 13.3,
+          "wh": 319,
+          "km": 6,
+          "prov": "Quebec"
+        },
+        {
+          "t": 12.9,
+          "wh": 118,
+          "km": 15,
+          "prov": "Quebec"
+        },
+        {
+          "t": 3.3,
+          "wh": 163,
+          "km": 14,
+          "prov": "Quebec"
+        },
+        {
+          "t": 6.5,
+          "wh": 151,
+          "km": 78,
+          "prov": "Quebec"
+        },
+        {
+          "t": 8,
+          "wh": 102,
+          "km": 13,
+          "prov": "Quebec"
+        },
+        {
+          "t": 13.3,
+          "wh": 118,
+          "km": 91,
+          "prov": "Quebec"
+        },
+        {
+          "t": 15.5,
+          "wh": 117,
+          "km": 15,
+          "prov": "Quebec"
+        },
+        {
+          "t": 15.9,
+          "wh": 147,
+          "km": 254,
+          "prov": "Quebec"
+        },
+        {
+          "t": 18.2,
+          "wh": 128,
+          "km": 13,
+          "prov": "Quebec"
         }
       ],
-      "median": 147,
+      "median": 149,
       "best": 66,
       "worst": 491,
       "provinces": [
-        "Quebec",
-        "Ontario",
         "Manitoba",
         "Saskatchewan",
         "Alberta",
         "British Columbia",
-        "Yukon"
+        "Yukon",
+        "Ontario",
+        "Quebec"
       ]
     },
     "autopilot": {
-      "km": 15488,
-      "pct": 88.1
+      "km": 18059,
+      "pct": 89.3
     },
     "energy": {
-      "used": 2719,
-      "added": 3455,
-      "overhead": 21.3,
+      "used": 3135,
+      "added": 3327,
+      "overhead": 5.8,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 403
+      "rangeEst": 402
     },
     "cost": {
-      "total": 675.49,
-      "supercharger": 675.49,
+      "total": 660.24,
+      "supercharger": 660.24,
       "other": 0,
-      "perKm": 0.038,
-      "sessions": 98,
+      "perKm": 0.033,
+      "sessions": 97,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -4635,7 +4779,7 @@
         {
           "soc": 40,
           "kw": 55,
-          "n": 14
+          "n": 10
         },
         {
           "soc": 45,
@@ -4654,8 +4798,8 @@
         },
         {
           "soc": 60,
-          "kw": 56,
-          "n": 15
+          "kw": 63,
+          "n": 13
         },
         {
           "soc": 65,
@@ -4664,8 +4808,8 @@
         },
         {
           "soc": 70,
-          "kw": 62,
-          "n": 14
+          "kw": 66,
+          "n": 13
         },
         {
           "soc": 75,
@@ -4679,8 +4823,8 @@
         },
         {
           "soc": 85,
-          "kw": 36,
-          "n": 8
+          "kw": 40,
+          "n": 7
         },
         {
           "soc": 90,
@@ -4698,7 +4842,7 @@
           "n": 1
         }
       ],
-      "sessions": 169,
+      "sessions": 161,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
