@@ -126,16 +126,6 @@ function App() {
           <DayMap map={shownMap} />
         </div>
 
-        {RouteMap && (
-          <div style={{ display: 'grid', gap: 18 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-              <Eyebrow tone="bronze" size={11} track={0.24}>Every road so far</Eyebrow>
-              <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Since Day 1 · roads driven twice are drawn once</span>
-            </div>
-            <RouteMap route={route} base={base} />
-          </div>
-        )}
-
         <div style={{ display: 'grid', gap: 32 }}>
           <div style={{ display: 'grid', gap: 20 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 20 }}>
@@ -151,6 +141,16 @@ function App() {
             <DistanceBars days={barDays} activeKey={shownKey} onSelect={setSelected} />
           </div>
         </div>
+
+        {RouteMap && (
+          <div style={{ display: 'grid', gap: 18 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
+              <Eyebrow tone="bronze" size={11} track={0.24}>Every road so far</Eyebrow>
+              <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Since Day 1 · roads driven twice are drawn once</span>
+            </div>
+            <RouteMap route={route} base={base} />
+          </div>
+        )}
 
         {N && (
           <div style={{ display: 'grid', gap: 34, paddingTop: 40, borderTop: '1px solid rgba(246,240,227,.18)' }}>
