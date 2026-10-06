@@ -1432,5 +1432,54 @@
     "kmPerPx": 0.3486,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-10-05",
+    "day": 34,
+    "date": "Oct 5",
+    "label": "Day 34 · Oct 5",
+    "km": 4,
+    "from": "Québec, Quebec",
+    "to": "Québec, Quebec",
+    "corridor": "Québec, Quebec",
+    "province": "Quebec",
+    "chargeStops": 2,
+    "chargeMinutes": 17,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.3032,
+        0.5
+      ],
+      [
+        0.6968,
+        0.5
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.3032,
+        "y": 0.5,
+        "town": "Québec, Quebec",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 12,
+            "socStart": 99,
+            "socEnd": 100
+          },
+          {
+            "network": "AC / destination",
+            "minutes": 5,
+            "socStart": 98,
+            "socEnd": 99
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true,
+    "track": 3
   }
 ]
