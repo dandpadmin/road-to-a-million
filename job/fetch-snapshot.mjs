@@ -251,8 +251,9 @@ async function main() {
          agrees with the frozen figure — so a day half out of the drive window
          can never shrink the archive. Everything else stays as written. */
       const whole = d.km > 0 && Math.abs(fresh.km - d.km) / d.km < 0.02;
-      if (fresh.track && !d.track && whole) {
-        merged.set(d.key, { ...d, path: fresh.path, stops: fresh.stops, kmPerPx: fresh.kmPerPx, plotted: fresh.plotted, track: true });
+      const ver = (t) => (t === true ? 1 : Number(t) || 0); // v1 wrote `true`
+      if (ver(fresh.track) > ver(d.track) && whole) {
+        merged.set(d.key, { ...d, path: fresh.path, stops: fresh.stops, kmPerPx: fresh.kmPerPx, plotted: fresh.plotted, track: fresh.track });
       } else merged.set(d.key, d);
     }
     months.set(monthKey, [...merged.values()].sort((a, b) => a.key.localeCompare(b.key)));

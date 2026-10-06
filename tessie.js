@@ -351,8 +351,12 @@ function projectDay(drives, charges, targetDay, trackCells) {
     }
   }
 
-  return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)), track: useTrack };
+  /* track carries the drawing version, so the archive can tell a day drawn
+     by an older, buggier pass from a current one. 2 = loop-safe thinning. */
+  return { path, stops, kmPerPx: Number((DEG_KM / k).toFixed(4)), track: useTrack ? TRACK_DRAW : undefined };
 }
+
+const TRACK_DRAW = 2;
 
 /* Douglas–Peucker on normalised viewBox points. */
 function simplify(pts, tol) {
@@ -362,10 +366,15 @@ function simplify(pts, tol) {
   while (stack.length) {
     const [a, b] = stack.pop();
     const [ax, ay] = pts[a], [bx, by] = pts[b];
-    const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy) || 1e-9;
+    const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy);
     let worst = -1, wi = -1;
     for (let i = a + 1; i < b; i++) {
-      const d = Math.abs(dy * pts[i][0] - dx * pts[i][1] + bx * ay - by * ax) / len;
+      /* A day that ends where it started (a loop out of Winkler) has a
+         zero-length baseline — measure from the point instead, or every
+         distance reads 0 and the whole track collapses to two points. */
+      const d = len < 1e-9
+        ? Math.hypot(pts[i][0] - ax, pts[i][1] - ay)
+        : Math.abs(dy * pts[i][0] - dx * pts[i][1] + bx * ay - by * ax) / len;
       if (d > worst) { worst = d; wi = i; }
     }
     if (worst > tol) { keep[wi] = 1; stack.push([a, wi], [wi, b]); }
