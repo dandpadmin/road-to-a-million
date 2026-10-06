@@ -12,7 +12,7 @@
 async function main() {
   const { writeFile, readFile, mkdir } = await import('node:fs/promises');
   const { readdir } = await import('node:fs/promises');
-  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, routeCutoff, routeFold, routePublic } = await import('../tessie.js');
+  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
@@ -123,12 +123,16 @@ async function main() {
      was and the next run resumes from the same point. */
   const ROUTE_LEDGER = `${LEDGER_DIR}/route.json`;
   const ROUTE_OUT = process.env.ROUTE_OUT || 'route.json';
-  let route = { until: ROUTE_START, tail: null, lines: [] };
+  let route = { v: ROUTE_VERSION, until: ROUTE_START, tail: null, lines: [] };
   let routeRaw = null;
   try {
     routeRaw = await readFile(ROUTE_LEDGER, 'utf8');
     const r = JSON.parse(routeRaw); // throws → run fails → nothing overwritten
-    if (r && Array.isArray(r.lines) && typeof r.until === 'number') route = r;
+    /* A ledger from an older parser is rebuilt from departure rather than
+       trusted — v1 skipped every point of Tessie's string format and still
+       advanced `until`, so it reads as "done" with nothing drawn. */
+    if (r && Array.isArray(r.lines) && typeof r.until === 'number' && r.v !== ROUTE_VERSION) console.warn('route ledger is an older version — rebuilding from departure');
+    else if (r && Array.isArray(r.lines) && typeof r.until === 'number') route = r;
     else throw new Error(`${ROUTE_LEDGER} is malformed — refusing to overwrite`);
   } catch (e) { if (routeRaw !== null) throw e; console.warn('route ledger not found, starting from departure'); }
   const stopAt = routeCutoff();
@@ -137,7 +141,13 @@ async function main() {
     try {
       const payload = await get(`path?from=${route.until}&to=${to}&simplify=true`);
       const folded = routeFold(route, payload);
-      route = { until: to, tail: folded.tail, lines: folded.lines };
+      /* Points came back but none could be read — the payload shape changed.
+         Stop without advancing, so nothing is skipped; the warning says why. */
+      if (folded.raw > 0 && folded.read === 0) {
+        console.warn(`::warning::path returned ${folded.raw} points in an unreadable shape, e.g. ${JSON.stringify((payload.results || payload)[0]).slice(0, 80)} — route not advanced`);
+        break;
+      }
+      route = { v: ROUTE_VERSION, until: to, tail: folded.tail, lines: folded.lines };
     } catch (e) { console.warn('path unavailable:', e.message); break; }
   }
   const routeBody = JSON.stringify(route);

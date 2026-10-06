@@ -625,15 +625,20 @@ function pathPoints(payload) {
   const flat = Array.isArray(list[0]) && Array.isArray(list[0][0]) ? list.flat() : list;
   const out = [];
   for (const p of flat) {
-    const lat = Array.isArray(p) ? p[0] : p && p.latitude;
-    const lng = Array.isArray(p) ? p[1] : p && p.longitude;
-    if (typeof lat === 'number' && typeof lng === 'number' && Math.abs(lat) <= 90 && Math.abs(lng) <= 180 && (lat || lng)) out.push([lat, lng]);
+    /* Default shape is a "lat,lng" string per point; arrays and objects
+       (details=true) are accepted too. */
+    let lat, lng;
+    if (typeof p === 'string') { const [a, b] = p.split(','); lat = parseFloat(a); lng = parseFloat(b); }
+    else if (Array.isArray(p)) { lat = Number(p[0]); lng = Number(p[1]); }
+    else if (p) { lat = Number(p.latitude); lng = Number(p.longitude); }
+    if (Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat) <= 90 && Math.abs(lng) <= 180 && (lat || lng)) out.push([lat, lng]);
   }
   return out;
 }
 
 /* Fold one /path payload into the route ledger { until, lines: [[c,c,...]] }
    where each line is a flat [latCell, lngCell, latCell, lngCell, ...] run. */
+export const ROUTE_VERSION = 2;
 export function routeFold(ledger, payload) {
   const lines = (ledger && ledger.lines) || [];
   const seen = new Set();
@@ -658,7 +663,11 @@ export function routeFold(ledger, payload) {
     prev = c;
   }
   close();
-  return { lines, tail: prev, added };
+  return { lines, tail: prev, added, read: cells.length, raw: rawCount(payload) };
+}
+function rawCount(payload) {
+  const list = (payload && (payload.results || payload.path || payload)) || [];
+  return Array.isArray(list) ? list.length : 0;
 }
 
 /* What the page reads: the ledger lines with straight runs collapsed, plus
