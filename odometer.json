@@ -1,13 +1,13 @@
 {
-  "odometer": 22730,
+  "odometer": 22924,
   "goal": 1000000,
-  "day": 36,
+  "day": 37,
   "province": "Nova Scotia",
   "route": "Yarmouth, Nova Scotia",
-  "today": 727,
+  "today": 944,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 599,
+  "avgPerDay": 605,
   "chargeSessions": 5,
   "chargeSupercharger": 2,
   "chargeOther": 3,
@@ -12507,7 +12507,7 @@
     }
   ],
   "asOf": "2026-10-07",
-  "updatedAt": "2026-10-07T21:36:33.160Z",
+  "updatedAt": "2026-10-08T01:20:16.434Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -13822,17 +13822,17 @@
       ]
     },
     "autopilot": {
-      "km": 19366,
-      "pct": 89.7
+      "km": 19440,
+      "pct": 89.2
     },
     "energy": {
-      "used": 3363,
+      "used": 3395,
       "added": 3602,
-      "overhead": 6.6,
+      "overhead": 5.8,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 400
+      "rangeEst": 401
     },
     "cost": {
       "total": 743.78,
@@ -14097,7 +14097,7 @@
     {
       "key": "2026-10-07",
       "label": "D 36",
-      "km": 727
+      "km": 944
     }
   ],
   "log": [
@@ -14108,7 +14108,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "727",
+      "km": "944",
       "chargeMinutes": 99,
       "note": ""
     },
