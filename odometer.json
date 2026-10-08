@@ -7,7 +7,7 @@
   "today": 944,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 605,
+  "avgPerDay": 606,
   "chargeSessions": 5,
   "chargeSupercharger": 2,
   "chargeOther": 3,
@@ -12507,7 +12507,7 @@
     }
   ],
   "asOf": "2026-10-07",
-  "updatedAt": "2026-10-08T01:20:16.434Z",
+  "updatedAt": "2026-10-08T07:52:39.568Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -13828,7 +13828,7 @@
     "energy": {
       "used": 3395,
       "added": 3602,
-      "overhead": 5.8,
+      "overhead": 5.7,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
