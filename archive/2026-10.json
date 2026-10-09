@@ -3174,5 +3174,169 @@
     "kmPerPx": 0.8708,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-10-08",
+    "day": 37,
+    "date": "Oct 8",
+    "label": "Day 37 · Oct 8",
+    "km": 272,
+    "from": "North Sydney, Nova Scotia",
+    "to": "Deer Lake, Newfoundland and Labrador",
+    "corridor": "Deer Lake, Newfoundland and Labrador",
+    "province": "Newfoundland and Labrador",
+    "chargeStops": 2,
+    "chargeMinutes": 84,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.3162,
+        0.95
+      ],
+      [
+        0.4581,
+        0.53
+      ],
+      [
+        0.4387,
+        0.5
+      ],
+      [
+        0.4384,
+        0.494
+      ],
+      [
+        0.4452,
+        0.485
+      ],
+      [
+        0.4645,
+        0.44
+      ],
+      [
+        0.4822,
+        0.425
+      ],
+      [
+        0.4821,
+        0.4139
+      ],
+      [
+        0.4892,
+        0.3938
+      ],
+      [
+        0.5057,
+        0.3791
+      ],
+      [
+        0.5068,
+        0.3597
+      ],
+      [
+        0.5041,
+        0.3511
+      ],
+      [
+        0.5083,
+        0.3428
+      ],
+      [
+        0.5268,
+        0.3181
+      ],
+      [
+        0.5362,
+        0.316
+      ],
+      [
+        0.5491,
+        0.2926
+      ],
+      [
+        0.5503,
+        0.2822
+      ],
+      [
+        0.5682,
+        0.2659
+      ],
+      [
+        0.5742,
+        0.23
+      ],
+      [
+        0.5935,
+        0.185
+      ],
+      [
+        0.6096,
+        0.1613
+      ],
+      [
+        0.6207,
+        0.1351
+      ],
+      [
+        0.6176,
+        0.1267
+      ],
+      [
+        0.6192,
+        0.1229
+      ],
+      [
+        0.6258,
+        0.125
+      ],
+      [
+        0.658,
+        0.095
+      ],
+      [
+        0.6838,
+        0.05
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.3162,
+        "y": 0.95,
+        "town": "North Sydney, Nova Scotia",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.6838,
+        "y": 0.05,
+        "town": "Deer Lake, Newfoundland and Labrador",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 34,
+            "socStart": 18,
+            "socEnd": 96
+          }
+        ]
+      },
+      {
+        "x": 0.4581,
+        "y": 0.53,
+        "town": "Channel-Port aux Basques, Newfoundland and Labrador",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 50,
+            "socStart": 19,
+            "socEnd": 88
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.8043,
+    "plotted": true,
+    "track": 3
   }
 ]
