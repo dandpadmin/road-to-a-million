@@ -116,47 +116,6 @@ async function main() {
     }
   }
 
-  /* The all-time route. Picks up exactly where the last run stopped, so each
-     call asks Tessie for ~15 minutes of path once the backlog is cleared.
-     Catch-up (first run, or after an outage) walks forward in 3-day chunks,
-     a bounded number per run. Optional — a failure leaves the route where it
-     was and the next run resumes from the same point. */
-  const ROUTE_LEDGER = `${LEDGER_DIR}/route.json`;
-  const ROUTE_OUT = process.env.ROUTE_OUT || 'route.json';
-  let route = { v: ROUTE_VERSION, until: ROUTE_START, tail: null, lines: [] };
-  let routeRaw = null;
-  try {
-    routeRaw = await readFile(ROUTE_LEDGER, 'utf8');
-    const r = JSON.parse(routeRaw); // throws → run fails → nothing overwritten
-    /* A ledger from an older parser is rebuilt from departure rather than
-       trusted — v1 skipped every point of Tessie's string format and still
-       advanced `until`, so it reads as "done" with nothing drawn. */
-    if (r && Array.isArray(r.lines) && typeof r.until === 'number' && r.v !== ROUTE_VERSION) console.warn('route ledger is an older version — rebuilding from departure');
-    else if (r && Array.isArray(r.lines) && typeof r.until === 'number') route = r;
-    else throw new Error(`${ROUTE_LEDGER} is malformed — refusing to overwrite`);
-  } catch (e) { if (routeRaw !== null) throw e; console.warn('route ledger not found, starting from departure'); }
-  const stopAt = routeCutoff();
-  for (let chunk = 0; chunk < 14 && route.until < stopAt; chunk++) {
-    const to = Math.min(stopAt, route.until + 3 * 86400);
-    try {
-      const payload = await get(`path?from=${route.until}&to=${to}&simplify=true`);
-      const folded = routeFold(route, payload);
-      /* Points came back but none could be read — the payload shape changed.
-         Stop without advancing, so nothing is skipped; the warning says why. */
-      if (folded.raw > 0 && folded.read === 0) {
-        console.warn(`::warning::path returned ${folded.raw} points in an unreadable shape, e.g. ${JSON.stringify((payload.results || payload)[0]).slice(0, 80)} — route not advanced`);
-        break;
-      }
-      route = { v: ROUTE_VERSION, until: to, tail: folded.tail, lines: folded.lines };
-    } catch (e) { console.warn('path unavailable:', e.message); break; }
-  }
-  const routeBody = JSON.stringify(route);
-  if (routeBody !== routeRaw) {
-    await writeFile(ROUTE_LEDGER, routeBody);
-    await writeFile(ROUTE_OUT, JSON.stringify(routePublic(route)));
-    console.log(`route: ${route.lines.length} lines, ${route.lines.reduce((s, l) => s + l.length / 2, 0)} cells, through ${new Date(route.until * 1000).toISOString()}`);
-  }
-
   /* Per-day tracks for the day maps. Fetched once per finished day; the day
      still straddling the location cutoff is topped up each run until it
      clears. Backfill is bounded per run so a cold start spreads over a few
@@ -190,6 +149,9 @@ async function main() {
       dpFetches += 1;
       const t = dayTrackCells(payload);
       if (t.raw > 0 && t.read === 0) { console.warn(`::warning::day path ${key}: unreadable point shape — skipped`); break; }
+      /* An empty answer never replaces a track already on file — a Tessie
+         hiccup would otherwise erase the day (and its stretch of the route). */
+      if (!t.cells.length && have && have.c && have.c.length) { console.warn(`day path ${key}: empty response, keeping stored track`); continue; }
       dayPaths[key] = { c: t.cells, g: t.grid, to: sp.to, done: dayWindow(key).to <= locCut };
     } catch (e) { console.warn(`day path ${key} unavailable:`, e.message); break; }
   }
@@ -202,6 +164,33 @@ async function main() {
   for (const [f, obj] of dpOut) {
     const body = '{\n' + Object.entries(obj).map(([k, v]) => JSON.stringify(k) + ':' + JSON.stringify(v)).join(',\n') + '\n}\n';
     if (dpPrior.get(f) !== body) { await writeFile(`${LEDGER_DIR}/${f}`, body); console.log(`daypaths: wrote ${f} (${Object.keys(obj).length} days)`); }
+  }
+
+  /* The all-time route, rebuilt every run from the per-day tracks above.
+     It used to fetch its own /path slices between runs, but a drive that
+     straddled a slice boundary came back in neither slice and left a hole
+     (Oct 5: Woodstock to Moncton). The day tracks span whole drives, so the
+     route built from them has no seams — and it costs no Tessie calls. Each
+     edge is still stored once (routeFold), on the 5km grid. */
+  const ROUTE_LEDGER = `${LEDGER_DIR}/route.json`;
+  const ROUTE_OUT = process.env.ROUTE_OUT || 'route.json';
+  let route = { lines: [], tail: null };
+  let routeTo = ROUTE_START;
+  for (const key of Object.keys(dayPaths).sort()) {
+    const v = dayPaths[key], g = v.g || 0.05, pts = [];
+    for (let i = 0; i + 1 < (v.c || []).length; i += 2) pts.push([v.c[i] * g, v.c[i + 1] * g]);
+    const r = routeFold(route, { results: pts });
+    route = { lines: r.lines, tail: r.tail };
+    if (v.to) routeTo = Math.max(routeTo, v.to);
+  }
+  route = { v: ROUTE_VERSION, from: 'daypaths', until: Math.min(routeTo, routeCutoff()), tail: route.tail, lines: route.lines };
+  let routeRaw = null;
+  try { routeRaw = await readFile(ROUTE_LEDGER, 'utf8'); } catch (e) { /* first run */ }
+  const routeBody = JSON.stringify(route);
+  if (routeBody !== routeRaw) {
+    await writeFile(ROUTE_LEDGER, routeBody);
+    await writeFile(ROUTE_OUT, JSON.stringify(routePublic(route)));
+    console.log(`route: ${route.lines.length} lines, ${route.lines.reduce((s, l) => s + l.length / 2, 0)} cells, through ${new Date(route.until * 1000).toISOString()}`);
   }
 
   const snapshot = shape({
