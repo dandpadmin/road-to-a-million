@@ -1,7 +1,7 @@
 {
   "odometer": 23920,
   "goal": 1000000,
-  "day": 38,
+  "day": 39,
   "province": "Newfoundland and Labrador",
   "route": "St. John's, Newfoundland and Labrador",
   "today": 82,
@@ -12941,7 +12941,7 @@
     }
   ],
   "asOf": "2026-10-09",
-  "updatedAt": "2026-10-09T23:53:10.277Z",
+  "updatedAt": "2026-10-10T05:03:55.309Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
