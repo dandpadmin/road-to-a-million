@@ -3733,5 +3733,80 @@
     "kmPerPx": 0.8806,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-10-09",
+    "day": 38,
+    "date": "Oct 9",
+    "label": "Day 38 · Oct 9",
+    "km": 15,
+    "from": "St. John's, Newfoundland and Labrador",
+    "to": "St. John's, Newfoundland and Labrador",
+    "corridor": "St. John's, Newfoundland and Labrador",
+    "province": "Newfoundland and Labrador",
+    "chargeStops": 1,
+    "chargeMinutes": 32,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.95,
+        0.1523
+      ],
+      [
+        0.821,
+        0.2427
+      ],
+      [
+        0.71,
+        0.4583
+      ],
+      [
+        0.665,
+        0.5
+      ],
+      [
+        0.635,
+        0.5626
+      ],
+      [
+        0.62,
+        0.6113
+      ],
+      [
+        0.581,
+        0.6599
+      ],
+      [
+        0.533,
+        0.7295
+      ],
+      [
+        0.482,
+        0.7921
+      ],
+      [
+        0.05,
+        0.8477
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.95,
+        "y": 0.1523,
+        "town": "St. John's, Newfoundland and Labrador",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 32,
+            "socStart": 21,
+            "socEnd": 95
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0174,
+    "plotted": true,
+    "track": 3
   }
 ]
