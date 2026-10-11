@@ -1,13 +1,13 @@
 {
-  "odometer": 24687,
+  "odometer": 24839,
   "goal": 1000000,
   "day": 40,
   "province": "Newfoundland and Labrador",
   "route": "St. John's, Newfoundland and Labrador",
-  "today": 674,
+  "today": 919,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 602,
+  "avgPerDay": 608,
   "chargeSessions": 4,
   "chargeSupercharger": 0,
   "chargeOther": 4,
@@ -12801,7 +12801,7 @@
     }
   ],
   "asOf": "2026-10-11",
-  "updatedAt": "2026-10-11T19:44:44.460Z",
+  "updatedAt": "2026-10-11T23:13:17.355Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14237,13 +14237,13 @@
       ]
     },
     "autopilot": {
-      "km": 20968,
-      "pct": 89.3
+      "km": 21204,
+      "pct": 89.4
     },
     "energy": {
-      "used": 3671,
+      "used": 3710,
       "added": 3941,
-      "overhead": 6.9,
+      "overhead": 5.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -14253,7 +14253,7 @@
       "total": 743.78,
       "supercharger": 743.78,
       "other": 0,
-      "perKm": 0.032,
+      "perKm": 0.031,
       "sessions": 103,
       "currency": "CAD"
     },
@@ -14512,7 +14512,7 @@
     {
       "key": "2026-10-11",
       "label": "D 40",
-      "km": 674
+      "km": 919
     }
   ],
   "log": [
@@ -14523,7 +14523,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "674",
+      "km": "919",
       "chargeMinutes": 99,
       "note": ""
     },
