@@ -1,19 +1,19 @@
 {
-  "odometer": 23920,
+  "odometer": 24339,
   "goal": 1000000,
   "day": 40,
   "province": "Newfoundland and Labrador",
   "route": "St. John's, Newfoundland and Labrador",
-  "today": 82,
+  "today": 366,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 600,
-  "chargeSessions": 1,
+  "avgPerDay": 594,
+  "chargeSessions": 2,
   "chargeSupercharger": 0,
-  "chargeOther": 1,
-  "chargeLifetime": 183,
+  "chargeOther": 2,
+  "chargeLifetime": 185,
   "chargeLifetimeSupercharger": 105,
-  "chargeLifetimeOther": 78,
+  "chargeLifetimeOther": 80,
   "dayMap": {
     "key": "2026-10-09",
     "day": 38,
@@ -12800,8 +12800,8 @@
       "track": 3
     }
   ],
-  "asOf": "2026-10-09",
-  "updatedAt": "2026-10-11T09:00:19.106Z",
+  "asOf": "2026-10-11",
+  "updatedAt": "2026-10-11T15:43:11.685Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14237,23 +14237,23 @@
       ]
     },
     "autopilot": {
-      "km": 20330,
+      "km": 20670,
       "pct": 89.2
     },
     "energy": {
-      "used": 3553,
-      "added": 3809,
-      "overhead": 6.7,
+      "used": 3619,
+      "added": 3891,
+      "overhead": 7,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 400
+      "rangeEst": 399
     },
     "cost": {
       "total": 743.78,
       "supercharger": 743.78,
       "other": 0,
-      "perKm": 0.033,
+      "perKm": 0.032,
       "sessions": 103,
       "currency": "CAD"
     },
@@ -14281,8 +14281,8 @@
         },
         {
           "soc": 45,
-          "kw": 101,
-          "n": 12
+          "kw": 99,
+          "n": 13
         },
         {
           "soc": 50,
@@ -14296,8 +14296,8 @@
         },
         {
           "soc": 60,
-          "kw": 68,
-          "n": 15
+          "kw": 69,
+          "n": 16
         },
         {
           "soc": 65,
@@ -14340,7 +14340,7 @@
           "n": 1
         }
       ],
-      "sessions": 175,
+      "sessions": 177,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -14364,11 +14364,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-10",
-      "label": "D 9",
-      "km": 999
-    },
     {
       "key": "2026-09-11",
       "label": "D 10",
@@ -14513,9 +14508,25 @@
       "key": "2026-10-09",
       "label": "D 38",
       "km": 82
+    },
+    {
+      "key": "2026-10-11",
+      "label": "D 40",
+      "km": 366
     }
   ],
   "log": [
+    {
+      "key": "2026-10-11",
+      "day": "Day 40",
+      "date": "Oct 11",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "366",
+      "chargeMinutes": 68,
+      "note": ""
+    },
     {
       "key": "2026-10-09",
       "day": "Day 38",
@@ -14622,18 +14633,6 @@
       "plotted": true,
       "km": "280",
       "chargeMinutes": 362,
-      "note": ""
-    },
-    {
-      "key": "2026-09-30",
-      "day": "Day 29",
-      "date": "Sep 30",
-      "province": "Ontario",
-      "from": "Thunder Bay, Ontario",
-      "to": "New Hamburg, Ontario",
-      "plotted": true,
-      "km": "1,493",
-      "chargeMinutes": 101,
       "note": ""
     }
   ]
