@@ -4116,5 +4116,124 @@
     "kmPerPx": 0.0289,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-10-11",
+    "day": 40,
+    "date": "Oct 11",
+    "label": "Day 40 · Oct 11",
+    "km": 17,
+    "from": "St. John's, Newfoundland and Labrador",
+    "to": "Shea Heights, Newfoundland and Labrador",
+    "corridor": "Shea Heights, Newfoundland and Labrador",
+    "province": "Newfoundland and Labrador",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [
+      [
+        0.1905,
+        0.0599
+      ],
+      [
+        0.05,
+        0.1127
+      ],
+      [
+        0.0576,
+        0.1215
+      ],
+      [
+        0.0956,
+        0.0951
+      ],
+      [
+        0.1259,
+        0.1039
+      ],
+      [
+        0.1373,
+        0.1479
+      ],
+      [
+        0.1146,
+        0.2007
+      ],
+      [
+        0.088,
+        0.2535
+      ],
+      [
+        0.0994,
+        0.3064
+      ],
+      [
+        0.1222,
+        0.368
+      ],
+      [
+        0.1449,
+        0.4472
+      ],
+      [
+        0.1146,
+        0.6408
+      ],
+      [
+        0.1184,
+        0.7465
+      ],
+      [
+        0.1753,
+        0.7905
+      ],
+      [
+        0.2741,
+        0.6848
+      ],
+      [
+        0.3196,
+        0.7025
+      ],
+      [
+        0.3652,
+        0.7377
+      ],
+      [
+        0.4108,
+        0.7377
+      ],
+      [
+        0.4411,
+        0.676
+      ],
+      [
+        0.4905,
+        0.5528
+      ],
+      [
+        0.95,
+        0.9401
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.1905,
+        "y": 0.0599,
+        "town": "St. John's, Newfoundland and Labrador",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.95,
+        "y": 0.9401,
+        "town": "Shea Heights, Newfoundland and Labrador",
+        "kind": "end",
+        "sessions": []
+      }
+    ],
+    "kmPerPx": 0.0137,
+    "plotted": true,
+    "track": 3
   }
 ]
