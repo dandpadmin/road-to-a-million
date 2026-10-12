@@ -1,19 +1,19 @@
 {
   "odometer": 24839,
   "goal": 1000000,
-  "day": 40,
+  "day": 41,
   "province": "Newfoundland and Labrador",
   "route": "St. John's, Newfoundland and Labrador",
   "today": 919,
   "best": 1493,
   "bestDay": 29,
   "avgPerDay": 608,
-  "chargeSessions": 4,
+  "chargeSessions": 5,
   "chargeSupercharger": 0,
-  "chargeOther": 4,
-  "chargeLifetime": 187,
+  "chargeOther": 5,
+  "chargeLifetime": 188,
   "chargeLifetimeSupercharger": 105,
-  "chargeLifetimeOther": 82,
+  "chargeLifetimeOther": 83,
   "dayMap": {
     "key": "2026-10-09",
     "day": 38,
@@ -12801,7 +12801,7 @@
     }
   ],
   "asOf": "2026-10-11",
-  "updatedAt": "2026-10-11T23:13:17.355Z",
+  "updatedAt": "2026-10-12T02:28:20.864Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14242,8 +14242,8 @@
     },
     "energy": {
       "used": 3710,
-      "added": 3941,
-      "overhead": 5.9,
+      "added": 3989,
+      "overhead": 7,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -14286,8 +14286,8 @@
         },
         {
           "soc": 50,
-          "kw": 79,
-          "n": 10
+          "kw": 76,
+          "n": 11
         },
         {
           "soc": 55,
@@ -14340,7 +14340,7 @@
           "n": 1
         }
       ],
-      "sessions": 179,
+      "sessions": 180,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -14524,7 +14524,7 @@
       "from": "—",
       "to": "—",
       "km": "919",
-      "chargeMinutes": 99,
+      "chargeMinutes": 154,
       "note": ""
     },
     {
