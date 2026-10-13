@@ -91,5 +91,9 @@
 {"id":"442378324","s":1791728257,"e":1791728486,"km":1.38,"ap":0,"kwh":0.24,"t":6.5,"prov":"Newfoundland and Labrador"},
 {"id":"442420187","s":1791731391,"e":1791737678,"km":176.24,"ap":170.64,"kwh":29.12,"t":6.9,"prov":"Newfoundland and Labrador"},
 {"id":"442442403","s":1791738300,"e":1791742597,"km":130.47,"ap":125.96,"kwh":22.88,"t":8.5,"prov":"Newfoundland and Labrador"},
-{"id":"442448708","s":1791744061,"e":1791744145,"km":1.01,"ap":1.01,"kwh":-0.38,"t":8.5,"prov":"Newfoundland and Labrador"}
+{"id":"442448708","s":1791744061,"e":1791744145,"km":1.01,"ap":1.01,"kwh":-0.38,"t":8.5,"prov":"Newfoundland and Labrador"},
+{"id":"442464058","s":1791744145,"e":1791748034,"km":96.34,"ap":96.34,"kwh":14.5,"t":7.2,"prov":"Newfoundland and Labrador"},
+{"id":"442499104","s":1791751905,"e":1791757896,"km":147.95,"ap":139.37,"kwh":25.24,"t":6.1,"prov":"Newfoundland and Labrador"},
+{"id":"442500852","s":1791758364,"e":1791758449,"km":0.34,"ap":0,"kwh":0,"t":6.5,"prov":"Newfoundland and Labrador"},
+{"id":"442512318","s":1791761988,"e":1791762048,"km":0.31,"ap":0,"kwh":-0.26,"t":6.5,"prov":"Newfoundland and Labrador"}
 ]
