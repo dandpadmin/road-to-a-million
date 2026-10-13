@@ -1,13 +1,13 @@
 {
-  "odometer": 25687,
+  "odometer": 25714,
   "goal": 1000000,
   "day": 42,
   "province": "Newfoundland and Labrador",
   "route": "Corner Brook, Newfoundland and Labrador",
-  "today": 643,
+  "today": 875,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 609,
+  "avgPerDay": 615,
   "chargeSessions": 4,
   "chargeSupercharger": 1,
   "chargeOther": 3,
@@ -13451,7 +13451,7 @@
     }
   ],
   "asOf": "2026-10-12",
-  "updatedAt": "2026-10-13T01:33:29.552Z",
+  "updatedAt": "2026-10-13T08:29:01.650Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14929,17 +14929,17 @@
       ]
     },
     "autopilot": {
-      "km": 21831,
-      "pct": 89.6
+      "km": 22063,
+      "pct": 89.7
     },
     "energy": {
-      "used": 3822,
+      "used": 3863,
       "added": 4107,
-      "overhead": 6.9,
+      "overhead": 5.9,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 398
+      "rangeEst": 397
     },
     "cost": {
       "total": 760.78,
@@ -15204,7 +15204,7 @@
     {
       "key": "2026-10-12",
       "label": "D 41",
-      "km": 643
+      "km": 875
     }
   ],
   "log": [
@@ -15215,7 +15215,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "643",
+      "km": "875",
       "chargeMinutes": 74,
       "note": ""
     },
