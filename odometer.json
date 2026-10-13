@@ -1,223 +1,265 @@
 {
-  "odometer": 26162,
+  "odometer": 26593,
   "goal": 1000000,
   "day": 42,
-  "province": "Newfoundland and Labrador",
-  "route": "Channel-Port Aux Basques, Newfoundland and Labrador",
-  "today": 426,
+  "province": "Nova Scotia",
+  "route": "East Lake Ainslie, Nova Scotia",
+  "today": 879,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 610,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 621,
+  "chargeSessions": 3,
+  "chargeSupercharger": 3,
   "chargeOther": 0,
-  "chargeLifetime": 195,
-  "chargeLifetimeSupercharger": 108,
+  "chargeLifetime": 196,
+  "chargeLifetimeSupercharger": 109,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-12",
     "day": 41,
     "date": "Oct 12",
     "label": "Day 41 · Oct 12",
-    "km": 219,
+    "km": 315,
     "from": "Corner Brook, Newfoundland and Labrador",
-    "to": "Channel-Port Aux Basques, Newfoundland and Labrador",
-    "corridor": "Channel-Port Aux Basques, Newfoundland and Labrador",
-    "province": "Newfoundland and Labrador",
-    "chargeStops": 1,
-    "chargeMinutes": 20,
+    "to": "East Lake Ainslie, Nova Scotia",
+    "corridor": "East Lake Ainslie, Nova Scotia",
+    "province": "Nova Scotia",
+    "chargeStops": 2,
+    "chargeMinutes": 37,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6982,
+        0.7099,
         0.05
       ],
       [
-        0.7014,
-        0.07
+        0.7114,
+        0.059
       ],
       [
-        0.677,
-        0.1307
+        0.7002,
+        0.0863
       ],
       [
-        0.6366,
-        0.1697
+        0.6817,
+        0.1039
       ],
       [
-        0.6271,
-        0.214
+        0.6774,
+        0.1238
       ],
       [
-        0.6205,
-        0.2317
+        0.6718,
+        0.1337
       ],
       [
-        0.615,
-        0.236
+        0.6666,
+        0.1571
       ],
       [
-        0.6117,
-        0.2563
+        0.6632,
+        0.1619
       ],
       [
-        0.6039,
-        0.2743
+        0.6597,
+        0.1892
       ],
       [
-        0.6036,
-        0.288
+        0.6411,
+        0.2065
       ],
       [
-        0.5961,
-        0.2987
+        0.6394,
+        0.2174
       ],
       [
-        0.5934,
-        0.3407
+        0.6247,
+        0.2432
       ],
       [
-        0.5884,
-        0.3593
+        0.617,
+        0.2429
       ],
       [
-        0.5478,
-        0.3977
+        0.6066,
+        0.2606
       ],
       [
-        0.5439,
-        0.422
+        0.6022,
+        0.2619
       ],
       [
-        0.5356,
-        0.4307
+        0.598,
+        0.2682
       ],
       [
-        0.5296,
-        0.4537
+        0.5941,
+        0.2759
       ],
       [
-        0.5118,
-        0.4793
+        0.597,
+        0.2865
       ],
       [
-        0.495,
-        0.4787
+        0.595,
+        0.2926
       ],
       [
-        0.4722,
-        0.518
+        0.5957,
+        0.3043
       ],
       [
-        0.4627,
-        0.521
+        0.5787,
+        0.3195
       ],
       [
-        0.4535,
-        0.535
+        0.5768,
+        0.3308
       ],
       [
-        0.4449,
-        0.552
+        0.5718,
+        0.3396
       ],
       [
-        0.4512,
-        0.5757
+        0.5709,
+        0.3526
       ],
       [
-        0.4468,
-        0.589
+        0.5604,
+        0.3664
       ],
       [
-        0.4484,
-        0.615
+        0.5547,
+        0.3683
       ],
       [
-        0.4464,
-        0.6193
+        0.5527,
+        0.3742
       ],
       [
-        0.4113,
-        0.649
+        0.5418,
+        0.388
       ],
       [
-        0.407,
-        0.674
+        0.5282,
+        0.4181
       ],
       [
-        0.3962,
-        0.6937
+        0.5272,
+        0.4271
       ],
       [
-        0.3975,
-        0.714
+        0.5319,
+        0.4367
       ],
       [
-        0.3941,
-        0.7223
+        0.5363,
+        0.4394
       ],
       [
-        0.3713,
-        0.753
+        0.5377,
+        0.4484
       ],
       [
-        0.3588,
-        0.7573
+        0.5479,
+        0.455
       ],
       [
-        0.3544,
-        0.7703
+        0.4053,
+        0.875
       ],
       [
-        0.3305,
-        0.801
+        0.4013,
+        0.8603
       ],
       [
-        0.3217,
-        0.8263
+        0.3939,
+        0.8548
       ],
       [
-        0.3111,
-        0.8403
+        0.377,
+        0.8624
       ],
       [
-        0.3007,
-        0.868
+        0.3747,
+        0.8659
       ],
       [
-        0.2986,
-        0.888
+        0.3746,
+        0.8569
       ],
       [
-        0.3088,
-        0.9093
+        0.3714,
+        0.8615
       ],
       [
-        0.3184,
-        0.9153
+        0.3674,
+        0.859
       ],
       [
-        0.3217,
-        0.9353
+        0.3569,
+        0.8822
       ],
       [
-        0.3438,
+        0.3366,
+        0.9088
+      ],
+      [
+        0.3284,
+        0.9111
+      ],
+      [
+        0.3234,
+        0.9064
+      ],
+      [
+        0.3198,
+        0.91
+      ],
+      [
+        0.319,
+        0.9154
+      ],
+      [
+        0.3075,
+        0.9367
+      ],
+      [
+        0.2973,
+        0.9466
+      ],
+      [
+        0.2886,
         0.95
       ]
     ],
     "stops": [
       {
-        "x": 0.6982,
+        "x": 0.7099,
         "y": 0.05,
         "town": "Corner Brook, Newfoundland and Labrador",
         "kind": "start",
         "sessions": []
       },
       {
-        "x": 0.3438,
+        "x": 0.2886,
         "y": 0.95,
-        "town": "Channel-Port aux Basques, Newfoundland and Labrador",
+        "town": "East Lake Ainslie, Nova Scotia",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "DC fast",
+            "minutes": 17,
+            "socStart": 22,
+            "socEnd": 77
+          }
+        ]
+      },
+      {
+        "x": 0.5479,
+        "y": 0.455,
+        "town": "Channel-Port aux Basques, Newfoundland and Labrador",
+        "kind": "charge",
         "sessions": [
           {
             "network": "DC fast",
@@ -228,7 +270,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.362,
+    "kmPerPx": 0.8043,
     "plotted": true,
     "track": 3
   },
@@ -12395,205 +12437,247 @@
       "day": 41,
       "date": "Oct 12",
       "label": "Day 41 · Oct 12",
-      "km": 219,
+      "km": 315,
       "from": "Corner Brook, Newfoundland and Labrador",
-      "to": "Channel-Port Aux Basques, Newfoundland and Labrador",
-      "corridor": "Channel-Port Aux Basques, Newfoundland and Labrador",
-      "province": "Newfoundland and Labrador",
-      "chargeStops": 1,
-      "chargeMinutes": 20,
+      "to": "East Lake Ainslie, Nova Scotia",
+      "corridor": "East Lake Ainslie, Nova Scotia",
+      "province": "Nova Scotia",
+      "chargeStops": 2,
+      "chargeMinutes": 37,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.6982,
+          0.7099,
           0.05
         ],
         [
-          0.7014,
-          0.07
+          0.7114,
+          0.059
         ],
         [
-          0.677,
-          0.1307
+          0.7002,
+          0.0863
         ],
         [
-          0.6366,
-          0.1697
+          0.6817,
+          0.1039
         ],
         [
-          0.6271,
-          0.214
+          0.6774,
+          0.1238
         ],
         [
-          0.6205,
-          0.2317
+          0.6718,
+          0.1337
         ],
         [
-          0.615,
-          0.236
+          0.6666,
+          0.1571
         ],
         [
-          0.6117,
-          0.2563
+          0.6632,
+          0.1619
         ],
         [
-          0.6039,
-          0.2743
+          0.6597,
+          0.1892
         ],
         [
-          0.6036,
-          0.288
+          0.6411,
+          0.2065
         ],
         [
-          0.5961,
-          0.2987
+          0.6394,
+          0.2174
         ],
         [
-          0.5934,
-          0.3407
+          0.6247,
+          0.2432
         ],
         [
-          0.5884,
-          0.3593
+          0.617,
+          0.2429
         ],
         [
-          0.5478,
-          0.3977
+          0.6066,
+          0.2606
         ],
         [
-          0.5439,
-          0.422
+          0.6022,
+          0.2619
         ],
         [
-          0.5356,
-          0.4307
+          0.598,
+          0.2682
         ],
         [
-          0.5296,
-          0.4537
+          0.5941,
+          0.2759
         ],
         [
-          0.5118,
-          0.4793
+          0.597,
+          0.2865
         ],
         [
-          0.495,
-          0.4787
+          0.595,
+          0.2926
         ],
         [
-          0.4722,
-          0.518
+          0.5957,
+          0.3043
         ],
         [
-          0.4627,
-          0.521
+          0.5787,
+          0.3195
         ],
         [
-          0.4535,
-          0.535
+          0.5768,
+          0.3308
         ],
         [
-          0.4449,
-          0.552
+          0.5718,
+          0.3396
         ],
         [
-          0.4512,
-          0.5757
+          0.5709,
+          0.3526
         ],
         [
-          0.4468,
-          0.589
+          0.5604,
+          0.3664
         ],
         [
-          0.4484,
-          0.615
+          0.5547,
+          0.3683
         ],
         [
-          0.4464,
-          0.6193
+          0.5527,
+          0.3742
         ],
         [
-          0.4113,
-          0.649
+          0.5418,
+          0.388
         ],
         [
-          0.407,
-          0.674
+          0.5282,
+          0.4181
         ],
         [
-          0.3962,
-          0.6937
+          0.5272,
+          0.4271
         ],
         [
-          0.3975,
-          0.714
+          0.5319,
+          0.4367
         ],
         [
-          0.3941,
-          0.7223
+          0.5363,
+          0.4394
         ],
         [
-          0.3713,
-          0.753
+          0.5377,
+          0.4484
         ],
         [
-          0.3588,
-          0.7573
+          0.5479,
+          0.455
         ],
         [
-          0.3544,
-          0.7703
+          0.4053,
+          0.875
         ],
         [
-          0.3305,
-          0.801
+          0.4013,
+          0.8603
         ],
         [
-          0.3217,
-          0.8263
+          0.3939,
+          0.8548
         ],
         [
-          0.3111,
-          0.8403
+          0.377,
+          0.8624
         ],
         [
-          0.3007,
-          0.868
+          0.3747,
+          0.8659
         ],
         [
-          0.2986,
-          0.888
+          0.3746,
+          0.8569
         ],
         [
-          0.3088,
-          0.9093
+          0.3714,
+          0.8615
         ],
         [
-          0.3184,
-          0.9153
+          0.3674,
+          0.859
         ],
         [
-          0.3217,
-          0.9353
+          0.3569,
+          0.8822
         ],
         [
-          0.3438,
+          0.3366,
+          0.9088
+        ],
+        [
+          0.3284,
+          0.9111
+        ],
+        [
+          0.3234,
+          0.9064
+        ],
+        [
+          0.3198,
+          0.91
+        ],
+        [
+          0.319,
+          0.9154
+        ],
+        [
+          0.3075,
+          0.9367
+        ],
+        [
+          0.2973,
+          0.9466
+        ],
+        [
+          0.2886,
           0.95
         ]
       ],
       "stops": [
         {
-          "x": 0.6982,
+          "x": 0.7099,
           "y": 0.05,
           "town": "Corner Brook, Newfoundland and Labrador",
           "kind": "start",
           "sessions": []
         },
         {
-          "x": 0.3438,
+          "x": 0.2886,
           "y": 0.95,
-          "town": "Channel-Port aux Basques, Newfoundland and Labrador",
+          "town": "East Lake Ainslie, Nova Scotia",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "DC fast",
+              "minutes": 17,
+              "socStart": 22,
+              "socEnd": 77
+            }
+          ]
+        },
+        {
+          "x": 0.5479,
+          "y": 0.455,
+          "town": "Channel-Port aux Basques, Newfoundland and Labrador",
+          "kind": "charge",
           "sessions": [
             {
               "network": "DC fast",
@@ -12604,13 +12688,13 @@
           ]
         }
       ],
-      "kmPerPx": 0.362,
+      "kmPerPx": 0.8043,
       "plotted": true,
       "track": 3
     }
   ],
   "asOf": "2026-10-13",
-  "updatedAt": "2026-10-13T16:21:32.222Z",
+  "updatedAt": "2026-10-13T21:26:21.210Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14074,6 +14158,12 @@
           "wh": 179,
           "km": 215,
           "prov": "Newfoundland and Labrador"
+        },
+        {
+          "t": 13.9,
+          "wh": 149,
+          "km": 96,
+          "prov": "Nova Scotia"
         }
       ],
       "median": 152,
@@ -14094,24 +14184,24 @@
       ]
     },
     "autopilot": {
-      "km": 22480,
-      "pct": 89.9
+      "km": 22934,
+      "pct": 90
     },
     "energy": {
-      "used": 3945,
-      "added": 4232,
-      "overhead": 6.8,
+      "used": 4012,
+      "added": 4271,
+      "overhead": 6.1,
       "whPerKm": 158,
       "kmPerKwh": 6.3,
       "packKwh": 62,
       "rangeEst": 396
     },
     "cost": {
-      "total": 793.35,
-      "supercharger": 793.35,
+      "total": 811.07,
+      "supercharger": 811.07,
       "other": 0,
       "perKm": 0.032,
-      "sessions": 106,
+      "sessions": 107,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -14138,8 +14228,8 @@
         },
         {
           "soc": 45,
-          "kw": 98,
-          "n": 16
+          "kw": 100,
+          "n": 17
         },
         {
           "soc": 50,
@@ -14197,7 +14287,7 @@
           "n": 1
         }
       ],
-      "sessions": 187,
+      "sessions": 188,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -14369,7 +14459,7 @@
     {
       "key": "2026-10-13",
       "label": "D 42",
-      "km": 426
+      "km": 879
     }
   ],
   "log": [
@@ -14380,17 +14470,17 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "426",
-      "chargeMinutes": 36,
+      "km": "879",
+      "chargeMinutes": 54,
       "note": ""
     },
     {
       "key": "2026-10-12",
       "day": "Day 41",
       "date": "Oct 12",
-      "province": "Newfoundland and Labrador",
+      "province": "Nova Scotia",
       "from": "Corner Brook, Newfoundland and Labrador",
-      "to": "Channel-Port Aux Basques, Newfoundland and Labrador",
+      "to": "East Lake Ainslie, Nova Scotia",
       "plotted": true,
       "km": "875",
       "chargeMinutes": 570,
