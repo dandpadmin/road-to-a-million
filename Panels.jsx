@@ -19,25 +19,69 @@ const SEL = 'rgba(0,180,217,.12)';
 /* One radius for every corner on the page — see --rtam-r in index.html. */
 const RR = 'var(--rtam-r)';
 
-window.RTAM_INK = { RR, PANEL, INK, INK_2, INK_3, INK_4, BRONZE_D, CYAN_D, CYAN_LINE, CYAN, HAIR, HAIR_2, GRID, SEL };
+const NAVY = '#1C242C';
+
+window.RTAM_INK = { RR, PANEL, INK, INK_2, INK_3, INK_4, BRONZE_D, CYAN_D, CYAN_LINE, CYAN, HAIR, HAIR_2, GRID, SEL, NAVY };
+
+/* Header face: Montserrat SemiBold (600) at -3% letter spacing — exactly the
+   driveprotected.com theme's heading setting (montserrat_n6, spacing -30) — shipped with the page in assets/. Etna X Condensed was tried for headers and figures and
+   dropped — it reads poorly at these sizes. Figures stay in IBM Plex Mono. */
+const HEAD_FONT = '"Montserrat", "Arial", sans-serif';
+(function loadHeadFont() {
+  if (typeof document === 'undefined' || document.getElementById('rtam-head-font')) return;
+  const url = window.RTAM_HEAD_FONT_URL || 'assets/montserrat-600.woff2';
+  const st = document.createElement('style');
+  st.id = 'rtam-head-font';
+  /* One weight: SemiBold 600, as driveprotected.com sets its headings. */
+  st.textContent = '@font-face{font-family:"Montserrat";font-weight:600;font-style:normal;font-display:swap;src:url("' + url + '") format("woff2")}';
+  document.head.appendChild(st);
+})();
+
+/* Panel header: Bronze Montserrat SemiBold, -3% tracking (the store's heading
+   setting), on the panel, with a rule under
+   it in the panel's own outline (1px, Bone 18%) running the full width (it
+   cancels the panel's side padding). Panels that hold a framed box of their
+   own (maps, charts) pass rule={false} — the inner frame already separates.
+   `right` holds the panel's controls or a short caption. */
+const OUTLINE = 'rgba(246,240,227,.18)';
+function BandHead({ children, right, pad = 26, inset, size = 18, rule = true }) {
+  const x = inset !== undefined ? inset : Math.max(pad, 18);
+  return (
+    <div className="rtam-band" style={{ margin: '-' + pad + 'px -' + pad + 'px 0', padding: Math.max(14, Math.round(pad * 0.7)) + 'px ' + x + 'px ' + (rule ? Math.round(size * 0.6) : 0) + 'px', borderBottom: rule ? '1px solid ' + OUTLINE : 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', columnGap: 14, rowGap: 8, flexWrap: 'wrap' }}>
+      <span style={{ fontFamily: HEAD_FONT, fontWeight: 600, fontSize: size, lineHeight: 1.15, letterSpacing: '-.03em', color: BRONZE_D }}>{children}</span>
+      {right && <span style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>{right}</span>}
+    </div>
+  );
+}
+/* Caption and control styles for use in a header row. */
+const bandNote = { fontFamily: HEAD_FONT, fontWeight: 600, fontSize: 12, letterSpacing: '.06em', textTransform: 'uppercase', color: 'rgba(246,240,227,.6)' };
+function BandButton({ active, onClick, href, children }) {
+  const st = { padding: '8px 14px', cursor: 'pointer', borderRadius: RR, background: active ? BRONZE_D : 'transparent', color: active ? NAVY : 'rgba(246,240,227,.85)', border: '1.5px solid ' + (active ? BRONZE_D : 'rgba(164,125,81,.7)'), fontFamily: HEAD_FONT, fontWeight: 600, fontSize: 12, letterSpacing: '.06em', textTransform: 'uppercase', textDecoration: 'none', lineHeight: 1.2 };
+  return href ? <a href={href} style={st}>{children}</a> : <button onClick={onClick} style={st}>{children}</button>;
+}
 
 function Metric({ label, value, unit, sub, size = 40 }) {
   return (
-    <Plate tone="raised" pad={26} style={{ gap: 14, alignContent: 'start', borderRadius: RR }}>
-      <Eyebrow tone={BRONZE_D} size={10} track={0.22}>{label}</Eyebrow>
-      <StatReadout className="rtam-bonestat" value={value} unit={unit} size={size} tone="accent" />
-      {sub && <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{sub}</div>}
+    <Plate tone="raised" pad={26} style={{ gap: 18, alignContent: 'start', borderRadius: RR }}>
+      <BandHead>{label}</BandHead>
+      {/* Figure and its note side by side on desktop; stacked on phones
+          (.rtam-metric-row in the mobile rules). */}
+      <div className="rtam-metric-row" style={{ display: 'flex', alignItems: 'center', columnGap: 20, rowGap: 10, flexWrap: 'wrap' }}>
+        <StatReadout className="rtam-bonestat" value={value} unit={unit} size={size} tone="accent" style={{ flex: '0 0 auto' }} />
+        {sub && <div style={{ flex: '1 1 150px', fontSize: 12, lineHeight: 1.55, letterSpacing: '.12em', textTransform: 'uppercase', color: INK_2 }}>{sub}</div>}
+      </div>
     </Plate>
   );
 }
 
 /* Sparkline of the last N days' distance, on bone. Bars are selectable when the
    day has a route to show. */
-function DistanceBars({ days, activeKey, onSelect }) {
+function DistanceBars({ days, activeKey, onSelect, head, headRight }) {
   const max = Math.max(...days.map(d => d.km));
   return (
     <Plate tone="raised" pad={24} style={{ gap: 12, borderRadius: RR }}>
-      <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, height: 96, borderBottom: '1px solid ' + HAIR }}>
+      {head && <BandHead pad={24} right={headRight}>{head}</BandHead>}
+      <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, height: 96, marginTop: head ? 12 : 0, borderBottom: '1px solid ' + HAIR }}>
         {days.map((d, i) => {
           const selectable = !!(onSelect && d.key);
           const active = !!(d.key && d.key === activeKey);
@@ -168,17 +212,18 @@ function StopPopup({ stop }) {
   const left = stop.x <= 0.18 ? '0%' : stop.x >= 0.82 ? '100%' : stop.x * 100 + '%';
   const shiftX = stop.x <= 0.18 ? '0' : stop.x >= 0.82 ? '-100%' : '-50%';
   const below = stop.y < 0.38;
+  const P = 18;
   return (
-    <div style={{ position: 'absolute', left, top: stop.y * 100 + '%', transform: 'translate(' + shiftX + ',' + (below ? 'calc(0% + 16px)' : 'calc(-100% - 16px)') + ')', zIndex: 3, pointerEvents: 'none', minWidth: 168, maxWidth: 260, padding: '12px 14px', display: 'grid', gap: 9, background: '#1C242C', border: '1px solid ' + HAIR, borderRadius: RR, boxShadow: '0 10px 28px rgba(0,0,0,.45)' }}>
-      <div style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: BRONZE_D, whiteSpace: 'nowrap' }}>{stop.town}</div>
+    <div style={{ position: 'absolute', left, top: stop.y * 100 + '%', transform: 'translate(' + shiftX + ',' + (below ? 'calc(0% + 18px)' : 'calc(-100% - 18px)') + ')', zIndex: 3, pointerEvents: 'none', minWidth: 250, maxWidth: 340, padding: P, display: 'grid', gap: 14, background: NAVY, border: '1px solid ' + HAIR, borderRadius: RR, boxShadow: '0 12px 32px rgba(0,0,0,.5)', overflow: 'hidden' }}>
+      <BandHead pad={P} size={18}>{stop.town}</BandHead>
       {stop.sessions.map((c, i) => (
-        <div key={i} style={{ display: 'grid', gap: 3, paddingTop: i ? 8 : 0, borderTop: i ? '1px solid ' + HAIR_2 : 'none' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 14 }}>
-            <span style={{ fontSize: 11, letterSpacing: '.1em', textTransform: 'uppercase', color: INK_2 }}>{c.network}</span>
-            <span style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: CYAN, fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap' }}>{plugged(c.minutes) || '—'}</span>
+        <div key={i} style={{ display: 'grid', gap: 5, paddingTop: i ? 12 : 0, borderTop: i ? '1px solid ' + HAIR_2 : 'none' }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 18 }}>
+            <span style={{ fontSize: 14, letterSpacing: '.1em', textTransform: 'uppercase', color: INK }}>{c.network}</span>
+            <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 22, color: CYAN, fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap' }}>{plugged(c.minutes) || '\u2014'}</span>
           </div>
           {c.socStart !== null && c.socEnd !== null && (
-            <div style={{ fontSize: 10, letterSpacing: '.14em', color: INK_4, fontVariantNumeric: 'tabular-nums' }}>{c.socStart}% → {c.socEnd}%</div>
+            <div style={{ fontSize: 13, letterSpacing: '.12em', color: INK_3, fontVariantNumeric: 'tabular-nums' }}>{c.socStart}% → {c.socEnd}%</div>
           )}
         </div>
       ))}
@@ -230,9 +275,7 @@ function DayMap({ map }) {
   const title = bits.length > 1 ? bits[0] + ' Route · ' + bits.slice(1).join(' · ') : (bits[0] || 'Route');
   return (
     <Plate tone="raised" pad={13} className="rtam-daymap-plate" style={{ gap: 14, borderRadius: RR }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-        <Eyebrow tone={BRONZE_D} size={13} track={0.2}>{title}</Eyebrow>
-      </div>
+      <BandHead pad={13} inset={22} rule={false}>{title}</BandHead>
       <div ref={boxRef} style={{ position: 'relative', border: plotted ? '1px solid ' + HAIR : '1px dashed ' + HAIR, borderRadius: RR, overflow: 'visible' }} onClick={() => setOpenStop(null)}>
         {/* aspect-ratio keeps the box at the viewBox's shape, so the equal-scale
             projection is not stretched by the column width. */}
@@ -300,25 +343,36 @@ function DayMap({ map }) {
    day number set large because that is the only thing you scan by — and the
    selected one widens to half the viewport to show the route. Everything that
    changes shape lives in the rtam-dl-* classes so the media query owns it. */
+/* Selected-day block colour. Cyan = the page's "selected" colour (it also marks
+   the chosen bar in Distance Per Day); window.RTAM_DAY_HL can override. */
+const DAY_HL = (typeof window !== 'undefined' && window.RTAM_DAY_HL) || CYAN_D;
 function DayList({ rows, activeKey, onSelect, onLatest, following }) {
-  /* On mobile the rows are a horizontal strip and the selected one widens to
-     half the viewport. Selecting a day off-screen looked like nothing happened,
-     so the strip brings the open row to its left edge itself. */
+  /* On mobile the rows are a horizontal strip of equal-width day cards. Picking
+     a day never changes any card's width (that resize, then a scroll, read as
+     a double jerk); the strip only scrolls if the picked card is partly out of
+     view, and only as far as needed. Its route shows in one line under the
+     strip, full width, so long names wrap instead of being cut off. */
   const stripRef = React.useRef(null);
   React.useEffect(() => {
     const strip = stripRef.current;
-    if (!strip) return;
+    if (!strip || strip.scrollWidth <= strip.clientWidth) return;
     const row = strip.querySelector('.rtam-daylist-row.is-open');
-    if (!row || strip.scrollWidth <= strip.clientWidth) return;
-    strip.scrollTo({ left: Math.max(0, row.offsetLeft - strip.offsetLeft - 12), behavior: 'smooth' });
+    if (!row) return;
+    const sr = strip.getBoundingClientRect(), rr = row.getBoundingClientRect(), pad = 16;
+    let d = 0;
+    if (rr.left < sr.left + pad) d = rr.left - sr.left - pad;
+    else if (rr.right > sr.right - pad) d = rr.right - sr.right + pad;
+    if (d) strip.scrollBy({ left: d, behavior: 'smooth' });
   }, [activeKey]);
+  const openRow = rows.find((r) => r.key && r.key === activeKey) || null;
   return (
-    <div className="rtam-daylist" style={{ background: 'rgba(246,240,227,.06)', border: '1px solid ' + HAIR, display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)', maxHeight: 566 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, padding: '13px 18px', minHeight: 50, boxSizing: 'border-box', borderBottom: '1px solid ' + HAIR }}>
-        <Eyebrow tone={BRONZE_D} size={10} track={0.24}>Daily log</Eyebrow>
-        {following
-          ? <span style={{ fontSize: 9, letterSpacing: '.18em', textTransform: 'uppercase', color: INK_4 }}>Select a day</span>
-          : <button onClick={onLatest} style={{ padding: '5px 10px', cursor: 'pointer', borderRadius: RR, background: 'transparent', color: CYAN_D, border: '1px solid rgba(0,180,217,.5)', fontFamily: 'inherit', fontSize: 9, letterSpacing: '.16em', textTransform: 'uppercase' }}>Latest</button>}
+    <div className="rtam-daylist" style={{ position: 'absolute', inset: 0, background: 'rgba(246,240,227,.06)', border: '1px solid ' + HAIR, display: 'grid', gridTemplateRows: 'auto minmax(0,1fr)' }}>
+      <div style={{ padding: 0, overflow: 'hidden', borderRadius: RR + ' ' + RR + ' 0 0' }}>
+        {/* The note and the button share one fixed-height slot, so switching
+            between them doesn't nudge the header (and the log) up and down. */}
+        <BandHead pad={0} inset={18} right={<span style={{ display: 'inline-flex', alignItems: 'center', minHeight: 36 }}>{following
+          ? <span style={bandNote}>Select a day</span>
+          : <BandButton onClick={onLatest}>Latest</BandButton>}</span>}>Daily Log</BandHead>
       </div>
       <div ref={stripRef} className="rtam-daylist-rows" style={{ overflowY: 'auto' }}>
         {rows.map((r, i) => {
@@ -329,10 +383,12 @@ function DayList({ rows, activeKey, onSelect, onLatest, following }) {
             <div key={r.key || i} className={'rtam-daylist-row' + (active ? ' is-open' : '') + (clickable ? '' : ' is-inert')}
               onClick={clickable ? () => onSelect(r.key) : undefined}
               title={clickable ? 'Show this day on the map' : 'No route yet for this day'}
-              style={{ display: 'grid', gridTemplateColumns: '52px minmax(0,1fr) auto', gap: '5px 14px', padding: '14px 18px', borderBottom: '1px solid ' + HAIR_2, cursor: clickable ? 'pointer' : 'default', background: active ? SEL : 'transparent', boxShadow: active ? 'inset 2px 0 0 ' + CYAN_LINE : 'none' }}>
-              <div className="rtam-dl-head" style={{ gridRow: '1 / -1', display: 'grid', gap: 1, alignContent: 'start' }}>
-                <span className="rtam-dl-daypre" style={{ fontSize: 9, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: INK_4 }}>Day</span>
-                <span className="rtam-dl-day" style={{ fontSize: 26, fontWeight: 600, lineHeight: 1, letterSpacing: '-.02em', fontVariantNumeric: 'tabular-nums', color: CYAN_D }}>{dayNo}</span>
+              style={{ display: 'grid', gridTemplateColumns: '52px minmax(0,1fr) auto', gap: '5px 14px', padding: '14px 18px', borderBottom: '1px solid ' + HAIR_2, cursor: clickable ? 'pointer' : 'default', background: 'transparent' }}>
+              {/* The selected day: a solid block behind DAY and its number, from
+                  the row's left edge to just short of the details. */}
+              <div className="rtam-dl-head" style={{ gridRow: 'span ' + (r.note ? 3 : 2), display: 'grid', gap: 1, alignContent: 'start', ...(active ? { background: DAY_HL, margin: '-14px -7px -14px -18px', padding: '14px 7px 14px 18px' } : {}) }}>
+                <span className="rtam-dl-daypre" style={{ fontSize: 9, fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: active ? 'rgba(28,36,44,.72)' : INK_4 }}>Day</span>
+                <span className="rtam-dl-day" style={{ fontSize: 26, fontWeight: 600, lineHeight: 1, letterSpacing: '-.02em', fontVariantNumeric: 'tabular-nums', color: active ? NAVY : CYAN_D }}>{dayNo}</span>
               </div>
               <div className="rtam-dl-date" style={{ fontSize: 10, fontWeight: 600, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{r.date}</div>
               <div className="rtam-dl-km" style={{ fontSize: 12, fontWeight: 600, fontVariantNumeric: 'tabular-nums', textAlign: 'right', color: INK }}>{r.km} <span style={{ color: BRONZE_D, fontSize: 9, letterSpacing: '.16em' }}>KM</span>
@@ -346,6 +402,11 @@ function DayList({ rows, activeKey, onSelect, onLatest, following }) {
           );
         })}
       </div>
+      {/* Phone only (hidden on desktop by the base rule below): the picked
+          day's route, full width under the strip. */}
+      <div className="rtam-dl-detail" style={{ display: 'none' }}>
+        {openRow ? (openRow.plotted ? routeLabel(openRow.from, openRow.to, openRow.province) : SOON) : 'Select a day'}
+      </div>
     </div>
   );
 }
@@ -353,19 +414,19 @@ function DayList({ rows, activeKey, onSelect, onLatest, following }) {
 /* Two readouts in one Plate — same footprint as Metric, split by a hairline. */
 function SplitMetric({ label, a, b, sub }) {
   return (
-    <Plate tone="raised" pad={26} style={{ gap: 14, alignContent: 'start', borderRadius: RR }}>
-      <Eyebrow tone={BRONZE_D} size={10} track={0.22}>{label}</Eyebrow>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+    <Plate tone="raised" pad={26} style={{ gap: 18, alignContent: 'start', borderRadius: RR }}>
+      <BandHead>{label}</BandHead>
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 20 }}>
         {[a, b].map((m, i) => (
-          <div key={i} style={{ display: 'grid', gap: 8, alignContent: 'start', paddingLeft: i ? 20 : 0, borderLeft: i ? '1px solid ' + HAIR : 'none' }}>
-            <StatReadout className="rtam-bonestat" value={m.value} unit={m.unit || ''} size={40} tone="accent" />
-            <div style={{ fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{m.label}</div>
+          <div key={i} className="rtam-metric-row" style={{ display: 'flex', alignItems: 'center', columnGap: 14, rowGap: 8, flexWrap: 'wrap', paddingLeft: i ? 20 : 0, borderLeft: i ? '1px solid ' + HAIR : 'none' }}>
+            <StatReadout className="rtam-bonestat" value={m.value} unit={m.unit || ''} size={40} tone="accent" style={{ flex: '0 0 auto' }} />
+            <div style={{ flex: '1 1 80px', fontSize: 12, lineHeight: 1.45, letterSpacing: '.12em', textTransform: 'uppercase', color: INK_2 }}>{m.label}</div>
           </div>
         ))}
       </div>
-      {sub && <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: INK_3 }}>{sub}</div>}
+      {sub && <div style={{ fontSize: 12, lineHeight: 1.55, letterSpacing: '.12em', textTransform: 'uppercase', color: INK_2 }}>{sub}</div>}
     </Plate>
   );
 }
 
-Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayList, DayMap });
+Object.assign(window, { Metric, SplitMetric, DistanceBars, LogRow, DayList, DayMap, BandHead, BandButton, bandNote: bandNote });

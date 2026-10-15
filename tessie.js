@@ -457,6 +457,10 @@ const F_POWER = [
    for the odometer \u2014 no extra Tessie calls except battery health, which the
    job passes in. Anything naming a place is built from locPublished, so the
    province colouring on the scatter is 24h behind like every other location. */
+const MIN_SCATTER_KM = 20;
+const CA_PROVINCES = new Set(['Alberta', 'British Columbia', 'Manitoba', 'New Brunswick', 'Newfoundland and Labrador', 'Nova Scotia', 'Ontario', 'Prince Edward Island', 'Quebec', 'Québec', 'Saskatchewan', 'Northwest Territories', 'Nunavut', 'Yukon']);
+function countryOf(prov) { return CA_PROVINCES.has(prov) ? 'CA' : prov && prov !== '\u2014' ? 'US' : null; }
+
 function nerdBlock({ published, locPublished, charges, health, history }) {
   /* The nerd section is about the trip, not the car's life before it — drives
      and sessions from before DEPARTURE would otherwise sit in the scatter and
@@ -466,25 +470,40 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
   locPublished = (locPublished || []).filter(onTrip);
   const chargeList = (charges || []).filter(onTrip);
 
-  /* Efficiency. One dot per drive: outside temperature against Wh/km, coloured
-     by province. Short hops are dropped \u2014 under 5km the figure is dominated by
-     start-up draw and says nothing about the drive. */
+  /* Efficiency. One dot per drive: outside temperature against Wh/km. Short
+     hops are dropped — under 20km the figure is dominated by warm-up and
+     start-up draw (the 300–500 Wh/km outliers) and says nothing about the
+     drive. Each dot carries what its tooltip shows: day, town, province or
+     state, and country — all town-level and on the location clock. */
   const points = [];
-  for (const d of locPublished) {
+  const ordered = [...locPublished].sort((a, b) => (toDate(a.started_at) || 0) - (toDate(b.started_at) || 0));
+  for (const d of ordered) {
     const km2 = d.odometer_distance || 0;
     const kwh = pick(d, F_ENERGY_USED);
     const t = pick(d, F_OUTSIDE_TEMP);
-    if (km2 < 5 || kwh === null || kwh <= 0 || t === null) continue;
+    if (km2 < MIN_SCATTER_KM || kwh === null || kwh <= 0 || t === null) continue;
+    const prov = d._prov || town(d.ending_location).split(',').pop().trim() || '\u2014';
+    const key = dayKey(d.started_at);
     points.push({
       t: Number(t.toFixed(1)),
       wh: Math.round((kwh * 1000) / km2),
       km: km(km2),
-      prov: d._prov || town(d.ending_location).split(',').pop().trim() || '\u2014',
+      prov,
+      ctry: countryOf(prov),
+      town: (d._town || town(d.ending_location).split(',')[0].trim()).replace(/^\u2014$/, '') || null,
+      day: key ? dayIndex(key) : null,
+      date: key ? fmtDayKey(key) : null,
     });
   }
-  /* Newest last, capped \u2014 the whole trip's drives would eventually dominate
+  /* Newest last, capped — the whole trip's drives would eventually dominate
      the file, and the pattern is legible long before then. */
   const scatter = points.slice(-600);
+  /* Trend: the median Wh/km in each 2°C band with at least 3 drives — the
+     "typical" consumption at that temperature, drawn as one line. */
+  const bands = new Map();
+  for (const p of scatter) { const b = Math.floor(p.t / 2) * 2; if (!bands.has(b)) bands.set(b, []); bands.get(b).push(p.wh); }
+  const trend = [...bands.entries()].filter(([, v]) => v.length >= 3).sort((a, b) => a[0] - b[0])
+    .map(([b, v]) => { v.sort((x, y) => x - y); return { t: b + 1, wh: v[Math.floor(v.length / 2)], n: v.length }; });
   const whVals = scatter.map((p) => p.wh).sort((a, b) => a - b);
   const median = whVals.length ? whVals[Math.floor(whVals.length / 2)] : 0;
 
@@ -548,6 +567,59 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
   }
   packSamples.sort((x, y) => x - y);
   const packKwh = packSamples.length ? packSamples[Math.floor(packSamples.length / 2)] : null;
+  /* Charge times. One dot per session in three lanes: Supercharger, other
+     quick charges, and overnight (a non-Supercharger session of 4h+, hotel or
+     destination). Each lane carries its median ("typical"), mean, and the
+     shortest and longest sessions with their towns. Places are on the location
+     clock, so sessions inside the 24h embargo are left out entirely. */
+  const locCut = Date.now() - LOCATION_EMBARGO_HOURS * 36e5;
+  const lanes = { sc: [], other: [], night: [] };
+  const sortedCharges = [...chargeList].sort((a, b) => (toDate(a.started_at) || 0) - (toDate(b.started_at) || 0));
+  for (const c of sortedCharges) {
+    const st = toDate(c.started_at);
+    const en = toDate(c.ended_at ?? c.finished_at ?? c.ended ?? c.end_date);
+    if (!st || !en || en <= st || en > locCut) continue;
+    const min = Math.round((en - st) / 60000);
+    if (min < 1 || min > 36 * 60) continue; // a session left open by a dropped connection
+    const sc = isSupercharger(c);
+    const place = c.location ? town(c.location) : '';
+    const prov = c._prov || place.split(',').pop().trim().replace(/^\u2014$/, '') || null;
+    const key = dayKey(c.started_at);
+    const a = pick(c, F_ENERGY_ADDED);
+    const soc0 = pick(c, F_SOC_START), soc1 = pick(c, F_SOC_END);
+    (sc ? lanes.sc : min >= 240 ? lanes.night : lanes.other).push({
+      min,
+      kwh: a !== null && a > 0 ? Number(a.toFixed(1)) : null,
+      soc0: soc0 !== null ? Math.round(soc0) : null,
+      soc1: soc1 !== null ? Math.round(soc1) : null,
+      prov,
+      ctry: countryOf(prov),
+      town: (c._town || place.split(',')[0].trim()).replace(/^\u2014$/, '') || null,
+      day: key ? dayIndex(key) : null,
+      date: key ? fmtDayKey(key) : null,
+    });
+  }
+  const laneSummary = (key, label, pts) => {
+    pts = pts.slice(-600);
+    const mins = pts.map((p) => p.min).sort((x, y) => x - y);
+    const byMin = [...pts].sort((x, y) => x.min - y.min);
+    return {
+      key, label, points: pts, n: pts.length,
+      median: mins.length ? mins[Math.floor(mins.length / 2)] : null,
+      mean: mins.length ? Math.round(mins.reduce((s, v) => s + v, 0) / mins.length) : null,
+      shortest: byMin[0] || null,
+      longest: byMin[byMin.length - 1] || null,
+    };
+  };
+  const chargeTimes = {
+    lanes: [
+      laneSummary('sc', 'Supercharger', lanes.sc),
+      laneSummary('other', 'Other quick charges', lanes.other),
+      laneSummary('night', 'Overnight', lanes.night),
+    ],
+    nightMin: 240,
+  };
+
   const curvePoints = [...curve.entries()]
     .map(([soc, vals]) => ({ soc, kw: Math.round(vals.reduce((s, v) => s + v, 0) / vals.length), n: vals.length }))
     .sort((a, b) => a.soc - b.soc);
@@ -558,9 +630,12 @@ function nerdBlock({ published, locPublished, charges, health, history }) {
       median,
       best: whVals.length ? whVals[0] : 0,
       worst: whVals.length ? whVals[whVals.length - 1] : 0,
-      /* Distinct provinces present, so the legend is built from the data. */
+      /* Distinct provinces/states present, so the legend is built from the data. */
       provinces: [...new Set(scatter.map((p) => p.prov))].filter((p) => p && p !== '\u2014'),
+      trend,
+      minKm: MIN_SCATTER_KM,
     },
+    chargeTimes,
     autopilot: {
       km: km(apKm),
       pct: totalKm > 0 ? Number(((apKm / totalKm) * 100).toFixed(1)) : 0,
@@ -849,10 +924,11 @@ export function dayTrackCells(payload) {
  * whole-trip figures read from that instead of from the window.
  *
  * The repo is public, so a ledger row is limited to what the page already
- * publishes: times, distance, energy, temperature and province for a drive;
- * times, energy, cost, network and battery levels for a charge. No
- * coordinates, no addresses, no towns — and nothing younger than the
- * location embargo, so the ledger can never be fresher than the map.
+ * publishes: times, distance, energy, temperature, town and province for a
+ * drive (the town-level name the daily log and maps already show); times,
+ * energy, cost, network and battery levels for a charge. No coordinates, no
+ * addresses — and nothing younger than the location embargo, so the ledger
+ * can never be fresher than the map.
  * ------------------------------------------------------------------------ */
 const secs = (v) => { const d = toDate(v); return d ? Math.round(d.getTime() / 1000) : null; };
 const num = (v, dp) => (typeof v === 'number' && Number.isFinite(v) ? Number(v.toFixed(dp)) : null);
@@ -879,6 +955,8 @@ export function ledgerRows({ drives, charges }) {
     kwh: num(pick(x, F_ENERGY_USED), 3),
     t: num(pick(x, F_OUTSIDE_TEMP), 1),
     prov: (() => { const p = town(x.ending_location).split(',').pop().trim(); return p && p !== '—' ? p : null; })(),
+    /* Town name only — the same town-level label the log and maps publish. */
+    town: (() => { const t = town(x.ending_location).split(',')[0].trim(); return t && t !== '—' ? t : null; })(),
   })).filter((r) => r.s);
   const c = (charges || []).filter(cleared).map((x) => ({
     id: idOf(x),
@@ -890,6 +968,9 @@ export function ledgerRows({ drives, charges }) {
     soc0: num(pick(x, F_SOC_START), 1),
     soc1: num(pick(x, F_SOC_END), 1),
     kw: num(pick(x, F_POWER), 1),
+    /* Town and province of the charger, town level only, like drive rows. */
+    prov: (() => { const p = town(x.location).split(',').pop().trim(); return p && p !== '\u2014' ? p : null; })(),
+    town: (() => { const t = town(x.location).split(',')[0].trim(); return t && t !== '\u2014' ? t : null; })(),
   })).filter((r) => r.s);
   return { drives: d, charges: c };
 }
@@ -904,6 +985,7 @@ function expandLedgerDrives(ledger) {
     odometer_distance: r.km, autopilot_distance: r.ap,
     energy_used: r.kwh, average_outside_temperature: r.t,
     _prov: r.prov || null,
+    _town: r.town || null,
   }));
 }
 function expandLedgerCharges(ledger) {
@@ -911,6 +993,8 @@ function expandLedgerCharges(ledger) {
     id: r.id, started_at: r.s, ended_at: r.e,
     energy_added: r.kwh, cost: r.cost, is_supercharger: !!r.sc,
     starting_battery: r.soc0, ending_battery: r.soc1, max_charger_power: r.kw,
+    _prov: r.prov || null,
+    _town: r.town || null,
   }));
 }
 

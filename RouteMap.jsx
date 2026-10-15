@@ -28,7 +28,7 @@ function frameFor(pts) {
   return [cx - w / 2, cy - h / 2, w, h];
 }
 
-function RouteMap({ route, base }) {
+function RouteMap({ route, base, head, headRight }) {
   const grid = (route && route.grid) || 0.05;
   const lines = React.useMemo(() => ((route && route.lines) || []).map((l) => {
     const pts = [];
@@ -62,6 +62,7 @@ function RouteMap({ route, base }) {
 
   return (
     <Plate tone="raised" pad={13} style={{ gap: 14, borderRadius: RR }}>
+      {head && window.BandHead && <window.BandHead pad={13} inset={22} right={headRight} rule={false}>{head}</window.BandHead>}
       <div ref={boxRef} style={{ position: 'relative', border: (drawn ? '1px solid ' : '1px dashed ') + HAIR, borderRadius: RR, overflow: 'hidden', background: PANEL }}>
         <svg viewBox={vx + ' ' + vy + ' ' + vw + ' ' + vh} preserveAspectRatio="xMidYMid slice" style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: String(ASPECT) }} role="img" aria-label="Every road the car has driven since day one, delayed 24 hours">
           {base && (

@@ -1,5 +1,5 @@
 const { Badge, Wordmark, Eyebrow, Plate, StatReadout, ProgressRule, Chip } = window.RoadToAMillionDesignSystem_6606d4;
-const { DayMap, DayList, EfficiencyScatter, ChargeCurve, NerdStat, FirmwareLog, RouteMap } = window;
+const { DayMap, DayList, EfficiencyScatter, ChargeTimes, ChargeCurve, NerdStat, FirmwareLog, RouteMap, BandHead, BandButton, bandNote } = window;
 /* Charging spend is real money and the call on publishing it is still open.
    Flip to true when it is decided — nothing else needs to change. */
 const SHOW_COST = false;
@@ -80,7 +80,7 @@ function App() {
         <div style={{ display: 'grid', gap: 26 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 32, flexWrap: 'wrap' }}>
             <div style={{ display: 'grid', gap: 14 }}>
-              <Eyebrow tone="cyan" size={13} track={0.22}>Day {D.day} · {D.province}</Eyebrow>
+              <span style={{ fontFamily: '"Montserrat", "Arial", sans-serif', fontWeight: 600, fontSize: 20, lineHeight: 1.1, letterSpacing: '-.03em', color: '#00B4D9' }}>Day {D.day} · {D.province}</span>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 18 }}>
                 <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 86, lineHeight: .95, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.odometer.toLocaleString()}</span>
                 <span style={{ fontSize: 22, fontWeight: 500, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51' }}>km</span>
@@ -88,7 +88,7 @@ function App() {
               <div style={{ fontSize: 13, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.55)' }}>{D.route}</div>
             </div>
             <div className="rtam-hero-right" style={{ display: 'grid', gap: 10, justifyItems: 'end', textAlign: 'right' }}>
-              <Eyebrow tone="bronze" size={10}>Remaining</Eyebrow>
+              <span style={{ fontFamily: '"Montserrat", "Arial", sans-serif', fontWeight: 600, fontSize: 16, lineHeight: 1.1, letterSpacing: '-.03em', color: '#A47D51' }}>Remaining</span>
               <div style={{ fontSize: 34, fontWeight: 600, fontVariantNumeric: 'tabular-nums', color: '#F6F0E3' }}>{remaining.toLocaleString()} <span style={{ fontSize: 14, letterSpacing: '.18em', color: '#A47D51' }}>KM</span></div>
               <div style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.5)' }}>{daysLeft === null ? 'Pace not established yet' : '≈ ' + daysLeft.toLocaleString() + ' days at current pace'}</div>
             </div>
@@ -101,99 +101,83 @@ function App() {
           </div>
         </div>
 
-        <div className="rtam-charge" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
-          <div className="rtam-charge-l" style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
-            <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 56, lineHeight: 1, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.chargeLifetime.toLocaleString()}</span>
-            <span style={{ fontSize: 15, fontWeight: 500, lineHeight: 1.3, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A47D51', paddingBottom: 4 }}>Charge sessions<br />so far</span>
+        {/* Lifetime charge count. The label sits on a Bone plate cut to the
+           figure's height; the network split runs underneath. */}
+        <div className="rtam-charge" style={{ display: 'grid', gap: 14, justifyItems: 'start' }}>
+          <div className="rtam-charge-l" style={{ display: 'flex', alignItems: 'stretch', gap: 16 }}>
+            <span className="rtam-charge-n" style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, fontSize: 56, lineHeight: .74, paddingTop: 2, letterSpacing: '-.04em', color: '#F6F0E3', fontVariantNumeric: 'tabular-nums' }}>{D.chargeLifetime.toLocaleString()}</span>
+            <span className="rtam-charge-tag" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 12px', background: '#F6F0E3', color: '#1C242C', borderRadius: 'var(--rtam-r)', fontFamily: '"Montserrat", "Arial", sans-serif', fontWeight: 600, fontSize: 18, lineHeight: 1.1, letterSpacing: '-.03em' }}>Charge Sessions<br />So Far</span>
           </div>
-          <div className="rtam-charge-r" style={{ display: 'grid', gap: 6, justifyItems: 'end', textAlign: 'right', paddingBottom: 4 }}>
-            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.8)' }}>{D.chargeLifetimeSupercharger.toLocaleString()} Tesla Supercharger</span>
-            <span style={{ fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.8)' }}>{D.chargeLifetimeOther.toLocaleString()} other networks</span>
+          <div className="rtam-charge-split" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', fontSize: 11, letterSpacing: '.16em', textTransform: 'uppercase', color: 'rgba(246,240,227,.8)' }}>
+            <span>{D.chargeLifetimeSupercharger.toLocaleString()} Tesla Supercharger</span>
+            <span style={{ color: 'rgba(246,240,227,.4)' }}>·</span>
+            <span>{D.chargeLifetimeOther.toLocaleString()} other networks</span>
           </div>
         </div>
 
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 24 }}>
-          <Metric label="Latest day" value={D.today.toLocaleString()} unit="KM" sub={<React.Fragment>Highest km day so far <span style={{ fontWeight: 700, color: '#F6F0E3' }}>{D.best.toLocaleString()} km</span> — Day {D.bestDay ?? D.day}</React.Fragment>} />
-          <Metric label="Daily average" value={D.avgPerDay.toLocaleString()} unit="KM" sub={'Across ' + D.day + ' days'} />
-          <SplitMetric label="Latest day charge sessions" a={{ value: D.chargeSupercharger, label: 'Tesla Supercharger' }} b={{ value: D.chargeOther, label: 'Other networks' }} />
+        <div className="rtam-metricgrid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 24 }}>
+          <Metric label="Latest Day" value={D.today.toLocaleString()} unit="KM" sub={<React.Fragment>Highest km day so far <span style={{ fontWeight: 700, color: '#F6F0E3' }}>{D.best.toLocaleString()} km</span> — Day {D.bestDay ?? D.day}</React.Fragment>} />
+          <Metric label="Daily Average" value={D.avgPerDay.toLocaleString()} unit="KM" sub={'Across ' + D.day + ' days'} />
+          <SplitMetric label="Latest Day Charge Sessions" a={{ value: D.chargeSupercharger, label: 'Tesla Supercharger' }} b={{ value: D.chargeOther, label: 'Other networks' }} />
         </div>
 
-        <div className="rtam-mapgrid" style={{ display: 'grid', gridTemplateColumns: '320px minmax(0,1fr)', gap: 32, alignItems: 'start' }}>
+        <div className="rtam-mapgrid" style={{ display: 'grid', gridTemplateColumns: '320px minmax(0,1fr)', gap: 32, alignItems: 'stretch' }}>
+          {/* The log takes the map's height: it sits absolutely inside this
+              cell, so only the map sets the row height and the log scrolls. */}
+          <div className="rtam-daylist-wrap" style={{ position: 'relative', minHeight: 320 }}>
           <DayList rows={D.log || []} activeKey={shownKey} onSelect={setSelected} onLatest={() => setSelected(null)} following={!selected} />
+          </div>
           <DayMap map={shownMap} />
         </div>
 
-        <div style={{ display: 'grid', gap: 32 }}>
-          <div style={{ display: 'grid', gap: 20 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 20 }}>
-              <Eyebrow tone="bronze" size={11} track={0.24}>Distance per day</Eyebrow>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                {['8 days', '30 days'].map(r => (
-                  <button key={r} onClick={() => setRange(r)} style={{ padding: '8px 14px', cursor: 'pointer', borderRadius: 'var(--rtam-r)', background: range === r ? '#00B4D9' : 'transparent', color: range === r ? '#1C242C' : 'rgba(246,240,227,.6)', border: '1px solid ' + (range === r ? '#00B4D9' : 'rgba(246,240,227,.22)'), fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase' }}>{r}</button>
-                ))}
-                <span style={{ width: 1, height: 16, background: 'rgba(246,240,227,.18)', margin: '0 2px' }}></span>
-                <a href="archive.html" className="rtam-archive-link" style={{ padding: '8px 14px', borderRadius: 'var(--rtam-r)', background: 'transparent', color: 'rgba(246,240,227,.6)', border: '1px solid rgba(246,240,227,.22)', fontSize: 10, letterSpacing: '.16em', textTransform: 'uppercase', textDecoration: 'none' }}>Archive</a>
-              </div>
-            </div>
-            <DistanceBars days={barDays} activeKey={shownKey} onSelect={setSelected} />
-          </div>
-        </div>
+        <DistanceBars days={barDays} activeKey={shownKey} onSelect={setSelected} head="Distance Per Day" headRight={
+          <React.Fragment>
+            {['8 days', '30 days'].map(r => <BandButton key={r} active={range === r} onClick={() => setRange(r)}>{r}</BandButton>)}
+            <span style={{ width: 1, height: 16, background: 'rgba(28,36,44,.35)', margin: '0 2px' }}></span>
+            <BandButton href="archive.html">Archive</BandButton>
+          </React.Fragment>} />
 
         {RouteMap && (
-          <div style={{ display: 'grid', gap: 18 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-              <Eyebrow tone="bronze" size={11} track={0.24}>Every road so far</Eyebrow>
-              <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Since Day 1 · roads driven twice are drawn once</span>
-            </div>
-            <RouteMap route={route} base={base} />
-          </div>
+          <RouteMap route={route} base={base} head="Every Road So Far" headRight={<span style={bandNote}>Since Day 1 · roads driven twice are drawn once</span>} />
         )}
 
         {N && (
           <div style={{ display: 'grid', gap: 34, paddingTop: 40, borderTop: '1px solid rgba(246,240,227,.18)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-              <Eyebrow tone="cyan" size={12} track={0.24}>The numbers behind it</Eyebrow>
+              <span style={{ fontFamily: '"Montserrat", "Arial", sans-serif', fontWeight: 600, fontSize: 28, lineHeight: 1.1, letterSpacing: '-.03em', color: '#00B4D9' }}>The Numbers Behind It</span>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 20 }}>
-              <NerdStat label="Lifetime consumption" value={(N.energy.whPerKm || 0).toLocaleString()} unit="WH/KM" sub={(N.energy.rangeEst ? '≈ ' + N.energy.rangeEst.toLocaleString() + ' km of range at this rate' : (N.energy.kmPerKwh || 0) + ' km per kWh') + ' · median drive ' + (N.efficiency.median || 0) + ' Wh/km'} />
-              <NerdStat label="Energy used" value={(N.energy.used || 0).toLocaleString()} unit="KWH" sub={'Best drive ' + (N.efficiency.best || 0) + ' Wh/km'} />
-              <NerdStat label="Energy added" value={(N.energy.added || 0).toLocaleString()} unit="KWH" sub={N.energy.overhead !== null ? N.energy.overhead + '% lost to charging and conditioning' : 'Charging overhead pending'} />
-              <NerdStat label="Autopilot share" value={(N.autopilot.pct || 0).toLocaleString()} unit="%" sub={(N.autopilot.km || 0).toLocaleString() + ' km of the total'} />
-              {N.battery && <NerdStat label="Battery health" value={N.battery.healthPct !== null ? N.battery.healthPct.toLocaleString() : '—'} unit="%" sub={N.battery.rangeNow ? Math.round(N.battery.rangeNow).toLocaleString() + ' km at full charge' : 'Weekly reading'} />}
-              {SHOW_COST && N.cost.total > 0 && <NerdStat label="Charging spend" value={'$' + N.cost.total.toLocaleString()} unit={N.cost.currency} sub={'$' + N.cost.perKm + ' per km · ' + N.cost.sessions + ' priced sessions'} />}
+            <div className="rtam-metricgrid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 20 }}>
+              <NerdStat label="Lifetime Consumption" value={(N.energy.whPerKm || 0).toLocaleString()} unit="WH/KM" sub={(N.energy.rangeEst ? '≈ ' + N.energy.rangeEst.toLocaleString() + ' km of range at this rate' : (N.energy.kmPerKwh || 0) + ' km per kWh') + ' · median drive ' + (N.efficiency.median || 0) + ' Wh/km'} />
+              <NerdStat label="Energy Used" value={(N.energy.used || 0).toLocaleString()} unit="KWH" sub={'Best drive ' + (N.efficiency.best || 0) + ' Wh/km'} />
+              <NerdStat label="Energy Added" value={(N.energy.added || 0).toLocaleString()} unit="KWH" sub={N.energy.overhead !== null ? N.energy.overhead + '% lost to charging and conditioning' : 'Charging overhead pending'} />
+              <NerdStat label="Autopilot Share" value={(N.autopilot.pct || 0).toLocaleString()} unit="%" sub={(N.autopilot.km || 0).toLocaleString() + ' km of the total'} />
+              {N.battery && <NerdStat label="Battery Health" value={N.battery.healthPct !== null ? N.battery.healthPct.toLocaleString() : '—'} unit="%" sub={N.battery.rangeNow ? Math.round(N.battery.rangeNow).toLocaleString() + ' km at full charge' : 'Weekly reading'} />}
+              {SHOW_COST && N.cost.total > 0 && <NerdStat label="Charging Spend" value={'$' + N.cost.total.toLocaleString()} unit={N.cost.currency} sub={'$' + N.cost.perKm + ' per km · ' + N.cost.sessions + ' priced sessions'} />}
             </div>
 
-            <div style={{ display: 'grid', gap: 18 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 20, flexWrap: 'wrap' }}>
-                <Eyebrow tone="bronze" size={11} track={0.24}>Consumption against outside temperature</Eyebrow>
-                <span style={{ fontSize: 10, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Wh/km against °C · one dot per drive · coloured by province</span>
-              </div>
-              <EfficiencyScatter data={N.efficiency} />
-            </div>
+            <EfficiencyScatter data={N.efficiency} head="Consumption Against Outside Temperature" headRight={<span style={bandNote}>Wh/km against °C · one dot per drive · coloured by country</span>} />
+
+            {N.chargeTimes && <ChargeTimes data={N.chargeTimes} head="Time on the Charger" headRight={<span style={bandNote}>One dot per session · Supercharger, other networks, overnight</span>} />}
 
             <div className="rtam-nerdgrid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.6fr) minmax(0,1fr)', gap: 32, alignItems: 'stretch' }}>
-              <div style={{ display: 'grid', gridTemplateRows: 'auto minmax(0,1fr) auto', gap: 18 }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 16, flexWrap: 'wrap' }}>
-                  <Eyebrow tone="bronze" size={11} track={0.24}>Charge curve · kW</Eyebrow>
-                </div>
-                <ChargeCurve data={N.chargeCurve} />
-                <span style={{ minHeight: 28, fontSize: 10, lineHeight: 1.4, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>{N.chargeCurve.note}</span>
+              <div style={{ display: 'grid', gridTemplateRows: 'minmax(0,1fr) auto', gap: 14 }}>
+                <ChargeCurve data={N.chargeCurve} head="Charge Curve · kW" />
+                <span style={{ minHeight: 28, fontSize: 11, lineHeight: 1.5, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(246,240,227,.58)' }}>{N.chargeCurve.note}</span>
               </div>
-              <div style={{ display: 'grid', gridTemplateRows: 'auto minmax(0,1fr) auto', gap: 18 }}>
-                <Eyebrow tone="bronze" size={11} track={0.24}>Firmware</Eyebrow>
-                <FirmwareLog versions={N.firmware} />
-                <span style={{ minHeight: 28, fontSize: 10, lineHeight: 1.4, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(246,240,227,.4)' }}>Logged when the car reports a new version</span>
+              <div style={{ display: 'grid', gridTemplateRows: 'minmax(0,1fr) auto', gap: 14 }}>
+                <FirmwareLog versions={N.firmware} head="Firmware" />
+                <span style={{ minHeight: 28, fontSize: 11, lineHeight: 1.5, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(246,240,227,.58)' }}>Logged when the car reports a new version</span>
               </div>
             </div>
           </div>
         )}
 
-        <Plate tone="ghost" pad={26} style={{ gap: 16, borderRadius: 'var(--rtam-r)' }}>
-          <Eyebrow tone="bronze" size={10}>Agreement</Eyebrow>
+        <Plate tone="raised" pad={26} style={{ gap: 18, borderRadius: 'var(--rtam-r)' }}>
+          <BandHead pad={26}>Agreement</BandHead>
           <p style={{ margin: 0, maxWidth: 720, fontSize: 13, lineHeight: 1.7, color: 'rgba(246,240,227,.62)' }}>The run ends at the earliest of: the odometer reaching 1,000,000 km; the battery failing past reasonable operation; or the vehicle being declared a total loss.</p>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Chip>Started 2 Sep 2026</Chip><Chip>2026 Model 3</Chip></div>
         </Plate>
