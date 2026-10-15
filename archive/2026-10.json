@@ -5853,16 +5853,141 @@
     "day": 43,
     "date": "Oct 14",
     "label": "Day 43 · Oct 14",
-    "km": 3,
+    "km": 38,
     "from": "Bronx, New York",
-    "to": "New York, New York",
-    "corridor": "New York, New York",
+    "to": "Brooklyn, New York",
+    "corridor": "Brooklyn, New York",
     "province": "New York",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 58,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.6319,
+        0.1465
+      ],
+      [
+        0.5915,
+        0.05
+      ],
+      [
+        0.5751,
+        0.0943
+      ],
+      [
+        0.57,
+        0.1283
+      ],
+      [
+        0.5549,
+        0.1752
+      ],
+      [
+        0.5435,
+        0.2222
+      ],
+      [
+        0.5057,
+        0.4074
+      ],
+      [
+        0.3795,
+        0.6683
+      ],
+      [
+        0.3681,
+        0.8639
+      ],
+      [
+        0.4072,
+        0.9291
+      ],
+      [
+        0.4072,
+        0.9448
+      ],
+      [
+        0.4098,
+        0.95
+      ],
+      [
+        0.4577,
+        0.95
+      ],
+      [
+        0.4741,
+        0.9448
+      ],
+      [
+        0.4779,
+        0.9187
+      ],
+      [
+        0.4943,
+        0.8639
+      ],
+      [
+        0.5044,
+        0.8457
+      ],
+      [
+        0.5183,
+        0.8274
+      ],
+      [
+        0.5196,
+        0.8222
+      ],
+      [
+        0.512,
+        0.8065
+      ],
+      [
+        0.5057,
+        0.783
+      ],
+      [
+        0.5032,
+        0.783
+      ],
+      [
+        0.5032,
+        0.7778
+      ],
+      [
+        0.5082,
+        0.7909
+      ],
+      [
+        0.5057,
+        0.9291
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.6319,
+        "y": 0.1465,
+        "town": "Bronx, New York",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.5057,
+        "y": 0.9291,
+        "town": "Brooklyn, New York",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 58,
+            "socStart": 27,
+            "socEnd": 100
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0462,
+    "plotted": true,
+    "track": 3
   }
 ]

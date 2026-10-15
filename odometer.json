@@ -1,35 +1,160 @@
 {
-  "odometer": 26880,
+  "odometer": 27236,
   "goal": 1000000,
   "day": 44,
   "province": "New York",
-  "route": "New York, New York",
-  "today": 26,
+  "route": "Brooklyn, New York",
+  "today": 295,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 599,
-  "chargeSessions": 0,
-  "chargeSupercharger": 0,
+  "avgPerDay": 605,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 198,
-  "chargeLifetimeSupercharger": 111,
+  "chargeLifetime": 199,
+  "chargeLifetimeSupercharger": 112,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-14",
     "day": 43,
     "date": "Oct 14",
     "label": "Day 43 · Oct 14",
-    "km": 3,
+    "km": 38,
     "from": "Bronx, New York",
-    "to": "New York, New York",
-    "corridor": "New York, New York",
+    "to": "Brooklyn, New York",
+    "corridor": "Brooklyn, New York",
     "province": "New York",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 58,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.6319,
+        0.1465
+      ],
+      [
+        0.5915,
+        0.05
+      ],
+      [
+        0.5751,
+        0.0943
+      ],
+      [
+        0.57,
+        0.1283
+      ],
+      [
+        0.5549,
+        0.1752
+      ],
+      [
+        0.5435,
+        0.2222
+      ],
+      [
+        0.5057,
+        0.4074
+      ],
+      [
+        0.3795,
+        0.6683
+      ],
+      [
+        0.3681,
+        0.8639
+      ],
+      [
+        0.4072,
+        0.9291
+      ],
+      [
+        0.4072,
+        0.9448
+      ],
+      [
+        0.4098,
+        0.95
+      ],
+      [
+        0.4577,
+        0.95
+      ],
+      [
+        0.4741,
+        0.9448
+      ],
+      [
+        0.4779,
+        0.9187
+      ],
+      [
+        0.4943,
+        0.8639
+      ],
+      [
+        0.5044,
+        0.8457
+      ],
+      [
+        0.5183,
+        0.8274
+      ],
+      [
+        0.5196,
+        0.8222
+      ],
+      [
+        0.512,
+        0.8065
+      ],
+      [
+        0.5057,
+        0.783
+      ],
+      [
+        0.5032,
+        0.783
+      ],
+      [
+        0.5032,
+        0.7778
+      ],
+      [
+        0.5082,
+        0.7909
+      ],
+      [
+        0.5057,
+        0.9291
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.6319,
+        "y": 0.1465,
+        "town": "Bronx, New York",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.5057,
+        "y": 0.9291,
+        "town": "Brooklyn, New York",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 58,
+            "socStart": 27,
+            "socEnd": 100
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0462,
+    "plotted": true,
+    "track": 3
   },
   "dayMaps": [
     {
@@ -12200,21 +12325,146 @@
       "day": 43,
       "date": "Oct 14",
       "label": "Day 43 · Oct 14",
-      "km": 3,
+      "km": 38,
       "from": "Bronx, New York",
-      "to": "New York, New York",
-      "corridor": "New York, New York",
+      "to": "Brooklyn, New York",
+      "corridor": "Brooklyn, New York",
       "province": "New York",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 1,
+      "chargeMinutes": 58,
       "note": "Town level · delayed 24h",
-      "path": [],
-      "stops": [],
-      "kmPerPx": 0
+      "path": [
+        [
+          0.6319,
+          0.1465
+        ],
+        [
+          0.5915,
+          0.05
+        ],
+        [
+          0.5751,
+          0.0943
+        ],
+        [
+          0.57,
+          0.1283
+        ],
+        [
+          0.5549,
+          0.1752
+        ],
+        [
+          0.5435,
+          0.2222
+        ],
+        [
+          0.5057,
+          0.4074
+        ],
+        [
+          0.3795,
+          0.6683
+        ],
+        [
+          0.3681,
+          0.8639
+        ],
+        [
+          0.4072,
+          0.9291
+        ],
+        [
+          0.4072,
+          0.9448
+        ],
+        [
+          0.4098,
+          0.95
+        ],
+        [
+          0.4577,
+          0.95
+        ],
+        [
+          0.4741,
+          0.9448
+        ],
+        [
+          0.4779,
+          0.9187
+        ],
+        [
+          0.4943,
+          0.8639
+        ],
+        [
+          0.5044,
+          0.8457
+        ],
+        [
+          0.5183,
+          0.8274
+        ],
+        [
+          0.5196,
+          0.8222
+        ],
+        [
+          0.512,
+          0.8065
+        ],
+        [
+          0.5057,
+          0.783
+        ],
+        [
+          0.5032,
+          0.783
+        ],
+        [
+          0.5032,
+          0.7778
+        ],
+        [
+          0.5082,
+          0.7909
+        ],
+        [
+          0.5057,
+          0.9291
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.6319,
+          "y": 0.1465,
+          "town": "Bronx, New York",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.5057,
+          "y": 0.9291,
+          "town": "Brooklyn, New York",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 58,
+              "socStart": 27,
+              "socEnd": 100
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.0462,
+      "plotted": true,
+      "track": 3
     }
   ],
   "asOf": "2026-10-15",
-  "updatedAt": "2026-10-15T15:15:47.280Z",
+  "updatedAt": "2026-10-15T19:19:40.324Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14120,6 +14370,16 @@
           "town": "Bronx",
           "day": 42,
           "date": "Oct 13"
+        },
+        {
+          "t": 24.9,
+          "wh": 176,
+          "km": 33,
+          "prov": "New York",
+          "ctry": "US",
+          "town": "Brooklyn",
+          "day": 43,
+          "date": "Oct 14"
         }
       ],
       "median": 154,
@@ -14190,8 +14450,8 @@
         },
         {
           "t": 25,
-          "wh": 182,
-          "n": 4
+          "wh": 176,
+          "n": 5
         }
       ],
       "minKm": 20
@@ -15400,9 +15660,20 @@
               "town": "New London",
               "day": 42,
               "date": "Oct 13"
+            },
+            {
+              "min": 58,
+              "kwh": 45.7,
+              "soc0": 27,
+              "soc1": 100,
+              "prov": "New York",
+              "ctry": "US",
+              "town": "Brooklyn",
+              "day": 43,
+              "date": "Oct 14"
             }
           ],
-          "n": 109,
+          "n": 110,
           "median": 12,
           "mean": 14,
           "shortest": {
@@ -15417,15 +15688,15 @@
             "date": "Sep 13"
           },
           "longest": {
-            "min": 54,
-            "kwh": 53.3,
-            "soc0": 15,
+            "min": 58,
+            "kwh": 45.7,
+            "soc0": 27,
             "soc1": 100,
-            "prov": "Saskatchewan",
-            "ctry": "CA",
-            "town": "Regina",
-            "day": 1,
-            "date": "Sep 2"
+            "prov": "New York",
+            "ctry": "US",
+            "town": "Brooklyn",
+            "day": 43,
+            "date": "Oct 14"
           }
         },
         {
@@ -16374,24 +16645,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 23114,
-      "pct": 89.8
+      "km": 23349,
+      "pct": 89.7
     },
     "energy": {
-      "used": 4049,
-      "added": 4350,
-      "overhead": 6.9,
+      "used": 4085,
+      "added": 4384,
+      "overhead": 6.8,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 62,
       "rangeEst": 397
     },
     "cost": {
-      "total": 845.83,
-      "supercharger": 845.83,
+      "total": 860.58,
+      "supercharger": 860.58,
       "other": 0,
       "perKm": 0.033,
-      "sessions": 109,
+      "sessions": 110,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16423,8 +16694,8 @@
         },
         {
           "soc": 50,
-          "kw": 80,
-          "n": 12
+          "kw": 83,
+          "n": 13
         },
         {
           "soc": 55,
@@ -16477,7 +16748,7 @@
           "n": 1
         }
       ],
-      "sessions": 190,
+      "sessions": 191,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16649,7 +16920,7 @@
     {
       "key": "2026-10-15",
       "label": "D 44",
-      "km": 26
+      "km": 295
     }
   ],
   "log": [
@@ -16660,8 +16931,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "26",
-      "chargeMinutes": 0,
+      "km": "295",
+      "chargeMinutes": 18,
       "note": ""
     },
     {
@@ -16670,7 +16941,8 @@
       "date": "Oct 14",
       "province": "New York",
       "from": "Bronx, New York",
-      "to": "New York, New York",
+      "to": "Brooklyn, New York",
+      "plotted": true,
       "km": "71",
       "chargeMinutes": 58,
       "note": ""
