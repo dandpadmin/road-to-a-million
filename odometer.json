@@ -1,5 +1,5 @@
 {
-  "odometer": 26873,
+  "odometer": 26880,
   "goal": 1000000,
   "day": 44,
   "province": "New York",
@@ -19,7 +19,7 @@
     "day": 43,
     "date": "Oct 14",
     "label": "Day 43 · Oct 14",
-    "km": 2,
+    "km": 3,
     "from": "Bronx, New York",
     "to": "New York, New York",
     "corridor": "New York, New York",
@@ -12200,7 +12200,7 @@
       "day": 43,
       "date": "Oct 14",
       "label": "Day 43 · Oct 14",
-      "km": 2,
+      "km": 3,
       "from": "Bronx, New York",
       "to": "New York, New York",
       "corridor": "New York, New York",
@@ -12214,7 +12214,7 @@
     }
   ],
   "asOf": "2026-10-15",
-  "updatedAt": "2026-10-15T13:50:37.043Z",
+  "updatedAt": "2026-10-15T15:15:47.280Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16378,7 +16378,7 @@
       "pct": 89.8
     },
     "energy": {
-      "used": 4048,
+      "used": 4049,
       "added": 4350,
       "overhead": 6.9,
       "whPerKm": 157,
