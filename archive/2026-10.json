@@ -5847,5 +5847,22 @@
     "kmPerPx": 1.423,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-10-14",
+    "day": 43,
+    "date": "Oct 14",
+    "label": "Day 43 · Oct 14",
+    "km": 2,
+    "from": "Bronx, New York",
+    "to": "New York, New York",
+    "corridor": "New York, New York",
+    "province": "New York",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]

@@ -1,1087 +1,37 @@
 {
-  "odometer": 26848,
+  "odometer": 26873,
   "goal": 1000000,
   "day": 44,
   "province": "New York",
-  "route": "Bronx, New York",
-  "today": 71,
+  "route": "New York, New York",
+  "today": 26,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 612,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 599,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 198,
   "chargeLifetimeSupercharger": 111,
   "chargeLifetimeOther": 87,
   "dayMap": {
-    "key": "2026-10-13",
-    "day": 42,
-    "date": "Oct 13",
-    "label": "Day 42 · Oct 13",
-    "km": 1062,
-    "from": "Fredericton, New Brunswick",
-    "to": "Bronx, New York",
-    "corridor": "Bronx, New York",
+    "key": "2026-10-14",
+    "day": 43,
+    "date": "Oct 14",
+    "label": "Day 43 · Oct 14",
+    "km": 2,
+    "from": "Bronx, New York",
+    "to": "New York, New York",
+    "corridor": "New York, New York",
     "province": "New York",
-    "chargeStops": 4,
-    "chargeMinutes": 71,
+    "chargeStops": 0,
+    "chargeMinutes": 0,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.7849,
-        0.0852
-      ],
-      [
-        0.7758,
-        0.0889
-      ],
-      [
-        0.7666,
-        0.1048
-      ],
-      [
-        0.7368,
-        0.0846
-      ],
-      [
-        0.7241,
-        0.0851
-      ],
-      [
-        0.7133,
-        0.072
-      ],
-      [
-        0.7099,
-        0.0507
-      ],
-      [
-        0.6999,
-        0.05
-      ],
-      [
-        0.6956,
-        0.0542
-      ],
-      [
-        0.6743,
-        0.052
-      ],
-      [
-        0.6627,
-        0.0616
-      ],
-      [
-        0.656,
-        0.0731
-      ],
-      [
-        0.6552,
-        0.0818
-      ],
-      [
-        0.6468,
-        0.0958
-      ],
-      [
-        0.6396,
-        0.1321
-      ],
-      [
-        0.6395,
-        0.1445
-      ],
-      [
-        0.6354,
-        0.1528
-      ],
-      [
-        0.6323,
-        0.169
-      ],
-      [
-        0.6312,
-        0.1852
-      ],
-      [
-        0.6253,
-        0.201
-      ],
-      [
-        0.6237,
-        0.2674
-      ],
-      [
-        0.615,
-        0.2829
-      ],
-      [
-        0.6077,
-        0.2864
-      ],
-      [
-        0.6022,
-        0.2871
-      ],
-      [
-        0.5842,
-        0.2814
-      ],
-      [
-        0.5761,
-        0.2741
-      ],
-      [
-        0.5691,
-        0.2804
-      ],
-      [
-        0.5612,
-        0.3033
-      ],
-      [
-        0.5476,
-        0.3197
-      ],
-      [
-        0.5438,
-        0.3392
-      ],
-      [
-        0.5373,
-        0.3565
-      ],
-      [
-        0.5335,
-        0.3946
-      ],
-      [
-        0.5258,
-        0.4198
-      ],
-      [
-        0.5226,
-        0.4269
-      ],
-      [
-        0.5156,
-        0.4331
-      ],
-      [
-        0.502,
-        0.4637
-      ],
-      [
-        0.5012,
-        0.4722
-      ],
-      [
-        0.4823,
-        0.5091
-      ],
-      [
-        0.4735,
-        0.5318
-      ],
-      [
-        0.4701,
-        0.5575
-      ],
-      [
-        0.4578,
-        0.5769
-      ],
-      [
-        0.4549,
-        0.5864
-      ],
-      [
-        0.4449,
-        0.6398
-      ],
-      [
-        0.4447,
-        0.6499
-      ],
-      [
-        0.447,
-        0.6533
-      ],
-      [
-        0.4443,
-        0.6663
-      ],
-      [
-        0.4404,
-        0.6679
-      ],
-      [
-        0.4368,
-        0.6659
-      ],
-      [
-        0.4355,
-        0.6691
-      ],
-      [
-        0.4285,
-        0.6712
-      ],
-      [
-        0.4227,
-        0.6772
-      ],
-      [
-        0.4224,
-        0.6971
-      ],
-      [
-        0.4273,
-        0.7076
-      ],
-      [
-        0.4268,
-        0.7135
-      ],
-      [
-        0.4319,
-        0.7202
-      ],
-      [
-        0.4251,
-        0.7337
-      ],
-      [
-        0.4254,
-        0.742
-      ],
-      [
-        0.4193,
-        0.7619
-      ],
-      [
-        0.4052,
-        0.7647
-      ],
-      [
-        0.4033,
-        0.7676
-      ],
-      [
-        0.4023,
-        0.7834
-      ],
-      [
-        0.4052,
-        0.796
-      ],
-      [
-        0.4052,
-        0.8107
-      ],
-      [
-        0.3946,
-        0.8149
-      ],
-      [
-        0.388,
-        0.8398
-      ],
-      [
-        0.3703,
-        0.8613
-      ],
-      [
-        0.3566,
-        0.8652
-      ],
-      [
-        0.3492,
-        0.861
-      ],
-      [
-        0.3448,
-        0.8694
-      ],
-      [
-        0.338,
-        0.87
-      ],
-      [
-        0.3318,
-        0.8751
-      ],
-      [
-        0.3057,
-        0.8742
-      ],
-      [
-        0.2966,
-        0.8767
-      ],
-      [
-        0.2926,
-        0.8735
-      ],
-      [
-        0.2834,
-        0.8848
-      ],
-      [
-        0.2806,
-        0.8848
-      ],
-      [
-        0.2738,
-        0.8949
-      ],
-      [
-        0.2676,
-        0.8963
-      ],
-      [
-        0.2606,
-        0.904
-      ],
-      [
-        0.2524,
-        0.9067
-      ],
-      [
-        0.2488,
-        0.9121
-      ],
-      [
-        0.2361,
-        0.9214
-      ],
-      [
-        0.2278,
-        0.9311
-      ],
-      [
-        0.2204,
-        0.9488
-      ],
-      [
-        0.2151,
-        0.95
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.7849,
-        "y": 0.0852,
-        "town": "Fredericton, New Brunswick",
-        "kind": "start",
-        "sessions": []
-      },
-      {
-        "x": 0.2151,
-        "y": 0.95,
-        "town": "Bronx, New York",
-        "kind": "end",
-        "sessions": []
-      },
-      {
-        "x": 0.6395,
-        "y": 0.1445,
-        "town": "Medway, Maine",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 17,
-            "socStart": 28,
-            "socEnd": 80
-          }
-        ]
-      },
-      {
-        "x": 0.5373,
-        "y": 0.3565,
-        "town": "Augusta, Maine",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 19,
-            "socStart": 14,
-            "socEnd": 76
-          }
-        ]
-      },
-      {
-        "x": 0.447,
-        "y": 0.6533,
-        "town": "Danvers, Massachusetts",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 18,
-            "socStart": 14,
-            "socEnd": 76
-          }
-        ]
-      },
-      {
-        "x": 0.3566,
-        "y": 0.8652,
-        "town": "New London, Connecticut",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 17,
-            "socStart": 27,
-            "socEnd": 80
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 1.423,
-    "plotted": true,
-    "track": 3
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
-    {
-      "key": "2026-09-13",
-      "day": 12,
-      "date": "Sep 13",
-      "label": "Day 12 · Sep 13",
-      "km": 221,
-      "from": "Squamish, British Columbia",
-      "to": "Squamish, British Columbia",
-      "corridor": "Squamish, British Columbia",
-      "province": "British Columbia",
-      "chargeStops": 8,
-      "chargeMinutes": 20,
-      "note": "Town level · delayed 24h",
-      "path": [
-        [
-          0.4767,
-          0.064
-        ],
-        [
-          0.4837,
-          0.0936
-        ],
-        [
-          0.4788,
-          0.098
-        ],
-        [
-          0.4779,
-          0.1054
-        ],
-        [
-          0.4801,
-          0.143
-        ],
-        [
-          0.4785,
-          0.1541
-        ],
-        [
-          0.47,
-          0.1799
-        ],
-        [
-          0.462,
-          0.1947
-        ],
-        [
-          0.4466,
-          0.2073
-        ],
-        [
-          0.4427,
-          0.2205
-        ],
-        [
-          0.4384,
-          0.225
-        ],
-        [
-          0.4427,
-          0.2553
-        ],
-        [
-          0.4402,
-          0.2619
-        ],
-        [
-          0.4408,
-          0.2693
-        ],
-        [
-          0.4365,
-          0.2804
-        ],
-        [
-          0.4365,
-          0.29
-        ],
-        [
-          0.4264,
-          0.3342
-        ],
-        [
-          0.424,
-          0.3579
-        ],
-        [
-          0.4138,
-          0.3785
-        ],
-        [
-          0.4089,
-          0.3992
-        ],
-        [
-          0.4105,
-          0.4214
-        ],
-        [
-          0.4166,
-          0.4317
-        ],
-        [
-          0.4166,
-          0.4524
-        ],
-        [
-          0.4236,
-          0.4886
-        ],
-        [
-          0.4233,
-          0.5203
-        ],
-        [
-          0.4261,
-          0.5476
-        ],
-        [
-          0.4203,
-          0.5742
-        ],
-        [
-          0.4077,
-          0.6074
-        ],
-        [
-          0.4007,
-          0.634
-        ],
-        [
-          0.4102,
-          0.6384
-        ],
-        [
-          0.4163,
-          0.6532
-        ],
-        [
-          0.4218,
-          0.6562
-        ],
-        [
-          0.4739,
-          0.665
-        ],
-        [
-          0.4785,
-          0.6709
-        ],
-        [
-          0.4902,
-          0.6739
-        ],
-        [
-          0.4936,
-          0.679
-        ],
-        [
-          0.5144,
-          0.682
-        ],
-        [
-          0.5104,
-          0.6982
-        ],
-        [
-          0.5178,
-          0.6842
-        ],
-        [
-          0.523,
-          0.6835
-        ],
-        [
-          0.5264,
-          0.6879
-        ],
-        [
-          0.5264,
-          0.682
-        ],
-        [
-          0.535,
-          0.6835
-        ],
-        [
-          0.5515,
-          0.713
-        ],
-        [
-          0.5524,
-          0.7396
-        ],
-        [
-          0.55,
-          0.7462
-        ],
-        [
-          0.5442,
-          0.7447
-        ],
-        [
-          0.538,
-          0.7285
-        ],
-        [
-          0.5534,
-          0.7846
-        ],
-        [
-          0.5573,
-          0.7913
-        ],
-        [
-          0.5767,
-          0.7913
-        ],
-        [
-          0.5822,
-          0.7957
-        ],
-        [
-          0.5843,
-          0.8023
-        ],
-        [
-          0.5889,
-          0.8023
-        ],
-        [
-          0.588,
-          0.7876
-        ],
-        [
-          0.596,
-          0.7898
-        ],
-        [
-          0.5905,
-          0.7883
-        ],
-        [
-          0.5837,
-          0.7824
-        ],
-        [
-          0.5705,
-          0.778
-        ],
-        [
-          0.5549,
-          0.7787
-        ],
-        [
-          0.5484,
-          0.7846
-        ],
-        [
-          0.5399,
-          0.7846
-        ],
-        [
-          0.5399,
-          0.7898
-        ],
-        [
-          0.5343,
-          0.7913
-        ],
-        [
-          0.53,
-          0.7883
-        ],
-        [
-          0.5212,
-          0.7883
-        ],
-        [
-          0.5218,
-          0.8097
-        ],
-        [
-          0.5196,
-          0.8112
-        ],
-        [
-          0.5193,
-          0.8164
-        ],
-        [
-          0.5218,
-          0.8171
-        ],
-        [
-          0.5227,
-          0.9064
-        ],
-        [
-          0.5196,
-          0.9094
-        ],
-        [
-          0.5058,
-          0.9101
-        ],
-        [
-          0.4767,
-          0.95
-        ],
-        [
-          0.4923,
-          0.9064
-        ],
-        [
-          0.4923,
-          0.8909
-        ],
-        [
-          0.4988,
-          0.888
-        ],
-        [
-          0.5003,
-          0.8895
-        ],
-        [
-          0.4982,
-          0.888
-        ],
-        [
-          0.4991,
-          0.8924
-        ],
-        [
-          0.4963,
-          0.888
-        ],
-        [
-          0.4767,
-          0.8762
-        ],
-        [
-          0.4767,
-          0.8023
-        ],
-        [
-          0.5074,
-          0.7285
-        ],
-        [
-          0.4831,
-          0.7108
-        ],
-        [
-          0.481,
-          0.716
-        ],
-        [
-          0.4899,
-          0.6901
-        ],
-        [
-          0.4859,
-          0.6886
-        ],
-        [
-          0.4874,
-          0.6953
-        ],
-        [
-          0.4917,
-          0.7034
-        ],
-        [
-          0.492,
-          0.7012
-        ],
-        [
-          0.4871,
-          0.6968
-        ],
-        [
-          0.488,
-          0.6931
-        ],
-        [
-          0.4825,
-          0.6923
-        ],
-        [
-          0.4825,
-          0.6894
-        ],
-        [
-          0.4755,
-          0.6886
-        ],
-        [
-          0.477,
-          0.6938
-        ],
-        [
-          0.4745,
-          0.682
-        ],
-        [
-          0.4724,
-          0.682
-        ],
-        [
-          0.4727,
-          0.6658
-        ],
-        [
-          0.4187,
-          0.6539
-        ],
-        [
-          0.4132,
-          0.6502
-        ],
-        [
-          0.4126,
-          0.6406
-        ],
-        [
-          0.401,
-          0.6355
-        ],
-        [
-          0.4071,
-          0.6089
-        ],
-        [
-          0.4203,
-          0.5749
-        ],
-        [
-          0.4261,
-          0.5491
-        ],
-        [
-          0.4233,
-          0.521
-        ],
-        [
-          0.4236,
-          0.4886
-        ],
-        [
-          0.4163,
-          0.4502
-        ],
-        [
-          0.4169,
-          0.4347
-        ],
-        [
-          0.4092,
-          0.4132
-        ],
-        [
-          0.4099,
-          0.3933
-        ],
-        [
-          0.4255,
-          0.3534
-        ],
-        [
-          0.4261,
-          0.335
-        ],
-        [
-          0.4368,
-          0.2885
-        ],
-        [
-          0.4362,
-          0.2781
-        ],
-        [
-          0.4399,
-          0.2737
-        ],
-        [
-          0.4427,
-          0.253
-        ],
-        [
-          0.4384,
-          0.2279
-        ],
-        [
-          0.4482,
-          0.2058
-        ],
-        [
-          0.4635,
-          0.1918
-        ],
-        [
-          0.4779,
-          0.1556
-        ],
-        [
-          0.4801,
-          0.1379
-        ],
-        [
-          0.4779,
-          0.1046
-        ],
-        [
-          0.4795,
-          0.0973
-        ],
-        [
-          0.4841,
-          0.0928
-        ],
-        [
-          0.4865,
-          0.0781
-        ],
-        [
-          0.4825,
-          0.0685
-        ],
-        [
-          0.4813,
-          0.05
-        ],
-        [
-          0.4825,
-          0.0692
-        ],
-        [
-          0.4767,
-          0.064
-        ]
-      ],
-      "stops": [
-        {
-          "x": 0.4767,
-          "y": 0.064,
-          "town": "Squamish, British Columbia",
-          "kind": "start",
-          "sessions": []
-        },
-        {
-          "x": 0.5074,
-          "y": 0.7285,
-          "town": "North Vancouver, British Columbia",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 2,
-              "socStart": 49,
-              "socEnd": 52
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 3,
-              "socStart": 55,
-              "socEnd": 64
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 3,
-              "socStart": 76,
-              "socEnd": 82
-            }
-          ]
-        },
-        {
-          "x": 0.5993,
-          "y": 0.8023,
-          "town": "Burnaby, British Columbia",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 2,
-              "socStart": 58,
-              "socEnd": 63
-            }
-          ]
-        },
-        {
-          "x": 0.538,
-          "y": 0.8023,
-          "town": "Vancouver, British Columbia",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 1,
-              "socStart": 65,
-              "socEnd": 66
-            }
-          ]
-        },
-        {
-          "x": 0.4767,
-          "y": 0.95,
-          "town": "Richmond, British Columbia",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 4,
-              "socStart": 65,
-              "socEnd": 69
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 3,
-              "socStart": 68,
-              "socEnd": 75
-            },
-            {
-              "network": "Supercharger",
-              "minutes": 2,
-              "socStart": 75,
-              "socEnd": 79
-            }
-          ]
-        }
-      ],
-      "kmPerPx": 0.1634,
-      "plotted": true,
-      "track": 3
-    },
     {
       "key": "2026-09-14",
       "day": 13,
@@ -13244,10 +12194,27 @@
       "kmPerPx": 1.423,
       "plotted": true,
       "track": 3
+    },
+    {
+      "key": "2026-10-14",
+      "day": 43,
+      "date": "Oct 14",
+      "label": "Day 43 · Oct 14",
+      "km": 2,
+      "from": "Bronx, New York",
+      "to": "New York, New York",
+      "corridor": "New York, New York",
+      "province": "New York",
+      "chargeStops": 0,
+      "chargeMinutes": 0,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
-  "asOf": "2026-10-14",
-  "updatedAt": "2026-10-15T10:22:15.904Z",
+  "asOf": "2026-10-15",
+  "updatedAt": "2026-10-15T13:50:37.043Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -13258,1524 +12225,1906 @@
           "t": 14.5,
           "wh": 161,
           "km": 224,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Brandon",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 19.3,
           "wh": 160,
           "km": 124,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Maryfield 91",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 20.9,
           "wh": 164,
           "km": 68,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Whitewood",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 24.6,
           "wh": 148,
           "km": 170,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Regina",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 30.3,
           "wh": 160,
           "km": 247,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Swift Current",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 30.5,
           "wh": 179,
           "km": 172,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Cypress County",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 29.2,
           "wh": 165,
           "km": 48,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Medicine Hat",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 22,
           "wh": 159,
           "km": 279,
-          "prov": "Alberta"
-        },
-        {
-          "t": 15.9,
-          "wh": 220,
-          "km": 9,
-          "prov": "Alberta"
-        },
-        {
-          "t": 17.4,
-          "wh": 114,
-          "km": 13,
-          "prov": "Alberta"
-        },
-        {
-          "t": 18.7,
-          "wh": 119,
-          "km": 7,
-          "prov": "Alberta"
-        },
-        {
-          "t": 15.4,
-          "wh": 120,
-          "km": 10,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Calgary",
+          "day": 1,
+          "date": "Sep 2"
         },
         {
           "t": 16.3,
           "wh": 144,
           "km": 87,
-          "prov": "Alberta"
-        },
-        {
-          "t": 18.7,
-          "wh": 200,
-          "km": 18,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Calgary",
+          "day": 2,
+          "date": "Sep 3"
         },
         {
           "t": 18,
           "wh": 103,
           "km": 139,
-          "prov": "Alberta"
-        },
-        {
-          "t": 21,
-          "wh": 109,
-          "km": 7,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Drumheller",
+          "day": 2,
+          "date": "Sep 3"
         },
         {
           "t": 17.5,
           "wh": 171,
           "km": 91,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Strathmore",
+          "day": 2,
+          "date": "Sep 3"
         },
         {
           "t": 17.7,
           "wh": 144,
           "km": 60,
-          "prov": "Alberta"
-        },
-        {
-          "t": 18.5,
-          "wh": 135,
-          "km": 5,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Calgary",
+          "day": 2,
+          "date": "Sep 3"
         },
         {
           "t": 10.6,
           "wh": 153,
           "km": 166,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Red Deer County",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 14,
           "wh": 152,
           "km": 308,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Whitecourt",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 10.3,
           "wh": 193,
           "km": 170,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Valleyview",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 10.8,
           "wh": 169,
           "km": 114,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Grande Prairie",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 16.2,
           "wh": 148,
           "km": 89,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Demmitt",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 17.5,
           "wh": 125,
           "km": 40,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Dawson Creek",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 15.1,
           "wh": 155,
           "km": 226,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 3,
+          "date": "Sep 4"
         },
         {
           "t": 3.9,
           "wh": 152,
           "km": 230,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Fort Nelson",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 13.1,
           "wh": 179,
           "km": 149,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Fort Nelson",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 14.8,
           "wh": 88,
           "km": 38,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Fort Nelson",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 17.7,
           "wh": 128,
           "km": 117,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Fort Nelson",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 22.4,
           "wh": 172,
           "km": 194,
-          "prov": "Yukon"
-        },
-        {
-          "t": 22.5,
-          "wh": 147,
-          "km": 10,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Watson Lake",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 21.6,
           "wh": 157,
           "km": 156,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Teslin",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 19.4,
           "wh": 139,
           "km": 106,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Teslin",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 15.2,
           "wh": 170,
           "km": 51,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Teslin",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 12.1,
           "wh": 143,
           "km": 129,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Whitehorse",
+          "day": 4,
+          "date": "Sep 5"
         },
         {
           "t": 14.3,
           "wh": 151,
           "km": 177,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Carmacks",
+          "day": 5,
+          "date": "Sep 6"
         },
         {
           "t": 15.5,
           "wh": 163,
           "km": 109,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Pelly Crossing",
+          "day": 5,
+          "date": "Sep 6"
         },
         {
           "t": 18.2,
           "wh": 149,
           "km": 69,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Mayo",
+          "day": 5,
+          "date": "Sep 6"
         },
         {
           "t": 18.3,
           "wh": 153,
           "km": 184,
-          "prov": "Yukon"
-        },
-        {
-          "t": 19.5,
-          "wh": 104,
-          "km": 8,
-          "prov": "Yukon"
-        },
-        {
-          "t": 10,
-          "wh": 491,
-          "km": 9,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Dawson",
+          "day": 5,
+          "date": "Sep 6"
         },
         {
           "t": 10.3,
           "wh": 259,
           "km": 43,
-          "prov": "Yukon"
-        },
-        {
-          "t": 10,
-          "wh": 335,
-          "km": 7,
-          "prov": "Yukon"
-        },
-        {
-          "t": 14,
-          "wh": 132,
-          "km": 7,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Yukon",
+          "day": 6,
+          "date": "Sep 7"
         },
         {
           "t": 16.6,
           "wh": 181,
           "km": 156,
-          "prov": "Yukon"
-        },
-        {
-          "t": 17,
-          "wh": 116,
-          "km": 18,
-          "prov": "Yukon"
-        },
-        {
-          "t": 17,
-          "wh": 209,
-          "km": 19,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Yukon",
+          "day": 6,
+          "date": "Sep 7"
         },
         {
           "t": 18,
           "wh": 173,
           "km": 159,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Carmacks",
+          "day": 6,
+          "date": "Sep 7"
         },
         {
           "t": 14.6,
           "wh": 155,
           "km": 168,
-          "prov": "Yukon"
-        },
-        {
-          "t": 8.7,
-          "wh": 121,
-          "km": 10,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Marsh Lake",
+          "day": 6,
+          "date": "Sep 7"
         },
         {
           "t": 11.3,
           "wh": 135,
           "km": 23,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Whitehorse",
+          "day": 7,
+          "date": "Sep 8"
         },
         {
           "t": 12.4,
           "wh": 140,
           "km": 124,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Teslin",
+          "day": 7,
+          "date": "Sep 8"
         },
         {
           "t": 13.2,
           "wh": 152,
           "km": 228,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Watson Lake",
+          "day": 7,
+          "date": "Sep 8"
         },
         {
           "t": 15.9,
           "wh": 119,
           "km": 42,
-          "prov": "Yukon"
+          "prov": "Yukon",
+          "ctry": "CA",
+          "town": "Watson Lake",
+          "day": 7,
+          "date": "Sep 8"
         },
         {
           "t": 17.1,
           "wh": 163,
           "km": 161,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 7,
+          "date": "Sep 8"
         },
         {
           "t": 11.9,
           "wh": 213,
           "km": 52,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 11.5,
           "wh": 311,
           "km": 33,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 12.2,
           "wh": 135,
           "km": 46,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 13.1,
           "wh": 127,
           "km": 31,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Fort Nelson",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 13.6,
           "wh": 186,
           "km": 98,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 12.5,
           "wh": 210,
           "km": 38,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 16.4,
           "wh": 180,
           "km": 90,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Buick",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 15.4,
           "wh": 135,
           "km": 227,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Dawson Creek",
+          "day": 8,
+          "date": "Sep 9"
         },
         {
           "t": 9.7,
           "wh": 150,
           "km": 129,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Grande Prairie",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 11.7,
           "wh": 168,
           "km": 117,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Valleyview",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 11,
           "wh": 177,
           "km": 170,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Whitecourt",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 12.4,
           "wh": 178,
           "km": 97,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Edson",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 14.2,
           "wh": 170,
           "km": 163,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Jasper",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 12.3,
           "wh": 134,
           "km": 124,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Valemount",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 12.1,
           "wh": 145,
           "km": 198,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Clearwater",
+          "day": 9,
+          "date": "Sep 10"
         },
         {
           "t": 8.8,
           "wh": 147,
           "km": 128,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 14,
-          "wh": 329,
-          "km": 7,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Kamloops",
+          "day": 10,
+          "date": "Sep 11"
         },
         {
           "t": 13,
           "wh": 191,
           "km": 80,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Merritt",
+          "day": 10,
+          "date": "Sep 11"
         },
         {
           "t": 17.2,
           "wh": 143,
           "km": 119,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Hope",
+          "day": 10,
+          "date": "Sep 11"
         },
         {
           "t": 21,
           "wh": 147,
           "km": 50,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Chilliwack",
+          "day": 10,
+          "date": "Sep 11"
         },
         {
           "t": 22.4,
           "wh": 136,
           "km": 25,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Abbotsford",
+          "day": 10,
+          "date": "Sep 11"
         },
         {
           "t": 20.9,
           "wh": 128,
           "km": 136,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21,
-          "wh": 103,
-          "km": 9,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 25.1,
-          "wh": 109,
-          "km": 6,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Squamish",
+          "day": 10,
+          "date": "Sep 11"
         },
         {
           "t": 20.8,
           "wh": 109,
           "km": 21,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 22.2,
-          "wh": 117,
-          "km": 5,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.6,
-          "wh": 104,
-          "km": 17,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "British Columbia",
+          "day": 11,
+          "date": "Sep 12"
         },
         {
           "t": 17.3,
           "wh": 153,
           "km": 68,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 21.6,
-          "wh": 188,
-          "km": 12,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.3,
-          "wh": 100,
-          "km": 7,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.1,
-          "wh": 141,
-          "km": 13,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19.6,
-          "wh": 142,
-          "km": 12,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.6,
-          "wh": 111,
-          "km": 9,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "North Vancouver",
+          "day": 12,
+          "date": "Sep 13"
         },
         {
           "t": 19,
           "wh": 128,
           "km": 61,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16.4,
-          "wh": 287,
-          "km": 10,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16.6,
-          "wh": 72,
-          "km": 5,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.5,
-          "wh": 109,
-          "km": 8,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 17.5,
-          "wh": 117,
-          "km": 10,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Squamish",
+          "day": 12,
+          "date": "Sep 13"
         },
         {
           "t": 15.4,
           "wh": 217,
           "km": 54,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Whistler",
+          "day": 13,
+          "date": "Sep 14"
         },
         {
           "t": 12.8,
           "wh": 66,
           "km": 55,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Squamish",
+          "day": 13,
+          "date": "Sep 14"
         },
         {
           "t": 15.6,
           "wh": 136,
           "km": 121,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16.3,
-          "wh": 123,
-          "km": 12,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Delta",
+          "day": 14,
+          "date": "Sep 15"
         },
         {
           "t": 19.2,
           "wh": 129,
           "km": 30,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 19.9,
-          "wh": 137,
-          "km": 6,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Victoria",
+          "day": 14,
+          "date": "Sep 15"
         },
         {
           "t": 22,
           "wh": 132,
           "km": 120,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Nanaimo",
+          "day": 14,
+          "date": "Sep 15"
         },
         {
           "t": 21.3,
           "wh": 121,
           "km": 69,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Port Alberni",
+          "day": 14,
+          "date": "Sep 15"
         },
         {
           "t": 20.9,
           "wh": 127,
           "km": 56,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Ucluelet",
+          "day": 14,
+          "date": "Sep 15"
         },
         {
           "t": 17.1,
           "wh": 112,
           "km": 54,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 15.5,
-          "wh": 200,
-          "km": 17,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 14.4,
-          "wh": 107,
-          "km": 6,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 10.7,
-          "wh": 119,
-          "km": 8,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 12.7,
-          "wh": 103,
-          "km": 15,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16,
-          "wh": 129,
-          "km": 16,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 16,
-          "wh": 102,
-          "km": 7,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Ucluelet",
+          "day": 14,
+          "date": "Sep 15"
         },
         {
           "t": 16.9,
           "wh": 134,
           "km": 122,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Parksville",
+          "day": 15,
+          "date": "Sep 16"
         },
         {
           "t": 19.7,
           "wh": 149,
           "km": 33,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Nanaimo",
+          "day": 15,
+          "date": "Sep 16"
         },
         {
           "t": 21.1,
           "wh": 112,
           "km": 29,
-          "prov": "British Columbia"
-        },
-        {
-          "t": 20.4,
-          "wh": 202,
-          "km": 6,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Nanaimo",
+          "day": 15,
+          "date": "Sep 16"
         },
         {
           "t": 22.9,
           "wh": 123,
           "km": 112,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Chilliwack",
+          "day": 15,
+          "date": "Sep 16"
         },
         {
           "t": 18.6,
           "wh": 190,
           "km": 175,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Merritt",
+          "day": 15,
+          "date": "Sep 16"
         },
         {
           "t": 12.7,
           "wh": 164,
           "km": 196,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Salmon Arm",
+          "day": 15,
+          "date": "Sep 16"
         },
         {
           "t": 11.5,
           "wh": 152,
           "km": 101,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Revelstoke",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 9.9,
           "wh": 151,
           "km": 147,
-          "prov": "British Columbia"
+          "prov": "British Columbia",
+          "ctry": "CA",
+          "town": "Golden",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 16.9,
           "wh": 168,
           "km": 135,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Banff",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 20.6,
           "wh": 113,
           "km": 28,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Canmore",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 20.5,
           "wh": 112,
           "km": 30,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Kananaskis",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 17.7,
           "wh": 122,
           "km": 169,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Kananaskis",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 21.3,
           "wh": 126,
           "km": 75,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Calgary",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 21.8,
           "wh": 112,
           "km": 29,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Calgary",
+          "day": 16,
+          "date": "Sep 17"
         },
         {
           "t": 14.6,
           "wh": 152,
           "km": 121,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Bassano",
+          "day": 17,
+          "date": "Sep 18"
         },
         {
           "t": 21,
           "wh": 162,
           "km": 157,
-          "prov": "Alberta"
+          "prov": "Alberta",
+          "ctry": "CA",
+          "town": "Medicine Hat",
+          "day": 17,
+          "date": "Sep 18"
         },
         {
           "t": 24.2,
           "wh": 182,
           "km": 221,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Swift Current",
+          "day": 17,
+          "date": "Sep 18"
         },
         {
           "t": 24,
           "wh": 184,
           "km": 170,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Moose Jaw",
+          "day": 17,
+          "date": "Sep 18"
         },
         {
           "t": 22.6,
           "wh": 180,
           "km": 97,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "White City",
+          "day": 17,
+          "date": "Sep 18"
         },
         {
           "t": 12.3,
           "wh": 198,
           "km": 159,
-          "prov": "Saskatchewan"
+          "prov": "Saskatchewan",
+          "ctry": "CA",
+          "town": "Whitewood",
+          "day": 18,
+          "date": "Sep 19"
         },
         {
           "t": 15.8,
           "wh": 179,
           "km": 190,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Brandon",
+          "day": 18,
+          "date": "Sep 19"
         },
         {
           "t": 19.5,
           "wh": 172,
           "km": 231,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winkler",
+          "day": 18,
+          "date": "Sep 19"
         },
         {
           "t": 19.2,
           "wh": 189,
           "km": 65,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Morris",
+          "day": 20,
+          "date": "Sep 21"
         },
         {
           "t": 20.1,
           "wh": 161,
           "km": 63,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winkler",
+          "day": 20,
+          "date": "Sep 21"
         },
         {
           "t": 20.7,
           "wh": 152,
           "km": 123,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19,
-          "wh": 131,
-          "km": 7,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.4,
-          "wh": 127,
-          "km": 9,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winnipeg",
+          "day": 20,
+          "date": "Sep 21"
         },
         {
           "t": 19.9,
           "wh": 146,
           "km": 233,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Fairford",
+          "day": 21,
+          "date": "Sep 22"
         },
         {
           "t": 20.1,
           "wh": 160,
           "km": 195,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Cormorant",
+          "day": 21,
+          "date": "Sep 22"
         },
         {
           "t": 19.2,
           "wh": 127,
           "km": 22,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Manitoba",
+          "day": 21,
+          "date": "Sep 22"
         },
         {
           "t": 14.1,
           "wh": 158,
           "km": 61,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Moose Lake 31J",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 18.2,
           "wh": 150,
           "km": 157,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Wabowden",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 21,
           "wh": 127,
           "km": 28,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Manitoba",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 21.2,
           "wh": 127,
           "km": 83,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Thompson",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 21.6,
           "wh": 163,
           "km": 97,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Manitoba",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 22,
           "wh": 169,
           "km": 36,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Manitoba",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 22,
           "wh": 157,
           "km": 60,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Thompson",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 20.5,
           "wh": 176,
           "km": 81,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Manitoba",
+          "day": 22,
+          "date": "Sep 23"
         },
         {
           "t": 15.3,
           "wh": 157,
           "km": 185,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Moose Lake 31J",
+          "day": 23,
+          "date": "Sep 24"
         },
         {
           "t": 18.1,
           "wh": 159,
           "km": 70,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Cormorant",
+          "day": 23,
+          "date": "Sep 24"
         },
         {
           "t": 20.4,
           "wh": 161,
           "km": 195,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Fairford",
+          "day": 23,
+          "date": "Sep 24"
         },
         {
           "t": 19.4,
           "wh": 162,
           "km": 227,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winnipeg",
+          "day": 23,
+          "date": "Sep 24"
         },
         {
           "t": 20.4,
           "wh": 164,
           "km": 115,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 19.6,
-          "wh": 155,
-          "km": 6,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winkler",
+          "day": 23,
+          "date": "Sep 24"
         },
         {
           "t": 18.5,
           "wh": 172,
           "km": 65,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Morris",
+          "day": 24,
+          "date": "Sep 25"
         },
         {
           "t": 18.3,
           "wh": 154,
           "km": 250,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Kenora",
+          "day": 24,
+          "date": "Sep 25"
         },
         {
           "t": 17.2,
           "wh": 134,
           "km": 41,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Ontario",
+          "day": 24,
+          "date": "Sep 25"
         },
         {
           "t": 16,
           "wh": 152,
           "km": 143,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Reynolds",
+          "day": 25,
+          "date": "Sep 26"
         },
         {
           "t": 14.9,
           "wh": 166,
           "km": 156,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Bélair",
+          "day": 25,
+          "date": "Sep 26"
         },
         {
           "t": 14,
           "wh": 147,
           "km": 117,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winnipeg",
+          "day": 26,
+          "date": "Sep 27"
         },
         {
           "t": 19,
           "wh": 153,
           "km": 123,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winkler",
+          "day": 26,
+          "date": "Sep 27"
         },
         {
           "t": 19.4,
           "wh": 182,
           "km": 58,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 16,
-          "wh": 189,
-          "km": 7,
-          "prov": "Manitoba"
-        },
-        {
-          "t": 16,
-          "wh": 118,
-          "km": 6,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Darlingford",
+          "day": 26,
+          "date": "Sep 27"
         },
         {
           "t": 13.6,
           "wh": 108,
           "km": 28,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winkler",
+          "day": 26,
+          "date": "Sep 27"
         },
         {
           "t": 12.8,
           "wh": 165,
           "km": 198,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Portage La Prairie",
+          "day": 27,
+          "date": "Sep 28"
         },
         {
           "t": 15.6,
           "wh": 148,
           "km": 88,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winnipeg",
+          "day": 27,
+          "date": "Sep 28"
         },
         {
           "t": 17,
           "wh": 146,
           "km": 128,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Winkler",
+          "day": 27,
+          "date": "Sep 28"
         },
         {
           "t": 22.5,
           "wh": 149,
           "km": 223,
-          "prov": "Manitoba"
+          "prov": "Manitoba",
+          "ctry": "CA",
+          "town": "Reynolds",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 21.7,
           "wh": 155,
           "km": 53,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Ontario",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 22.5,
           "wh": 136,
           "km": 25,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Clearwater Bay",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 22,
           "wh": 142,
           "km": 78,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Ontario",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 18.9,
           "wh": 141,
           "km": 91,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Dryden",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 16.8,
           "wh": 141,
           "km": 210,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Upsala",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 16.1,
           "wh": 132,
           "km": 137,
-          "prov": "Ontario"
-        },
-        {
-          "t": 14.5,
-          "wh": 165,
-          "km": 19,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Thunder Bay",
+          "day": 28,
+          "date": "Sep 29"
         },
         {
           "t": 14.8,
           "wh": 145,
           "km": 205,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Terrace Bay",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 15.8,
           "wh": 145,
           "km": 260,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Wawa",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 16.9,
           "wh": 153,
           "km": 226,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Sault Ste. Marie",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 18.2,
           "wh": 133,
           "km": 235,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "McKerrow",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 16.6,
           "wh": 162,
           "km": 225,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Parry Sound",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 16.1,
           "wh": 187,
           "km": 72,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Port Severn",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 17.9,
           "wh": 172,
           "km": 248,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "New Hamburg",
+          "day": 29,
+          "date": "Sep 30"
         },
         {
           "t": 20.4,
           "wh": 116,
           "km": 80,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Milton",
+          "day": 30,
+          "date": "Oct 1"
         },
         {
           "t": 24.2,
           "wh": 109,
           "km": 46,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Mississauga",
+          "day": 30,
+          "date": "Oct 1"
         },
         {
           "t": 23.6,
           "wh": 145,
           "km": 155,
-          "prov": "Ontario"
-        },
-        {
-          "t": 12.6,
-          "wh": 229,
-          "km": 20,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "New Hamburg",
+          "day": 30,
+          "date": "Oct 1"
         },
         {
           "t": 16.6,
           "wh": 141,
           "km": 266,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Trenton",
+          "day": 31,
+          "date": "Oct 2"
         },
         {
           "t": 20.2,
           "wh": 156,
           "km": 294,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Gloucester",
+          "day": 31,
+          "date": "Oct 2"
         },
         {
           "t": 20.4,
           "wh": 91,
           "km": 23,
-          "prov": "Ontario"
+          "prov": "Ontario",
+          "ctry": "CA",
+          "town": "Cumberland",
+          "day": 31,
+          "date": "Oct 2"
         },
         {
           "t": 15.9,
           "wh": 137,
           "km": 124,
-          "prov": "Quebec"
-        },
-        {
-          "t": 13.3,
-          "wh": 319,
-          "km": 6,
-          "prov": "Quebec"
-        },
-        {
-          "t": 12.9,
-          "wh": 118,
-          "km": 15,
-          "prov": "Quebec"
-        },
-        {
-          "t": 3.3,
-          "wh": 163,
-          "km": 14,
-          "prov": "Quebec"
+          "prov": "Quebec",
+          "ctry": "CA",
+          "town": "Mont-Tremblant",
+          "day": 31,
+          "date": "Oct 2"
         },
         {
           "t": 6.5,
           "wh": 151,
           "km": 78,
-          "prov": "Quebec"
-        },
-        {
-          "t": 8,
-          "wh": 102,
-          "km": 13,
-          "prov": "Quebec"
+          "prov": "Quebec",
+          "ctry": "CA",
+          "town": "Sainte-Adèle",
+          "day": 32,
+          "date": "Oct 3"
         },
         {
           "t": 13.3,
           "wh": 118,
           "km": 91,
-          "prov": "Quebec"
-        },
-        {
-          "t": 15.5,
-          "wh": 117,
-          "km": 15,
-          "prov": "Quebec"
+          "prov": "Quebec",
+          "ctry": "CA",
+          "town": "Brossard",
+          "day": 32,
+          "date": "Oct 3"
         },
         {
           "t": 15.9,
           "wh": 147,
           "km": 254,
-          "prov": "Quebec"
-        },
-        {
-          "t": 18.2,
-          "wh": 128,
-          "km": 13,
-          "prov": "Quebec"
+          "prov": "Quebec",
+          "ctry": "CA",
+          "town": "Québec",
+          "day": 33,
+          "date": "Oct 4"
         },
         {
           "t": 11.3,
           "wh": 164,
           "km": 208,
-          "prov": "Quebec"
+          "prov": "Quebec",
+          "ctry": "CA",
+          "town": "Rivière-du-Loup",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 10.1,
           "wh": 181,
           "km": 160,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Saint-Léonard",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 10.4,
           "wh": 190,
           "km": 119,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Hartland",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 11.2,
           "wh": 246,
           "km": 26,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Lower Woodstock",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 14,
           "wh": 159,
           "km": 243,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Salisbury",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 13.3,
           "wh": 164,
           "km": 24,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Moncton",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 11.5,
           "wh": 144,
           "km": 178,
-          "prov": "Prince Edward Island"
-        },
-        {
-          "t": 8.3,
-          "wh": 345,
-          "km": 8,
-          "prov": "Prince Edward Island"
+          "prov": "Prince Edward Island",
+          "ctry": "CA",
+          "town": "Charlottetown",
+          "day": 34,
+          "date": "Oct 5"
         },
         {
           "t": 9.3,
           "wh": 167,
           "km": 49,
-          "prov": "Prince Edward Island"
-        },
-        {
-          "t": 9.5,
-          "wh": 207,
-          "km": 16,
-          "prov": "New Brunswick"
+          "prov": "Prince Edward Island",
+          "ctry": "CA",
+          "town": "Borden-Carleton",
+          "day": 35,
+          "date": "Oct 6"
         },
         {
           "t": 10.7,
           "wh": 182,
           "km": 52,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Pointe de Bute",
+          "day": 35,
+          "date": "Oct 6"
         },
         {
           "t": 11.9,
           "wh": 180,
           "km": 167,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Enfield",
+          "day": 35,
+          "date": "Oct 6"
         },
         {
           "t": 13.7,
           "wh": 197,
           "km": 108,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Kentville",
+          "day": 35,
+          "date": "Oct 6"
         },
         {
           "t": 13.6,
           "wh": 177,
           "km": 228,
-          "prov": "Nova Scotia"
-        },
-        {
-          "t": 8,
-          "wh": 104,
-          "km": 11,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Yarmouth",
+          "day": 35,
+          "date": "Oct 6"
         },
         {
           "t": 10.9,
           "wh": 146,
           "km": 146,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Liverpool",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 13.3,
           "wh": 166,
           "km": 179,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Enfield",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 15.4,
           "wh": 160,
           "km": 197,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Afton Station",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 13.8,
           "wh": 140,
           "km": 90,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Mabou",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 12,
           "wh": 139,
           "km": 69,
-          "prov": "Nova Scotia"
-        },
-        {
-          "t": 11.5,
-          "wh": 128,
-          "km": 9,
-          "prov": "Nova Scotia"
-        },
-        {
-          "t": 11,
-          "wh": 156,
-          "km": 13,
-          "prov": "Nova Scotia"
-        },
-        {
-          "t": 10.4,
-          "wh": 142,
-          "km": 9,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Belle Côte",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 8.3,
           "wh": 161,
           "km": 28,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Pleasant Bay",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 7.2,
           "wh": 146,
           "km": 185,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Sydney Mines",
+          "day": 36,
+          "date": "Oct 7"
         },
         {
           "t": 11.9,
           "wh": 154,
           "km": 270,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Deer Lake",
+          "day": 37,
+          "date": "Oct 8"
         },
         {
           "t": 14.1,
           "wh": 158,
           "km": 306,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Gander",
+          "day": 37,
+          "date": "Oct 8"
         },
         {
           "t": 15.9,
           "wh": 167,
           "km": 148,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Clarenville",
+          "day": 37,
+          "date": "Oct 8"
         },
         {
           "t": 13.6,
           "wh": 163,
           "km": 187,
-          "prov": "Newfoundland and Labrador"
-        },
-        {
-          "t": 16.2,
-          "wh": 259,
-          "km": 15,
-          "prov": "Newfoundland and Labrador"
-        },
-        {
-          "t": 15.5,
-          "wh": 125,
-          "km": 19,
-          "prov": "Newfoundland and Labrador"
-        },
-        {
-          "t": 15.1,
-          "wh": 123,
-          "km": 18,
-          "prov": "Newfoundland and Labrador"
-        },
-        {
-          "t": 14.1,
-          "wh": 107,
-          "km": 17,
-          "prov": "Newfoundland and Labrador"
-        },
-        {
-          "t": 16.5,
-          "wh": 93,
-          "km": 5,
-          "prov": "Newfoundland and Labrador"
-        },
-        {
-          "t": 4.3,
-          "wh": 176,
-          "km": 17,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "St. John's",
+          "day": 37,
+          "date": "Oct 8"
         },
         {
           "t": 4.6,
           "wh": 180,
           "km": 100,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Whitbourne",
+          "day": 40,
+          "date": "Oct 11"
         },
         {
           "t": 6.8,
           "wh": 181,
           "km": 247,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Gander",
+          "day": 40,
+          "date": "Oct 11"
         },
         {
           "t": 6.9,
           "wh": 165,
           "km": 176,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "South Brook",
+          "day": 40,
+          "date": "Oct 11"
         },
         {
           "t": 8.5,
           "wh": 175,
           "km": 130,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Deer Lake",
+          "day": 40,
+          "date": "Oct 11"
         },
         {
           "t": 7.2,
           "wh": 151,
           "km": 96,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Newfoundland and Labrador",
+          "day": 40,
+          "date": "Oct 11"
         },
         {
           "t": 6.1,
           "wh": 171,
           "km": 148,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Corner Brook",
+          "day": 40,
+          "date": "Oct 11"
         },
         {
           "t": 9.7,
           "wh": 179,
           "km": 215,
-          "prov": "Newfoundland and Labrador"
+          "prov": "Newfoundland and Labrador",
+          "ctry": "CA",
+          "town": "Channel-Port aux Basques",
+          "day": 41,
+          "date": "Oct 12"
         },
         {
           "t": 13.9,
           "wh": 149,
           "km": 96,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "East Lake Ainslie",
+          "day": 41,
+          "date": "Oct 12"
         },
         {
           "t": 11.2,
           "wh": 172,
           "km": 158,
-          "prov": "Nova Scotia"
+          "prov": "Nova Scotia",
+          "ctry": "CA",
+          "town": "Nova Scotia",
+          "day": 41,
+          "date": "Oct 12"
         },
         {
           "t": 7.6,
           "wh": 185,
           "km": 169,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Pointe de Bute",
+          "day": 41,
+          "date": "Oct 12"
         },
         {
           "t": 5.5,
           "wh": 176,
           "km": 232,
-          "prov": "New Brunswick"
+          "prov": "New Brunswick",
+          "ctry": "CA",
+          "town": "Fredericton",
+          "day": 41,
+          "date": "Oct 12"
         },
         {
           "t": 1.1,
           "wh": 202,
           "km": 114,
-          "prov": "Maine"
+          "prov": "Maine",
+          "ctry": "US",
+          "town": "Houlton",
+          "day": 42,
+          "date": "Oct 13"
         },
         {
           "t": 1.4,
           "wh": 203,
           "km": 98,
-          "prov": "Maine"
+          "prov": "Maine",
+          "ctry": "US",
+          "town": "Medway",
+          "day": 42,
+          "date": "Oct 13"
         },
         {
           "t": 3.7,
           "wh": 182,
           "km": 214,
-          "prov": "Maine"
+          "prov": "Maine",
+          "ctry": "US",
+          "town": "Augusta",
+          "day": 42,
+          "date": "Oct 13"
         },
         {
           "t": 8,
           "wh": 159,
           "km": 233,
-          "prov": "Massachusetts"
+          "prov": "Massachusetts",
+          "ctry": "US",
+          "town": "Danvers",
+          "day": 42,
+          "date": "Oct 13"
         },
         {
           "t": 16,
           "wh": 133,
           "km": 221,
-          "prov": "Connecticut"
+          "prov": "Connecticut",
+          "ctry": "US",
+          "town": "New London",
+          "day": 42,
+          "date": "Oct 13"
         },
         {
           "t": 19.9,
           "wh": 122,
           "km": 180,
-          "prov": "New York"
+          "prov": "New York",
+          "ctry": "US",
+          "town": "Bronx",
+          "day": 42,
+          "date": "Oct 13"
         }
       ],
-      "median": 152,
+      "median": 154,
       "best": 66,
-      "worst": 491,
+      "worst": 311,
       "provinces": [
         "Manitoba",
         "Saskatchewan",
@@ -14792,16 +14141,2246 @@
         "Massachusetts",
         "Connecticut",
         "New York"
-      ]
+      ],
+      "trend": [
+        {
+          "t": 7,
+          "wh": 165,
+          "n": 7
+        },
+        {
+          "t": 9,
+          "wh": 161,
+          "n": 8
+        },
+        {
+          "t": 11,
+          "wh": 177,
+          "n": 20
+        },
+        {
+          "t": 13,
+          "wh": 163,
+          "n": 26
+        },
+        {
+          "t": 15,
+          "wh": 155,
+          "n": 28
+        },
+        {
+          "t": 17,
+          "wh": 146,
+          "n": 26
+        },
+        {
+          "t": 19,
+          "wh": 153,
+          "n": 24
+        },
+        {
+          "t": 21,
+          "wh": 147,
+          "n": 26
+        },
+        {
+          "t": 23,
+          "wh": 149,
+          "n": 12
+        },
+        {
+          "t": 25,
+          "wh": 182,
+          "n": 4
+        }
+      ],
+      "minKm": 20
+    },
+    "chargeTimes": {
+      "lanes": [
+        {
+          "key": "sc",
+          "label": "Supercharger",
+          "points": [
+            {
+              "min": 22,
+              "kwh": 33.4,
+              "soc0": 36,
+              "soc1": 89,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Brandon",
+              "day": 1,
+              "date": "Sep 2"
+            },
+            {
+              "min": 5,
+              "kwh": 11.1,
+              "soc0": 38,
+              "soc1": 55,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "Whitewood",
+              "day": 1,
+              "date": "Sep 2"
+            },
+            {
+              "min": 54,
+              "kwh": 53.3,
+              "soc0": 15,
+              "soc1": 100,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "Regina",
+              "day": 1,
+              "date": "Sep 2"
+            },
+            {
+              "min": 16,
+              "kwh": 28.9,
+              "soc0": 34,
+              "soc1": 80,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "Swift Current",
+              "day": 1,
+              "date": "Sep 2"
+            },
+            {
+              "min": 30,
+              "kwh": 45.7,
+              "soc0": 17,
+              "soc1": 90,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Medicine Hat",
+              "day": 1,
+              "date": "Sep 2"
+            },
+            {
+              "min": 35,
+              "kwh": 52.2,
+              "soc0": 12,
+              "soc1": 94,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Calgary",
+              "day": 2,
+              "date": "Sep 3"
+            },
+            {
+              "min": 6,
+              "kwh": 11.5,
+              "soc0": 59,
+              "soc1": 77,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Calgary",
+              "day": 2,
+              "date": "Sep 3"
+            },
+            {
+              "min": 18,
+              "kwh": 34.5,
+              "soc0": 25,
+              "soc1": 79,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Strathmore",
+              "day": 2,
+              "date": "Sep 3"
+            },
+            {
+              "min": 25,
+              "kwh": 42.7,
+              "soc0": 19,
+              "soc1": 87,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Red Deer County",
+              "day": 3,
+              "date": "Sep 4"
+            },
+            {
+              "min": 44,
+              "kwh": 55.7,
+              "soc0": 9,
+              "soc1": 98,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Whitecourt",
+              "day": 3,
+              "date": "Sep 4"
+            },
+            {
+              "min": 12,
+              "kwh": 24.1,
+              "soc0": 43,
+              "soc1": 81,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Valleyview",
+              "day": 3,
+              "date": "Sep 4"
+            },
+            {
+              "min": 17,
+              "kwh": 25.6,
+              "soc0": 49,
+              "soc1": 90,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Grande Prairie",
+              "day": 3,
+              "date": "Sep 4"
+            },
+            {
+              "min": 17,
+              "kwh": 20.5,
+              "soc0": 60,
+              "soc1": 93,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Grande Prairie",
+              "day": 9,
+              "date": "Sep 10"
+            },
+            {
+              "min": 6,
+              "kwh": 12.4,
+              "soc0": 61,
+              "soc1": 81,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Valleyview",
+              "day": 9,
+              "date": "Sep 10"
+            },
+            {
+              "min": 7,
+              "kwh": 14.3,
+              "soc0": 33,
+              "soc1": 56,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Whitecourt",
+              "day": 9,
+              "date": "Sep 10"
+            },
+            {
+              "min": 15,
+              "kwh": 29.8,
+              "soc0": 28,
+              "soc1": 76,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Edson",
+              "day": 9,
+              "date": "Sep 10"
+            },
+            {
+              "min": 9,
+              "kwh": 20.1,
+              "soc0": 29,
+              "soc1": 60,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Jasper",
+              "day": 9,
+              "date": "Sep 10"
+            },
+            {
+              "min": 12,
+              "kwh": 23.9,
+              "soc0": 35,
+              "soc1": 74,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Valemount",
+              "day": 9,
+              "date": "Sep 10"
+            },
+            {
+              "min": 16,
+              "kwh": 25.1,
+              "soc0": 21,
+              "soc1": 63,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Clearwater",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 7,
+              "kwh": 15,
+              "soc0": 31,
+              "soc1": 55,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Kamloops",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 3,
+              "kwh": 5.3,
+              "soc0": 57,
+              "soc1": 65,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Kamloops",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 4,
+              "kwh": 5.6,
+              "soc0": 64,
+              "soc1": 72,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Kamloops",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 6,
+              "kwh": 12.7,
+              "soc0": 48,
+              "soc1": 67,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Merritt",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 3,
+              "kwh": 3.8,
+              "soc0": 69,
+              "soc1": 74,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Merritt",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 4,
+              "kwh": 3.9,
+              "soc0": 75,
+              "soc1": 82,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Merritt",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 3,
+              "kwh": 2.5,
+              "soc0": 82,
+              "soc1": 86,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Merritt",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 4,
+              "kwh": 8.5,
+              "soc0": 59,
+              "soc1": 71,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Hope",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 5,
+              "kwh": 6.2,
+              "soc0": 74,
+              "soc1": 84,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Hope",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 4,
+              "kwh": 3.6,
+              "soc0": 83,
+              "soc1": 89,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Hope",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 11,
+              "kwh": 11.5,
+              "soc0": 77,
+              "soc1": 94,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Chilliwack",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 4,
+              "kwh": 4.3,
+              "soc0": 89,
+              "soc1": 95,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Abbotsford",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 4,
+              "kwh": 1.9,
+              "soc0": 95,
+              "soc1": 98,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Abbotsford",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 7,
+              "kwh": 9.7,
+              "soc0": 68,
+              "soc1": 84,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Squamish",
+              "day": 10,
+              "date": "Sep 11"
+            },
+            {
+              "min": 5,
+              "kwh": 6.3,
+              "soc0": 61,
+              "soc1": 74,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Squamish",
+              "day": 11,
+              "date": "Sep 12"
+            },
+            {
+              "min": 2,
+              "kwh": 3.4,
+              "soc0": 49,
+              "soc1": 52,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "North Vancouver",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 3,
+              "kwh": 5.7,
+              "soc0": 55,
+              "soc1": 64,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "North Vancouver",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 2,
+              "kwh": 3.7,
+              "soc0": 58,
+              "soc1": 63,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Burnaby",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 1,
+              "kwh": 1.3,
+              "soc0": 65,
+              "soc1": 66,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Vancouver",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 4,
+              "kwh": 2.6,
+              "soc0": 65,
+              "soc1": 69,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Richmond",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 3,
+              "kwh": 4.1,
+              "soc0": 68,
+              "soc1": 75,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Richmond",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 2,
+              "kwh": 2.3,
+              "soc0": 75,
+              "soc1": 79,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Richmond",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 3,
+              "kwh": 3.3,
+              "soc0": 76,
+              "soc1": 82,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Vancouver",
+              "day": 12,
+              "date": "Sep 13"
+            },
+            {
+              "min": 30,
+              "kwh": 40.7,
+              "soc0": 31,
+              "soc1": 95,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Whistler",
+              "day": 13,
+              "date": "Sep 14"
+            },
+            {
+              "min": 12,
+              "kwh": 20.1,
+              "soc0": 55,
+              "soc1": 88,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Delta",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 2,
+              "kwh": 2.5,
+              "soc0": 80,
+              "soc1": 83,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "North Saanich",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 6,
+              "kwh": 5.7,
+              "soc0": 77,
+              "soc1": 86,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Victoria",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 6,
+              "kwh": 12.1,
+              "soc0": 60,
+              "soc1": 80,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Nanaimo",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 5,
+              "kwh": 5,
+              "soc0": 81,
+              "soc1": 89,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Nanaimo",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 7,
+              "kwh": 10.4,
+              "soc0": 75,
+              "soc1": 91,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Port Alberni",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 17,
+              "kwh": 19.9,
+              "soc0": 64,
+              "soc1": 96,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Tofino",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 20,
+              "kwh": 26.1,
+              "soc0": 54,
+              "soc1": 96,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Nanaimo",
+              "day": 15,
+              "date": "Sep 16"
+            },
+            {
+              "min": 3,
+              "kwh": 4.4,
+              "soc0": 84,
+              "soc1": 92,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Tsawwassen",
+              "day": 15,
+              "date": "Sep 16"
+            },
+            {
+              "min": 22,
+              "kwh": 41.1,
+              "soc0": 13,
+              "soc1": 80,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Merritt",
+              "day": 15,
+              "date": "Sep 16"
+            },
+            {
+              "min": 9,
+              "kwh": 18.4,
+              "soc0": 26,
+              "soc1": 56,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Salmon Arm",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 5,
+              "kwh": 4.5,
+              "soc0": 30,
+              "soc1": 37,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Revelstoke",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 5,
+              "kwh": 8.5,
+              "soc0": 37,
+              "soc1": 50,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Revelstoke",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 6,
+              "kwh": 12.8,
+              "soc0": 14,
+              "soc1": 35,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Golden",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 2,
+              "kwh": 4.4,
+              "soc0": 39,
+              "soc1": 48,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Golden",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 24,
+              "kwh": 28.1,
+              "soc0": 48,
+              "soc1": 93,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Golden",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 4,
+              "kwh": 5,
+              "soc0": 50,
+              "soc1": 58,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Canmore",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 4,
+              "kwh": 8.3,
+              "soc0": 61,
+              "soc1": 74,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Canmore",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 2,
+              "kwh": 2.4,
+              "soc0": 75,
+              "soc1": 78,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Canmore",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 11,
+              "kwh": 11.2,
+              "soc0": 74,
+              "soc1": 92,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Kananaskis",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 7,
+              "kwh": 12.8,
+              "soc0": 58,
+              "soc1": 77,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Kananaskis",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 13,
+              "kwh": 17.5,
+              "soc0": 64,
+              "soc1": 92,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Calgary",
+              "day": 16,
+              "date": "Sep 17"
+            },
+            {
+              "min": 9,
+              "kwh": 18.3,
+              "soc0": 50,
+              "soc1": 79,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Bassano",
+              "day": 17,
+              "date": "Sep 18"
+            },
+            {
+              "min": 20,
+              "kwh": 32,
+              "soc0": 37,
+              "soc1": 89,
+              "prov": "Alberta",
+              "ctry": "CA",
+              "town": "Medicine Hat",
+              "day": 17,
+              "date": "Sep 18"
+            },
+            {
+              "min": 25,
+              "kwh": 39.8,
+              "soc0": 22,
+              "soc1": 87,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "Swift Current",
+              "day": 17,
+              "date": "Sep 18"
+            },
+            {
+              "min": 23,
+              "kwh": 35.4,
+              "soc0": 34,
+              "soc1": 91,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "Moose Jaw",
+              "day": 17,
+              "date": "Sep 18"
+            },
+            {
+              "min": 18,
+              "kwh": 32.4,
+              "soc0": 32,
+              "soc1": 84,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "Whitewood",
+              "day": 18,
+              "date": "Sep 19"
+            },
+            {
+              "min": 18,
+              "kwh": 33.2,
+              "soc0": 27,
+              "soc1": 81,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Brandon",
+              "day": 18,
+              "date": "Sep 19"
+            },
+            {
+              "min": 6,
+              "kwh": 9.8,
+              "soc0": 78,
+              "soc1": 93,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Morris",
+              "day": 20,
+              "date": "Sep 21"
+            },
+            {
+              "min": 7,
+              "kwh": 13.8,
+              "soc0": 44,
+              "soc1": 68,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winnipeg",
+              "day": 20,
+              "date": "Sep 21"
+            },
+            {
+              "min": 18,
+              "kwh": 34.6,
+              "soc0": 25,
+              "soc1": 80,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Morris",
+              "day": 24,
+              "date": "Sep 25"
+            },
+            {
+              "min": 33,
+              "kwh": 49.2,
+              "soc0": 15,
+              "soc1": 94,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Kenora",
+              "day": 24,
+              "date": "Sep 25"
+            },
+            {
+              "min": 22,
+              "kwh": 31.6,
+              "soc0": 41,
+              "soc1": 92,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Reynolds",
+              "day": 25,
+              "date": "Sep 26"
+            },
+            {
+              "min": 26,
+              "kwh": 39.7,
+              "soc0": 27,
+              "soc1": 91,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Portage La Prairie",
+              "day": 27,
+              "date": "Sep 28"
+            },
+            {
+              "min": 25,
+              "kwh": 45.4,
+              "soc0": 5,
+              "soc1": 79,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Reynolds",
+              "day": 28,
+              "date": "Sep 29"
+            },
+            {
+              "min": 16,
+              "kwh": 32.4,
+              "soc0": 20,
+              "soc1": 72,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Dryden",
+              "day": 28,
+              "date": "Sep 29"
+            },
+            {
+              "min": 16,
+              "kwh": 31.2,
+              "soc0": 24,
+              "soc1": 75,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Upsala",
+              "day": 28,
+              "date": "Sep 29"
+            },
+            {
+              "min": 12,
+              "kwh": 23.2,
+              "soc0": 44,
+              "soc1": 81,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Terrace Bay",
+              "day": 29,
+              "date": "Sep 30"
+            },
+            {
+              "min": 22,
+              "kwh": 41.2,
+              "soc0": 18,
+              "soc1": 83,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Wawa",
+              "day": 29,
+              "date": "Sep 30"
+            },
+            {
+              "min": 23,
+              "kwh": 39.9,
+              "soc0": 24,
+              "soc1": 88,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Sault Ste. Marie",
+              "day": 29,
+              "date": "Sep 30"
+            },
+            {
+              "min": 11,
+              "kwh": 21.9,
+              "soc0": 36,
+              "soc1": 74,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "McKerrow",
+              "day": 29,
+              "date": "Sep 30"
+            },
+            {
+              "min": 23,
+              "kwh": 42.1,
+              "soc0": 12,
+              "soc1": 80,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Parry Sound",
+              "day": 29,
+              "date": "Sep 30"
+            },
+            {
+              "min": 10,
+              "kwh": 15.9,
+              "soc0": 58,
+              "soc1": 83,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Port Severn",
+              "day": 29,
+              "date": "Sep 30"
+            },
+            {
+              "min": 37,
+              "kwh": 49.2,
+              "soc0": 19,
+              "soc1": 98,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Milton",
+              "day": 30,
+              "date": "Oct 1"
+            },
+            {
+              "min": 1,
+              "kwh": 0.8,
+              "soc0": 82,
+              "soc1": 84,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Kitchener",
+              "day": 31,
+              "date": "Oct 2"
+            },
+            {
+              "min": 25,
+              "kwh": 41.9,
+              "soc0": 21,
+              "soc1": 88,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Trenton",
+              "day": 31,
+              "date": "Oct 2"
+            },
+            {
+              "min": 16,
+              "kwh": 34.4,
+              "soc0": 10,
+              "soc1": 65,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Gloucester",
+              "day": 31,
+              "date": "Oct 2"
+            },
+            {
+              "min": 15,
+              "kwh": 29.9,
+              "soc0": 29,
+              "soc1": 77,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Mont-Tremblant",
+              "day": 31,
+              "date": "Oct 2"
+            },
+            {
+              "min": 7,
+              "kwh": 7.2,
+              "soc0": 77,
+              "soc1": 89,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Mont-Tremblant",
+              "day": 31,
+              "date": "Oct 2"
+            },
+            {
+              "min": 44,
+              "kwh": 43.7,
+              "soc0": 24,
+              "soc1": 94,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Montréal",
+              "day": 33,
+              "date": "Oct 4"
+            },
+            {
+              "min": 11,
+              "kwh": 21.4,
+              "soc0": 29,
+              "soc1": 63,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Québec",
+              "day": 33,
+              "date": "Oct 4"
+            },
+            {
+              "min": 16,
+              "kwh": 29.6,
+              "soc0": 41,
+              "soc1": 89,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Rivière-du-Loup",
+              "day": 34,
+              "date": "Oct 5"
+            },
+            {
+              "min": 16,
+              "kwh": 29.1,
+              "soc0": 40,
+              "soc1": 87,
+              "prov": "New Brunswick",
+              "ctry": "CA",
+              "town": "Saint-Léonard",
+              "day": 34,
+              "date": "Oct 5"
+            },
+            {
+              "min": 15,
+              "kwh": 27.7,
+              "soc0": 38,
+              "soc1": 82,
+              "prov": "New Brunswick",
+              "ctry": "CA",
+              "town": "Lower Woodstock",
+              "day": 34,
+              "date": "Oct 5"
+            },
+            {
+              "min": 19,
+              "kwh": 36.8,
+              "soc0": 17,
+              "soc1": 76,
+              "prov": "New Brunswick",
+              "ctry": "CA",
+              "town": "Salisbury",
+              "day": 34,
+              "date": "Oct 5"
+            },
+            {
+              "min": 33,
+              "kwh": 48.7,
+              "soc0": 18,
+              "soc1": 96,
+              "prov": "Prince Edward Island",
+              "ctry": "CA",
+              "town": "Charlottetown",
+              "day": 35,
+              "date": "Oct 6"
+            },
+            {
+              "min": 13,
+              "kwh": 20.1,
+              "soc0": 60,
+              "soc1": 92,
+              "prov": "New Brunswick",
+              "ctry": "CA",
+              "town": "Pointe de Bute",
+              "day": 35,
+              "date": "Oct 6"
+            },
+            {
+              "min": 10,
+              "kwh": 19.6,
+              "soc0": 40,
+              "soc1": 72,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Enfield",
+              "day": 35,
+              "date": "Oct 6"
+            },
+            {
+              "min": 17,
+              "kwh": 31.2,
+              "soc0": 36,
+              "soc1": 86,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Kentville",
+              "day": 35,
+              "date": "Oct 6"
+            },
+            {
+              "min": 24,
+              "kwh": 41.2,
+              "soc0": 14,
+              "soc1": 80,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Yarmouth",
+              "day": 36,
+              "date": "Oct 7"
+            },
+            {
+              "min": 20,
+              "kwh": 31.4,
+              "soc0": 40,
+              "soc1": 90,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Enfield",
+              "day": 36,
+              "date": "Oct 7"
+            },
+            {
+              "min": 20,
+              "kwh": 35.3,
+              "soc0": 27,
+              "soc1": 84,
+              "prov": "New Brunswick",
+              "ctry": "CA",
+              "town": "Pointe de Bute",
+              "day": 41,
+              "date": "Oct 12"
+            },
+            {
+              "min": 17,
+              "kwh": 32.7,
+              "soc0": 28,
+              "soc1": 80,
+              "prov": "Maine",
+              "ctry": "US",
+              "town": "Medway",
+              "day": 42,
+              "date": "Oct 13"
+            },
+            {
+              "min": 19,
+              "kwh": 38.6,
+              "soc0": 14,
+              "soc1": 76,
+              "prov": "Maine",
+              "ctry": "US",
+              "town": "Augusta",
+              "day": 42,
+              "date": "Oct 13"
+            },
+            {
+              "min": 18,
+              "kwh": 38.6,
+              "soc0": 14,
+              "soc1": 76,
+              "prov": "Massachusetts",
+              "ctry": "US",
+              "town": "Danvers",
+              "day": 42,
+              "date": "Oct 13"
+            },
+            {
+              "min": 17,
+              "kwh": 33,
+              "soc0": 27,
+              "soc1": 80,
+              "prov": "Connecticut",
+              "ctry": "US",
+              "town": "New London",
+              "day": 42,
+              "date": "Oct 13"
+            }
+          ],
+          "n": 109,
+          "median": 12,
+          "mean": 14,
+          "shortest": {
+            "min": 1,
+            "kwh": 1.3,
+            "soc0": 65,
+            "soc1": 66,
+            "prov": "British Columbia",
+            "ctry": "CA",
+            "town": "Vancouver",
+            "day": 12,
+            "date": "Sep 13"
+          },
+          "longest": {
+            "min": 54,
+            "kwh": 53.3,
+            "soc0": 15,
+            "soc1": 100,
+            "prov": "Saskatchewan",
+            "ctry": "CA",
+            "town": "Regina",
+            "day": 1,
+            "date": "Sep 2"
+          }
+        },
+        {
+          "key": "other",
+          "label": "Other quick charges",
+          "points": [
+            {
+              "min": 162,
+              "kwh": 19.6,
+              "soc0": 51,
+              "soc1": 82,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 0,
+              "date": "Sep 1"
+            },
+            {
+              "min": 10,
+              "kwh": 0.2,
+              "soc0": 82,
+              "soc1": 82,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 0,
+              "date": "Sep 1"
+            },
+            {
+              "min": 10,
+              "kwh": 0.2,
+              "soc0": 82,
+              "soc1": 83,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 0,
+              "date": "Sep 1"
+            },
+            {
+              "min": 12,
+              "kwh": 15.9,
+              "soc0": 60,
+              "soc1": 85,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Dawson Creek",
+              "day": 3,
+              "date": "Sep 4"
+            },
+            {
+              "min": 61,
+              "kwh": 42,
+              "soc0": 27,
+              "soc1": 94,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Buick",
+              "day": 3,
+              "date": "Sep 4"
+            },
+            {
+              "min": 21,
+              "kwh": 37.2,
+              "soc0": 23,
+              "soc1": 82,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Fort Nelson",
+              "day": 4,
+              "date": "Sep 5"
+            },
+            {
+              "min": 31,
+              "kwh": 9.2,
+              "soc0": 33,
+              "soc1": 47,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Fort Nelson",
+              "day": 4,
+              "date": "Sep 5"
+            },
+            {
+              "min": 54,
+              "kwh": 39,
+              "soc0": 22,
+              "soc1": 85,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Fort Nelson",
+              "day": 4,
+              "date": "Sep 5"
+            },
+            {
+              "min": 54,
+              "kwh": 40.4,
+              "soc0": 25,
+              "soc1": 90,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Watson Lake",
+              "day": 4,
+              "date": "Sep 5"
+            },
+            {
+              "min": 29,
+              "kwh": 13.6,
+              "soc0": 25,
+              "soc1": 47,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Teslin",
+              "day": 4,
+              "date": "Sep 5"
+            },
+            {
+              "min": 20,
+              "kwh": 7,
+              "soc0": 32,
+              "soc1": 43,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Teslin",
+              "day": 4,
+              "date": "Sep 5"
+            },
+            {
+              "min": 72,
+              "kwh": 50.9,
+              "soc0": 11,
+              "soc1": 92,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Whitehorse",
+              "day": 5,
+              "date": "Sep 6"
+            },
+            {
+              "min": 33,
+              "kwh": 24.3,
+              "soc0": 47,
+              "soc1": 86,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Carmacks",
+              "day": 5,
+              "date": "Sep 6"
+            },
+            {
+              "min": 26,
+              "kwh": 18.6,
+              "soc0": 39,
+              "soc1": 69,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Mayo",
+              "day": 5,
+              "date": "Sep 6"
+            },
+            {
+              "min": 69,
+              "kwh": 48,
+              "soc0": 20,
+              "soc1": 96,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Dawson",
+              "day": 5,
+              "date": "Sep 6"
+            },
+            {
+              "min": 29,
+              "kwh": 21.6,
+              "soc0": 51,
+              "soc1": 85,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Dawson",
+              "day": 6,
+              "date": "Sep 7"
+            },
+            {
+              "min": 34,
+              "kwh": 23.8,
+              "soc0": 33,
+              "soc1": 71,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Mayo",
+              "day": 6,
+              "date": "Sep 7"
+            },
+            {
+              "min": 32,
+              "kwh": 23.5,
+              "soc0": 20,
+              "soc1": 57,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Carmacks",
+              "day": 6,
+              "date": "Sep 7"
+            },
+            {
+              "min": 182,
+              "kwh": 19.8,
+              "soc0": 69,
+              "soc1": 100,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Marsh Lake",
+              "day": 7,
+              "date": "Sep 8"
+            },
+            {
+              "min": 42,
+              "kwh": 15,
+              "soc0": 63,
+              "soc1": 87,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Teslin",
+              "day": 7,
+              "date": "Sep 8"
+            },
+            {
+              "min": 71,
+              "kwh": 52.7,
+              "soc0": 9,
+              "soc1": 92,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Watson Lake",
+              "day": 7,
+              "date": "Sep 8"
+            },
+            {
+              "min": 62,
+              "kwh": 39.7,
+              "soc0": 35,
+              "soc1": 98,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Fort Nelson",
+              "day": 7,
+              "date": "Sep 8"
+            },
+            {
+              "min": 25,
+              "kwh": 45.3,
+              "soc0": 13,
+              "soc1": 86,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Fort Nelson",
+              "day": 8,
+              "date": "Sep 9"
+            },
+            {
+              "min": 57,
+              "kwh": 41.9,
+              "soc0": 14,
+              "soc1": 81,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Buick",
+              "day": 8,
+              "date": "Sep 9"
+            },
+            {
+              "min": 42,
+              "kwh": 42.1,
+              "soc0": 30,
+              "soc1": 97,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Dawson Creek",
+              "day": 8,
+              "date": "Sep 9"
+            },
+            {
+              "min": 62,
+              "kwh": 1,
+              "soc0": 62,
+              "soc1": 64,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "White City",
+              "day": 17,
+              "date": "Sep 18"
+            },
+            {
+              "min": 9,
+              "kwh": 1,
+              "soc0": 79,
+              "soc1": 81,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 20,
+              "date": "Sep 21"
+            },
+            {
+              "min": 104,
+              "kwh": 12.1,
+              "soc0": 81,
+              "soc1": 100,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 20,
+              "date": "Sep 21"
+            },
+            {
+              "min": 28,
+              "kwh": 20.2,
+              "soc0": 37,
+              "soc1": 69,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Fairford",
+              "day": 21,
+              "date": "Sep 22"
+            },
+            {
+              "min": 38,
+              "kwh": 36.3,
+              "soc0": 17,
+              "soc1": 75,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Cormorant",
+              "day": 21,
+              "date": "Sep 22"
+            },
+            {
+              "min": 30,
+              "kwh": 3.1,
+              "soc0": 30,
+              "soc1": 35,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Wabowden",
+              "day": 22,
+              "date": "Sep 23"
+            },
+            {
+              "min": 61,
+              "kwh": 43.9,
+              "soc0": 11,
+              "soc1": 82,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Thompson",
+              "day": 22,
+              "date": "Sep 23"
+            },
+            {
+              "min": 47,
+              "kwh": 34.1,
+              "soc0": 29,
+              "soc1": 84,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Thompson",
+              "day": 22,
+              "date": "Sep 23"
+            },
+            {
+              "min": 88,
+              "kwh": 1.6,
+              "soc0": 61,
+              "soc1": 63,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Manitoba",
+              "day": 22,
+              "date": "Sep 23"
+            },
+            {
+              "min": 39,
+              "kwh": 36.4,
+              "soc0": 15,
+              "soc1": 75,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Cormorant",
+              "day": 23,
+              "date": "Sep 24"
+            },
+            {
+              "min": 49,
+              "kwh": 35.6,
+              "soc0": 22,
+              "soc1": 80,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Fairford",
+              "day": 23,
+              "date": "Sep 24"
+            },
+            {
+              "min": 17,
+              "kwh": 19.5,
+              "soc0": 18,
+              "soc1": 50,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winnipeg",
+              "day": 23,
+              "date": "Sep 24"
+            },
+            {
+              "min": 9,
+              "kwh": 1,
+              "soc0": 39,
+              "soc1": 40,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 24,
+              "date": "Sep 25"
+            },
+            {
+              "min": 142,
+              "kwh": 2.5,
+              "soc0": 39,
+              "soc1": 43,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 24,
+              "date": "Sep 25"
+            },
+            {
+              "min": 122,
+              "kwh": 1.9,
+              "soc0": 23,
+              "soc1": 26,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 26,
+              "date": "Sep 27"
+            },
+            {
+              "min": 39,
+              "kwh": 41,
+              "soc0": 25,
+              "soc1": 91,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 26,
+              "date": "Sep 27"
+            },
+            {
+              "min": 78,
+              "kwh": 1.3,
+              "soc0": 68,
+              "soc1": 70,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winnipeg",
+              "day": 27,
+              "date": "Sep 28"
+            },
+            {
+              "min": 111,
+              "kwh": 13.8,
+              "soc0": 13,
+              "soc1": 35,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "New Hamburg",
+              "day": 30,
+              "date": "Oct 1"
+            },
+            {
+              "min": 214,
+              "kwh": 27,
+              "soc0": 51,
+              "soc1": 94,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "New Hamburg",
+              "day": 30,
+              "date": "Oct 1"
+            },
+            {
+              "min": 228,
+              "kwh": 24.4,
+              "soc0": 61,
+              "soc1": 100,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Québec",
+              "day": 33,
+              "date": "Oct 4"
+            },
+            {
+              "min": 12,
+              "kwh": 0.8,
+              "soc0": 99,
+              "soc1": 100,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Québec",
+              "day": 34,
+              "date": "Oct 5"
+            },
+            {
+              "min": 5,
+              "kwh": 0.4,
+              "soc0": 98,
+              "soc1": 99,
+              "prov": "Quebec",
+              "ctry": "CA",
+              "town": "Québec",
+              "day": 34,
+              "date": "Oct 5"
+            },
+            {
+              "min": 20,
+              "kwh": 30.3,
+              "soc0": 41,
+              "soc1": 90,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Liverpool",
+              "day": 36,
+              "date": "Oct 7"
+            },
+            {
+              "min": 20,
+              "kwh": 24.4,
+              "soc0": 37,
+              "soc1": 76,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Afton Station",
+              "day": 36,
+              "date": "Oct 7"
+            },
+            {
+              "min": 15,
+              "kwh": 28.3,
+              "soc0": 34,
+              "soc1": 80,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Chéticamp",
+              "day": 36,
+              "date": "Oct 7"
+            },
+            {
+              "min": 50,
+              "kwh": 43.5,
+              "soc0": 19,
+              "soc1": 88,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Channel-Port aux Basques",
+              "day": 37,
+              "date": "Oct 8"
+            },
+            {
+              "min": 34,
+              "kwh": 48.3,
+              "soc0": 18,
+              "soc1": 96,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Deer Lake",
+              "day": 37,
+              "date": "Oct 8"
+            },
+            {
+              "min": 35,
+              "kwh": 51.4,
+              "soc0": 14,
+              "soc1": 96,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Gander",
+              "day": 37,
+              "date": "Oct 8"
+            },
+            {
+              "min": 10,
+              "kwh": 18.1,
+              "soc0": 54,
+              "soc1": 84,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Clarenville",
+              "day": 37,
+              "date": "Oct 8"
+            },
+            {
+              "min": 32,
+              "kwh": 46.1,
+              "soc0": 21,
+              "soc1": 95,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "St. John's",
+              "day": 38,
+              "date": "Oct 9"
+            },
+            {
+              "min": 21,
+              "kwh": 30,
+              "soc0": 34,
+              "soc1": 82,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Whitbourne",
+              "day": 40,
+              "date": "Oct 11"
+            },
+            {
+              "min": 47,
+              "kwh": 51.5,
+              "soc0": 5,
+              "soc1": 88,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Gander",
+              "day": 40,
+              "date": "Oct 11"
+            },
+            {
+              "min": 8,
+              "kwh": 6.8,
+              "soc0": 38,
+              "soc1": 49,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "South Brook",
+              "day": 40,
+              "date": "Oct 11"
+            },
+            {
+              "min": 23,
+              "kwh": 43.3,
+              "soc0": 11,
+              "soc1": 80,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Deer Lake",
+              "day": 40,
+              "date": "Oct 11"
+            },
+            {
+              "min": 55,
+              "kwh": 48.3,
+              "soc0": 12,
+              "soc1": 89,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Corner Brook",
+              "day": 40,
+              "date": "Oct 11"
+            },
+            {
+              "min": 20,
+              "kwh": 18.3,
+              "soc0": 21,
+              "soc1": 50,
+              "prov": "Newfoundland and Labrador",
+              "ctry": "CA",
+              "town": "Channel-Port aux Basques",
+              "day": 41,
+              "date": "Oct 12"
+            },
+            {
+              "min": 17,
+              "kwh": 33.9,
+              "soc0": 22,
+              "soc1": 77,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "East Lake Ainslie",
+              "day": 41,
+              "date": "Oct 12"
+            },
+            {
+              "min": 17,
+              "kwh": 30.5,
+              "soc0": 32,
+              "soc1": 80,
+              "prov": "Nova Scotia",
+              "ctry": "CA",
+              "town": "Nova Scotia",
+              "day": 41,
+              "date": "Oct 12"
+            }
+          ],
+          "n": 63,
+          "median": 34,
+          "mean": 51,
+          "shortest": {
+            "min": 5,
+            "kwh": 0.4,
+            "soc0": 98,
+            "soc1": 99,
+            "prov": "Quebec",
+            "ctry": "CA",
+            "town": "Québec",
+            "day": 34,
+            "date": "Oct 5"
+          },
+          "longest": {
+            "min": 228,
+            "kwh": 24.4,
+            "soc0": 61,
+            "soc1": 100,
+            "prov": "Quebec",
+            "ctry": "CA",
+            "town": "Québec",
+            "day": 33,
+            "date": "Oct 4"
+          }
+        },
+        {
+          "key": "night",
+          "label": "Overnight",
+          "points": [
+            {
+              "min": 495,
+              "kwh": 8.8,
+              "soc0": 83,
+              "soc1": 97,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 0,
+              "date": "Sep 1"
+            },
+            {
+              "min": 295,
+              "kwh": 35.5,
+              "soc0": 14,
+              "soc1": 70,
+              "prov": "Yukon",
+              "ctry": "CA",
+              "town": "Marsh Lake",
+              "day": 6,
+              "date": "Sep 7"
+            },
+            {
+              "min": 334,
+              "kwh": 3.5,
+              "soc0": 94,
+              "soc1": 99,
+              "prov": "British Columbia",
+              "ctry": "CA",
+              "town": "Tofino",
+              "day": 14,
+              "date": "Sep 15"
+            },
+            {
+              "min": 746,
+              "kwh": 13.8,
+              "soc0": 62,
+              "soc1": 84,
+              "prov": "Saskatchewan",
+              "ctry": "CA",
+              "town": "White City",
+              "day": 17,
+              "date": "Sep 18"
+            },
+            {
+              "min": 1151,
+              "kwh": 21.3,
+              "soc0": 14,
+              "soc1": 48,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 18,
+              "date": "Sep 19"
+            },
+            {
+              "min": 448,
+              "kwh": 8,
+              "soc0": 48,
+              "soc1": 61,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 19,
+              "date": "Sep 20"
+            },
+            {
+              "min": 709,
+              "kwh": 13.1,
+              "soc0": 59,
+              "soc1": 80,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 19,
+              "date": "Sep 20"
+            },
+            {
+              "min": 1053,
+              "kwh": 19.9,
+              "soc0": 68,
+              "soc1": 100,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winnipeg",
+              "day": 20,
+              "date": "Sep 21"
+            },
+            {
+              "min": 841,
+              "kwh": 9.1,
+              "soc0": 72,
+              "soc1": 86,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Manitoba",
+              "day": 21,
+              "date": "Sep 22"
+            },
+            {
+              "min": 688,
+              "kwh": 12.4,
+              "soc0": 63,
+              "soc1": 83,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Manitoba",
+              "day": 22,
+              "date": "Sep 23"
+            },
+            {
+              "min": 777,
+              "kwh": 14.2,
+              "soc0": 17,
+              "soc1": 39,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 23,
+              "date": "Sep 24"
+            },
+            {
+              "min": 831,
+              "kwh": 16.2,
+              "soc0": 48,
+              "soc1": 74,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Bélair",
+              "day": 25,
+              "date": "Sep 26"
+            },
+            {
+              "min": 349,
+              "kwh": 6.8,
+              "soc0": 74,
+              "soc1": 85,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Bélair",
+              "day": 26,
+              "date": "Sep 27"
+            },
+            {
+              "min": 712,
+              "kwh": 13.1,
+              "soc0": 61,
+              "soc1": 82,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 26,
+              "date": "Sep 27"
+            },
+            {
+              "min": 979,
+              "kwh": 17.9,
+              "soc0": 38,
+              "soc1": 67,
+              "prov": "Manitoba",
+              "ctry": "CA",
+              "town": "Winkler",
+              "day": 27,
+              "date": "Sep 28"
+            },
+            {
+              "min": 332,
+              "kwh": 34.8,
+              "soc0": 44,
+              "soc1": 100,
+              "prov": "Ontario",
+              "ctry": "CA",
+              "town": "Thunder Bay",
+              "day": 28,
+              "date": "Sep 29"
+            },
+            {
+              "min": 496,
+              "kwh": 53.6,
+              "soc0": 14,
+              "soc1": 100,
+              "prov": "New Brunswick",
+              "ctry": "CA",
+              "town": "Fredericton",
+              "day": 41,
+              "date": "Oct 12"
+            }
+          ],
+          "n": 17,
+          "median": 709,
+          "mean": 661,
+          "shortest": {
+            "min": 295,
+            "kwh": 35.5,
+            "soc0": 14,
+            "soc1": 70,
+            "prov": "Yukon",
+            "ctry": "CA",
+            "town": "Marsh Lake",
+            "day": 6,
+            "date": "Sep 7"
+          },
+          "longest": {
+            "min": 1151,
+            "kwh": 21.3,
+            "soc0": 14,
+            "soc1": 48,
+            "prov": "Manitoba",
+            "ctry": "CA",
+            "town": "Winkler",
+            "day": 18,
+            "date": "Sep 19"
+          }
+        }
+      ],
+      "nightMin": 240
     },
     "autopilot": {
       "km": 23114,
-      "pct": 89.9
+      "pct": 89.8
     },
     "energy": {
-      "used": 4045,
+      "used": 4048,
       "added": 4350,
-      "overhead": 7,
+      "overhead": 6.9,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -14922,11 +16501,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-14",
-      "label": "D 13",
-      "km": 163
-    },
     {
       "key": "2026-09-15",
       "label": "D 14",
@@ -15071,16 +16645,32 @@
       "key": "2026-10-14",
       "label": "D 43",
       "km": 71
+    },
+    {
+      "key": "2026-10-15",
+      "label": "D 44",
+      "km": 26
     }
   ],
   "log": [
     {
-      "key": "2026-10-14",
-      "day": "Day 43",
-      "date": "Oct 14",
+      "key": "2026-10-15",
+      "day": "Day 44",
+      "date": "Oct 15",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "26",
+      "chargeMinutes": 0,
+      "note": ""
+    },
+    {
+      "key": "2026-10-14",
+      "day": "Day 43",
+      "date": "Oct 14",
+      "province": "New York",
+      "from": "Bronx, New York",
+      "to": "New York, New York",
       "km": "71",
       "chargeMinutes": 58,
       "note": ""
@@ -15179,18 +16769,6 @@
       "plotted": true,
       "km": "964",
       "chargeMinutes": 83,
-      "note": ""
-    },
-    {
-      "key": "2026-10-04",
-      "day": "Day 33",
-      "date": "Oct 4",
-      "province": "Quebec",
-      "from": "Montréal, Quebec",
-      "to": "Québec, Quebec",
-      "plotted": true,
-      "km": "274",
-      "chargeMinutes": 283,
       "note": ""
     }
   ]
