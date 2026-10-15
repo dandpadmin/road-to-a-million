@@ -1,18 +1,18 @@
 {
-  "odometer": 27236,
+  "odometer": 27439,
   "goal": 1000000,
   "day": 44,
   "province": "New York",
   "route": "Brooklyn, New York",
-  "today": 295,
+  "today": 589,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 605,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 612,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 199,
-  "chargeLifetimeSupercharger": 112,
+  "chargeLifetime": 200,
+  "chargeLifetimeSupercharger": 113,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-14",
@@ -12464,7 +12464,7 @@
     }
   ],
   "asOf": "2026-10-15",
-  "updatedAt": "2026-10-15T19:19:40.324Z",
+  "updatedAt": "2026-10-15T22:35:48.512Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16645,24 +16645,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 23349,
-      "pct": 89.7
+      "km": 23638,
+      "pct": 89.8
     },
     "energy": {
-      "used": 4085,
-      "added": 4384,
-      "overhead": 6.8,
+      "used": 4121,
+      "added": 4432,
+      "overhead": 7,
       "whPerKm": 157,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 397
+      "rangeEst": 398
     },
     "cost": {
-      "total": 860.58,
-      "supercharger": 860.58,
+      "total": 884.29,
+      "supercharger": 884.29,
       "other": 0,
-      "perKm": 0.033,
-      "sessions": 110,
+      "perKm": 0.034,
+      "sessions": 111,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16700,7 +16700,7 @@
         {
           "soc": 55,
           "kw": 86,
-          "n": 34
+          "n": 35
         },
         {
           "soc": 60,
@@ -16748,7 +16748,7 @@
           "n": 1
         }
       ],
-      "sessions": 191,
+      "sessions": 192,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16920,7 +16920,7 @@
     {
       "key": "2026-10-15",
       "label": "D 44",
-      "km": 295
+      "km": 589
     }
   ],
   "log": [
@@ -16931,8 +16931,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "295",
-      "chargeMinutes": 18,
+      "km": "589",
+      "chargeMinutes": 48,
       "note": ""
     },
     {
