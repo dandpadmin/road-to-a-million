@@ -45,5 +45,6 @@
 {"id":"107469117","s":1791915448,"e":1791916546,"kwh":38.65,"cost":17.72,"sc":true,"soc0":14,"soc1":76,"kw":null,"prov":"Massachusetts","town":"Danvers"},
 {"id":"107475981","s":1791926348,"e":1791927368,"kwh":32.97,"cost":18.55,"sc":true,"soc0":27,"soc1":80,"kw":null,"prov":"Connecticut","town":"New London"},
 {"id":"107530356","s":1791995584,"e":1791999054,"kwh":45.74,"cost":16.21,"sc":true,"soc0":27,"soc1":100,"kw":null,"prov":"New York","town":"Brooklyn"},
-{"id":"107596766","s":1792086887,"e":1792087947,"kwh":34.84,"cost":14.75,"sc":true,"soc0":23,"soc1":79,"kw":null,"prov":"Maryland","town":"Bel Air"}
+{"id":"107596766","s":1792086887,"e":1792087947,"kwh":34.84,"cost":14.75,"sc":true,"soc0":23,"soc1":79,"kw":null,"prov":"Maryland","town":"Bel Air"},
+{"id":"107607395","s":1792101743,"e":1792103550,"kwh":47.42,"cost":23.71,"sc":true,"soc0":18,"soc1":93,"kw":null,"prov":"Virginia","town":"Richmond"}
 ]
