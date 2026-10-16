@@ -1,15 +1,15 @@
 {
-  "odometer": 28094,
+  "odometer": 28130,
   "goal": 1000000,
   "day": 45,
   "province": "New York",
   "route": "Bronx, New York",
-  "today": 1238,
+  "today": 44,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 627,
-  "chargeSessions": 3,
-  "chargeSupercharger": 3,
+  "avgPerDay": 614,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
   "chargeLifetime": 202,
   "chargeLifetimeSupercharger": 115,
@@ -12679,8 +12679,8 @@
       "track": 3
     }
   ],
-  "asOf": "2026-10-15",
-  "updatedAt": "2026-10-16T05:36:20.897Z",
+  "asOf": "2026-10-16",
+  "updatedAt": "2026-10-16T10:07:17.288Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16872,12 +16872,12 @@
     },
     "autopilot": {
       "km": 24284,
-      "pct": 90.1
+      "pct": 89.9
     },
     "energy": {
-      "used": 4217,
+      "used": 4223,
       "added": 4510,
-      "overhead": 6.5,
+      "overhead": 6.4,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
@@ -16994,15 +16994,14 @@
       {
         "version": "2026.27.11",
         "since": "2026-09-27"
+      },
+      {
+        "version": "2026.38.5.1",
+        "since": "2026-10-16"
       }
     ]
   },
   "days": [
-    {
-      "key": "2026-09-15",
-      "label": "D 14",
-      "km": 504
-    },
     {
       "key": "2026-09-16",
       "label": "D 15",
@@ -17147,9 +17146,25 @@
       "key": "2026-10-15",
       "label": "D 44",
       "km": 1238
+    },
+    {
+      "key": "2026-10-16",
+      "label": "D 45",
+      "km": 44
     }
   ],
   "log": [
+    {
+      "key": "2026-10-16",
+      "day": "Day 45",
+      "date": "Oct 16",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "44",
+      "chargeMinutes": 12,
+      "note": ""
+    },
     {
       "key": "2026-10-15",
       "day": "Day 44",
@@ -17255,18 +17270,6 @@
       "plotted": true,
       "km": "634",
       "chargeMinutes": 73,
-      "note": ""
-    },
-    {
-      "key": "2026-10-05",
-      "day": "Day 34",
-      "date": "Oct 5",
-      "province": "Prince Edward Island",
-      "from": "Québec, Quebec",
-      "to": "Charlottetown, Prince Edward Island",
-      "plotted": true,
-      "km": "964",
-      "chargeMinutes": 83,
       "note": ""
     }
   ]
