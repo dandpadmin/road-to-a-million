@@ -1,18 +1,18 @@
 {
-  "odometer": 27680,
+  "odometer": 28094,
   "goal": 1000000,
   "day": 45,
   "province": "New York",
   "route": "Bronx, New York",
-  "today": 589,
+  "today": 1238,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 612,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 627,
+  "chargeSessions": 3,
+  "chargeSupercharger": 3,
   "chargeOther": 0,
-  "chargeLifetime": 200,
-  "chargeLifetimeSupercharger": 113,
+  "chargeLifetime": 202,
+  "chargeLifetimeSupercharger": 115,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-14",
@@ -12680,7 +12680,7 @@
     }
   ],
   "asOf": "2026-10-15",
-  "updatedAt": "2026-10-16T00:47:10.273Z",
+  "updatedAt": "2026-10-16T05:36:20.897Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16871,24 +16871,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 23638,
-      "pct": 89.8
+      "km": 24284,
+      "pct": 90.1
     },
     "energy": {
-      "used": 4121,
-      "added": 4432,
-      "overhead": 7,
-      "whPerKm": 157,
+      "used": 4217,
+      "added": 4510,
+      "overhead": 6.5,
+      "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 398
+      "rangeEst": 399
     },
     "cost": {
-      "total": 884.29,
-      "supercharger": 884.29,
+      "total": 922.27,
+      "supercharger": 922.27,
       "other": 0,
       "perKm": 0.034,
-      "sessions": 111,
+      "sessions": 113,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16905,8 +16905,8 @@
         },
         {
           "soc": 35,
-          "kw": 40,
-          "n": 4
+          "kw": 59,
+          "n": 5
         },
         {
           "soc": 40,
@@ -16920,8 +16920,8 @@
         },
         {
           "soc": 50,
-          "kw": 83,
-          "n": 13
+          "kw": 84,
+          "n": 14
         },
         {
           "soc": 55,
@@ -16974,7 +16974,7 @@
           "n": 1
         }
       ],
-      "sessions": 192,
+      "sessions": 194,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -17146,7 +17146,7 @@
     {
       "key": "2026-10-15",
       "label": "D 44",
-      "km": 589
+      "km": 1238
     }
   ],
   "log": [
@@ -17157,8 +17157,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "589",
-      "chargeMinutes": 48,
+      "km": "1,238",
+      "chargeMinutes": 80,
       "note": ""
     },
     {
