@@ -1,10 +1,10 @@
 {
-  "odometer": 28257,
+  "odometer": 28259,
   "goal": 1000000,
   "day": 45,
   "province": "Maryland",
   "route": "Bel Air, Maryland",
-  "today": 171,
+  "today": 173,
   "best": 1493,
   "bestDay": 29,
   "avgPerDay": 617,
@@ -12568,7 +12568,7 @@
     }
   ],
   "asOf": "2026-10-16",
-  "updatedAt": "2026-10-16T18:41:11.348Z",
+  "updatedAt": "2026-10-16T21:44:43.479Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16795,7 +16795,7 @@
       "pct": 89.9
     },
     "energy": {
-      "used": 4239,
+      "used": 4240,
       "added": 4544,
       "overhead": 6.7,
       "whPerKm": 156,
@@ -17070,7 +17070,7 @@
     {
       "key": "2026-10-16",
       "label": "D 45",
-      "km": 171
+      "km": 173
     }
   ],
   "log": [
@@ -17081,7 +17081,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "171",
+      "km": "173",
       "chargeMinutes": 30,
       "note": ""
     },
