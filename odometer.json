@@ -1,153 +1,221 @@
 {
-  "odometer": 28313,
+  "odometer": 28542,
   "goal": 1000000,
   "day": 46,
-  "province": "South Carolina",
-  "route": "Hardeeville, South Carolina",
-  "today": 10,
+  "province": "Georgia",
+  "route": "Garden City, Georgia",
+  "today": 208,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 603,
-  "chargeSessions": 0,
-  "chargeSupercharger": 0,
+  "avgPerDay": 608,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 203,
-  "chargeLifetimeSupercharger": 116,
+  "chargeLifetime": 204,
+  "chargeLifetimeSupercharger": 117,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-16",
     "day": 45,
     "date": "Oct 16",
     "label": "Day 45 · Oct 16",
-    "km": 124,
+    "km": 171,
     "from": "Walterboro, South Carolina",
-    "to": "Hardeeville, South Carolina",
-    "corridor": "Hardeeville, South Carolina",
-    "province": "South Carolina",
+    "to": "Garden City, Georgia",
+    "corridor": "Garden City, Georgia",
+    "province": "Georgia",
     "chargeStops": 2,
     "chargeMinutes": 30,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6382,
+        0.6211,
         0.05
       ],
       [
-        0.6386,
-        0.0982
+        0.6214,
+        0.0875
       ],
       [
-        0.6061,
-        0.2036
+        0.596,
+        0.1695
       ],
       [
-        0.5932,
-        0.2281
+        0.5861,
+        0.1885
       ],
       [
-        0.5836,
-        0.2557
+        0.5785,
+        0.21
       ],
       [
-        0.5493,
-        0.3059
+        0.5519,
+        0.249
       ],
       [
-        0.5856,
-        0.2531
+        0.5802,
+        0.208
       ],
       [
-        0.5912,
-        0.2326
+        0.5845,
+        0.192
       ],
       [
-        0.605,
-        0.2081
+        0.5952,
+        0.173
       ],
       [
-        0.6382,
-        0.1143
+        0.6211,
+        0.1
       ],
       [
-        0.605,
-        0.2069
+        0.5952,
+        0.172
       ],
       [
-        0.5912,
-        0.2319
+        0.5845,
+        0.1915
       ],
       [
-        0.5853,
-        0.2519
+        0.5799,
+        0.207
       ],
       [
-        0.5535,
-        0.2981
+        0.5438,
+        0.263
       ],
       [
-        0.5389,
-        0.3239
+        0.5244,
+        0.307
       ],
       [
-        0.514,
-        0.3804
+        0.5206,
+        0.351
       ],
       [
-        0.5092,
-        0.437
+        0.523,
+        0.368
       ],
       [
-        0.5123,
-        0.4589
+        0.5125,
+        0.399
       ],
       [
-        0.4988,
-        0.4987
+        0.5026,
+        0.408
       ],
       [
-        0.486,
-        0.5103
+        0.4923,
+        0.43
       ],
       [
-        0.4728,
-        0.5386
+        0.4748,
+        0.4965
       ],
       [
-        0.4503,
-        0.6241
+        0.4751,
+        0.5215
       ],
       [
-        0.4507,
-        0.6562
+        0.4635,
+        0.5505
       ],
       [
-        0.4448,
-        0.6755
+        0.4519,
+        0.589
       ],
       [
-        0.4358,
-        0.6935
+        0.4287,
+        0.6775
       ],
       [
-        0.4209,
-        0.743
+        0.4266,
+        0.6975
       ],
       [
-        0.3912,
-        0.8568
+        0.4056,
+        0.75
       ],
       [
-        0.3884,
-        0.8825
+        0.4207,
+        0.7875
       ],
       [
-        0.3614,
+        0.418,
+        0.822
+      ],
+      [
+        0.429,
+        0.844
+      ],
+      [
+        0.4312,
+        0.857
+      ],
+      [
+        0.4287,
+        0.87
+      ],
+      [
+        0.4128,
+        0.895
+      ],
+      [
+        0.4015,
+        0.918
+      ],
+      [
+        0.404,
+        0.92
+      ],
+      [
+        0.4015,
+        0.9295
+      ],
+      [
+        0.4056,
         0.95
+      ],
+      [
+        0.4325,
+        0.95
+      ],
+      [
+        0.4077,
+        0.949
+      ],
+      [
+        0.4034,
+        0.947
+      ],
+      [
+        0.404,
+        0.942
+      ],
+      [
+        0.4005,
+        0.9405
+      ],
+      [
+        0.3988,
+        0.9345
+      ],
+      [
+        0.3872,
+        0.9265
+      ],
+      [
+        0.3886,
+        0.9195
+      ],
+      [
+        0.3786,
+        0.9
       ]
     ],
     "stops": [
       {
-        "x": 0.6382,
+        "x": 0.6211,
         "y": 0.05,
         "town": "Walterboro, South Carolina",
         "kind": "start",
@@ -161,10 +229,17 @@
         ]
       },
       {
-        "x": 0.3614,
-        "y": 0.95,
-        "town": "Hardeeville, South Carolina",
+        "x": 0.3786,
+        "y": 0.9,
+        "town": "Garden City, Georgia",
         "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.4056,
+        "y": 0.75,
+        "town": "Hardeeville, South Carolina",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -175,7 +250,7 @@
         ]
       }
     ],
-    "kmPerPx": 0.1877,
+    "kmPerPx": 0.2413,
     "plotted": true,
     "track": 3
   },
@@ -11833,135 +11908,203 @@
       "day": 45,
       "date": "Oct 16",
       "label": "Day 45 · Oct 16",
-      "km": 124,
+      "km": 171,
       "from": "Walterboro, South Carolina",
-      "to": "Hardeeville, South Carolina",
-      "corridor": "Hardeeville, South Carolina",
-      "province": "South Carolina",
+      "to": "Garden City, Georgia",
+      "corridor": "Garden City, Georgia",
+      "province": "Georgia",
       "chargeStops": 2,
       "chargeMinutes": 30,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.6382,
+          0.6211,
           0.05
         ],
         [
-          0.6386,
-          0.0982
+          0.6214,
+          0.0875
         ],
         [
-          0.6061,
-          0.2036
+          0.596,
+          0.1695
         ],
         [
-          0.5932,
-          0.2281
+          0.5861,
+          0.1885
         ],
         [
-          0.5836,
-          0.2557
+          0.5785,
+          0.21
         ],
         [
-          0.5493,
-          0.3059
+          0.5519,
+          0.249
         ],
         [
-          0.5856,
-          0.2531
+          0.5802,
+          0.208
         ],
         [
-          0.5912,
-          0.2326
+          0.5845,
+          0.192
         ],
         [
-          0.605,
-          0.2081
+          0.5952,
+          0.173
         ],
         [
-          0.6382,
-          0.1143
+          0.6211,
+          0.1
         ],
         [
-          0.605,
-          0.2069
+          0.5952,
+          0.172
         ],
         [
-          0.5912,
-          0.2319
+          0.5845,
+          0.1915
         ],
         [
-          0.5853,
-          0.2519
+          0.5799,
+          0.207
         ],
         [
-          0.5535,
-          0.2981
+          0.5438,
+          0.263
         ],
         [
-          0.5389,
-          0.3239
+          0.5244,
+          0.307
         ],
         [
-          0.514,
-          0.3804
+          0.5206,
+          0.351
         ],
         [
-          0.5092,
-          0.437
+          0.523,
+          0.368
         ],
         [
-          0.5123,
-          0.4589
+          0.5125,
+          0.399
         ],
         [
-          0.4988,
-          0.4987
+          0.5026,
+          0.408
         ],
         [
-          0.486,
-          0.5103
+          0.4923,
+          0.43
         ],
         [
-          0.4728,
-          0.5386
+          0.4748,
+          0.4965
         ],
         [
-          0.4503,
-          0.6241
+          0.4751,
+          0.5215
         ],
         [
-          0.4507,
-          0.6562
+          0.4635,
+          0.5505
         ],
         [
-          0.4448,
-          0.6755
+          0.4519,
+          0.589
         ],
         [
-          0.4358,
-          0.6935
+          0.4287,
+          0.6775
         ],
         [
-          0.4209,
-          0.743
+          0.4266,
+          0.6975
         ],
         [
-          0.3912,
-          0.8568
+          0.4056,
+          0.75
         ],
         [
-          0.3884,
-          0.8825
+          0.4207,
+          0.7875
         ],
         [
-          0.3614,
+          0.418,
+          0.822
+        ],
+        [
+          0.429,
+          0.844
+        ],
+        [
+          0.4312,
+          0.857
+        ],
+        [
+          0.4287,
+          0.87
+        ],
+        [
+          0.4128,
+          0.895
+        ],
+        [
+          0.4015,
+          0.918
+        ],
+        [
+          0.404,
+          0.92
+        ],
+        [
+          0.4015,
+          0.9295
+        ],
+        [
+          0.4056,
           0.95
+        ],
+        [
+          0.4325,
+          0.95
+        ],
+        [
+          0.4077,
+          0.949
+        ],
+        [
+          0.4034,
+          0.947
+        ],
+        [
+          0.404,
+          0.942
+        ],
+        [
+          0.4005,
+          0.9405
+        ],
+        [
+          0.3988,
+          0.9345
+        ],
+        [
+          0.3872,
+          0.9265
+        ],
+        [
+          0.3886,
+          0.9195
+        ],
+        [
+          0.3786,
+          0.9
         ]
       ],
       "stops": [
         {
-          "x": 0.6382,
+          "x": 0.6211,
           "y": 0.05,
           "town": "Walterboro, South Carolina",
           "kind": "start",
@@ -11975,10 +12118,17 @@
           ]
         },
         {
-          "x": 0.3614,
-          "y": 0.95,
-          "town": "Hardeeville, South Carolina",
+          "x": 0.3786,
+          "y": 0.9,
+          "town": "Garden City, Georgia",
           "kind": "end",
+          "sessions": []
+        },
+        {
+          "x": 0.4056,
+          "y": 0.75,
+          "town": "Hardeeville, South Carolina",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -11989,13 +12139,13 @@
           ]
         }
       ],
-      "kmPerPx": 0.1877,
+      "kmPerPx": 0.2413,
       "plotted": true,
       "track": 3
     }
   ],
   "asOf": "2026-10-17",
-  "updatedAt": "2026-10-17T15:50:41.874Z",
+  "updatedAt": "2026-10-17T18:17:17.713Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -13991,6 +14141,16 @@
           "town": "Hardeeville",
           "day": 45,
           "date": "Oct 16"
+        },
+        {
+          "t": 29.3,
+          "wh": 119,
+          "km": 29,
+          "prov": "Georgia",
+          "ctry": "US",
+          "town": "Savannah",
+          "day": 45,
+          "date": "Oct 16"
         }
       ],
       "median": 153,
@@ -14015,7 +14175,8 @@
         "Maryland",
         "Virginia",
         "North Carolina",
-        "South Carolina"
+        "South Carolina",
+        "Georgia"
       ],
       "trend": [
         {
@@ -16315,24 +16476,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 24393,
+      "km": 24575,
       "pct": 89.9
     },
     "energy": {
-      "used": 4241,
-      "added": 4544,
-      "overhead": 6.7,
+      "used": 4270,
+      "added": 4588,
+      "overhead": 6.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
       "rangeEst": 399
     },
     "cost": {
-      "total": 938.54,
-      "supercharger": 938.54,
+      "total": 955.49,
+      "supercharger": 955.49,
       "other": 0,
       "perKm": 0.035,
-      "sessions": 114,
+      "sessions": 115,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16359,8 +16520,8 @@
         },
         {
           "soc": 45,
-          "kw": 100,
-          "n": 17
+          "kw": 101,
+          "n": 18
         },
         {
           "soc": 50,
@@ -16418,7 +16579,7 @@
           "n": 1
         }
       ],
-      "sessions": 195,
+      "sessions": 196,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16594,7 +16755,7 @@
     {
       "key": "2026-10-17",
       "label": "D 46",
-      "km": 10
+      "km": 208
     }
   ],
   "log": [
@@ -16605,17 +16766,17 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "10",
-      "chargeMinutes": 0,
+      "km": "208",
+      "chargeMinutes": 24,
       "note": ""
     },
     {
       "key": "2026-10-16",
       "day": "Day 45",
       "date": "Oct 16",
-      "province": "South Carolina",
+      "province": "Georgia",
       "from": "Walterboro, South Carolina",
-      "to": "Hardeeville, South Carolina",
+      "to": "Garden City, Georgia",
       "plotted": true,
       "km": "173",
       "chargeMinutes": 30,

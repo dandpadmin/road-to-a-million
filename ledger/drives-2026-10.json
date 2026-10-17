@@ -131,5 +131,11 @@
 {"id":"443830721","s":1792103567,"e":1792114854,"km":340.58,"ap":340.2,"kwh":50.14,"t":22.8,"prov":"North Carolina","town":"Fayetteville"},
 {"id":"443862686","s":1792116810,"e":1792127719,"km":308.24,"ap":306.42,"kwh":46,"t":22.4,"prov":"South Carolina","town":"Walterboro"},
 {"id":"443870504","s":1792128508,"e":1792130229,"km":44.24,"ap":0,"kwh":6,"t":20.9,"prov":"South Carolina","town":"Walterboro"},
-{"id":"444021437","s":1792161669,"e":1792164457,"km":79.73,"ap":79.49,"kwh":10.88,"t":26.8,"prov":"South Carolina","town":"Hardeeville"}
+{"id":"444021437","s":1792161669,"e":1792164457,"km":79.73,"ap":79.49,"kwh":10.88,"t":26.8,"prov":"South Carolina","town":"Hardeeville"},
+{"id":"444041185","s":1792165578,"e":1792167277,"km":29.34,"ap":29.34,"kwh":3.5,"t":29.3,"prov":"Georgia","town":"Savannah"},
+{"id":"444041188","s":1792167277,"e":1792167310,"km":0.03,"ap":0,"kwh":0,"t":30,"prov":"Georgia","town":"Savannah"},
+{"id":"444052255","s":1792168506,"e":1792169149,"km":4.46,"ap":0,"kwh":0.64,"t":30.6,"prov":"Georgia","town":"Savannah"},
+{"id":"444065694","s":1792171589,"e":1792171620,"km":0.1,"ap":0,"kwh":0,"t":34,"prov":"Georgia","town":"Savannah"},
+{"id":"444074823","s":1792172278,"e":1792173367,"km":13.15,"ap":0,"kwh":1.62,"t":31.4,"prov":"Georgia","town":"Garden City"},
+{"id":"444076357","s":1792173683,"e":1792173698,"km":0.02,"ap":0,"kwh":0,"t":31,"prov":"Georgia","town":"Garden City"}
 ]
