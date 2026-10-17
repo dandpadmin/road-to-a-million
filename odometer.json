@@ -1,25 +1,25 @@
 {
-  "odometer": 28542,
+  "odometer": 28652,
   "goal": 1000000,
   "day": 46,
   "province": "Georgia",
   "route": "Garden City, Georgia",
-  "today": 208,
+  "today": 393,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 608,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 612,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 204,
-  "chargeLifetimeSupercharger": 117,
+  "chargeLifetime": 205,
+  "chargeLifetimeSupercharger": 118,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-16",
     "day": 45,
     "date": "Oct 16",
     "label": "Day 45 · Oct 16",
-    "km": 171,
+    "km": 173,
     "from": "Walterboro, South Carolina",
     "to": "Garden City, Georgia",
     "corridor": "Garden City, Georgia",
@@ -11908,7 +11908,7 @@
       "day": 45,
       "date": "Oct 16",
       "label": "Day 45 · Oct 16",
-      "km": 171,
+      "km": 173,
       "from": "Walterboro, South Carolina",
       "to": "Garden City, Georgia",
       "corridor": "Garden City, Georgia",
@@ -12145,7 +12145,7 @@
     }
   ],
   "asOf": "2026-10-17",
-  "updatedAt": "2026-10-17T18:17:17.713Z",
+  "updatedAt": "2026-10-17T20:50:35.800Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16476,24 +16476,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 24575,
+      "km": 24752,
       "pct": 89.9
     },
     "energy": {
-      "used": 4270,
-      "added": 4588,
+      "used": 4296,
+      "added": 4614,
       "overhead": 6.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
-      "rangeEst": 399
+      "rangeEst": 400
     },
     "cost": {
-      "total": 955.49,
-      "supercharger": 955.49,
+      "total": 965.32,
+      "supercharger": 965.32,
       "other": 0,
       "perKm": 0.035,
-      "sessions": 115,
+      "sessions": 116,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16535,8 +16535,8 @@
         },
         {
           "soc": 60,
-          "kw": 69,
-          "n": 16
+          "kw": 71,
+          "n": 17
         },
         {
           "soc": 65,
@@ -16579,7 +16579,7 @@
           "n": 1
         }
       ],
-      "sessions": 196,
+      "sessions": 197,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16755,7 +16755,7 @@
     {
       "key": "2026-10-17",
       "label": "D 46",
-      "km": 208
+      "km": 393
     }
   ],
   "log": [
@@ -16766,8 +16766,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "208",
-      "chargeMinutes": 24,
+      "km": "393",
+      "chargeMinutes": 38,
       "note": ""
     },
     {
