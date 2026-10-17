@@ -48,5 +48,6 @@
 {"id":"107596766","s":1792086887,"e":1792087947,"kwh":34.84,"cost":14.75,"sc":true,"soc0":23,"soc1":79,"kw":null,"prov":"Maryland","town":"Bel Air"},
 {"id":"107607395","s":1792101743,"e":1792103550,"kwh":47.42,"cost":23.71,"sc":true,"soc0":18,"soc1":93,"kw":null,"prov":"Virginia","town":"Richmond"},
 {"id":"107618819","s":1792114868,"e":1792116794,"kwh":50.54,"cost":24.06,"sc":true,"soc0":8,"soc1":89,"kw":null,"prov":"North Carolina","town":"Fayetteville"},
-{"id":"107629205","s":1792127735,"e":1792128477,"kwh":28.07,"cost":13.92,"sc":true,"soc0":11,"soc1":56,"kw":null,"prov":"South Carolina","town":"Walterboro"}
+{"id":"107629205","s":1792127735,"e":1792128477,"kwh":28.07,"cost":13.92,"sc":true,"soc0":11,"soc1":56,"kw":null,"prov":"South Carolina","town":"Walterboro"},
+{"id":"107662995","s":1792164477,"e":1792165559,"kwh":33.25,"cost":16.27,"sc":true,"soc0":26,"soc1":80,"kw":null,"prov":"South Carolina","town":"Hardeeville"}
 ]

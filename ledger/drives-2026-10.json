@@ -130,5 +130,6 @@
 {"id":"443780561","s":1792087968,"e":1792101730,"km":293.79,"ap":288.72,"kwh":36,"t":19.8,"prov":"Virginia","town":"Richmond"},
 {"id":"443830721","s":1792103567,"e":1792114854,"km":340.58,"ap":340.2,"kwh":50.14,"t":22.8,"prov":"North Carolina","town":"Fayetteville"},
 {"id":"443862686","s":1792116810,"e":1792127719,"km":308.24,"ap":306.42,"kwh":46,"t":22.4,"prov":"South Carolina","town":"Walterboro"},
-{"id":"443870504","s":1792128508,"e":1792130229,"km":44.24,"ap":0,"kwh":6,"t":20.9,"prov":"South Carolina","town":"Walterboro"}
+{"id":"443870504","s":1792128508,"e":1792130229,"km":44.24,"ap":0,"kwh":6,"t":20.9,"prov":"South Carolina","town":"Walterboro"},
+{"id":"444021437","s":1792161669,"e":1792164457,"km":79.73,"ap":79.49,"kwh":10.88,"t":26.8,"prov":"South Carolina","town":"Hardeeville"}
 ]

@@ -1,15 +1,15 @@
 {
-  "odometer": 28259,
+  "odometer": 28313,
   "goal": 1000000,
   "day": 46,
   "province": "South Carolina",
-  "route": "Walterboro, South Carolina",
-  "today": 173,
+  "route": "Hardeeville, South Carolina",
+  "today": 10,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 617,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 603,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 203,
   "chargeLifetimeSupercharger": 116,
@@ -19,87 +19,135 @@
     "day": 45,
     "date": "Oct 16",
     "label": "Day 45 · Oct 16",
-    "km": 44,
+    "km": 124,
     "from": "Walterboro, South Carolina",
-    "to": "Walterboro, South Carolina",
-    "corridor": "Walterboro, South Carolina",
+    "to": "Hardeeville, South Carolina",
+    "corridor": "Hardeeville, South Carolina",
     "province": "South Carolina",
-    "chargeStops": 1,
-    "chargeMinutes": 12,
+    "chargeStops": 2,
+    "chargeMinutes": 30,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.6554,
+        0.6382,
         0.05
       ],
       [
-        0.6566,
-        0.2196
+        0.6386,
+        0.0982
       ],
       [
-        0.6226,
-        0.3259
+        0.6061,
+        0.2036
       ],
       [
-        0.6141,
-        0.3734
+        0.5932,
+        0.2281
       ],
       [
-        0.5425,
-        0.5905
+        0.5836,
+        0.2557
       ],
       [
-        0.5291,
-        0.6221
+        0.5493,
+        0.3059
       ],
       [
-        0.4976,
-        0.6764
+        0.5856,
+        0.2531
       ],
       [
-        0.4854,
-        0.708
+        0.5912,
+        0.2326
       ],
       [
-        0.4769,
-        0.742
+        0.605,
+        0.2081
       ],
       [
-        0.4636,
-        0.7736
+        0.6382,
+        0.1143
       ],
       [
-        0.4466,
-        0.8008
+        0.605,
+        0.2069
       ],
       [
-        0.3762,
-        0.8957
+        0.5912,
+        0.2319
       ],
       [
-        0.3434,
+        0.5853,
+        0.2519
+      ],
+      [
+        0.5535,
+        0.2981
+      ],
+      [
+        0.5389,
+        0.3239
+      ],
+      [
+        0.514,
+        0.3804
+      ],
+      [
+        0.5092,
+        0.437
+      ],
+      [
+        0.5123,
+        0.4589
+      ],
+      [
+        0.4988,
+        0.4987
+      ],
+      [
+        0.486,
+        0.5103
+      ],
+      [
+        0.4728,
+        0.5386
+      ],
+      [
+        0.4503,
+        0.6241
+      ],
+      [
+        0.4507,
+        0.6562
+      ],
+      [
+        0.4448,
+        0.6755
+      ],
+      [
+        0.4358,
+        0.6935
+      ],
+      [
+        0.4209,
+        0.743
+      ],
+      [
+        0.3912,
+        0.8568
+      ],
+      [
+        0.3884,
+        0.8825
+      ],
+      [
+        0.3614,
         0.95
-      ],
-      [
-        0.4709,
-        0.7646
-      ],
-      [
-        0.4903,
-        0.6922
-      ],
-      [
-        0.5388,
-        0.6063
-      ],
-      [
-        0.6554,
-        0.2761
       ]
     ],
     "stops": [
       {
-        "x": 0.6554,
+        "x": 0.6382,
         "y": 0.05,
         "town": "Walterboro, South Carolina",
         "kind": "start",
@@ -111,9 +159,23 @@
             "socEnd": 56
           }
         ]
+      },
+      {
+        "x": 0.3614,
+        "y": 0.95,
+        "town": "Hardeeville, South Carolina",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 18,
+            "socStart": 26,
+            "socEnd": 80
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.0534,
+    "kmPerPx": 0.1877,
     "plotted": true,
     "track": 3
   },
@@ -11771,87 +11833,135 @@
       "day": 45,
       "date": "Oct 16",
       "label": "Day 45 · Oct 16",
-      "km": 44,
+      "km": 124,
       "from": "Walterboro, South Carolina",
-      "to": "Walterboro, South Carolina",
-      "corridor": "Walterboro, South Carolina",
+      "to": "Hardeeville, South Carolina",
+      "corridor": "Hardeeville, South Carolina",
       "province": "South Carolina",
-      "chargeStops": 1,
-      "chargeMinutes": 12,
+      "chargeStops": 2,
+      "chargeMinutes": 30,
       "note": "Town level · delayed 24h",
       "path": [
         [
-          0.6554,
+          0.6382,
           0.05
         ],
         [
-          0.6566,
-          0.2196
+          0.6386,
+          0.0982
         ],
         [
-          0.6226,
-          0.3259
+          0.6061,
+          0.2036
         ],
         [
-          0.6141,
-          0.3734
+          0.5932,
+          0.2281
         ],
         [
-          0.5425,
-          0.5905
+          0.5836,
+          0.2557
         ],
         [
-          0.5291,
-          0.6221
+          0.5493,
+          0.3059
         ],
         [
-          0.4976,
-          0.6764
+          0.5856,
+          0.2531
         ],
         [
-          0.4854,
-          0.708
+          0.5912,
+          0.2326
         ],
         [
-          0.4769,
-          0.742
+          0.605,
+          0.2081
         ],
         [
-          0.4636,
-          0.7736
+          0.6382,
+          0.1143
         ],
         [
-          0.4466,
-          0.8008
+          0.605,
+          0.2069
         ],
         [
-          0.3762,
-          0.8957
+          0.5912,
+          0.2319
         ],
         [
-          0.3434,
+          0.5853,
+          0.2519
+        ],
+        [
+          0.5535,
+          0.2981
+        ],
+        [
+          0.5389,
+          0.3239
+        ],
+        [
+          0.514,
+          0.3804
+        ],
+        [
+          0.5092,
+          0.437
+        ],
+        [
+          0.5123,
+          0.4589
+        ],
+        [
+          0.4988,
+          0.4987
+        ],
+        [
+          0.486,
+          0.5103
+        ],
+        [
+          0.4728,
+          0.5386
+        ],
+        [
+          0.4503,
+          0.6241
+        ],
+        [
+          0.4507,
+          0.6562
+        ],
+        [
+          0.4448,
+          0.6755
+        ],
+        [
+          0.4358,
+          0.6935
+        ],
+        [
+          0.4209,
+          0.743
+        ],
+        [
+          0.3912,
+          0.8568
+        ],
+        [
+          0.3884,
+          0.8825
+        ],
+        [
+          0.3614,
           0.95
-        ],
-        [
-          0.4709,
-          0.7646
-        ],
-        [
-          0.4903,
-          0.6922
-        ],
-        [
-          0.5388,
-          0.6063
-        ],
-        [
-          0.6554,
-          0.2761
         ]
       ],
       "stops": [
         {
-          "x": 0.6554,
+          "x": 0.6382,
           "y": 0.05,
           "town": "Walterboro, South Carolina",
           "kind": "start",
@@ -11863,15 +11973,29 @@
               "socEnd": 56
             }
           ]
+        },
+        {
+          "x": 0.3614,
+          "y": 0.95,
+          "town": "Hardeeville, South Carolina",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 18,
+              "socStart": 26,
+              "socEnd": 80
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.0534,
+      "kmPerPx": 0.1877,
       "plotted": true,
       "track": 3
     }
   ],
-  "asOf": "2026-10-16",
-  "updatedAt": "2026-10-17T12:26:01.243Z",
+  "asOf": "2026-10-17",
+  "updatedAt": "2026-10-17T15:50:41.874Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -13857,6 +13981,16 @@
           "town": "Walterboro",
           "day": 45,
           "date": "Oct 16"
+        },
+        {
+          "t": 26.8,
+          "wh": 136,
+          "km": 80,
+          "prov": "South Carolina",
+          "ctry": "US",
+          "town": "Hardeeville",
+          "day": 45,
+          "date": "Oct 16"
         }
       ],
       "median": 153,
@@ -15196,9 +15330,20 @@
               "town": "Walterboro",
               "day": 45,
               "date": "Oct 16"
+            },
+            {
+              "min": 18,
+              "kwh": 33.3,
+              "soc0": 26,
+              "soc1": 80,
+              "prov": "South Carolina",
+              "ctry": "US",
+              "town": "Hardeeville",
+              "day": 45,
+              "date": "Oct 16"
             }
           ],
-          "n": 114,
+          "n": 115,
           "median": 12,
           "mean": 14,
           "shortest": {
@@ -16174,7 +16319,7 @@
       "pct": 89.9
     },
     "energy": {
-      "used": 4240,
+      "used": 4241,
       "added": 4544,
       "overhead": 6.7,
       "whPerKm": 156,
@@ -16301,11 +16446,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-16",
-      "label": "D 15",
-      "km": 721
-    },
     {
       "key": "2026-09-17",
       "label": "D 16",
@@ -16450,16 +16590,32 @@
       "key": "2026-10-16",
       "label": "D 45",
       "km": 173
+    },
+    {
+      "key": "2026-10-17",
+      "label": "D 46",
+      "km": 10
     }
   ],
   "log": [
+    {
+      "key": "2026-10-17",
+      "day": "Day 46",
+      "date": "Oct 17",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "10",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-10-16",
       "day": "Day 45",
       "date": "Oct 16",
       "province": "South Carolina",
       "from": "Walterboro, South Carolina",
-      "to": "Walterboro, South Carolina",
+      "to": "Hardeeville, South Carolina",
       "plotted": true,
       "km": "173",
       "chargeMinutes": 30,
@@ -16559,18 +16715,6 @@
       "plotted": true,
       "km": "944",
       "chargeMinutes": 99,
-      "note": ""
-    },
-    {
-      "key": "2026-10-06",
-      "day": "Day 35",
-      "date": "Oct 6",
-      "province": "Nova Scotia",
-      "from": "Charlottetown, Prince Edward Island",
-      "to": "Yarmouth, Nova Scotia",
-      "plotted": true,
-      "km": "634",
-      "chargeMinutes": 73,
       "note": ""
     }
   ]
