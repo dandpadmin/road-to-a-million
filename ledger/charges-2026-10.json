@@ -50,5 +50,6 @@
 {"id":"107618819","s":1792114868,"e":1792116794,"kwh":50.54,"cost":24.06,"sc":true,"soc0":8,"soc1":89,"kw":null,"prov":"North Carolina","town":"Fayetteville"},
 {"id":"107629205","s":1792127735,"e":1792128477,"kwh":28.07,"cost":13.92,"sc":true,"soc0":11,"soc1":56,"kw":null,"prov":"South Carolina","town":"Walterboro"},
 {"id":"107662995","s":1792164477,"e":1792165559,"kwh":33.25,"cost":16.27,"sc":true,"soc0":26,"soc1":80,"kw":null,"prov":"South Carolina","town":"Hardeeville"},
-{"id":"107750142","s":1792256951,"e":1792258399,"kwh":44.59,"cost":16.95,"sc":true,"soc0":10,"soc1":82,"kw":null,"prov":"Florida","town":"Yulee"}
+{"id":"107750142","s":1792256951,"e":1792258399,"kwh":44.59,"cost":16.95,"sc":true,"soc0":10,"soc1":82,"kw":null,"prov":"Florida","town":"Yulee"},
+{"id":"107754929","s":1792264499,"e":1792265343,"kwh":25.55,"cost":9.83,"sc":true,"soc0":41,"soc1":83,"kw":null,"prov":"Florida","town":"Daytona Beach"}
 ]
