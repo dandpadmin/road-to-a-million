@@ -1,18 +1,18 @@
 {
-  "odometer": 28652,
+  "odometer": 29004,
   "goal": 1000000,
   "day": 47,
   "province": "Georgia",
   "route": "Garden City, Georgia",
-  "today": 393,
+  "today": 216,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 612,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 603,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 205,
-  "chargeLifetimeSupercharger": 118,
+  "chargeLifetime": 206,
+  "chargeLifetimeSupercharger": 119,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-16",
@@ -12144,8 +12144,8 @@
       "track": 3
     }
   ],
-  "asOf": "2026-10-17",
-  "updatedAt": "2026-10-18T09:54:25.727Z",
+  "asOf": "2026-10-18",
+  "updatedAt": "2026-10-18T13:50:10.816Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16476,12 +16476,12 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 24752,
-      "pct": 89.9
+      "km": 24967,
+      "pct": 90
     },
     "energy": {
-      "used": 4296,
-      "added": 4614,
+      "used": 4329,
+      "added": 4648,
       "overhead": 6.9,
       "whPerKm": 156,
       "kmPerKwh": 6.4,
@@ -16489,11 +16489,11 @@
       "rangeEst": 400
     },
     "cost": {
-      "total": 965.32,
-      "supercharger": 965.32,
+      "total": 978.5,
+      "supercharger": 978.5,
       "other": 0,
       "perKm": 0.035,
-      "sessions": 116,
+      "sessions": 117,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16525,8 +16525,8 @@
         },
         {
           "soc": 50,
-          "kw": 84,
-          "n": 14
+          "kw": 86,
+          "n": 15
         },
         {
           "soc": 55,
@@ -16579,7 +16579,7 @@
           "n": 1
         }
       ],
-      "sessions": 197,
+      "sessions": 198,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16607,11 +16607,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-17",
-      "label": "D 16",
-      "km": 731
-    },
     {
       "key": "2026-09-18",
       "label": "D 17",
@@ -16756,9 +16751,25 @@
       "key": "2026-10-17",
       "label": "D 46",
       "km": 393
+    },
+    {
+      "key": "2026-10-18",
+      "label": "D 47",
+      "km": 216
     }
   ],
   "log": [
+    {
+      "key": "2026-10-18",
+      "day": "Day 47",
+      "date": "Oct 18",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "216",
+      "chargeMinutes": 18,
+      "note": ""
+    },
     {
       "key": "2026-10-17",
       "day": "Day 46",
@@ -16864,18 +16875,6 @@
       "plotted": true,
       "km": "914",
       "chargeMinutes": 129,
-      "note": ""
-    },
-    {
-      "key": "2026-10-07",
-      "day": "Day 36",
-      "date": "Oct 7",
-      "province": "Nova Scotia",
-      "from": "Yarmouth, Nova Scotia",
-      "to": "North Sydney, Nova Scotia",
-      "plotted": true,
-      "km": "944",
-      "chargeMinutes": 99,
       "note": ""
     }
   ]
