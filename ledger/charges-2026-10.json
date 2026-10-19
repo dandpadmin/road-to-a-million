@@ -53,5 +53,6 @@
 {"id":"107750142","s":1792256951,"e":1792258399,"kwh":44.59,"cost":16.95,"sc":true,"soc0":10,"soc1":82,"kw":null,"prov":"Florida","town":"Yulee"},
 {"id":"107754929","s":1792264499,"e":1792265343,"kwh":25.55,"cost":9.83,"sc":true,"soc0":41,"soc1":83,"kw":null,"prov":"Florida","town":"Daytona Beach"},
 {"id":"107800589","s":1792325900,"e":1792326983,"kwh":34.38,"cost":13.18,"sc":true,"soc0":21,"soc1":77,"kw":null,"prov":"Florida","town":"Fort Pierce"},
-{"id":"107806780","s":1792333849,"e":1792334601,"kwh":14.18,"cost":5.58,"sc":true,"soc0":28,"soc1":51,"kw":null,"prov":"Florida","town":"Miami Beach"}
+{"id":"107806780","s":1792333849,"e":1792334601,"kwh":14.18,"cost":5.58,"sc":true,"soc0":28,"soc1":51,"kw":null,"prov":"Florida","town":"Miami Beach"},
+{"id":"107811014","s":1792338646,"e":1792340048,"kwh":27.31,"cost":10.92,"sc":true,"soc0":37,"soc1":81,"kw":null,"prov":"Florida","town":"Florida City"}
 ]
