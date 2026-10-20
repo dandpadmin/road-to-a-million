@@ -57,5 +57,7 @@
 {"id":"107811014","s":1792338646,"e":1792340048,"kwh":27.31,"cost":10.92,"sc":true,"soc0":37,"soc1":81,"kw":null,"prov":"Florida","town":"Florida City"},
 {"id":"107867355","s":1792413825,"e":1792414545,"kwh":24.18,"cost":9.34,"sc":true,"soc0":29,"soc1":68,"kw":null,"prov":"Florida","town":"Big Pine Key"},
 {"id":"107873340","s":1792421976,"e":1792422979,"kwh":30.44,"cost":12.87,"sc":true,"soc0":34,"soc1":83,"kw":null,"prov":"Florida","town":"Homestead"},
-{"id":"107879876","s":1792431252,"e":1792433134,"kwh":44.98,"cost":17.69,"sc":true,"soc0":20,"soc1":93,"kw":null,"prov":"Florida","town":"Fort Pierce"}
+{"id":"107879876","s":1792431252,"e":1792433134,"kwh":44.98,"cost":17.69,"sc":true,"soc0":20,"soc1":93,"kw":null,"prov":"Florida","town":"Fort Pierce"},
+{"id":"107886370","s":1792442261,"e":1792443583,"kwh":41.08,"cost":15.9,"sc":true,"soc0":11,"soc1":78,"kw":null,"prov":"Florida","town":"Ocala"},
+{"id":"107887047","s":1792443674,"e":1792444358,"kwh":9.3,"cost":3.38,"sc":true,"soc0":78,"soc1":93,"kw":null,"prov":"Florida","town":"Ocala"}
 ]
