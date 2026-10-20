@@ -1,18 +1,18 @@
 {
-  "odometer": 30395,
+  "odometer": 30760,
   "goal": 1000000,
-  "day": 48,
+  "day": 49,
   "province": "Florida",
   "route": "Key West, Florida",
-  "today": 1038,
+  "today": 1285,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 623,
-  "chargeSessions": 5,
-  "chargeSupercharger": 5,
+  "avgPerDay": 628,
+  "chargeSessions": 7,
+  "chargeSupercharger": 7,
   "chargeOther": 0,
-  "chargeLifetime": 213,
-  "chargeLifetimeSupercharger": 126,
+  "chargeLifetime": 215,
+  "chargeLifetimeSupercharger": 128,
   "chargeLifetimeOther": 87,
   "dayMap": {
     "key": "2026-10-18",
@@ -11485,7 +11485,7 @@
     }
   ],
   "asOf": "2026-10-19",
-  "updatedAt": "2026-10-19T23:54:33.604Z",
+  "updatedAt": "2026-10-20T03:44:29.202Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -15937,24 +15937,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 26479,
+      "km": 26726,
       "pct": 90.5
     },
     "energy": {
-      "used": 4548,
-      "added": 4840,
-      "overhead": 6,
-      "whPerKm": 155,
+      "used": 4591,
+      "added": 4911,
+      "overhead": 6.5,
+      "whPerKm": 156,
       "kmPerKwh": 6.4,
       "packKwh": 62,
       "rangeEst": 401
     },
     "cost": {
-      "total": 1054.18,
-      "supercharger": 1054.18,
+      "total": 1084.22,
+      "supercharger": 1084.22,
       "other": 0,
-      "perKm": 0.036,
-      "sessions": 124,
+      "perKm": 0.037,
+      "sessions": 126,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -15966,8 +15966,8 @@
         },
         {
           "soc": 30,
-          "kw": 1,
-          "n": 2
+          "kw": 48,
+          "n": 3
         },
         {
           "soc": 35,
@@ -15986,8 +15986,8 @@
         },
         {
           "soc": 50,
-          "kw": 88,
-          "n": 16
+          "kw": 89,
+          "n": 17
         },
         {
           "soc": 55,
@@ -16040,7 +16040,7 @@
           "n": 1
         }
       ],
-      "sessions": 205,
+      "sessions": 207,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16216,7 +16216,7 @@
     {
       "key": "2026-10-19",
       "label": "D 48",
-      "km": 1038
+      "km": 1285
     }
   ],
   "log": [
@@ -16227,8 +16227,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "1,038",
-      "chargeMinutes": 93,
+      "km": "1,285",
+      "chargeMinutes": 129,
       "note": ""
     },
     {
