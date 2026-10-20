@@ -64,7 +64,8 @@ function App() {
   return (
     <div style={{ minHeight: '100vh' }}>
       <div className="rtam-topbar" style={{ position: 'sticky', top: 0, zIndex: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, padding: '0 40px', minHeight: 56, background: 'rgba(28,36,44,.86)', backdropFilter: 'blur(14px)', borderBottom: '1px solid rgba(246,240,227,.14)' }}>
-        <span className="rtam-topbar-status" style={{ fontSize: 10, textAlign: 'center', letterSpacing: '.2em', textTransform: 'uppercase', color: D.liveKm ? '#E8B33A' : '#00B4D9' }}>● {D.liveKm ? 'Live km · map delayed ' + (D.locationEmbargoHours ?? 24) + 'H' : 'Delayed ' + (D.embargoHours ?? 24) + 'H'} · through Day {D.day}{stamp ? ' · updated ' + stamp : ''}</span>
+        {/* "every 2H" mirrors the cron in .github/workflows/snapshot.yml; change both together. */}
+        <span className="rtam-topbar-status" style={{ fontSize: 10, textAlign: 'center', letterSpacing: '.2em', textTransform: 'uppercase', color: D.liveKm ? '#E8B33A' : '#00B4D9' }}>● {D.liveKm ? 'Km every 2H · map delayed ' + (D.locationEmbargoHours ?? 24) + 'H' : 'Delayed ' + (D.embargoHours ?? 24) + 'H'} · through Day {D.day}{stamp ? ' · updated ' + stamp : ''}</span>
       </div>
 
       <div className="rtam-page" style={{ maxWidth: 1180, margin: '0 auto', padding: '56px 40px 90px', display: 'grid', gap: 48 }}>

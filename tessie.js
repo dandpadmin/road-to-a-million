@@ -1,8 +1,8 @@
 /* Tessie → RTAM_DATA adapter.
  *
- * This file does NOT run in the design system — the kit loads data.js (static
- * figures) so the card renders without a network call. Point the kit at this
- * file instead when you deploy the dashboard to the site.
+ * job/fetch-snapshot.mjs imports this file to shape Tessie data into the
+ * published snapshot. The page itself reads odometer.json (see app.jsx) and
+ * falls back to data.js (static figures) so it never renders empty.
  *
  * SECURITY MODEL — the website never touches Tessie.
  * A Tessie access token is a single full-access credential; there is no
@@ -23,11 +23,10 @@
  * DRIVER SAFETY — locations are embargoed on their own clock.
  * Distance may run live; anything that reveals a PLACE is held back at least
  * LOCATION_EMBARGO_HOURS (24, floored) and rounded to town, so
- * the dashboard can never be used to find the car or the driver. Nothing that
- * reveals a current position leaves this file: the odometer is reconstructed as
- * at the cutoff rather than read live, because a live reading plus a known
- * route is itself a position. Do not "fix" that by using state.odometer
- * directly.
+ * the dashboard can never be used to find the car or the driver. With
+ * EMBARGO_HOURS at 0 the km figures run as fresh as the last snapshot, a
+ * deliberate choice (see README "Driver safety"); nothing that names a place
+ * is ever newer than the location cutoff.
  *
  * Field names below follow developer.tessie.com and are confirmed against a
  * live account: timestamps arrive as Unix SECONDS and the /state odometer is

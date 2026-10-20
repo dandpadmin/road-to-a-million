@@ -1,10 +1,12 @@
-# Copy to .github/workflows/snapshot.yml in the repository.
-# Assumes this folder (odometer) IS the repository root.
-# This is the timer: every 15 minutes it runs the helper and commits odometer.json.
+# The timer: every 2 hours it runs the helper and commits odometer.json.
+# Minute 17 avoids the top of the hour, when GitHub's scheduler is busiest and
+# most likely to delay or skip a run. GitHub still treats schedules as
+# best-effort, so expect roughly 8-12 runs a day rather than exactly 12.
+# Every run is a commit and a site rebuild, so keep the interval modest.
 name: Odometer snapshot
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 */2 * * *"
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -23,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
       - name: Read-only check (no wake or command calls)
         run: node job/check-readonly.mjs
       - name: Check the credentials exist before calling anything
