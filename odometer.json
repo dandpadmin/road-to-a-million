@@ -1,13 +1,13 @@
 {
-  "odometer": 30760,
+  "odometer": 30799,
   "goal": 1000000,
   "day": 49,
   "province": "Florida",
   "route": "Key West, Florida",
-  "today": 1285,
+  "today": 1442,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 628,
+  "avgPerDay": 631,
   "chargeSessions": 7,
   "chargeSupercharger": 7,
   "chargeOther": 0,
@@ -11485,7 +11485,7 @@
     }
   ],
   "asOf": "2026-10-19",
-  "updatedAt": "2026-10-20T03:44:29.202Z",
+  "updatedAt": "2026-10-20T04:05:42.836Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -15937,14 +15937,14 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 26726,
-      "pct": 90.5
+      "km": 26882,
+      "pct": 90.6
     },
     "energy": {
-      "used": 4591,
+      "used": 4612,
       "added": 4911,
-      "overhead": 6.5,
-      "whPerKm": 156,
+      "overhead": 6.1,
+      "whPerKm": 155,
       "kmPerKwh": 6.4,
       "packKwh": 62,
       "rangeEst": 401
@@ -16216,7 +16216,7 @@
     {
       "key": "2026-10-19",
       "label": "D 48",
-      "km": 1285
+      "km": 1442
     }
   ],
   "log": [
@@ -16227,7 +16227,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "1,285",
+      "km": "1,442",
       "chargeMinutes": 129,
       "note": ""
     },
