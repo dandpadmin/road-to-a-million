@@ -20,6 +20,17 @@ Tessie API -> job/fetch-snapshot.mjs (GitHub Action) -> odometer.json, history.j
   The token can control the car. Never put it in code, logs, chat or a committed file.
 - `EMBARGO_HOURS` is a repo Actions variable, not code.
 
+## The car's battery comes first
+
+Nothing in this repo may wake the car, keep it from sleeping, or send it a command.
+- All Tessie requests go through `get()` in `job/fetch-snapshot.mjs`: GET only, and only to
+  the `READ_ONLY` allowlist of stored-data endpoints. `/state` is always `use_cache=true`.
+- `job/check-readonly.mjs` runs before every snapshot and fails the run on any wake call,
+  command, non-GET request, `use_cache=false`, or a Tessie call outside `get()`.
+- Off switch: set the repo Actions variable `SNAPSHOT_PAUSED` to `true` and every run is
+  skipped before anything talks to Tessie.
+- Don't add an endpoint, raise the run frequency or change the schedule without Dan's say-so.
+
 ## Safety rules (Ron is a solo driver in a recognisable car)
 
 - **Location is always at least 24 hours old and town-level.** `LOCATION_EMBARGO_HOURS` is

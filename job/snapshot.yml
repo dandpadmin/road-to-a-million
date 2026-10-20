@@ -14,12 +14,18 @@ concurrency:
   cancel-in-progress: false
 jobs:
   snapshot:
+    # Off switch: set the repository variable SNAPSHOT_PAUSED to true
+    # (Settings > Secrets and variables > Actions > Variables) and every run,
+    # scheduled or manual, is skipped before anything talks to Tessie.
+    if: ${{ vars.SNAPSHOT_PAUSED != 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Read-only check (no wake or command calls)
+        run: node job/check-readonly.mjs
       - name: Check the credentials exist before calling anything
         env:
           TESSIE_TOKEN: ${{ secrets.TESSIE_TOKEN }}

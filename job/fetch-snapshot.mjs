@@ -25,8 +25,21 @@ async function main() {
   const H = { Authorization: `Bearer ${TOKEN}`, Accept: 'application/json' };
   const q = 'distance_format=km&timezone=America/Winnipeg';
 
+  /* READ-ONLY GUARD. The car's battery comes first: this job may only read what
+     Tessie has already stored, never wake the car or send it a command. Every
+     request goes through get(), get() only issues GET, and only to the
+     endpoints listed here. Adding one is a deliberate change — confirm first
+     that it reads stored data and cannot wake the vehicle. The workflow's
+     "Read-only check" step fails the run if a wake or command call appears
+     anywhere in the job. */
+  const READ_ONLY = new Set(['state', 'drives', 'charges', 'path', 'battery_health']);
+
   const get = async (path) => {
-    const res = await fetch(`https://api.tessie.com/${VIN}/${path}`, { headers: H });
+    const endpoint = path.split('?')[0];
+    if (!READ_ONLY.has(endpoint)) {
+      throw new Error(`refusing to call /${endpoint}: not on the read-only allowlist`);
+    }
+    const res = await fetch(`https://api.tessie.com/${VIN}/${path}`, { method: 'GET', headers: H });
     if (!res.ok) {
       /* The two failures worth naming: an expired/rotated token and a VIN the
          token can't see. Everything else reads as itself. */
@@ -43,7 +56,9 @@ async function main() {
   const soft = (path) => get(path).catch((e) => { console.warn(`${path} unavailable:`, e.message); return null; });
 
   const [state, drives, charges, health] = await Promise.all([
-    get('state'),
+    /* use_cache=true is Tessie's default; it is spelled out so the job never
+       depends on that default. Stored state only — never a live read. */
+    get('state?use_cache=true'),
     /* A fixed recent window, NOT the whole trip — the request is the same size
        on day 900 as on day 9. ~6 weeks of drives covers the 30 plotted days in
        dayMaps with room to spare; anything older is read from the ledger. */
