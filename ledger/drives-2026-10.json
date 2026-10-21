@@ -173,5 +173,12 @@
 {"id":"445318768","s":1792514508,"e":1792514537,"km":0.03,"ap":0,"kwh":0,"t":18,"prov":"North Carolina","town":"Robbinsville"},
 {"id":"445327423","s":1792514537,"e":1792516142,"km":28.77,"ap":28.77,"kwh":2.86,"t":17.8,"prov":"North Carolina","town":"Robbinsville"},
 {"id":"445327427","s":1792516142,"e":1792516168,"km":0.02,"ap":0,"kwh":0,"t":17,"prov":"North Carolina","town":"Robbinsville"},
-{"id":"445327842","s":1792516168,"e":1792516230,"km":0.03,"ap":0,"kwh":0,"t":17,"prov":"North Carolina","town":"Robbinsville"}
+{"id":"445327842","s":1792516168,"e":1792516230,"km":0.03,"ap":0,"kwh":0,"t":17,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445331458","s":1792516859,"e":1792516907,"km":0.02,"ap":0,"kwh":0,"t":18,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445331855","s":1792516907,"e":1792516992,"km":0.02,"ap":0,"kwh":0,"t":18,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445344430","s":1792517427,"e":1792519671,"km":35.79,"ap":35.79,"kwh":3.12,"t":18.2,"prov":"Tennessee","town":"Maryville"},
+{"id":"445344435","s":1792519671,"e":1792519711,"km":0.03,"ap":0,"kwh":0,"t":20.8,"prov":"Tennessee","town":"Maryville"},
+{"id":"445345104","s":1792519711,"e":1792519821,"km":0.02,"ap":0,"kwh":0,"t":20,"prov":"Tennessee","town":"Maryville"},
+{"id":"445366697","s":1792519821,"e":1792524932,"km":126.93,"ap":125.69,"kwh":18.64,"t":21.9,"prov":"Tennessee","town":"Crossville"},
+{"id":"445372195","s":1792526196,"e":1792526265,"km":0.27,"ap":0,"kwh":-0.38,"t":24,"prov":"Tennessee","town":"Crossville"}
 ]

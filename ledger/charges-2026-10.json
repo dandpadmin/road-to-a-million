@@ -63,5 +63,6 @@
 {"id":"107894543","s":1792453278,"e":1792454688,"kwh":43.82,"cost":18.95,"sc":true,"soc0":12,"soc1":83,"kw":null,"prov":"Georgia","town":"Tifton"},
 {"id":"107900745","s":1792462771,"e":1792463465,"kwh":27.09,"cost":11.09,"sc":true,"soc0":10,"soc1":54,"kw":null,"prov":"Georgia","town":"McDonough"},
 {"id":"107931711","s":1792502556,"e":1792504434,"kwh":48.64,"cost":22.18,"sc":true,"soc0":13,"soc1":92,"kw":null,"prov":"Georgia","town":"Adairsville"},
-{"id":"107936291","s":1792510656,"e":1792511231,"kwh":10.92,"cost":null,"sc":false,"soc0":60,"soc1":78,"kw":null,"prov":"North Carolina","town":"Murphy"}
+{"id":"107936291","s":1792510656,"e":1792511231,"kwh":10.92,"cost":null,"sc":false,"soc0":60,"soc1":78,"kw":null,"prov":"North Carolina","town":"Murphy"},
+{"id":"107945133","s":1792524946,"e":1792526178,"kwh":35.99,"cost":14.77,"sc":true,"soc0":24,"soc1":83,"kw":null,"prov":"Tennessee","town":"Crossville"}
 ]
