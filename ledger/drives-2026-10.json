@@ -164,5 +164,14 @@
 {"id":"445130043","s":1792454735,"e":1792462755,"km":246.84,"ap":246.41,"kwh":43.12,"t":13.4,"prov":"Georgia","town":"McDonough"},
 {"id":"445141456","s":1792463479,"e":1792469080,"km":156.67,"ap":156.67,"kwh":21.02,"t":11.7,"prov":"Georgia","town":"Calhoun"},
 {"id":"445141598","s":1792469080,"e":1792469142,"km":0.1,"ap":0,"kwh":-0.02,"t":10.5,"prov":"Georgia","town":"Calhoun"},
-{"id":"445142944","s":1792469824,"e":1792469848,"km":0.08,"ap":0,"kwh":0,"t":10.5,"prov":"Georgia","town":"Calhoun"}
+{"id":"445142944","s":1792469824,"e":1792469848,"km":0.08,"ap":0,"kwh":0,"t":10.5,"prov":"Georgia","town":"Calhoun"},
+{"id":"445251961","s":1792501994,"e":1792502482,"km":3.57,"ap":0,"kwh":1.26,"t":7.9,"prov":"Georgia","town":"Adairsville"},
+{"id":"445252221","s":1792502482,"e":1792502544,"km":0.02,"ap":0,"kwh":0.12,"t":9,"prov":"Georgia","town":"Adairsville"},
+{"id":"445295698","s":1792504484,"e":1792510495,"km":132.75,"ap":132.19,"kwh":18.62,"t":12.3,"prov":"North Carolina","town":"Murphy"},
+{"id":"445295699","s":1792510495,"e":1792510510,"km":0.02,"ap":0,"kwh":0,"t":13,"prov":"North Carolina","town":"Murphy"},
+{"id":"445316815","s":1792511452,"e":1792514160,"km":57.66,"ap":57.66,"kwh":7.14,"t":15.8,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445318768","s":1792514508,"e":1792514537,"km":0.03,"ap":0,"kwh":0,"t":18,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445327423","s":1792514537,"e":1792516142,"km":28.77,"ap":28.77,"kwh":2.86,"t":17.8,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445327427","s":1792516142,"e":1792516168,"km":0.02,"ap":0,"kwh":0,"t":17,"prov":"North Carolina","town":"Robbinsville"},
+{"id":"445327842","s":1792516168,"e":1792516230,"km":0.03,"ap":0,"kwh":0,"t":17,"prov":"North Carolina","town":"Robbinsville"}
 ]
