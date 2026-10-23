@@ -1,18 +1,18 @@
 {
-  "odometer": 32144,
+  "odometer": 32395,
   "goal": 1000000,
   "day": 52,
   "province": "Illinois",
   "route": "Chicago, Illinois",
-  "today": 4,
+  "today": 218,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 620,
+  "avgPerDay": 612,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 222,
-  "chargeLifetimeSupercharger": 134,
+  "chargeLifetime": 223,
+  "chargeLifetimeSupercharger": 135,
   "chargeLifetimeOther": 88,
   "dayMap": {
     "key": "2026-10-21",
@@ -11949,8 +11949,8 @@
       "track": 3
     }
   ],
-  "asOf": "2026-10-22",
-  "updatedAt": "2026-10-23T11:41:07.286Z",
+  "asOf": "2026-10-23",
+  "updatedAt": "2026-10-23T17:09:12.574Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16729,24 +16729,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 28202,
-      "pct": 90.9
+      "km": 28419,
+      "pct": 91
     },
     "energy": {
-      "used": 4801,
-      "added": 5150,
-      "overhead": 6.8,
+      "used": 4834,
+      "added": 5189,
+      "overhead": 6.9,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 402
+      "rangeEst": 403
     },
     "cost": {
-      "total": 1180.14,
-      "supercharger": 1180.14,
+      "total": 1194.63,
+      "supercharger": 1194.63,
       "other": 0,
       "perKm": 0.038,
-      "sessions": 132,
+      "sessions": 133,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16783,8 +16783,8 @@
         },
         {
           "soc": 55,
-          "kw": 87,
-          "n": 39
+          "kw": 88,
+          "n": 40
         },
         {
           "soc": 60,
@@ -16832,7 +16832,7 @@
           "n": 1
         }
       ],
-      "sessions": 214,
+      "sessions": 215,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16860,11 +16860,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-22",
-      "label": "D 21",
-      "km": 470
-    },
     {
       "key": "2026-09-23",
       "label": "D 22",
@@ -17008,10 +17003,26 @@
     {
       "key": "2026-10-22",
       "label": "D 51",
-      "km": 4
+      "km": 5
+    },
+    {
+      "key": "2026-10-23",
+      "label": "D 52",
+      "km": 218
     }
   ],
   "log": [
+    {
+      "key": "2026-10-23",
+      "day": "Day 52",
+      "date": "Oct 23",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "218",
+      "chargeMinutes": 23,
+      "note": ""
+    },
     {
       "key": "2026-10-22",
       "day": "Day 51",
@@ -17019,7 +17030,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "4",
+      "km": "5",
       "chargeMinutes": 21,
       "note": ""
     },
@@ -17117,18 +17128,6 @@
       "plotted": true,
       "km": "71",
       "chargeMinutes": 58,
-      "note": ""
-    },
-    {
-      "key": "2026-10-13",
-      "day": "Day 42",
-      "date": "Oct 13",
-      "province": "New York",
-      "from": "Fredericton, New Brunswick",
-      "to": "Bronx, New York",
-      "plotted": true,
-      "km": "1,062",
-      "chargeMinutes": 71,
       "note": ""
     }
   ]
