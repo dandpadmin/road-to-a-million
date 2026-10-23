@@ -67,5 +67,6 @@
 {"id":"107945133","s":1792524946,"e":1792526178,"kwh":35.99,"cost":14.77,"sc":true,"soc0":24,"soc1":83,"kw":null,"prov":"Tennessee","town":"Crossville"},
 {"id":"107999464","s":1792599824,"e":1792601064,"kwh":41.89,"cost":17.53,"sc":true,"soc0":8,"soc1":76,"kw":null,"prov":"Kentucky","town":"Smiths Grove"},
 {"id":"108005663","s":1792609889,"e":1792611147,"kwh":39.65,"cost":17.76,"sc":true,"soc0":11,"soc1":76,"kw":null,"prov":"Indiana","town":"Columbus"},
-{"id":"108012431","s":1792620046,"e":1792621264,"kwh":38.73,"cost":17.12,"sc":true,"soc0":15,"soc1":78,"kw":null,"prov":"Indiana","town":"Fair Oaks"}
+{"id":"108012431","s":1792620046,"e":1792621264,"kwh":38.73,"cost":17.12,"sc":true,"soc0":15,"soc1":78,"kw":null,"prov":"Indiana","town":"Fair Oaks"},
+{"id":"108065910","s":1792690766,"e":1792692041,"kwh":23.56,"cost":6.56,"sc":true,"soc0":44,"soc1":82,"kw":null,"prov":"Illinois","town":"Chicago"}
 ]

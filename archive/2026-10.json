@@ -8355,5 +8355,22 @@
     "kmPerPx": 1.5417,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-10-22",
+    "day": 51,
+    "date": "Oct 22",
+    "label": "Day 51 · Oct 22",
+    "km": 5,
+    "from": "Chicago, Illinois",
+    "to": "Chicago, Illinois",
+    "corridor": "Chicago, Illinois",
+    "province": "Illinois",
+    "chargeStops": 1,
+    "chargeMinutes": 21,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]
