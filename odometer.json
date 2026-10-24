@@ -1,287 +1,226 @@
 {
-  "odometer": 33376,
+  "odometer": 33614,
   "goal": 1000000,
   "day": 53,
   "province": "Illinois",
-  "route": "Chicago, Illinois",
-  "today": 1232,
+  "route": "Normal, Illinois",
+  "today": 218,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 632,
-  "chargeSessions": 5,
-  "chargeSupercharger": 5,
+  "avgPerDay": 624,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 227,
-  "chargeLifetimeSupercharger": 139,
+  "chargeLifetime": 228,
+  "chargeLifetimeSupercharger": 140,
   "chargeLifetimeOther": 88,
   "dayMap": {
-    "key": "2026-10-22",
-    "day": 51,
-    "date": "Oct 22",
-    "label": "Day 51 · Oct 22",
-    "km": 5,
+    "key": "2026-10-23",
+    "day": 52,
+    "date": "Oct 23",
+    "label": "Day 52 · Oct 23",
+    "km": 218,
     "from": "Chicago, Illinois",
-    "to": "Chicago, Illinois",
-    "corridor": "Chicago, Illinois",
+    "to": "Normal, Illinois",
+    "corridor": "Normal, Illinois",
     "province": "Illinois",
     "chargeStops": 1,
-    "chargeMinutes": 21,
+    "chargeMinutes": 23,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.7222,
+        0.05
+      ],
+      [
+        0.716,
+        0.0718
+      ],
+      [
+        0.7178,
+        0.0824
+      ],
+      [
+        0.7163,
+        0.0843
+      ],
+      [
+        0.7063,
+        0.083
+      ],
+      [
+        0.6587,
+        0.1161
+      ],
+      [
+        0.6427,
+        0.1392
+      ],
+      [
+        0.6243,
+        0.1428
+      ],
+      [
+        0.5978,
+        0.1659
+      ],
+      [
+        0.5451,
+        0.2227
+      ],
+      [
+        0.5433,
+        0.2274
+      ],
+      [
+        0.5435,
+        0.2541
+      ],
+      [
+        0.5378,
+        0.2677
+      ],
+      [
+        0.5381,
+        0.2904
+      ],
+      [
+        0.5317,
+        0.3142
+      ],
+      [
+        0.5317,
+        0.4463
+      ],
+      [
+        0.5221,
+        0.4529
+      ],
+      [
+        0.5156,
+        0.4803
+      ],
+      [
+        0.4937,
+        0.5183
+      ],
+      [
+        0.4914,
+        0.5296
+      ],
+      [
+        0.4706,
+        0.5636
+      ],
+      [
+        0.4533,
+        0.5732
+      ],
+      [
+        0.4508,
+        0.5959
+      ],
+      [
+        0.4338,
+        0.628
+      ],
+      [
+        0.427,
+        0.6323
+      ],
+      [
+        0.4227,
+        0.6544
+      ],
+      [
+        0.4118,
+        0.6782
+      ],
+      [
+        0.3832,
+        0.7063
+      ],
+      [
+        0.3819,
+        0.7409
+      ],
+      [
+        0.3702,
+        0.7901
+      ],
+      [
+        0.3616,
+        0.8093
+      ],
+      [
+        0.3603,
+        0.8321
+      ],
+      [
+        0.3487,
+        0.8684
+      ],
+      [
+        0.3416,
+        0.8714
+      ],
+      [
+        0.3391,
+        0.8754
+      ],
+      [
+        0.3337,
+        0.8981
+      ],
+      [
+        0.3229,
+        0.914
+      ],
+      [
+        0.3124,
+        0.9219
+      ],
+      [
+        0.2983,
+        0.9477
+      ],
+      [
+        0.2948,
+        0.95
+      ],
+      [
+        0.2778,
+        0.9417
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.7222,
+        "y": 0.05,
+        "town": "Chicago, Illinois",
+        "kind": "start",
+        "sessions": []
+      },
+      {
+        "x": 0.2778,
+        "y": 0.9417,
+        "town": "Normal, Illinois",
+        "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 23,
+            "socStart": 22,
+            "socEnd": 86
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.3653,
+    "plotted": true,
+    "track": 3
   },
   "dayMaps": [
-    {
-      "key": "2026-09-22",
-      "day": 21,
-      "date": "Sep 22",
-      "label": "Day 21 · Sep 22",
-      "km": 470,
-      "from": "Winnipeg, Manitoba",
-      "to": "Manitoba",
-      "corridor": "Manitoba",
-      "province": "Manitoba",
-      "chargeStops": 3,
-      "chargeMinutes": 907,
-      "note": "Town level · delayed 24h",
-      "path": [
-        [
-          0.6154,
-          0.9368
-        ],
-        [
-          0.6184,
-          0.9388
-        ],
-        [
-          0.6154,
-          0.95
-        ],
-        [
-          0.5973,
-          0.946
-        ],
-        [
-          0.5985,
-          0.9141
-        ],
-        [
-          0.5957,
-          0.9129
-        ],
-        [
-          0.5847,
-          0.8951
-        ],
-        [
-          0.5748,
-          0.8779
-        ],
-        [
-          0.5735,
-          0.8708
-        ],
-        [
-          0.542,
-          0.8311
-        ],
-        [
-          0.5325,
-          0.8013
-        ],
-        [
-          0.5322,
-          0.7928
-        ],
-        [
-          0.5248,
-          0.7804
-        ],
-        [
-          0.5246,
-          0.754
-        ],
-        [
-          0.5218,
-          0.7507
-        ],
-        [
-          0.5217,
-          0.7035
-        ],
-        [
-          0.5097,
-          0.6708
-        ],
-        [
-          0.5091,
-          0.6613
-        ],
-        [
-          0.4685,
-          0.5273
-        ],
-        [
-          0.4528,
-          0.4877
-        ],
-        [
-          0.4475,
-          0.4877
-        ],
-        [
-          0.4475,
-          0.4349
-        ],
-        [
-          0.4444,
-          0.4131
-        ],
-        [
-          0.4409,
-          0.4089
-        ],
-        [
-          0.4381,
-          0.3797
-        ],
-        [
-          0.4396,
-          0.3678
-        ],
-        [
-          0.4347,
-          0.3291
-        ],
-        [
-          0.4291,
-          0.3135
-        ],
-        [
-          0.4327,
-          0.2891
-        ],
-        [
-          0.4305,
-          0.2718
-        ],
-        [
-          0.4336,
-          0.2576
-        ],
-        [
-          0.433,
-          0.2273
-        ],
-        [
-          0.4265,
-          0.2014
-        ],
-        [
-          0.4259,
-          0.1891
-        ],
-        [
-          0.4178,
-          0.1526
-        ],
-        [
-          0.4099,
-          0.1532
-        ],
-        [
-          0.4071,
-          0.1442
-        ],
-        [
-          0.4019,
-          0.1388
-        ],
-        [
-          0.404,
-          0.1172
-        ],
-        [
-          0.3976,
-          0.1097
-        ],
-        [
-          0.3943,
-          0.0707
-        ],
-        [
-          0.3898,
-          0.068
-        ],
-        [
-          0.391,
-          0.0574
-        ],
-        [
-          0.3867,
-          0.05
-        ],
-        [
-          0.3793,
-          0.0518
-        ]
-      ],
-      "stops": [
-        {
-          "x": 0.6154,
-          "y": 0.9368,
-          "town": "Winnipeg, Manitoba",
-          "kind": "start",
-          "sessions": []
-        },
-        {
-          "x": 0.3793,
-          "y": 0.0518,
-          "town": "Manitoba",
-          "kind": "end",
-          "sessions": [
-            {
-              "network": "AC / destination",
-              "minutes": 841,
-              "socStart": 72,
-              "socEnd": 86
-            }
-          ]
-        },
-        {
-          "x": 0.4528,
-          "y": 0.4877,
-          "town": "Fairford, Manitoba",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "DC fast",
-              "minutes": 28,
-              "socStart": 37,
-              "socEnd": 69
-            }
-          ]
-        },
-        {
-          "x": 0.3951,
-          "y": 0.0783,
-          "town": "Cormorant, Manitoba",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "DC fast",
-              "minutes": 38,
-              "socStart": 17,
-              "socEnd": 75
-            }
-          ]
-        }
-      ],
-      "kmPerPx": 0.9135,
-      "plotted": true,
-      "track": 3
-    },
     {
       "key": "2026-09-23",
       "day": 22,
@@ -11465,10 +11404,216 @@
       "path": [],
       "stops": [],
       "kmPerPx": 0
+    },
+    {
+      "key": "2026-10-23",
+      "day": 52,
+      "date": "Oct 23",
+      "label": "Day 52 · Oct 23",
+      "km": 218,
+      "from": "Chicago, Illinois",
+      "to": "Normal, Illinois",
+      "corridor": "Normal, Illinois",
+      "province": "Illinois",
+      "chargeStops": 1,
+      "chargeMinutes": 23,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.7222,
+          0.05
+        ],
+        [
+          0.716,
+          0.0718
+        ],
+        [
+          0.7178,
+          0.0824
+        ],
+        [
+          0.7163,
+          0.0843
+        ],
+        [
+          0.7063,
+          0.083
+        ],
+        [
+          0.6587,
+          0.1161
+        ],
+        [
+          0.6427,
+          0.1392
+        ],
+        [
+          0.6243,
+          0.1428
+        ],
+        [
+          0.5978,
+          0.1659
+        ],
+        [
+          0.5451,
+          0.2227
+        ],
+        [
+          0.5433,
+          0.2274
+        ],
+        [
+          0.5435,
+          0.2541
+        ],
+        [
+          0.5378,
+          0.2677
+        ],
+        [
+          0.5381,
+          0.2904
+        ],
+        [
+          0.5317,
+          0.3142
+        ],
+        [
+          0.5317,
+          0.4463
+        ],
+        [
+          0.5221,
+          0.4529
+        ],
+        [
+          0.5156,
+          0.4803
+        ],
+        [
+          0.4937,
+          0.5183
+        ],
+        [
+          0.4914,
+          0.5296
+        ],
+        [
+          0.4706,
+          0.5636
+        ],
+        [
+          0.4533,
+          0.5732
+        ],
+        [
+          0.4508,
+          0.5959
+        ],
+        [
+          0.4338,
+          0.628
+        ],
+        [
+          0.427,
+          0.6323
+        ],
+        [
+          0.4227,
+          0.6544
+        ],
+        [
+          0.4118,
+          0.6782
+        ],
+        [
+          0.3832,
+          0.7063
+        ],
+        [
+          0.3819,
+          0.7409
+        ],
+        [
+          0.3702,
+          0.7901
+        ],
+        [
+          0.3616,
+          0.8093
+        ],
+        [
+          0.3603,
+          0.8321
+        ],
+        [
+          0.3487,
+          0.8684
+        ],
+        [
+          0.3416,
+          0.8714
+        ],
+        [
+          0.3391,
+          0.8754
+        ],
+        [
+          0.3337,
+          0.8981
+        ],
+        [
+          0.3229,
+          0.914
+        ],
+        [
+          0.3124,
+          0.9219
+        ],
+        [
+          0.2983,
+          0.9477
+        ],
+        [
+          0.2948,
+          0.95
+        ],
+        [
+          0.2778,
+          0.9417
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.7222,
+          "y": 0.05,
+          "town": "Chicago, Illinois",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.2778,
+          "y": 0.9417,
+          "town": "Normal, Illinois",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 23,
+              "socStart": 22,
+              "socEnd": 86
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.3653,
+      "plotted": true,
+      "track": 3
     }
   ],
-  "asOf": "2026-10-23",
-  "updatedAt": "2026-10-24T12:41:36.822Z",
+  "asOf": "2026-10-24",
+  "updatedAt": "2026-10-24T17:27:52.817Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -13704,6 +13849,16 @@
           "town": "Chicago",
           "day": 50,
           "date": "Oct 21"
+        },
+        {
+          "t": 18.5,
+          "wh": 150,
+          "km": 216,
+          "prov": "Illinois",
+          "ctry": "US",
+          "town": "Normal",
+          "day": 52,
+          "date": "Oct 23"
         }
       ],
       "median": 152,
@@ -13770,7 +13925,7 @@
         {
           "t": 19,
           "wh": 149,
-          "n": 30
+          "n": 31
         },
         {
           "t": 21,
@@ -15273,9 +15428,20 @@
               "town": "Chicago",
               "day": 51,
               "date": "Oct 22"
+            },
+            {
+              "min": 23,
+              "kwh": 39.3,
+              "soc0": 22,
+              "soc1": 86,
+              "prov": "Illinois",
+              "ctry": "US",
+              "town": "Normal",
+              "day": 52,
+              "date": "Oct 23"
             }
           ],
-          "n": 133,
+          "n": 134,
           "median": 15,
           "mean": 15,
           "shortest": {
@@ -16258,24 +16424,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 29431,
+      "km": 29647,
       "pct": 91.3
     },
     "energy": {
-      "used": 4984,
-      "added": 5334,
+      "used": 5012,
+      "added": 5367,
       "overhead": 6.6,
-      "whPerKm": 155,
+      "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 403
     },
     "cost": {
-      "total": 1251.22,
-      "supercharger": 1251.22,
+      "total": 1263.15,
+      "supercharger": 1263.15,
       "other": 0,
       "perKm": 0.039,
-      "sessions": 137,
+      "sessions": 138,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16297,8 +16463,8 @@
         },
         {
           "soc": 40,
-          "kw": 61,
-          "n": 12
+          "kw": 66,
+          "n": 13
         },
         {
           "soc": 45,
@@ -16361,7 +16527,7 @@
           "n": 1
         }
       ],
-      "sessions": 219,
+      "sessions": 220,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16389,11 +16555,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-23",
-      "label": "D 22",
-      "km": 605
-    },
     {
       "key": "2026-09-24",
       "label": "D 23",
@@ -16538,16 +16699,33 @@
       "key": "2026-10-23",
       "label": "D 52",
       "km": 1232
+    },
+    {
+      "key": "2026-10-24",
+      "label": "D 53",
+      "km": 218
     }
   ],
   "log": [
     {
-      "key": "2026-10-23",
-      "day": "Day 52",
-      "date": "Oct 23",
+      "key": "2026-10-24",
+      "day": "Day 53",
+      "date": "Oct 24",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "218",
+      "chargeMinutes": 17,
+      "note": ""
+    },
+    {
+      "key": "2026-10-23",
+      "day": "Day 52",
+      "date": "Oct 23",
+      "province": "Illinois",
+      "from": "Chicago, Illinois",
+      "to": "Normal, Illinois",
+      "plotted": true,
       "km": "1,232",
       "chargeMinutes": 111,
       "note": ""
@@ -16645,18 +16823,6 @@
       "plotted": true,
       "km": "1,238",
       "chargeMinutes": 80,
-      "note": ""
-    },
-    {
-      "key": "2026-10-14",
-      "day": "Day 43",
-      "date": "Oct 14",
-      "province": "New York",
-      "from": "Bronx, New York",
-      "to": "Bronx, New York",
-      "plotted": true,
-      "km": "71",
-      "chargeMinutes": 58,
       "note": ""
     }
   ]
