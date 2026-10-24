@@ -1,18 +1,18 @@
 {
-  "odometer": 33097,
+  "odometer": 33376,
   "goal": 1000000,
   "day": 53,
   "province": "Illinois",
   "route": "Chicago, Illinois",
-  "today": 927,
+  "today": 1232,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 626,
-  "chargeSessions": 4,
-  "chargeSupercharger": 4,
+  "avgPerDay": 632,
+  "chargeSessions": 5,
+  "chargeSupercharger": 5,
   "chargeOther": 0,
-  "chargeLifetime": 226,
-  "chargeLifetimeSupercharger": 138,
+  "chargeLifetime": 227,
+  "chargeLifetimeSupercharger": 139,
   "chargeLifetimeOther": 88,
   "dayMap": {
     "key": "2026-10-22",
@@ -11468,7 +11468,7 @@
     }
   ],
   "asOf": "2026-10-23",
-  "updatedAt": "2026-10-24T00:43:38.276Z",
+  "updatedAt": "2026-10-24T07:18:41.747Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16258,24 +16258,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 29128,
-      "pct": 91.2
+      "km": 29431,
+      "pct": 91.3
     },
     "energy": {
-      "used": 4936,
-      "added": 5294,
-      "overhead": 6.8,
+      "used": 4984,
+      "added": 5334,
+      "overhead": 6.6,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 403
     },
     "cost": {
-      "total": 1235.7,
-      "supercharger": 1235.7,
+      "total": 1251.22,
+      "supercharger": 1251.22,
       "other": 0,
       "perKm": 0.039,
-      "sessions": 136,
+      "sessions": 137,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16313,7 +16313,7 @@
         {
           "soc": 55,
           "kw": 88,
-          "n": 41
+          "n": 42
         },
         {
           "soc": 60,
@@ -16361,7 +16361,7 @@
           "n": 1
         }
       ],
-      "sessions": 218,
+      "sessions": 219,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16537,7 +16537,7 @@
     {
       "key": "2026-10-23",
       "label": "D 52",
-      "km": 927
+      "km": 1232
     }
   ],
   "log": [
@@ -16548,8 +16548,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "927",
-      "chargeMinutes": 87,
+      "km": "1,232",
+      "chargeMinutes": 111,
       "note": ""
     },
     {
