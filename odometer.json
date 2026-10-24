@@ -1,18 +1,18 @@
 {
-  "odometer": 32821,
+  "odometer": 33097,
   "goal": 1000000,
-  "day": 52,
+  "day": 53,
   "province": "Illinois",
   "route": "Chicago, Illinois",
-  "today": 469,
+  "today": 927,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 617,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 626,
+  "chargeSessions": 4,
+  "chargeSupercharger": 4,
   "chargeOther": 0,
-  "chargeLifetime": 224,
-  "chargeLifetimeSupercharger": 136,
+  "chargeLifetime": 226,
+  "chargeLifetimeSupercharger": 138,
   "chargeLifetimeOther": 88,
   "dayMap": {
     "key": "2026-10-22",
@@ -11468,7 +11468,7 @@
     }
   ],
   "asOf": "2026-10-23",
-  "updatedAt": "2026-10-23T21:25:52.450Z",
+  "updatedAt": "2026-10-24T00:43:38.276Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16258,24 +16258,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 28670,
-      "pct": 91
+      "km": 29128,
+      "pct": 91.2
     },
     "energy": {
-      "used": 4871,
-      "added": 5234,
-      "overhead": 6.9,
+      "used": 4936,
+      "added": 5294,
+      "overhead": 6.8,
       "whPerKm": 155,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 403
     },
     "cost": {
-      "total": 1212.99,
-      "supercharger": 1212.99,
+      "total": 1235.7,
+      "supercharger": 1235.7,
       "other": 0,
       "perKm": 0.039,
-      "sessions": 134,
+      "sessions": 136,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16313,12 +16313,12 @@
         {
           "soc": 55,
           "kw": 88,
-          "n": 40
+          "n": 41
         },
         {
           "soc": 60,
-          "kw": 74,
-          "n": 20
+          "kw": 76,
+          "n": 21
         },
         {
           "soc": 65,
@@ -16361,7 +16361,7 @@
           "n": 1
         }
       ],
-      "sessions": 216,
+      "sessions": 218,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -16537,7 +16537,7 @@
     {
       "key": "2026-10-23",
       "label": "D 52",
-      "km": 469
+      "km": 927
     }
   ],
   "log": [
@@ -16548,8 +16548,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "469",
-      "chargeMinutes": 55,
+      "km": "927",
+      "chargeMinutes": 87,
       "note": ""
     },
     {
