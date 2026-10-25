@@ -71,5 +71,7 @@
 {"id":"108065910","s":1792690766,"e":1792692041,"kwh":23.56,"cost":6.56,"sc":true,"soc0":44,"soc1":82,"kw":null,"prov":"Illinois","town":"Chicago"},
 {"id":"108129222","s":1792772713,"e":1792774078,"kwh":39.28,"cost":14.49,"sc":true,"soc0":22,"soc1":86,"kw":null,"prov":"Illinois","town":"Normal"},
 {"id":"108136105","s":1792782089,"e":1792783988,"kwh":44.98,"cost":18.36,"sc":true,"soc0":21,"soc1":95,"kw":null,"prov":"Illinois","town":"Collinsville"},
-{"id":"108142882","s":1792792175,"e":1792793131,"kwh":29.89,"cost":10.44,"sc":true,"soc0":33,"soc1":81,"kw":null,"prov":"Missouri","town":"Miner"}
+{"id":"108142882","s":1792792175,"e":1792793131,"kwh":29.89,"cost":10.44,"sc":true,"soc0":33,"soc1":81,"kw":null,"prov":"Missouri","town":"Miner"},
+{"id":"108149675","s":1792800660,"e":1792801613,"kwh":29.89,"cost":12.27,"sc":true,"soc0":33,"soc1":82,"kw":null,"prov":"Arkansas","town":"Jonesboro"},
+{"id":"108161731","s":1792808596,"e":1792810048,"kwh":40.32,"cost":15.52,"sc":true,"soc0":23,"soc1":89,"kw":null,"prov":"Arkansas","town":"Little Rock"}
 ]
