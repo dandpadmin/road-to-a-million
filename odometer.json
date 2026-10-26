@@ -1,18 +1,18 @@
 {
-  "odometer": 34937,
+  "odometer": 35242,
   "goal": 1000000,
   "day": 55,
   "province": "Texas",
   "route": "Cedar Park, Texas",
-  "today": 771,
+  "today": 1097,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 638,
-  "chargeSessions": 6,
-  "chargeSupercharger": 6,
+  "avgPerDay": 644,
+  "chargeSessions": 7,
+  "chargeSupercharger": 7,
   "chargeOther": 0,
-  "chargeLifetime": 236,
-  "chargeLifetimeSupercharger": 148,
+  "chargeLifetime": 237,
+  "chargeLifetimeSupercharger": 149,
   "chargeLifetimeOther": 88,
   "dayMap": {
     "key": "2026-10-24",
@@ -11937,7 +11937,7 @@
     }
   ],
   "asOf": "2026-10-25",
-  "updatedAt": "2026-10-26T00:23:53.975Z",
+  "updatedAt": "2026-10-26T07:49:26.139Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16938,24 +16938,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 30803,
+      "km": 31128,
       "pct": 91.2
     },
     "energy": {
-      "used": 5240,
-      "added": 5586,
-      "overhead": 6.2,
+      "used": 5285,
+      "added": 5622,
+      "overhead": 6,
       "whPerKm": 155,
-      "kmPerKwh": 6.4,
+      "kmPerKwh": 6.5,
       "packKwh": 62,
-      "rangeEst": 401
+      "rangeEst": 402
     },
     "cost": {
-      "total": 1347.3,
-      "supercharger": 1347.3,
+      "total": 1360.57,
+      "supercharger": 1360.57,
       "other": 0,
       "perKm": 0.04,
-      "sessions": 146,
+      "sessions": 147,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -16987,8 +16987,8 @@
         },
         {
           "soc": 50,
-          "kw": 91,
-          "n": 19
+          "kw": 92,
+          "n": 20
         },
         {
           "soc": 55,
@@ -17041,7 +17041,7 @@
           "n": 1
         }
       ],
-      "sessions": 228,
+      "sessions": 229,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -17217,7 +17217,7 @@
     {
       "key": "2026-10-25",
       "label": "D 54",
-      "km": 771
+      "km": 1097
     }
   ],
   "log": [
@@ -17228,8 +17228,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "771",
-      "chargeMinutes": 89,
+      "km": "1,097",
+      "chargeMinutes": 108,
       "note": ""
     },
     {
