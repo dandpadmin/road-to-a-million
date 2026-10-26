@@ -75,5 +75,6 @@
 {"id":"108149675","s":1792800660,"e":1792801613,"kwh":29.89,"cost":12.27,"sc":true,"soc0":33,"soc1":82,"kw":null,"prov":"Arkansas","town":"Jonesboro"},
 {"id":"108161731","s":1792808596,"e":1792810048,"kwh":40.32,"cost":15.52,"sc":true,"soc0":23,"soc1":89,"kw":null,"prov":"Arkansas","town":"Little Rock"},
 {"id":"108203767","s":1792861148,"e":1792862161,"kwh":32.34,"cost":11.93,"sc":true,"soc0":13,"soc1":66,"kw":null,"prov":"Texas","town":"New Boston"},
-{"id":"108208299","s":1792867081,"e":1792868468,"kwh":36.92,"cost":15.7,"sc":true,"soc0":18,"soc1":78,"kw":null,"prov":"Texas","town":"Greenville"}
+{"id":"108208299","s":1792867081,"e":1792868468,"kwh":36.92,"cost":15.7,"sc":true,"soc0":18,"soc1":78,"kw":null,"prov":"Texas","town":"Greenville"},
+{"id":"108220142","s":1792877321,"e":1792878477,"kwh":36.6,"cost":13.79,"sc":true,"soc0":4,"soc1":63,"kw":null,"prov":"Texas","town":"Lorena"}
 ]
