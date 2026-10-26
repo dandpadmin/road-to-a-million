@@ -76,5 +76,9 @@
 {"id":"108161731","s":1792808596,"e":1792810048,"kwh":40.32,"cost":15.52,"sc":true,"soc0":23,"soc1":89,"kw":null,"prov":"Arkansas","town":"Little Rock"},
 {"id":"108203767","s":1792861148,"e":1792862161,"kwh":32.34,"cost":11.93,"sc":true,"soc0":13,"soc1":66,"kw":null,"prov":"Texas","town":"New Boston"},
 {"id":"108208299","s":1792867081,"e":1792868468,"kwh":36.92,"cost":15.7,"sc":true,"soc0":18,"soc1":78,"kw":null,"prov":"Texas","town":"Greenville"},
-{"id":"108220142","s":1792877321,"e":1792878477,"kwh":36.6,"cost":13.79,"sc":true,"soc0":4,"soc1":63,"kw":null,"prov":"Texas","town":"Lorena"}
+{"id":"108220142","s":1792877321,"e":1792878477,"kwh":36.6,"cost":13.79,"sc":true,"soc0":4,"soc1":63,"kw":null,"prov":"Texas","town":"Lorena"},
+{"id":"108268893","s":1792941752,"e":1792942424,"kwh":25.58,"cost":10.34,"sc":true,"soc0":18,"soc1":60,"kw":null,"prov":"Texas","town":"Cedar Park"},
+{"id":"108273216","s":1792946714,"e":1792947886,"kwh":31.44,"cost":11.57,"sc":true,"soc0":36,"soc1":87,"kw":null,"prov":"Texas","town":"Llano"},
+{"id":"108277050","s":1792952367,"e":1792953288,"kwh":19.48,"cost":7.45,"sc":true,"soc0":51,"soc1":83,"kw":null,"prov":"Texas","town":"Junction"},
+{"id":"108280482","s":1792957640,"e":1792958208,"kwh":18.76,"cost":6.94,"sc":true,"soc0":37,"soc1":67,"kw":null,"prov":"Texas","town":"Ozona"}
 ]
