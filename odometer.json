@@ -1,757 +1,194 @@
 {
-  "odometer": 35878,
+  "odometer": 35906,
   "goal": 1000000,
   "day": 56,
-  "province": "New Mexico",
-  "route": "Las Cruces, New Mexico",
-  "today": 636,
+  "province": "Arizona",
+  "route": "Thatcher, Arizona",
+  "today": 28,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 644,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 632,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 240,
-  "chargeLifetimeSupercharger": 151,
+  "chargeLifetime": 241,
+  "chargeLifetimeSupercharger": 152,
   "chargeLifetimeOther": 89,
   "dayMap": {
-    "key": "2026-10-25",
-    "day": 54,
-    "date": "Oct 25",
-    "label": "Day 54 · Oct 25",
-    "km": 1097,
-    "from": "Cedar Park, Texas",
-    "to": "Las Cruces, New Mexico",
-    "corridor": "Las Cruces, New Mexico",
-    "province": "New Mexico",
-    "chargeStops": 8,
-    "chargeMinutes": 607,
+    "key": "2026-10-26",
+    "day": 55,
+    "date": "Oct 26",
+    "label": "Day 55 · Oct 26",
+    "km": 327,
+    "from": "Las Cruces, New Mexico",
+    "to": "Thatcher, Arizona",
+    "corridor": "Thatcher, Arizona",
+    "province": "Arizona",
+    "chargeStops": 1,
+    "chargeMinutes": 26,
     "note": "Town level · delayed 24h",
     "path": [
       [
-        0.945,
-        0.6444
-      ],
-      [
-        0.9442,
-        0.6422
+        0.9448,
+        0.6246
       ],
       [
         0.95,
-        0.6352
+        0.6431
       ],
       [
-        0.9445,
-        0.6265
+        0.9276,
+        0.6276
       ],
       [
-        0.9425,
-        0.6164
+        0.9,
+        0.6523
       ],
       [
-        0.9344,
-        0.6111
+        0.8106,
+        0.6523
       ],
       [
-        0.9238,
-        0.599
-      ],
-      [
-        0.8953,
-        0.5953
-      ],
-      [
-        0.8875,
-        0.6002
-      ],
-      [
-        0.8795,
-        0.6016
-      ],
-      [
-        0.8731,
-        0.5926
-      ],
-      [
-        0.8648,
-        0.5962
-      ],
-      [
-        0.8645,
-        0.5984
-      ],
-      [
-        0.8543,
-        0.5948
-      ],
-      [
-        0.8449,
-        0.5991
-      ],
-      [
-        0.834,
-        0.6007
-      ],
-      [
-        0.8122,
-        0.6003
-      ],
-      [
-        0.798,
-        0.5929
-      ],
-      [
-        0.7945,
-        0.5964
-      ],
-      [
-        0.7825,
-        0.5955
-      ],
-      [
-        0.7716,
-        0.6112
-      ],
-      [
-        0.7649,
-        0.631
-      ],
-      [
-        0.7578,
-        0.6408
-      ],
-      [
-        0.7544,
-        0.6401
+        0.7631,
+        0.6556
       ],
       [
         0.7539,
-        0.6444
+        0.6597
       ],
       [
-        0.7436,
-        0.6393
+        0.7375,
+        0.6559
       ],
       [
-        0.7363,
-        0.644
+        0.7013,
+        0.6357
       ],
       [
-        0.7275,
-        0.645
+        0.6763,
+        0.6246
       ],
       [
-        0.7058,
-        0.6545
+        0.5272,
+        0.6799
       ],
       [
-        0.6759,
-        0.6326
+        0.4527,
+        0.6799
       ],
       [
-        0.6645,
-        0.6303
+        0.3781,
+        0.5969
       ],
       [
-        0.6517,
-        0.6223
+        0.3603,
+        0.5966
       ],
       [
-        0.6448,
-        0.6222
+        0.3632,
+        0.5692
       ],
       [
-        0.6126,
-        0.6059
+        0.2886,
+        0.4862
       ],
       [
-        0.6072,
-        0.6061
+        0.2782,
+        0.4516
       ],
       [
-        0.5954,
-        0.6117
+        0.2521,
+        0.4233
       ],
       [
-        0.5775,
-        0.6071
+        0.2457,
+        0.3978
       ],
       [
-        0.5741,
-        0.6027
+        0.2361,
+        0.3812
       ],
       [
-        0.5579,
-        0.5989
+        0.2334,
+        0.3801
       ],
       [
-        0.5483,
-        0.605
+        0.224,
+        0.3904
       ],
       [
-        0.5339,
-        0.5954
+        0.2029,
+        0.3743
       ],
       [
-        0.5266,
-        0.5843
+        0.1963,
+        0.3649
       ],
       [
-        0.5113,
-        0.5722
+        0.1848,
+        0.3596
       ],
       [
-        0.4967,
-        0.5735
+        0.182,
+        0.3607
       ],
       [
-        0.4912,
-        0.5715
+        0.1745,
+        0.3735
       ],
       [
-        0.4714,
-        0.578
+        0.155,
+        0.3754
       ],
       [
-        0.4562,
-        0.5728
+        0.1131,
+        0.3569
       ],
       [
-        0.4217,
-        0.5704
+        0.0962,
+        0.3405
       ],
       [
-        0.4009,
-        0.6199
+        0.0719,
+        0.3386
       ],
       [
-        0.3839,
-        0.641
-      ],
-      [
-        0.3736,
-        0.6671
-      ],
-      [
-        0.3678,
-        0.665
-      ],
-      [
-        0.3617,
-        0.6721
-      ],
-      [
-        0.3579,
-        0.6713
-      ],
-      [
-        0.352,
-        0.6774
-      ],
-      [
-        0.3481,
-        0.6781
-      ],
-      [
-        0.3452,
-        0.6871
-      ],
-      [
-        0.3256,
-        0.6792
-      ],
-      [
-        0.322,
-        0.6803
-      ],
-      [
-        0.3014,
-        0.6629
-      ],
-      [
-        0.2763,
-        0.626
-      ],
-      [
-        0.2712,
-        0.626
-      ],
-      [
-        0.2523,
-        0.5919
-      ],
-      [
-        0.2411,
-        0.5431
-      ],
-      [
-        0.2359,
-        0.5452
-      ],
-      [
-        0.2209,
-        0.5339
-      ],
-      [
-        0.1771,
-        0.5122
-      ],
-      [
-        0.1723,
-        0.5168
-      ],
-      [
-        0.1666,
-        0.516
-      ],
-      [
-        0.1604,
-        0.5205
-      ],
-      [
-        0.1548,
-        0.5197
-      ],
-      [
-        0.133,
-        0.482
-      ],
-      [
-        0.1154,
-        0.4603
-      ],
-      [
-        0.0929,
-        0.4163
-      ],
-      [
-        0.0851,
-        0.4083
-      ],
-      [
-        0.0789,
-        0.4091
-      ],
-      [
-        0.075,
-        0.4125
-      ],
-      [
-        0.0677,
-        0.396
-      ],
-      [
-        0.0661,
-        0.3633
+        0.0649,
+        0.3297
       ],
       [
         0.05,
-        0.3129
+        0.3201
       ]
     ],
     "stops": [
       {
-        "x": 0.945,
-        "y": 0.6444,
-        "town": "Cedar Park, Texas",
+        "x": 0.9448,
+        "y": 0.6246,
+        "town": "Las Cruces, New Mexico",
         "kind": "start",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 11,
-            "socStart": 18,
-            "socEnd": 60
-          }
-        ]
+        "sessions": []
       },
       {
         "x": 0.05,
-        "y": 0.3129,
-        "town": "Las Cruces, New Mexico",
+        "y": 0.3201,
+        "town": "Thatcher, Arizona",
         "kind": "end",
         "sessions": [
           {
-            "network": "AC / destination",
-            "minutes": 499,
-            "socStart": 16,
-            "socEnd": 100
-          }
-        ]
-      },
-      {
-        "x": 0.8645,
-        "y": 0.5984,
-        "town": "Llano, Texas",
-        "kind": "charge",
-        "sessions": [
-          {
             "network": "Supercharger",
-            "minutes": 20,
-            "socStart": 36,
-            "socEnd": 87
-          }
-        ]
-      },
-      {
-        "x": 0.7539,
-        "y": 0.6444,
-        "town": "Junction, Texas",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 15,
-            "socStart": 51,
-            "socEnd": 83
-          }
-        ]
-      },
-      {
-        "x": 0.6081,
-        "y": 0.6076,
-        "town": "Ozona, Texas",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 9,
-            "socStart": 37,
-            "socEnd": 67
-          }
-        ]
-      },
-      {
-        "x": 0.4372,
-        "y": 0.5708,
-        "town": "Fort Stockton, Texas",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 20,
-            "socStart": 14,
-            "socEnd": 52
-          }
-        ]
-      },
-      {
-        "x": 0.3617,
-        "y": 0.6721,
-        "town": "Alpine, Texas",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 14,
-            "socStart": 14,
-            "socEnd": 59
-          }
-        ]
-      },
-      {
-        "x": 0.2411,
-        "y": 0.5431,
-        "town": "Van Horn, Texas",
-        "kind": "charge",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 19,
+            "minutes": 26,
             "socStart": 21,
-            "socEnd": 80
+            "socEnd": 90
           }
         ]
       }
     ],
-    "kmPerPx": 1.3102,
+    "kmPerPx": 0.4358,
     "plotted": true,
     "track": 3
   },
   "dayMaps": [
-    {
-      "key": "2026-09-25",
-      "day": 24,
-      "date": "Sep 25",
-      "label": "Day 24 · Sep 25",
-      "km": 365,
-      "from": "Winkler, Manitoba",
-      "to": "Ontario",
-      "corridor": "Ontario",
-      "province": "Ontario",
-      "chargeStops": 4,
-      "chargeMinutes": 202,
-      "note": "Town level · delayed 24h",
-      "path": [
-        [
-          0.05,
-          0.6939
-        ],
-        [
-          0.089,
-          0.6981
-        ],
-        [
-          0.096,
-          0.7021
-        ],
-        [
-          0.1078,
-          0.6981
-        ],
-        [
-          0.1972,
-          0.6981
-        ],
-        [
-          0.1938,
-          0.6667
-        ],
-        [
-          0.1903,
-          0.6543
-        ],
-        [
-          0.189,
-          0.596
-        ],
-        [
-          0.1969,
-          0.581
-        ],
-        [
-          0.2096,
-          0.5428
-        ],
-        [
-          0.212,
-          0.5287
-        ],
-        [
-          0.2294,
-          0.4849
-        ],
-        [
-          0.2332,
-          0.4888
-        ],
-        [
-          0.2767,
-          0.4894
-        ],
-        [
-          0.2845,
-          0.4676
-        ],
-        [
-          0.3431,
-          0.4676
-        ],
-        [
-          0.3554,
-          0.4122
-        ],
-        [
-          0.378,
-          0.432
-        ],
-        [
-          0.4314,
-          0.432
-        ],
-        [
-          0.446,
-          0.4359
-        ],
-        [
-          0.4738,
-          0.4359
-        ],
-        [
-          0.4858,
-          0.432
-        ],
-        [
-          0.5132,
-          0.4402
-        ],
-        [
-          0.5716,
-          0.4405
-        ],
-        [
-          0.5807,
-          0.4532
-        ],
-        [
-          0.5865,
-          0.4552
-        ],
-        [
-          0.601,
-          0.4487
-        ],
-        [
-          0.6318,
-          0.4475
-        ],
-        [
-          0.6484,
-          0.4337
-        ],
-        [
-          0.6573,
-          0.4207
-        ],
-        [
-          0.6785,
-          0.4077
-        ],
-        [
-          0.6825,
-          0.3955
-        ],
-        [
-          0.6899,
-          0.3901
-        ],
-        [
-          0.7162,
-          0.3867
-        ],
-        [
-          0.7297,
-          0.3938
-        ],
-        [
-          0.7684,
-          0.3986
-        ],
-        [
-          0.7788,
-          0.4046
-        ],
-        [
-          0.7809,
-          0.402
-        ],
-        [
-          0.809,
-          0.4
-        ],
-        [
-          0.826,
-          0.3856
-        ],
-        [
-          0.8507,
-          0.3774
-        ],
-        [
-          0.8743,
-          0.3845
-        ],
-        [
-          0.8836,
-          0.3817
-        ],
-        [
-          0.8863,
-          0.378
-        ],
-        [
-          0.8868,
-          0.3706
-        ],
-        [
-          0.8995,
-          0.3483
-        ],
-        [
-          0.9071,
-          0.3486
-        ],
-        [
-          0.9222,
-          0.3412
-        ],
-        [
-          0.9323,
-          0.3254
-        ],
-        [
-          0.945,
-          0.3186
-        ],
-        [
-          0.95,
-          0.3022
-        ],
-        [
-          0.941,
-          0.2979
-        ]
-      ],
-      "stops": [
-        {
-          "x": 0.05,
-          "y": 0.6939,
-          "town": "Winkler, Manitoba",
-          "kind": "start",
-          "sessions": [
-            {
-              "network": "AC / destination",
-              "minutes": 9,
-              "socStart": 39,
-              "socEnd": 40
-            },
-            {
-              "network": "AC / destination",
-              "minutes": 142,
-              "socStart": 39,
-              "socEnd": 43
-            }
-          ]
-        },
-        {
-          "x": 0.941,
-          "y": 0.2979,
-          "town": "Ontario",
-          "kind": "end",
-          "sessions": []
-        },
-        {
-          "x": 0.1907,
-          "y": 0.609,
-          "town": "Morris, Manitoba",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 18,
-              "socStart": 25,
-              "socEnd": 80
-            }
-          ]
-        },
-        {
-          "x": 0.8706,
-          "y": 0.3828,
-          "town": "Kenora, Ontario",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 33,
-              "socStart": 15,
-              "socEnd": 94
-            }
-          ]
-        }
-      ],
-      "kmPerPx": 0.4267,
-      "plotted": true,
-      "track": 3
-    },
     {
       "key": "2026-09-26",
       "day": 25,
@@ -12243,10 +11680,184 @@
       "kmPerPx": 1.3102,
       "plotted": true,
       "track": 3
+    },
+    {
+      "key": "2026-10-26",
+      "day": 55,
+      "date": "Oct 26",
+      "label": "Day 55 · Oct 26",
+      "km": 327,
+      "from": "Las Cruces, New Mexico",
+      "to": "Thatcher, Arizona",
+      "corridor": "Thatcher, Arizona",
+      "province": "Arizona",
+      "chargeStops": 1,
+      "chargeMinutes": 26,
+      "note": "Town level · delayed 24h",
+      "path": [
+        [
+          0.9448,
+          0.6246
+        ],
+        [
+          0.95,
+          0.6431
+        ],
+        [
+          0.9276,
+          0.6276
+        ],
+        [
+          0.9,
+          0.6523
+        ],
+        [
+          0.8106,
+          0.6523
+        ],
+        [
+          0.7631,
+          0.6556
+        ],
+        [
+          0.7539,
+          0.6597
+        ],
+        [
+          0.7375,
+          0.6559
+        ],
+        [
+          0.7013,
+          0.6357
+        ],
+        [
+          0.6763,
+          0.6246
+        ],
+        [
+          0.5272,
+          0.6799
+        ],
+        [
+          0.4527,
+          0.6799
+        ],
+        [
+          0.3781,
+          0.5969
+        ],
+        [
+          0.3603,
+          0.5966
+        ],
+        [
+          0.3632,
+          0.5692
+        ],
+        [
+          0.2886,
+          0.4862
+        ],
+        [
+          0.2782,
+          0.4516
+        ],
+        [
+          0.2521,
+          0.4233
+        ],
+        [
+          0.2457,
+          0.3978
+        ],
+        [
+          0.2361,
+          0.3812
+        ],
+        [
+          0.2334,
+          0.3801
+        ],
+        [
+          0.224,
+          0.3904
+        ],
+        [
+          0.2029,
+          0.3743
+        ],
+        [
+          0.1963,
+          0.3649
+        ],
+        [
+          0.1848,
+          0.3596
+        ],
+        [
+          0.182,
+          0.3607
+        ],
+        [
+          0.1745,
+          0.3735
+        ],
+        [
+          0.155,
+          0.3754
+        ],
+        [
+          0.1131,
+          0.3569
+        ],
+        [
+          0.0962,
+          0.3405
+        ],
+        [
+          0.0719,
+          0.3386
+        ],
+        [
+          0.0649,
+          0.3297
+        ],
+        [
+          0.05,
+          0.3201
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.9448,
+          "y": 0.6246,
+          "town": "Las Cruces, New Mexico",
+          "kind": "start",
+          "sessions": []
+        },
+        {
+          "x": 0.05,
+          "y": 0.3201,
+          "town": "Thatcher, Arizona",
+          "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 26,
+              "socStart": 21,
+              "socEnd": 90
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.4358,
+      "plotted": true,
+      "track": 3
     }
   ],
-  "asOf": "2026-10-26",
-  "updatedAt": "2026-10-27T14:33:02.640Z",
+  "asOf": "2026-10-27",
+  "updatedAt": "2026-10-27T20:42:53.597Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14682,6 +14293,16 @@
           "town": "Las Cruces",
           "day": 54,
           "date": "Oct 25"
+        },
+        {
+          "t": 18.3,
+          "wh": 141,
+          "km": 327,
+          "prov": "Arizona",
+          "ctry": "US",
+          "town": "Thatcher",
+          "day": 55,
+          "date": "Oct 26"
         }
       ],
       "median": 152,
@@ -14716,7 +14337,8 @@
         "Missouri",
         "Arkansas",
         "Texas",
-        "New Mexico"
+        "New Mexico",
+        "Arizona"
       ],
       "trend": [
         {
@@ -14752,7 +14374,7 @@
         {
           "t": 19,
           "wh": 149,
-          "n": 32
+          "n": 33
         },
         {
           "t": 21,
@@ -16420,9 +16042,20 @@
               "town": "Van Horn",
               "day": 54,
               "date": "Oct 25"
+            },
+            {
+              "min": 26,
+              "kwh": 42.9,
+              "soc0": 21,
+              "soc1": 90,
+              "prov": "Arizona",
+              "ctry": "US",
+              "town": "Thatcher",
+              "day": 55,
+              "date": "Oct 26"
             }
           ],
-          "n": 148,
+          "n": 149,
           "median": 16,
           "mean": 16,
           "shortest": {
@@ -17416,24 +17049,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 31750,
+      "km": 31777,
       "pct": 91.4
     },
     "energy": {
-      "used": 5369,
-      "added": 5723,
-      "overhead": 6.2,
+      "used": 5373,
+      "added": 5761,
+      "overhead": 6.7,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 403
     },
     "cost": {
-      "total": 1383.5,
-      "supercharger": 1383.5,
+      "total": 1405.48,
+      "supercharger": 1405.48,
       "other": 0,
       "perKm": 0.04,
-      "sessions": 149,
+      "sessions": 150,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -17471,7 +17104,7 @@
         {
           "soc": 55,
           "kw": 89,
-          "n": 43
+          "n": 44
         },
         {
           "soc": 60,
@@ -17519,7 +17152,7 @@
           "n": 1
         }
       ],
-      "sessions": 232,
+      "sessions": 233,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -17551,11 +17184,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-09-26",
-      "label": "D 25",
-      "km": 302
-    },
     {
       "key": "2026-09-27",
       "label": "D 26",
@@ -17700,16 +17328,33 @@
       "key": "2026-10-26",
       "label": "D 55",
       "km": 636
+    },
+    {
+      "key": "2026-10-27",
+      "label": "D 56",
+      "km": 28
     }
   ],
   "log": [
     {
-      "key": "2026-10-26",
-      "day": "Day 55",
-      "date": "Oct 26",
+      "key": "2026-10-27",
+      "day": "Day 56",
+      "date": "Oct 27",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "28",
+      "chargeMinutes": 22,
+      "note": ""
+    },
+    {
+      "key": "2026-10-26",
+      "day": "Day 55",
+      "date": "Oct 26",
+      "province": "Arizona",
+      "from": "Las Cruces, New Mexico",
+      "to": "Thatcher, Arizona",
+      "plotted": true,
       "km": "636",
       "chargeMinutes": 33,
       "note": ""
@@ -17807,18 +17452,6 @@
       "plotted": true,
       "km": "705",
       "chargeMinutes": 54,
-      "note": ""
-    },
-    {
-      "key": "2026-10-17",
-      "day": "Day 46",
-      "date": "Oct 17",
-      "province": "Florida",
-      "from": "Garden City, Georgia",
-      "to": "Daytona Beach, Florida",
-      "plotted": true,
-      "km": "393",
-      "chargeMinutes": 38,
       "note": ""
     }
   ]
