@@ -12246,7 +12246,7 @@
     }
   ],
   "asOf": "2026-10-26",
-  "updatedAt": "2026-10-27T07:53:58.285Z",
+  "updatedAt": "2026-10-27T14:33:02.640Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -17373,11 +17373,22 @@
               "town": "Fredericton",
               "day": 41,
               "date": "Oct 12"
+            },
+            {
+              "min": 499,
+              "kwh": 52.4,
+              "soc0": 16,
+              "soc1": 100,
+              "prov": "New Mexico",
+              "ctry": "US",
+              "town": "Las Cruces",
+              "day": 54,
+              "date": "Oct 25"
             }
           ],
-          "n": 17,
+          "n": 18,
           "median": 709,
-          "mean": 661,
+          "mean": 652,
           "shortest": {
             "min": 295,
             "kwh": 35.5,
@@ -17532,6 +17543,10 @@
       {
         "version": "2026.38.5.1",
         "since": "2026-10-16"
+      },
+      {
+        "version": "2026.38.5.11",
+        "since": "2026-10-27"
       }
     ]
   },

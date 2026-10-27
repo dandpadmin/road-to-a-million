@@ -83,5 +83,6 @@
 {"id":"108280482","s":1792957640,"e":1792958208,"kwh":18.76,"cost":6.94,"sc":true,"soc0":37,"soc1":67,"kw":null,"prov":"Texas","town":"Ozona"},
 {"id":"108285295","s":1792963764,"e":1792964980,"kwh":23.24,"cost":8.33,"sc":true,"soc0":14,"soc1":52,"kw":null,"prov":"Texas","town":"Fort Stockton"},
 {"id":"108288304","s":1792968302,"e":1792969112,"kwh":27.3,"cost":10.03,"sc":true,"soc0":14,"soc1":59,"kw":null,"prov":"Texas","town":"Alpine"},
-{"id":"108294082","s":1792975680,"e":1792976820,"kwh":36.22,"cost":13.27,"sc":true,"soc0":21,"soc1":80,"kw":null,"prov":"Texas","town":"Van Horn"}
+{"id":"108294082","s":1792975680,"e":1792976820,"kwh":36.22,"cost":13.27,"sc":true,"soc0":21,"soc1":80,"kw":null,"prov":"Texas","town":"Van Horn"},
+{"id":"108324773","s":1792985378,"e":1793015293,"kwh":52.39,"cost":null,"sc":false,"soc0":16,"soc1":100,"kw":null,"prov":"New Mexico","town":"Las Cruces"}
 ]
