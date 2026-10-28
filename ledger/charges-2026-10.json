@@ -86,5 +86,6 @@
 {"id":"108294082","s":1792975680,"e":1792976820,"kwh":36.22,"cost":13.27,"sc":true,"soc0":21,"soc1":80,"kw":null,"prov":"Texas","town":"Van Horn"},
 {"id":"108324773","s":1792985378,"e":1793015293,"kwh":52.39,"cost":null,"sc":false,"soc0":16,"soc1":100,"kw":null,"prov":"New Mexico","town":"Las Cruces"},
 {"id":"108342565","s":1793038828,"e":1793040387,"kwh":42.86,"cost":20.07,"sc":true,"soc0":21,"soc1":90,"kw":null,"prov":"Arizona","town":"Thatcher"},
-{"id":"108349471","s":1793050896,"e":1793051312,"kwh":5.86,"cost":2.86,"sc":true,"soc0":34,"soc1":44,"kw":null,"prov":"Arizona","town":"Scottsdale"}
+{"id":"108349471","s":1793050896,"e":1793051312,"kwh":5.86,"cost":2.86,"sc":true,"soc0":34,"soc1":44,"kw":null,"prov":"Arizona","town":"Scottsdale"},
+{"id":"108405792","s":1793126681,"e":1793127973,"kwh":37.53,"cost":21.98,"sc":true,"soc0":26,"soc1":87,"kw":null,"prov":"Arizona","town":"Phoenix"}
 ]
