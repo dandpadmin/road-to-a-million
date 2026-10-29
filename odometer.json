@@ -1,13 +1,13 @@
 {
-  "odometer": 35974,
+  "odometer": 36004,
   "goal": 1000000,
-  "day": 57,
+  "day": 58,
   "province": "Arizona",
   "route": "Cave Creek, Arizona",
-  "today": 68,
+  "today": 98,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 622,
+  "avgPerDay": 623,
   "chargeSessions": 2,
   "chargeSupercharger": 2,
   "chargeOther": 0,
@@ -11872,7 +11872,7 @@
     }
   ],
   "asOf": "2026-10-28",
-  "updatedAt": "2026-10-28T22:36:48.852Z",
+  "updatedAt": "2026-10-29T05:50:14.186Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -17100,9 +17100,9 @@
       "pct": 91.3
     },
     "energy": {
-      "used": 5382,
+      "used": 5387,
       "added": 5775,
-      "overhead": 6.8,
+      "overhead": 6.7,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
@@ -17379,7 +17379,7 @@
     {
       "key": "2026-10-28",
       "label": "D 57",
-      "km": 68
+      "km": 98
     }
   ],
   "log": [
@@ -17390,7 +17390,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "68",
+      "km": "98",
       "chargeMinutes": 13,
       "note": ""
     },
