@@ -1,18 +1,18 @@
 {
-  "odometer": 36524,
+  "odometer": 36624,
   "goal": 1000000,
-  "day": 58,
+  "day": 59,
   "province": "Arizona",
   "route": "Cave Creek, Arizona",
-  "today": 434,
+  "today": 621,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 619,
-  "chargeSessions": 3,
-  "chargeSupercharger": 3,
+  "avgPerDay": 623,
+  "chargeSessions": 4,
+  "chargeSupercharger": 4,
   "chargeOther": 0,
-  "chargeLifetime": 246,
-  "chargeLifetimeSupercharger": 157,
+  "chargeLifetime": 247,
+  "chargeLifetimeSupercharger": 158,
   "chargeLifetimeOther": 89,
   "dayMap": {
     "key": "2026-10-28",
@@ -12165,7 +12165,7 @@
     }
   ],
   "asOf": "2026-10-29",
-  "updatedAt": "2026-10-29T23:57:36.131Z",
+  "updatedAt": "2026-10-30T05:51:05.845Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -17421,24 +17421,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 32254,
-      "pct": 91.3
+      "km": 32431,
+      "pct": 91.4
     },
     "energy": {
-      "used": 5455,
-      "added": 5847,
-      "overhead": 6.7,
+      "used": 5477,
+      "added": 5878,
+      "overhead": 6.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 403
     },
     "cost": {
-      "total": 1449.47,
-      "supercharger": 1449.47,
+      "total": 1464.88,
+      "supercharger": 1464.88,
       "other": 0,
       "perKm": 0.041,
-      "sessions": 155,
+      "sessions": 156,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -17480,8 +17480,8 @@
         },
         {
           "soc": 60,
-          "kw": 75,
-          "n": 24
+          "kw": 76,
+          "n": 25
         },
         {
           "soc": 65,
@@ -17524,7 +17524,7 @@
           "n": 1
         }
       ],
-      "sessions": 238,
+      "sessions": 239,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -17704,7 +17704,7 @@
     {
       "key": "2026-10-29",
       "label": "D 58",
-      "km": 434
+      "km": 621
     }
   ],
   "log": [
@@ -17715,8 +17715,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "434",
-      "chargeMinutes": 49,
+      "km": "621",
+      "chargeMinutes": 69,
       "note": ""
     },
     {
