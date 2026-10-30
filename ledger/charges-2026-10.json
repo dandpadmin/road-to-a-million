@@ -91,5 +91,6 @@
 {"id":"108464727","s":1793207259,"e":1793207506,"kwh":5.72,"cost":3.02,"sc":true,"soc0":71,"soc1":80,"kw":null,"prov":"Arizona","town":"Phoenix"},
 {"id":"108469804","s":1793215127,"e":1793215648,"kwh":8.53,"cost":5.28,"sc":true,"soc0":75,"soc1":89,"kw":null,"prov":"Arizona","town":"Phoenix"},
 {"id":"108524370","s":1793287498,"e":1793288404,"kwh":18.56,"cost":10.75,"sc":true,"soc0":63,"soc1":93,"kw":null,"prov":"Arizona","town":"Phoenix"},
-{"id":"108531029","s":1793297687,"e":1793298706,"kwh":24.9,"cost":11.52,"sc":true,"soc0":53,"soc1":94,"kw":null,"prov":"Arizona","town":"Camp Verde"}
+{"id":"108531029","s":1793297687,"e":1793298706,"kwh":24.9,"cost":11.52,"sc":true,"soc0":53,"soc1":94,"kw":null,"prov":"Arizona","town":"Camp Verde"},
+{"id":"108536270","s":1793305809,"e":1793306814,"kwh":28.24,"cost":13.42,"sc":true,"soc0":35,"soc1":81,"kw":null,"prov":"Arizona","town":"Tusayan"}
 ]
