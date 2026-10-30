@@ -89,5 +89,7 @@
 {"id":"108349471","s":1793050896,"e":1793051312,"kwh":5.86,"cost":2.86,"sc":true,"soc0":34,"soc1":44,"kw":null,"prov":"Arizona","town":"Scottsdale"},
 {"id":"108405792","s":1793126681,"e":1793127973,"kwh":37.53,"cost":21.98,"sc":true,"soc0":26,"soc1":87,"kw":null,"prov":"Arizona","town":"Phoenix"},
 {"id":"108464727","s":1793207259,"e":1793207506,"kwh":5.72,"cost":3.02,"sc":true,"soc0":71,"soc1":80,"kw":null,"prov":"Arizona","town":"Phoenix"},
-{"id":"108469804","s":1793215127,"e":1793215648,"kwh":8.53,"cost":5.28,"sc":true,"soc0":75,"soc1":89,"kw":null,"prov":"Arizona","town":"Phoenix"}
+{"id":"108469804","s":1793215127,"e":1793215648,"kwh":8.53,"cost":5.28,"sc":true,"soc0":75,"soc1":89,"kw":null,"prov":"Arizona","town":"Phoenix"},
+{"id":"108524370","s":1793287498,"e":1793288404,"kwh":18.56,"cost":10.75,"sc":true,"soc0":63,"soc1":93,"kw":null,"prov":"Arizona","town":"Phoenix"},
+{"id":"108531029","s":1793297687,"e":1793298706,"kwh":24.9,"cost":11.52,"sc":true,"soc0":53,"soc1":94,"kw":null,"prov":"Arizona","town":"Camp Verde"}
 ]
