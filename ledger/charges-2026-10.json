@@ -94,5 +94,7 @@
 {"id":"108531029","s":1793297687,"e":1793298706,"kwh":24.9,"cost":11.52,"sc":true,"soc0":53,"soc1":94,"kw":null,"prov":"Arizona","town":"Camp Verde"},
 {"id":"108536270","s":1793305809,"e":1793306814,"kwh":28.24,"cost":13.42,"sc":true,"soc0":35,"soc1":81,"kw":null,"prov":"Arizona","town":"Tusayan"},
 {"id":"108548070","s":1793322003,"e":1793323198,"kwh":31.57,"cost":15.41,"sc":true,"soc0":32,"soc1":83,"kw":null,"prov":"Arizona","town":"Page"},
-{"id":"108592662","s":1793378026,"e":1793379351,"kwh":37.61,"cost":18.46,"sc":true,"soc0":28,"soc1":89,"kw":null,"prov":"Arizona","town":"Kayenta"}
+{"id":"108592662","s":1793378026,"e":1793379351,"kwh":37.61,"cost":18.46,"sc":true,"soc0":28,"soc1":89,"kw":null,"prov":"Arizona","town":"Kayenta"},
+{"id":"108601542","s":1793390967,"e":1793392164,"kwh":35.19,"cost":14.61,"sc":true,"soc0":30,"soc1":87,"kw":null,"prov":"Utah","town":"Moab"},
+{"id":"108608379","s":1793401223,"e":1793401476,"kwh":10.65,"cost":4.29,"sc":true,"soc0":48,"soc1":65,"kw":null,"prov":"Utah","town":"Green River"}
 ]
