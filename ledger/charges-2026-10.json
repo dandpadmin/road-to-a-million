@@ -99,5 +99,7 @@
 {"id":"108608379","s":1793401223,"e":1793401476,"kwh":10.65,"cost":4.29,"sc":true,"soc0":48,"soc1":65,"kw":null,"prov":"Utah","town":"Green River"},
 {"id":"108613288","s":1793407889,"e":1793408089,"kwh":3.52,"cost":1.43,"sc":true,"soc0":5,"soc1":11,"kw":null,"prov":"Utah","town":"Richfield"},
 {"id":"108614152","s":1793408447,"e":1793409304,"kwh":31.97,"cost":13,"sc":true,"soc0":9,"soc1":61,"kw":null,"prov":"Utah","town":"Richfield"},
-{"id":"108619083","s":1793414925,"e":1793416141,"kwh":39.59,"cost":15.78,"sc":true,"soc0":15,"soc1":79,"kw":null,"prov":"Utah","town":"Bryce Canyon City"}
+{"id":"108619083","s":1793414925,"e":1793416141,"kwh":39.59,"cost":15.78,"sc":true,"soc0":15,"soc1":79,"kw":null,"prov":"Utah","town":"Bryce Canyon City"},
+{"id":"108660786","s":1793468730,"e":1793469407,"kwh":4.06,"cost":1.95,"sc":true,"soc0":41,"soc1":47,"kw":null,"prov":"Utah","town":"Toquerville"},
+{"id":"108661675","s":1793469487,"e":1793470631,"kwh":27.38,"cost":11,"sc":true,"soc0":47,"soc1":92,"kw":null,"prov":"Utah","town":"Toquerville"}
 ]
