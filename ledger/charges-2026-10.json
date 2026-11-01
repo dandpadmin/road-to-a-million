@@ -96,5 +96,8 @@
 {"id":"108548070","s":1793322003,"e":1793323198,"kwh":31.57,"cost":15.41,"sc":true,"soc0":32,"soc1":83,"kw":null,"prov":"Arizona","town":"Page"},
 {"id":"108592662","s":1793378026,"e":1793379351,"kwh":37.61,"cost":18.46,"sc":true,"soc0":28,"soc1":89,"kw":null,"prov":"Arizona","town":"Kayenta"},
 {"id":"108601542","s":1793390967,"e":1793392164,"kwh":35.19,"cost":14.61,"sc":true,"soc0":30,"soc1":87,"kw":null,"prov":"Utah","town":"Moab"},
-{"id":"108608379","s":1793401223,"e":1793401476,"kwh":10.65,"cost":4.29,"sc":true,"soc0":48,"soc1":65,"kw":null,"prov":"Utah","town":"Green River"}
+{"id":"108608379","s":1793401223,"e":1793401476,"kwh":10.65,"cost":4.29,"sc":true,"soc0":48,"soc1":65,"kw":null,"prov":"Utah","town":"Green River"},
+{"id":"108613288","s":1793407889,"e":1793408089,"kwh":3.52,"cost":1.43,"sc":true,"soc0":5,"soc1":11,"kw":null,"prov":"Utah","town":"Richfield"},
+{"id":"108614152","s":1793408447,"e":1793409304,"kwh":31.97,"cost":13,"sc":true,"soc0":9,"soc1":61,"kw":null,"prov":"Utah","town":"Richfield"},
+{"id":"108619083","s":1793414925,"e":1793416141,"kwh":39.59,"cost":15.78,"sc":true,"soc0":15,"soc1":79,"kw":null,"prov":"Utah","town":"Bryce Canyon City"}
 ]
