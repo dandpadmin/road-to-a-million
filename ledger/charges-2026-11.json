@@ -1,5 +1,6 @@
 [
 {"id":"108720632","s":1793551577,"e":1793553026,"kwh":31.57,"cost":15.06,"sc":true,"soc0":40,"soc1":91,"kw":null,"prov":"Nevada","town":"Pahrump"},
 {"id":"108727170","s":1793561668,"e":1793562298,"kwh":22.42,"cost":11.4,"sc":true,"soc0":36,"soc1":72,"kw":null,"prov":"California","town":"Yermo"},
-{"id":"108731932","s":1793567887,"e":1793569243,"kwh":36.41,"cost":17.88,"sc":true,"soc0":32,"soc1":91,"kw":null,"prov":"California","town":"Yucca Valley"}
+{"id":"108731932","s":1793567887,"e":1793569243,"kwh":36.41,"cost":17.88,"sc":true,"soc0":32,"soc1":91,"kw":null,"prov":"California","town":"Yucca Valley"},
+{"id":"108742811","s":1793583445,"e":1793584164,"kwh":28.16,"cost":13.64,"sc":true,"soc0":22,"soc1":68,"kw":null,"prov":"Nevada","town":"Jean"}
 ]
