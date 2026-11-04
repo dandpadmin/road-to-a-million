@@ -1,25 +1,25 @@
 {
-  "odometer": 39173,
+  "odometer": 39209,
   "goal": 1000000,
-  "day": 63,
+  "day": 64,
   "province": "Nevada",
   "route": "Las Vegas, Nevada",
-  "today": 18,
+  "today": 53,
   "best": 1493,
   "bestDay": 29,
   "avgPerDay": 614,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 263,
-  "chargeLifetimeSupercharger": 174,
+  "chargeLifetime": 264,
+  "chargeLifetimeSupercharger": 175,
   "chargeLifetimeOther": 89,
   "dayMap": {
     "key": "2026-11-02",
     "day": 62,
     "date": "Nov 2",
     "label": "Day 62 · Nov 2",
-    "km": 22,
+    "km": 29,
     "from": "Las Vegas, Nevada",
     "to": "Las Vegas, Nevada",
     "corridor": "Las Vegas, Nevada",
@@ -54,6 +54,10 @@
       ],
       [
         0.7672,
+        0.05
+      ],
+      [
+        0.3025,
         0.05
       ]
     ],
@@ -11900,7 +11904,7 @@
       "day": 62,
       "date": "Nov 2",
       "label": "Day 62 · Nov 2",
-      "km": 22,
+      "km": 29,
       "from": "Las Vegas, Nevada",
       "to": "Las Vegas, Nevada",
       "corridor": "Las Vegas, Nevada",
@@ -11936,6 +11940,10 @@
         [
           0.7672,
           0.05
+        ],
+        [
+          0.3025,
+          0.05
         ]
       ],
       "stops": [
@@ -11960,7 +11968,7 @@
     }
   ],
   "asOf": "2026-11-03",
-  "updatedAt": "2026-11-03T21:50:22.501Z",
+  "updatedAt": "2026-11-04T02:21:20.840Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -17678,24 +17686,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 34866,
+      "km": 34896,
       "pct": 91.6
     },
     "energy": {
-      "used": 5852,
-      "added": 6282,
-      "overhead": 6.9,
+      "used": 5857,
+      "added": 6285,
+      "overhead": 6.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 404
     },
     "cost": {
-      "total": 1648.78,
-      "supercharger": 1648.78,
+      "total": 1650.49,
+      "supercharger": 1650.49,
       "other": 0,
       "perKm": 0.043,
-      "sessions": 172,
+      "sessions": 173,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -17781,7 +17789,7 @@
           "n": 1
         }
       ],
-      "sessions": 255,
+      "sessions": 256,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -17961,7 +17969,7 @@
     {
       "key": "2026-11-03",
       "label": "D 63",
-      "km": 18
+      "km": 53
     }
   ],
   "log": [
@@ -17972,8 +17980,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "18",
-      "chargeMinutes": 5,
+      "km": "53",
+      "chargeMinutes": 8,
       "note": ""
     },
     {
