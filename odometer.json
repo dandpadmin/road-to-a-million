@@ -19,17 +19,53 @@
     "day": 63,
     "date": "Nov 3",
     "label": "Day 63 · Nov 3",
-    "km": 0,
+    "km": 7,
     "from": "Las Vegas, Nevada",
     "to": "Las Vegas, Nevada",
     "corridor": "Las Vegas, Nevada",
     "province": "Nevada",
-    "chargeStops": 0,
-    "chargeMinutes": 0,
+    "chargeStops": 1,
+    "chargeMinutes": 5,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.2608,
+        0.617
+      ],
+      [
+        0.7392,
+        0.383
+      ],
+      [
+        0.7253,
+        0.617
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.2608,
+        "y": 0.617,
+        "town": "Las Vegas, Nevada",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 5,
+            "socStart": 77,
+            "socEnd": 85
+          },
+          {
+            "network": "Supercharger",
+            "minutes": 3,
+            "socStart": 78,
+            "socEnd": 83
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.0134,
+    "plotted": true,
+    "track": 3
   },
   "dayMaps": [
     {
@@ -11498,21 +11534,57 @@
       "day": 63,
       "date": "Nov 3",
       "label": "Day 63 · Nov 3",
-      "km": 0,
+      "km": 7,
       "from": "Las Vegas, Nevada",
       "to": "Las Vegas, Nevada",
       "corridor": "Las Vegas, Nevada",
       "province": "Nevada",
-      "chargeStops": 0,
-      "chargeMinutes": 0,
+      "chargeStops": 1,
+      "chargeMinutes": 5,
       "note": "Town level · delayed 24h",
-      "path": [],
-      "stops": [],
-      "kmPerPx": 0
+      "path": [
+        [
+          0.2608,
+          0.617
+        ],
+        [
+          0.7392,
+          0.383
+        ],
+        [
+          0.7253,
+          0.617
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.2608,
+          "y": 0.617,
+          "town": "Las Vegas, Nevada",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 5,
+              "socStart": 77,
+              "socEnd": 85
+            },
+            {
+              "network": "Supercharger",
+              "minutes": 3,
+              "socStart": 78,
+              "socEnd": 83
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.0134,
+      "plotted": true,
+      "track": 3
     }
   ],
   "asOf": "2026-11-03",
-  "updatedAt": "2026-11-04T12:10:04.610Z",
+  "updatedAt": "2026-11-04T19:46:30.771Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16234,9 +16306,20 @@
               "town": "Las Vegas",
               "day": 62,
               "date": "Nov 2"
+            },
+            {
+              "min": 5,
+              "kwh": 5.5,
+              "soc0": 77,
+              "soc1": 85,
+              "prov": "Nevada",
+              "ctry": "US",
+              "town": "Las Vegas",
+              "day": 63,
+              "date": "Nov 3"
             }
           ],
-          "n": 172,
+          "n": 173,
           "median": 16,
           "mean": 16,
           "shortest": {
@@ -17524,6 +17607,7 @@
       "province": "Nevada",
       "from": "Las Vegas, Nevada",
       "to": "Las Vegas, Nevada",
+      "plotted": true,
       "km": "53",
       "chargeMinutes": 8,
       "note": ""
