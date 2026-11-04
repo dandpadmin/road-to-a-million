@@ -565,5 +565,22 @@
     "kmPerPx": 0.0134,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-11-03",
+    "day": 63,
+    "date": "Nov 3",
+    "label": "Day 63 · Nov 3",
+    "km": 0,
+    "from": "Las Vegas, Nevada",
+    "to": "Las Vegas, Nevada",
+    "corridor": "Las Vegas, Nevada",
+    "province": "Nevada",
+    "chargeStops": 0,
+    "chargeMinutes": 0,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]
