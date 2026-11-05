@@ -1,13 +1,13 @@
 {
-  "odometer": 39254,
+  "odometer": 39290,
   "goal": 1000000,
   "day": 65,
   "province": "Nevada",
   "route": "Las Vegas, Nevada",
-  "today": 43,
+  "today": 81,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 605,
+  "avgPerDay": 606,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
@@ -19,7 +19,7 @@
     "day": 63,
     "date": "Nov 3",
     "label": "Day 63 · Nov 3",
-    "km": 45,
+    "km": 53,
     "from": "Las Vegas, Nevada",
     "to": "Las Vegas, Nevada",
     "corridor": "Las Vegas, Nevada",
@@ -255,6 +255,22 @@
       [
         0.6602,
         0.05
+      ],
+      [
+        0.3676,
+        0.41
+      ],
+      [
+        0.298,
+        0.41
+      ],
+      [
+        0.284,
+        0.437
+      ],
+      [
+        0.1958,
+        0.95
       ]
     ],
     "stops": [
@@ -11750,7 +11766,7 @@
       "day": 63,
       "date": "Nov 3",
       "label": "Day 63 · Nov 3",
-      "km": 45,
+      "km": 53,
       "from": "Las Vegas, Nevada",
       "to": "Las Vegas, Nevada",
       "corridor": "Las Vegas, Nevada",
@@ -11986,6 +12002,22 @@
         [
           0.6602,
           0.05
+        ],
+        [
+          0.3676,
+          0.41
+        ],
+        [
+          0.298,
+          0.41
+        ],
+        [
+          0.284,
+          0.437
+        ],
+        [
+          0.1958,
+          0.95
         ]
       ],
       "stops": [
@@ -12016,7 +12048,7 @@
     }
   ],
   "asOf": "2026-11-04",
-  "updatedAt": "2026-11-05T00:54:47.789Z",
+  "updatedAt": "2026-11-05T09:30:30.442Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -17756,13 +17788,13 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 34936,
+      "km": 34972,
       "pct": 91.6
     },
     "energy": {
-      "used": 5862,
+      "used": 5868,
       "added": 6296,
-      "overhead": 6.9,
+      "overhead": 6.8,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
@@ -18039,7 +18071,7 @@
     {
       "key": "2026-11-04",
       "label": "D 64",
-      "km": 43
+      "km": 81
     }
   ],
   "log": [
@@ -18050,7 +18082,7 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "43",
+      "km": "81",
       "chargeMinutes": 8,
       "note": ""
     },
