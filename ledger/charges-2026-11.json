@@ -5,5 +5,6 @@
 {"id":"108742811","s":1793583445,"e":1793584164,"kwh":28.16,"cost":13.64,"sc":true,"soc0":22,"soc1":68,"kw":null,"prov":"Nevada","town":"Jean"},
 {"id":"108793403","s":1793652649,"e":1793653845,"kwh":26.62,"cost":12.55,"sc":true,"soc0":47,"soc1":90,"kw":null,"prov":"Nevada","town":"Las Vegas"},
 {"id":"108851507","s":1793733393,"e":1793733691,"kwh":5.5,"cost":2.89,"sc":true,"soc0":77,"soc1":85,"kw":null,"prov":"Nevada","town":"Las Vegas"},
-{"id":"108862958","s":1793750300,"e":1793750463,"kwh":2.96,"cost":1.71,"sc":true,"soc0":78,"soc1":83,"kw":null,"prov":"Nevada","town":"Las Vegas"}
+{"id":"108862958","s":1793750300,"e":1793750463,"kwh":2.96,"cost":1.71,"sc":true,"soc0":78,"soc1":83,"kw":null,"prov":"Nevada","town":"Las Vegas"},
+{"id":"108921998","s":1793828146,"e":1793828606,"kwh":11.05,"cost":5.8,"sc":true,"soc0":62,"soc1":80,"kw":null,"prov":"Nevada","town":"Las Vegas"}
 ]
