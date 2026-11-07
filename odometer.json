@@ -1,15 +1,15 @@
 {
-  "odometer": 40811,
+  "odometer": 40916,
   "goal": 1000000,
   "day": 67,
   "province": "Utah",
   "route": "Moab, Utah",
-  "today": 758,
+  "today": 106,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 611,
-  "chargeSessions": 4,
-  "chargeSupercharger": 4,
+  "avgPerDay": 603,
+  "chargeSessions": 0,
+  "chargeSupercharger": 0,
   "chargeOther": 0,
   "chargeLifetime": 273,
   "chargeLifetimeSupercharger": 184,
@@ -12182,8 +12182,8 @@
       "track": 3
     }
   ],
-  "asOf": "2026-11-06",
-  "updatedAt": "2026-11-07T08:48:54.714Z",
+  "asOf": "2026-11-07",
+  "updatedAt": "2026-11-07T16:27:28.696Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -18028,13 +18028,13 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 36468,
+      "km": 36573,
       "pct": 91.9
     },
     "energy": {
-      "used": 6103,
+      "used": 6119,
       "added": 6550,
-      "overhead": 6.8,
+      "overhead": 6.6,
       "whPerKm": 154,
       "kmPerKwh": 6.5,
       "packKwh": 62,
@@ -18163,11 +18163,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-10-07",
-      "label": "D 36",
-      "km": 944
-    },
     {
       "key": "2026-10-08",
       "label": "D 37",
@@ -18312,9 +18307,25 @@
       "key": "2026-11-06",
       "label": "D 66",
       "km": 758
+    },
+    {
+      "key": "2026-11-07",
+      "label": "D 67",
+      "km": 106
     }
   ],
   "log": [
+    {
+      "key": "2026-11-07",
+      "day": "Day 67",
+      "date": "Nov 7",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "106",
+      "chargeMinutes": 0,
+      "note": ""
+    },
     {
       "key": "2026-11-06",
       "day": "Day 66",
@@ -18420,18 +18431,6 @@
       "plotted": true,
       "km": "621",
       "chargeMinutes": 69,
-      "note": ""
-    },
-    {
-      "key": "2026-10-28",
-      "day": "Day 57",
-      "date": "Oct 28",
-      "province": "Arizona",
-      "from": "Cave Creek, Arizona",
-      "to": "Cave Creek, Arizona",
-      "plotted": true,
-      "km": "98",
-      "chargeMinutes": 13,
       "note": ""
     }
   ]
