@@ -9,5 +9,6 @@
 {"id":"108921998","s":1793828146,"e":1793828606,"kwh":11.05,"cost":5.8,"sc":true,"soc0":62,"soc1":80,"kw":null,"prov":"Nevada","town":"Las Vegas"},
 {"id":"108982234","s":1793906067,"e":1793907002,"kwh":30.24,"cost":14.03,"sc":true,"soc0":25,"soc1":74,"kw":null,"prov":"Nevada","town":"Mesquite"},
 {"id":"108986117","s":1793911422,"e":1793912789,"kwh":36.35,"cost":15.13,"sc":true,"soc0":29,"soc1":88,"kw":null,"prov":"Utah","town":"Cedar City"},
-{"id":"108997201","s":1793926128,"e":1793926974,"kwh":28.21,"cost":11.25,"sc":true,"soc0":36,"soc1":82,"kw":null,"prov":"Utah","town":"Richfield"}
+{"id":"108997201","s":1793926128,"e":1793926974,"kwh":28.21,"cost":11.25,"sc":true,"soc0":36,"soc1":82,"kw":null,"prov":"Utah","town":"Richfield"},
+{"id":"109004958","s":1793935675,"e":1793936394,"kwh":29.07,"cost":12.18,"sc":true,"soc0":7,"soc1":55,"kw":null,"prov":"Utah","town":"Moab"}
 ]
