@@ -12,5 +12,6 @@
 {"id":"108997201","s":1793926128,"e":1793926974,"kwh":28.21,"cost":11.25,"sc":true,"soc0":36,"soc1":82,"kw":null,"prov":"Utah","town":"Richfield"},
 {"id":"109004958","s":1793935675,"e":1793936394,"kwh":29.07,"cost":12.18,"sc":true,"soc0":7,"soc1":55,"kw":null,"prov":"Utah","town":"Moab"},
 {"id":"109046705","s":1793984271,"e":1793985922,"kwh":23.26,"cost":10.74,"sc":true,"soc0":49,"soc1":87,"kw":null,"prov":"Utah","town":"Moab"},
-{"id":"109054287","s":1793995259,"e":1793996864,"kwh":46.05,"cost":18.22,"sc":true,"soc0":12,"soc1":86,"kw":null,"prov":"Colorado","town":"Rifle"}
+{"id":"109054287","s":1793995259,"e":1793996864,"kwh":46.05,"cost":18.22,"sc":true,"soc0":12,"soc1":86,"kw":null,"prov":"Colorado","town":"Rifle"},
+{"id":"109060624","s":1794004090,"e":1794005591,"kwh":36.41,"cost":14.19,"sc":true,"soc0":32,"soc1":91,"kw":null,"prov":"Colorado","town":"Breckenridge"}
 ]
