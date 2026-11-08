@@ -14,5 +14,6 @@
 {"id":"109046705","s":1793984271,"e":1793985922,"kwh":23.26,"cost":10.74,"sc":true,"soc0":49,"soc1":87,"kw":null,"prov":"Utah","town":"Moab"},
 {"id":"109054287","s":1793995259,"e":1793996864,"kwh":46.05,"cost":18.22,"sc":true,"soc0":12,"soc1":86,"kw":null,"prov":"Colorado","town":"Rifle"},
 {"id":"109060624","s":1794004090,"e":1794005591,"kwh":36.41,"cost":14.19,"sc":true,"soc0":32,"soc1":91,"kw":null,"prov":"Colorado","town":"Breckenridge"},
-{"id":"109069279","s":1794015495,"e":1794016416,"kwh":24.01,"cost":9.41,"sc":true,"soc0":50,"soc1":89,"kw":null,"prov":"Colorado","town":"Poncha Springs"}
+{"id":"109069279","s":1794015495,"e":1794016416,"kwh":24.01,"cost":9.41,"sc":true,"soc0":50,"soc1":89,"kw":null,"prov":"Colorado","town":"Poncha Springs"},
+{"id":"109112021","s":1794067996,"e":1794069273,"kwh":34.72,"cost":13.78,"sc":true,"soc0":33,"soc1":90,"kw":null,"prov":"Colorado","town":"Montrose"}
 ]
