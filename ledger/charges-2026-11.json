@@ -18,5 +18,7 @@
 {"id":"109112021","s":1794067996,"e":1794069273,"kwh":34.72,"cost":13.78,"sc":true,"soc0":33,"soc1":90,"kw":null,"prov":"Colorado","town":"Montrose"},
 {"id":"109119006","s":1794078231,"e":1794079214,"kwh":28.1,"cost":10.98,"sc":true,"soc0":41,"soc1":87,"kw":null,"prov":"Colorado","town":"Cortez"},
 {"id":"109124928","s":1794087160,"e":1794088040,"kwh":27.46,"cost":14.11,"sc":true,"soc0":39,"soc1":84,"kw":null,"prov":"Arizona","town":"Kayenta"},
-{"id":"109132858","s":1794097431,"e":1794098857,"kwh":42.18,"cost":18.03,"sc":true,"soc0":17,"soc1":86,"kw":null,"prov":"Utah","town":"Kanab"}
+{"id":"109132858","s":1794097431,"e":1794098857,"kwh":42.18,"cost":18.03,"sc":true,"soc0":17,"soc1":86,"kw":null,"prov":"Utah","town":"Kanab"},
+{"id":"109139942","s":1794107384,"e":1794108222,"kwh":28.08,"cost":13.53,"sc":true,"soc0":33,"soc1":78,"kw":null,"prov":"Nevada","town":"Overton"},
+{"id":"109145852","s":1794114230,"e":1794115961,"kwh":41.7,"cost":16.27,"sc":true,"soc0":25,"soc1":93,"kw":null,"prov":"Nevada","town":"Pahrump"}
 ]
