@@ -85,5 +85,8 @@
 {"id":"451493396","s":1794143353,"e":1794144795,"km":28.57,"ap":8.85,"kwh":3.74,"t":14.2,"prov":"California","town":"Death Valley"},
 {"id":"451526529","s":1794151847,"e":1794153170,"km":28.61,"ap":25.89,"kwh":3.86,"t":15.9,"prov":"California","town":"Death Valley"},
 {"id":"451548004","s":1794156279,"e":1794157840,"km":38.37,"ap":36.27,"kwh":5.26,"t":19.1,"prov":"California","town":"Stovepipe Wells"},
-{"id":"451590507","s":1794161508,"e":1794167369,"km":153.6,"ap":152.57,"kwh":26.76,"t":19.3,"prov":"California","town":"Olancha"}
+{"id":"451590507","s":1794161508,"e":1794167369,"km":153.6,"ap":152.57,"kwh":26.76,"t":19.3,"prov":"California","town":"Olancha"},
+{"id":"451628502","s":1794169388,"e":1794177077,"km":225.45,"ap":225.45,"kwh":37.24,"t":20.1,"prov":"California","town":"Mammoth Lakes"},
+{"id":"451634414","s":1794178532,"e":1794178677,"km":1.22,"ap":0,"kwh":-0.26,"t":17,"prov":"California","town":"Mammoth Lakes"},
+{"id":"451635748","s":1794178934,"e":1794179039,"km":0.05,"ap":0,"kwh":-0.02,"t":15.8,"prov":"California","town":"Mammoth Lakes"}
 ]

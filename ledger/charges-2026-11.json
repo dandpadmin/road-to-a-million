@@ -22,5 +22,6 @@
 {"id":"109139942","s":1794107384,"e":1794108222,"kwh":28.08,"cost":13.53,"sc":true,"soc0":33,"soc1":78,"kw":null,"prov":"Nevada","town":"Overton"},
 {"id":"109145852","s":1794114230,"e":1794115961,"kwh":41.7,"cost":16.27,"sc":true,"soc0":25,"soc1":93,"kw":null,"prov":"Nevada","town":"Pahrump"},
 {"id":"109176300","s":1794153189,"e":1794156256,"kwh":4.9,"cost":null,"sc":false,"soc0":54,"soc1":62,"kw":null,"prov":"California","town":"Death Valley"},
-{"id":"109187530","s":1794167392,"e":1794169360,"kwh":46.66,"cost":23.55,"sc":true,"soc0":7,"soc1":82,"kw":null,"prov":"California","town":"Olancha"}
+{"id":"109187530","s":1794167392,"e":1794169360,"kwh":46.66,"cost":23.55,"sc":true,"soc0":7,"soc1":82,"kw":null,"prov":"California","town":"Olancha"},
+{"id":"109194281","s":1794177088,"e":1794178516,"kwh":34.86,"cost":17.45,"sc":true,"soc0":18,"soc1":75,"kw":null,"prov":"California","town":"Mammoth Lakes"}
 ]
