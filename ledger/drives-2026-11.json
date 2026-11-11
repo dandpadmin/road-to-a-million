@@ -93,5 +93,9 @@
 {"id":"451891937","s":1794243260,"e":1794251447,"km":188.31,"ap":185.78,"kwh":21,"t":10.6,"prov":"California","town":"Strawberry"},
 {"id":"451897745","s":1794251608,"e":1794252635,"km":23.64,"ap":22.31,"kwh":1.74,"t":15.1,"prov":"California","town":"Long Barn"},
 {"id":"451913069","s":1794252635,"e":1794256077,"km":72.1,"ap":72.02,"kwh":5.88,"t":20,"prov":"California","town":"Groveland"},
-{"id":"451917833","s":1794257144,"e":1794257280,"km":0.93,"ap":0,"kwh":0,"t":22.5,"prov":"California","town":"Groveland"}
+{"id":"451917833","s":1794257144,"e":1794257280,"km":0.93,"ap":0,"kwh":0,"t":22.5,"prov":"California","town":"Groveland"},
+{"id":"451922223","s":1794258007,"e":1794258359,"km":3.72,"ap":3.72,"kwh":0.62,"t":22.8,"prov":"California","town":"Big Oak Flat"},
+{"id":"451966915","s":1794258489,"e":1794268931,"km":229.12,"ap":228.09,"kwh":26.24,"t":24.9,"prov":"California","town":"San Francisco"},
+{"id":"451975060","s":1794269941,"e":1794271093,"km":12.89,"ap":12.79,"kwh":1.24,"t":21.3,"prov":"California","town":"Sausalito"},
+{"id":"451976027","s":1794271332,"e":1794271376,"km":0.18,"ap":0,"kwh":0.14,"t":18.5,"prov":"California","town":"Sausalito"}
 ]
