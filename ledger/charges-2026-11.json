@@ -25,5 +25,8 @@
 {"id":"109187530","s":1794167392,"e":1794169360,"kwh":46.66,"cost":23.55,"sc":true,"soc0":7,"soc1":82,"kw":null,"prov":"California","town":"Olancha"},
 {"id":"109194281","s":1794177088,"e":1794178516,"kwh":34.86,"cost":17.45,"sc":true,"soc0":18,"soc1":75,"kw":null,"prov":"California","town":"Mammoth Lakes"},
 {"id":"109252586","s":1794256090,"e":1794257130,"kwh":33.1,"cost":16.53,"sc":true,"soc0":20,"soc1":74,"kw":null,"prov":"California","town":"Groveland"},
-{"id":"109261463","s":1794268957,"e":1794269918,"kwh":31.34,"cost":15.88,"sc":true,"soc0":27,"soc1":78,"kw":null,"prov":"California","town":"San Francisco"}
+{"id":"109261463","s":1794268957,"e":1794269918,"kwh":31.34,"cost":15.88,"sc":true,"soc0":27,"soc1":78,"kw":null,"prov":"California","town":"San Francisco"},
+{"id":"109310727","s":1794333311,"e":1794335660,"kwh":42.06,"cost":20.6,"sc":true,"soc0":11,"soc1":79,"kw":null,"prov":"California","town":"Big Sur"},
+{"id":"109321372","s":1794351877,"e":1794352821,"kwh":30.96,"cost":15.58,"sc":true,"soc0":19,"soc1":69,"kw":null,"prov":"California","town":"Lost Hills"},
+{"id":"109322399","s":1794353356,"e":1794354017,"kwh":9.74,"cost":6.18,"sc":true,"soc0":73,"soc1":90,"kw":null,"prov":"California","town":"Wasco"}
 ]
