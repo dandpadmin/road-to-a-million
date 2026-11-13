@@ -31,5 +31,8 @@
 {"id":"109322399","s":1794353356,"e":1794354017,"kwh":9.74,"cost":6.18,"sc":true,"soc0":73,"soc1":90,"kw":null,"prov":"California","town":"Wasco"},
 {"id":"109330074","s":1794362194,"e":1794364219,"kwh":36.72,"cost":21.21,"sc":true,"soc0":34,"soc1":94,"kw":null,"prov":"California","town":"Los Angeles"},
 {"id":"109332059","s":1794366470,"e":1794366660,"kwh":3.32,"cost":1.67,"sc":true,"soc0":90,"soc1":95,"kw":null,"prov":"California","town":"Santa Monica"},
-{"id":"109372189","s":1794418535,"e":1794419476,"kwh":27.82,"cost":9.81,"sc":true,"soc0":43,"soc1":88,"kw":null,"prov":"California","town":"Escondido"}
+{"id":"109372189","s":1794418535,"e":1794419476,"kwh":27.82,"cost":9.81,"sc":true,"soc0":43,"soc1":88,"kw":null,"prov":"California","town":"Escondido"},
+{"id":"109377190","s":1794426454,"e":1794427412,"kwh":30.86,"cost":14.65,"sc":true,"soc0":31,"soc1":81,"kw":null,"prov":"California","town":"El Centro"},
+{"id":"109382051","s":1794433690,"e":1794435239,"kwh":41.6,"cost":19.82,"sc":true,"soc0":23,"soc1":90,"kw":null,"prov":"Arizona","town":"Dateland"},
+{"id":"109388762","s":1794443028,"e":1794444684,"kwh":47.84,"cost":27.16,"sc":true,"soc0":10,"soc1":88,"kw":null,"prov":"Arizona","town":"Tucson"}
 ]

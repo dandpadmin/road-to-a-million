@@ -1,159 +1,313 @@
 {
-  "odometer": 45638,
+  "odometer": 46268,
   "goal": 1000000,
-  "day": 72,
-  "province": "California",
-  "route": "Escondido, California",
-  "today": 330,
+  "day": 73,
+  "province": "Arizona",
+  "route": "Tucson, Arizona",
+  "today": 978,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 626,
-  "chargeSessions": 2,
-  "chargeSupercharger": 1,
+  "avgPerDay": 635,
+  "chargeSessions": 5,
+  "chargeSupercharger": 4,
   "chargeOther": 1,
-  "chargeLifetime": 296,
-  "chargeLifetimeSupercharger": 205,
+  "chargeLifetime": 299,
+  "chargeLifetimeSupercharger": 208,
   "chargeLifetimeOther": 91,
   "dayMap": {
     "key": "2026-11-11",
     "day": 71,
     "date": "Nov 11",
     "label": "Day 71 · Nov 11",
-    "km": 35,
+    "km": 716,
     "from": "Oceanside, California",
-    "to": "Escondido, California",
-    "corridor": "Escondido, California",
-    "province": "California",
-    "chargeStops": 1,
-    "chargeMinutes": 16,
+    "to": "Tucson, Arizona",
+    "corridor": "Tucson, Arizona",
+    "province": "Arizona",
+    "chargeStops": 4,
+    "chargeMinutes": 86,
     "note": "Town level · delayed 24h",
     "path": [
       [
         0.05,
-        0.3037
+        0.3813
       ],
       [
-        0.1475,
-        0.3906
+        0.0557,
+        0.3887
       ],
       [
-        0.143,
-        0.3934
+        0.0712,
+        0.3826
       ],
       [
-        0.1445,
-        0.4018
+        0.0822,
+        0.3981
       ],
       [
-        0.1715,
-        0.4607
+        0.0902,
+        0.3998
       ],
       [
-        0.215,
-        0.4131
+        0.0925,
+        0.3945
       ],
       [
-        0.275,
-        0.4046
+        0.0968,
+        0.4181
       ],
       [
-        0.305,
-        0.4131
+        0.0949,
+        0.4381
       ],
       [
-        0.3335,
-        0.4131
+        0.0903,
+        0.4556
       ],
       [
-        0.3605,
-        0.399
+        0.0907,
+        0.4924
       ],
       [
-        0.3905,
-        0.3906
+        0.1037,
+        0.4945
       ],
       [
-        0.44,
-        0.3457
+        0.108,
+        0.4924
       ],
       [
-        0.4685,
-        0.3373
+        0.1114,
+        0.486
       ],
       [
-        0.4985,
-        0.3317
+        0.1174,
+        0.4859
       ],
       [
-        0.5225,
-        0.3542
+        0.1231,
+        0.4753
       ],
       [
-        0.5465,
-        0.3822
+        0.1269,
+        0.4726
       ],
       [
-        0.5765,
-        0.4607
+        0.133,
+        0.472
       ],
       [
-        0.602,
-        0.4832
+        0.1366,
+        0.4763
       ],
       [
-        0.6365,
-        0.5561
+        0.1425,
+        0.4777
       ],
       [
-        0.68,
-        0.6234
+        0.156,
+        0.4768
       ],
       [
-        0.731,
-        0.6599
+        0.1613,
+        0.4807
       ],
       [
-        0.7535,
-        0.6571
+        0.1701,
+        0.4809
       ],
       [
-        0.803,
-        0.643
+        0.1758,
+        0.4838
       ],
       [
-        0.83,
-        0.6515
+        0.1812,
+        0.5078
       ],
       [
-        0.8555,
-        0.6683
+        0.19,
+        0.5063
       ],
       [
-        0.8795,
-        0.6795
+        0.1953,
+        0.5109
       ],
       [
-        0.9005,
-        0.6963
+        0.2027,
+        0.5132
+      ],
+      [
+        0.2073,
+        0.5194
+      ],
+      [
+        0.2189,
+        0.5236
+      ],
+      [
+        0.2281,
+        0.5305
+      ],
+      [
+        0.2326,
+        0.5297
+      ],
+      [
+        0.2347,
+        0.5243
+      ],
+      [
+        0.2336,
+        0.5191
+      ],
+      [
+        0.2377,
+        0.52
+      ],
+      [
+        0.2421,
+        0.5076
+      ],
+      [
+        0.2544,
+        0.5017
+      ],
+      [
+        0.3476,
+        0.5
+      ],
+      [
+        0.3795,
+        0.5111
+      ],
+      [
+        0.3996,
+        0.5106
+      ],
+      [
+        0.4137,
+        0.4974
+      ],
+      [
+        0.4427,
+        0.5046
+      ],
+      [
+        0.446,
+        0.5142
+      ],
+      [
+        0.4546,
+        0.5191
+      ],
+      [
+        0.4838,
+        0.5241
+      ],
+      [
+        0.4884,
+        0.5204
+      ],
+      [
+        0.5032,
+        0.5268
+      ],
+      [
+        0.526,
+        0.5191
+      ],
+      [
+        0.5319,
+        0.5132
+      ],
+      [
+        0.5744,
+        0.5
+      ],
+      [
+        0.6029,
+        0.4825
+      ],
+      [
+        0.6495,
+        0.4703
+      ],
+      [
+        0.6779,
+        0.4578
+      ],
+      [
+        0.7087,
+        0.4495
+      ],
+      [
+        0.7324,
+        0.4587
+      ],
+      [
+        0.74,
+        0.4589
+      ],
+      [
+        0.7647,
+        0.4734
+      ],
+      [
+        0.8508,
+        0.4736
+      ],
+      [
+        0.879,
+        0.504
+      ],
+      [
+        0.8848,
+        0.5075
+      ],
+      [
+        0.9024,
+        0.5284
+      ],
+      [
+        0.9202,
+        0.5677
+      ],
+      [
+        0.9395,
+        0.5935
       ],
       [
         0.95,
-        0.5841
+        0.6187
       ]
     ],
     "stops": [
       {
         "x": 0.05,
-        "y": 0.3037,
+        "y": 0.3813,
         "town": "Oceanside, California",
         "kind": "start",
         "sessions": []
       },
       {
         "x": 0.95,
-        "y": 0.5841,
-        "town": "Escondido, California",
+        "y": 0.6187,
+        "town": "Tucson, Arizona",
         "kind": "end",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 28,
+            "socStart": 10,
+            "socEnd": 88
+          }
+        ]
+      },
+      {
+        "x": 0.0925,
+        "y": 0.3945,
+        "town": "Escondido, California",
+        "kind": "charge",
         "sessions": [
           {
             "network": "Supercharger",
@@ -162,9 +316,37 @@
             "socEnd": 88
           }
         ]
+      },
+      {
+        "x": 0.3122,
+        "y": 0.5,
+        "town": "El Centro, California",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 16,
+            "socStart": 31,
+            "socEnd": 81
+          }
+        ]
+      },
+      {
+        "x": 0.5957,
+        "y": 0.4868,
+        "town": "Dateland, Arizona",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 26,
+            "socStart": 23,
+            "socEnd": 90
+          }
+        ]
       }
     ],
-    "kmPerPx": 0.043,
+    "kmPerPx": 0.9148,
     "plotted": true,
     "track": 3
   },
@@ -11146,141 +11328,295 @@
       "day": 71,
       "date": "Nov 11",
       "label": "Day 71 · Nov 11",
-      "km": 35,
+      "km": 716,
       "from": "Oceanside, California",
-      "to": "Escondido, California",
-      "corridor": "Escondido, California",
-      "province": "California",
-      "chargeStops": 1,
-      "chargeMinutes": 16,
+      "to": "Tucson, Arizona",
+      "corridor": "Tucson, Arizona",
+      "province": "Arizona",
+      "chargeStops": 4,
+      "chargeMinutes": 86,
       "note": "Town level · delayed 24h",
       "path": [
         [
           0.05,
-          0.3037
+          0.3813
         ],
         [
-          0.1475,
-          0.3906
+          0.0557,
+          0.3887
         ],
         [
-          0.143,
-          0.3934
+          0.0712,
+          0.3826
         ],
         [
-          0.1445,
-          0.4018
+          0.0822,
+          0.3981
         ],
         [
-          0.1715,
-          0.4607
+          0.0902,
+          0.3998
         ],
         [
-          0.215,
-          0.4131
+          0.0925,
+          0.3945
         ],
         [
-          0.275,
-          0.4046
+          0.0968,
+          0.4181
         ],
         [
-          0.305,
-          0.4131
+          0.0949,
+          0.4381
         ],
         [
-          0.3335,
-          0.4131
+          0.0903,
+          0.4556
         ],
         [
-          0.3605,
-          0.399
+          0.0907,
+          0.4924
         ],
         [
-          0.3905,
-          0.3906
+          0.1037,
+          0.4945
         ],
         [
-          0.44,
-          0.3457
+          0.108,
+          0.4924
         ],
         [
-          0.4685,
-          0.3373
+          0.1114,
+          0.486
         ],
         [
-          0.4985,
-          0.3317
+          0.1174,
+          0.4859
         ],
         [
-          0.5225,
-          0.3542
+          0.1231,
+          0.4753
         ],
         [
-          0.5465,
-          0.3822
+          0.1269,
+          0.4726
         ],
         [
-          0.5765,
-          0.4607
+          0.133,
+          0.472
         ],
         [
-          0.602,
-          0.4832
+          0.1366,
+          0.4763
         ],
         [
-          0.6365,
-          0.5561
+          0.1425,
+          0.4777
         ],
         [
-          0.68,
-          0.6234
+          0.156,
+          0.4768
         ],
         [
-          0.731,
-          0.6599
+          0.1613,
+          0.4807
         ],
         [
-          0.7535,
-          0.6571
+          0.1701,
+          0.4809
         ],
         [
-          0.803,
-          0.643
+          0.1758,
+          0.4838
         ],
         [
-          0.83,
-          0.6515
+          0.1812,
+          0.5078
         ],
         [
-          0.8555,
-          0.6683
+          0.19,
+          0.5063
         ],
         [
-          0.8795,
-          0.6795
+          0.1953,
+          0.5109
         ],
         [
-          0.9005,
-          0.6963
+          0.2027,
+          0.5132
+        ],
+        [
+          0.2073,
+          0.5194
+        ],
+        [
+          0.2189,
+          0.5236
+        ],
+        [
+          0.2281,
+          0.5305
+        ],
+        [
+          0.2326,
+          0.5297
+        ],
+        [
+          0.2347,
+          0.5243
+        ],
+        [
+          0.2336,
+          0.5191
+        ],
+        [
+          0.2377,
+          0.52
+        ],
+        [
+          0.2421,
+          0.5076
+        ],
+        [
+          0.2544,
+          0.5017
+        ],
+        [
+          0.3476,
+          0.5
+        ],
+        [
+          0.3795,
+          0.5111
+        ],
+        [
+          0.3996,
+          0.5106
+        ],
+        [
+          0.4137,
+          0.4974
+        ],
+        [
+          0.4427,
+          0.5046
+        ],
+        [
+          0.446,
+          0.5142
+        ],
+        [
+          0.4546,
+          0.5191
+        ],
+        [
+          0.4838,
+          0.5241
+        ],
+        [
+          0.4884,
+          0.5204
+        ],
+        [
+          0.5032,
+          0.5268
+        ],
+        [
+          0.526,
+          0.5191
+        ],
+        [
+          0.5319,
+          0.5132
+        ],
+        [
+          0.5744,
+          0.5
+        ],
+        [
+          0.6029,
+          0.4825
+        ],
+        [
+          0.6495,
+          0.4703
+        ],
+        [
+          0.6779,
+          0.4578
+        ],
+        [
+          0.7087,
+          0.4495
+        ],
+        [
+          0.7324,
+          0.4587
+        ],
+        [
+          0.74,
+          0.4589
+        ],
+        [
+          0.7647,
+          0.4734
+        ],
+        [
+          0.8508,
+          0.4736
+        ],
+        [
+          0.879,
+          0.504
+        ],
+        [
+          0.8848,
+          0.5075
+        ],
+        [
+          0.9024,
+          0.5284
+        ],
+        [
+          0.9202,
+          0.5677
+        ],
+        [
+          0.9395,
+          0.5935
         ],
         [
           0.95,
-          0.5841
+          0.6187
         ]
       ],
       "stops": [
         {
           "x": 0.05,
-          "y": 0.3037,
+          "y": 0.3813,
           "town": "Oceanside, California",
           "kind": "start",
           "sessions": []
         },
         {
           "x": 0.95,
-          "y": 0.5841,
-          "town": "Escondido, California",
+          "y": 0.6187,
+          "town": "Tucson, Arizona",
           "kind": "end",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 28,
+              "socStart": 10,
+              "socEnd": 88
+            }
+          ]
+        },
+        {
+          "x": 0.0925,
+          "y": 0.3945,
+          "town": "Escondido, California",
+          "kind": "charge",
           "sessions": [
             {
               "network": "Supercharger",
@@ -11289,15 +11625,43 @@
               "socEnd": 88
             }
           ]
+        },
+        {
+          "x": 0.3122,
+          "y": 0.5,
+          "town": "El Centro, California",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 16,
+              "socStart": 31,
+              "socEnd": 81
+            }
+          ]
+        },
+        {
+          "x": 0.5957,
+          "y": 0.4868,
+          "town": "Dateland, Arizona",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 26,
+              "socStart": 23,
+              "socEnd": 90
+            }
+          ]
         }
       ],
-      "kmPerPx": 0.043,
+      "kmPerPx": 0.9148,
       "plotted": true,
       "track": 3
     }
   ],
   "asOf": "2026-11-12",
-  "updatedAt": "2026-11-12T18:20:22.313Z",
+  "updatedAt": "2026-11-13T01:05:42.382Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14393,6 +14757,36 @@
           "town": "Escondido",
           "day": 71,
           "date": "Nov 11"
+        },
+        {
+          "t": 26.8,
+          "wh": 147,
+          "km": 218,
+          "prov": "California",
+          "ctry": "US",
+          "town": "El Centro",
+          "day": 71,
+          "date": "Nov 11"
+        },
+        {
+          "t": 30.2,
+          "wh": 167,
+          "km": 201,
+          "prov": "Arizona",
+          "ctry": "US",
+          "town": "Dateland",
+          "day": 71,
+          "date": "Nov 11"
+        },
+        {
+          "t": 28.2,
+          "wh": 173,
+          "km": 262,
+          "prov": "Arizona",
+          "ctry": "US",
+          "town": "Tucson",
+          "day": 71,
+          "date": "Nov 11"
         }
       ],
       "median": 149,
@@ -14498,17 +14892,17 @@
         {
           "t": 27,
           "wh": 143,
-          "n": 4
+          "n": 5
         },
         {
           "t": 29,
-          "wh": 119,
-          "n": 7
+          "wh": 152,
+          "n": 8
         },
         {
           "t": 31,
           "wh": 173,
-          "n": 5
+          "n": 6
         }
       ],
       "minKm": 20
@@ -16707,9 +17101,42 @@
               "town": "Escondido",
               "day": 71,
               "date": "Nov 11"
+            },
+            {
+              "min": 16,
+              "kwh": 30.9,
+              "soc0": 31,
+              "soc1": 81,
+              "prov": "California",
+              "ctry": "US",
+              "town": "El Centro",
+              "day": 71,
+              "date": "Nov 11"
+            },
+            {
+              "min": 26,
+              "kwh": 41.6,
+              "soc0": 23,
+              "soc1": 90,
+              "prov": "Arizona",
+              "ctry": "US",
+              "town": "Dateland",
+              "day": 71,
+              "date": "Nov 11"
+            },
+            {
+              "min": 28,
+              "kwh": 47.8,
+              "soc0": 10,
+              "soc1": 88,
+              "prov": "Arizona",
+              "ctry": "US",
+              "town": "Tucson",
+              "day": 71,
+              "date": "Nov 11"
             }
           ],
-          "n": 199,
+          "n": 202,
           "median": 16,
           "mean": 16,
           "shortest": {
@@ -17714,24 +18141,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 41145,
-      "pct": 92.6
+      "km": 41793,
+      "pct": 92.7
     },
     "energy": {
-      "used": 6791,
-      "added": 7293,
-      "overhead": 6.9,
+      "used": 6892,
+      "added": 7410,
+      "overhead": 7,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 406
     },
     "cost": {
-      "total": 2083.82,
-      "supercharger": 2083.82,
+      "total": 2130.79,
+      "supercharger": 2130.79,
       "other": 0,
       "perKm": 0.047,
-      "sessions": 203,
+      "sessions": 206,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -17758,8 +18185,8 @@
         },
         {
           "soc": 45,
-          "kw": 100,
-          "n": 29
+          "kw": 101,
+          "n": 31
         },
         {
           "soc": 50,
@@ -17769,7 +18196,7 @@
         {
           "soc": 55,
           "kw": 90,
-          "n": 50
+          "n": 51
         },
         {
           "soc": 60,
@@ -17817,7 +18244,7 @@
           "n": 1
         }
       ],
-      "sessions": 288,
+      "sessions": 291,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -18001,7 +18428,7 @@
     {
       "key": "2026-11-12",
       "label": "D 72",
-      "km": 330
+      "km": 978
     }
   ],
   "log": [
@@ -18012,17 +18439,17 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "330",
-      "chargeMinutes": 503,
+      "km": "978",
+      "chargeMinutes": 565,
       "note": ""
     },
     {
       "key": "2026-11-11",
       "day": "Day 71",
       "date": "Nov 11",
-      "province": "California",
+      "province": "Arizona",
       "from": "Oceanside, California",
-      "to": "Escondido, California",
+      "to": "Tucson, Arizona",
       "plotted": true,
       "km": "1,186",
       "chargeMinutes": 104,
