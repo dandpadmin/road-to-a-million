@@ -1,35 +1,226 @@
 {
-  "odometer": 46349,
+  "odometer": 46711,
   "goal": 1000000,
   "day": 73,
-  "province": "New Mexico",
-  "route": "Las Cruces, New Mexico",
-  "today": 1106,
+  "province": "Texas",
+  "route": "Valentine, Texas",
+  "today": 329,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 637,
-  "chargeSessions": 5,
-  "chargeSupercharger": 4,
-  "chargeOther": 1,
-  "chargeLifetime": 299,
-  "chargeLifetimeSupercharger": 208,
+  "avgPerDay": 633,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
+  "chargeOther": 0,
+  "chargeLifetime": 301,
+  "chargeLifetimeSupercharger": 210,
   "chargeLifetimeOther": 91,
   "dayMap": {
     "key": "2026-11-12",
     "day": 72,
     "date": "Nov 12",
     "label": "Day 72 · Nov 12",
-    "km": 0,
+    "km": 330,
     "from": "Las Cruces, New Mexico",
-    "to": "Las Cruces, New Mexico",
-    "corridor": "Las Cruces, New Mexico",
-    "province": "New Mexico",
-    "chargeStops": 1,
-    "chargeMinutes": 491,
+    "to": "Valentine, Texas",
+    "corridor": "Valentine, Texas",
+    "province": "Texas",
+    "chargeStops": 2,
+    "chargeMinutes": 503,
     "note": "Town level · delayed 24h",
-    "path": [],
-    "stops": [],
-    "kmPerPx": 0
+    "path": [
+      [
+        0.1782,
+        0.05
+      ],
+      [
+        0.1812,
+        0.0569
+      ],
+      [
+        0.1731,
+        0.0595
+      ],
+      [
+        0.1727,
+        0.0619
+      ],
+      [
+        0.1838,
+        0.0722
+      ],
+      [
+        0.2069,
+        0.1313
+      ],
+      [
+        0.221,
+        0.1805
+      ],
+      [
+        0.2264,
+        0.2038
+      ],
+      [
+        0.2264,
+        0.2668
+      ],
+      [
+        0.2293,
+        0.2898
+      ],
+      [
+        0.2376,
+        0.3094
+      ],
+      [
+        0.2434,
+        0.3107
+      ],
+      [
+        0.249,
+        0.3348
+      ],
+      [
+        0.2512,
+        0.3364
+      ],
+      [
+        0.26,
+        0.3271
+      ],
+      [
+        0.2783,
+        0.3242
+      ],
+      [
+        0.3003,
+        0.3457
+      ],
+      [
+        0.3243,
+        0.3867
+      ],
+      [
+        0.3598,
+        0.4704
+      ],
+      [
+        0.376,
+        0.487
+      ],
+      [
+        0.3894,
+        0.5085
+      ],
+      [
+        0.4164,
+        0.5365
+      ],
+      [
+        0.4305,
+        0.5654
+      ],
+      [
+        0.452,
+        0.5905
+      ],
+      [
+        0.4571,
+        0.6144
+      ],
+      [
+        0.479,
+        0.6443
+      ],
+      [
+        0.495,
+        0.6466
+      ],
+      [
+        0.5128,
+        0.6339
+      ],
+      [
+        0.5292,
+        0.6361
+      ],
+      [
+        0.5428,
+        0.6231
+      ],
+      [
+        0.5533,
+        0.6324
+      ],
+      [
+        0.6687,
+        0.6853
+      ],
+      [
+        0.711,
+        0.7173
+      ],
+      [
+        0.7264,
+        0.7118
+      ],
+      [
+        0.7325,
+        0.7261
+      ],
+      [
+        0.739,
+        0.7822
+      ],
+      [
+        0.7605,
+        0.8563
+      ],
+      [
+        0.8274,
+        0.95
+      ]
+    ],
+    "stops": [
+      {
+        "x": 0.1782,
+        "y": 0.05,
+        "town": "Las Cruces, New Mexico",
+        "kind": "start",
+        "sessions": [
+          {
+            "network": "AC / destination",
+            "minutes": 491,
+            "socStart": 13,
+            "socEnd": 99
+          }
+        ]
+      },
+      {
+        "x": 0.8274,
+        "y": 0.95,
+        "town": "Valentine, Texas",
+        "kind": "end",
+        "sessions": []
+      },
+      {
+        "x": 0.7264,
+        "y": 0.7118,
+        "town": "Van Horn, Texas",
+        "kind": "charge",
+        "sessions": [
+          {
+            "network": "Supercharger",
+            "minutes": 12,
+            "socStart": 27,
+            "socEnd": 69
+          }
+        ]
+      }
+    ],
+    "kmPerPx": 0.4558,
+    "plotted": true,
+    "track": 3
   },
   "dayMaps": [
     {
@@ -10947,21 +11138,212 @@
       "day": 72,
       "date": "Nov 12",
       "label": "Day 72 · Nov 12",
-      "km": 0,
+      "km": 330,
       "from": "Las Cruces, New Mexico",
-      "to": "Las Cruces, New Mexico",
-      "corridor": "Las Cruces, New Mexico",
-      "province": "New Mexico",
-      "chargeStops": 1,
-      "chargeMinutes": 491,
+      "to": "Valentine, Texas",
+      "corridor": "Valentine, Texas",
+      "province": "Texas",
+      "chargeStops": 2,
+      "chargeMinutes": 503,
       "note": "Town level · delayed 24h",
-      "path": [],
-      "stops": [],
-      "kmPerPx": 0
+      "path": [
+        [
+          0.1782,
+          0.05
+        ],
+        [
+          0.1812,
+          0.0569
+        ],
+        [
+          0.1731,
+          0.0595
+        ],
+        [
+          0.1727,
+          0.0619
+        ],
+        [
+          0.1838,
+          0.0722
+        ],
+        [
+          0.2069,
+          0.1313
+        ],
+        [
+          0.221,
+          0.1805
+        ],
+        [
+          0.2264,
+          0.2038
+        ],
+        [
+          0.2264,
+          0.2668
+        ],
+        [
+          0.2293,
+          0.2898
+        ],
+        [
+          0.2376,
+          0.3094
+        ],
+        [
+          0.2434,
+          0.3107
+        ],
+        [
+          0.249,
+          0.3348
+        ],
+        [
+          0.2512,
+          0.3364
+        ],
+        [
+          0.26,
+          0.3271
+        ],
+        [
+          0.2783,
+          0.3242
+        ],
+        [
+          0.3003,
+          0.3457
+        ],
+        [
+          0.3243,
+          0.3867
+        ],
+        [
+          0.3598,
+          0.4704
+        ],
+        [
+          0.376,
+          0.487
+        ],
+        [
+          0.3894,
+          0.5085
+        ],
+        [
+          0.4164,
+          0.5365
+        ],
+        [
+          0.4305,
+          0.5654
+        ],
+        [
+          0.452,
+          0.5905
+        ],
+        [
+          0.4571,
+          0.6144
+        ],
+        [
+          0.479,
+          0.6443
+        ],
+        [
+          0.495,
+          0.6466
+        ],
+        [
+          0.5128,
+          0.6339
+        ],
+        [
+          0.5292,
+          0.6361
+        ],
+        [
+          0.5428,
+          0.6231
+        ],
+        [
+          0.5533,
+          0.6324
+        ],
+        [
+          0.6687,
+          0.6853
+        ],
+        [
+          0.711,
+          0.7173
+        ],
+        [
+          0.7264,
+          0.7118
+        ],
+        [
+          0.7325,
+          0.7261
+        ],
+        [
+          0.739,
+          0.7822
+        ],
+        [
+          0.7605,
+          0.8563
+        ],
+        [
+          0.8274,
+          0.95
+        ]
+      ],
+      "stops": [
+        {
+          "x": 0.1782,
+          "y": 0.05,
+          "town": "Las Cruces, New Mexico",
+          "kind": "start",
+          "sessions": [
+            {
+              "network": "AC / destination",
+              "minutes": 491,
+              "socStart": 13,
+              "socEnd": 99
+            }
+          ]
+        },
+        {
+          "x": 0.8274,
+          "y": 0.95,
+          "town": "Valentine, Texas",
+          "kind": "end",
+          "sessions": []
+        },
+        {
+          "x": 0.7264,
+          "y": 0.7118,
+          "town": "Van Horn, Texas",
+          "kind": "charge",
+          "sessions": [
+            {
+              "network": "Supercharger",
+              "minutes": 12,
+              "socStart": 27,
+              "socEnd": 69
+            }
+          ]
+        }
+      ],
+      "kmPerPx": 0.4558,
+      "plotted": true,
+      "track": 3
     }
   ],
-  "asOf": "2026-11-12",
-  "updatedAt": "2026-11-13T09:33:19.698Z",
+  "asOf": "2026-11-13",
+  "updatedAt": "2026-11-13T17:45:20.842Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -14107,6 +14489,26 @@
           "town": "Las Cruces",
           "day": 71,
           "date": "Nov 11"
+        },
+        {
+          "t": 13.9,
+          "wh": 161,
+          "km": 260,
+          "prov": "Texas",
+          "ctry": "US",
+          "town": "Van Horn",
+          "day": 72,
+          "date": "Nov 12"
+        },
+        {
+          "t": 16.9,
+          "wh": 181,
+          "km": 62,
+          "prov": "Texas",
+          "ctry": "US",
+          "town": "Valentine",
+          "day": 72,
+          "date": "Nov 12"
         }
       ],
       "median": 150,
@@ -14176,8 +14578,8 @@
         },
         {
           "t": 13,
-          "wh": 145,
-          "n": 37
+          "wh": 149,
+          "n": 38
         },
         {
           "t": 15,
@@ -14186,8 +14588,8 @@
         },
         {
           "t": 17,
-          "wh": 144,
-          "n": 37
+          "wh": 146,
+          "n": 38
         },
         {
           "t": 19,
@@ -16465,9 +16867,20 @@
               "town": "Lordsburg",
               "day": 71,
               "date": "Nov 11"
+            },
+            {
+              "min": 12,
+              "kwh": 25.4,
+              "soc0": 27,
+              "soc1": 69,
+              "prov": "Texas",
+              "ctry": "US",
+              "town": "Van Horn",
+              "day": 72,
+              "date": "Nov 12"
             }
           ],
-          "n": 203,
+          "n": 204,
           "median": 16,
           "mean": 16,
           "shortest": {
@@ -17440,11 +17853,22 @@
               "town": "Las Cruces",
               "day": 54,
               "date": "Oct 25"
+            },
+            {
+              "min": 491,
+              "kwh": 54,
+              "soc0": 13,
+              "soc1": 99,
+              "prov": "New Mexico",
+              "ctry": "US",
+              "town": "Las Cruces",
+              "day": 72,
+              "date": "Nov 12"
             }
           ],
-          "n": 18,
-          "median": 709,
-          "mean": 652,
+          "n": 19,
+          "median": 688,
+          "mean": 643,
           "shortest": {
             "min": 295,
             "kwh": 35.5,
@@ -17472,24 +17896,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 41917,
+      "km": 42237,
       "pct": 92.7
     },
     "energy": {
-      "used": 6908,
-      "added": 7410,
-      "overhead": 6.8,
+      "used": 6954,
+      "added": 7487,
+      "overhead": 7.1,
       "whPerKm": 153,
-      "kmPerKwh": 6.5,
+      "kmPerKwh": 6.6,
       "packKwh": 62,
       "rangeEst": 406
     },
     "cost": {
-      "total": 2130.79,
-      "supercharger": 2130.79,
+      "total": 2154.13,
+      "supercharger": 2154.13,
       "other": 0,
       "perKm": 0.047,
-      "sessions": 206,
+      "sessions": 208,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -17516,8 +17940,8 @@
         },
         {
           "soc": 45,
-          "kw": 101,
-          "n": 31
+          "kw": 102,
+          "n": 32
         },
         {
           "soc": 50,
@@ -17526,8 +17950,8 @@
         },
         {
           "soc": 55,
-          "kw": 90,
-          "n": 51
+          "kw": 91,
+          "n": 52
         },
         {
           "soc": 60,
@@ -17575,7 +17999,7 @@
           "n": 1
         }
       ],
-      "sessions": 291,
+      "sessions": 293,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -17611,11 +18035,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-10-14",
-      "label": "D 43",
-      "km": 71
-    },
     {
       "key": "2026-10-15",
       "label": "D 44",
@@ -17760,16 +18179,33 @@
       "key": "2026-11-12",
       "label": "D 72",
       "km": 1106
+    },
+    {
+      "key": "2026-11-13",
+      "label": "D 73",
+      "km": 329
     }
   ],
   "log": [
     {
+      "key": "2026-11-13",
+      "day": "Day 73",
+      "date": "Nov 13",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "329",
+      "chargeMinutes": 42,
+      "note": ""
+    },
+    {
       "key": "2026-11-12",
       "day": "Day 72",
       "date": "Nov 12",
-      "province": "New Mexico",
+      "province": "Texas",
       "from": "Las Cruces, New Mexico",
-      "to": "Las Cruces, New Mexico",
+      "to": "Valentine, Texas",
+      "plotted": true,
       "km": "1,106",
       "chargeMinutes": 565,
       "note": ""
@@ -17867,18 +18303,6 @@
       "to": "Las Vegas, Nevada",
       "plotted": true,
       "km": "73",
-      "chargeMinutes": 8,
-      "note": ""
-    },
-    {
-      "key": "2026-11-03",
-      "day": "Day 63",
-      "date": "Nov 3",
-      "province": "Nevada",
-      "from": "Las Vegas, Nevada",
-      "to": "Las Vegas, Nevada",
-      "plotted": true,
-      "km": "53",
       "chargeMinutes": 8,
       "note": ""
     }
