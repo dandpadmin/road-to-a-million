@@ -39,5 +39,6 @@
 {"id":"109420716","s":1794460204,"e":1794489663,"kwh":53.99,"cost":null,"sc":false,"soc0":13,"soc1":99,"kw":null,"prov":"New Mexico","town":"Las Cruces"},
 {"id":"109429073","s":1794501961,"e":1794502686,"kwh":25.43,"cost":10.1,"sc":true,"soc0":27,"soc1":69,"kw":null,"prov":"Texas","town":"Van Horn"},
 {"id":"109433624","s":1794508941,"e":1794510142,"kwh":37.19,"cost":14.51,"sc":true,"soc0":23,"soc1":84,"kw":null,"prov":"Texas","town":"Alpine"},
-{"id":"109439483","s":1794518307,"e":1794519829,"kwh":46.11,"cost":18.17,"sc":true,"soc0":8,"soc1":83,"kw":null,"prov":"Texas","town":"Ozona"}
+{"id":"109439483","s":1794518307,"e":1794519829,"kwh":46.11,"cost":18.17,"sc":true,"soc0":8,"soc1":83,"kw":null,"prov":"Texas","town":"Ozona"},
+{"id":"109446016","s":1794527502,"e":1794528494,"kwh":33.97,"cost":14.29,"sc":true,"soc0":18,"soc1":74,"kw":null,"prov":"Texas","town":"Fredericksburg"}
 ]
