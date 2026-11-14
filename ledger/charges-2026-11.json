@@ -40,5 +40,8 @@
 {"id":"109429073","s":1794501961,"e":1794502686,"kwh":25.43,"cost":10.1,"sc":true,"soc0":27,"soc1":69,"kw":null,"prov":"Texas","town":"Van Horn"},
 {"id":"109433624","s":1794508941,"e":1794510142,"kwh":37.19,"cost":14.51,"sc":true,"soc0":23,"soc1":84,"kw":null,"prov":"Texas","town":"Alpine"},
 {"id":"109439483","s":1794518307,"e":1794519829,"kwh":46.11,"cost":18.17,"sc":true,"soc0":8,"soc1":83,"kw":null,"prov":"Texas","town":"Ozona"},
-{"id":"109446016","s":1794527502,"e":1794528494,"kwh":33.97,"cost":14.29,"sc":true,"soc0":18,"soc1":74,"kw":null,"prov":"Texas","town":"Fredericksburg"}
+{"id":"109446016","s":1794527502,"e":1794528494,"kwh":33.97,"cost":14.29,"sc":true,"soc0":18,"soc1":74,"kw":null,"prov":"Texas","town":"Fredericksburg"},
+{"id":"109488450","s":1794581585,"e":1794582646,"kwh":36.44,"cost":7.32,"sc":true,"soc0":15,"soc1":75,"kw":null,"prov":"Texas","town":"New Braunfels"},
+{"id":"109494264","s":1794589437,"e":1794590856,"kwh":40.76,"cost":16.02,"sc":true,"soc0":20,"soc1":86,"kw":null,"prov":"Texas","town":"Mathis"},
+{"id":"109500992","s":1794599687,"e":1794600808,"kwh":36.64,"cost":14.16,"sc":true,"soc0":13,"soc1":72,"kw":null,"prov":"Texas","town":"Brownsville"}
 ]
