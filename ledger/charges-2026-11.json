@@ -44,5 +44,6 @@
 {"id":"109488450","s":1794581585,"e":1794582646,"kwh":36.44,"cost":7.32,"sc":true,"soc0":15,"soc1":75,"kw":null,"prov":"Texas","town":"New Braunfels"},
 {"id":"109494264","s":1794589437,"e":1794590856,"kwh":40.76,"cost":16.02,"sc":true,"soc0":20,"soc1":86,"kw":null,"prov":"Texas","town":"Mathis"},
 {"id":"109500992","s":1794599687,"e":1794600808,"kwh":36.64,"cost":14.16,"sc":true,"soc0":13,"soc1":72,"kw":null,"prov":"Texas","town":"Brownsville"},
-{"id":"109516149","s":1794620077,"e":1794621242,"kwh":30.52,"cost":13.32,"sc":true,"soc0":39,"soc1":89,"kw":null,"prov":"Texas","town":"Mercedes"}
+{"id":"109516149","s":1794620077,"e":1794621242,"kwh":30.52,"cost":13.32,"sc":true,"soc0":39,"soc1":89,"kw":null,"prov":"Texas","town":"Mercedes"},
+{"id":"109522135","s":1794628174,"e":1794628978,"kwh":27.62,"cost":10.74,"sc":true,"soc0":33,"soc1":78,"kw":null,"prov":"Texas","town":"Alice"}
 ]
