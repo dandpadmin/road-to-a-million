@@ -5644,5 +5644,22 @@
     "kmPerPx": 0.2145,
     "plotted": true,
     "track": 3
+  },
+  {
+    "key": "2026-11-15",
+    "day": 75,
+    "date": "Nov 15",
+    "label": "Day 75 · Nov 15",
+    "km": 3,
+    "from": "Austin, Texas",
+    "to": "Austin, Texas",
+    "corridor": "Austin, Texas",
+    "province": "Texas",
+    "chargeStops": 1,
+    "chargeMinutes": 6,
+    "note": "Town level · delayed 24h",
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   }
 ]

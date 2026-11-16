@@ -1,441 +1,37 @@
 {
-  "odometer": 47634,
+  "odometer": 47694,
   "goal": 1000000,
   "day": 76,
   "province": "Texas",
   "route": "Austin, Texas",
-  "today": 7,
+  "today": 60,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 628,
+  "avgPerDay": 621,
   "chargeSessions": 1,
   "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 307,
-  "chargeLifetimeSupercharger": 216,
+  "chargeLifetime": 308,
+  "chargeLifetimeSupercharger": 217,
   "chargeLifetimeOther": 91,
   "dayMap": {
-    "key": "2026-11-14",
-    "day": 74,
-    "date": "Nov 14",
-    "label": "Day 74 · Nov 14",
-    "km": 131,
-    "from": "San Antonio, Texas",
+    "key": "2026-11-15",
+    "day": 75,
+    "date": "Nov 15",
+    "label": "Day 75 · Nov 15",
+    "km": 3,
+    "from": "Austin, Texas",
     "to": "Austin, Texas",
     "corridor": "Austin, Texas",
     "province": "Texas",
-    "chargeStops": 2,
-    "chargeMinutes": 34,
+    "chargeStops": 1,
+    "chargeMinutes": 6,
     "note": "Town level · delayed 24h",
-    "path": [
-      [
-        0.2656,
-        0.95
-      ],
-      [
-        0.2781,
-        0.9382
-      ],
-      [
-        0.2818,
-        0.9303
-      ],
-      [
-        0.2771,
-        0.9163
-      ],
-      [
-        0.2756,
-        0.8982
-      ],
-      [
-        0.2803,
-        0.8825
-      ],
-      [
-        0.2793,
-        0.8746
-      ],
-      [
-        0.2821,
-        0.8724
-      ],
-      [
-        0.3027,
-        0.8763
-      ],
-      [
-        0.3273,
-        0.8741
-      ],
-      [
-        0.3314,
-        0.8696
-      ],
-      [
-        0.3342,
-        0.8572
-      ],
-      [
-        0.3379,
-        0.8521
-      ],
-      [
-        0.3619,
-        0.8296
-      ],
-      [
-        0.3775,
-        0.8066
-      ],
-      [
-        0.4028,
-        0.7835
-      ],
-      [
-        0.4152,
-        0.7644
-      ],
-      [
-        0.4729,
-        0.7087
-      ],
-      [
-        0.4872,
-        0.6901
-      ],
-      [
-        0.5159,
-        0.6727
-      ],
-      [
-        0.5203,
-        0.6654
-      ],
-      [
-        0.5231,
-        0.6468
-      ],
-      [
-        0.5402,
-        0.6181
-      ],
-      [
-        0.5592,
-        0.5709
-      ],
-      [
-        0.6272,
-        0.4612
-      ],
-      [
-        0.6387,
-        0.4376
-      ],
-      [
-        0.6518,
-        0.392
-      ],
-      [
-        0.6587,
-        0.3346
-      ],
-      [
-        0.6736,
-        0.2913
-      ],
-      [
-        0.6936,
-        0.2204
-      ],
-      [
-        0.7091,
-        0.1484
-      ],
-      [
-        0.7331,
-        0.1063
-      ],
-      [
-        0.7331,
-        0.05
-      ]
-    ],
-    "stops": [
-      {
-        "x": 0.2656,
-        "y": 0.95,
-        "town": "San Antonio, Texas",
-        "kind": "start",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 25,
-            "socStart": 20,
-            "socEnd": 90
-          }
-        ]
-      },
-      {
-        "x": 0.7331,
-        "y": 0.05,
-        "town": "Austin, Texas",
-        "kind": "end",
-        "sessions": [
-          {
-            "network": "Supercharger",
-            "minutes": 9,
-            "socStart": 62,
-            "socEnd": 88
-          }
-        ]
-      }
-    ],
-    "kmPerPx": 0.2145,
-    "plotted": true,
-    "track": 3
+    "path": [],
+    "stops": [],
+    "kmPerPx": 0
   },
   "dayMaps": [
-    {
-      "key": "2026-10-16",
-      "day": 45,
-      "date": "Oct 16",
-      "label": "Day 45 · Oct 16",
-      "km": 173,
-      "from": "Walterboro, South Carolina",
-      "to": "Garden City, Georgia",
-      "corridor": "Garden City, Georgia",
-      "province": "Georgia",
-      "chargeStops": 2,
-      "chargeMinutes": 30,
-      "note": "Town level · delayed 24h",
-      "path": [
-        [
-          0.6211,
-          0.05
-        ],
-        [
-          0.6214,
-          0.0875
-        ],
-        [
-          0.596,
-          0.1695
-        ],
-        [
-          0.5861,
-          0.1885
-        ],
-        [
-          0.5785,
-          0.21
-        ],
-        [
-          0.5519,
-          0.249
-        ],
-        [
-          0.5802,
-          0.208
-        ],
-        [
-          0.5845,
-          0.192
-        ],
-        [
-          0.5952,
-          0.173
-        ],
-        [
-          0.6211,
-          0.1
-        ],
-        [
-          0.5952,
-          0.172
-        ],
-        [
-          0.5845,
-          0.1915
-        ],
-        [
-          0.5799,
-          0.207
-        ],
-        [
-          0.5438,
-          0.263
-        ],
-        [
-          0.5244,
-          0.307
-        ],
-        [
-          0.5206,
-          0.351
-        ],
-        [
-          0.523,
-          0.368
-        ],
-        [
-          0.5125,
-          0.399
-        ],
-        [
-          0.5026,
-          0.408
-        ],
-        [
-          0.4923,
-          0.43
-        ],
-        [
-          0.4748,
-          0.4965
-        ],
-        [
-          0.4751,
-          0.5215
-        ],
-        [
-          0.4635,
-          0.5505
-        ],
-        [
-          0.4519,
-          0.589
-        ],
-        [
-          0.4287,
-          0.6775
-        ],
-        [
-          0.4266,
-          0.6975
-        ],
-        [
-          0.4056,
-          0.75
-        ],
-        [
-          0.4207,
-          0.7875
-        ],
-        [
-          0.418,
-          0.822
-        ],
-        [
-          0.429,
-          0.844
-        ],
-        [
-          0.4312,
-          0.857
-        ],
-        [
-          0.4287,
-          0.87
-        ],
-        [
-          0.4128,
-          0.895
-        ],
-        [
-          0.4015,
-          0.918
-        ],
-        [
-          0.404,
-          0.92
-        ],
-        [
-          0.4015,
-          0.9295
-        ],
-        [
-          0.4056,
-          0.95
-        ],
-        [
-          0.4325,
-          0.95
-        ],
-        [
-          0.4077,
-          0.949
-        ],
-        [
-          0.4034,
-          0.947
-        ],
-        [
-          0.404,
-          0.942
-        ],
-        [
-          0.4005,
-          0.9405
-        ],
-        [
-          0.3988,
-          0.9345
-        ],
-        [
-          0.3872,
-          0.9265
-        ],
-        [
-          0.3886,
-          0.9195
-        ],
-        [
-          0.3786,
-          0.9
-        ]
-      ],
-      "stops": [
-        {
-          "x": 0.6211,
-          "y": 0.05,
-          "town": "Walterboro, South Carolina",
-          "kind": "start",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 12,
-              "socStart": 11,
-              "socEnd": 56
-            }
-          ]
-        },
-        {
-          "x": 0.3786,
-          "y": 0.9,
-          "town": "Garden City, Georgia",
-          "kind": "end",
-          "sessions": []
-        },
-        {
-          "x": 0.4056,
-          "y": 0.75,
-          "town": "Hardeeville, South Carolina",
-          "kind": "charge",
-          "sessions": [
-            {
-              "network": "Supercharger",
-              "minutes": 18,
-              "socStart": 26,
-              "socEnd": 80
-            }
-          ]
-        }
-      ],
-      "kmPerPx": 0.2413,
-      "plotted": true,
-      "track": 3
-    },
     {
       "key": "2026-10-17",
       "day": 46,
@@ -11570,10 +11166,27 @@
       "kmPerPx": 0.2145,
       "plotted": true,
       "track": 3
+    },
+    {
+      "key": "2026-11-15",
+      "day": 75,
+      "date": "Nov 15",
+      "label": "Day 75 · Nov 15",
+      "km": 3,
+      "from": "Austin, Texas",
+      "to": "Austin, Texas",
+      "corridor": "Austin, Texas",
+      "province": "Texas",
+      "chargeStops": 1,
+      "chargeMinutes": 6,
+      "note": "Town level · delayed 24h",
+      "path": [],
+      "stops": [],
+      "kmPerPx": 0
     }
   ],
-  "asOf": "2026-11-15",
-  "updatedAt": "2026-11-16T06:31:59.936Z",
+  "asOf": "2026-11-16",
+  "updatedAt": "2026-11-16T18:34:41.122Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -18366,24 +17979,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 43185,
-      "pct": 92.9
+      "km": 43240,
+      "pct": 92.8
     },
     "energy": {
-      "used": 7098,
-      "added": 7645,
-      "overhead": 7.2,
+      "used": 7108,
+      "added": 7649,
+      "overhead": 7.1,
       "whPerKm": 153,
       "kmPerKwh": 6.6,
       "packKwh": 62,
       "rangeEst": 406
     },
     "cost": {
-      "total": 2219.45,
-      "supercharger": 2219.45,
+      "total": 2221.15,
+      "supercharger": 2221.15,
       "other": 0,
       "perKm": 0.048,
-      "sessions": 214,
+      "sessions": 215,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -18469,7 +18082,7 @@
           "n": 1
         }
       ],
-      "sessions": 299,
+      "sessions": 300,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -18505,11 +18118,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-10-17",
-      "label": "D 46",
-      "km": 393
-    },
     {
       "key": "2026-10-18",
       "label": "D 47",
@@ -18654,16 +18262,32 @@
       "key": "2026-11-15",
       "label": "D 75",
       "km": 7
+    },
+    {
+      "key": "2026-11-16",
+      "label": "D 76",
+      "km": 60
     }
   ],
   "log": [
     {
-      "key": "2026-11-15",
-      "day": "Day 75",
-      "date": "Nov 15",
+      "key": "2026-11-16",
+      "day": "Day 76",
+      "date": "Nov 16",
       "province": "—",
       "from": "—",
       "to": "—",
+      "km": "60",
+      "chargeMinutes": 4,
+      "note": ""
+    },
+    {
+      "key": "2026-11-15",
+      "day": "Day 75",
+      "date": "Nov 15",
+      "province": "Texas",
+      "from": "Austin, Texas",
+      "to": "Austin, Texas",
       "km": "7",
       "chargeMinutes": 6,
       "note": ""
@@ -18762,18 +18386,6 @@
       "plotted": true,
       "km": "1,212",
       "chargeMinutes": 90,
-      "note": ""
-    },
-    {
-      "key": "2026-11-06",
-      "day": "Day 66",
-      "date": "Nov 6",
-      "province": "Colorado",
-      "from": "Moab, Utah",
-      "to": "Gunnison, Colorado",
-      "plotted": true,
-      "km": "758",
-      "chargeMinutes": 95,
       "note": ""
     }
   ]
