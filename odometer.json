@@ -1,25 +1,25 @@
 {
-  "odometer": 47694,
+  "odometer": 47771,
   "goal": 1000000,
-  "day": 76,
+  "day": 77,
   "province": "Texas",
   "route": "Austin, Texas",
-  "today": 60,
+  "today": 136,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 621,
-  "chargeSessions": 1,
-  "chargeSupercharger": 1,
+  "avgPerDay": 622,
+  "chargeSessions": 2,
+  "chargeSupercharger": 2,
   "chargeOther": 0,
-  "chargeLifetime": 308,
-  "chargeLifetimeSupercharger": 217,
+  "chargeLifetime": 309,
+  "chargeLifetimeSupercharger": 218,
   "chargeLifetimeOther": 91,
   "dayMap": {
     "key": "2026-11-15",
     "day": 75,
     "date": "Nov 15",
     "label": "Day 75 · Nov 15",
-    "km": 3,
+    "km": 7,
     "from": "Austin, Texas",
     "to": "Austin, Texas",
     "corridor": "Austin, Texas",
@@ -11172,7 +11172,7 @@
       "day": 75,
       "date": "Nov 15",
       "label": "Day 75 · Nov 15",
-      "km": 3,
+      "km": 7,
       "from": "Austin, Texas",
       "to": "Austin, Texas",
       "corridor": "Austin, Texas",
@@ -11186,7 +11186,7 @@
     }
   ],
   "asOf": "2026-11-16",
-  "updatedAt": "2026-11-16T18:34:41.122Z",
+  "updatedAt": "2026-11-17T02:56:30.699Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -16961,9 +16961,20 @@
               "town": "Austin",
               "day": 74,
               "date": "Nov 14"
+            },
+            {
+              "min": 6,
+              "kwh": 4.6,
+              "soc0": 79,
+              "soc1": 86,
+              "prov": "Texas",
+              "ctry": "US",
+              "town": "Austin",
+              "day": 75,
+              "date": "Nov 15"
             }
           ],
-          "n": 214,
+          "n": 215,
           "median": 16,
           "mean": 16,
           "shortest": {
@@ -17979,24 +17990,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 43240,
+      "km": 43307,
       "pct": 92.8
     },
     "energy": {
-      "used": 7108,
-      "added": 7649,
-      "overhead": 7.1,
+      "used": 7119,
+      "added": 7672,
+      "overhead": 7.2,
       "whPerKm": 153,
       "kmPerKwh": 6.6,
       "packKwh": 62,
       "rangeEst": 406
     },
     "cost": {
-      "total": 2221.15,
-      "supercharger": 2221.15,
+      "total": 2231.34,
+      "supercharger": 2231.34,
       "other": 0,
       "perKm": 0.048,
-      "sessions": 215,
+      "sessions": 216,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -18049,7 +18060,7 @@
         {
           "soc": 70,
           "kw": 72,
-          "n": 20
+          "n": 21
         },
         {
           "soc": 75,
@@ -18082,7 +18093,7 @@
           "n": 1
         }
       ],
-      "sessions": 300,
+      "sessions": 301,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -18266,7 +18277,7 @@
     {
       "key": "2026-11-16",
       "label": "D 76",
-      "km": 60
+      "km": 136
     }
   ],
   "log": [
@@ -18277,8 +18288,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "60",
-      "chargeMinutes": 4,
+      "km": "136",
+      "chargeMinutes": 20,
       "note": ""
     },
     {

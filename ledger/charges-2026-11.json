@@ -47,5 +47,6 @@
 {"id":"109516149","s":1794620077,"e":1794621242,"kwh":30.52,"cost":13.32,"sc":true,"soc0":39,"soc1":89,"kw":null,"prov":"Texas","town":"Mercedes"},
 {"id":"109522135","s":1794628174,"e":1794628978,"kwh":27.62,"cost":10.74,"sc":true,"soc0":33,"soc1":78,"kw":null,"prov":"Texas","town":"Alice"},
 {"id":"109562455","s":1794681114,"e":1794682612,"kwh":42.6,"cost":17.9,"sc":true,"soc0":20,"soc1":90,"kw":null,"prov":"Texas","town":"San Antonio"},
-{"id":"109565996","s":1794687371,"e":1794687938,"kwh":16.18,"cost":6.88,"sc":true,"soc0":62,"soc1":88,"kw":null,"prov":"Texas","town":"Austin"}
+{"id":"109565996","s":1794687371,"e":1794687938,"kwh":16.18,"cost":6.88,"sc":true,"soc0":62,"soc1":88,"kw":null,"prov":"Texas","town":"Austin"},
+{"id":"109623906","s":1794767332,"e":1794767695,"kwh":4.64,"cost":2.32,"sc":true,"soc0":79,"soc1":86,"kw":null,"prov":"Texas","town":"Austin"}
 ]
