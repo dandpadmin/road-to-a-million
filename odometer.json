@@ -1,18 +1,18 @@
 {
-  "odometer": 47771,
+  "odometer": 47814,
   "goal": 1000000,
   "day": 77,
   "province": "Texas",
   "route": "Austin, Texas",
-  "today": 136,
+  "today": 22,
   "best": 1493,
   "bestDay": 29,
-  "avgPerDay": 622,
-  "chargeSessions": 2,
-  "chargeSupercharger": 2,
+  "avgPerDay": 614,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 309,
-  "chargeLifetimeSupercharger": 218,
+  "chargeLifetime": 310,
+  "chargeLifetimeSupercharger": 219,
   "chargeLifetimeOther": 91,
   "dayMap": {
     "key": "2026-11-15",
@@ -11185,8 +11185,8 @@
       "kmPerPx": 0
     }
   ],
-  "asOf": "2026-11-16",
-  "updatedAt": "2026-11-17T02:56:30.699Z",
+  "asOf": "2026-11-17",
+  "updatedAt": "2026-11-17T13:28:22.099Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -17990,12 +17990,12 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 43307,
+      "km": 43324,
       "pct": 92.8
     },
     "energy": {
-      "used": 7119,
-      "added": 7672,
+      "used": 7124,
+      "added": 7681,
       "overhead": 7.2,
       "whPerKm": 153,
       "kmPerKwh": 6.6,
@@ -18003,11 +18003,11 @@
       "rangeEst": 406
     },
     "cost": {
-      "total": 2231.34,
-      "supercharger": 2231.34,
+      "total": 2233.04,
+      "supercharger": 2233.04,
       "other": 0,
       "perKm": 0.048,
-      "sessions": 216,
+      "sessions": 217,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -18093,7 +18093,7 @@
           "n": 1
         }
       ],
-      "sessions": 301,
+      "sessions": 302,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -18129,11 +18129,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-10-18",
-      "label": "D 47",
-      "km": 705
-    },
     {
       "key": "2026-10-19",
       "label": "D 48",
@@ -18278,9 +18273,25 @@
       "key": "2026-11-16",
       "label": "D 76",
       "km": 136
+    },
+    {
+      "key": "2026-11-17",
+      "label": "D 77",
+      "km": 22
     }
   ],
   "log": [
+    {
+      "key": "2026-11-17",
+      "day": "Day 77",
+      "date": "Nov 17",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "22",
+      "chargeMinutes": 6,
+      "note": ""
+    },
     {
       "key": "2026-11-16",
       "day": "Day 76",
@@ -18385,18 +18396,6 @@
       "plotted": true,
       "km": "580",
       "chargeMinutes": 137,
-      "note": ""
-    },
-    {
-      "key": "2026-11-07",
-      "day": "Day 67",
-      "date": "Nov 7",
-      "province": "Nevada",
-      "from": "Gunnison, Colorado",
-      "to": "Pahrump, Nevada",
-      "plotted": true,
-      "km": "1,212",
-      "chargeMinutes": 90,
       "note": ""
     }
   ]
