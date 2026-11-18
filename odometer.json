@@ -1,18 +1,18 @@
 {
-  "odometer": 48712,
+  "odometer": 49502,
   "goal": 1000000,
-  "day": 77,
+  "day": 78,
   "province": "Texas",
   "route": "Cedar Park, Texas",
-  "today": 776,
-  "best": 1493,
-  "bestDay": 29,
-  "avgPerDay": 624,
-  "chargeSessions": 6,
-  "chargeSupercharger": 6,
+  "today": 99,
+  "best": 1633,
+  "bestDay": 77,
+  "avgPerDay": 628,
+  "chargeSessions": 1,
+  "chargeSupercharger": 1,
   "chargeOther": 0,
-  "chargeLifetime": 315,
-  "chargeLifetimeSupercharger": 224,
+  "chargeLifetime": 318,
+  "chargeLifetimeSupercharger": 227,
   "chargeLifetimeOther": 91,
   "dayMap": {
     "key": "2026-11-16",
@@ -11710,8 +11710,8 @@
       "track": 3
     }
   ],
-  "asOf": "2026-11-17",
-  "updatedAt": "2026-11-17T22:25:57.527Z",
+  "asOf": "2026-11-18",
+  "updatedAt": "2026-11-18T07:30:06.383Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -18547,24 +18547,24 @@
       "nightMin": 240
     },
     "autopilot": {
-      "km": 44071,
-      "pct": 92.9
+      "km": 45021,
+      "pct": 93.1
     },
     "energy": {
-      "used": 7262,
-      "added": 7823,
-      "overhead": 7.2,
+      "used": 7397,
+      "added": 7942,
+      "overhead": 6.9,
       "whPerKm": 153,
       "kmPerKwh": 6.5,
       "packKwh": 62,
       "rangeEst": 405
     },
     "cost": {
-      "total": 2287.5,
-      "supercharger": 2287.5,
+      "total": 2337.3,
+      "supercharger": 2337.3,
       "other": 0,
       "perKm": 0.048,
-      "sessions": 222,
+      "sessions": 225,
       "currency": "CAD"
     },
     "chargeCurve": {
@@ -18591,8 +18591,8 @@
         },
         {
           "soc": 45,
-          "kw": 103,
-          "n": 34
+          "kw": 104,
+          "n": 36
         },
         {
           "soc": 50,
@@ -18602,7 +18602,7 @@
         {
           "soc": 55,
           "kw": 92,
-          "n": 54
+          "n": 55
         },
         {
           "soc": 60,
@@ -18650,7 +18650,7 @@
           "n": 1
         }
       ],
-      "sessions": 307,
+      "sessions": 310,
       "note": "Average power per session, pooled by state of charge"
     },
     "battery": null,
@@ -18686,11 +18686,6 @@
     ]
   },
   "days": [
-    {
-      "key": "2026-10-19",
-      "label": "D 48",
-      "km": 1442
-    },
     {
       "key": "2026-10-20",
       "label": "D 49",
@@ -18834,10 +18829,26 @@
     {
       "key": "2026-11-17",
       "label": "D 77",
-      "km": 776
+      "km": 1633
+    },
+    {
+      "key": "2026-11-18",
+      "label": "D 78",
+      "km": 99
     }
   ],
   "log": [
+    {
+      "key": "2026-11-18",
+      "day": "Day 78",
+      "date": "Nov 18",
+      "province": "—",
+      "from": "—",
+      "to": "—",
+      "km": "99",
+      "chargeMinutes": 14,
+      "note": ""
+    },
     {
       "key": "2026-11-17",
       "day": "Day 77",
@@ -18845,8 +18856,8 @@
       "province": "—",
       "from": "—",
       "to": "—",
-      "km": "776",
-      "chargeMinutes": 80,
+      "km": "1,633",
+      "chargeMinutes": 131,
       "note": ""
     },
     {
@@ -18942,18 +18953,6 @@
       "plotted": true,
       "km": "734",
       "chargeMinutes": 33,
-      "note": ""
-    },
-    {
-      "key": "2026-11-08",
-      "day": "Day 68",
-      "date": "Nov 8",
-      "province": "California",
-      "from": "Pahrump, Nevada",
-      "to": "Mammoth Lakes, California",
-      "plotted": true,
-      "km": "580",
-      "chargeMinutes": 137,
       "note": ""
     }
   ]
