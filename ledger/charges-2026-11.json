@@ -59,5 +59,8 @@
 {"id":"109746264","s":1794947917,"e":1794949291,"kwh":42.11,"cost":16.27,"sc":true,"soc0":14,"soc1":82,"kw":null,"prov":"Texas","town":"Van Horn"},
 {"id":"109752824","s":1794957614,"e":1794959321,"kwh":45.05,"cost":18.24,"sc":true,"soc0":17,"soc1":90,"kw":null,"prov":"New Mexico","town":"Las Cruces"},
 {"id":"109761375","s":1794969346,"e":1794970704,"kwh":43.35,"cost":21.26,"sc":true,"soc0":12,"soc1":82,"kw":null,"prov":"Arizona","town":"Thatcher"},
-{"id":"109771175","s":1794981179,"e":1794982022,"kwh":30.51,"cost":10.3,"sc":true,"soc0":18,"soc1":67,"kw":null,"prov":"Arizona","town":"Mesa"}
+{"id":"109771175","s":1794981179,"e":1794982022,"kwh":30.51,"cost":10.3,"sc":true,"soc0":18,"soc1":67,"kw":null,"prov":"Arizona","town":"Mesa"},
+{"id":"109795878","s":1795016668,"e":1795017468,"kwh":27.38,"cost":12.05,"sc":true,"soc0":18,"soc1":63,"kw":null,"prov":"Arizona","town":"Wickenburg"},
+{"id":"109800382","s":1795024109,"e":1795025072,"kwh":34.92,"cost":17.43,"sc":true,"soc0":6,"soc1":63,"kw":null,"prov":"Arizona","town":"Kingman"},
+{"id":"109803748","s":1795030122,"e":1795030992,"kwh":27.96,"cost":14.15,"sc":true,"soc0":28,"soc1":73,"kw":null,"prov":"Nevada","town":"Henderson"}
 ]
