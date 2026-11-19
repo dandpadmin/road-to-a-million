@@ -57,5 +57,7 @@
 {"id":"109738588","s":1794935529,"e":1794936325,"kwh":26.97,"cost":10.52,"sc":true,"soc0":29,"soc1":73,"kw":null,"prov":"Texas","town":"Ozona"},
 {"id":"109742200","s":1794941282,"e":1794942408,"kwh":36.31,"cost":14.16,"sc":true,"soc0":17,"soc1":77,"kw":null,"prov":"Texas","town":"Fort Stockton"},
 {"id":"109746264","s":1794947917,"e":1794949291,"kwh":42.11,"cost":16.27,"sc":true,"soc0":14,"soc1":82,"kw":null,"prov":"Texas","town":"Van Horn"},
-{"id":"109752824","s":1794957614,"e":1794959321,"kwh":45.05,"cost":18.24,"sc":true,"soc0":17,"soc1":90,"kw":null,"prov":"New Mexico","town":"Las Cruces"}
+{"id":"109752824","s":1794957614,"e":1794959321,"kwh":45.05,"cost":18.24,"sc":true,"soc0":17,"soc1":90,"kw":null,"prov":"New Mexico","town":"Las Cruces"},
+{"id":"109761375","s":1794969346,"e":1794970704,"kwh":43.35,"cost":21.26,"sc":true,"soc0":12,"soc1":82,"kw":null,"prov":"Arizona","town":"Thatcher"},
+{"id":"109771175","s":1794981179,"e":1794982022,"kwh":30.51,"cost":10.3,"sc":true,"soc0":18,"soc1":67,"kw":null,"prov":"Arizona","town":"Mesa"}
 ]
