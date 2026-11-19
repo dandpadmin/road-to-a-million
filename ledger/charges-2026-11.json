@@ -53,5 +53,9 @@
 {"id":"109688506","s":1794862326,"e":1794863301,"kwh":23.15,"cost":10.19,"sc":true,"soc0":51,"soc1":89,"kw":null,"prov":"Texas","town":"Cedar Park"},
 {"id":"109728882","s":1794920399,"e":1794920737,"kwh":8.72,"cost":1.7,"sc":true,"soc0":72,"soc1":86,"kw":null,"prov":"Texas","town":"Round Rock"},
 {"id":"109732542","s":1794925866,"e":1794926410,"kwh":17.43,"cost":6.82,"sc":true,"soc0":56,"soc1":84,"kw":null,"prov":"Texas","town":"Llano"},
-{"id":"109735646","s":1794930800,"e":1794931373,"kwh":19.09,"cost":6.69,"sc":true,"soc0":44,"soc1":75,"kw":null,"prov":"Texas","town":"Junction"}
+{"id":"109735646","s":1794930800,"e":1794931373,"kwh":19.09,"cost":6.69,"sc":true,"soc0":44,"soc1":75,"kw":null,"prov":"Texas","town":"Junction"},
+{"id":"109738588","s":1794935529,"e":1794936325,"kwh":26.97,"cost":10.52,"sc":true,"soc0":29,"soc1":73,"kw":null,"prov":"Texas","town":"Ozona"},
+{"id":"109742200","s":1794941282,"e":1794942408,"kwh":36.31,"cost":14.16,"sc":true,"soc0":17,"soc1":77,"kw":null,"prov":"Texas","town":"Fort Stockton"},
+{"id":"109746264","s":1794947917,"e":1794949291,"kwh":42.11,"cost":16.27,"sc":true,"soc0":14,"soc1":82,"kw":null,"prov":"Texas","town":"Van Horn"},
+{"id":"109752824","s":1794957614,"e":1794959321,"kwh":45.05,"cost":18.24,"sc":true,"soc0":17,"soc1":90,"kw":null,"prov":"New Mexico","town":"Las Cruces"}
 ]
