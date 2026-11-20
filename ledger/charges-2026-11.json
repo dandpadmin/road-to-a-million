@@ -62,5 +62,7 @@
 {"id":"109771175","s":1794981179,"e":1794982022,"kwh":30.51,"cost":10.3,"sc":true,"soc0":18,"soc1":67,"kw":null,"prov":"Arizona","town":"Mesa"},
 {"id":"109795878","s":1795016668,"e":1795017468,"kwh":27.38,"cost":12.05,"sc":true,"soc0":18,"soc1":63,"kw":null,"prov":"Arizona","town":"Wickenburg"},
 {"id":"109800382","s":1795024109,"e":1795025072,"kwh":34.92,"cost":17.43,"sc":true,"soc0":6,"soc1":63,"kw":null,"prov":"Arizona","town":"Kingman"},
-{"id":"109803748","s":1795030122,"e":1795030992,"kwh":27.96,"cost":14.15,"sc":true,"soc0":28,"soc1":73,"kw":null,"prov":"Nevada","town":"Henderson"}
+{"id":"109803748","s":1795030122,"e":1795030992,"kwh":27.96,"cost":14.15,"sc":true,"soc0":28,"soc1":73,"kw":null,"prov":"Nevada","town":"Henderson"},
+{"id":"109808441","s":1795038011,"e":1795038833,"kwh":27.8,"cost":13.67,"sc":true,"soc0":15,"soc1":60,"kw":null,"prov":"Nevada","town":"Beatty"},
+{"id":"109813298","s":1795043560,"e":1795045875,"kwh":49.52,"cost":23.54,"sc":true,"soc0":16,"soc1":96,"kw":null,"prov":"Nevada","town":"Tonopah"}
 ]
