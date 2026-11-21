@@ -68,5 +68,7 @@
 {"id":"109823532","s":1795057933,"e":1795059031,"kwh":39,"cost":18.98,"sc":true,"soc0":11,"soc1":75,"kw":null,"prov":"Nevada","town":"Battle Mountain"},
 {"id":"109832336","s":1795067539,"e":1795069631,"kwh":53.38,"cost":25.87,"sc":true,"soc0":6,"soc1":93,"kw":null,"prov":"Nevada","town":"McDermitt"},
 {"id":"109857802","s":1795103870,"e":1795106983,"kwh":46,"cost":22.58,"sc":true,"soc0":16,"soc1":90,"kw":null,"prov":"Oregon","town":"Hines"},
-{"id":"109864728","s":1795116906,"e":1795118168,"kwh":40.76,"cost":18.87,"sc":true,"soc0":15,"soc1":81,"kw":null,"prov":"Oregon","town":"Sisters"}
+{"id":"109864728","s":1795116906,"e":1795118168,"kwh":40.76,"cost":18.87,"sc":true,"soc0":15,"soc1":81,"kw":null,"prov":"Oregon","town":"Sisters"},
+{"id":"109875249","s":1795131943,"e":1795133485,"kwh":32.18,"cost":17.81,"sc":true,"soc0":13,"soc1":65,"kw":null,"prov":"Washington","town":"Ridgefield"},
+{"id":"109880772","s":1795139568,"e":1795140899,"kwh":41.92,"cost":20.71,"sc":true,"soc0":14,"soc1":82,"kw":null,"prov":"Washington","town":"Tacoma"}
 ]
