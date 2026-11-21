@@ -70,5 +70,7 @@
 {"id":"109857802","s":1795103870,"e":1795106983,"kwh":46,"cost":22.58,"sc":true,"soc0":16,"soc1":90,"kw":null,"prov":"Oregon","town":"Hines"},
 {"id":"109864728","s":1795116906,"e":1795118168,"kwh":40.76,"cost":18.87,"sc":true,"soc0":15,"soc1":81,"kw":null,"prov":"Oregon","town":"Sisters"},
 {"id":"109875249","s":1795131943,"e":1795133485,"kwh":32.18,"cost":17.81,"sc":true,"soc0":13,"soc1":65,"kw":null,"prov":"Washington","town":"Ridgefield"},
-{"id":"109880772","s":1795139568,"e":1795140899,"kwh":41.92,"cost":20.71,"sc":true,"soc0":14,"soc1":82,"kw":null,"prov":"Washington","town":"Tacoma"}
+{"id":"109880772","s":1795139568,"e":1795140899,"kwh":41.92,"cost":20.71,"sc":true,"soc0":14,"soc1":82,"kw":null,"prov":"Washington","town":"Tacoma"},
+{"id":"109886928","s":1795147652,"e":1795148601,"kwh":32.14,"cost":14.32,"sc":true,"soc0":19,"soc1":71,"kw":null,"prov":"Washington","town":"Ellensburg"},
+{"id":"109893108","s":1795154654,"e":1795156046,"kwh":45,"cost":19.93,"sc":true,"soc0":7,"soc1":80,"kw":null,"prov":"Washington","town":"Sprague"}
 ]
