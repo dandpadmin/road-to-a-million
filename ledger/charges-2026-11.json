@@ -82,5 +82,9 @@
 {"id":"109947143","s":1795229211,"e":1795231217,"kwh":43.34,"cost":20.85,"sc":true,"soc0":25,"soc1":96,"kw":null,"prov":"Montana","town":"Billings"},
 {"id":"109955637","s":1795239393,"e":1795240997,"kwh":47.36,"cost":23.95,"sc":true,"soc0":10,"soc1":87,"kw":null,"prov":"Wyoming","town":"Buffalo"},
 {"id":"109979730","s":1795270619,"e":1795272023,"kwh":32.12,"cost":16.35,"sc":true,"soc0":10,"soc1":63,"kw":null,"prov":"South Dakota","town":"Spearfish"},
-{"id":"109985724","s":1795278023,"e":1795279806,"kwh":48.1,"cost":23.36,"sc":true,"soc0":11,"soc1":89,"kw":null,"prov":"South Dakota","town":"Wall"}
+{"id":"109985724","s":1795278023,"e":1795279806,"kwh":48.1,"cost":23.36,"sc":true,"soc0":11,"soc1":89,"kw":null,"prov":"South Dakota","town":"Wall"},
+{"id":"109988809","s":1795283668,"e":1795283903,"kwh":5.6,"cost":2.91,"sc":true,"soc0":41,"soc1":50,"kw":null,"prov":"South Dakota","town":"Murdo"},
+{"id":"109992266","s":1795287205,"e":1795288790,"kwh":45.08,"cost":21.86,"sc":true,"soc0":13,"soc1":86,"kw":null,"prov":"South Dakota","town":"Oacoma"},
+{"id":"109995330","s":1795292149,"e":1795293309,"kwh":28.58,"cost":13.63,"sc":true,"soc0":45,"soc1":91,"kw":null,"prov":"South Dakota","town":"Mitchell"},
+{"id":"109998508","s":1795296871,"e":1795298003,"kwh":27.2,"cost":13.59,"sc":true,"soc0":49,"soc1":93,"kw":null,"prov":"South Dakota","town":"Sioux Falls"}
 ]
