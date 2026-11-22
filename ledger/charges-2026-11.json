@@ -76,5 +76,7 @@
 {"id":"109917610","s":1795189388,"e":1795190397,"kwh":36.14,"cost":11.38,"sc":true,"soc0":15,"soc1":74,"kw":null,"prov":"Idaho","town":"Kellogg"},
 {"id":"109917987","s":1795190643,"e":1795190842,"kwh":3.86,"cost":1.81,"sc":true,"soc0":74,"soc1":80,"kw":null,"prov":"Idaho","town":"Kellogg"},
 {"id":"109923149","s":1795196982,"e":1795198390,"kwh":41.56,"cost":20.14,"sc":true,"soc0":16,"soc1":83,"kw":null,"prov":"Montana","town":"Missoula"},
-{"id":"109927701","s":1795203862,"e":1795205369,"kwh":42.18,"cost":20.2,"sc":true,"soc0":19,"soc1":88,"kw":null,"prov":"Montana","town":"Butte"}
+{"id":"109927701","s":1795203862,"e":1795205369,"kwh":42.18,"cost":20.2,"sc":true,"soc0":19,"soc1":88,"kw":null,"prov":"Montana","town":"Butte"},
+{"id":"109934098","s":1795213503,"e":1795214563,"kwh":35.76,"cost":17.35,"sc":true,"soc0":17,"soc1":75,"kw":null,"prov":"Montana","town":"West Yellowstone"},
+{"id":"109942151","s":1795224095,"e":1795224954,"kwh":30,"cost":14.81,"sc":true,"soc0":18,"soc1":66,"kw":null,"prov":"Montana","town":"Big Timber"}
 ]
