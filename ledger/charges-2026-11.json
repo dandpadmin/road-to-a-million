@@ -80,5 +80,7 @@
 {"id":"109934098","s":1795213503,"e":1795214563,"kwh":35.76,"cost":17.35,"sc":true,"soc0":17,"soc1":75,"kw":null,"prov":"Montana","town":"West Yellowstone"},
 {"id":"109942151","s":1795224095,"e":1795224954,"kwh":30,"cost":14.81,"sc":true,"soc0":18,"soc1":66,"kw":null,"prov":"Montana","town":"Big Timber"},
 {"id":"109947143","s":1795229211,"e":1795231217,"kwh":43.34,"cost":20.85,"sc":true,"soc0":25,"soc1":96,"kw":null,"prov":"Montana","town":"Billings"},
-{"id":"109955637","s":1795239393,"e":1795240997,"kwh":47.36,"cost":23.95,"sc":true,"soc0":10,"soc1":87,"kw":null,"prov":"Wyoming","town":"Buffalo"}
+{"id":"109955637","s":1795239393,"e":1795240997,"kwh":47.36,"cost":23.95,"sc":true,"soc0":10,"soc1":87,"kw":null,"prov":"Wyoming","town":"Buffalo"},
+{"id":"109979730","s":1795270619,"e":1795272023,"kwh":32.12,"cost":16.35,"sc":true,"soc0":10,"soc1":63,"kw":null,"prov":"South Dakota","town":"Spearfish"},
+{"id":"109985724","s":1795278023,"e":1795279806,"kwh":48.1,"cost":23.36,"sc":true,"soc0":11,"soc1":89,"kw":null,"prov":"South Dakota","town":"Wall"}
 ]
