@@ -814,6 +814,44 @@ export function routePublic(ledger) {
   };
 }
 
+/* What the zoomable route map reads (routemap.json): every trip day's own
+   track, so the page can tell a road driven once from one driven five times,
+   plus the town each day ended in. Nothing new is published here: the tracks
+   are the ledger/daypaths cells (already past the location embargo, ends
+   snapped to GRID) and the towns are the drive ledger's town names. A town
+   that is only a province or state name ("Ontario") is left out. */
+export const ROUTEMAP_VERSION = 1;
+export function routeMapPublic(dayPaths, driveRows, until) {
+  const lastDrive = {};
+  for (const r of driveRows || []) {
+    const key = dayKey(r.s);
+    if (!key || !r.town || !r.e) continue;
+    if (!lastDrive[key] || r.e > lastDrive[key].e) lastDrive[key] = r;
+  }
+  const days = [], towns = [];
+  for (const key of Object.keys(dayPaths || {}).sort()) {
+    const v = dayPaths[key];
+    const f = (v && v.g ? v.g : TRACK_GRID) / TRACK_GRID;   // every stored day is on TRACK_GRID today; convert if not
+    const c = ((v && v.c) || []).map((x) => (f === 1 ? x : Math.round(x * f)));
+    const d = dayIndex(key);
+    if (!d || d < 1 || c.length < 4) continue;
+    days.push({ k: key, d, c });
+    const r = lastDrive[key];
+    if (r && r.town !== r.prov) towns.push({ k: key, d, name: r.town, at: [c[c.length - 2], c[c.length - 1]] });
+  }
+  const last = days[days.length - 1];
+  return {
+    v: ROUTEMAP_VERSION,
+    grid: TRACK_GRID,
+    edgeGrid: GRID,
+    asOf: until ? new Date(until * 1000).toISOString() : null,
+    end: last ? [Number((last.c[last.c.length - 2] * TRACK_GRID).toFixed(2)), Number((last.c[last.c.length - 1] * TRACK_GRID).toFixed(2))] : null,
+    note: 'Town level · delayed ' + LOCATION_EMBARGO_HOURS + 'h',
+    days,
+    towns,
+  };
+}
+
 /* --- per-day tracks --------------------------------------------------------
  * The all-time route stores each road once, so it cannot say what one day
  * drove. Each day's own track is fetched once from /path and kept in

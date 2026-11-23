@@ -14,9 +14,9 @@ const asset = (id, file) => (window.__resources && window.__resources[id]) || (A
    raw URL only resolves while the repo is public. */
 const RAW = 'https://raw.githubusercontent.com/dandpadmin/road-to-a-million/main/';
 const FEEDS = ['./odometer.json', RAW + 'odometer.json'];
-/* The all-time route and the outline it is drawn on. The basemap never
-   changes, so it is fetched once; the route refreshes with the feed. */
-const ROUTE_FEEDS = ['./route.json', RAW + 'route.json'];
+/* Every day's track for the route map, and the outline it is drawn on. The
+   basemap never changes, so it is fetched once; the tracks refresh with the feed. */
+const ROUTE_FEEDS = ['./routemap.json', RAW + 'routemap.json'];
 const BASE_FEEDS = ['./basemap.json', RAW + 'basemap.json'];
 
 async function firstJson(urls) {
@@ -142,7 +142,7 @@ function App() {
           </React.Fragment>} />
 
         {RouteMap && (
-          <RouteMap route={route} base={base} head="Every Road So Far" headRight={<span style={bandNote}>Since Day 1 · roads driven twice are drawn once</span>} />
+          <RouteMap data={route} base={base} head="Every Road So Far" headRight={<span style={bandNote}>Since Day 1 · a glow means driven more than once</span>} />
         )}
 
         {N && (

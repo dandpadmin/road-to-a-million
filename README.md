@@ -32,6 +32,7 @@ compromise of the website yields a stale JSON file and no path to the car.
 | `job/check-readonly.mjs` | Fails a run if the job could wake or command the car |
 | `.github/workflows/snapshot.yml` | The timer and commit step |
 | `ledger/`, `archive/`, `history.json`, `route.json` | Published history, written by the job |
+| `routemap.json` | Every day's track and the town it ended in, for the zoomable route map. Written by the job; same embargo as `ledger/`. |
 | `basemap.json` | Map outline for the route |
 | `tools/check.mjs` | Offline test of everything above. Run before pushing. |
 

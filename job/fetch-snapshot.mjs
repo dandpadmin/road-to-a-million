@@ -12,7 +12,7 @@
 async function main() {
   const { writeFile, readFile, mkdir } = await import('node:fs/promises');
   const { readdir } = await import('node:fs/promises');
-  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic, dayWindow, dayDriveSpans, dayTrackCells, TRACK_GRID } = await import('../tessie.js');
+  const { shape, archiveByMonth, ledgerRows, ledgerMonth, ROUTE_START, ROUTE_VERSION, routeCutoff, routeFold, routePublic, routeMapPublic, dayWindow, dayDriveSpans, dayTrackCells, TRACK_GRID } = await import('../tessie.js');
 
   const TOKEN = process.env.TESSIE_TOKEN;
   const VIN = process.env.TESSIE_VIN;
@@ -206,6 +206,17 @@ async function main() {
     await writeFile(ROUTE_LEDGER, routeBody);
     await writeFile(ROUTE_OUT, JSON.stringify(routePublic(route)));
     console.log(`route: ${route.lines.length} lines, ${route.lines.reduce((s, l) => s + l.length / 2, 0)} cells, through ${new Date(route.until * 1000).toISOString()}`);
+  }
+
+  /* The zoomable route map: each day's own track and where it ended, so the
+     page can show how often a road was driven. Same embargo terms as above. */
+  const ROUTEMAP_OUT = process.env.ROUTEMAP_OUT || 'routemap.json';
+  const routeMapBody = JSON.stringify(routeMapPublic(dayPaths, ledger.drives, route.until));
+  let routeMapRaw = null;
+  try { routeMapRaw = await readFile(ROUTEMAP_OUT, 'utf8'); } catch (e) { /* first run */ }
+  if (routeMapBody !== routeMapRaw) {
+    await writeFile(ROUTEMAP_OUT, routeMapBody);
+    console.log(`routemap: wrote ${ROUTEMAP_OUT} (${Math.round(routeMapBody.length / 1024)} KB)`);
   }
 
   const snapshot = shape({

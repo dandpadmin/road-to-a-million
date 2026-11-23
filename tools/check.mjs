@@ -103,7 +103,7 @@ check('Status label matches the schedule', () => {
 });
 
 check('Published JSON files parse', () => {
-  const files = ['odometer.json', 'history.json', 'route.json', 'basemap.json'];
+  const files = ['odometer.json', 'history.json', 'route.json', 'routemap.json', 'basemap.json'];
   for (const d of ['ledger', 'archive']) for (const f of readdirSync(join(ROOT, d))) if (f.endsWith('.json')) files.push(`${d}/${f}`);
   for (const f of files) JSON.parse(readFileSync(join(ROOT, f), 'utf8'));
 });
