@@ -86,5 +86,9 @@
 {"id":"109988809","s":1795283668,"e":1795283903,"kwh":5.6,"cost":2.91,"sc":true,"soc0":41,"soc1":50,"kw":null,"prov":"South Dakota","town":"Murdo"},
 {"id":"109992266","s":1795287205,"e":1795288790,"kwh":45.08,"cost":21.86,"sc":true,"soc0":13,"soc1":86,"kw":null,"prov":"South Dakota","town":"Oacoma"},
 {"id":"109995330","s":1795292149,"e":1795293309,"kwh":28.58,"cost":13.63,"sc":true,"soc0":45,"soc1":91,"kw":null,"prov":"South Dakota","town":"Mitchell"},
-{"id":"109998508","s":1795296871,"e":1795298003,"kwh":27.2,"cost":13.59,"sc":true,"soc0":49,"soc1":93,"kw":null,"prov":"South Dakota","town":"Sioux Falls"}
+{"id":"109998508","s":1795296871,"e":1795298003,"kwh":27.2,"cost":13.59,"sc":true,"soc0":49,"soc1":93,"kw":null,"prov":"South Dakota","town":"Sioux Falls"},
+{"id":"110006251","s":1795307122,"e":1795308497,"kwh":38.1,"cost":19.79,"sc":true,"soc0":12,"soc1":74,"kw":null,"prov":"Iowa","town":"Council Bluffs"},
+{"id":"110011676","s":1795315186,"e":1795315984,"kwh":30.96,"cost":9.54,"sc":true,"soc0":18,"soc1":68,"kw":null,"prov":"Missouri","town":"Saint Joseph"},
+{"id":"110017037","s":1795322136,"e":1795323058,"kwh":30.5,"cost":11.32,"sc":true,"soc0":26,"soc1":76,"kw":null,"prov":"Missouri","town":"Concordia"},
+{"id":"110020933","s":1795327285,"e":1795327913,"kwh":20.7,"cost":9.75,"sc":true,"soc0":44,"soc1":78,"kw":null,"prov":"Missouri","town":"Columbia"}
 ]
