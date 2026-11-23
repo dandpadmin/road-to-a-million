@@ -21,69 +21,93 @@ const fmtDay = (k) => { const [y, m, d] = k.split('-').map(Number); return new D
 const IN_FRAME = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
 const FULL_URL = 'https://dandpadmin.github.io/road-to-a-million/#map';
 
-/* Glow under the cyan line for a road driven n times. Same numbers draw the map
-   and the legend, so they can't drift apart. */
-function glowStrokes(n, w) {
+/* Soft light around the cyan line for a road driven n times: several faint,
+   pale layers that fade outward, so it reads as a glow rather than a shadow.
+   Same numbers draw the map and the legend, so they can't drift apart. */
+const GLOW = [214, 244, 250];
+function glowLayers(n, w) {
   if (n < 2) return [];
-  const k = Math.min(5, n) - 1;
-  return [
-    { a: 0.07 + 0.03 * k, w: w + 5 + k * 4 },
-    { a: 0.10 + 0.05 * k, w: w + 2 + k * 1.6 },
-  ];
+  const k = Math.min(5, n) - 1, spread = 3 + 3.2 * k, a0 = 0.10 + 0.04 * k;
+  return [1, 0.8, 0.6, 0.35].map((t) => ({ a: +(a0 * (1 - t * 0.55)).toFixed(3), w: w + spread * t }));
 }
 
-/* Turn routemap.json into drawable paths. A road is a 5 km grid edge (the same
-   cells the tracker already uses for "same road"); each day that crossed an
-   edge counts once. The first drive over each edge is drawn, grouped by how
-   many days drove it in total, so the glow can widen with the count. */
+/* How "the same road" is decided. Tessie's tracks are simplified, so two drives
+   down one highway rarely share points: a straight chord on one day can sit a
+   couple of km off the other day's curve. So every track is resampled every
+   STEP km and a road counts as driven again where another day's track passes
+   within SAME_KM, smoothed over SMOOTH samples either way so short wobbles
+   don't break the glow. */
+const STEP = 1, SAME_KM = 2.5, SMOOTH = 3, GAP_KM = 60;
+
+/* Turn routemap.json into drawable paths. Every day's track is drawn in cyan;
+   the glow is drawn once per road, along the first day that drove it, as wide
+   as the number of days that have driven it since. */
 function prepare(data) {
-  const g = data.grid, eg = data.edgeGrid || 0.05;
-  const days = data.days.map((d) => {
-    const pts = [], cells = [];
-    for (let i = 0; i + 1 < d.c.length; i += 2) {
-      const lat = d.c[i] * g, lng = d.c[i + 1] * g;
-      pts.push(LCC(lat, lng));
-      cells.push(Math.round(lat / eg) + ',' + Math.round(lng / eg));
-    }
-    return { key: d.k, day: d.d, pts, cells, segE: [] };
+  const g = data.grid;
+  const days = data.days.map((d, di) => {
+    const pts = [];
+    for (let i = 0; i + 1 < d.c.length; i += 2) pts.push(LCC(d.c[i] * g, d.c[i + 1] * g));
+    return { key: d.k, day: d.d, di, pts };
   });
-  const edgeDays = new Map();
-  const segKm = (a, b) => Math.hypot(b[0] - a[0], b[1] - a[1]);
+  /* resample */
+  const S = [];   // { x, y, di, brk } in day order; brk = a GPS gap comes just before this sample
   for (const d of days) {
-    let lastE = null;
-    const mine = new Set();
-    for (let i = 1; i < d.pts.length; i++) {
-      if (segKm(d.pts[i - 1], d.pts[i]) > 60) { d.segE.push(null); lastE = null; continue; } // a GPS gap, not a road
-      if (d.cells[i - 1] !== d.cells[i]) {
-        const a = d.cells[i - 1], b = d.cells[i];
-        lastE = a < b ? a + '|' + b : b + '|' + a;
-        mine.add(lastE);
-      }
-      d.segE.push(lastE || '_' + d.key);
+    d.s0 = S.length;
+    for (let i = 0; i < d.pts.length; i++) {
+      const [x, y] = d.pts[i];
+      if (i === 0) { S.push({ x, y, di: d.di, brk: true }); continue; }
+      const [px, py] = d.pts[i - 1], len = Math.hypot(x - px, y - py);
+      if (len > GAP_KM) { S.push({ x, y, di: d.di, brk: true }); continue; }
+      const n = Math.max(1, Math.ceil(len / STEP));
+      for (let j = 1; j <= n; j++) S.push({ x: px + (x - px) * j / n, y: py + (y - py) * j / n, di: d.di, brk: false });
     }
-    for (const e of mine) { if (!edgeDays.has(e)) edgeDays.set(e, []); edgeDays.get(e).push(d); }
+    d.s1 = S.length;
   }
-  const byTimes = new Map(), all = new Path2D();
+  /* spatial hash, cells SAME_KM wide */
+  const hash = new Map(), hk = (cx, cy) => cx + ',' + cy;
+  S.forEach((p, i) => { const k = hk(Math.floor(p.x / SAME_KM), Math.floor(p.y / SAME_KM)); (hash.get(k) || hash.set(k, []).get(k)).push(i); });
+  const daysNear = (x, y) => {
+    const out = new Set(), cx = Math.floor(x / SAME_KM), cy = Math.floor(y / SAME_KM);
+    for (let a = -1; a <= 1; a++) for (let b = -1; b <= 1; b++) {
+      for (const j of hash.get(hk(cx + a, cy + b)) || []) {
+        const q = S[j];
+        if ((q.x - x) ** 2 + (q.y - y) ** 2 <= SAME_KM * SAME_KM) out.add(q.di);
+      }
+    }
+    return out;
+  };
+  for (const p of S) { const near = daysNear(p.x, p.y); p.n = near.size; p.first = Math.min(...near) === p.di; }
+  /* smooth the count along each day's track, within unbroken stretches */
+  for (const d of days) {
+    for (let i = d.s0; i < d.s1; i++) {
+      let m = S[i].n;
+      for (let j = i - 1; j >= Math.max(d.s0, i - SMOOTH) && !S[j + 1].brk; j--) m = Math.max(m, S[j].n);
+      for (let j = i + 1; j <= Math.min(d.s1 - 1, i + SMOOTH) && !S[j].brk; j++) m = Math.max(m, S[j].n);
+      S[i].ns = m;
+    }
+  }
+  /* paths: all tracks in cyan; glow runs grouped by count (5 means 5 or more) */
+  const all = new Path2D(), glow = new Map();
   let roadKm = 0, repeatRoadKm = 0;
-  const repeatDays = new Set();
-  for (const l of edgeDays.values()) l.slice(1).forEach((d) => repeatDays.add(d.key));
+  const againKm = new Map();
   for (const d of days) {
-    let curN = null, path = null;
-    for (let i = 1; i < d.pts.length; i++) {
-      const e = d.segE[i - 1];
-      if (!e) { curN = null; continue; }
-      const list = edgeDays.get(e) || [d];
-      if (list[0] !== d) { curN = null; continue; }   // a repeat: the first drive already drew this road
-      const n = list.length, len = segKm(d.pts[i - 1], d.pts[i]);
-      roadKm += len; if (n > 1) repeatRoadKm += len;
+    let curN = 0, path = null;
+    for (let i = d.s0; i < d.s1; i++) {
+      const p = S[i];
+      if (p.brk) all.moveTo(p.x, p.y); else all.lineTo(p.x, p.y);
+      if (p.brk) { curN = 0; continue; }
+      const q = S[i - 1], len = Math.hypot(p.x - q.x, p.y - q.y);
+      if (!p.first) againKm.set(d.di, (againKm.get(d.di) || 0) + len);
+      const n = p.first && p.ns >= 2 ? Math.min(5, p.ns) : 0;
+      if (p.first) { roadKm += len; if (p.ns >= 2) repeatRoadKm += len; }
+      if (!n) { curN = 0; continue; }
       if (n !== curN) {
-        if (!byTimes.has(n)) byTimes.set(n, new Path2D());
-        path = byTimes.get(n); path.moveTo(d.pts[i - 1][0], d.pts[i - 1][1]); curN = n;
+        if (!glow.has(n)) glow.set(n, new Path2D());
+        path = glow.get(n); path.moveTo(q.x, q.y); curN = n;
       }
-      path.lineTo(d.pts[i][0], d.pts[i][1]);
+      path.lineTo(p.x, p.y);
     }
   }
-  for (const p of byTimes.values()) all.addPath(p);
   /* One label per town, at its latest night; newest wins a crowded spot. */
   const seen = new Map();
   for (const t of data.towns || []) {
@@ -92,14 +116,19 @@ function prepare(data) {
   }
   const towns = [...seen.values()].sort((a, b) => b.day - a.day);
   let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
-  for (const d of days) for (const [x, y] of d.pts) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+  for (const p of S) { if (p.x < x0) x0 = p.x; if (p.x > x1) x1 = p.x; if (p.y < y0) y0 = p.y; if (p.y > y1) y1 = p.y; }
   return {
-    days, edgeDays, byTimes, all, towns,
-    times: [...byTimes.keys()].sort((a, b) => a - b),
-    bounds: days.length ? [x0, y0, x1, y1] : null,
+    days, S, daysNear, all, glow, towns,
+    times: [...glow.keys()].sort((a, b) => a - b),
+    bounds: S.length ? [x0, y0, x1, y1] : null,
     start: days.length ? days[0].pts[0] : LCC(49.18, -97.94), // HQ, before there is a line
     end: data.end ? LCC(data.end[0], data.end[1]) : null,
-    stats: { roadKm, repeatPct: roadKm ? Math.round(repeatRoadKm / roadKm * 100) : 0, repeatDays: repeatDays.size, days: days.length },
+    stats: {
+      roadKm,
+      repeatPct: roadKm ? Math.round(repeatRoadKm / roadKm * 100) : 0,
+      repeatDays: [...againKm.values()].filter((km) => km >= 5).length,   // at least 5 km of a road already driven
+      days: days.length,
+    },
   };
 }
 
@@ -107,7 +136,7 @@ function GlowSwatch({ n }) {
   const w = 2.5, h = 16;
   return (
     <svg width="30" height={h} viewBox={'0 0 30 ' + h} aria-hidden="true" style={{ display: 'block' }}>
-      {glowStrokes(n, w).map((s, i) => <line key={i} x1="6" y1={h / 2} x2="24" y2={h / 2} stroke={rgb(BONE, s.a)} strokeWidth={s.w} strokeLinecap="round" />)}
+      {glowLayers(n, w).map((s, i) => <line key={i} x1="6" y1={h / 2} x2="24" y2={h / 2} stroke={rgb(GLOW, s.a)} strokeWidth={s.w} strokeLinecap="round" />)}
       <line x1="6" y1={h / 2} x2="24" y2={h / 2} stroke={CYAN_LINE} strokeWidth={w} strokeLinecap="round" />
     </svg>
   );
@@ -159,8 +188,8 @@ function RouteMap({ data, base, head, headRight }) {
     if (P) {
       const w = Math.min(3.6, 2.2 + Math.log2(Math.max(1, zoomed)) * 0.3);
       ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-      for (const n of P.times) for (const g of glowStrokes(n, w)) {
-        ctx.strokeStyle = rgb(BONE, g.a); ctx.lineWidth = g.w * px; ctx.stroke(P.byTimes.get(n));
+      for (const n of P.times) for (const g of glowLayers(n, w)) {
+        ctx.strokeStyle = rgb(GLOW, g.a); ctx.lineWidth = g.w * px; ctx.stroke(P.glow.get(n));
       }
       ctx.strokeStyle = CYAN_LINE; ctx.lineWidth = w * px; ctx.stroke(P.all);
     }
@@ -269,18 +298,20 @@ function RouteMap({ data, base, head, headRight }) {
     const P = st.P;
     if (!P) return;
     let best = null, bd = 16 * 16;
-    for (const d of P.days) for (let i = 0; i < d.pts.length; i++) {
-      const x = d.pts[i][0] * st.view.s + st.view.tx, y = d.pts[i][1] * st.view.s + st.view.ty;
+    for (const p of P.S) {
+      const x = p.x * st.view.s + st.view.tx, y = p.y * st.view.s + st.view.ty;
       if (x < -20 || y < -20 || x > st.W + 20 || y > st.H + 20) continue;
-      const dd = (x - px) ** 2 + (y - py) ** 2, e = d.segE[Math.max(0, i - 1)];
-      if (dd < bd && e) { bd = dd; best = { x, y, e, d }; }
+      const dd = (x - px) ** 2 + (y - py) ** 2;
+      if (dd < bd) { bd = dd; best = { x, y, p }; }
     }
     const t = tipRef.current; if (!t) return;
     if (!best) { hideTip(); return; }
-    const list = P.edgeDays.get(best.e) || [best.d], first = list[0], last = list[list.length - 1];
+    const list = [...P.daysNear(best.p.x, best.p.y)].sort((a, c) => a - c).map((i) => P.days[i]);
+    const first = list[0], last = list[list.length - 1];
+    const EM = '<em style="color:#00B4D9;font-style:normal">';
     t.innerHTML = list.length === 1
       ? '<b style="color:#F6F0E3">Driven once</b> · Day ' + first.day + ', ' + fmtDay(first.key)
-      : '<b style="color:#F6F0E3">Driven ' + list.length + ' times</b><br>First <em style="color:#00B4D9;font-style:normal">Day ' + first.day + '</em> ' + fmtDay(first.key) + ' · latest <em style="color:#00B4D9;font-style:normal">Day ' + last.day + '</em> ' + fmtDay(last.key);
+      : '<b style="color:#F6F0E3">Driven ' + list.length + ' times</b><br>First ' + EM + 'Day ' + first.day + '</em> ' + fmtDay(first.key) + ' · latest ' + EM + 'Day ' + last.day + '</em> ' + fmtDay(last.key);
     st.tipAt = [(best.x - st.view.tx) / st.view.s, (best.y - st.view.ty) / st.view.s];
     t.hidden = false; placeTip();
   };
