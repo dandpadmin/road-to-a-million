@@ -1,5 +1,4 @@
-const { Plate } = window.RoadToAMillionDesignSystem_6606d4;
-const { RR, PANEL, INK_3, INK_4, BRONZE_D, CYAN_LINE, HAIR } = window.RTAM_INK;
+const { PANEL, INK_3, INK_4, BRONZE_D, CYAN_LINE, HAIR } = window.RTAM_INK;
 
 /* Lambert conformal conic, standard parallels 40°/62°, centred on 100°W —
    the projection basemap.json was baked in. Output is kilometres, y down.
@@ -20,6 +19,7 @@ const TOWN_ZOOM = 2.2;         // town names appear once zoomed in this far past
 const fmtDay = (k) => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-CA', { month: 'short', day: 'numeric' }); };
 const IN_FRAME = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
 const FULL_URL = 'https://dandpadmin.github.io/road-to-a-million/#map';
+const PHONE_MQ = '(max-width: 860px)', PAGE_PAD_PHONE = 18;
 
 /* Soft light around the cyan line for a road driven n times: several faint,
    pale layers that fade outward, so it reads as a glow rather than a shadow.
@@ -148,13 +148,22 @@ function RouteMap({ data, base, head, headRight }) {
     land: new Path2D(base.land), lakes: new Path2D(base.lakes), subunits: new Path2D(base.subunits), borders: new Path2D(base.borders),
   } : null), [base]);
 
-  const boxRef = React.useRef(null), cvRef = React.useRef(null), tipRef = React.useRef(null), hintRef = React.useRef(null);
+  const boxRef = React.useRef(null), cvRef = React.useRef(null), tipRef = React.useRef(null);
   const scaleBarRef = React.useRef(null), scaleTxtRef = React.useRef(null);
   const st = React.useRef({ W: 0, H: 0, dpr: 1, view: null, fit: null, tipAt: null, anim: 0 }).current;
   /* Handlers bound once read the latest data from here, not from their first render. */
   st.P = P; st.B = B;
   const [full, setFull] = React.useState(() => !IN_FRAME && typeof location !== 'undefined' && location.hash === '#map');
   const [narrow, setNarrow] = React.useState(false);
+  /* On a phone the page has an 18px margin (app.jsx, .rtam-page under 860px); the
+     map cancels it to run edge to edge, the same way the day map does. */
+  const [bleed, setBleed] = React.useState(() => window.matchMedia && matchMedia(PHONE_MQ).matches);
+  React.useEffect(() => {
+    if (!window.matchMedia) return;
+    const mq = matchMedia(PHONE_MQ), on = () => setBleed(mq.matches);
+    mq.addEventListener ? mq.addEventListener('change', on) : mq.addListener(on);
+    return () => (mq.removeEventListener ? mq.removeEventListener('change', on) : mq.removeListener(on));
+  }, []);
   st.full = full;
 
   const fitFor = (W, H) => {
@@ -257,7 +266,7 @@ function RouteMap({ data, base, head, headRight }) {
     ro.observe(box); resize();
     return () => ro.disconnect();
   }, []);
-  React.useEffect(() => { resize(); }, [full, narrow]);
+  React.useEffect(() => { resize(); }, [full, narrow, bleed]);
 
   /* ---- interaction ---- */
   const zoomAt = (f, x, y) => {
@@ -281,11 +290,6 @@ function RouteMap({ data, base, head, headRight }) {
   const zoomCentre = (f) => {
     const s = Math.min(sMax(), Math.max(sMin(), st.view.s * f)), k = s / st.view.s, { W, H } = st;
     animateTo({ s, tx: W / 2 - (W / 2 - st.view.tx) * k, ty: H / 2 - (H / 2 - st.view.ty) * k });
-  };
-  const flashHint = (text) => {
-    const h = hintRef.current; if (!h) return;
-    h.textContent = text; h.style.opacity = '1';
-    clearTimeout(st.hintT); st.hintT = setTimeout(() => { h.style.opacity = '0'; }, 1100);
   };
   const hideTip = () => { st.tipAt = null; if (tipRef.current) tipRef.current.hidden = true; };
   function placeTip() {
@@ -316,71 +320,65 @@ function RouteMap({ data, base, head, headRight }) {
     t.hidden = false; placeTip();
   };
 
+  /* Gestures, like a map app: one finger or a mouse drag pans, two fingers
+     pinch, double-tap zooms in, a tap shows the road. On desktop the wheel
+     keeps scrolling the page; ⌘/Ctrl + wheel or a trackpad pinch zooms (and
+     the wheel always zooms in the full-screen map). */
   React.useEffect(() => {
     const cv = cvRef.current; if (!cv) return;
-    const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
-    const pos = (x, y) => { const r = cv.getBoundingClientRect(); return [x - r.left, y - r.top]; };
-    const onWheel = (e) => {
-      if (!full && !(e.ctrlKey || e.metaKey)) { flashHint('Use ' + (isMac ? '⌘' : 'Ctrl') + ' + scroll to zoom the map'); return; }
-      e.preventDefault(); const [x, y] = pos(e.clientX, e.clientY); zoomAt(Math.exp(-e.deltaY * 0.0022), x, y);
+    const local = (e) => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+    const ptrs = new Map();
+    let g0 = null, lastTap = 0;
+    const begin = (moved) => { g0 = { v: { ...st.view }, p: [...ptrs.values()].map((q) => [...q]), moved }; };
+    const onDown = (e) => {
+      if (e.button > 0) return;
+      cv.setPointerCapture(e.pointerId); ptrs.set(e.pointerId, local(e)); cancelAnimationFrame(st.anim);
+      begin(ptrs.size > 1); cv.style.cursor = 'grabbing';
     };
-    let drag = null;
-    const onDown = (e) => { if (e.pointerType !== 'mouse') return; drag = { x: e.clientX, y: e.clientY, v: { ...st.view }, moved: false }; cv.setPointerCapture(e.pointerId); cv.style.cursor = 'grabbing'; };
     const onMove = (e) => {
-      if (e.pointerType !== 'mouse' || !drag) return;
-      const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
-      if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
-      st.view = { ...drag.v, tx: drag.v.tx + dx, ty: drag.v.ty + dy }; draw();
-    };
-    const onUp = (e) => {
-      if (e.pointerType !== 'mouse' || !drag) return;
-      cv.style.cursor = 'grab';
-      if (!drag.moved) showTip(...pos(e.clientX, e.clientY));
-      drag = null;
-    };
-    const onDbl = (e) => {
-      const [x, y] = pos(e.clientX, e.clientY), s = Math.min(sMax(), st.view.s * 2), k = s / st.view.s;
-      animateTo({ s, tx: x - (x - st.view.tx) * k, ty: y - (y - st.view.ty) * k });
-    };
-    /* Touch: two fingers move and pinch; one finger keeps scrolling the page,
-       except in the full-screen map, where one finger pans. */
-    let touch = null;
-    const tp = (e) => [...e.touches].map((t) => pos(t.clientX, t.clientY));
-    const onTS = (e) => { touch = { p: tp(e), v: { ...st.view }, moved: false }; };
-    const onTM = (e) => {
-      if (!touch) return;
-      const p = tp(e);
-      if (p.length >= 2) {
-        e.preventDefault();
-        if (touch.p.length < 2) touch = { p, v: { ...st.view }, moved: true };
-        const [a0, b0] = touch.p, [a1, b1] = p;
+      if (!ptrs.has(e.pointerId) || !g0) return;
+      ptrs.set(e.pointerId, local(e));
+      const p = [...ptrs.values()];
+      if (p.length === 1 && g0.p.length === 1) {
+        const dx = p[0][0] - g0.p[0][0], dy = p[0][1] - g0.p[0][1];
+        if (Math.abs(dx) + Math.abs(dy) > 4) g0.moved = true;
+        st.view = { ...g0.v, tx: g0.v.tx + dx, ty: g0.v.ty + dy }; draw();
+      } else if (p.length >= 2 && g0.p.length >= 2) {
+        const [a0, b0] = g0.p, [a1, b1] = p;
         const d0 = Math.hypot(b0[0] - a0[0], b0[1] - a0[1]) || 1, d1 = Math.hypot(b1[0] - a1[0], b1[1] - a1[1]);
         const m0 = [(a0[0] + b0[0]) / 2, (a0[1] + b0[1]) / 2], m1 = [(a1[0] + b1[0]) / 2, (a1[1] + b1[1]) / 2];
-        const s = Math.min(sMax(), Math.max(sMin(), touch.v.s * d1 / d0)), k = s / touch.v.s;
-        st.view = { s, tx: m1[0] - (m0[0] - touch.v.tx) * k, ty: m1[1] - (m0[1] - touch.v.ty) * k };
-        touch.moved = true; draw();
-      } else if (p.length === 1) {
-        const dx = p[0][0] - touch.p[0][0], dy = p[0][1] - touch.p[0][1];
-        if (Math.abs(dx) + Math.abs(dy) > 6) touch.moved = true;
-        if (full) { e.preventDefault(); st.view = { ...touch.v, tx: touch.v.tx + dx, ty: touch.v.ty + dy }; draw(); }
-        else if (touch.moved && Math.abs(dx) > Math.abs(dy)) flashHint('Use two fingers to move the map');
+        const s = Math.min(sMax(), Math.max(sMin(), g0.v.s * d1 / d0)), k = s / g0.v.s;
+        st.view = { s, tx: m1[0] - (m0[0] - g0.v.tx) * k, ty: m1[1] - (m0[1] - g0.v.ty) * k }; draw();
       }
     };
-    const onTE = (e) => {
-      if (touch && !touch.moved && touch.p.length === 1 && e.touches.length === 0) showTip(...touch.p[0]);
-      touch = e.touches.length ? { p: tp(e), v: { ...st.view }, moved: true } : null;
+    const onEnd = (e) => {
+      if (!ptrs.has(e.pointerId)) return;
+      const at = ptrs.get(e.pointerId); ptrs.delete(e.pointerId);
+      if (ptrs.size) { begin(true); return; }   // a finger lifted mid-pinch: keep panning with the other
+      cv.style.cursor = 'grab';
+      if (g0 && !g0.moved && e.type === 'pointerup') {
+        const now = performance.now();
+        if (now - lastTap < 300) {   // double-tap / double-click zooms in there
+          lastTap = 0;
+          const s = Math.min(sMax(), st.view.s * 2), k = s / st.view.s;
+          animateTo({ s, tx: at[0] - (at[0] - st.view.tx) * k, ty: at[1] - (at[1] - st.view.ty) * k });
+        } else { lastTap = now; showTip(at[0], at[1]); }
+      }
+      g0 = null;
     };
+    const onWheel = (e) => {
+      if (!full && !(e.ctrlKey || e.metaKey)) return;   // let the page scroll
+      e.preventDefault(); const [x, y] = local(e); zoomAt(Math.exp(-e.deltaY * 0.0022), x, y);
+    };
+    cv.addEventListener('pointerdown', onDown); cv.addEventListener('pointermove', onMove);
+    cv.addEventListener('pointerup', onEnd); cv.addEventListener('pointercancel', onEnd);
     cv.addEventListener('wheel', onWheel, { passive: false });
-    cv.addEventListener('pointerdown', onDown); cv.addEventListener('pointermove', onMove); cv.addEventListener('pointerup', onUp);
-    cv.addEventListener('dblclick', onDbl);
-    cv.addEventListener('touchstart', onTS, { passive: true }); cv.addEventListener('touchmove', onTM, { passive: false }); cv.addEventListener('touchend', onTE);
     const onKey = (e) => { if (e.key === 'Escape' && full) setFull(false); };
     document.addEventListener('keydown', onKey);
     return () => {
+      cv.removeEventListener('pointerdown', onDown); cv.removeEventListener('pointermove', onMove);
+      cv.removeEventListener('pointerup', onEnd); cv.removeEventListener('pointercancel', onEnd);
       cv.removeEventListener('wheel', onWheel);
-      cv.removeEventListener('pointerdown', onDown); cv.removeEventListener('pointermove', onMove); cv.removeEventListener('pointerup', onUp);
-      cv.removeEventListener('dblclick', onDbl);
-      cv.removeEventListener('touchstart', onTS); cv.removeEventListener('touchmove', onTM); cv.removeEventListener('touchend', onTE);
       document.removeEventListener('keydown', onKey);
     };
   }, [P, B, full]);
@@ -407,9 +405,9 @@ function RouteMap({ data, base, head, headRight }) {
   const mapBox = (
     <div ref={boxRef} style={full
       ? { position: 'fixed', inset: 0, zIndex: 60, background: PANEL, paddingTop: 'env(safe-area-inset-top, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }
-      : { position: 'relative', border: (drawn ? '1px solid ' : '1px dashed ') + HAIR, borderRadius: RR, overflow: 'hidden', background: PANEL, aspectRatio: narrow ? '1 / 1' : '16 / 10', maxWidth: '100%' }}>
+      : { position: 'relative', overflow: 'hidden', background: PANEL, aspectRatio: narrow ? '1 / 1' : '16 / 10', margin: bleed ? '0 -' + PAGE_PAD_PHONE + 'px' : 0 }}>
       <canvas ref={cvRef} role="img" aria-label="Every road the car has driven since day one, delayed 24 hours. Roads driven more than once have a glow; tap a road to see how often."
-        style={{ display: 'block', width: '100%', height: '100%', cursor: 'grab', touchAction: full ? 'none' : 'pan-x pan-y' }} />
+        style={{ display: 'block', width: '100%', height: '100%', cursor: 'grab', touchAction: 'none' }} />
       <div style={{ position: 'absolute', top: full ? 'calc(10px + env(safe-area-inset-top, 0px))' : 10, right: full ? 'calc(10px + env(safe-area-inset-right, 0px))' : 10, display: 'grid', gap: 6 }}>
         <button type="button" style={btn} aria-label="Zoom in" onClick={() => zoomCentre(2)}>+</button>
         <button type="button" style={btn} aria-label="Zoom out" onClick={() => zoomCentre(0.5)}>&minus;</button>
@@ -426,7 +424,6 @@ function RouteMap({ data, base, head, headRight }) {
         <span ref={scaleTxtRef}>500 km</span>
         <i ref={scaleBarRef} style={{ display: 'block', height: 4, width: 80, border: '1px solid ' + INK_3, borderTop: 0 }}></i>
       </div>
-      <div ref={hintRef} style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', pointerEvents: 'none', background: 'rgba(28,36,44,.62)', color: '#F6F0E3', fontSize: 12, letterSpacing: '.12em', textTransform: 'uppercase', textAlign: 'center', padding: 20, opacity: 0, transition: 'opacity .2s' }}></div>
       <div ref={tipRef} hidden style={{ position: 'absolute', pointerEvents: 'none', background: 'rgba(28,36,44,.95)', border: '1px solid ' + HAIR, borderRadius: 4, padding: '7px 10px', fontSize: 11, lineHeight: 1.45, letterSpacing: '.05em', color: 'rgba(246,240,227,.78)', whiteSpace: 'nowrap', transform: 'translate(-50%, calc(-100% - 12px))' }}></div>
       {!drawn && (
         <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', fontSize: 11, letterSpacing: '.18em', textTransform: 'uppercase', color: INK_4, pointerEvents: 'none' }}>Route draws in after the first full day clears</div>
@@ -435,10 +432,10 @@ function RouteMap({ data, base, head, headRight }) {
   );
 
   return (
-    <Plate tone="raised" pad={13} style={{ gap: 14, borderRadius: RR }}>
-      {head && window.BandHead && <window.BandHead pad={13} inset={22} right={headRight} rule={false}>{head}</window.BandHead>}
+    <section style={{ display: 'grid', gap: 14 }} aria-label={head || 'Route map'}>
+      {head && window.BandHead && <window.BandHead pad={0} inset={0} right={headRight} rule={false}>{head}</window.BandHead>}
       {mapBox}
-      {full && <div style={{ aspectRatio: narrow ? '1 / 1' : '16 / 10' }}></div>}
+      {full && <div style={{ aspectRatio: narrow ? '1 / 1' : '16 / 10', margin: bleed ? '0 -' + PAGE_PAD_PHONE + 'px' : 0 }}></div>}
       <div style={{ display: 'flex', gap: '10px 18px', flexWrap: 'wrap', alignItems: 'center', ...mono }}>
         <span style={{ display: 'inline-flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
           {[1, 2, 3, 5].map((n) => (
@@ -463,7 +460,7 @@ function RouteMap({ data, base, head, headRight }) {
           ))}
         </div>
       )}
-    </Plate>
+    </section>
   );
 }
 
