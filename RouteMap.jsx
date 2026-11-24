@@ -18,7 +18,6 @@ const MIN_KM_ACROSS = 15;      // tightest zoom: about 15 km across the map
 const TOWN_ZOOM = 2.2;         // town names appear once zoomed in this far past the whole-trip view
 const fmtDay = (k) => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-CA', { month: 'short', day: 'numeric' }); };
 const IN_FRAME = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
-const FULL_URL = 'https://dandpadmin.github.io/road-to-a-million/#map';
 const PHONE_MQ = '(max-width: 860px)', PAGE_PAD_PHONE = 18;
 
 /* Soft light around the cyan line for a road driven n times: several faint,
@@ -385,11 +384,10 @@ function RouteMap({ data, base, head, headRight }) {
 
   React.useEffect(() => { document.body.style.overflow = full ? 'hidden' : ''; }, [full]);
 
-  /* Inside the Shopify frame a "full screen" would only fill the frame, so the
-     expand button opens the map on its own page instead. */
+  /* Full screen only where the page is the whole tab. Inside the Shopify frame
+     it could only fill the frame, so the button isn't shown there. */
   const expand = () => {
     if (full) { setFull(false); if (location.hash === '#map') history.replaceState(null, '', location.pathname + location.search); return; }
-    if (IN_FRAME) { window.open(FULL_URL, '_blank', 'noopener'); return; }
     setFull(true);
   };
 
@@ -414,11 +412,11 @@ function RouteMap({ data, base, head, headRight }) {
         <button type="button" style={btn} aria-label="Show the whole route" onClick={() => { hideTip(); animateTo({ ...st.fit }); }}>
           <svg viewBox="0 0 16 16" style={icon}><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" /></svg>
         </button>
-        <button type="button" style={btn} aria-label={full ? 'Close the full-screen map' : 'Open the map full screen'} onClick={expand}>
+        {!IN_FRAME && <button type="button" style={btn} aria-label={full ? 'Close the full-screen map' : 'Open the map full screen'} onClick={expand}>
           {full
             ? <svg viewBox="0 0 16 16" style={icon}><path d="M3 3l10 10M13 3 3 13" /></svg>
             : <svg viewBox="0 0 16 16" style={icon}><path d="M9 2h5v5M7 14H2V9M14 2 9.5 6.5M2 14l4.5-4.5" /></svg>}
-        </button>
+        </button>}
       </div>
       <div style={{ position: 'absolute', left: full ? 'calc(12px + env(safe-area-inset-left, 0px))' : 12, bottom: full ? 'calc(10px + env(safe-area-inset-bottom, 0px))' : 10, display: 'grid', gap: 4, pointerEvents: 'none', ...mono, letterSpacing: '.12em' }}>
         <span ref={scaleTxtRef}>500 km</span>
