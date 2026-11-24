@@ -94,5 +94,6 @@
 {"id":"110044204","s":1795359793,"e":1795360797,"kwh":34.52,"cost":15.57,"sc":true,"soc0":20,"soc1":76,"kw":null,"prov":"Illinois","town":"Shiloh"},
 {"id":"110050687","s":1795367973,"e":1795369713,"kwh":46.54,"cost":21.28,"sc":true,"soc0":16,"soc1":91,"kw":null,"prov":"Indiana","town":"Haubstadt"},
 {"id":"110059947","s":1795380732,"e":1795381965,"kwh":39.16,"cost":18.75,"sc":true,"soc0":13,"soc1":77,"kw":null,"prov":"Kentucky","town":"Fort Wright"},
-{"id":"110067191","s":1795390713,"e":1795391906,"kwh":40.16,"cost":17.33,"sc":true,"soc0":13,"soc1":78,"kw":null,"prov":"Ohio","town":"Zanesville"}
+{"id":"110067191","s":1795390713,"e":1795391906,"kwh":40.16,"cost":17.33,"sc":true,"soc0":13,"soc1":78,"kw":null,"prov":"Ohio","town":"Zanesville"},
+{"id":"110073794","s":1795399682,"e":1795400759,"kwh":34.62,"cost":15.53,"sc":true,"soc0":24,"soc1":80,"kw":null,"prov":"Pennsylvania","town":"New Stanton"}
 ]
