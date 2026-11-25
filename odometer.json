@@ -1,5 +1,5 @@
 {
-  "odometer": 57891,
+  "odometer": 57892,
   "goal": 1000000,
   "day": 85,
   "province": "Massachusetts",
@@ -13043,7 +13043,7 @@
     }
   ],
   "asOf": "2026-11-24",
-  "updatedAt": "2026-11-25T02:30:43.322Z",
+  "updatedAt": "2026-11-25T14:24:34.853Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
@@ -20956,11 +20956,22 @@
               "town": "Las Cruces",
               "day": 72,
               "date": "Nov 12"
+            },
+            {
+              "min": 433,
+              "kwh": 41.4,
+              "soc0": 33,
+              "soc1": 100,
+              "prov": "Massachusetts",
+              "ctry": "US",
+              "town": "Somerville",
+              "day": 83,
+              "date": "Nov 23"
             }
           ],
-          "n": 19,
+          "n": 20,
           "median": 688,
-          "mean": 643,
+          "mean": 633,
           "shortest": {
             "min": 295,
             "kwh": 35.5,
