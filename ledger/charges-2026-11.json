@@ -100,5 +100,7 @@
 {"id":"110092067","s":1795411200,"e":1795425334,"kwh":24.46,"cost":null,"sc":false,"soc0":60,"soc1":100,"kw":null,"prov":"Pennsylvania","town":"Paxtonia"},
 {"id":"110111426","s":1795452848,"e":1795454787,"kwh":46.99,"cost":20.13,"sc":true,"soc0":19,"soc1":96,"kw":null,"prov":"Connecticut","town":"Fairfield"},
 {"id":"110121574","s":1795469922,"e":1795470982,"kwh":34.29,"cost":15.97,"sc":true,"soc0":9,"soc1":65,"kw":null,"prov":"Maine","town":"Kennebunk"},
-{"id":"110148298","s":1795478283,"e":1795504238,"kwh":41.41,"cost":null,"sc":false,"soc0":33,"soc1":100,"kw":null,"prov":"Massachusetts","town":"Somerville"}
+{"id":"110148298","s":1795478283,"e":1795504238,"kwh":41.41,"cost":null,"sc":false,"soc0":33,"soc1":100,"kw":null,"prov":"Massachusetts","town":"Somerville"},
+{"id":"110171331","s":1795537191,"e":1795538065,"kwh":1.06,"cost":null,"sc":false,"soc0":98,"soc1":100,"kw":null,"prov":"Massachusetts","town":"Somerville"},
+{"id":"110181859","s":1795553195,"e":1795553610,"kwh":4.38,"cost":2.45,"sc":true,"soc0":91,"soc1":99,"kw":null,"prov":"Massachusetts","town":"Somerville"}
 ]

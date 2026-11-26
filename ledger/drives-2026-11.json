@@ -245,5 +245,12 @@
 {"id":"456448575","s":1795474064,"e":1795477466,"km":74.79,"ap":74.77,"kwh":10,"t":15.2,"prov":"Massachusetts","town":"Somerville"},
 {"id":"456448942","s":1795477466,"e":1795477569,"km":0.19,"ap":0,"kwh":0,"t":14.5,"prov":"Massachusetts","town":"Somerville"},
 {"id":"456451240","s":1795478122,"e":1795478144,"km":0.02,"ap":0,"kwh":0.12,"t":14.5,"prov":"Massachusetts","town":"Somerville"},
-{"id":"456451597","s":1795478144,"e":1795478249,"km":0.06,"ap":0,"kwh":0,"t":14.5,"prov":"Massachusetts","town":"Somerville"}
+{"id":"456451597","s":1795478144,"e":1795478249,"km":0.06,"ap":0,"kwh":0,"t":14.5,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456688660","s":1795543985,"e":1795544037,"km":0.06,"ap":0,"kwh":0,"t":20.8,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456699557","s":1795544050,"e":1795546148,"km":10.91,"ap":4.84,"kwh":1.5,"t":10.7,"prov":"Massachusetts","town":"Boston"},
+{"id":"456707253","s":1795547486,"e":1795547791,"km":1.29,"ap":0,"kwh":0.14,"t":8.5,"prov":"Massachusetts","town":"Boston"},
+{"id":"456722954","s":1795549973,"e":1795551280,"km":6.34,"ap":0,"kwh":1,"t":8,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456731165","s":1795552433,"e":1795553183,"km":1.9,"ap":0,"kwh":1.64,"t":3.2,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456736040","s":1795553630,"e":1795554271,"km":2.83,"ap":0,"kwh":0.26,"t":5,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456736670","s":1795554271,"e":1795554446,"km":0.11,"ap":0,"kwh":0.12,"t":5,"prov":"Massachusetts","town":"Somerville"}
 ]
