@@ -252,5 +252,14 @@
 {"id":"456722954","s":1795549973,"e":1795551280,"km":6.34,"ap":0,"kwh":1,"t":8,"prov":"Massachusetts","town":"Somerville"},
 {"id":"456731165","s":1795552433,"e":1795553183,"km":1.9,"ap":0,"kwh":1.64,"t":3.2,"prov":"Massachusetts","town":"Somerville"},
 {"id":"456736040","s":1795553630,"e":1795554271,"km":2.83,"ap":0,"kwh":0.26,"t":5,"prov":"Massachusetts","town":"Somerville"},
-{"id":"456736670","s":1795554271,"e":1795554446,"km":0.11,"ap":0,"kwh":0.12,"t":5,"prov":"Massachusetts","town":"Somerville"}
+{"id":"456736670","s":1795554271,"e":1795554446,"km":0.11,"ap":0,"kwh":0.12,"t":5,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456972692","s":1795622307,"e":1795622355,"km":0.06,"ap":0,"kwh":-0.02,"t":19.5,"prov":"Massachusetts","town":"Somerville"},
+{"id":"456980297","s":1795622373,"e":1795623707,"km":6.68,"ap":0,"kwh":0.88,"t":11.1,"prov":"Massachusetts","town":"Boston"},
+{"id":"456997289","s":1795624612,"e":1795626524,"km":11.68,"ap":0,"kwh":1.38,"t":7.7,"prov":"Massachusetts","town":"Boston"},
+{"id":"457026178","s":1795626683,"e":1795631497,"km":43.84,"ap":34.79,"kwh":7.5,"t":7.2,"prov":"Massachusetts","town":"Danvers"},
+{"id":"457050617","s":1795632119,"e":1795636290,"km":46.41,"ap":19.99,"kwh":4.5,"t":6,"prov":"Massachusetts","town":"Rockport"},
+{"id":"457053729","s":1795636310,"e":1795636905,"km":5.01,"ap":4.89,"kwh":0.38,"t":5.5,"prov":"Massachusetts","town":"Rockport"},
+{"id":"457062323","s":1795637724,"e":1795638708,"km":11.49,"ap":0,"kwh":1.26,"t":5.5,"prov":"Massachusetts","town":"Gloucester"},
+{"id":"457065405","s":1795638979,"e":1795639380,"km":2.66,"ap":0,"kwh":0.12,"t":5.5,"prov":"Massachusetts","town":"Gloucester"},
+{"id":"457069705","s":1795639736,"e":1795640326,"km":7.23,"ap":7.18,"kwh":0.76,"t":5.2,"prov":"Massachusetts","town":"Rockport"}
 ]

@@ -102,5 +102,6 @@
 {"id":"110121574","s":1795469922,"e":1795470982,"kwh":34.29,"cost":15.97,"sc":true,"soc0":9,"soc1":65,"kw":null,"prov":"Maine","town":"Kennebunk"},
 {"id":"110148298","s":1795478283,"e":1795504238,"kwh":41.41,"cost":null,"sc":false,"soc0":33,"soc1":100,"kw":null,"prov":"Massachusetts","town":"Somerville"},
 {"id":"110171331","s":1795537191,"e":1795538065,"kwh":1.06,"cost":null,"sc":false,"soc0":98,"soc1":100,"kw":null,"prov":"Massachusetts","town":"Somerville"},
-{"id":"110181859","s":1795553195,"e":1795553610,"kwh":4.38,"cost":2.45,"sc":true,"soc0":91,"soc1":99,"kw":null,"prov":"Massachusetts","town":"Somerville"}
+{"id":"110181859","s":1795553195,"e":1795553610,"kwh":4.38,"cost":2.45,"sc":true,"soc0":91,"soc1":99,"kw":null,"prov":"Massachusetts","town":"Somerville"},
+{"id":"110241526","s":1795631518,"e":1795632086,"kwh":12.52,"cost":6.19,"sc":true,"soc0":78,"soc1":98,"kw":null,"prov":"Massachusetts","town":"Danvers"}
 ]
