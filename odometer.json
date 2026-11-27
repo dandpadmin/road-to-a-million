@@ -1,7 +1,7 @@
 {
   "odometer": 58127,
   "goal": 1000000,
-  "day": 86,
+  "day": 87,
   "province": "Massachusetts",
   "route": "Rockport, Massachusetts",
   "today": 101,
@@ -12909,7 +12909,7 @@
     }
   ],
   "asOf": "2026-11-26",
-  "updatedAt": "2026-11-26T21:33:42.329Z",
+  "updatedAt": "2026-11-27T04:15:53.293Z",
   "embargoHours": 0,
   "locationEmbargoHours": 24,
   "liveKm": true,
